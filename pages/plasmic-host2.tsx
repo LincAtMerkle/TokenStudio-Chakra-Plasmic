@@ -1,7 +1,7 @@
 
 import * as React from 'react';
 import Script from 'next/script';
-import { PlasmicCanvasHost, registerComponent } from '@plasmicapp/host';
+import { PlasmicCanvasHost, registerComponent, registerToken } from '@plasmicapp/host';
 import { registerAll } from "../components/chakra";
 
 // You can register any code components that you want to use here; see
@@ -18,3 +18,9 @@ export default function PlasmicHost() {
 }
 
 registerAll();
+
+registerToken({
+  type: "color",
+  name: "Token from code",
+  value: "#F123CC"
+})
