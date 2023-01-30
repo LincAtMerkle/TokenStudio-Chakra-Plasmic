@@ -24,3 +24,32 @@ registerToken({
   name: "Token from code",
   value: "#F123CC"
 })
+
+const tokenStudio = {
+  "colors": {
+    "st-dark": {
+      "color-fl-green-50": "#fcfff6",
+      "color-fl-green-100": "#f2ffdc",
+      "color-fl-green-200": "#e6ffb8",
+    },
+    "st-light": {
+      "color-fl-green-50": "#fcfff6",
+      "color-fl-green-100": "#f2ffdc",
+      "color-fl-green-200": "#e6ffb8",
+    }
+  }
+}
+
+Object.entries(tokenStudio.colors)
+  .flatMap(([colorName, colorOptions]) =>
+    Object.entries(colorOptions).map(([colorLevel, colorValue]) => ({
+      name: `${colorName} ${colorLevel}`,
+      value: colorValue
+    })
+  )).forEach(({ name, value}) => {
+    registerToken({
+      type: "color",
+      name,
+      value
+    })
+  })
