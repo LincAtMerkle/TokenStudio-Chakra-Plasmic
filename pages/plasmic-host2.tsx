@@ -53,3 +53,22 @@ Object.entries(tokenStudio.colors)
       value
     })
   })
+
+// same as above
+// for (const [colorGroupName, colorGroup] of Object.entries(tokenStudio.colors)) {
+//   for (const [colorLevelName, colorValue] of Object.entries(colorGroup)) {
+//     registerToken({
+//       type: "color",
+//       value: colorValue,
+//       name: `${colorGroupName} ${colorLevelName}`
+//     })
+//   }
+// }
+
+registerToken({
+  type: "opacity",
+  name: "opa token",
+  value: "0.5"
+})
+
+
