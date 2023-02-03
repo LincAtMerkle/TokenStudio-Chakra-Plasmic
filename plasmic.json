@@ -7,7 +7,7 @@
   },
   "style": {
     "scheme": "css-modules",
-    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+    "defaultStyleCssFilePath": ""
   },
   "images": {
     "scheme": "public-files",
@@ -20,60 +20,14 @@
   },
   "srcDir": "components",
   "defaultPlasmicDir": "./plasmic",
-  "projects": [
-    {
-      "projectId": "fsUfPhngrgShbFqcuk7nfv",
-      "projectApiToken": "xrymV4OMw5yJYm6ReLv7kIKlksKhn5xk4GHe4Vv9YAq8P27em6zVVeRxoW2g4Q62qPiOLLWXwbODTFwUKA",
-      "projectName": "Blank project",
-      "version": "latest",
-      "cssFilePath": "plasmic/blank_project/plasmic_blank_project.module.css",
-      "components": [
-        {
-          "id": "xVO4oiXSyOCv",
-          "name": "Homepage",
-          "type": "managed",
-          "projectId": "fsUfPhngrgShbFqcuk7nfv",
-          "renderModuleFilePath": "plasmic/blank_project/PlasmicHomepage.tsx",
-          "importSpec": {
-            "modulePath": "../pages/index.tsx"
-          },
-          "cssFilePath": "plasmic/blank_project/PlasmicHomepage.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        }
-      ],
-      "icons": [],
-      "images": [],
-      "indirect": false,
-      "globalContextsFilePath": "",
-      "codeComponents": [
-        {
-          "id": "OBdTJK3iZB",
-          "name": "PlasmicHead",
-          "componentImportPath": "@plasmicapp/react-web"
-        },
-        {
-          "id": "F_4OCULBzo",
-          "name": "Fetcher",
-          "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
-        }
-      ]
-    }
-  ],
+  "projects": [],
   "globalVariants": {
-    "variantGroups": [
-      {
-        "id": "DXe-iXkpBuWTG",
-        "name": "Screen",
-        "projectId": "fsUfPhngrgShbFqcuk7nfv",
-        "contextFilePath": "plasmic/blank_project/PlasmicGlobalVariant__Screen.tsx"
-      }
-    ]
+    "variantGroups": []
   },
   "wrapPagesWithGlobalContexts": true,
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.205",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.205/dist/plasmic.schema.json"
+  "cliVersion": "0.1.194",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.194/dist/plasmic.schema.json"
 }
