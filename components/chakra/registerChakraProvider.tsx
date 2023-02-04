@@ -3,58 +3,63 @@ import { GlobalContextMeta } from "@plasmicapp/host";
 import registerGlobalContext from "@plasmicapp/host/registerGlobalContext";
 import { Registerable } from "./registerable";
 import { getComponentNameAndImportMeta } from "./utils";
-import { extendTheme } from "@chakra-ui/react"
+import { theme as proTheme } from "../../pro-package/src/index";
+import { extendTheme, theme as baseTheme } from "@chakra-ui/react";
+
+// ******
+// HOW DO I Switch Themes
+// fl-light 
+// fl-dark 
+// hm-light 
+// hm-dark 
+// Using:
+// toggleColorMode, useColorMode, colorMode, setColorMode
+// ******
 
 export const colorTokens = {
   myToken1: {
-    defaultValue: "#FF0000"
+    defaultValue: "#FF0000",
   },
   myToken2: {
-    defaultValue: "#00FF00"
+    defaultValue: "#00FF00",
   },
   myToken3: {
-    defaultValue: "#0000FF"
-  }
-}
+    defaultValue: "#0000FF",
+  },
+};
 
 type ColorTokensType = keyof typeof colorTokens;
 
 type PlasmicChakraProviderProps = {
   children?: React.ReactNode;
 } & {
-  [prop in ColorTokensType]: string
+  [prop in ColorTokensType]: string;
 };
 
-export const chakraProviderMeta: GlobalContextMeta<PlasmicChakraProviderProps> = {
-  ...getComponentNameAndImportMeta("ChakraProvider"),
-  props: {
-    ...(Object.fromEntries(
-      Object.entries(colorTokens).map(([name, { defaultValue }]) => [
-        name, {
-          type: "color",
-          defaultValue
-        }
-      ])
-    )),
-  },
-};
-
+export const chakraProviderMeta: GlobalContextMeta<PlasmicChakraProviderProps> =
+  {
+    ...getComponentNameAndImportMeta("ChakraProvider"),
+    props: {
+      ...Object.fromEntries(
+        Object.entries(colorTokens).map(([name, { defaultValue }]) => [
+          name,
+          {
+            type: "color",
+            defaultValue,
+          },
+        ])
+      ),
+    },
+  };
 
 export function PlasmicChakraProvider(props: PlasmicChakraProviderProps) {
-  const theme = extendTheme({
-    colors: {
-      ...(Object.fromEntries(
-        Object.keys(colorTokens).map((name) => [
-          name, {
-            500: props[name as ColorTokensType]
-          }
-        ])
-      ))
+  const theme = extendTheme(
+    {
+      colors: { ...baseTheme.colors, brand: baseTheme.colors.yellow },
     },
-  })
-  return <ChakraProvider theme={theme}>
-    {props.children}
-  </ChakraProvider>
+    proTheme
+  );
+  return <ChakraProvider theme={theme}>{props.children}</ChakraProvider>;
 }
 
 export function registerChakraProvider(

@@ -87,8 +87,8 @@ export const buttonMeta: ComponentMeta<ButtonProps> = {
     },
     variant: {
       type: "choice",
-      options: ["ghost", "outline", "solid", "link", "unstyled"],
-      defaultValue: "solid",
+      options: ["primary", "ghost", "outline", "solid", "link", "unstyled"],
+      defaultValue: "primary",
     },
     colorScheme: {
       type: "choice",
