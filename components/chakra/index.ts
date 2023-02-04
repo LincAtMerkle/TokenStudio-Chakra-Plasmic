@@ -76,6 +76,8 @@ import {
   Tooltip,
   Tr,
 } from "@chakra-ui/react";
+
+
 import { Registerable } from "./registerable";
 
 import registerComponent, {
@@ -204,7 +206,7 @@ export * from "./registerText";
 export * from "./registerToast";
 export * from "./registerTooltip";
 
-export function registerAll(loader?: Registerable) {
+export function registerAllChakra(loader?: Registerable) {
   const _registerComponent = <T extends React.ComponentType<any>>(
     Component: T,
     defaultMeta: ComponentMeta<React.ComponentProps<T>>
