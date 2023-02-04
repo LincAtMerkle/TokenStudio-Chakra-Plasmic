@@ -1,56 +1,50 @@
-const baseStyle = {
-  // The styles all button have in common
-    fontWeight: 'btn-font-weight',
-    textTransform: 'uppercase',
-    width: 'auto',
-    borderRadius: 'btn-border-radius',
-    fontFamily: 'btn-font-family',
-    border: 'btn-border-width',
-    borderStyle: 'solid'
-  }
 
-  const sizes = {
-  // Four sizes: xs,sm,md and large
-  xs: {
-      paddingLeft: 'btn-xs-padding-left',
-      paddingRight: 'btn-xs-padding-right',
-      h: 'btn-xs-height',
-      fontSize: 'btn-xs-text-size'
-    },
-    sm: {
-      paddingLeft: 'btn-sm-padding-left',
-      paddingRight: 'btn-sm-padding-right',
-      height: 'btn-sm-height',
-      fontSize: 'btn-sm-text-size'
-    },
-    md: {
-      paddingLeft: 'btn-md-padding-left',
-      paddingRight: 'btn-md-padding-right',
-      height: 'btn-md-height',
-      fontSize: 'btn-md-text-size'
-    },
-    lg: {
-      paddingLeft: 'btn-lg-padding-left',
-      paddingRight: 'btn-lg-padding-right',
-      height: 'btn-lg-height',
-      fontSize: 'btn-lg-text-size'
+  const baseStyle = {
+    width: 'auto',
+    borderRadius: 'icon-button-border-radius',
+    border: 'btn-border-width',
+    borderStyle: 'solid',
+    _isRound: {
+        borderRadius: 'icon-button-round-border-radius'
     }
   }
-
-  const variants = {
+  // Four sizes: xs,sm,md and large
+  const sizes  = {
+    xs: {
+      height: 'icon-button-xs-height',
+      width: 'icon-button-xs-width',
+      fontSize: 'icon-button-xs-icon-size'
+    },
+    sm: {
+        h: 'icon-button-sm-height',
+        minW: 'icon-button-sm-width',
+        fontSize: 'icon-button-sm-icon-size'
+    },
+    md: {
+        h: 'icon-button-md-height',
+        minW: 'icon-button-md-width',
+        fontSize: 'icon-button-md-icon-size'
+    },
+    lg: {
+        h: 'icon-button-lg-height',
+        minW: 'icon-button-lg-width',
+        fontSize: 'icon-button-lg-icon-size'
+    }
+  }
   // Two variants: outline and solid
-  primary: {
-      bg: 'btn-primary-default-background-color',
-      color: 'btn-primary-default-text-color',
-      borderColor: 'btn-primary-default-border-color',
-      iconColor:"btn-primary-default-icon-color",
+  const variants  = {
+    primary: {
+      bg: 'icon-button-default-background-color',
+      color: 'icon-button-default-icon-color',
+      borderColor: 'icon-button-default-border-color',
+      iconColor:"icon-button-default-icon-color",
       _hover: {
         bg: 'btn-primary-hover-background-color',
         color: 'btn-primary-hover-text-color',
         borderColor: 'btn-primary-hover-border-color',
         iconColor:'btn-primary-hover-icon-color'
       },
-      _active: {
+      _isActive: {
         bg: 'btn-primary-active-background-color',
         color: 'btn-primary-active-text-color',
         borderColor: 'btn-primary-active-border-color',
@@ -74,7 +68,7 @@ const baseStyle = {
         borderColor: 'btn-secondary-hover-border-color',
         iconColor:'btn-secondary-hover-icon-color'
       },
-      _active: {
+      _isActive: {
         bg: 'btn-secondary-active-background-color',
         color: 'btn-secondary-active-text-color',
         borderColor: 'btn-secondary-active-border-color',
@@ -100,9 +94,9 @@ const baseStyle = {
 
         
       },
-      _acive: {
-        bg: 'btn-negative-acive-background-color',
-        color: 'btn-negative-acive-text-color',
+      _isActive: {
+        bg: 'btn-negative-active-background-color',
+        color: 'btn-negative-active-text-color',
         borderColor: 'btn-negative-active-border-color',
         iconColor:'btn-negative-active-icon-color'
 
@@ -116,9 +110,14 @@ const baseStyle = {
       }
     }
   }
-
-export default {
-    baseStyle,
-    variants,
-    sizes,
+  const  defaultProps  = {
+    variant: 'primary'
   }
+
+  export default {
+    baseStyle,
+    sizes,
+    variants,
+    defaultProps,
+  };
+  

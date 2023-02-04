@@ -1,39 +1,58 @@
 const baseStyle = {
-  fontWeight: 'semibold',
-}
+  fontFamily: "heading-font-family",
+  lineHeight: "heading-line-height",
+  color: "heading-text-color",
+};
 
 const sizes = {
-  '2xl': {
-    fontSize: '7xl',
-    lineHeight: '5.625rem',
-    letterSpacing: 'tight',
-  },
-  xl: {
-    fontSize: '6xl',
-    lineHeight: '4.5rem',
-    letterSpacing: 'tight',
-  },
-  lg: {
-    fontSize: '5xl',
-    lineHeight: '3.75rem',
-    letterSpacing: 'tight',
-  },
-  md: {
-    fontSize: '4xl',
-    lineHeight: '2.75rem',
-    letterSpacing: 'tight',
+  xs: {
+    fontSize: "heading-xs-text-size",
   },
   sm: {
-    fontSize: '3xl',
-    lineHeight: '2.375rem',
+    fontSize: "heading-sm-text-size",
   },
-  xs: {
-    fontSize: '2xl',
-    lineHeight: '2rem',
+  md: {
+    fontSize: "heading-md-text-size",
   },
-}
+  lg: {
+    fontSize: "heading-lg-text-size",
+  },
+  xl: {
+    fontSize: "heading-xl-text-size",
+  },
+  xxl: {
+    fontSize: "heading-2xl-text-size",
+  },
+  xxxl: {
+    fontSize: "heading-3xl-text-size",
+  },
+  xxxxl: {
+    fontSize: "heading-4xl-text-size",
+  },
+};
+
+const variants = {
+  light: {
+    fontWeight: "heading-light-font-weight",
+  },
+  regular: {
+    fontWeight: "heading-regular-font-weight",
+  },
+  semiBold: {
+    fontWeight: "heading-semi-bold-font-weight",
+  },
+  bold: {
+    fontWeight: "heading-bold-font-weight",
+  },
+};
+
+const defaultProps = {
+  variant: "regular",
+};
 
 export default {
   baseStyle,
   sizes,
-}
+  variants,
+  defaultProps,
+};
