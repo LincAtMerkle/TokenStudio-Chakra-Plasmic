@@ -1,15 +1,7 @@
-import tokenStudioChakra from './tokenStudioChakra.json'
+import getChakraSemanticTokens from './getChakraSemanticTokens'
+import tokenStudioChakraJson from './tokenStudioChakra.json'
+
+const semanticTokens = getChakraSemanticTokens(tokenStudioChakraJson)
   
-export default {
-    colors: {
-      "btn-bg": {
-        default: tokenStudioChakra.colors['light']["btn-primary-default-background-color"],
-        _dark: tokenStudioChakra.colors['light']["btn-primary-default-background-color"],
-      },
-      "btn-fg": {
-        default: tokenStudioChakra.colors['light']["btn-primary-default-text-color"],
-        _dark: tokenStudioChakra.colors['light']["btn-primary-default-text-color"],
-      }
-    }
-  }
+export default semanticTokens
   
