@@ -3,7 +3,7 @@ import * as React from 'react';
 import Script from 'next/script';
 import { PlasmicCanvasHost, registerComponent, registerToken } from '@plasmicapp/host';
 import { registerAllChakra } from "../components/chakra";
-import ToggleColorMode  from "../components/custom/ToggleColorMode";
+import { registerAllCustom } from "../components/custom";
 
 // You can register any code components that you want to use here; see
 // https://docs.plasmic.app/learn/code-components-ref/
@@ -19,19 +19,7 @@ export default function PlasmicHost() {
 }
 
 registerAllChakra();
-
-//components/custom/
-registerComponent(ToggleColorMode, {
-  name: "ToggleColorMode",
-  props: {
-  },
-  
-  // Specify how generated Plasmic code should import this component;
-  // path is relative to srcDir
-  // I DONT HAVE A SRC DIR
-  importPath: '../components/custom/ToggleColorMode',
-});
-
+registerAllCustom();
 
 registerToken({
   type: "color",

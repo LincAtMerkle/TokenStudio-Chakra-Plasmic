@@ -1,13 +1,10 @@
-import { IconProps } from "@chakra-ui/icons";
-import { ComponentMeta } from "@plasmicapp/host/registerComponent";
-import {
-  getComponentNameAndImportMeta,
-  getPlasmicComponentName,
-} from "../chakra/utils";
+import { ArcadeIcon } from "./CustomIcons";
+import { registerComponent } from "@plasmicapp/host";
 
-export const arcadeIconMeta: ComponentMeta<IconProps> = {
-  ...getComponentNameAndImportMeta("ArcadeIcon"),
-
+export function registerArcadeIcon() {
+  registerComponent(ArcadeIcon, {
+    name: "ArcadeIcon",
+    importPath: "@chakra-ui/react",
     props: {
       viewBox: {
         type: "string",
@@ -30,4 +27,5 @@ export const arcadeIconMeta: ComponentMeta<IconProps> = {
         options: ["presentation", "img"],
       },
     },
-  }
+  });
+}

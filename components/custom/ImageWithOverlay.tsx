@@ -19,7 +19,7 @@ export type ImageWithOverlayProps = BoxProps & {
   children: ReactNode
 }
 
-export default function ImageWithOverlay({
+export function ImageWithOverlay({
   className,
   children,
   ...rest

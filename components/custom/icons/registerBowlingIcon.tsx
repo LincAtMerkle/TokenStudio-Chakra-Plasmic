@@ -1,13 +1,10 @@
-import { IconProps } from "@chakra-ui/icons";
-import { ComponentMeta } from "@plasmicapp/host/registerComponent";
-import {
-  getComponentNameAndImportMeta,
-  getPlasmicComponentName,
-} from "../chakra/utils";
+import { BowlingIcon } from "./CustomIcons";
+import { registerComponent } from "@plasmicapp/host";
 
-export const bowlingIconMeta: ComponentMeta<IconProps> = {
-  ...getComponentNameAndImportMeta("BowlingIcon", "Tabs"),
-
+export function registerBowlingIcon() {
+  registerComponent(BowlingIcon, {
+    name: "BowlingIcon",
+    importPath: "@chakra-ui/react",
     props: {
       viewBox: {
         type: "string",
@@ -30,4 +27,5 @@ export const bowlingIconMeta: ComponentMeta<IconProps> = {
         options: ["presentation", "img"],
       },
     },
-  }
+  });
+}

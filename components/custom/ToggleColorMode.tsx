@@ -5,7 +5,7 @@ export type ToggleColorModeProps = {
   className?: string;
 };
 
-export default function ToggleColorMode({className }: ToggleColorModeProps) {
+export function ToggleColorMode({className }: ToggleColorModeProps) {
   const { toggleColorMode } = useColorMode();
   return (
     <div className={className}>

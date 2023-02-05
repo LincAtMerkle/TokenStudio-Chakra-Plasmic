@@ -9,7 +9,7 @@ export type ChakraDocsProps = JSX.IntrinsicAttributes & {
   className?: string;
 };
 
-export default function ChakraDocs(
+export function ChakraDocs(
   { set, path, theme, className }: ChakraDocsProps,
   render: (data: any) => JSX.Element
 ) {

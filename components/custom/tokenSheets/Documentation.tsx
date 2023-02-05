@@ -1,11 +1,8 @@
 import React, { useEffect, useMemo, useState } from "react";
 
-// import metadata from '../styles/figmaTokensChakra/$metadata.json'
-// import lightTokens from '../styles/documentationTokens/light.json'
-// import darkTokens from '../styles/documentationTokens/dark.json'
-import metadata from "../pro-package/tokenStudioChakra/$metadata.json";
-import lightTokens from "../pro-package/documentationTokens/light.json";
-import darkTokens from "../pro-package/documentationTokens/dark.json";
+import metadata from "../../../theme/tokenStudioChakra/$metadata.json";
+import lightTokens from "../../../theme/documentationTokens/light.json";
+import darkTokens from "../../../theme/documentationTokens/dark.json";
 
 export default interface DocumentationComponentProps {
   value: string;

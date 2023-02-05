@@ -1,31 +1,31 @@
-import { IconProps } from "@chakra-ui/icons";
-import { ComponentMeta } from "@plasmicapp/host/registerComponent";
-import {
-  getComponentNameAndImportMeta,
-  getPlasmicComponentName,
-} from "../chakra/utils";
-export const laserIconMeta: ComponentMeta<IconProps> = {
-  ...getComponentNameAndImportMeta("LaserIcon"),
-  props: {
-    viewBox: {
-      type: "string",
-      defaultValue: "0 0 32 32",
+import { LaserIcon } from "./CustomIcons";
+import { registerComponent } from "@plasmicapp/host";
+
+export function registerLaserIcon() {
+  registerComponent(LaserIcon, {
+    name: "LaserIcon",
+    importPath: "@chakra-ui/react",
+    props: {
+      viewBox: {
+        type: "string",
+        defaultValue: "0 0 32 32",
+      },
+      boxSize: {
+        type: "string",
+        defaultValue: "1em",
+      },
+      color: {
+        type: "string",
+        defaultValue: "currentColor",
+      },
+      focusable: {
+        type: "boolean",
+        defaultValue: false,
+      },
+      role: {
+        type: "choice",
+        options: ["presentation", "img"],
+      },
     },
-    boxSize: {
-      type: "string",
-      defaultValue: "1em",
-    },
-    color: {
-      type: "string",
-      defaultValue: "currentColor",
-    },
-    focusable: {
-      type: "boolean",
-      defaultValue: false,
-    },
-    role: {
-      type: "choice",
-      options: ["presentation", "img"],
-    },
-  },
-};
+  });
+}
