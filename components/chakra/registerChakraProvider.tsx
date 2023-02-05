@@ -3,7 +3,7 @@ import { GlobalContextMeta } from "@plasmicapp/host";
 import registerGlobalContext from "@plasmicapp/host/registerGlobalContext";
 import { Registerable } from "./registerable";
 import { getComponentNameAndImportMeta } from "./utils";
-import { theme as proTheme } from "../../pro-package/src/index";
+import { theme as proTheme } from "../../theme/src/index";
 import { extendTheme, theme as baseTheme } from "@chakra-ui/react";
 
 // ******
