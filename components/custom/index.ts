@@ -20,7 +20,7 @@ export function registerAllCustom() {
     registerImageWithOverlay();
     registerButtonPreview();
     registerToggleColorMode();
-    // registerChakraDocs();
+    registerChakraDocs();
   
     //Custom icons
     registerGolfIcon();
