@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@chakra-ui/icon": "^3.0.15",
+    "@chakra-ui/icons": "^2.0.17",
     "@chakra-ui/react": "^2.4.9",
     "@chakra-ui/styled-system": "2.5.1",
     "@chakra-ui/theme-tools": "2.0.16",
@@ -18,6 +19,7 @@
     "@next/font": "13.1.6",
     "@plasmicapp/cli": "^0.1.205",
     "@plasmicapp/host": "^1.0.101",
+    "@plasmicapp/loader-nextjs": "^1.0.227",
     "@plasmicapp/react-web": "^0.2.151",
     "@types/node": "18.11.18",
     "@types/react": "18.0.27",

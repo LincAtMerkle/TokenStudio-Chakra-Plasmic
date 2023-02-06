@@ -29,12 +29,12 @@ export function registerImageWithOverlay() {
       children: {
         type: "slot",
         defaultValue: [
-          {
-            type: "component",
-            name: "Heading",
-            props: { size: "4xl" },
-            styles: { color: "white" },
-          },
+          // {
+          //   type: "component",
+          //   name: "Chakra-UI Heading",
+          //   props: { size: "4xl" },
+          //   styles: { color: "white" },
+          // },
         ],
       },
     },

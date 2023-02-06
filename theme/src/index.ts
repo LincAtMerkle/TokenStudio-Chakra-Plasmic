@@ -17,6 +17,5 @@ import * as foundations from './foundations'
 
 export const theme: Record<string, any> = {
   ...foundations,
-  // semanticTokens,
   components: { ...components }
 }

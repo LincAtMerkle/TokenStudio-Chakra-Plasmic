@@ -13,12 +13,14 @@ import { registerEscaperoomIcon } from "./icons/registerEscaperoomIcon";
 import { registerFunPassIcon } from "./icons/registerFunPassIcon";
 import { registerLocationPinIcon } from "./icons/registerLocationPinIcon";
 import { registerDartsIcon } from "./icons/registerDartsIcon";
+import { registerColorComponent } from "./tokenSheets/registerColorComponent";
+import { registerSizeComponent } from "./tokenSheets/registerSize";
 
 export function registerAllCustom() {
     registerImageWithOverlay();
     registerButtonPreview();
     registerToggleColorMode();
-    registerChakraDocs();
+    // registerChakraDocs();
   
     //Custom icons
     registerGolfIcon();
@@ -32,4 +34,8 @@ export function registerAllCustom() {
     registerFunPassIcon();
     registerLocationPinIcon();
     registerDartsIcon();
+    
+    //TokenSheets
+    registerColorComponent();
+    registerSizeComponent();
 }
