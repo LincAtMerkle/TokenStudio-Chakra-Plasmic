@@ -38,6 +38,7 @@ export function ChakraDocs(
             return data.map(
               ({ value, tokenName, variant, description }: any, i: any) => {
                 return (
+                  
                   <div key={`token-docs-${i}`} style={{ padding: 0 }}>
                     <DesignTokenItem
                       //@ts-ignore

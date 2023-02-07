@@ -29,9 +29,9 @@ export function Documentation({
         if (metadata.tokenSetOrder.includes(set)) {
           // console.log('****  HERE NOW  ***')
           const data = await import(
-            `../pro-package/tokenStudioChakra/${set}.json`
+            `../../../theme/tokenStudioChakra/${set}.json`
           );
-          // console.log("***DATA***:" + JSON.stringify(data));
+          console.log("***DATA***:" + JSON.stringify(data));
 
           setData(data.default);
         } else {
