@@ -10,12 +10,14 @@ export function registerChakraDocs() {
         type: "choice",
         options: ["light", "dark"],
         description: "Theme",
+        defaultValue: "light"  
       },
       path: {
         //@ts-ignore
         type: "string",
         title: "Tokens path",
         description: "Tokens path",
+        defaultValue: "btn.primary",
       },
       set: {
         type: "choice",
@@ -48,6 +50,7 @@ export function registerChakraDocs() {
         ],
         // title: "Token set",
         description: "Token set",
+        defaultValue: "core/color",
       },
     },
   });

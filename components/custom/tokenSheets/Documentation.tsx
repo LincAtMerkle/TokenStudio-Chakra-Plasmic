@@ -12,7 +12,7 @@ export default interface DocumentationComponentProps {
 
 export function Documentation({
   set = "core/color",
-  path = "",
+  path = "btn.primary",
   theme = "light",
   render,
 }: {
@@ -27,12 +27,9 @@ export function Documentation({
     async function loadData() {
       try {
         if (metadata.tokenSetOrder.includes(set)) {
-          // console.log('****  HERE NOW  ***')
           const data = await import(
             `../../../theme/tokenStudioChakra/${set}.json`
           );
-          console.log("***DATA***:" + JSON.stringify(data));
-
           setData(data.default);
         } else {
           setError(
@@ -46,10 +43,8 @@ export function Documentation({
     loadData();
   }, [set]);
 
-  ////******** MERGE THIS WITH.....
   const jsonData = useMemo(() => {
     if (data) {
-      // console.log("!!!!!!!! data: "+ JSON.stringify(data))
       const themeFile: Record<string, any> =
         theme === "light" ? lightTokens : darkTokens;
       if (path) {
@@ -72,30 +67,25 @@ export function Documentation({
     return {};
   }, [data, path, theme]);
 
-  //******** THIS ********
   const tokenData = useMemo(() => {
     const tokenData: DocumentationComponentProps[] = [];
     const getTokenData = (data: Record<string, any>, path = ""): any => {
       Object.keys(data).forEach((key) => {        
-        console.log(key, data[key]);
         let tokenPath = path;
         if ("value" in data[key]) {
-          // CAN"T GET IN HERE. BUT I ADDED value as a prop. 
-          // console log returns "data[key]: {}"
-          // It looks empty Why? 
-          console.log("!!!!!!!!!!!     HERE FINALLY    !!!!!!!!!!!")
+          console.log("tokenPath: "+ tokenPath);
+          console.log("key: "+ key);
           const tokenName = tokenPath ? `${tokenPath}.${key}` : key;
+          console.log("tokenName: "+ tokenName);
           const variant = data[key].type as string;
           const value = data[key].value as string;
-          // console.log("tokenName: "+tokenName)
-          // console.log("variant: "+variant)
-          // console.log("value: "+value)
           tokenData.push({
             variant,
             value,
             tokenName,
           });
         } else {
+          console.log("In esle statement");
           tokenPath = tokenPath ? `${tokenPath}.${key}` : `${key}`;
           return getTokenData(data[key], tokenPath);
         }

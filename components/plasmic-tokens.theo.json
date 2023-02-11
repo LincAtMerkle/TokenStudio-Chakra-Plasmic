@@ -1,5 +1,86 @@
 {
-  "props": [],
+  "props": [
+    {
+      "name": "Token from code",
+      "type": "color",
+      "value": "#F123CC",
+      "category": "color",
+      "meta": {
+        "projectId": "x7VZoMTkaRPxy26VUXVkvK",
+        "id": "D8PKwrTq04QY"
+      }
+    },
+    {
+      "name": "opa token",
+      "type": "opacity",
+      "value": "0.5",
+      "category": "opacity",
+      "meta": {
+        "projectId": "x7VZoMTkaRPxy26VUXVkvK",
+        "id": "vV4ywb430g6f"
+      }
+    },
+    {
+      "name": "st-dark color-fl-green-100",
+      "type": "color",
+      "value": "#f2ffdc",
+      "category": "color",
+      "meta": {
+        "projectId": "x7VZoMTkaRPxy26VUXVkvK",
+        "id": "1iI4tUDHfkhg"
+      }
+    },
+    {
+      "name": "st-dark color-fl-green-200",
+      "type": "color",
+      "value": "#e6ffb8",
+      "category": "color",
+      "meta": {
+        "projectId": "x7VZoMTkaRPxy26VUXVkvK",
+        "id": "KZPyj0LDBikz"
+      }
+    },
+    {
+      "name": "st-dark color-fl-green-50",
+      "type": "color",
+      "value": "#fcfff6",
+      "category": "color",
+      "meta": {
+        "projectId": "x7VZoMTkaRPxy26VUXVkvK",
+        "id": "abK2JGnAvBD4"
+      }
+    },
+    {
+      "name": "st-light color-fl-green-100",
+      "type": "color",
+      "value": "#f2ffdc",
+      "category": "color",
+      "meta": {
+        "projectId": "x7VZoMTkaRPxy26VUXVkvK",
+        "id": "z5ODnLX2_f1A"
+      }
+    },
+    {
+      "name": "st-light color-fl-green-200",
+      "type": "color",
+      "value": "#e6ffb8",
+      "category": "color",
+      "meta": {
+        "projectId": "x7VZoMTkaRPxy26VUXVkvK",
+        "id": "nyF_PTWW11GM"
+      }
+    },
+    {
+      "name": "st-light color-fl-green-50",
+      "type": "color",
+      "value": "#fcfff6",
+      "category": "color",
+      "meta": {
+        "projectId": "x7VZoMTkaRPxy26VUXVkvK",
+        "id": "j2jvfWavk4Wv"
+      }
+    }
+  ],
   "global": {
     "meta": {
       "source": "plasmic.app"

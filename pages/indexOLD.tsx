@@ -2,9 +2,9 @@
 // This file is owned by you, feel free to edit as you see fit.
 import * as React from "react";
 import * as ph from "@plasmicapp/host";
-import GlobalContextsProvider from "../components/plasmic/plasmic_poc/PlasmicGlobalContextsProvider";
-import { ScreenVariantProvider } from "../components/plasmic/plasmic_poc/PlasmicGlobalVariant__Screen";
-import { PlasmicHomepage } from "../components/plasmic/plasmic_poc/PlasmicHomepage";
+
+import { ScreenVariantProvider } from "../components/plasmic/blank_project/PlasmicGlobalVariant__Screen";
+import { PlasmicHomepage } from "../components/plasmic/blank_project/PlasmicHomepage";
 import { useRouter } from "next/router";
 
 function Homepage() {
@@ -25,14 +25,12 @@ function Homepage() {
   // Next.js Custom App component
   // (https://nextjs.org/docs/advanced-features/custom-app).
   return (
-    // <GlobalContextsProvider>
-      <ph.PageParamsProvider
-        params={useRouter()?.query}
-        query={useRouter()?.query}
-      >
-        <PlasmicHomepage />
-      </ph.PageParamsProvider>
-    // </GlobalContextsProvider>
+    <ph.PageParamsProvider
+      params={useRouter()?.query}
+      query={useRouter()?.query}
+    >
+      <PlasmicHomepage />
+    </ph.PageParamsProvider>
   );
 }
 

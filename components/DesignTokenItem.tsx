@@ -2,9 +2,9 @@
 // This file is owned by you, feel free to edit as you see fit.
 import * as React from "react";
 import {
-  PlasmicTokenSwatch,
-  DefaultTokenSwatchProps
-} from "../../plasmic/chakra_theme_example_protheme/PlasmicTokenSwatch";
+  PlasmicDesignTokenItem,
+  DefaultDesignTokenItemProps
+} from "./plasmic/plasmic_poc/PlasmicDesignTokenItem";
 import { HTMLElementRefOf } from "@plasmicapp/react-web";
 
 // Your component props start with props for variants and slots you defined
@@ -14,32 +14,35 @@ import { HTMLElementRefOf } from "@plasmicapp/react-web";
 // If you don't want to expose certain variants or slots as a prop, you can use
 // Omit to hide them:
 //
-// interface TokenSwatchProps extends Omit<DefaultTokenSwatchProps, "hideProps1"|"hideProp2"> {
+// interface DesignTokenItemProps extends Omit<DefaultDesignTokenItemProps, "hideProps1"|"hideProp2"> {
 //   // etc.
 // }
 //
-// You can also stop extending from DefaultTokenSwatchProps altogether and have
+// You can also stop extending from DefaultDesignTokenItemProps altogether and have
 // total control over the props for your component.
-export interface TokenSwatchProps extends DefaultTokenSwatchProps {}
+export interface DesignTokenItemProps extends DefaultDesignTokenItemProps {}
 
-function TokenSwatch_(props: TokenSwatchProps, ref: HTMLElementRefOf<"div">) {
-  // Use PlasmicTokenSwatch to render this component as it was
+function DesignTokenItem_(
+  props: DesignTokenItemProps,
+  ref: HTMLElementRefOf<"div">
+) {
+  // Use PlasmicDesignTokenItem to render this component as it was
   // designed in Plasmic, by activating the appropriate variants,
   // attaching the appropriate event handlers, etc.  You
   // can also install whatever React hooks you need here to manage state or
   // fetch data.
   //
-  // Props you can pass into PlasmicTokenSwatch are:
+  // Props you can pass into PlasmicDesignTokenItem are:
   // 1. Variants you want to activate,
   // 2. Contents for slots you want to fill,
   // 3. Overrides for any named node in the component to attach behavior and data,
   // 4. Props to set on the root node.
   //
-  // By default, we are just piping all TokenSwatchProps here, but feel free
+  // By default, we are just piping all DesignTokenItemProps here, but feel free
   // to do whatever works for you.
 
-  return <PlasmicTokenSwatch root={{ ref }} {...props} />;
+  return <PlasmicDesignTokenItem root={{ ref }} {...props} />;
 }
 
-const TokenSwatch = React.forwardRef(TokenSwatch_);
-export default TokenSwatch;
+const DesignTokenItem = React.forwardRef(DesignTokenItem_);
+export default DesignTokenItem;

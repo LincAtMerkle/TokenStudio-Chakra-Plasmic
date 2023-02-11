@@ -4,7 +4,8 @@ import * as React from "react";
 import {
   PlasmicDesignTokenItem,
   DefaultDesignTokenItemProps
-} from "../../plasmic/chakra_theme_example_protheme/PlasmicDesignTokenItem";
+} from "../../../components/plasmic/plasmic_poc/PlasmicDesignTokenItem";
+
 import { HTMLElementRefOf } from "@plasmicapp/react-web";
 
 // Your component props start with props for variants and slots you defined
@@ -41,7 +42,10 @@ function DesignTokenItem_(
   // By default, we are just piping all DesignTokenItemProps here, but feel free
   // to do whatever works for you.
 
-  return <PlasmicDesignTokenItem root={{ ref }} {...props} />;
+  return (<div>
+    <PlasmicDesignTokenItem root={{ ref }} {...props} />
+  </div>
+  );
 }
 
 const DesignTokenItem = React.forwardRef(DesignTokenItem_);
