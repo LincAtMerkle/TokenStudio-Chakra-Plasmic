@@ -10,9 +10,14 @@ export function SizeComponent({
   return (
     <div
       className={className}
-      style={{ height: size, width: size, backgroundColor: "black" }}
+      style={{ 
+        height: size, 
+        width: size, 
+        backgroundColor: "blue" 
+    }}
     >
       {" "}
     </div>
   );
+  console.log("sizeX: "+size)
 }
