@@ -49,7 +49,8 @@ export function ChakraDocs(
                       variant={variant}
                       radius={value}
                       fontSize={value} //parseInt(value)}
-                      color={value} 
+                      color={value}
+                      size={value}
                     />
                   </div>
                 );

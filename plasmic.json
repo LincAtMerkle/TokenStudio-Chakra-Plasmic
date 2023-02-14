@@ -538,12 +538,12 @@
         {
           "id": "us5TRabAx7",
           "name": "ColorComponent",
-          "componentImportPath": "./ColorComponent"
+          "componentImportPath": "../components/custom/tokenSheets/ColorComponent"
         },
         {
           "id": "IGo0AyXC0U",
           "name": "SizeComponent",
-          "componentImportPath": "./pages/SizeComponent"
+          "componentImportPath": "../components/custom/tokenSheets/SizeComponent"
         },
         {
           "id": "-RU2ZbsAIK",

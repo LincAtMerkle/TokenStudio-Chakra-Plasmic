@@ -34,8 +34,8 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-// import { ColorComponent } from "../../../ColorComponent"; // plasmic-import: us5TRabAx7/codeComponent
 import { ColorComponent } from "../../custom/tokenSheets/ColorComponent.tsx"; // plasmic-import: us5TRabAx7/codeComponent
+import { SizeComponent } from "../../custom/tokenSheets/SizeComponent.tsx"; // plasmic-import: us5TRabAx7/codeComponent
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -50,16 +50,12 @@ export const PlasmicDesignTokenItem__VariantProps =
 
 export type PlasmicDesignTokenItem__ArgsType = {
   color?: string;
-  colorSwatch?: string;
-  colorSwatch2?: string;
-  colorComponent?: string;
+  size?: string;
 };
 type ArgPropType = keyof PlasmicDesignTokenItem__ArgsType;
 export const PlasmicDesignTokenItem__ArgProps = new Array<ArgPropType>(
   "color",
-  "colorSwatch",
-  "colorSwatch2",
-  "colorComponent"
+  "size"
 );
 
 export type PlasmicDesignTokenItem__OverridesType = {
@@ -68,13 +64,12 @@ export type PlasmicDesignTokenItem__OverridesType = {
   textValue?: p.Flex<"div">;
   description?: p.Flex<"div">;
   color?: p.Flex<typeof ColorComponent>;
+  size?: p.Flex<typeof SizeComponent>;
 };
 
 export interface DefaultDesignTokenItemProps {
   color?: string;
-  colorSwatch?: string;
-  colorSwatch2?: string;
-  colorComponent?: string;
+  size?: string;
   className?: string;
 }
 
@@ -101,7 +96,7 @@ function PlasmicDesignTokenItem__RenderFunc(props: {
       Object.assign(
         {
           color: "blue" as const,
-          colorSwatch2: "red" as const
+          size: "24" as const
         },
         props.args
       ),
@@ -176,16 +171,24 @@ function PlasmicDesignTokenItem__RenderFunc(props: {
         className={classNames("__wab_instance", sty.color)}
         color={args.color}
       />
+
+      <SizeComponent
+        data-plasmic-name={"size"}
+        data-plasmic-override={overrides.size}
+        className={classNames("__wab_instance", sty.size)}
+        size={args.size}
+      />
     </div>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  root: ["root", "tokenName", "textValue", "description", "color"],
+  root: ["root", "tokenName", "textValue", "description", "color", "size"],
   tokenName: ["tokenName"],
   textValue: ["textValue"],
   description: ["description"],
-  color: ["color"]
+  color: ["color"],
+  size: ["size"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -196,6 +199,7 @@ type NodeDefaultElementType = {
   textValue: "div";
   description: "div";
   color: typeof ColorComponent;
+  size: typeof SizeComponent;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -263,6 +267,7 @@ export const PlasmicDesignTokenItem = Object.assign(
     textValue: makeNodeComponent("textValue"),
     description: makeNodeComponent("description"),
     color: makeNodeComponent("color"),
+    size: makeNodeComponent("size"),
 
     // Metadata about props expected for PlasmicDesignTokenItem
     internalVariantProps: PlasmicDesignTokenItem__VariantProps,

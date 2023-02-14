@@ -4,7 +4,7 @@ import { registerComponent } from "@plasmicapp/host";
 export function registerColorComponent() {
   registerComponent(ColorComponent, {
     name: "ColorComponent",
-    importPath: "./ColorComponent",
+    importPath: "./components/custom/tokenSheets/ColorComponent",
     props: {
       color: {
         type: "string",

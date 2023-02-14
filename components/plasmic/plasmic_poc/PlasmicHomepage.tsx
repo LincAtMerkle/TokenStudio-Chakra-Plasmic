@@ -36,6 +36,8 @@ import {
 } from "@plasmicapp/react-web";
 import { ChakraDocs } from "@chakra-ui/react"; // plasmic-import: -RU2ZbsAIK/codeComponent
 
+import { useScreenVariants as useScreenVariantscivdiBQpYpScy } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: CivdiBQpYpScy/globalVariant
+
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic_plasmic_poc.module.css"; // plasmic-import: x7VZoMTkaRPxy26VUXVkvK/projectcss
@@ -89,6 +91,10 @@ function PlasmicHomepage__RenderFunc(props: {
 
   const [$queries, setDollarQueries] = React.useState({});
 
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariantscivdiBQpYpScy()
+  });
+
   return (
     <React.Fragment>
       <Head></Head>
@@ -125,9 +131,21 @@ function PlasmicHomepage__RenderFunc(props: {
               data-plasmic-name={"chakraDocs"}
               data-plasmic-override={overrides.chakraDocs}
               className={classNames("__wab_instance", sty.chakraDocs)}
-              path={"btn.primary" as const}
-              set={"core/color" as const}
-              theme={"light" as const}
+              path={
+                hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? ("btn.primary" as const)
+                  : ("btn" as const)
+              }
+              set={
+                hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? ("core/color" as const)
+                  : ("core/size" as const)
+              }
+              theme={
+                hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? ("light" as const)
+                  : ("light" as const)
+              }
             />
           </p.Stack>
         </div>

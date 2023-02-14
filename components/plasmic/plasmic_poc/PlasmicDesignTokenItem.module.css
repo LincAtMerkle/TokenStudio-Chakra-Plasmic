@@ -31,3 +31,7 @@
   object-fit: cover;
   position: relative;
 }
+.size:global(.__wab_instance) {
+  object-fit: cover;
+  position: relative;
+}
