@@ -48,7 +48,7 @@
           "projectId": "x7VZoMTkaRPxy26VUXVkvK",
           "renderModuleFilePath": "plasmic/plasmic_poc/PlasmicDesignTokenItem.tsx",
           "importSpec": {
-            "modulePath": "DesignTokenItem.tsx"
+            "modulePath": "custom/tokenSheets/DesignTokenItem.tsx"
           },
           "cssFilePath": "plasmic/plasmic_poc/PlasmicDesignTokenItem.module.css",
           "scheme": "blackbox",
@@ -538,7 +538,7 @@
         {
           "id": "us5TRabAx7",
           "name": "ColorComponent",
-          "componentImportPath": "./pages/ColorComponent"
+          "componentImportPath": "./ColorComponent"
         },
         {
           "id": "IGo0AyXC0U",

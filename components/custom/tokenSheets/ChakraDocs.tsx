@@ -49,8 +49,7 @@ export function ChakraDocs(
                       variant={variant}
                       radius={value}
                       fontSize={value} //parseInt(value)}
-                      // colorSwatch={value} // 
-                      colorSwatch={{ props: { style: { backgroundColor: value } } }}
+                      color={value} 
                     />
                   </div>
                 );

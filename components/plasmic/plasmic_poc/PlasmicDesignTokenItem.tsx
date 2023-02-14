@@ -34,7 +34,7 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-// import { ColorComponent } from "../../../pages/ColorComponent"; // plasmic-import: us5TRabAx7/codeComponent
+// import { ColorComponent } from "../../../ColorComponent"; // plasmic-import: us5TRabAx7/codeComponent
 import { ColorComponent } from "../../custom/tokenSheets/ColorComponent.tsx"; // plasmic-import: us5TRabAx7/codeComponent
 
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -51,11 +51,15 @@ export const PlasmicDesignTokenItem__VariantProps =
 export type PlasmicDesignTokenItem__ArgsType = {
   color?: string;
   colorSwatch?: string;
+  colorSwatch2?: string;
+  colorComponent?: string;
 };
 type ArgPropType = keyof PlasmicDesignTokenItem__ArgsType;
 export const PlasmicDesignTokenItem__ArgProps = new Array<ArgPropType>(
   "color",
-  "colorSwatch"
+  "colorSwatch",
+  "colorSwatch2",
+  "colorComponent"
 );
 
 export type PlasmicDesignTokenItem__OverridesType = {
@@ -64,12 +68,13 @@ export type PlasmicDesignTokenItem__OverridesType = {
   textValue?: p.Flex<"div">;
   description?: p.Flex<"div">;
   color?: p.Flex<typeof ColorComponent>;
-  colorSwatch?: p.Flex<typeof ColorComponent>;
 };
 
 export interface DefaultDesignTokenItemProps {
   color?: string;
   colorSwatch?: string;
+  colorSwatch2?: string;
+  colorComponent?: string;
   className?: string;
 }
 
@@ -95,7 +100,8 @@ function PlasmicDesignTokenItem__RenderFunc(props: {
     () =>
       Object.assign(
         {
-          colorSwatch: "yellow" as const
+          color: "blue" as const,
+          colorSwatch2: "red" as const
         },
         props.args
       ),
@@ -168,7 +174,7 @@ function PlasmicDesignTokenItem__RenderFunc(props: {
         data-plasmic-name={"color"}
         data-plasmic-override={overrides.color}
         className={classNames("__wab_instance", sty.color)}
-        color={args.colorSwatch}
+        color={args.color}
       />
     </div>
   ) as React.ReactElement | null;
