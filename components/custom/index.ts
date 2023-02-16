@@ -13,8 +13,13 @@ import { registerEscaperoomIcon } from "./icons/registerEscaperoomIcon";
 import { registerFunPassIcon } from "./icons/registerFunPassIcon";
 import { registerLocationPinIcon } from "./icons/registerLocationPinIcon";
 import { registerDartsIcon } from "./icons/registerDartsIcon";
-import { registerColorComponent } from "./tokenSheets/registerColorComponent";
-import { registerSizeComponent } from "./tokenSheets/registerSize";
+import { registerSwatchColor } from "./tokenSheets/registerSwatchColor";
+import { registerSwatchSize } from "./tokenSheets/registerSwatchSize";
+import { registerSwatchBorder } from "./tokenSheets/registerSwatchBorder";
+import { registerSwatchOpacity } from "./tokenSheets/registerSwatchOpacity";
+import { registerSwatchSpace } from "./tokenSheets/registerSwatchSpace";
+import { registerSwatchTypography } from "./tokenSheets/registerSwatchTypography";
+
 
 export function registerAllCustom() {
     registerImageWithOverlay();
@@ -36,6 +41,10 @@ export function registerAllCustom() {
     registerDartsIcon();
     
     //TokenSheets
-    registerColorComponent();
-    registerSizeComponent();
+    registerSwatchColor();
+    registerSwatchSize();
+    registerSwatchBorder();
+    registerSwatchOpacity();
+    registerSwatchSpace();
+    registerSwatchTypography();
 }

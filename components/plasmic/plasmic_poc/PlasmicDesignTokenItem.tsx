@@ -34,8 +34,8 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import { ColorComponent } from "../../custom/tokenSheets/ColorComponent"; // plasmic-import: us5TRabAx7/codeComponent
-import { SizeComponent } from "../../custom/tokenSheets/SizeComponent"; // plasmic-import: IGo0AyXC0U/codeComponent
+import { ColorComponent } from "../../custom/tokenSheets/SwatchColor"; // plasmic-import: us5TRabAx7/codeComponent
+import { SizeComponent } from "../../custom/tokenSheets/SwatchSize"; // plasmic-import: IGo0AyXC0U/codeComponent
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 

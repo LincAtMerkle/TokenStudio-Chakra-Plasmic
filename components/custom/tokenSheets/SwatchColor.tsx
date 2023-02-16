@@ -1,6 +1,6 @@
 import * as React from "react";
 
-export function ColorComponent({
+export function SwatchColor({
   className,
   color,
 }: {

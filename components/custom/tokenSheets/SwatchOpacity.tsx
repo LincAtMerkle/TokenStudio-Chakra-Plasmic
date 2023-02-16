@@ -1,6 +1,6 @@
 import * as React from "react";
 
-export function SizeComponent({
+export function SwatchOpacity({
   className,
   size,
 }: {
@@ -19,5 +19,4 @@ export function SizeComponent({
       {" "}
     </div>
   );
-  console.log("sizeX: "+size)
 }
