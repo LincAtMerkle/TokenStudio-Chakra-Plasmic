@@ -49,8 +49,9 @@ export function ChakraDocs(
                       variant={variant}
                       radius={value}
                       fontSize={value} //parseInt(value)}
-                      color={value}
-                      size={value}
+                      // color={value}
+                      color ={set === "core/color" ? value : undefined}
+                      size ={set === "core/size" ? value : undefined}
                     />
                   </div>
                 );
