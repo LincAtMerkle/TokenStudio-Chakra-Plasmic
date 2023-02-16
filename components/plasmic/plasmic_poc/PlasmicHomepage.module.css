@@ -38,6 +38,199 @@
   > img {
   margin-top: 16px;
 }
+.chakraUiButton:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+.text__mEo2A {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  min-width: 0;
+}
+.chakraUiButtonGroup:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+.chakraUiButton__eh3Ic:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.text__g7Koo {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  min-width: 0;
+}
+.chakraUiButton__eiOj:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.text__knqRs {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  min-width: 0;
+}
+.chakraUiAvatar:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+.chakraUiAvatarBadge__zfJ3P:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.chakraUiAvatarGroup:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+.chakraUiAvatar__ea3K:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.chakraUiAvatarBadge___0VWmY:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.chakraUiAvatar__ttGzK:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.chakraUiAvatarBadge__he6A:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.chakraUiAvatar___15EdR:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.chakraUiAvatarBadge__jMDlb:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.chakraUiAvatar__eCeL:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.chakraUiAvatarBadge__i8VWn:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.chakraUiAvatar__sGBxT:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.chakraUiAvatarBadge__mZ3P:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.chakraUiAvatar__fzHwv:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.chakraUiAvatarBadge__qzQpP:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.chakraUiAvatar__eMmBg:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.chakraUiAvatarBadge__inejM:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.chakraUiSwitch:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+.chakraUiTabs:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+.chakraUiTabList__jh3T4:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.chakraUiTab__uzSwU:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.text__lctSf {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  min-width: 0;
+}
+.chakraUiTab__sAilL:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.text__xvaVy {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  min-width: 0;
+}
+.chakraUiTab__czOny:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.text__wW7Kv {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  min-width: 0;
+}
+.chakraUiTabPanels__nNvv2:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.chakraUiTabPanel__hq9UR:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.text__e6Tb2 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  min-width: 0;
+}
+.chakraUiTabPanel__nj0TW:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.text___3Ckmw {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  min-width: 0;
+}
+.chakraUiTabPanel__zrDMa:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.text__s1GPf {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  min-width: 0;
+}
 .chakraDocs:global(.__wab_instance) {
   max-width: 100%;
   object-fit: cover;

@@ -34,6 +34,17 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
+import { Button } from "@chakra-ui/react"; // plasmic-import: QLxDRPfRLT0/codeComponent
+import { ButtonGroup } from "@chakra-ui/react"; // plasmic-import: 07Nz_3PLqjQ/codeComponent
+import { Avatar } from "@chakra-ui/react"; // plasmic-import: SOiEXvuZzHy/codeComponent
+import { AvatarBadge } from "@chakra-ui/react"; // plasmic-import: ibwSgurh65i/codeComponent
+import { AvatarGroup } from "@chakra-ui/react"; // plasmic-import: G2htcYMYFuu/codeComponent
+import { Switch } from "@chakra-ui/react"; // plasmic-import: lHMqEaS68Dp/codeComponent
+import { Tabs } from "@chakra-ui/react"; // plasmic-import: DrDQORZfUD1/codeComponent
+import { TabList } from "@chakra-ui/react"; // plasmic-import: 9DHUyZ7WN1a/codeComponent
+import { Tab } from "@chakra-ui/react"; // plasmic-import: IJm-fxQhOve/codeComponent
+import { TabPanels } from "@chakra-ui/react"; // plasmic-import: me-AWOzxEGa/codeComponent
+import { TabPanel } from "@chakra-ui/react"; // plasmic-import: -QSeg2m84mV/codeComponent
 import { ChakraDocs } from "@chakra-ui/react"; // plasmic-import: -RU2ZbsAIK/codeComponent
 
 import { useScreenVariants as useScreenVariantscivdiBQpYpScy } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: CivdiBQpYpScy/globalVariant
@@ -55,6 +66,12 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
   section?: p.Flex<"section">;
+  chakraUiButton?: p.Flex<typeof Button>;
+  chakraUiButtonGroup?: p.Flex<typeof ButtonGroup>;
+  chakraUiAvatar?: p.Flex<typeof Avatar>;
+  chakraUiAvatarGroup?: p.Flex<typeof AvatarGroup>;
+  chakraUiSwitch?: p.Flex<typeof Switch>;
+  chakraUiTabs?: p.Flex<typeof Tabs>;
   chakraDocs?: p.Flex<typeof ChakraDocs>;
 };
 
@@ -127,15 +144,360 @@ function PlasmicHomepage__RenderFunc(props: {
             hasGap={true}
             className={classNames(projectcss.all, sty.section)}
           >
+            <Button
+              data-plasmic-name={"chakraUiButton"}
+              data-plasmic-override={overrides.chakraUiButton}
+              className={classNames("__wab_instance", sty.chakraUiButton)}
+              variant={"primary" as const}
+            >
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__mEo2A
+                )}
+              >
+                {"Button"}
+              </div>
+            </Button>
+
+            <ButtonGroup
+              data-plasmic-name={"chakraUiButtonGroup"}
+              data-plasmic-override={overrides.chakraUiButtonGroup}
+              className={classNames("__wab_instance", sty.chakraUiButtonGroup)}
+              isAttached={false}
+              isDisabled={false}
+              size={"md" as const}
+              spacing={"0.5rem" as const}
+            >
+              <Button
+                className={classNames(
+                  "__wab_instance",
+                  sty.chakraUiButton__eh3Ic
+                )}
+                variant={"primary" as const}
+              >
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__g7Koo
+                  )}
+                >
+                  {"Button 1"}
+                </div>
+              </Button>
+
+              <Button
+                className={classNames(
+                  "__wab_instance",
+                  sty.chakraUiButton__eiOj
+                )}
+                variant={"primary" as const}
+              >
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__knqRs
+                  )}
+                >
+                  {"Button 2"}
+                </div>
+              </Button>
+            </ButtonGroup>
+
+            <Avatar
+              data-plasmic-name={"chakraUiAvatar"}
+              data-plasmic-override={overrides.chakraUiAvatar}
+              className={classNames("__wab_instance", sty.chakraUiAvatar)}
+              name={"Kola Tioluwani" as const}
+              src={"https://bit.ly/dan-abramov" as const}
+            >
+              <AvatarBadge
+                bg={"green.500" as const}
+                boxSize={"1.25em" as const}
+                className={classNames(
+                  "__wab_instance",
+                  sty.chakraUiAvatarBadge__zfJ3P
+                )}
+              />
+            </Avatar>
+
+            <AvatarGroup
+              data-plasmic-name={"chakraUiAvatarGroup"}
+              data-plasmic-override={overrides.chakraUiAvatarGroup}
+              className={classNames("__wab_instance", sty.chakraUiAvatarGroup)}
+              spacing={"-0.75rem" as const}
+            >
+              <Avatar
+                className={classNames(
+                  "__wab_instance",
+                  sty.chakraUiAvatar__ea3K
+                )}
+                name={"Dan Abrahmov" as const}
+                src={"https://bit.ly/dan-abramov" as const}
+              >
+                <AvatarBadge
+                  bg={"green.500" as const}
+                  boxSize={"1.25em" as const}
+                  className={classNames(
+                    "__wab_instance",
+                    sty.chakraUiAvatarBadge___0VWmY
+                  )}
+                />
+              </Avatar>
+
+              <Avatar
+                className={classNames(
+                  "__wab_instance",
+                  sty.chakraUiAvatar__ttGzK
+                )}
+                name={"Kola Tioluwani" as const}
+                src={"https://bit.ly/tioluwani-kolawole" as const}
+              >
+                <AvatarBadge
+                  bg={"green.500" as const}
+                  boxSize={"1.25em" as const}
+                  className={classNames(
+                    "__wab_instance",
+                    sty.chakraUiAvatarBadge__he6A
+                  )}
+                />
+              </Avatar>
+
+              <Avatar
+                className={classNames(
+                  "__wab_instance",
+                  sty.chakraUiAvatar___15EdR
+                )}
+                name={"Kent Dodds" as const}
+                src={"https://bit.ly/kent-c-dodds" as const}
+              >
+                <AvatarBadge
+                  bg={"green.500" as const}
+                  boxSize={"1.25em" as const}
+                  className={classNames(
+                    "__wab_instance",
+                    sty.chakraUiAvatarBadge__jMDlb
+                  )}
+                />
+              </Avatar>
+
+              <Avatar
+                className={classNames(
+                  "__wab_instance",
+                  sty.chakraUiAvatar__eCeL
+                )}
+                name={"Ryan Florence" as const}
+                src={"https://bit.ly/ryan-florence" as const}
+              >
+                <AvatarBadge
+                  bg={"green.500" as const}
+                  boxSize={"1.25em" as const}
+                  className={classNames(
+                    "__wab_instance",
+                    sty.chakraUiAvatarBadge__i8VWn
+                  )}
+                />
+              </Avatar>
+
+              <Avatar
+                className={classNames(
+                  "__wab_instance",
+                  sty.chakraUiAvatar__sGBxT
+                )}
+                name={"Prosper Otemuyiwa" as const}
+                src={"https://bit.ly/prosper-baba" as const}
+              >
+                <AvatarBadge
+                  bg={"green.500" as const}
+                  boxSize={"1.25em" as const}
+                  className={classNames(
+                    "__wab_instance",
+                    sty.chakraUiAvatarBadge__mZ3P
+                  )}
+                />
+              </Avatar>
+
+              <Avatar
+                className={classNames(
+                  "__wab_instance",
+                  sty.chakraUiAvatar__fzHwv
+                )}
+                name={"Christian Nwamba" as const}
+                src={"https://bit.ly/code-beast" as const}
+              >
+                <AvatarBadge
+                  bg={"green.500" as const}
+                  boxSize={"1.25em" as const}
+                  className={classNames(
+                    "__wab_instance",
+                    sty.chakraUiAvatarBadge__qzQpP
+                  )}
+                />
+              </Avatar>
+
+              <Avatar
+                className={classNames(
+                  "__wab_instance",
+                  sty.chakraUiAvatar__eMmBg
+                )}
+                name={"Segun Adebayo" as const}
+                src={"https://bit.ly/sage-adebayo" as const}
+              >
+                <AvatarBadge
+                  bg={"green.500" as const}
+                  boxSize={"1.25em" as const}
+                  className={classNames(
+                    "__wab_instance",
+                    sty.chakraUiAvatarBadge__inejM
+                  )}
+                />
+              </Avatar>
+            </AvatarGroup>
+
+            <Switch
+              data-plasmic-name={"chakraUiSwitch"}
+              data-plasmic-override={overrides.chakraUiSwitch}
+              className={classNames("__wab_instance", sty.chakraUiSwitch)}
+              colorScheme={"blue" as const}
+              isChecked={true}
+              isDisabled={false}
+              isInvalid={false}
+              isRequired={false}
+              size={"lg" as const}
+              spacing={"0.5rem" as const}
+            />
+
+            <Tabs
+              data-plasmic-name={"chakraUiTabs"}
+              data-plasmic-override={overrides.chakraUiTabs}
+              className={classNames("__wab_instance", sty.chakraUiTabs)}
+              variant={"line" as const}
+            >
+              <TabList
+                className={classNames(
+                  "__wab_instance",
+                  sty.chakraUiTabList__jh3T4
+                )}
+              >
+                <Tab
+                  className={classNames(
+                    "__wab_instance",
+                    sty.chakraUiTab__uzSwU
+                  )}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__lctSf
+                    )}
+                  >
+                    {"Tab 1"}
+                  </div>
+                </Tab>
+
+                <Tab
+                  className={classNames(
+                    "__wab_instance",
+                    sty.chakraUiTab__sAilL
+                  )}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__xvaVy
+                    )}
+                  >
+                    {"Tab 2"}
+                  </div>
+                </Tab>
+
+                <Tab
+                  className={classNames(
+                    "__wab_instance",
+                    sty.chakraUiTab__czOny
+                  )}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__wW7Kv
+                    )}
+                  >
+                    {"Tab 3"}
+                  </div>
+                </Tab>
+              </TabList>
+
+              <TabPanels
+                className={classNames(
+                  "__wab_instance",
+                  sty.chakraUiTabPanels__nNvv2
+                )}
+              >
+                <TabPanel
+                  className={classNames(
+                    "__wab_instance",
+                    sty.chakraUiTabPanel__hq9UR
+                  )}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__e6Tb2
+                    )}
+                  >
+                    {"Tab 1's Panel Content"}
+                  </div>
+                </TabPanel>
+
+                <TabPanel
+                  className={classNames(
+                    "__wab_instance",
+                    sty.chakraUiTabPanel__nj0TW
+                  )}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___3Ckmw
+                    )}
+                  >
+                    {"Tab 2's Panel Content"}
+                  </div>
+                </TabPanel>
+
+                <TabPanel
+                  className={classNames(
+                    "__wab_instance",
+                    sty.chakraUiTabPanel__zrDMa
+                  )}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__s1GPf
+                    )}
+                  >
+                    {"Tab 3's Panel Content"}
+                  </div>
+                </TabPanel>
+              </TabPanels>
+            </Tabs>
+
             <ChakraDocs
               data-plasmic-name={"chakraDocs"}
               data-plasmic-override={overrides.chakraDocs}
               className={classNames("__wab_instance", sty.chakraDocs)}
-              path={
-                hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? ("btn.primary" as const)
-                  : ("btn" as const)
-              }
+              path={"btn" as const}
               set={
                 hasVariant(globalVariants, "screen", "mobileOnly")
                   ? ("core/color" as const)
@@ -155,8 +517,33 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "section", "chakraDocs"],
-  section: ["section", "chakraDocs"],
+  root: [
+    "root",
+    "section",
+    "chakraUiButton",
+    "chakraUiButtonGroup",
+    "chakraUiAvatar",
+    "chakraUiAvatarGroup",
+    "chakraUiSwitch",
+    "chakraUiTabs",
+    "chakraDocs"
+  ],
+  section: [
+    "section",
+    "chakraUiButton",
+    "chakraUiButtonGroup",
+    "chakraUiAvatar",
+    "chakraUiAvatarGroup",
+    "chakraUiSwitch",
+    "chakraUiTabs",
+    "chakraDocs"
+  ],
+  chakraUiButton: ["chakraUiButton"],
+  chakraUiButtonGroup: ["chakraUiButtonGroup"],
+  chakraUiAvatar: ["chakraUiAvatar"],
+  chakraUiAvatarGroup: ["chakraUiAvatarGroup"],
+  chakraUiSwitch: ["chakraUiSwitch"],
+  chakraUiTabs: ["chakraUiTabs"],
   chakraDocs: ["chakraDocs"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -165,6 +552,12 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   section: "section";
+  chakraUiButton: typeof Button;
+  chakraUiButtonGroup: typeof ButtonGroup;
+  chakraUiAvatar: typeof Avatar;
+  chakraUiAvatarGroup: typeof AvatarGroup;
+  chakraUiSwitch: typeof Switch;
+  chakraUiTabs: typeof Tabs;
   chakraDocs: typeof ChakraDocs;
 };
 
@@ -230,6 +623,12 @@ export const PlasmicHomepage = Object.assign(
   {
     // Helper components rendering sub-elements
     section: makeNodeComponent("section"),
+    chakraUiButton: makeNodeComponent("chakraUiButton"),
+    chakraUiButtonGroup: makeNodeComponent("chakraUiButtonGroup"),
+    chakraUiAvatar: makeNodeComponent("chakraUiAvatar"),
+    chakraUiAvatarGroup: makeNodeComponent("chakraUiAvatarGroup"),
+    chakraUiSwitch: makeNodeComponent("chakraUiSwitch"),
+    chakraUiTabs: makeNodeComponent("chakraUiTabs"),
     chakraDocs: makeNodeComponent("chakraDocs"),
 
     // Metadata about props expected for PlasmicHomepage

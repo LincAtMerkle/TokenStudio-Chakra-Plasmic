@@ -30,8 +30,13 @@
   max-width: 100%;
   object-fit: cover;
   position: relative;
+  border-radius: 8px;
+  border-width: 1px;
 }
 .size:global(.__wab_instance) {
   object-fit: cover;
   position: relative;
+  width: 10px;
+  height: 10px;
+  flex-shrink: 0;
 }

@@ -34,8 +34,8 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import { ColorComponent } from "../../custom/tokenSheets/ColorComponent.tsx"; // plasmic-import: us5TRabAx7/codeComponent
-import { SizeComponent } from "../../custom/tokenSheets/SizeComponent.tsx"; // plasmic-import: us5TRabAx7/codeComponent
+import { ColorComponent } from "../../custom/tokenSheets/ColorComponent"; // plasmic-import: us5TRabAx7/codeComponent
+import { SizeComponent } from "../../custom/tokenSheets/SizeComponent"; // plasmic-import: IGo0AyXC0U/codeComponent
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -95,8 +95,8 @@ function PlasmicDesignTokenItem__RenderFunc(props: {
     () =>
       Object.assign(
         {
-          color: "blue" as const,
-          size: "24" as const
+          color: "red" as const,
+          size: "50" as const
         },
         props.args
       ),
@@ -165,25 +165,40 @@ function PlasmicDesignTokenItem__RenderFunc(props: {
         {"description"}
       </div>
 
-      {args.color ? (
-          <ColorComponent
-            data-plasmic-name={"color"}
-            data-plasmic-override={overrides.color}
-            className={classNames("__wab_instance", sty.color)}
-            color={args.color}
-          />
-      ) : ('')}
-
-      {args.size ? (
-      
-      <SizeComponent
-        data-plasmic-name={"size"}
-        data-plasmic-override={overrides.size}
-        className={classNames("__wab_instance", sty.size)}
-        size={args.size}
-      />
-      ) : ('')}
-
+      {(() => {
+        try {
+          return $props.color;
+        } catch (e) {
+          if (e instanceof TypeError) {
+            return true;
+          }
+          throw e;
+        }
+      })() ? (
+        <ColorComponent
+          data-plasmic-name={"color"}
+          data-plasmic-override={overrides.color}
+          className={classNames("__wab_instance", sty.color)}
+          color={args.color}
+        />
+      ) : null}
+      {(() => {
+        try {
+          return $props.size;
+        } catch (e) {
+          if (e instanceof TypeError) {
+            return true;
+          }
+          throw e;
+        }
+      })() ? (
+        <SizeComponent
+          data-plasmic-name={"size"}
+          data-plasmic-override={overrides.size}
+          className={classNames("__wab_instance", sty.size)}
+          size={args.size}
+        />
+      ) : null}
     </div>
   ) as React.ReactElement | null;
 }
