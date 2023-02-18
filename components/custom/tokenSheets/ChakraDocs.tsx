@@ -35,23 +35,29 @@ export function ChakraDocs(
           path={path}
           set={set}
           render={(data) => {
+            console.log("data: "+JSON.stringify(data));
             return data.map(
               ({ value, tokenName, variant, description }: any, i: any) => {
-                return (
-                  
+                return (      
+
                   <div key={`token-docs-${i}`} style={{ padding: 0 }}>
                     <DesignTokenItem
                       //@ts-ignore
-                      description={description}
-                      textValue={value}
-                      tokenName={tokenName}
                       value={value}
+                      tokenName={tokenName}
                       variant={variant}
-                      radius={value}
-                      fontSize={value} //parseInt(value)}
-                      // color={value}
+                      description={description}
+                      //
+                      //
+                      textValue={value} // do I need this?
+                      // radius={value}
+                      // fontSize={value} //parseInt(value)}
                       color ={set === "core/color" ? value : undefined}
                       size ={set === "core/size" ? value : undefined}
+                      border ={set === "core/border" ? value : undefined}
+                      opacity ={set === "core/opacity" ? value : undefined}
+                      space ={set === "core/space" ? value : undefined}
+                      typography ={set === "core/typography" ? value : undefined}
                     />
                   </div>
                 );

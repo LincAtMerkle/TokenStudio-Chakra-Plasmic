@@ -2,17 +2,17 @@ import * as React from "react";
 
 export function SwatchSpace({
   className,
-  size,
+  space,
 }: {
   className: string;
-  size: string;
+  space: string;
 }) {
   return (
     <div
       className={className}
       style={{ 
-        height: size, 
-        width: size, 
+        height: space, 
+        width: space, 
         backgroundColor: "blue" 
     }}
     >

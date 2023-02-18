@@ -6,7 +6,7 @@ export function registerSwatchBorder() {
     name: "SwatchBorder",
     importPath: "./components/custom/tokenSheets/SwatchBorder",
     props: {
-      Border: {
+      border: {
         type: "string",
         defaultValue: "red",
       },

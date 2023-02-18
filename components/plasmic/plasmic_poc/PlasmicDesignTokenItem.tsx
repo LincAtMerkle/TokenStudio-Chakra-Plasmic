@@ -34,8 +34,12 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import { ColorComponent } from "../../custom/tokenSheets/SwatchColor"; // plasmic-import: us5TRabAx7/codeComponent
-import { SizeComponent } from "../../custom/tokenSheets/SwatchSize"; // plasmic-import: IGo0AyXC0U/codeComponent
+import { SwatchColor } from "../../custom/tokenSheets/SwatchColor"; // plasmic-import: SEDfm__PT6/codeComponent
+import { SwatchSize } from "../../custom/tokenSheets/SwatchSize"; // plasmic-import: E9jhQywV0S/codeComponent
+import { SwatchBorder } from "../../custom/tokenSheets/SwatchBorder"; // plasmic-import: TFbSCT-XAW/codeComponent
+import { SwatchOpacity } from "../../custom/tokenSheets/SwatchOpacity"; // plasmic-import: qnNAuLIsMl/codeComponent
+import { SwatchSpace } from "../../custom/tokenSheets/SwatchSpace"; // plasmic-import: Ozn7brjgB2/codeComponent
+import { SwatchTypography } from "../../custom/tokenSheets/SwatchTypography"; // plasmic-import: UP37tNwri_-/codeComponent
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -49,13 +53,21 @@ export const PlasmicDesignTokenItem__VariantProps =
   new Array<VariantPropType>();
 
 export type PlasmicDesignTokenItem__ArgsType = {
-  color?: string;
   size?: string;
+  color?: string;
+  border?: string;
+  opacity?: string;
+  space?: string;
+  typography?: string;
 };
 type ArgPropType = keyof PlasmicDesignTokenItem__ArgsType;
 export const PlasmicDesignTokenItem__ArgProps = new Array<ArgPropType>(
+  "size",
   "color",
-  "size"
+  "border",
+  "opacity",
+  "space",
+  "typography"
 );
 
 export type PlasmicDesignTokenItem__OverridesType = {
@@ -63,13 +75,21 @@ export type PlasmicDesignTokenItem__OverridesType = {
   tokenName?: p.Flex<"div">;
   textValue?: p.Flex<"div">;
   description?: p.Flex<"div">;
-  color?: p.Flex<typeof ColorComponent>;
-  size?: p.Flex<typeof SizeComponent>;
+  color?: p.Flex<typeof SwatchColor>;
+  size?: p.Flex<typeof SwatchSize>;
+  border?: p.Flex<typeof SwatchBorder>;
+  opacity?: p.Flex<typeof SwatchOpacity>;
+  space?: p.Flex<typeof SwatchSpace>;
+  typography?: p.Flex<typeof SwatchTypography>;
 };
 
 export interface DefaultDesignTokenItemProps {
-  color?: string;
   size?: string;
+  color?: string;
+  border?: string;
+  opacity?: string;
+  space?: string;
+  typography?: string;
   className?: string;
 }
 
@@ -95,8 +115,12 @@ function PlasmicDesignTokenItem__RenderFunc(props: {
     () =>
       Object.assign(
         {
-          color: "red" as const,
-          size: "50" as const
+          size: "20" as const,
+          color: "lime" as const,
+          border: "1" as const,
+          opacity: "0.5" as const,
+          space: "10" as const,
+          typography: "inter" as const
         },
         props.args
       ),
@@ -175,7 +199,7 @@ function PlasmicDesignTokenItem__RenderFunc(props: {
           throw e;
         }
       })() ? (
-        <ColorComponent
+        <SwatchColor
           data-plasmic-name={"color"}
           data-plasmic-override={overrides.color}
           className={classNames("__wab_instance", sty.color)}
@@ -192,11 +216,79 @@ function PlasmicDesignTokenItem__RenderFunc(props: {
           throw e;
         }
       })() ? (
-        <SizeComponent
+        <SwatchSize
           data-plasmic-name={"size"}
           data-plasmic-override={overrides.size}
           className={classNames("__wab_instance", sty.size)}
           size={args.size}
+        />
+      ) : null}
+      {(() => {
+        try {
+          return $props.border;
+        } catch (e) {
+          if (e instanceof TypeError) {
+            return true;
+          }
+          throw e;
+        }
+      })() ? (
+        <SwatchBorder
+          data-plasmic-name={"border"}
+          data-plasmic-override={overrides.border}
+          border={args.border}
+          className={classNames("__wab_instance", sty.border)}
+        />
+      ) : null}
+      {(() => {
+        try {
+          return $props.opacity;
+        } catch (e) {
+          if (e instanceof TypeError) {
+            return true;
+          }
+          throw e;
+        }
+      })() ? (
+        <SwatchOpacity
+          data-plasmic-name={"opacity"}
+          data-plasmic-override={overrides.opacity}
+          className={classNames("__wab_instance", sty.opacity)}
+          opacity={args.opacity}
+        />
+      ) : null}
+      {(() => {
+        try {
+          return $props.space;
+        } catch (e) {
+          if (e instanceof TypeError) {
+            return true;
+          }
+          throw e;
+        }
+      })() ? (
+        <SwatchSpace
+          data-plasmic-name={"space"}
+          data-plasmic-override={overrides.space}
+          className={classNames("__wab_instance", sty.space)}
+          space={args.space}
+        />
+      ) : null}
+      {(() => {
+        try {
+          return $props.typography;
+        } catch (e) {
+          if (e instanceof TypeError) {
+            return true;
+          }
+          throw e;
+        }
+      })() ? (
+        <SwatchTypography
+          data-plasmic-name={"typography"}
+          data-plasmic-override={overrides.typography}
+          className={classNames("__wab_instance", sty.typography)}
+          typography={"16px" as const}
         />
       ) : null}
     </div>
@@ -204,12 +296,27 @@ function PlasmicDesignTokenItem__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "tokenName", "textValue", "description", "color", "size"],
+  root: [
+    "root",
+    "tokenName",
+    "textValue",
+    "description",
+    "color",
+    "size",
+    "border",
+    "opacity",
+    "space",
+    "typography"
+  ],
   tokenName: ["tokenName"],
   textValue: ["textValue"],
   description: ["description"],
   color: ["color"],
-  size: ["size"]
+  size: ["size"],
+  border: ["border"],
+  opacity: ["opacity"],
+  space: ["space"],
+  typography: ["typography"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -219,8 +326,12 @@ type NodeDefaultElementType = {
   tokenName: "div";
   textValue: "div";
   description: "div";
-  color: typeof ColorComponent;
-  size: typeof SizeComponent;
+  color: typeof SwatchColor;
+  size: typeof SwatchSize;
+  border: typeof SwatchBorder;
+  opacity: typeof SwatchOpacity;
+  space: typeof SwatchSpace;
+  typography: typeof SwatchTypography;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -289,6 +400,10 @@ export const PlasmicDesignTokenItem = Object.assign(
     description: makeNodeComponent("description"),
     color: makeNodeComponent("color"),
     size: makeNodeComponent("size"),
+    border: makeNodeComponent("border"),
+    opacity: makeNodeComponent("opacity"),
+    space: makeNodeComponent("space"),
+    typography: makeNodeComponent("typography"),
 
     // Metadata about props expected for PlasmicDesignTokenItem
     internalVariantProps: PlasmicDesignTokenItem__VariantProps,

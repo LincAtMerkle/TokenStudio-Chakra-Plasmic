@@ -11,7 +11,7 @@ export default interface DocumentationComponentProps {
 }
 
 export function Documentation({
-  set = "core/color",
+  set = "core/colorx",
   path = "btn.primary",
   theme = "light",
   render,
@@ -72,11 +72,12 @@ export function Documentation({
     const getTokenData = (data: Record<string, any>, path = ""): any => {
       Object.keys(data).forEach((key) => {        
         let tokenPath = path;
+        console.log("***key: "+ key);
         if ("value" in data[key]) {
-          console.log("tokenPath: "+ tokenPath);
-          console.log("key: "+ key);
+          // console.log("tokenPath: "+ tokenPath);
+          // console.log("key: "+ key);
           const tokenName = tokenPath ? `${tokenPath}.${key}` : key;
-          console.log("tokenName: "+ tokenName);
+          // console.log("tokenName: "+ tokenName);
           const variant = data[key].type as string;
           const value = data[key].value as string;
           tokenData.push({
@@ -85,7 +86,7 @@ export function Documentation({
             tokenName,
           });
         } else {
-          console.log("In esle statement");
+          // console.log("In esle statement");
           tokenPath = tokenPath ? `${tokenPath}.${key}` : `${key}`;
           return getTokenData(data[key], tokenPath);
         }

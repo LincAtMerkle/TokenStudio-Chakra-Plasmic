@@ -6,9 +6,9 @@ export function registerSwatchSpace() {
     name: "SwatchSpace",
     importPath: "./components/custom/tokenSheets/SwatchSpace",
     props: {
-      Space: {
+      space: {
         type: "string",
-        defaultValue: "red",
+        defaultValue: "10",
       },
     },
   });

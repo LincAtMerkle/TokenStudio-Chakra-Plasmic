@@ -7,17 +7,17 @@ export function SwatchSize({
   className: string;
   size: string;
 }) {
+  console.log("!!!!size: "+size)
   return (
     <div
       className={className}
       style={{ 
         height: size, 
         width: size, 
-        backgroundColor: "blue" 
+        backgroundColor: "yellow" 
     }}
     >
       {" "}
     </div>
   );
-  console.log("sizeX: "+size)
 }

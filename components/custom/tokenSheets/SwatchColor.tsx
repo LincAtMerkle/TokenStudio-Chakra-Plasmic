@@ -7,6 +7,7 @@ export function SwatchColor({
   className: string;
   color: string;
 }) {
+  console.log("!!!!color: "+color)
   return (
     <div
       className={className}

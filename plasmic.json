@@ -536,19 +536,39 @@
           "componentImportPath": "@chakra-ui/react"
         },
         {
-          "id": "us5TRabAx7",
-          "name": "ColorComponent",
-          "componentImportPath": "./components/custom/tokenSheets/ColorComponent"
-        },
-        {
-          "id": "IGo0AyXC0U",
-          "name": "SizeComponent",
-          "componentImportPath": "./components/custom/tokenSheets/SizeComponent"
-        },
-        {
           "id": "-RU2ZbsAIK",
           "name": "ChakraDocs",
           "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "SEDfm__PT6",
+          "name": "SwatchColor",
+          "componentImportPath": "./components/custom/tokenSheets/SwatchColor"
+        },
+        {
+          "id": "E9jhQywV0S",
+          "name": "SwatchSize",
+          "componentImportPath": "./components/custom/tokenSheets/SwatchSize"
+        },
+        {
+          "id": "TFbSCT-XAW",
+          "name": "SwatchBorder",
+          "componentImportPath": "./components/custom/tokenSheets/SwatchBorder"
+        },
+        {
+          "id": "qnNAuLIsMl",
+          "name": "SwatchOpacity",
+          "componentImportPath": "./components/custom/tokenSheets/SwatchOpacity"
+        },
+        {
+          "id": "Ozn7brjgB2",
+          "name": "SwatchSpace",
+          "componentImportPath": "./components/custom/tokenSheets/SwatchSpace"
+        },
+        {
+          "id": "UP37tNwri_-",
+          "name": "SwatchTypography",
+          "componentImportPath": "./components/custom/tokenSheets/SwatchTypography"
         }
       ]
     }

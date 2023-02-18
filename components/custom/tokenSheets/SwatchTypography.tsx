@@ -2,21 +2,20 @@ import * as React from "react";
 
 export function SwatchTypography({
   className,
-  size,
+  typography,
 }: {
   className: string;
-  size: string;
+  typography: string;
 }) {
+  console.log("!!!!typography: "+typography)
   return (
-    <div
+    <h1
       className={className}
       style={{ 
-        height: size, 
-        width: size, 
-        backgroundColor: "blue" 
+        fontFamily: typography
     }}
     >
-      {" "}
-    </div>
+      Typography
+    </h1>
   );
 }

@@ -6,7 +6,7 @@ export function registerSwatchTypography() {
     name: "SwatchTypography",
     importPath: "./components/custom/tokenSheets/SwatchTypography",
     props: {
-      radius: {
+      typography: {
         type: "string",
         defaultValue: "16px",
       },

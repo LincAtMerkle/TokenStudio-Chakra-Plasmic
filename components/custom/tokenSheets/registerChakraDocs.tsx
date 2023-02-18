@@ -1,5 +1,6 @@
 import { ChakraDocs } from "./ChakraDocs";
 import {registerComponent } from "@plasmicapp/host";
+import {tokenSetOrder} from "../../../theme/tokenStudioChakra/$metadata.json"
 
 export function registerChakraDocs() {
   registerComponent(ChakraDocs, {
@@ -21,34 +22,7 @@ export function registerChakraDocs() {
       },
       set: {
         type: "choice",
-        // options: tokenSetOrder,
-        options: [
-          "core/border",
-          "core/color",
-          "core/opacity",
-          "core/size",
-          "core/space",
-          "core/typography",
-          "comp/avatar",
-          "comp/button",
-          "comp/checkbox",
-          "comp/heading",
-          "comp/icon",
-          "comp/icon-button",
-          "comp/input",
-          "comp/radio",
-          "comp/select",
-          "comp/switch",
-          "comp/tab",
-          "comp/tag",
-          "comp/text",
-          "comp/tooltip",
-          "semantic/light",
-          "semantic/dark",
-          "Brand-ChakraDemo/light",
-          "Brand-ChakraDemo/dark",
-        ],
-        // title: "Token set",
+        options: tokenSetOrder,
         description: "Token set",
         defaultValue: "core/color",
       },

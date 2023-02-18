@@ -27,16 +27,32 @@
   min-width: 0;
 }
 .color:global(.__wab_instance) {
-  max-width: 100%;
   object-fit: cover;
   position: relative;
-  border-radius: 8px;
-  border-width: 1px;
 }
 .size:global(.__wab_instance) {
   object-fit: cover;
   position: relative;
-  width: 10px;
-  height: 10px;
-  flex-shrink: 0;
+}
+.border:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+.opacity:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+  background: linear-gradient(#00000040, #00000040), #ffffff;
+  border-width: 1px;
+}
+.space:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+.typography:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
 }

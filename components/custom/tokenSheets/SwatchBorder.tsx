@@ -7,11 +7,15 @@ export function SwatchBorder({
   className: string;
   border: string;
 }) {
+  console.log("!!!!border: " + border);
   return (
     <div
       className={className}
       style={{
-        border: border,
+        width: border,
+        height: border,
+        border: "solid 1px black",
+        borderRadius: border,
       }}
     >
       {" "}
