@@ -546,11 +546,6 @@
           "componentImportPath": "./components/custom/tokenSheets/SwatchColor"
         },
         {
-          "id": "E9jhQywV0S",
-          "name": "SwatchSize",
-          "componentImportPath": "./components/custom/tokenSheets/SwatchSize"
-        },
-        {
           "id": "TFbSCT-XAW",
           "name": "SwatchBorder",
           "componentImportPath": "./components/custom/tokenSheets/SwatchBorder"
@@ -561,14 +556,89 @@
           "componentImportPath": "./components/custom/tokenSheets/SwatchOpacity"
         },
         {
-          "id": "Ozn7brjgB2",
-          "name": "SwatchSpace",
-          "componentImportPath": "./components/custom/tokenSheets/SwatchSpace"
-        },
-        {
           "id": "UP37tNwri_-",
           "name": "SwatchTypography",
           "componentImportPath": "./components/custom/tokenSheets/SwatchTypography"
+        },
+        {
+          "id": "3ClLpDBBTb",
+          "name": "SwatchSizing",
+          "componentImportPath": "./components/custom/tokenSheets/SwatchSizing"
+        },
+        {
+          "id": "npPZJXZPUB",
+          "name": "SwatchBorderRadius",
+          "componentImportPath": "./components/custom/tokenSheets/SwatchBorderRadius"
+        },
+        {
+          "id": "R07mb9wDMa",
+          "name": "SwatchSpacing",
+          "componentImportPath": "./components/custom/tokenSheets/SwatchSpacing"
+        },
+        {
+          "id": "SNdeHSVxhj",
+          "name": "SwatchFontFamily",
+          "componentImportPath": "./components/custom/tokenSheets/SwatchFontFamily"
+        },
+        {
+          "id": "xwe5XCpEIq",
+          "name": "SwatchFontWeights",
+          "componentImportPath": "./components/custom/tokenSheets/SwatchFontWeights"
+        },
+        {
+          "id": "cnPwSXxSUUa",
+          "name": "SwatchFontSizes",
+          "componentImportPath": "./components/custom/tokenSheets/SwatchFontSizes"
+        },
+        {
+          "id": "-PFmOHRfpQG",
+          "name": "SwatchBorderWidth",
+          "componentImportPath": "./components/custom/tokenSheets/SwatchBorderWidth"
+        },
+        {
+          "id": "O1uOTaUNe1B",
+          "name": "SwatchLineHeights",
+          "componentImportPath": "./components/custom/tokenSheets/SwatchLineHeights"
+        },
+        {
+          "id": "TGK6ANPTyNs",
+          "name": "SwatchLetterSpacing",
+          "componentImportPath": "./components/custom/tokenSheets/SwatchLetterSpacing"
+        },
+        {
+          "id": "M9hXHrE6Hxt",
+          "name": "SwatchParagraphSpacing",
+          "componentImportPath": "./components/custom/tokenSheets/SwatchParagraphSpacing"
+        },
+        {
+          "id": "97ntHHoXaI9",
+          "name": "SwatchTextCase",
+          "componentImportPath": "./components/custom/tokenSheets/SwatchTextCase"
+        },
+        {
+          "id": "ZgHrCqbygmA",
+          "name": "SwatchTextDecoration",
+          "componentImportPath": "./components/custom/tokenSheets/SwatchTextDecoration"
+        },
+        {
+          "id": "yIaeWjFGqqu",
+          "name": "SwatchAssets",
+          "componentImportPath": "./components/custom/tokenSheets/SwatchAssets"
+        },
+        {
+          "id": "hHFi2TG_k1b",
+          "name": "SwatchDimension",
+          "componentImportPath": "./components/custom/tokenSheets/SwatchDimension"
+        },
+        {
+          "id": "zs_UGvubHqM",
+          "name": "SwatchBoxShadow",
+          "componentImportPath": "./components/custom/tokenSheets/SwatchBoxShadow"
+        },
+        {
+          "id": "_JsyQkWTVzb",
+          "name": "SwatchComposition",
+          "componentImportPath": "./components/custom/tokenSheets/SwatchComposition"
         }
       ]
     }
