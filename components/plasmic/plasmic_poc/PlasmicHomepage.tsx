@@ -34,9 +34,9 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
+import { Button } from "@chakra-ui/react"; // plasmic-import: QLxDRPfRLT0/codeComponent
+import { ButtonGroup } from "@chakra-ui/react"; // plasmic-import: 07Nz_3PLqjQ/codeComponent
 import { ChakraDocs } from "@chakra-ui/react"; // plasmic-import: -RU2ZbsAIK/codeComponent
-
-import { useScreenVariants as useScreenVariantscivdiBQpYpScy } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: CivdiBQpYpScy/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -55,6 +55,7 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
   section?: p.Flex<"section">;
+  chakraUiButtonGroup?: p.Flex<typeof ButtonGroup>;
   chakraDocs?: p.Flex<typeof ChakraDocs>;
 };
 
@@ -91,10 +92,6 @@ function PlasmicHomepage__RenderFunc(props: {
 
   const [$queries, setDollarQueries] = React.useState({});
 
-  const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantscivdiBQpYpScy()
-  });
-
   return (
     <React.Fragment>
       <Head></Head>
@@ -127,20 +124,77 @@ function PlasmicHomepage__RenderFunc(props: {
             hasGap={true}
             className={classNames(projectcss.all, sty.section)}
           >
+            <Button
+              className={classNames(
+                "__wab_instance",
+                sty.chakraUiButton__vUbOc
+              )}
+              size={"sm" as const}
+              variant={"primary" as const}
+            >
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__r9Jvz
+                )}
+              >
+                {"Button"}
+              </div>
+            </Button>
+
+            <ButtonGroup
+              data-plasmic-name={"chakraUiButtonGroup"}
+              data-plasmic-override={overrides.chakraUiButtonGroup}
+              className={classNames("__wab_instance", sty.chakraUiButtonGroup)}
+              isAttached={false}
+              isDisabled={false}
+              size={"md" as const}
+              spacing={"0.5rem" as const}
+            >
+              <Button
+                className={classNames(
+                  "__wab_instance",
+                  sty.chakraUiButton__mK2Ql
+                )}
+                variant={"primary" as const}
+              >
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text___2QYde
+                  )}
+                >
+                  {"Buttodfgdgn 1"}
+                </div>
+              </Button>
+
+              <Button
+                className={classNames(
+                  "__wab_instance",
+                  sty.chakraUiButton__almlK
+                )}
+                variant={"primary" as const}
+              >
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__nwVns
+                  )}
+                >
+                  {"Button 2"}
+                </div>
+              </Button>
+            </ButtonGroup>
+
             <ChakraDocs
               data-plasmic-name={"chakraDocs"}
               data-plasmic-override={overrides.chakraDocs}
               className={classNames("__wab_instance", sty.chakraDocs)}
-              path={
-                hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? ("btn.primary" as const)
-                  : ("semantic.font-family.font-family" as const)
-              }
-              set={
-                hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? ("core/size" as const)
-                  : ("core/typography" as const)
-              }
+              path={"btn.primary.default" as const}
+              set={"core/color" as const}
               theme={"light" as const}
             />
           </p.Stack>
@@ -151,8 +205,9 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "section", "chakraDocs"],
-  section: ["section", "chakraDocs"],
+  root: ["root", "section", "chakraUiButtonGroup", "chakraDocs"],
+  section: ["section", "chakraUiButtonGroup", "chakraDocs"],
+  chakraUiButtonGroup: ["chakraUiButtonGroup"],
   chakraDocs: ["chakraDocs"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -161,6 +216,7 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   section: "section";
+  chakraUiButtonGroup: typeof ButtonGroup;
   chakraDocs: typeof ChakraDocs;
 };
 
@@ -226,6 +282,7 @@ export const PlasmicHomepage = Object.assign(
   {
     // Helper components rendering sub-elements
     section: makeNodeComponent("section"),
+    chakraUiButtonGroup: makeNodeComponent("chakraUiButtonGroup"),
     chakraDocs: makeNodeComponent("chakraDocs"),
 
     // Metadata about props expected for PlasmicHomepage

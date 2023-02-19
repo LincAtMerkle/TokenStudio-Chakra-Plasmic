@@ -1,19 +1,19 @@
 import * as React from "react";
 
-export function SwatchSize({
+export function SwatchSizing({
   className,
-  size,
+  sizing,
 }: {
   className: string;
-  size: string;
+  sizing: string;
 }) {
-  console.log("!!!!size: "+size)
+  console.log("!!!!size: "+sizing)
   return (
     <div
       className={className}
       style={{ 
-        height: size, 
-        width: size, 
+        height: sizing, 
+        width: sizing, 
         backgroundColor: "yellow" 
     }}
     >

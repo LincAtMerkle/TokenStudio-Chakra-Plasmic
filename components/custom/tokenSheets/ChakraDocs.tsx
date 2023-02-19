@@ -35,7 +35,8 @@ export function ChakraDocs(
           path={path}
           set={set}
           render={(data) => {
-            console.log("data: "+JSON.stringify(data));
+            // console.log("data: "+JSON.stringify(data));
+            console.log("set: "+set);
             return data.map(
               ({ value, tokenName, variant, description }: any, i: any) => {
                 return (      
@@ -46,23 +47,33 @@ export function ChakraDocs(
                       tokenName={tokenName}
                       variant={variant}
                       description={description}
-                      //
-                      //
-                      textValue={value} // do I need this?
-                      // radius={value}
-                      // fontSize={value} //parseInt(value)}
-                      // color ={value}
 
+                      /////// token swatches
+                      color ={variant === "color" ? value : undefined}
+                      sizing ={variant === "sizing" ? value : undefined}
+                      borderRadius ={variant === "borderRadius" ? value : undefined}
+                      spacing ={variant === "spacing" ? value : undefined}
+                      fontFamily ={variant === "fontFamily" ? value : undefined}
+                      fontWeights ={variant === "fontWeights" ? value : undefined}
+                      fontSizes ={variant === "fontSizes" ? value : undefined}
+                      borderWidth ={variant === "borderWidth" ? value : undefined}
+                      opacity ={variant === "opacity" ? value : undefined}
+                      lineHeights ={variant === "lineHeights" ? value : undefined}
+                      letterSpacing ={variant === "letterSpacing" ? value : undefined}
+                      paragraphSpacing ={variant === "paragraphSpacing" ? value : undefined}
+                      textCase ={variant === "textCase" ? value : undefined}
+                      textDecoration ={variant === "textDecoration" ? value : undefined}
 
+                      ////// How best to do these
+                      assets ={variant === "assets" ? value : undefined}
+                      dimension ={variant === "dimension" ? value : undefined}
 
-                      // Only 1 needs to appear for each item
-                      // THIS IS WORNG as also need to appear for comp/ or semantic/ or brandA/...
-                      color ={set === "core/color" ? value : undefined}
-                      size ={set === "core/size" ? value : undefined}
-                      border ={set === "core/border" ? value : undefined}
-                      opacity ={set === "core/opacity" ? value : undefined}
-                      space ={set === "core/space" ? value : undefined}
-                      typography ={set === "core/typography" ? value : undefined}
+                      /////// composite token swatched
+                      /////// How to handle this????
+                      border ={variant === "border" ? value : undefined}
+                      boxShadow ={variant === "boxShadow" ? value : undefined}
+                      typography ={variant === "typography" ? value : undefined}
+                      composition ={variant === "composition" ? value : undefined}
                     />
                   </div>
                 );

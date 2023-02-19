@@ -29,10 +29,12 @@
 .color:global(.__wab_instance) {
   object-fit: cover;
   position: relative;
+  border-width: 1px;
 }
 .size:global(.__wab_instance) {
   object-fit: cover;
   position: relative;
+  border-width: 1px;
 }
 .border:global(.__wab_instance) {
   max-width: 100%;

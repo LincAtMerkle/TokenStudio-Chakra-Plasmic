@@ -11,7 +11,7 @@ export default interface DocumentationComponentProps {
 }
 
 export function Documentation({
-  set = "core/colorx",
+  set = "core/color",
   path = "btn.primary",
   theme = "light",
   render,

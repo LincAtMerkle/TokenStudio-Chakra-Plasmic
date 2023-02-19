@@ -14,11 +14,25 @@ import { registerFunPassIcon } from "./icons/registerFunPassIcon";
 import { registerLocationPinIcon } from "./icons/registerLocationPinIcon";
 import { registerDartsIcon } from "./icons/registerDartsIcon";
 import { registerSwatchColor } from "./tokenSheets/registerSwatchColor";
-import { registerSwatchSize } from "./tokenSheets/registerSwatchSize";
-import { registerSwatchBorder } from "./tokenSheets/registerSwatchBorder";
+import { registerSwatchSizing } from "./tokenSheets/registerSwatchSizing";
+import { registerSwatchBorderRadius } from "./tokenSheets/registerSwatchBorderRadius";
+import { registerSwatchSpacing } from "./tokenSheets/registerSwatchSpacing";
+import { registerSwatchFontFamily } from "./tokenSheets/registerSwatchFontFamily";
+import { registerSwatchFontWeights } from "./tokenSheets/registerSwatchFontWeights";
+import { registerSwatchFontSizes } from "./tokenSheets/registerSwatchFontSizes";
+import { registerSwatchBorderWidth } from "./tokenSheets/registerSwatchBorderWidth";
 import { registerSwatchOpacity } from "./tokenSheets/registerSwatchOpacity";
-import { registerSwatchSpace } from "./tokenSheets/registerSwatchSpace";
+import { registerSwatchLineHeights } from "./tokenSheets/registerSwatchLineHeights";
+import { registerSwatchLetterSpacing } from "./tokenSheets/registerSwatchLetterSpacing";
+import { registerSwatchParagraphSpacing } from "./tokenSheets/registerSwatchParagraphSpacing";
+import { registerSwatchTextCase } from "./tokenSheets/registerSwatchTextCase";
+import { registerSwatchAssets } from "./tokenSheets/registerSwatchAssets";
+import { registerSwatchDimension } from "./tokenSheets/registerSwatchDimension";
+import { registerSwatchTextDecoration } from "./tokenSheets/registerSwatchTextDecoration";
+import { registerSwatchBorder } from "./tokenSheets/registerSwatchBorder";
+import { registerSwatchBoxShadow } from "./tokenSheets/registerSwatchBoxShadow";
 import { registerSwatchTypography } from "./tokenSheets/registerSwatchTypography";
+import { registerSwatchComposition } from "./tokenSheets/registerSwatchComposition";
 
 
 export function registerAllCustom() {
@@ -42,9 +56,23 @@ export function registerAllCustom() {
     
     //TokenSheets
     registerSwatchColor();
-    registerSwatchSize();
-    registerSwatchBorder();
+    registerSwatchSizing();
+    registerSwatchBorderRadius();
+    registerSwatchSpacing();
+    registerSwatchFontFamily();
+    registerSwatchFontWeights();
+    registerSwatchFontSizes();
+    registerSwatchBorderWidth();
     registerSwatchOpacity();
-    registerSwatchSpace();
+    registerSwatchLineHeights();
+    registerSwatchLetterSpacing();
+    registerSwatchParagraphSpacing();
+    registerSwatchTextCase();
+    registerSwatchTextDecoration();
+    registerSwatchAssets();
+    registerSwatchDimension();
+    registerSwatchBorder();
+    registerSwatchBoxShadow();
     registerSwatchTypography();
+    registerSwatchComposition();
 }

@@ -38,6 +38,51 @@
   > img {
   margin-top: 16px;
 }
+.chakraUiButton__vUbOc:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+  background: #b52828;
+  text-align: left;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 30px;
+  text-decoration-line: line-through;
+}
+.text__r9Jvz {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  min-width: 0;
+}
+.chakraUiButtonGroup:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+.chakraUiButton__mK2Ql:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.text___2QYde {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  min-width: 0;
+}
+.chakraUiButton__almlK:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.text__nwVns {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  min-width: 0;
+}
 .chakraDocs:global(.__wab_instance) {
   max-width: 100%;
   object-fit: cover;
