@@ -39,7 +39,6 @@ export function ChakraDocs(
             return data.map(
               ({ value, tokenName, variant, description }: any, i: any) => {
                 return (      
-
                   <div key={`token-docs-${i}`} style={{ padding: 0 }}>
                     <DesignTokenItem
                       //@ts-ignore
@@ -52,6 +51,12 @@ export function ChakraDocs(
                       textValue={value} // do I need this?
                       // radius={value}
                       // fontSize={value} //parseInt(value)}
+                      // color ={value}
+
+
+
+                      // Only 1 needs to appear for each item
+                      // THIS IS WORNG as also need to appear for comp/ or semantic/ or brandA/...
                       color ={set === "core/color" ? value : undefined}
                       size ={set === "core/size" ? value : undefined}
                       border ={set === "core/border" ? value : undefined}
