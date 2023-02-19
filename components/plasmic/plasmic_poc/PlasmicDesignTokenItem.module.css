@@ -29,32 +29,119 @@
 .color:global(.__wab_instance) {
   object-fit: cover;
   position: relative;
+  display: none;
   border-width: 1px;
+}
+.colorcolor2:global(.__wab_instance) {
+  display: flex;
+}
+.colorsizing2:global(.__wab_instance) {
+  display: none;
+}
+.colorborderRadius:global(.__wab_instance) {
+  display: none;
+}
+.colorspacing2:global(.__wab_instance) {
+  display: none;
 }
 .sizing:global(.__wab_instance) {
   object-fit: cover;
   position: relative;
+  display: none;
   border-width: 1px;
+}
+.sizingcolor2:global(.__wab_instance) {
+  display: none;
+}
+.sizingsizing2:global(.__wab_instance) {
+  display: flex;
+}
+.sizingborderRadius:global(.__wab_instance) {
+  display: none;
+}
+.sizingspacing2:global(.__wab_instance) {
+  display: none;
 }
 .border:global(.__wab_instance) {
   max-width: 100%;
   object-fit: cover;
   position: relative;
+  display: none;
+}
+.bordercolor2:global(.__wab_instance) {
+  display: none;
+}
+.borderborder2:global(.__wab_instance) {
+  display: flex;
+}
+.bordersizing2:global(.__wab_instance) {
+  display: none;
+}
+.borderborderRadius:global(.__wab_instance) {
+  display: none;
+}
+.borderspacing2:global(.__wab_instance) {
+  display: none;
 }
 .opacity:global(.__wab_instance) {
   max-width: 100%;
   object-fit: cover;
   position: relative;
   background: linear-gradient(#00000040, #00000040), #ffffff;
+  display: none;
   border-width: 1px;
+}
+.opacitycolor2:global(.__wab_instance) {
+  display: none;
+}
+.opacitysizing2:global(.__wab_instance) {
+  display: none;
+}
+.opacityborderRadius:global(.__wab_instance) {
+  display: none;
+}
+.opacityspacing2:global(.__wab_instance) {
+  display: none;
+}
+.opacityopacity2:global(.__wab_instance) {
+  display: flex;
 }
 .spacing:global(.__wab_instance) {
   max-width: 100%;
   object-fit: cover;
   position: relative;
+  display: none;
+}
+.spacingcolor2:global(.__wab_instance) {
+  display: none;
+}
+.spacingsizing2:global(.__wab_instance) {
+  display: none;
+}
+.spacingborderRadius:global(.__wab_instance) {
+  display: none;
+}
+.spacingspacing2:global(.__wab_instance) {
+  display: flex;
 }
 .typography:global(.__wab_instance) {
   max-width: 100%;
   object-fit: cover;
   position: relative;
+  display: none;
+}
+.typographycolor2:global(.__wab_instance) {
+  display: none;
+}
+.typographytypography2:global(.__wab_instance) {
+  display: flex;
+}
+.typographysizing2:global(.__wab_instance) {
+  display: none;
+}
+.typographyborderRadius:global(.__wab_instance) {
+  display: none;
+}
+.typographyspacing2:global(.__wab_instance) {
+  display: none;
 }
