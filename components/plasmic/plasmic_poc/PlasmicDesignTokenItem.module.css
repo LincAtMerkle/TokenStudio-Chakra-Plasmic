@@ -32,7 +32,7 @@
   display: none;
   border-width: 1px;
 }
-.colorcolor2:global(.__wab_instance) {
+.colorcolorSwatch:global(.__wab_instance) {
   display: flex;
 }
 .colorsizing2:global(.__wab_instance) {
@@ -50,7 +50,7 @@
   display: none;
   border-width: 1px;
 }
-.sizingcolor2:global(.__wab_instance) {
+.sizingcolorSwatch:global(.__wab_instance) {
   display: none;
 }
 .sizingsizing2:global(.__wab_instance) {
@@ -68,7 +68,7 @@
   position: relative;
   display: none;
 }
-.bordercolor2:global(.__wab_instance) {
+.bordercolorSwatch:global(.__wab_instance) {
   display: none;
 }
 .borderborder2:global(.__wab_instance) {
@@ -91,7 +91,7 @@
   display: none;
   border-width: 1px;
 }
-.opacitycolor2:global(.__wab_instance) {
+.opacitycolorSwatch:global(.__wab_instance) {
   display: none;
 }
 .opacitysizing2:global(.__wab_instance) {
@@ -112,7 +112,7 @@
   position: relative;
   display: none;
 }
-.spacingcolor2:global(.__wab_instance) {
+.spacingcolorSwatch:global(.__wab_instance) {
   display: none;
 }
 .spacingsizing2:global(.__wab_instance) {
@@ -130,7 +130,7 @@
   position: relative;
   display: none;
 }
-.typographycolor2:global(.__wab_instance) {
+.typographycolorSwatch:global(.__wab_instance) {
   display: none;
 }
 .typographytypography2:global(.__wab_instance) {

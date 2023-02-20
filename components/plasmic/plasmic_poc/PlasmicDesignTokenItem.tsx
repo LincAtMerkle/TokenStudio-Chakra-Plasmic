@@ -47,7 +47,7 @@ import projectcss from "./plasmic_plasmic_poc.module.css"; // plasmic-import: x7
 import sty from "./PlasmicDesignTokenItem.module.css"; // plasmic-import: QyqHsDAu6Z/css
 
 export type PlasmicDesignTokenItem__VariantMembers = {
-  color2: "color2";
+  colorSwatch: "colorSwatch";
   sizing2: "sizing2";
   borderRadius: "borderRadius";
   spacing2: "spacing2";
@@ -69,7 +69,7 @@ export type PlasmicDesignTokenItem__VariantMembers = {
   composition: "composition";
 };
 export type PlasmicDesignTokenItem__VariantsArgs = {
-  color2?: SingleBooleanChoiceArg<"color2">;
+  colorSwatch?: SingleBooleanChoiceArg<"colorSwatch">;
   sizing2?: SingleBooleanChoiceArg<"sizing2">;
   borderRadius?: SingleBooleanChoiceArg<"borderRadius">;
   spacing2?: SingleBooleanChoiceArg<"spacing2">;
@@ -92,7 +92,7 @@ export type PlasmicDesignTokenItem__VariantsArgs = {
 };
 type VariantPropType = keyof PlasmicDesignTokenItem__VariantsArgs;
 export const PlasmicDesignTokenItem__VariantProps = new Array<VariantPropType>(
-  "color2",
+  "colorSwatch",
   "sizing2",
   "borderRadius",
   "spacing2",
@@ -152,7 +152,7 @@ export interface DefaultDesignTokenItemProps {
   typography?: string;
   sizing?: string;
   spacing?: string;
-  color2?: SingleBooleanChoiceArg<"color2">;
+  colorSwatch?: SingleBooleanChoiceArg<"colorSwatch">;
   sizing2?: SingleBooleanChoiceArg<"sizing2">;
   borderRadius?: SingleBooleanChoiceArg<"borderRadius">;
   spacing2?: SingleBooleanChoiceArg<"spacing2">;
@@ -221,10 +221,12 @@ function PlasmicDesignTokenItem__RenderFunc(props: {
   const stateSpecs = React.useMemo(
     () => [
       {
-        path: "color2",
+        path: "colorSwatch",
         type: "private",
         variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props.color2 : undefined
+        initFunc: true
+          ? ($props, $state, $ctx) => $props.colorSwatch
+          : undefined
       },
       {
         path: "sizing2",
@@ -424,7 +426,7 @@ function PlasmicDesignTokenItem__RenderFunc(props: {
           ? true
           : hasVariant($state, "sizing2", "sizing2")
           ? true
-          : hasVariant($state, "color2", "color2")
+          : hasVariant($state, "colorSwatch", "colorSwatch")
           ? true
           : true
       ) ? (
@@ -437,7 +439,11 @@ function PlasmicDesignTokenItem__RenderFunc(props: {
               "borderRadius",
               "borderRadius"
             ),
-            [sty.colorcolor2]: hasVariant($state, "color2", "color2"),
+            [sty.colorcolorSwatch]: hasVariant(
+              $state,
+              "colorSwatch",
+              "colorSwatch"
+            ),
             [sty.colorfontFamily]: hasVariant(
               $state,
               "fontFamily",
@@ -456,7 +462,7 @@ function PlasmicDesignTokenItem__RenderFunc(props: {
           ? true
           : hasVariant($state, "sizing2", "sizing2")
           ? true
-          : hasVariant($state, "color2", "color2")
+          : hasVariant($state, "colorSwatch", "colorSwatch")
           ? true
           : true
       ) ? (
@@ -469,7 +475,11 @@ function PlasmicDesignTokenItem__RenderFunc(props: {
               "borderRadius",
               "borderRadius"
             ),
-            [sty.sizingcolor2]: hasVariant($state, "color2", "color2"),
+            [sty.sizingcolorSwatch]: hasVariant(
+              $state,
+              "colorSwatch",
+              "colorSwatch"
+            ),
             [sty.sizingsizing2]: hasVariant($state, "sizing2", "sizing2"),
             [sty.sizingspacing2]: hasVariant($state, "spacing2", "spacing2")
           })}
@@ -485,7 +495,7 @@ function PlasmicDesignTokenItem__RenderFunc(props: {
           ? true
           : hasVariant($state, "border2", "border2")
           ? true
-          : hasVariant($state, "color2", "color2")
+          : hasVariant($state, "colorSwatch", "colorSwatch")
           ? true
           : true
       ) ? (
@@ -500,7 +510,11 @@ function PlasmicDesignTokenItem__RenderFunc(props: {
               "borderRadius",
               "borderRadius"
             ),
-            [sty.bordercolor2]: hasVariant($state, "color2", "color2"),
+            [sty.bordercolorSwatch]: hasVariant(
+              $state,
+              "colorSwatch",
+              "colorSwatch"
+            ),
             [sty.bordersizing2]: hasVariant($state, "sizing2", "sizing2"),
             [sty.borderspacing2]: hasVariant($state, "spacing2", "spacing2"),
             [sty.bordertypography2]: hasVariant(
@@ -520,7 +534,7 @@ function PlasmicDesignTokenItem__RenderFunc(props: {
           ? true
           : hasVariant($state, "sizing2", "sizing2")
           ? true
-          : hasVariant($state, "color2", "color2")
+          : hasVariant($state, "colorSwatch", "colorSwatch")
           ? true
           : true
       ) ? (
@@ -533,7 +547,11 @@ function PlasmicDesignTokenItem__RenderFunc(props: {
               "borderRadius",
               "borderRadius"
             ),
-            [sty.opacitycolor2]: hasVariant($state, "color2", "color2"),
+            [sty.opacitycolorSwatch]: hasVariant(
+              $state,
+              "colorSwatch",
+              "colorSwatch"
+            ),
             [sty.opacityopacity2]: hasVariant($state, "opacity2", "opacity2"),
             [sty.opacitysizing2]: hasVariant($state, "sizing2", "sizing2"),
             [sty.opacityspacing2]: hasVariant($state, "spacing2", "spacing2")
@@ -548,7 +566,7 @@ function PlasmicDesignTokenItem__RenderFunc(props: {
           ? true
           : hasVariant($state, "sizing2", "sizing2")
           ? true
-          : hasVariant($state, "color2", "color2")
+          : hasVariant($state, "colorSwatch", "colorSwatch")
           ? true
           : true
       ) ? (
@@ -561,7 +579,11 @@ function PlasmicDesignTokenItem__RenderFunc(props: {
               "borderRadius",
               "borderRadius"
             ),
-            [sty.spacingcolor2]: hasVariant($state, "color2", "color2"),
+            [sty.spacingcolorSwatch]: hasVariant(
+              $state,
+              "colorSwatch",
+              "colorSwatch"
+            ),
             [sty.spacingsizing2]: hasVariant($state, "sizing2", "sizing2"),
             [sty.spacingspacing2]: hasVariant($state, "spacing2", "spacing2")
           })}
@@ -577,7 +599,7 @@ function PlasmicDesignTokenItem__RenderFunc(props: {
           ? true
           : hasVariant($state, "typography2", "typography2")
           ? true
-          : hasVariant($state, "color2", "color2")
+          : hasVariant($state, "colorSwatch", "colorSwatch")
           ? true
           : true
       ) ? (
@@ -590,7 +612,11 @@ function PlasmicDesignTokenItem__RenderFunc(props: {
               "borderRadius",
               "borderRadius"
             ),
-            [sty.typographycolor2]: hasVariant($state, "color2", "color2"),
+            [sty.typographycolorSwatch]: hasVariant(
+              $state,
+              "colorSwatch",
+              "colorSwatch"
+            ),
             [sty.typographysizing2]: hasVariant($state, "sizing2", "sizing2"),
             [sty.typographyspacing2]: hasVariant(
               $state,

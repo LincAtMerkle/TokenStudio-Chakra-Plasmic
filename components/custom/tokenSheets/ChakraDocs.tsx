@@ -36,16 +36,16 @@ export function ChakraDocs(
           set={set}
           render={(data) => {
             // console.log("data: "+JSON.stringify(data));
-            console.log("set: "+set);
             return data.map(
               ({ value, tokenName, variant, description }: any, i: any) => {
+                console.log("variant: "+variant+"Swatch");
                 return (      
                   <div key={`token-docs-${i}`} style={{ padding: 0 }}>
                     <DesignTokenItem
                       //@ts-ignore
                       value={value}
                       tokenName={tokenName}
-                      variant={variant}
+                      variant={variant+"Swatch"}
                       description={description}
 
                       /////// token swatches
