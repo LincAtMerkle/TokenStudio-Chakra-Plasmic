@@ -14,6 +14,7 @@ function Homepage() {
   // can also install whatever React hooks you need here to manage state or
   // fetch data.
   //
+  //
   // Props you can pass into PlasmicHomepage are:
   // 1. Variants you want to activate,
   // 2. Contents for slots you want to fill,
