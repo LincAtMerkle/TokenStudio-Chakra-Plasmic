@@ -29,7 +29,6 @@
 .color:global(.__wab_instance) {
   object-fit: cover;
   position: relative;
-  display: none;
   border-width: 1px;
 }
 .colorcolorSwatch:global(.__wab_instance) {
@@ -47,7 +46,6 @@
 .sizing:global(.__wab_instance) {
   object-fit: cover;
   position: relative;
-  display: none;
   border-width: 1px;
 }
 .sizingcolorSwatch:global(.__wab_instance) {

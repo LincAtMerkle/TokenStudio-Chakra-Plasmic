@@ -197,7 +197,6 @@ function PlasmicDesignTokenItem__RenderFunc(props: {
     () =>
       Object.assign(
         {
-          color: "lime" as const,
           border: "1" as const,
           opacity: "0.5" as const,
           typography: "inter" as const,
@@ -428,7 +427,7 @@ function PlasmicDesignTokenItem__RenderFunc(props: {
           ? true
           : hasVariant($state, "colorSwatch", "colorSwatch")
           ? true
-          : true
+          : false
       ) ? (
         <SwatchColor
           data-plasmic-name={"color"}
@@ -464,7 +463,7 @@ function PlasmicDesignTokenItem__RenderFunc(props: {
           ? true
           : hasVariant($state, "colorSwatch", "colorSwatch")
           ? true
-          : true
+          : false
       ) ? (
         <SwatchSizing
           data-plasmic-name={"sizing"}

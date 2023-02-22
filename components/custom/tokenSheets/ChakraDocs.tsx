@@ -45,35 +45,37 @@ export function ChakraDocs(
                       //@ts-ignore
                       value={value}
                       tokenName={tokenName}
-                      variant={variant+"Swatch"}
+                      // variant={variant+"Swatch"}
+                      // variant={variant+"Swatch"}
+                      variant="colorSwatch"
                       description={description}
 
                       /////// token swatches
-                      color ={variant === "color" ? value : undefined}
-                      sizing ={variant === "sizing" ? value : undefined}
-                      borderRadius ={variant === "borderRadius" ? value : undefined}
-                      spacing ={variant === "spacing" ? value : undefined}
-                      fontFamily ={variant === "fontFamily" ? value : undefined}
-                      fontWeights ={variant === "fontWeights" ? value : undefined}
-                      fontSizes ={variant === "fontSizes" ? value : undefined}
-                      borderWidth ={variant === "borderWidth" ? value : undefined}
-                      opacity ={variant === "opacity" ? value : undefined}
-                      lineHeights ={variant === "lineHeights" ? value : undefined}
-                      letterSpacing ={variant === "letterSpacing" ? value : undefined}
-                      paragraphSpacing ={variant === "paragraphSpacing" ? value : undefined}
-                      textCase ={variant === "textCase" ? value : undefined}
-                      textDecoration ={variant === "textDecoration" ? value : undefined}
+                      // color ={variant === "color" ? value : undefined}
+                      // sizing ={variant === "sizing" ? value : undefined}
+                      // borderRadius ={variant === "borderRadius" ? value : undefined}
+                      // spacing ={variant === "spacing" ? value : undefined}
+                      // fontFamily ={variant === "fontFamily" ? value : undefined}
+                      // fontWeights ={variant === "fontWeights" ? value : undefined}
+                      // fontSizes ={variant === "fontSizes" ? value : undefined}
+                      // borderWidth ={variant === "borderWidth" ? value : undefined}
+                      // opacity ={variant === "opacity" ? value : undefined}
+                      // lineHeights ={variant === "lineHeights" ? value : undefined}
+                      // letterSpacing ={variant === "letterSpacing" ? value : undefined}
+                      // paragraphSpacing ={variant === "paragraphSpacing" ? value : undefined}
+                      // textCase ={variant === "textCase" ? value : undefined}
+                      // textDecoration ={variant === "textDecoration" ? value : undefined}
 
                       ////// How best to do these
-                      assets ={variant === "assets" ? value : undefined}
-                      dimension ={variant === "dimension" ? value : undefined}
+                      // assets ={variant === "assets" ? value : undefined}
+                      // dimension ={variant === "dimension" ? value : undefined}
 
                       /////// composite token swatched
                       /////// How to handle this????
-                      border ={variant === "border" ? value : undefined}
-                      boxShadow ={variant === "boxShadow" ? value : undefined}
-                      typography ={variant === "typography" ? value : undefined}
-                      composition ={variant === "composition" ? value : undefined}
+                      // border ={variant === "border" ? value : undefined}
+                      // boxShadow ={variant === "boxShadow" ? value : undefined}
+                      // typography ={variant === "typography" ? value : undefined}
+                      // composition ={variant === "composition" ? value : undefined}
                     />
                   </div>
                 );
