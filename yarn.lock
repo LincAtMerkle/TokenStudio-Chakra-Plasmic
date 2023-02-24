@@ -2142,7 +2142,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@plasmicapp/host@npm:1.0.101, @plasmicapp/host@npm:^1.0.101":
+"@plasmicapp/host@npm:1.0.101":
   version: 1.0.101
   resolution: "@plasmicapp/host@npm:1.0.101"
   dependencies:
@@ -2165,6 +2165,19 @@ __metadata:
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
   checksum: e5679fc5670d59e08e0c09355f40f7e976ac1e2c3f5fdee583528e38356db3622fadb8303ca9622666619441f07e28e4d85c129497e431102a8887bc6d41fa71
+  languageName: node
+  linkType: hard
+
+"@plasmicapp/host@npm:^1.0.107":
+  version: 1.0.107
+  resolution: "@plasmicapp/host@npm:1.0.107"
+  dependencies:
+    "@plasmicapp/query": 0.1.61
+    window-or-global: ^1.0.1
+  peerDependencies:
+    react: ">=16.8.0"
+    react-dom: ">=16.8.0"
+  checksum: df7e98e967036886d216d5de70e22153265d92288127e337530a201045082bbfb643d13ea3ec3829834b710537689627ca787bb0af60e92e49689819fa741c6c
   languageName: node
   linkType: hard
 
@@ -3486,7 +3499,7 @@ __metadata:
     "@emotion/styled": ^11.10.5
     "@next/font": 13.1.6
     "@plasmicapp/cli": ^0.1.205
-    "@plasmicapp/host": ^1.0.101
+    "@plasmicapp/host": ^1.0.107
     "@plasmicapp/loader-nextjs": ^1.0.227
     "@plasmicapp/react-web": ^0.2.151
     "@types/node": 18.11.18

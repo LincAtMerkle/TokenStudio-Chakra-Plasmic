@@ -18,7 +18,7 @@
     "@emotion/styled": "^11.10.5",
     "@next/font": "13.1.6",
     "@plasmicapp/cli": "^0.1.205",
-    "@plasmicapp/host": "^1.0.101",
+    "@plasmicapp/host": "^1.0.107",
     "@plasmicapp/loader-nextjs": "^1.0.227",
     "@plasmicapp/react-web": "^0.2.151",
     "@types/node": "18.11.18",
