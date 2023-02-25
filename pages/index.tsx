@@ -32,8 +32,10 @@ function Homepage() {
         query={useRouter()?.query}
       >
         <PlasmicHomepage />
+        
       </ph.PageParamsProvider>
     // </GlobalContextsProvider>
+    // here
   );
 }
 
