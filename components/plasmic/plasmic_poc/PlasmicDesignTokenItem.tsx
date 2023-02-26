@@ -35,12 +35,9 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import { SwatchColor } from "../../custom/tokenSheets/SwatchColor"; // plasmic-import: SEDfm__PT6/codeComponent
 import { SwatchSizing } from "../../custom/tokenSheets/SwatchSizing"; // plasmic-import: 3ClLpDBBTb/codeComponent
-import { SwatchBorder } from "../../custom/tokenSheets/SwatchBorder"; // plasmic-import: TFbSCT-XAW/codeComponent
-import { SwatchOpacity } from "../../custom/tokenSheets/SwatchOpacity"; // plasmic-import: qnNAuLIsMl/codeComponent
 import { SwatchSpacing } from "../../custom/tokenSheets/SwatchSpacing"; // plasmic-import: R07mb9wDMa/codeComponent
-import { SwatchTypography } from "../../custom/tokenSheets/SwatchTypography"; // plasmic-import: UP37tNwri_-/codeComponent
+import { SwatchColor } from "../../custom/tokenSheets/SwatchColor"; // plasmic-import: SEDfm__PT6/codeComponent
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -48,71 +45,14 @@ import projectcss from "./plasmic_plasmic_poc.module.css"; // plasmic-import: x7
 import sty from "./PlasmicDesignTokenItem.module.css"; // plasmic-import: QyqHsDAu6Z/css
 
 export type PlasmicDesignTokenItem__VariantMembers = {
-  colorSwatch: "colorSwatch";
-  sizing2: "sizing2";
-  borderRadius: "borderRadius";
-  spacing2: "spacing2";
-  fontFamily: "fontFamily";
-  fontWeights: "fontWeights";
-  fontSizes: "fontSizes";
-  borderWidth: "borderWidth";
-  opacity2: "opacity2";
-  lineHeights: "lineHeights";
-  letterSpacing: "letterSpacing";
-  paragraphSpacing: "paragraphSpacing";
-  textCase: "textCase";
-  textDecoration: "textDecoration";
-  assets: "assets";
-  dimension: "dimension";
-  border2: "border2";
-  boxShadow: "boxShadow";
-  typography2: "typography2";
-  composition: "composition";
+  swatches: "color" | "space" | "size";
 };
 export type PlasmicDesignTokenItem__VariantsArgs = {
-  colorSwatch?: SingleBooleanChoiceArg<"colorSwatch">;
-  sizing2?: SingleBooleanChoiceArg<"sizing2">;
-  borderRadius?: SingleBooleanChoiceArg<"borderRadius">;
-  spacing2?: SingleBooleanChoiceArg<"spacing2">;
-  fontFamily?: SingleBooleanChoiceArg<"fontFamily">;
-  fontWeights?: SingleBooleanChoiceArg<"fontWeights">;
-  fontSizes?: SingleBooleanChoiceArg<"fontSizes">;
-  borderWidth?: SingleBooleanChoiceArg<"borderWidth">;
-  opacity2?: SingleBooleanChoiceArg<"opacity2">;
-  lineHeights?: SingleBooleanChoiceArg<"lineHeights">;
-  letterSpacing?: SingleBooleanChoiceArg<"letterSpacing">;
-  paragraphSpacing?: SingleBooleanChoiceArg<"paragraphSpacing">;
-  textCase?: SingleBooleanChoiceArg<"textCase">;
-  textDecoration?: SingleBooleanChoiceArg<"textDecoration">;
-  assets?: SingleBooleanChoiceArg<"assets">;
-  dimension?: SingleBooleanChoiceArg<"dimension">;
-  border2?: SingleBooleanChoiceArg<"border2">;
-  boxShadow?: SingleBooleanChoiceArg<"boxShadow">;
-  typography2?: SingleBooleanChoiceArg<"typography2">;
-  composition?: SingleBooleanChoiceArg<"composition">;
+  swatches?: SingleChoiceArg<"color" | "space" | "size">;
 };
 type VariantPropType = keyof PlasmicDesignTokenItem__VariantsArgs;
 export const PlasmicDesignTokenItem__VariantProps = new Array<VariantPropType>(
-  "colorSwatch",
-  "sizing2",
-  "borderRadius",
-  "spacing2",
-  "fontFamily",
-  "fontWeights",
-  "fontSizes",
-  "borderWidth",
-  "opacity2",
-  "lineHeights",
-  "letterSpacing",
-  "paragraphSpacing",
-  "textCase",
-  "textDecoration",
-  "assets",
-  "dimension",
-  "border2",
-  "boxShadow",
-  "typography2",
-  "composition"
+  "swatches"
 );
 
 export type PlasmicDesignTokenItem__ArgsType = {
@@ -138,12 +78,9 @@ export type PlasmicDesignTokenItem__OverridesType = {
   tokenName?: p.Flex<"div">;
   textValue?: p.Flex<"div">;
   description?: p.Flex<"div">;
-  color?: p.Flex<typeof SwatchColor>;
-  sizing?: p.Flex<typeof SwatchSizing>;
-  border?: p.Flex<typeof SwatchBorder>;
-  opacity?: p.Flex<typeof SwatchOpacity>;
-  spacing?: p.Flex<typeof SwatchSpacing>;
-  typography?: p.Flex<typeof SwatchTypography>;
+  swatchSizing?: p.Flex<typeof SwatchSizing>;
+  swatchSpacing?: p.Flex<typeof SwatchSpacing>;
+  swatchColor?: p.Flex<typeof SwatchColor>;
 };
 
 export interface DefaultDesignTokenItemProps {
@@ -153,26 +90,7 @@ export interface DefaultDesignTokenItemProps {
   typography?: string;
   sizing?: string;
   spacing?: string;
-  colorSwatch?: SingleBooleanChoiceArg<"colorSwatch">;
-  sizing2?: SingleBooleanChoiceArg<"sizing2">;
-  borderRadius?: SingleBooleanChoiceArg<"borderRadius">;
-  spacing2?: SingleBooleanChoiceArg<"spacing2">;
-  fontFamily?: SingleBooleanChoiceArg<"fontFamily">;
-  fontWeights?: SingleBooleanChoiceArg<"fontWeights">;
-  fontSizes?: SingleBooleanChoiceArg<"fontSizes">;
-  borderWidth?: SingleBooleanChoiceArg<"borderWidth">;
-  opacity2?: SingleBooleanChoiceArg<"opacity2">;
-  lineHeights?: SingleBooleanChoiceArg<"lineHeights">;
-  letterSpacing?: SingleBooleanChoiceArg<"letterSpacing">;
-  paragraphSpacing?: SingleBooleanChoiceArg<"paragraphSpacing">;
-  textCase?: SingleBooleanChoiceArg<"textCase">;
-  textDecoration?: SingleBooleanChoiceArg<"textDecoration">;
-  assets?: SingleBooleanChoiceArg<"assets">;
-  dimension?: SingleBooleanChoiceArg<"dimension">;
-  border2?: SingleBooleanChoiceArg<"border2">;
-  boxShadow?: SingleBooleanChoiceArg<"boxShadow">;
-  typography2?: SingleBooleanChoiceArg<"typography2">;
-  composition?: SingleBooleanChoiceArg<"composition">;
+  swatches?: SingleChoiceArg<"color" | "space" | "size">;
   className?: string;
 }
 
@@ -222,144 +140,10 @@ function PlasmicDesignTokenItem__RenderFunc(props: {
   const stateSpecs = React.useMemo(
     () => [
       {
-        path: "colorSwatch",
+        path: "swatches",
         type: "private",
         variableType: "variant",
-        initFunc: true
-          ? ($props, $state, $ctx) => $props.colorSwatch
-          : undefined
-      },
-      {
-        path: "sizing2",
-        type: "private",
-        variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props.sizing2 : undefined
-      },
-      {
-        path: "borderRadius",
-        type: "private",
-        variableType: "variant",
-        initFunc: true
-          ? ($props, $state, $ctx) => $props.borderRadius
-          : undefined
-      },
-      {
-        path: "spacing2",
-        type: "private",
-        variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props.spacing2 : undefined
-      },
-      {
-        path: "fontFamily",
-        type: "private",
-        variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props.fontFamily : undefined
-      },
-      {
-        path: "fontWeights",
-        type: "private",
-        variableType: "variant",
-        initFunc: true
-          ? ($props, $state, $ctx) => $props.fontWeights
-          : undefined
-      },
-      {
-        path: "fontSizes",
-        type: "private",
-        variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props.fontSizes : undefined
-      },
-      {
-        path: "borderWidth",
-        type: "private",
-        variableType: "variant",
-        initFunc: true
-          ? ($props, $state, $ctx) => $props.borderWidth
-          : undefined
-      },
-      {
-        path: "opacity2",
-        type: "private",
-        variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props.opacity2 : undefined
-      },
-      {
-        path: "lineHeights",
-        type: "private",
-        variableType: "variant",
-        initFunc: true
-          ? ($props, $state, $ctx) => $props.lineHeights
-          : undefined
-      },
-      {
-        path: "letterSpacing",
-        type: "private",
-        variableType: "variant",
-        initFunc: true
-          ? ($props, $state, $ctx) => $props.letterSpacing
-          : undefined
-      },
-      {
-        path: "paragraphSpacing",
-        type: "private",
-        variableType: "variant",
-        initFunc: true
-          ? ($props, $state, $ctx) => $props.paragraphSpacing
-          : undefined
-      },
-      {
-        path: "textCase",
-        type: "private",
-        variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props.textCase : undefined
-      },
-      {
-        path: "textDecoration",
-        type: "private",
-        variableType: "variant",
-        initFunc: true
-          ? ($props, $state, $ctx) => $props.textDecoration
-          : undefined
-      },
-      {
-        path: "assets",
-        type: "private",
-        variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props.assets : undefined
-      },
-      {
-        path: "dimension",
-        type: "private",
-        variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props.dimension : undefined
-      },
-      {
-        path: "border2",
-        type: "private",
-        variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props.border2 : undefined
-      },
-      {
-        path: "boxShadow",
-        type: "private",
-        variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props.boxShadow : undefined
-      },
-      {
-        path: "typography2",
-        type: "private",
-        variableType: "variant",
-        initFunc: true
-          ? ($props, $state, $ctx) => $props.typography2
-          : undefined
-      },
-      {
-        path: "composition",
-        type: "private",
-        variableType: "variant",
-        initFunc: true
-          ? ($props, $state, $ctx) => $props.composition
-          : undefined
+        initFunc: true ? ($props, $state, $ctx) => $props.swatches : undefined
       }
     ],
     [$props, $ctx]
@@ -380,8 +164,7 @@ function PlasmicDesignTokenItem__RenderFunc(props: {
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
         projectcss.plasmic_tokens,
-        sty.root,
-        { [sty.rootfontFamily]: hasVariant($state, "fontFamily", "fontFamily") }
+        sty.root
       )}
     >
       <div
@@ -420,217 +203,46 @@ function PlasmicDesignTokenItem__RenderFunc(props: {
         {"description"}
       </div>
 
-      {(
-        hasVariant($state, "spacing2", "spacing2")
-          ? true
-          : hasVariant($state, "borderRadius", "borderRadius")
-          ? true
-          : hasVariant($state, "sizing2", "sizing2")
-          ? true
-          : hasVariant($state, "colorSwatch", "colorSwatch")
-          ? true
-          : false
-      ) ? (
-        <SwatchColor
-          data-plasmic-name={"color"}
-          data-plasmic-override={overrides.color}
-          className={classNames("__wab_instance", sty.color, {
-            [sty.colorborderRadius]: hasVariant(
-              $state,
-              "borderRadius",
-              "borderRadius"
-            ),
-            [sty.colorcolorSwatch]: hasVariant(
-              $state,
-              "colorSwatch",
-              "colorSwatch"
-            ),
-            [sty.colorfontFamily]: hasVariant(
-              $state,
-              "fontFamily",
-              "fontFamily"
-            ),
-            [sty.colorsizing2]: hasVariant($state, "sizing2", "sizing2"),
-            [sty.colorspacing2]: hasVariant($state, "spacing2", "spacing2")
-          })}
-          color={args.color}
-        />
-      ) : null}
-      {(
-        hasVariant($state, "spacing2", "spacing2")
-          ? true
-          : hasVariant($state, "borderRadius", "borderRadius")
-          ? true
-          : hasVariant($state, "sizing2", "sizing2")
-          ? true
-          : hasVariant($state, "colorSwatch", "colorSwatch")
-          ? true
-          : false
-      ) ? (
+      {(hasVariant($state, "swatches", "size") ? true : true) ? (
         <SwatchSizing
-          data-plasmic-name={"sizing"}
-          data-plasmic-override={overrides.sizing}
-          className={classNames("__wab_instance", sty.sizing, {
-            [sty.sizingborderRadius]: hasVariant(
+          data-plasmic-name={"swatchSizing"}
+          data-plasmic-override={overrides.swatchSizing}
+          className={classNames("__wab_instance", sty.swatchSizing, {
+            [sty.swatchSizingswatches_size]: hasVariant(
               $state,
-              "borderRadius",
-              "borderRadius"
-            ),
-            [sty.sizingcolorSwatch]: hasVariant(
-              $state,
-              "colorSwatch",
-              "colorSwatch"
-            ),
-            [sty.sizingsizing2]: hasVariant($state, "sizing2", "sizing2"),
-            [sty.sizingspacing2]: hasVariant($state, "spacing2", "spacing2")
-          })}
-          size={args.sizing}
-        />
-      ) : null}
-      {(
-        hasVariant($state, "spacing2", "spacing2")
-          ? true
-          : hasVariant($state, "borderRadius", "borderRadius")
-          ? true
-          : hasVariant($state, "sizing2", "sizing2")
-          ? true
-          : hasVariant($state, "border2", "border2")
-          ? true
-          : hasVariant($state, "colorSwatch", "colorSwatch")
-          ? true
-          : true
-      ) ? (
-        <SwatchBorder
-          data-plasmic-name={"border"}
-          data-plasmic-override={overrides.border}
-          border={args.border}
-          className={classNames("__wab_instance", sty.border, {
-            [sty.borderborder2]: hasVariant($state, "border2", "border2"),
-            [sty.borderborderRadius]: hasVariant(
-              $state,
-              "borderRadius",
-              "borderRadius"
-            ),
-            [sty.bordercolorSwatch]: hasVariant(
-              $state,
-              "colorSwatch",
-              "colorSwatch"
-            ),
-            [sty.bordersizing2]: hasVariant($state, "sizing2", "sizing2"),
-            [sty.borderspacing2]: hasVariant($state, "spacing2", "spacing2"),
-            [sty.bordertypography2]: hasVariant(
-              $state,
-              "typography2",
-              "typography2"
+              "swatches",
+              "size"
             )
           })}
+          size={"80px" as const}
         />
       ) : null}
-      {(
-        hasVariant($state, "opacity2", "opacity2")
-          ? true
-          : hasVariant($state, "spacing2", "spacing2")
-          ? true
-          : hasVariant($state, "borderRadius", "borderRadius")
-          ? true
-          : hasVariant($state, "sizing2", "sizing2")
-          ? true
-          : hasVariant($state, "colorSwatch", "colorSwatch")
-          ? true
-          : true
-      ) ? (
-        <SwatchOpacity
-          data-plasmic-name={"opacity"}
-          data-plasmic-override={overrides.opacity}
-          className={classNames("__wab_instance", sty.opacity, {
-            [sty.opacityborderRadius]: hasVariant(
-              $state,
-              "borderRadius",
-              "borderRadius"
-            ),
-            [sty.opacitycolorSwatch]: hasVariant(
-              $state,
-              "colorSwatch",
-              "colorSwatch"
-            ),
-            [sty.opacityopacity2]: hasVariant($state, "opacity2", "opacity2"),
-            [sty.opacitysizing2]: hasVariant($state, "sizing2", "sizing2"),
-            [sty.opacityspacing2]: hasVariant($state, "spacing2", "spacing2")
-          })}
-          opacity={args.opacity}
-        />
-      ) : null}
-      {(
-        hasVariant($state, "spacing2", "spacing2")
-          ? true
-          : hasVariant($state, "borderRadius", "borderRadius")
-          ? true
-          : hasVariant($state, "sizing2", "sizing2")
-          ? true
-          : hasVariant($state, "colorSwatch", "colorSwatch")
-          ? true
-          : true
-      ) ? (
+      {(hasVariant($state, "swatches", "space") ? true : true) ? (
         <SwatchSpacing
-          data-plasmic-name={"spacing"}
-          data-plasmic-override={overrides.spacing}
-          className={classNames("__wab_instance", sty.spacing, {
-            [sty.spacingborderRadius]: hasVariant(
+          data-plasmic-name={"swatchSpacing"}
+          data-plasmic-override={overrides.swatchSpacing}
+          className={classNames("__wab_instance", sty.swatchSpacing, {
+            [sty.swatchSpacingswatches_space]: hasVariant(
               $state,
-              "borderRadius",
-              "borderRadius"
-            ),
-            [sty.spacingcolorSwatch]: hasVariant(
-              $state,
-              "colorSwatch",
-              "colorSwatch"
-            ),
-            [sty.spacingsizing2]: hasVariant($state, "sizing2", "sizing2"),
-            [sty.spacingspacing2]: hasVariant($state, "spacing2", "spacing2")
-          })}
-          space={args.spacing}
-        />
-      ) : null}
-      {(
-        hasVariant($state, "spacing2", "spacing2")
-          ? true
-          : hasVariant($state, "borderRadius", "borderRadius")
-          ? true
-          : hasVariant($state, "sizing2", "sizing2")
-          ? true
-          : hasVariant($state, "typography2", "typography2")
-          ? true
-          : hasVariant($state, "colorSwatch", "colorSwatch")
-          ? true
-          : true
-      ) ? (
-        <SwatchTypography
-          data-plasmic-name={"typography"}
-          data-plasmic-override={overrides.typography}
-          className={classNames("__wab_instance", sty.typography, {
-            [sty.typographyborderRadius]: hasVariant(
-              $state,
-              "borderRadius",
-              "borderRadius"
-            ),
-            [sty.typographycolorSwatch]: hasVariant(
-              $state,
-              "colorSwatch",
-              "colorSwatch"
-            ),
-            [sty.typographysizing2]: hasVariant($state, "sizing2", "sizing2"),
-            [sty.typographyspacing2]: hasVariant(
-              $state,
-              "spacing2",
-              "spacing2"
-            ),
-            [sty.typographytypography2]: hasVariant(
-              $state,
-              "typography2",
-              "typography2"
+              "swatches",
+              "space"
             )
           })}
-          typography={"16px" as const}
+          space={"10" as const}
+        />
+      ) : null}
+      {(hasVariant($state, "swatches", "color") ? true : true) ? (
+        <SwatchColor
+          data-plasmic-name={"swatchColor"}
+          data-plasmic-override={overrides.swatchColor}
+          className={classNames("__wab_instance", sty.swatchColor, {
+            [sty.swatchColorswatches_color]: hasVariant(
+              $state,
+              "swatches",
+              "color"
+            )
+          })}
+          color={"red" as const}
         />
       ) : null}
     </div>
@@ -643,22 +255,16 @@ const PlasmicDescendants = {
     "tokenName",
     "textValue",
     "description",
-    "color",
-    "sizing",
-    "border",
-    "opacity",
-    "spacing",
-    "typography"
+    "swatchSizing",
+    "swatchSpacing",
+    "swatchColor"
   ],
   tokenName: ["tokenName"],
   textValue: ["textValue"],
   description: ["description"],
-  color: ["color"],
-  sizing: ["sizing"],
-  border: ["border"],
-  opacity: ["opacity"],
-  spacing: ["spacing"],
-  typography: ["typography"]
+  swatchSizing: ["swatchSizing"],
+  swatchSpacing: ["swatchSpacing"],
+  swatchColor: ["swatchColor"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -668,12 +274,9 @@ type NodeDefaultElementType = {
   tokenName: "div";
   textValue: "div";
   description: "div";
-  color: typeof SwatchColor;
-  sizing: typeof SwatchSizing;
-  border: typeof SwatchBorder;
-  opacity: typeof SwatchOpacity;
-  spacing: typeof SwatchSpacing;
-  typography: typeof SwatchTypography;
+  swatchSizing: typeof SwatchSizing;
+  swatchSpacing: typeof SwatchSpacing;
+  swatchColor: typeof SwatchColor;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -740,12 +343,9 @@ export const PlasmicDesignTokenItem = Object.assign(
     tokenName: makeNodeComponent("tokenName"),
     textValue: makeNodeComponent("textValue"),
     description: makeNodeComponent("description"),
-    color: makeNodeComponent("color"),
-    sizing: makeNodeComponent("sizing"),
-    border: makeNodeComponent("border"),
-    opacity: makeNodeComponent("opacity"),
-    spacing: makeNodeComponent("spacing"),
-    typography: makeNodeComponent("typography"),
+    swatchSizing: makeNodeComponent("swatchSizing"),
+    swatchSpacing: makeNodeComponent("swatchSpacing"),
+    swatchColor: makeNodeComponent("swatchColor"),
 
     // Metadata about props expected for PlasmicDesignTokenItem
     internalVariantProps: PlasmicDesignTokenItem__VariantProps,
