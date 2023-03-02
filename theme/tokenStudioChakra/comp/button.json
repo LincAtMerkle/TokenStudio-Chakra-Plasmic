@@ -19,7 +19,7 @@
     "primary": {
       "default": {
         "background-color": {
-          "value": "{color.purple.500}",
+          "value": "#ff00ff",
           "type": "color"
         },
         "text-color": {
