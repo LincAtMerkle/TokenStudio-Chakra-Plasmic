@@ -27,25 +27,20 @@
   min-width: 0;
 }
 .swatchSizing:global(.__wab_instance) {
-  max-width: 100%;
-  object-fit: cover;
   position: relative;
   display: none;
 }
-.swatchSizingswatches_size:global(.__wab_instance) {
+.swatchSizingswatches_sizing:global(.__wab_instance) {
   display: flex;
 }
 .swatchSpacing:global(.__wab_instance) {
-  max-width: 100%;
-  object-fit: cover;
   position: relative;
   display: none;
 }
-.swatchSpacingswatches_space:global(.__wab_instance) {
+.swatchSpacingswatches_spacing:global(.__wab_instance) {
   display: flex;
 }
 .swatchColor:global(.__wab_instance) {
-  max-width: 100%;
   object-fit: cover;
   position: relative;
   display: none;

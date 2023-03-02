@@ -7,7 +7,7 @@ export function SwatchFontFamily({
   className: string;
   fontFamily: string;
 }) {
-  console.log("!!!!fontFamily: "+fontFamily)
+  console.log("fontFamily: "+fontFamily)
   return (
     <header
       className={className}

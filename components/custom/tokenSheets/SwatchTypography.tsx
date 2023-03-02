@@ -7,7 +7,7 @@ export function SwatchTypography({
   className: string;
   typography: string;
 }) {
-  console.log("!!!!typography: "+typography)
+  console.log("typography: "+typography)
   return (
     <h1
       className={className}

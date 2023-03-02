@@ -7,7 +7,7 @@ export function SwatchDimension({
   className: string;
   dimension: string;
 }) {
-  console.log("!!!!dimension: "+dimension)
+  console.log("dimension: "+dimension)
   return (
     <div
       className={className}

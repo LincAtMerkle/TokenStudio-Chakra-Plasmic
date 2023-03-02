@@ -7,7 +7,7 @@ export function SwatchTextDecoration({
   className: string;
   textDecoration: string;
 }) {
-  console.log("!!!!textDecoration: "+textDecoration)
+  console.log("textDecoration: "+textDecoration)
   return (
     <div
       className={className}

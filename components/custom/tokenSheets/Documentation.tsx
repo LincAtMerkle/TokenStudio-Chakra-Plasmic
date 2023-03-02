@@ -11,16 +11,14 @@ export default interface DocumentationComponentProps {
 }
 
 export function Documentation({
-  set = "core/color",
-  path = "btn.primary",
-  theme = "light",
-  render,
-}: {
-  set?: string;
-  path?: string;
-  theme?: string;
-  render: (data: any) => JSX.Element;
-}) {
+
+set = 'core/color', 
+path = '', 
+theme = 'light', render }: { 
+  set?: string; 
+  path?: string; 
+  theme?: string; 
+  render: (data: any) => JSX.Element }) {
   const [data, setData] = useState<Record<string, any>>();
   const [error, setError] = useState("");
   useEffect(() => {
@@ -72,7 +70,7 @@ export function Documentation({
     const getTokenData = (data: Record<string, any>, path = ""): any => {
       Object.keys(data).forEach((key) => {        
         let tokenPath = path;
-        console.log("***key: "+ key);
+        console.log("Key: "+ key);
         if ("value" in data[key]) {
           // console.log("tokenPath: "+ tokenPath);
           // console.log("key: "+ key);

@@ -45,10 +45,10 @@ import projectcss from "./plasmic_plasmic_poc.module.css"; // plasmic-import: x7
 import sty from "./PlasmicDesignTokenItem.module.css"; // plasmic-import: QyqHsDAu6Z/css
 
 export type PlasmicDesignTokenItem__VariantMembers = {
-  swatches: "color" | "space" | "size";
+  swatches: "color" | "spacing" | "sizing";
 };
 export type PlasmicDesignTokenItem__VariantsArgs = {
-  swatches?: SingleChoiceArg<"color" | "space" | "size">;
+  swatches?: SingleChoiceArg<"color" | "spacing" | "sizing">;
 };
 type VariantPropType = keyof PlasmicDesignTokenItem__VariantsArgs;
 export const PlasmicDesignTokenItem__VariantProps = new Array<VariantPropType>(
@@ -90,7 +90,7 @@ export interface DefaultDesignTokenItemProps {
   typography?: string;
   sizing?: string;
   spacing?: string;
-  swatches?: SingleChoiceArg<"color" | "space" | "size">;
+  swatches?: SingleChoiceArg<"color" | "spacing" | "sizing">;
   className?: string;
 }
 
@@ -102,6 +102,13 @@ const __wrapUserPromise =
     return await promise;
   });
 
+function useNextRouter() {
+  try {
+    return useRouter();
+  } catch {}
+  return undefined;
+}
+
 function PlasmicDesignTokenItem__RenderFunc(props: {
   variants: PlasmicDesignTokenItem__VariantsArgs;
   args: PlasmicDesignTokenItem__ArgsType;
@@ -110,7 +117,7 @@ function PlasmicDesignTokenItem__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
-  const __nextRouter = useRouter();
+  const __nextRouter = useNextRouter();
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(
@@ -136,21 +143,21 @@ function PlasmicDesignTokenItem__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
-
+  const [$queries, setDollarQueries] = React.useState({});
   const stateSpecs = React.useMemo(
     () => [
       {
         path: "swatches",
         type: "private",
         variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props.swatches : undefined
+        initFunc: true
+          ? ({ $props, $state, $queries, $ctx }) => $props.swatches
+          : undefined
       }
     ],
     [$props, $ctx]
   );
-  const $state = p.useDollarState(stateSpecs, $props, $ctx);
-
-  const [$queries, setDollarQueries] = React.useState({});
+  const $state = p.useDollarState(stateSpecs, { $props, $ctx, $queries });
 
   return (
     <div
@@ -164,7 +171,8 @@ function PlasmicDesignTokenItem__RenderFunc(props: {
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
         projectcss.plasmic_tokens,
-        sty.root
+        sty.root,
+        { [sty.rootswatches_color]: hasVariant($state, "swatches", "color") }
       )}
     >
       <div
@@ -203,29 +211,34 @@ function PlasmicDesignTokenItem__RenderFunc(props: {
         {"description"}
       </div>
 
-      {(hasVariant($state, "swatches", "size") ? true : true) ? (
+      {(hasVariant($state, "swatches", "sizing") ? true : true) ? (
         <SwatchSizing
           data-plasmic-name={"swatchSizing"}
           data-plasmic-override={overrides.swatchSizing}
           className={classNames("__wab_instance", sty.swatchSizing, {
-            [sty.swatchSizingswatches_size]: hasVariant(
+            [sty.swatchSizingswatches_sizing]: hasVariant(
               $state,
               "swatches",
-              "size"
+              "sizing"
             )
           })}
           size={"80px" as const}
         />
       ) : null}
-      {(hasVariant($state, "swatches", "space") ? true : true) ? (
+      {(hasVariant($state, "swatches", "spacing") ? true : true) ? (
         <SwatchSpacing
           data-plasmic-name={"swatchSpacing"}
           data-plasmic-override={overrides.swatchSpacing}
           className={classNames("__wab_instance", sty.swatchSpacing, {
-            [sty.swatchSpacingswatches_space]: hasVariant(
+            [sty.swatchSpacingswatches_sizing]: hasVariant(
               $state,
               "swatches",
-              "space"
+              "sizing"
+            ),
+            [sty.swatchSpacingswatches_spacing]: hasVariant(
+              $state,
+              "swatches",
+              "spacing"
             )
           })}
           space={"10" as const}

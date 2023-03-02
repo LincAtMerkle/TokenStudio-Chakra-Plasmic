@@ -12,9 +12,9 @@
   padding: 0px;
 }
 .section {
-  flex-direction: column;
   display: flex;
   position: relative;
+  flex-direction: column;
   width: 100%;
   height: auto;
   min-width: 0;
@@ -22,8 +22,8 @@
 }
 .section > :global(.__wab_flex-container) {
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
   min-width: 0;
   margin-top: calc(0px - 16px);
   height: calc(100% + 16px);
@@ -43,19 +43,15 @@
   object-fit: cover;
   position: relative;
 }
-.colors {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  width: 400px;
-  height: auto;
-  max-width: 100%;
-  padding: 8px;
-}
-.swatchColor:global(.__wab_instance) {
+.chakraUiButton:global(.__wab_instance) {
   max-width: 100%;
   object-fit: cover;
-  align-self: auto;
+  position: relative;
+}
+.text {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  min-width: 0;
 }

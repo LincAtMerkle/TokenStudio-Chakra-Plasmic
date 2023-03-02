@@ -7,7 +7,7 @@ export function SwatchFontSizes({
   className: string;
   fontSizes: string;
 }) {
-  console.log("!!!!fontSizes: "+fontSizes)
+  console.log("fontSizes: "+fontSizes)
   return (
     <div
       className={className}

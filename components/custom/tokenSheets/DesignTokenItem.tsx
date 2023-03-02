@@ -21,7 +21,11 @@ import { HTMLElementRefOf } from "@plasmicapp/react-web";
 //
 // You can also stop extending from DefaultDesignTokenItemProps altogether and have
 // total control over the props for your component.
-export interface DesignTokenItemProps extends DefaultDesignTokenItemProps {}
+export interface DesignTokenItemProps extends DefaultDesignTokenItemProps {
+  tokenName?: string;
+  textValue?: string;
+  description?: string;
+}
 
 function DesignTokenItem_(
   props: DesignTokenItemProps,
@@ -43,7 +47,11 @@ function DesignTokenItem_(
   // to do whatever works for you.
 
   return (<div>
-    <PlasmicDesignTokenItem root={{ ref }} {...props} />
+    <PlasmicDesignTokenItem root={{ ref }} {...props} 
+    swatchColor={{color:props.color}}
+    swatchSpacing={{spacing:props.spacing}}
+    swatchSizing={{sizing:props.sizing}}
+    />
   </div>
   );
 }

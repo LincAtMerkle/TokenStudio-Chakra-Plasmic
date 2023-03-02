@@ -7,7 +7,7 @@ export function SwatchFontWeights({
   className: string;
   fontWeights: string;
 }) {
-  console.log("!!!!fontWeights: "+fontWeights)
+  console.log("fontWeights: "+fontWeights)
   return (
     <div
       className={className}

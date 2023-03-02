@@ -7,7 +7,7 @@ export function SwatchLetterSpacing({
   className: string;
   letterSpacing: string;
 }) {
-  console.log("!!!!letterSpacing: "+letterSpacing)
+  console.log("letterSpacing: "+letterSpacing)
   return (
     <div
       className={className}

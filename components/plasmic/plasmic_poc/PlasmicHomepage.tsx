@@ -36,7 +36,7 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import { ChakraDocs } from "@chakra-ui/react"; // plasmic-import: -RU2ZbsAIK/codeComponent
-import { SwatchColor } from "../../custom/tokenSheets/SwatchColor"; // plasmic-import: SEDfm__PT6/codeComponent
+import { Button } from "@chakra-ui/react"; // plasmic-import: QLxDRPfRLT0/codeComponent
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -56,8 +56,8 @@ export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
   section?: p.Flex<"section">;
   chakraDocs?: p.Flex<typeof ChakraDocs>;
-  colors?: p.Flex<"div">;
-  swatchColor?: p.Flex<typeof SwatchColor>;
+  chakraUiButton?: p.Flex<typeof Button>;
+  text?: p.Flex<"div">;
 };
 
 export interface DefaultHomepageProps {}
@@ -70,6 +70,13 @@ const __wrapUserPromise =
     return await promise;
   });
 
+function useNextRouter() {
+  try {
+    return useRouter();
+  } catch {}
+  return undefined;
+}
+
 function PlasmicHomepage__RenderFunc(props: {
   variants: PlasmicHomepage__VariantsArgs;
   args: PlasmicHomepage__ArgsType;
@@ -78,7 +85,7 @@ function PlasmicHomepage__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
-  const __nextRouter = useRouter();
+  const __nextRouter = useNextRouter();
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
@@ -91,7 +98,6 @@ function PlasmicHomepage__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
-
   const [$queries, setDollarQueries] = React.useState({});
 
   return (
@@ -130,25 +136,29 @@ function PlasmicHomepage__RenderFunc(props: {
               data-plasmic-name={"chakraDocs"}
               data-plasmic-override={overrides.chakraDocs}
               className={classNames("__wab_instance", sty.chakraDocs)}
-              path={"btn.primary.default" as const}
+              path={"heading.semi-bold" as const}
               set={"core/color" as const}
               theme={"light" as const}
             />
 
-            {true ? (
+            <Button
+              data-plasmic-name={"chakraUiButton"}
+              data-plasmic-override={overrides.chakraUiButton}
+              className={classNames("__wab_instance", sty.chakraUiButton)}
+              variant={"primary" as const}
+            >
               <div
-                data-plasmic-name={"colors"}
-                data-plasmic-override={overrides.colors}
-                className={classNames(projectcss.all, sty.colors)}
+                data-plasmic-name={"text"}
+                data-plasmic-override={overrides.text}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text
+                )}
               >
-                <SwatchColor
-                  data-plasmic-name={"swatchColor"}
-                  data-plasmic-override={overrides.swatchColor}
-                  className={classNames("__wab_instance", sty.swatchColor)}
-                  color={"red" as const}
-                />
+                {"Butdssdton"}
               </div>
-            ) : null}
+            </Button>
           </p.Stack>
         </div>
       </div>
@@ -157,11 +167,11 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "section", "chakraDocs", "colors", "swatchColor"],
-  section: ["section", "chakraDocs", "colors", "swatchColor"],
+  root: ["root", "section", "chakraDocs", "chakraUiButton", "text"],
+  section: ["section", "chakraDocs", "chakraUiButton", "text"],
   chakraDocs: ["chakraDocs"],
-  colors: ["colors", "swatchColor"],
-  swatchColor: ["swatchColor"]
+  chakraUiButton: ["chakraUiButton", "text"],
+  text: ["text"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -170,8 +180,8 @@ type NodeDefaultElementType = {
   root: "div";
   section: "section";
   chakraDocs: typeof ChakraDocs;
-  colors: "div";
-  swatchColor: typeof SwatchColor;
+  chakraUiButton: typeof Button;
+  text: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -237,8 +247,8 @@ export const PlasmicHomepage = Object.assign(
     // Helper components rendering sub-elements
     section: makeNodeComponent("section"),
     chakraDocs: makeNodeComponent("chakraDocs"),
-    colors: makeNodeComponent("colors"),
-    swatchColor: makeNodeComponent("swatchColor"),
+    chakraUiButton: makeNodeComponent("chakraUiButton"),
+    text: makeNodeComponent("text"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,

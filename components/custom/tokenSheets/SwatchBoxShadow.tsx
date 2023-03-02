@@ -7,7 +7,7 @@ export function SwatchBoxShadow({
   className: string;
   boxShadow: string;
 }) {
-  console.log("!!!!boxShadow: "+boxShadow)
+  console.log("boxShadow: "+boxShadow)
   return (
     <div
       className={className}

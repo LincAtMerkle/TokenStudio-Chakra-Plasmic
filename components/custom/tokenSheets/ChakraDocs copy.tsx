@@ -39,20 +39,22 @@ export function ChakraDocs(
             return data.map(
               ({ value, tokenName, variant, description }: any, i: any) => {
                 console.log("variant: "+variant);
-                console.log("set: "+set);
                 return (      
                   <div key={`token-docs-${i}`} style={{ padding: 0 }}>
                     <DesignTokenItem
                       //@ts-ignore
+                      value={value}
                       tokenName={tokenName}
-                      swatches={variant}
+                      // variant={variant+"Swatch"}
+                      // variant={variant+"Swatch"}
+                      variant={variant}
                       description={description}
-                      
+
                       /////// token swatches
-                      color ={variant === "color" ? value : undefined}
-                      sizing ={variant === "sizing" ? value : undefined}
+                      // color ={variant === "color" ? value : undefined}
+                      // sizing ={variant === "sizing" ? value : undefined}
                       // borderRadius ={variant === "borderRadius" ? value : undefined}
-                      spacing ={variant === "spacing" ? value : undefined}
+                      // spacing ={variant === "spacing" ? value : undefined}
                       // fontFamily ={variant === "fontFamily" ? value : undefined}
                       // fontWeights ={variant === "fontWeights" ? value : undefined}
                       // fontSizes ={variant === "fontSizes" ? value : undefined}
