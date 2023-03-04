@@ -1983,7 +1983,7 @@
     "primary": {
       "default": {
         "background-color": {
-          "value": "#a855f7",
+          "value": "#ff00ff",
           "type": "color"
         },
         "text-color": {
