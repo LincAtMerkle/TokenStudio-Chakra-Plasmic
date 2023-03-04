@@ -7,7 +7,6 @@ export function SwatchSizing({
   className: string;
   sizing: string;
 }) {
-  console.log("sizing: "+sizing)
   return (
     <div
       className={className}

@@ -7,7 +7,6 @@ export function SwatchComposition({
   className: string;
   composition: string;
 }) {
-  console.log("composition: "+composition)
   return (
     <div
       className={className}

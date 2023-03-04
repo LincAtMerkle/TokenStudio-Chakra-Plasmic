@@ -7,7 +7,6 @@ export function SwatchAssets({
   className: string;
   assets: string;
 }) {
-  console.log("Assets: "+assets)
   return (
     <div
       className={className}

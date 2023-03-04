@@ -30,9 +30,10 @@ interface SemanticTokens {
     for (const category in figmaTokens) {
       for (const property in figmaTokens[category]) {
         if (category === 'colors') {
+          console.log("category.light: " + category.light)
           for (const token in figmaTokens[category].light) {
             semanticTokens[category][token] = {
-              default: figmaTokens[category].light[token],
+              default: figmaTokens[category].hm-light[token],
               _dark: figmaTokens[category].dark[token]
             }
           }

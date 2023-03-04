@@ -1,8 +1,8 @@
 import React, { useEffect, useMemo, useState } from "react";
 
 import metadata from "../../../theme/tokenStudioChakra/$metadata.json";
-import lightTokens from "../../../theme/documentationTokens/light.json";
-import darkTokens from "../../../theme/documentationTokens/dark.json";
+import lightTokens from "../../../theme/documentationTokens/hm-light.json";
+import darkTokens from "../../../theme/documentationTokens/hm-dark.json";
 
 export default interface DocumentationComponentProps {
   value: string;
@@ -14,7 +14,7 @@ export function Documentation({
 
 set = 'core/color', 
 path = '', 
-theme = 'light', render }: { 
+theme = 'hm-light', render }: { 
   set?: string; 
   path?: string; 
   theme?: string; 
@@ -44,7 +44,7 @@ theme = 'light', render }: {
   const jsonData = useMemo(() => {
     if (data) {
       const themeFile: Record<string, any> =
-        theme === "light" ? lightTokens : darkTokens;
+        theme === "hm-light" ? lightTokens : darkTokens;
       if (path) {
         const pathData = path
           .split(".")
@@ -70,12 +70,8 @@ theme = 'light', render }: {
     const getTokenData = (data: Record<string, any>, path = ""): any => {
       Object.keys(data).forEach((key) => {        
         let tokenPath = path;
-        console.log("Key: "+ key);
         if ("value" in data[key]) {
-          // console.log("tokenPath: "+ tokenPath);
-          // console.log("key: "+ key);
           const tokenName = tokenPath ? `${tokenPath}.${key}` : key;
-          // console.log("tokenName: "+ tokenName);
           const variant = data[key].type as string;
           const value = data[key].value as string;
           tokenData.push({
@@ -84,7 +80,6 @@ theme = 'light', render }: {
             tokenName,
           });
         } else {
-          // console.log("In esle statement");
           tokenPath = tokenPath ? `${tokenPath}.${key}` : `${key}`;
           return getTokenData(data[key], tokenPath);
         }

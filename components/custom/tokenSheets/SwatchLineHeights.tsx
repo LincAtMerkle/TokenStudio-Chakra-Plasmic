@@ -7,7 +7,6 @@ export function SwatchLineHeights({
   className: string;
   lineHeights: string;
 }) {
-  console.log("lineHeights: "+lineHeights)
   return (
     <div
       className={className}

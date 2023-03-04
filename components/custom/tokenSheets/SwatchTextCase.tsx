@@ -7,7 +7,6 @@ export function SwatchTextCase({
   className: string;
   textCase: string;
 }) {
-  console.log("textCase: "+textCase)
   return (
     <div
       className={className}

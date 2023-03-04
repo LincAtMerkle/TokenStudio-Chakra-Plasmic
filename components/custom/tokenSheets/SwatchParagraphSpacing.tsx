@@ -7,7 +7,6 @@ export function SwatchParagraphSpacing({
   className: string;
   paragraphSpacing: string;
 }) {
-  console.log("paragraphSpacing: "+paragraphSpacing)
   return (
     <div
       className={className}

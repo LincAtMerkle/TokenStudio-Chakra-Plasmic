@@ -7,7 +7,6 @@ export function SwatchBorder({
   className: string;
   border: string;
 }) {
-  console.log("border: " + border);
   return (
     <div
       className={className}

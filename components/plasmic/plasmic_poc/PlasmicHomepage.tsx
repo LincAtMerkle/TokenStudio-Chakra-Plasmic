@@ -35,8 +35,9 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import { ChakraDocs } from "@chakra-ui/react"; // plasmic-import: -RU2ZbsAIK/codeComponent
+import { Heading } from "@chakra-ui/react"; // plasmic-import: STXKiV1w_j5/codeComponent
 import { Button } from "@chakra-ui/react"; // plasmic-import: QLxDRPfRLT0/codeComponent
+import { ChakraDocs } from "@chakra-ui/react"; // plasmic-import: -RU2ZbsAIK/codeComponent
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -55,9 +56,6 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
   section?: p.Flex<"section">;
-  chakraDocs?: p.Flex<typeof ChakraDocs>;
-  chakraUiButton?: p.Flex<typeof Button>;
-  text?: p.Flex<"div">;
 };
 
 export interface DefaultHomepageProps {}
@@ -132,33 +130,461 @@ function PlasmicHomepage__RenderFunc(props: {
             hasGap={true}
             className={classNames(projectcss.all, sty.section)}
           >
-            <ChakraDocs
-              data-plasmic-name={"chakraDocs"}
-              data-plasmic-override={overrides.chakraDocs}
-              className={classNames("__wab_instance", sty.chakraDocs)}
-              path={"heading.semi-bold" as const}
-              set={"core/color" as const}
-              theme={"light" as const}
-            />
-
-            <Button
-              data-plasmic-name={"chakraUiButton"}
-              data-plasmic-override={overrides.chakraUiButton}
-              className={classNames("__wab_instance", sty.chakraUiButton)}
-              variant={"primary" as const}
+            <Heading
+              className={classNames(
+                "__wab_instance",
+                sty.chakraUiHeading__waWgh
+              )}
+              noOfLines={1 as const}
+              size={"4xl" as const}
             >
               <div
-                data-plasmic-name={"text"}
-                data-plasmic-override={overrides.text}
                 className={classNames(
                   projectcss.all,
                   projectcss.__wab_text,
-                  sty.text
+                  sty.text__ucc3
                 )}
               >
-                {"Butdssdton"}
+                {"Button"}
               </div>
-            </Button>
+            </Heading>
+
+            <Heading
+              className={classNames(
+                "__wab_instance",
+                sty.chakraUiHeading__oDb8
+              )}
+              noOfLines={1 as const}
+              size={"2xl" as const}
+            >
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__neP4Q
+                )}
+              >
+                {"Sizes"}
+              </div>
+            </Heading>
+
+            {true ? (
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__c30Kb)}
+              >
+                <Button
+                  className={classNames(
+                    "__wab_instance",
+                    sty.chakraUiButton__h1YT
+                  )}
+                  size={"xl" as const}
+                  variant={"primary" as const}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___7Iupc
+                    )}
+                  >
+                    {"Butdssdton"}
+                  </div>
+                </Button>
+
+                <Button
+                  className={classNames(
+                    "__wab_instance",
+                    sty.chakraUiButton__skTi8
+                  )}
+                  size={"sm" as const}
+                  variant={"primary" as const}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__wo9UP
+                    )}
+                  >
+                    {"Butdssdton"}
+                  </div>
+                </Button>
+
+                <Button
+                  className={classNames(
+                    "__wab_instance",
+                    sty.chakraUiButton___1ZoHu
+                  )}
+                  size={"md" as const}
+                  variant={"primary" as const}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__l95Ar
+                    )}
+                  >
+                    {"Butdssdton"}
+                  </div>
+                </Button>
+
+                <Button
+                  className={classNames(
+                    "__wab_instance",
+                    sty.chakraUiButton__kPpgs
+                  )}
+                  size={"lg" as const}
+                  variant={"primary" as const}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__xwhUi
+                    )}
+                  >
+                    {"Butdssdton"}
+                  </div>
+                </Button>
+              </p.Stack>
+            ) : null}
+
+            <Heading
+              className={classNames(
+                "__wab_instance",
+                sty.chakraUiHeading__aYk18
+              )}
+              noOfLines={1 as const}
+              size={"2xl" as const}
+            >
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__rymde
+                )}
+              >
+                {"States"}
+              </div>
+            </Heading>
+
+            {true ? (
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__mNbNo)}
+              >
+                <Button
+                  className={classNames(
+                    "__wab_instance",
+                    sty.chakraUiButton___7RkOh
+                  )}
+                  isActive={true}
+                  size={"xl" as const}
+                  variant={"primary" as const}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__rLehw
+                    )}
+                  >
+                    {"Butdssdton"}
+                  </div>
+                </Button>
+
+                <Button
+                  className={classNames(
+                    "__wab_instance",
+                    sty.chakraUiButton__dvVvI
+                  )}
+                  isDisabled={true}
+                  size={"sm" as const}
+                  variant={"primary" as const}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__jNooV
+                    )}
+                  >
+                    {"Butdssdton"}
+                  </div>
+                </Button>
+
+                <Button
+                  className={classNames(
+                    "__wab_instance",
+                    sty.chakraUiButton__cuF47
+                  )}
+                  isLoading={true}
+                  size={"md" as const}
+                  variant={"primary" as const}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__zzuQl
+                    )}
+                  >
+                    {"Butdssdton"}
+                  </div>
+                </Button>
+              </p.Stack>
+            ) : null}
+
+            <Heading
+              className={classNames(
+                "__wab_instance",
+                sty.chakraUiHeading__uDdQa
+              )}
+              noOfLines={1 as const}
+              size={"2xl" as const}
+            >
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__i7Izv
+                )}
+              >
+                {"Variants"}
+              </div>
+            </Heading>
+
+            {true ? (
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__l0Vno)}
+              >
+                {true ? (
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__gFqW)}
+                  >
+                    <Heading
+                      className={classNames(
+                        "__wab_instance",
+                        sty.chakraUiHeading__mKv4P
+                      )}
+                      noOfLines={1 as const}
+                      size={"xl" as const}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__oo3I
+                        )}
+                      >
+                        {"Primary"}
+                      </div>
+                    </Heading>
+
+                    <Button
+                      className={classNames(
+                        "__wab_instance",
+                        sty.chakraUiButton__ziAzs
+                      )}
+                      variant={"primary" as const}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text___5JvoL
+                        )}
+                      >
+                        {"Butdssdton"}
+                      </div>
+                    </Button>
+
+                    <Heading
+                      className={classNames(
+                        "__wab_instance",
+                        sty.chakraUiHeading__jTkg5
+                      )}
+                      noOfLines={1 as const}
+                      size={"lg" as const}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__c2Lr3
+                        )}
+                      >
+                        {"Tokens"}
+                      </div>
+                    </Heading>
+
+                    <ChakraDocs
+                      className={classNames(
+                        "__wab_instance",
+                        sty.chakraDocs__rC27Y
+                      )}
+                      path={"btn.primary" as const}
+                      set={"core/color" as const}
+                      theme={"hm-light" as const}
+                    />
+                  </p.Stack>
+                ) : null}
+                {true ? (
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__wlpvQ)}
+                  >
+                    <Heading
+                      className={classNames(
+                        "__wab_instance",
+                        sty.chakraUiHeading__erOKe
+                      )}
+                      noOfLines={1 as const}
+                      size={"xl" as const}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text___7JOJm
+                        )}
+                      >
+                        {"Secondary"}
+                      </div>
+                    </Heading>
+
+                    <Button
+                      className={classNames(
+                        "__wab_instance",
+                        sty.chakraUiButton___2ZUux
+                      )}
+                      variant={"primary" as const}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__qnd80
+                        )}
+                      >
+                        {"Butdssdton"}
+                      </div>
+                    </Button>
+
+                    <Heading
+                      className={classNames(
+                        "__wab_instance",
+                        sty.chakraUiHeading__u6TMc
+                      )}
+                      noOfLines={1 as const}
+                      size={"lg" as const}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__chWeu
+                        )}
+                      >
+                        {"Tokens"}
+                      </div>
+                    </Heading>
+
+                    <ChakraDocs
+                      className={classNames(
+                        "__wab_instance",
+                        sty.chakraDocs__zd3Ds
+                      )}
+                      path={"btn.secondary" as const}
+                      set={"core/color" as const}
+                      theme={"hm-light" as const}
+                    />
+                  </p.Stack>
+                ) : null}
+                {true ? (
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__sLxYq)}
+                  >
+                    <Heading
+                      className={classNames(
+                        "__wab_instance",
+                        sty.chakraUiHeading__zixBf
+                      )}
+                      noOfLines={1 as const}
+                      size={"xl" as const}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__jzE8V
+                        )}
+                      >
+                        {"Negative"}
+                      </div>
+                    </Heading>
+
+                    <Button
+                      className={classNames(
+                        "__wab_instance",
+                        sty.chakraUiButton___5QaIa
+                      )}
+                      variant={"primary" as const}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__stSL
+                        )}
+                      >
+                        {"Butdssdton"}
+                      </div>
+                    </Button>
+
+                    <Heading
+                      className={classNames(
+                        "__wab_instance",
+                        sty.chakraUiHeading__tsOju
+                      )}
+                      noOfLines={1 as const}
+                      size={"lg" as const}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__zysrk
+                        )}
+                      >
+                        {"Tokens"}
+                      </div>
+                    </Heading>
+
+                    <ChakraDocs
+                      className={classNames(
+                        "__wab_instance",
+                        sty.chakraDocs__cEdB
+                      )}
+                      path={"btn.negative" as const}
+                      set={"core/color" as const}
+                      theme={"hm-light" as const}
+                    />
+                  </p.Stack>
+                ) : null}
+              </p.Stack>
+            ) : null}
           </p.Stack>
         </div>
       </div>
@@ -167,11 +593,8 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "section", "chakraDocs", "chakraUiButton", "text"],
-  section: ["section", "chakraDocs", "chakraUiButton", "text"],
-  chakraDocs: ["chakraDocs"],
-  chakraUiButton: ["chakraUiButton", "text"],
-  text: ["text"]
+  root: ["root", "section"],
+  section: ["section"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -179,9 +602,6 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   section: "section";
-  chakraDocs: typeof ChakraDocs;
-  chakraUiButton: typeof Button;
-  text: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -246,9 +666,6 @@ export const PlasmicHomepage = Object.assign(
   {
     // Helper components rendering sub-elements
     section: makeNodeComponent("section"),
-    chakraDocs: makeNodeComponent("chakraDocs"),
-    chakraUiButton: makeNodeComponent("chakraUiButton"),
-    text: makeNodeComponent("text"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,

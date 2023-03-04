@@ -7,7 +7,6 @@ export function SwatchBorderWidth({
   className: string;
   borderWidth: string;
 }) {
-  console.log("borderWidth: "+borderWidth)
   return (
     <div
       className={className}

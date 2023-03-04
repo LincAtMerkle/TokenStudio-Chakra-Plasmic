@@ -7,7 +7,6 @@ export function SwatchBorderRadius({
   className: string;
   borderRadius: string;
 }) {
-  console.log("borderRadius: " + borderRadius);
   return (
     <div
       className={className}

@@ -27,7 +27,6 @@ export function ChakraDocs(
         alert("Error copying value");
       }
     };
-    console.log(`SET: ${set}`);
     return (
       <div className={className}>
         <Documentation
@@ -35,11 +34,8 @@ export function ChakraDocs(
           path={path}
           set={set}
           render={(data) => {
-            // console.log("data: "+JSON.stringify(data));
             return data.map(
               ({ value, tokenName, variant, description }: any, i: any) => {
-                console.log("variant: "+variant);
-                console.log("set: "+set);
                 return (      
                   <div key={`token-docs-${i}`} style={{ padding: 0 }}>
                     <DesignTokenItem
