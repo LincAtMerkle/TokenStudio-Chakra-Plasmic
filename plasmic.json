@@ -538,7 +538,7 @@
         {
           "id": "-RU2ZbsAIK",
           "name": "ChakraDocs",
-          "componentImportPath": "@chakra-ui/react"
+          "componentImportPath": "./components/custom/tokenSheets/ChakraDocs"
         },
         {
           "id": "SEDfm__PT6",
