@@ -5,7 +5,7 @@ import {tokenSetOrder} from "../../../theme/tokenStudioChakra/$metadata.json"
 export function registerChakraDocs() {
   registerComponent(ChakraDocs, {
     name: "ChakraDocs",
-    importPath: "@chakra-ui/react",
+    importPath: "./components/custom/tokenSheets/ChakraDocs",
     props: {
       theme: {
         type: "choice",
