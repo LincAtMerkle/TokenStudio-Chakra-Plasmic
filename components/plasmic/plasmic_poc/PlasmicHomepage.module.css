@@ -309,9 +309,10 @@
   max-width: 800px;
   min-width: 0;
 }
-.chakraDocs__rC27Y:global(.__wab_instance) {
+.chakraDocs__hdd5Y:global(.__wab_instance) {
   max-width: 100%;
   object-fit: cover;
+  position: relative;
 }
 .freeBox__wlpvQ {
   display: flex;
@@ -375,9 +376,10 @@
   max-width: 800px;
   min-width: 0;
 }
-.chakraDocs__zd3Ds:global(.__wab_instance) {
+.chakraDocs___9D0Xi:global(.__wab_instance) {
   max-width: 100%;
   object-fit: cover;
+  position: relative;
 }
 .freeBox__sLxYq {
   display: flex;
@@ -441,7 +443,8 @@
   max-width: 800px;
   min-width: 0;
 }
-.chakraDocs__cEdB:global(.__wab_instance) {
+.chakraDocs___6VAja:global(.__wab_instance) {
   max-width: 100%;
   object-fit: cover;
+  position: relative;
 }

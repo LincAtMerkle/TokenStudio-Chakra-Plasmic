@@ -37,7 +37,7 @@ import {
 } from "@plasmicapp/react-web";
 import { Heading } from "@chakra-ui/react"; // plasmic-import: STXKiV1w_j5/codeComponent
 import { Button } from "@chakra-ui/react"; // plasmic-import: QLxDRPfRLT0/codeComponent
-import { ChakraDocs } from "@chakra-ui/react"; // plasmic-import: -RU2ZbsAIK/codeComponent
+import { ChakraDocs } from "../../custom/tokenSheets/ChakraDocs"; // plasmic-import: -RU2ZbsAIK/codeComponent
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -429,7 +429,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     <ChakraDocs
                       className={classNames(
                         "__wab_instance",
-                        sty.chakraDocs__rC27Y
+                        sty.chakraDocs__hdd5Y
                       )}
                       path={"btn.primary" as const}
                       set={"core/color" as const}
@@ -502,7 +502,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     <ChakraDocs
                       className={classNames(
                         "__wab_instance",
-                        sty.chakraDocs__zd3Ds
+                        sty.chakraDocs___9D0Xi
                       )}
                       path={"btn.secondary" as const}
                       set={"core/color" as const}
@@ -575,7 +575,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     <ChakraDocs
                       className={classNames(
                         "__wab_instance",
-                        sty.chakraDocs__cEdB
+                        sty.chakraDocs___6VAja
                       )}
                       path={"btn.negative" as const}
                       set={"core/color" as const}
