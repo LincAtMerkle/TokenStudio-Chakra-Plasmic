@@ -218,7 +218,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     sty.chakraUiButton___1ZoHu
                   )}
                   size={"md" as const}
-                  variant={"primary" as const}
+                  variant={"solid" as const}
                 >
                   <div
                     className={classNames(
