@@ -28,24 +28,8 @@ interface SemanticTokens {
     }
   
     for (const category in figmaTokens) {
-      console.log("category: " + category)
       for (const property in figmaTokens[category]) {
-        console.log("figmaTokens[category]: " + figmaTokens[category])
         if (category === 'colors') {
-          // console.log("**** category: " + category)
-          // console.log("**** category.hm-light: " + category.all["hm-light"])
-          // console.log("XXXXXXX category.hmlight: " + category.hmlight)
-          
-          //
-          //
-          //          
-          console.log("***HERE: "+JSON.stringify(category["light"]));
-          //
-          //
-          //
-
-
-
           for (const token in figmaTokens[category]["hm-light"]) {
             semanticTokens[category][token] = {
               default: figmaTokens[category]["hm-light"][token],
