@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerButtonPreview(){
     registerComponent(ButtonPreview, {
         name: "ButtonPreview",
-        importPath: "@chakra-ui/react",
+        importPath: "./components/custom/ButtonPreview",
         props: {
   },
 });};
