@@ -11,7 +11,7 @@ export function SwatchTextCase({
     <div
       className={className}
       style={{ 
-        textTransform: textCase, 
+        // textTransform: textCase, 
         backgroundColor: "yellow" 
     }}
     >
