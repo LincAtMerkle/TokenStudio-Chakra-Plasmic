@@ -37,7 +37,7 @@ import {
 } from "@plasmicapp/react-web";
 import { Heading } from "@chakra-ui/react"; // plasmic-import: STXKiV1w_j5/codeComponent
 import { Button } from "@chakra-ui/react"; // plasmic-import: QLxDRPfRLT0/codeComponent
-import { ButtonPreview } from "@chakra-ui/react"; // plasmic-import: gT3XIuurc5/codeComponent
+import { ButtonPreview } from "../../custom/chakra-ui/react"; // plasmic-import: gT3XIuurc5/codeComponent
 import { ChakraDocs } from "../../custom/tokenSheets/ChakraDocs"; // plasmic-import: -RU2ZbsAIK/codeComponent
 
 import "@plasmicapp/react-web/lib/plasmic.css";
