@@ -1,8 +1,10 @@
 import React, { useEffect, useMemo, useState } from "react";
 
 import metadata from "../../../theme/tokenStudioChakra/$metadata.json";
-import lightTokens from "../../../theme/documentationTokens/hm-light.json";
-import darkTokens from "../../../theme/documentationTokens/hm-dark.json";
+// import lightTokens from "../../../theme/documentationTokens/hm-light.json"; 
+// import darkTokens from "../../../theme/documentationTokens/hm-dark.json";
+import lightTokens from "../../../theme/documentationTokens/light.json"; 
+import darkTokens from "../../../theme/documentationTokens/dark.json";
 
 export default interface DocumentationComponentProps {
   value: string;
@@ -14,7 +16,8 @@ export function Documentation({
 
 set = 'core/color', 
 path = '', 
-theme = 'hm-light', render }: { 
+// theme = 'hm-light', render }: { 
+theme = 'light', render }: { 
   set?: string; 
   path?: string; 
   theme?: string; 
@@ -44,7 +47,8 @@ theme = 'hm-light', render }: {
   const jsonData = useMemo(() => {
     if (data) {
       const themeFile: Record<string, any> =
-        theme === "hm-light" ? lightTokens : darkTokens;
+      // theme === "hm-light" ? lightTokens : darkTokens;
+      theme === "light" ? lightTokens : darkTokens;
       if (path) {
         const pathData = path
           .split(".")
