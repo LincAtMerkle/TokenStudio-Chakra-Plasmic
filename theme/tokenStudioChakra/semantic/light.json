@@ -2,7 +2,7 @@
   "semantic": {
     "fg": {
       "default": {
-        "value": "{color.black}",
+        "value": "{color.neutrals.black}",
         "type": "color"
       },
       "muted": {
@@ -14,7 +14,7 @@
         "type": "color"
       },
       "on-accent": {
-        "value": "{color.white}",
+        "value": "{color.neutrals.white}",
         "type": "color"
       },
       "on-disabled": {
@@ -32,7 +32,7 @@
     },
     "bg": {
       "surface": {
-        "value": "{color.white}",
+        "value": "{color.neutrals.white}",
         "type": "color"
       },
       "muted": {
@@ -132,7 +132,7 @@
         "type": "color"
       },
       "on-warning": {
-        "value": "{color.black}",
+        "value": "{color.neutrals.black}",
         "type": "color"
       }
     },
@@ -154,7 +154,7 @@
         "type": "color"
       },
       "on-error": {
-        "value": "{color.white}",
+        "value": "{color.neutrals.white}",
         "type": "color"
       }
     },
@@ -176,7 +176,7 @@
         "type": "color"
       },
       "on-info": {
-        "value": "{color.white}",
+        "value": "{color.neutrals.white}",
         "type": "color"
       }
     },
@@ -198,7 +198,7 @@
         "type": "color"
       },
       "on-success": {
-        "value": "{color.white}",
+        "value": "{color.neutrals.white}",
         "type": "color"
       }
     },
@@ -220,7 +220,7 @@
         "type": "color"
       },
       "on-success": {
-        "value": "{color.white}",
+        "value": "{color.neutrals.white}",
         "type": "color"
       }
     },
@@ -270,7 +270,7 @@
         "type": "color"
       },
       "on-success": {
-        "value": "{color.white}",
+        "value": "{color.neutrals.white}",
         "type": "color"
       }
     },
@@ -337,7 +337,7 @@
               "type": "color"
             },
             "text": {
-              "value": "{color.white}",
+              "value": "{color.neutrals.white}",
               "type": "color"
             },
             "background": {
@@ -349,7 +349,7 @@
               "type": "color"
             },
             "quiet-background": {
-              "value": "{color.transparent}",
+              "value": "{color.neutrals.transparent}",
               "type": "color"
             },
             "quiet-text": {
@@ -363,7 +363,7 @@
               "type": "color"
             },
             "text": {
-              "value": "{color.white}",
+              "value": "{color.neutrals.white}",
               "type": "color"
             },
             "background": {
@@ -379,7 +379,7 @@
               "type": "color"
             },
             "quiet-text": {
-              "value": "{color.white}",
+              "value": "{color.neutrals.white}",
               "type": "color"
             }
           },
@@ -389,7 +389,7 @@
               "type": "color"
             },
             "text": {
-              "value": "{color.white}",
+              "value": "{color.neutrals.white}",
               "type": "color"
             },
             "background": {
@@ -405,7 +405,7 @@
               "type": "color"
             },
             "quiet-text": {
-              "value": "{color.white}",
+              "value": "{color.neutrals.white}",
               "type": "color"
             }
           },
@@ -415,7 +415,7 @@
               "type": "color"
             },
             "text": {
-              "value": "{color.white}",
+              "value": "{color.neutrals.white}",
               "type": "color"
             },
             "background": {
@@ -453,7 +453,7 @@
               "type": "color"
             },
             "text-color": {
-              "value": "{color.white}",
+              "value": "{color.neutrals.white}",
               "type": "color"
             },
             "background-color": {
@@ -467,7 +467,7 @@
               "type": "color"
             },
             "text-color": {
-              "value": "{color.white}",
+              "value": "{color.neutrals.white}",
               "type": "color"
             },
             "background-color": {
@@ -481,7 +481,7 @@
               "type": "color"
             },
             "text-color": {
-              "value": "{color.white}",
+              "value": "{color.neutrals.white}",
               "type": "color"
             },
             "background-color": {
@@ -495,7 +495,7 @@
               "type": "color"
             },
             "text-color": {
-              "value": "{color.white}",
+              "value": "{color.neutrals.white}",
               "type": "color"
             },
             "background-color": {
@@ -511,7 +511,7 @@
               "type": "color"
             },
             "text": {
-              "value": "{color.white}",
+              "value": "{color.neutrals.white}",
               "type": "color"
             },
             "background": {
@@ -519,7 +519,7 @@
               "type": "color"
             },
             "quiet-background": {
-              "value": "{color.transparent}",
+              "value": "{color.neutrals.transparent}",
               "type": "color"
             }
           },
@@ -529,7 +529,7 @@
               "type": "color"
             },
             "text": {
-              "value": "{color.white}",
+              "value": "{color.neutrals.white}",
               "type": "color"
             },
             "background": {
@@ -547,7 +547,7 @@
               "type": "color"
             },
             "text": {
-              "value": "{color.white}",
+              "value": "{color.neutrals.white}",
               "type": "color"
             },
             "background": {
@@ -565,7 +565,7 @@
               "type": "color"
             },
             "quiet-border": {
-              "value": "{color.transparent}",
+              "value": "{color.neutrals.transparent}",
               "type": "color"
             },
             "text": {
@@ -577,11 +577,11 @@
               "type": "color"
             },
             "background": {
-              "value": "{color.transparent}",
+              "value": "{color.neutrals.transparent}",
               "type": "color"
             },
             "quiet-background": {
-              "value": "{color.transparent}",
+              "value": "{color.neutrals.transparent}",
               "type": "color"
             }
           },
@@ -607,7 +607,7 @@
               "type": "color"
             },
             "quiet-border": {
-              "value": "{color.transparent}",
+              "value": "{color.neutrals.transparent}",
               "type": "color"
             },
             "text": {
@@ -619,11 +619,11 @@
               "type": "color"
             },
             "background": {
-              "value": "{color.transparent}",
+              "value": "{color.neutrals.transparent}",
               "type": "color"
             },
             "quiet-background": {
-              "value": "{color.transparent}",
+              "value": "{color.neutrals.transparent}",
               "type": "color"
             }
           },
@@ -633,7 +633,7 @@
               "type": "color"
             },
             "quiet-border": {
-              "value": "{color.transparent}",
+              "value": "{color.neutrals.transparent}",
               "type": "color"
             },
             "text": {
@@ -659,15 +659,15 @@
               "type": "color"
             },
             "quiet-border": {
-              "value": "{color.transparent}",
+              "value": "{color.neutrals.transparent}",
               "type": "color"
             },
             "text": {
-              "value": "{color.white}",
+              "value": "{color.neutrals.white}",
               "type": "color"
             },
             "quiet-text": {
-              "value": "{color.white}",
+              "value": "{color.neutrals.white}",
               "type": "color"
             },
             "background": {
@@ -685,7 +685,7 @@
               "type": "color"
             },
             "quiet-border": {
-              "value": "{color.transparent}",
+              "value": "{color.neutrals.transparent}",
               "type": "color"
             },
             "text": {
@@ -697,11 +697,11 @@
               "type": "color"
             },
             "background": {
-              "value": "{color.transparent}",
+              "value": "{color.neutrals.transparent}",
               "type": "color"
             },
             "quiet-background": {
-              "value": "{color.transparent}",
+              "value": "{color.neutrals.transparent}",
               "type": "color"
             }
           },

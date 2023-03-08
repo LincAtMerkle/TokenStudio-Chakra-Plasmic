@@ -10,11 +10,11 @@
         "type": "color"
       },
       "subtle": {
-        "value": "{color.white}",
+        "value": "{color.neutrals.white}",
         "type": "color"
       },
       "on-accent": {
-        "value": "{color.white}",
+        "value": "{color.neutrals.white}",
         "type": "color"
       }
     },
@@ -24,7 +24,7 @@
         "type": "color"
       },
       "surface": {
-        "value": "{color.white}",
+        "value": "{color.neutrals.white}",
         "type": "color"
       }
     },
