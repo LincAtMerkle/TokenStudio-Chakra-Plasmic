@@ -30,15 +30,21 @@ interface SemanticTokens {
     for (const category in figmaTokens) {
       for (const property in figmaTokens[category]) {
         if (category === 'colors') {
-          for (const token in figmaTokens[category]["hm-light"]) {
+          // for (const token in figmaTokens[category]["hm-light"]) {
+          //   semanticTokens[category][token] = {
+          //     default: figmaTokens[category]["hm-light"][token],
+          //     _dark: figmaTokens[category]["hm-dark"][token]
+          //   }
+          // }
+          for (const token in figmaTokens[category]["light"]) {
             semanticTokens[category][token] = {
-              default: figmaTokens[category]["hm-light"][token],
-              _dark: figmaTokens[category]["hm-dark"][token]
+              default: figmaTokens[category]["light"][token],
+              _dark: figmaTokens[category]["dark"][token]
             }
           }
         } else {
-          const tokens = figmaTokens[category]["hm-light"] || figmaTokens[category]
-  
+          // const tokens = figmaTokens[category]["hm-light"] || figmaTokens[category]
+          const tokens = figmaTokens[category]["light"] || figmaTokens[category]  
           for (const token in tokens) {
             semanticTokens[category][token] = tokens[token]
           }

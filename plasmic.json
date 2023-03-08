@@ -53,6 +53,19 @@
           "cssFilePath": "plasmic/plasmic_poc/PlasmicDesignTokenItem.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "B74XSlye7u",
+          "name": "Table",
+          "type": "managed",
+          "projectId": "x7VZoMTkaRPxy26VUXVkvK",
+          "renderModuleFilePath": "plasmic/plasmic_poc/PlasmicTable.tsx",
+          "importSpec": {
+            "modulePath": "../pages/table.tsx"
+          },
+          "cssFilePath": "plasmic/plasmic_poc/PlasmicTable.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [],
@@ -478,7 +491,7 @@
         {
           "id": "gT3XIuurc5",
           "name": "ButtonPreview",
-          "componentImportPath": "@chakra-ui/react"
+          "componentImportPath": "./components/custom/ButtonPreview"
         },
         {
           "id": "Z2CGkrxpAY",

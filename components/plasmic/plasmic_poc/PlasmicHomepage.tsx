@@ -465,7 +465,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         "__wab_instance",
                         sty.chakraUiButton___26Krb
                       )}
-                      variant={"primary" as const}
+                      variant={"solid" as const}
                     >
                       <div
                         className={classNames(
@@ -509,7 +509,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         "__wab_instance",
                         sty.chakraUiButton__ralU
                       )}
-                      variant={"primary" as const}
+                      variant={"unstyled" as const}
                     >
                       <div
                         className={classNames(
@@ -541,7 +541,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   sty.text__h7TA
                 )}
               >
-                {"Tokens"}
+                {"BUtton Tokens"}
               </div>
             </Heading>
 
@@ -617,7 +617,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         "__wab_instance",
                         sty.chakraDocs__uUn4C
                       )}
-                      path={"btn.primary" as const}
+                      path={"btn.primary.default" as const}
                       set={"core/color" as const}
                       theme={"hm-light" as const}
                     />
