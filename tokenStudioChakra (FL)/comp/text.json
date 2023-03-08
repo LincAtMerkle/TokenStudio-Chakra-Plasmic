@@ -1,52 +1,68 @@
 {
-  "heading": {
+  "text": {
     "xs": {
       "text-size": {
-        "value": "{semantic.font-size.typography.heading.xs}",
+        "value": "{semantic.font-size.typography.body.xs}",
         "type": "fontSizes"
       }
     },
     "sm": {
       "text-size": {
-        "value": "{semantic.font-size.typography.heading.s}",
+        "value": "{semantic.font-size.typography.body.s}",
         "type": "fontSizes"
       }
     },
     "md": {
       "text-size": {
-        "value": "{semantic.font-size.typography.heading.m}",
+        "value": "{semantic.font-size.typography.body.m}",
         "type": "fontSizes"
       }
     },
     "lg": {
       "text-size": {
-        "value": "{semantic.font-size.typography.heading.l}",
+        "value": "{semantic.font-size.typography.body.l}",
         "type": "fontSizes"
       }
     },
     "xl": {
       "text-size": {
-        "value": "{semantic.font-size.typography.heading.xl}",
+        "value": "{semantic.font-size.typography.body.xl}",
         "type": "fontSizes"
       }
     },
     "2xl": {
       "text-size": {
-        "value": "{semantic.font-size.typography.heading.xxl}",
+        "value": "{semantic.font-size.typography.body.xxxl}",
         "type": "fontSizes"
       }
     },
     "3xl": {
       "text-size": {
-        "value": "{font-size.20}",
+        "value": "{font-size.11}",
         "type": "fontSizes"
       }
     },
     "4xl": {
       "text-size": {
+        "value": "{font-size.14}",
+        "type": "fontSizes"
+      }
+    },
+    "5xl": {
+      "text-size": {
+        "value": "{font-size.20}",
+        "type": "fontSizes"
+      }
+    },
+    "6xl": {
+      "text-size": {
         "value": "60px",
         "type": "fontSizes"
       }
+    },
+    "font-family": {
+      "value": "{semantic.font-family.typography.sans-serif}",
+      "type": "fontFamilies"
     },
     "light": {
       "font-weight": {
@@ -72,16 +88,12 @@
         "type": "fontWeights"
       }
     },
-    "font-family": {
-      "value": "{semantic.font-family.typography.sans-serif}",
-      "type": "fontFamilies"
-    },
     "text-color": {
       "value": "{semantic.color.typography.default}",
       "type": "color"
     },
     "line-height": {
-      "value": "{semantic.line-height.typography.heading}",
+      "value": "{semantic.line-height.typography.body}",
       "type": "lineHeights"
     }
   }

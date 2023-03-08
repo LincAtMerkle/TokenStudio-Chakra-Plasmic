@@ -80,6 +80,10 @@
       "value": "{semantic.color.typography.default}",
       "type": "color"
     },
+    "background-color": {
+      "value": "{btn.negative.active.border-color}",
+      "type": "color"
+    },
     "line-height": {
       "value": "{semantic.line-height.typography.heading}",
       "type": "lineHeights"
