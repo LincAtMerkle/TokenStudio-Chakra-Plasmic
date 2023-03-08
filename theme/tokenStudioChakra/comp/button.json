@@ -19,7 +19,7 @@
     "primary": {
       "default": {
         "background-color": {
-          "value": "#ff00ff",
+          "value": "{semantic.color.actions.cta.default.background-color}",
           "type": "color"
         },
         "text-color": {
@@ -244,7 +244,7 @@
         "type": "fontSizes"
       },
       "padding-left": {
-        "value": "{semantic.spacing.actions.lg.padding-left}",
+        "value": "{semantic.spacing.actions.xs.padding-left}",
         "type": "spacing"
       },
       "padding-right": {

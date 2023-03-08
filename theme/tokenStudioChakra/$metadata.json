@@ -22,19 +22,7 @@
     "comp/tooltip",
     "semantic/light",
     "semantic/dark",
-    "hm/light",
-    "wv/light",
-    "hm/dark",
-    "wv/dark",
-    "hh/light",
-    "hh/dark",
-    "st/light",
-    "st/dark",
-    "bl/light",
-    "bl/dark",
-    "ab/light",
-    "ab/dark",
-    "ld/light",
-    "ld/dark"
+    "Brand-ChakraDemo/light",
+    "Brand-ChakraDemo/dark"
   ]
 }
