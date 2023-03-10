@@ -33,6 +33,7 @@ import { registerSwatchBorder } from "./tokenSheets/registerSwatchBorder";
 import { registerSwatchBoxShadow } from "./tokenSheets/registerSwatchBoxShadow";
 import { registerSwatchTypography } from "./tokenSheets/registerSwatchTypography";
 import { registerSwatchComposition } from "./tokenSheets/registerSwatchComposition";
+import { registerFooterWithFourColumns } from "./chakraPro/FooterWithFourColumns/registerFooterWithFourColumns";
 
 
 export function registerAllCustom() {
@@ -75,4 +76,8 @@ export function registerAllCustom() {
     registerSwatchBoxShadow();
     registerSwatchTypography();
     registerSwatchComposition();
+
+    // ChakraPro
+    registerFooterWithFourColumns();
+
 }

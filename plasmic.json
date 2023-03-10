@@ -68,7 +68,13 @@
           "componentType": "page"
         }
       ],
-      "icons": [],
+      "icons": [
+        {
+          "id": "sjOToUFJK",
+          "name": "LeftIconIcon",
+          "moduleFilePath": "plasmic/plasmic_poc/icons/PlasmicIcon__LeftIcon.tsx"
+        }
+      ],
       "images": [],
       "indirect": false,
       "globalContextsFilePath": "plasmic/plasmic_poc/PlasmicGlobalContextsProvider.tsx",

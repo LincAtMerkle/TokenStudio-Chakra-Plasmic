@@ -45,6 +45,8 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_plasmic_poc.module.css"; // plasmic-import: x7VZoMTkaRPxy26VUXVkvK/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: xq29wAEBU6Yg/css
 
+import LeftIconIcon from "./icons/PlasmicIcon__LeftIcon"; // plasmic-import: sjOToUFJK/icon
+
 export type PlasmicHomepage__VariantMembers = {};
 export type PlasmicHomepage__VariantsArgs = {};
 type VariantPropType = keyof PlasmicHomepage__VariantsArgs;
@@ -57,6 +59,8 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
   section?: p.Flex<"section">;
+  button?: p.Flex<"div">;
+  children2?: p.Flex<"div">;
   buttonPreview?: p.Flex<typeof ButtonPreview>;
 };
 
@@ -150,6 +154,95 @@ function PlasmicHomepage__RenderFunc(props: {
                 {"Button"}
               </div>
             </Heading>
+
+            <Heading
+              className={classNames(
+                "__wab_instance",
+                sty.chakraUiHeading___1FeIz
+              )}
+              noOfLines={1 as const}
+              size={"3xl" as const}
+            >
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text___1C9Xz
+                )}
+              >
+                {"Chakra Design"}
+              </div>
+            </Heading>
+
+            <p.Stack
+              as={"div"}
+              data-plasmic-name={"button"}
+              data-plasmic-override={overrides.button}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.button)}
+            >
+              <LeftIconIcon
+                className={classNames(projectcss.all, sty.svg__zSb0V)}
+                role={"img"}
+              />
+
+              <div
+                data-plasmic-name={"children2"}
+                data-plasmic-override={overrides.children2}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.children2
+                )}
+              >
+                {"Button"}
+              </div>
+
+              {false ? (
+                <LeftIconIcon
+                  className={classNames(projectcss.all, sty.svg___4DEE)}
+                  role={"img"}
+                />
+              ) : null}
+            </p.Stack>
+
+            <Heading
+              className={classNames(
+                "__wab_instance",
+                sty.chakraUiHeading__ipaX2
+              )}
+              noOfLines={1 as const}
+              size={"3xl" as const}
+            >
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text___434Pf
+                )}
+              >
+                {"Chakra Code"}
+              </div>
+            </Heading>
+
+            <Button
+              className={classNames(
+                "__wab_instance",
+                sty.chakraUiButton__iubkv
+              )}
+              size={"lg" as const}
+              variant={"primary" as const}
+            >
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__jIto6
+                )}
+              >
+                {"Button"}
+              </div>
+            </Button>
 
             <Heading
               className={classNames(
@@ -248,7 +341,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       sty.text__xwhUi
                     )}
                   >
-                    {"Butdssdton"}
+                    {"Button"}
                   </div>
                 </Button>
               </p.Stack>
@@ -541,7 +634,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   sty.text__h7TA
                 )}
               >
-                {"BUtton Tokens"}
+                {"Button Tokens"}
               </div>
             </Heading>
 
@@ -583,7 +676,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       )}
                       path={"btn" as const}
                       set={"core/color" as const}
-                      theme={"hm-light" as const}
+                      theme={"light" as const}
                     />
                   </p.Stack>
                 ) : null}
@@ -619,7 +712,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       )}
                       path={"btn.primary.default" as const}
                       set={"core/color" as const}
-                      theme={"hm-light" as const}
+                      theme={"light" as const}
                     />
                   </p.Stack>
                 ) : null}
@@ -655,7 +748,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       )}
                       path={"btn.secondary" as const}
                       set={"core/color" as const}
-                      theme={"hm-light" as const}
+                      theme={"light" as const}
                     />
                   </p.Stack>
                 ) : null}
@@ -691,7 +784,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       )}
                       path={"btn.negative" as const}
                       set={"core/color" as const}
-                      theme={"hm-light" as const}
+                      theme={"light" as const}
                     />
                   </p.Stack>
                 ) : null}
@@ -705,8 +798,10 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "section", "buttonPreview"],
-  section: ["section", "buttonPreview"],
+  root: ["root", "section", "button", "children2", "buttonPreview"],
+  section: ["section", "button", "children2", "buttonPreview"],
+  button: ["button", "children2"],
+  children2: ["children2"],
   buttonPreview: ["buttonPreview"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -715,6 +810,8 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   section: "section";
+  button: "div";
+  children2: "div";
   buttonPreview: typeof ButtonPreview;
 };
 
@@ -780,6 +877,8 @@ export const PlasmicHomepage = Object.assign(
   {
     // Helper components rendering sub-elements
     section: makeNodeComponent("section"),
+    button: makeNodeComponent("button"),
+    children2: makeNodeComponent("children2"),
     buttonPreview: makeNodeComponent("buttonPreview"),
 
     // Metadata about props expected for PlasmicHomepage
