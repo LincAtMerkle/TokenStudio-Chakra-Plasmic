@@ -36,9 +36,10 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import { Heading } from "@chakra-ui/react"; // plasmic-import: STXKiV1w_j5/codeComponent
+import { FooterWithFourColumns } from "../../custom/chakraPro/FooterWithFourColumns"; // plasmic-import: 75EMm8e0N4/codeComponent
 import { Button } from "@chakra-ui/react"; // plasmic-import: QLxDRPfRLT0/codeComponent
 import { ButtonPreview } from "../../custom/ButtonPreview"; // plasmic-import: gT3XIuurc5/codeComponent
-import { ChakraDocs } from "../../custom/tokenSheets/ChakraDocs"; // plasmic-import: -RU2ZbsAIK/codeComponent
+import { ChakraDocs } from "../../custom/chakraPro/FooterWithFourColumns"; // plasmic-import: -RU2ZbsAIK/codeComponent
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -59,6 +60,7 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
   section?: p.Flex<"section">;
+  footerWithFourColumns?: p.Flex<typeof FooterWithFourColumns>;
   button?: p.Flex<"div">;
   children2?: p.Flex<"div">;
   buttonPreview?: p.Flex<typeof ButtonPreview>;
@@ -136,6 +138,34 @@ function PlasmicHomepage__RenderFunc(props: {
             hasGap={true}
             className={classNames(projectcss.all, sty.section)}
           >
+            <Heading
+              className={classNames(
+                "__wab_instance",
+                sty.chakraUiHeading__mwGz9
+              )}
+              noOfLines={1 as const}
+              size={"4xl" as const}
+            >
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__j9MUu
+                )}
+              >
+                {"Footer"}
+              </div>
+
+              <FooterWithFourColumns
+                data-plasmic-name={"footerWithFourColumns"}
+                data-plasmic-override={overrides.footerWithFourColumns}
+                className={classNames(
+                  "__wab_instance",
+                  sty.footerWithFourColumns
+                )}
+              />
+            </Heading>
+
             <Heading
               className={classNames(
                 "__wab_instance",
@@ -798,8 +828,22 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "section", "button", "children2", "buttonPreview"],
-  section: ["section", "button", "children2", "buttonPreview"],
+  root: [
+    "root",
+    "section",
+    "footerWithFourColumns",
+    "button",
+    "children2",
+    "buttonPreview"
+  ],
+  section: [
+    "section",
+    "footerWithFourColumns",
+    "button",
+    "children2",
+    "buttonPreview"
+  ],
+  footerWithFourColumns: ["footerWithFourColumns"],
   button: ["button", "children2"],
   children2: ["children2"],
   buttonPreview: ["buttonPreview"]
@@ -810,6 +854,7 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   section: "section";
+  footerWithFourColumns: typeof FooterWithFourColumns;
   button: "div";
   children2: "div";
   buttonPreview: typeof ButtonPreview;
@@ -877,6 +922,7 @@ export const PlasmicHomepage = Object.assign(
   {
     // Helper components rendering sub-elements
     section: makeNodeComponent("section"),
+    footerWithFourColumns: makeNodeComponent("footerWithFourColumns"),
     button: makeNodeComponent("button"),
     children2: makeNodeComponent("children2"),
     buttonPreview: makeNodeComponent("buttonPreview"),

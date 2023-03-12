@@ -2,6 +2,7 @@ import * as React from 'react'
 import { ReactNode } from 'react';
 import {
   Box,
+  BoxProps,
   Button,
   ButtonGroup,
   Container,
@@ -15,22 +16,26 @@ import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import { Logo } from './Logo'
 import { links } from './_data'
 
-export type FooterWithFourColumnsProps = {
+export type FooterWithFourColumnsProps = BoxProps & {
   title: string
+  footer: string
   links?: string
   label?: string
-  children: ReactNode
+  children: ReactNode,
 }
 
 export function FooterWithFourColumns({
-  // className,
+  className,
   children,
+  title="Create beautiful websites remarkably fast.",
+  footer="Chakra UI Pro, Inc. All rights reserved.",
   ...rest
   }: FooterWithFourColumnsProps) {
   return (
   <Box 
-    // className={className}
-    bg="bg-surface">
+    className={className}
+    bg="bg-surface"
+    {...rest}>
     <Container as="footer" role="contentinfo">
       <Stack
         justify="space-between"
@@ -41,7 +46,7 @@ export function FooterWithFourColumns({
       >
         <Stack spacing={{ base: '6', md: '8' }} align="start">
           <Logo />
-          <Text color="muted">Create beautiful websites remarkably fast.</Text>
+          <Text color="muted">{title}</Text>
         </Stack>
         <SimpleGrid columns={{ base: 2, md: 4 }} gap="8" width={{ base: 'full', lg: 'auto' }}>
           {links.map((group, idx) => (
@@ -69,7 +74,7 @@ export function FooterWithFourColumns({
         align="center"
       >
         <Text fontSize="sm" color="subtle">
-          &copy; {new Date().getFullYear()} Chakra UI Pro, Inc. All rights reserved.
+          &copy; {new Date().getFullYear()} {footer}
         </Text>
         <ButtonGroup variant="ghost">
           <IconButton

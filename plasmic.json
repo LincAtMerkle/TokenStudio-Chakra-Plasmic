@@ -66,6 +66,19 @@
           "cssFilePath": "plasmic/plasmic_poc/PlasmicTable.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "BoAoIbtXkM",
+          "name": "FooterWithFourColumns",
+          "type": "managed",
+          "projectId": "x7VZoMTkaRPxy26VUXVkvK",
+          "renderModuleFilePath": "plasmic/plasmic_poc/PlasmicFooterWithFourColumns.tsx",
+          "importSpec": {
+            "modulePath": "../pages/footer-with-four-columns.tsx"
+          },
+          "cssFilePath": "plasmic/plasmic_poc/PlasmicFooterWithFourColumns.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
@@ -658,6 +671,11 @@
           "id": "_JsyQkWTVzb",
           "name": "SwatchComposition",
           "componentImportPath": "./components/custom/tokenSheets/SwatchComposition"
+        },
+        {
+          "id": "75EMm8e0N4",
+          "name": "FooterWithFourColumns",
+          "componentImportPath": "./components/custom/FooterWithFourColumns"
         }
       ]
     }

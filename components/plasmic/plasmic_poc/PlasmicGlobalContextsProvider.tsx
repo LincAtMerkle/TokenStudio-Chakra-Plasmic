@@ -25,9 +25,7 @@ export default function GlobalContextsProvider(
       myToken1={
         chakraProviderProps && "myToken1" in chakraProviderProps
           ? chakraProviderProps.myToken1!
-          : true
-          ? ("#F123CC" as const)
-          : undefined
+          : ("#FF0000" as const)
       }
       myToken2={
         chakraProviderProps && "myToken2" in chakraProviderProps

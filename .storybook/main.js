@@ -28,8 +28,6 @@ module.exports = {
   addons: [
     '@storybook/addon-links',
     '@storybook/addon-essentials',
-    '@storybook/addon-interactions',
-    '@snek-at/storybook-addon-chakra-ui',
   ],
   features: { emotionAlias: false },
   webpackFinal: async (config) => {

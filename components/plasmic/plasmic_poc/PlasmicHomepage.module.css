@@ -38,6 +38,23 @@
   > img {
   margin-top: 16px;
 }
+.chakraUiHeading__mwGz9:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+.text__j9MUu {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  min-width: 0;
+}
+.footerWithFourColumns:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+}
 .chakraUiHeading__waWgh:global(.__wab_instance) {
   max-width: 100%;
   object-fit: cover;
