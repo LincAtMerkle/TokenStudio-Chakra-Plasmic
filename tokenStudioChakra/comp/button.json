@@ -240,20 +240,8 @@
     },
     "link": {
       "default": {
-        "background-color": {
-          "value": "{semantic.color.actions.negative.default.background}",
-          "type": "color"
-        },
         "text-color": {
-          "value": "{semantic.color.actions.negative.default.text}",
-          "type": "color"
-        },
-        "border-color": {
-          "value": "{semantic.color.actions.negative.default.border}",
-          "type": "color"
-        },
-        "icon-color": {
-          "value": "{semantic.color.actions.negative.default.text}",
+          "value": "#ff00ff",
           "type": "color"
         }
       },

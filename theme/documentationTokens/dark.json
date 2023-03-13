@@ -4124,6 +4124,68 @@
         }
       }
     },
+    "link": {
+      "default": {
+        "text-color": {
+          "value": "#ff00ff",
+          "type": "color"
+        }
+      },
+      "hover": {
+        "background-color": {
+          "value": "#fca5a5",
+          "type": "color"
+        },
+        "text-color": {
+          "value": "#ffffff",
+          "type": "color"
+        },
+        "border-color": {
+          "value": "#fca5a5",
+          "type": "color"
+        },
+        "icon-color": {
+          "value": "#ffffff",
+          "type": "color"
+        }
+      },
+      "active": {
+        "background-color": {
+          "value": "#ef4444",
+          "type": "color"
+        },
+        "text-color": {
+          "value": "#ffffff",
+          "type": "color"
+        },
+        "border-color": {
+          "value": "#ef4444",
+          "type": "color"
+        },
+        "icon-color": {
+          "value": "#ffffff",
+          "type": "color"
+        }
+      },
+      "disabled": {
+        "background-color": {
+          "value": "#d1d5db",
+          "type": "color"
+        },
+        "text-color": {
+          "value": "#9ca3af",
+          "type": "color"
+        },
+        "border-color": {
+          "value": "#d1d5db",
+          "type": "color"
+        },
+        "icon-color": {
+          "value": "#9ca3af",
+          "type": "color"
+        }
+      }
+    },
     "xs": {
       "text-size": {
         "value": "14px",

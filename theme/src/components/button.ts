@@ -118,27 +118,16 @@ const baseStyle = {
       }
     },
     link: {
-      bg: 'btn-primary-default-background-color',
-      color: 'btn-primary-default-text-color',
-      borderColor: 'btn-primary-default-border-color',
-      iconColor:"btn-primary-default-icon-color",
+      color: 'btn-link-default-text-color',
+      borderStyle: 'none',
       _hover: {
-        bg: 'btn-primary-hover-background-color',
-        color: 'btn-primary-hover-text-color',
-        borderColor: 'btn-primary-hover-border-color',
-        iconColor:'btn-primary-hover-icon-color'
+        color: 'btn-link-hover-text-color',
       },
       _active: {
-        bg: 'btn-primary-active-background-color',
-        color: 'btn-primary-active-text-color',
-        borderColor: 'btn-primary-active-border-color',
-        iconColor:'btn-primary-active-icon-color'
+        color: 'btn-link-active-text-color',
       },
       _disabled: {
-        bg: 'btn-primary-disabled-background-color',
-        color: 'btn-primary-disabled-text-color',
-        borderColor: 'btn-primary-disabled-border-color',
-        iconColor:'btn-primary-disabled-icon-color'
+        color: 'btn-link-disabled-text-color',
       }
     },
   }
