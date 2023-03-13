@@ -117,30 +117,31 @@ const baseStyle = {
 
       }
     },
-    link: (props: StyleFunctionProps) => {
-      if (props.colorScheme === 'gray') {
-        return {
-          color: 'muted',
-          _hover: {
-            textDecoration: 'none',
-            color: 'default',
-          },
-          _active: {
-            color: 'default',
-          },
-        }
+    link: {
+      bg: 'btn-primary-default-background-color',
+      color: 'btn-primary-default-text-color',
+      borderColor: 'btn-primary-default-border-color',
+      iconColor:"btn-primary-default-icon-color",
+      _hover: {
+        bg: 'btn-primary-hover-background-color',
+        color: 'btn-primary-hover-text-color',
+        borderColor: 'btn-primary-hover-border-color',
+        iconColor:'btn-primary-hover-icon-color'
+      },
+      _active: {
+        bg: 'btn-primary-active-background-color',
+        color: 'btn-primary-active-text-color',
+        borderColor: 'btn-primary-active-border-color',
+        iconColor:'btn-primary-active-icon-color'
+      },
+      _disabled: {
+        bg: 'btn-primary-disabled-background-color',
+        color: 'btn-primary-disabled-text-color',
+        borderColor: 'btn-primary-disabled-border-color',
+        iconColor:'btn-primary-disabled-icon-color'
       }
-      return {
-        color: mode(`${props.colorScheme}.600`, `${props.colorScheme}.200`)(props),
-        _hover: {
-          color: mode(`${props.colorScheme}.700`, `${props.colorScheme}.300`)(props),
-          textDecoration: 'none',
-        },
-        _active: {
-          color: mode(`${props.colorScheme}.700`, `${props.colorScheme}.300`)(props),
-        },
-      }
-    },  }
+    },
+  }
 
 export default {
     baseStyle,
