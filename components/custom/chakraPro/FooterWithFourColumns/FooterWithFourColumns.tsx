@@ -46,7 +46,7 @@ export function FooterWithFourColumns({
       >
         <Stack spacing={{ base: '6', md: '8' }} align="start">
           <Logo />
-          <Text color="muted">{title}</Text>
+          <Text  color="muted">{title}</Text>
         </Stack>
         <SimpleGrid columns={{ base: 2, md: 4 }} gap="8" width={{ base: 'full', lg: 'auto' }}>
           {links.map((group, idx) => (

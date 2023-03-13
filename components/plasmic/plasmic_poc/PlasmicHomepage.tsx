@@ -17,7 +17,7 @@ import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/router";
 
 import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/host";
+import * as ph from "@plasmicapp/react-web/lib/host";
 
 import {
   hasVariant,
@@ -36,10 +36,10 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import { Heading } from "@chakra-ui/react"; // plasmic-import: STXKiV1w_j5/codeComponent
-import { FooterWithFourColumns } from "../../custom/chakraPro/FooterWithFourColumns"; // plasmic-import: 75EMm8e0N4/codeComponent
+import { FooterWithFourColumns } from "../../custom/FooterWithFourColumns"; // plasmic-import: 75EMm8e0N4/codeComponent
 import { Button } from "@chakra-ui/react"; // plasmic-import: QLxDRPfRLT0/codeComponent
 import { ButtonPreview } from "../../custom/ButtonPreview"; // plasmic-import: gT3XIuurc5/codeComponent
-import { ChakraDocs } from "../../custom/chakraPro/FooterWithFourColumns"; // plasmic-import: -RU2ZbsAIK/codeComponent
+import { ChakraDocs } from "../../custom/tokenSheets/ChakraDocs"; // plasmic-import: -RU2ZbsAIK/codeComponent
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 

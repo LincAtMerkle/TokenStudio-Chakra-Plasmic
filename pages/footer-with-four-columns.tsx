@@ -25,14 +25,14 @@ function FooterWithFourColumns() {
   // Next.js Custom App component
   // (https://nextjs.org/docs/advanced-features/custom-app).
   return (
-    <GlobalContextsProvider>
+    // <GlobalContextsProvider>
       <ph.PageParamsProvider
         params={useRouter()?.query}
         query={useRouter()?.query}
       >
         <PlasmicFooterWithFourColumns />
       </ph.PageParamsProvider>
-    </GlobalContextsProvider>
+    // </GlobalContextsProvider>
   );
 }
 

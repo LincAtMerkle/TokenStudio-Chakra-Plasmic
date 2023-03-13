@@ -103,11 +103,6 @@
           "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
         },
         {
-          "id": "JrZetoTyy8",
-          "name": "Accordion",
-          "componentImportPath": "@chakra-ui/react"
-        },
-        {
           "id": "rxsy8-uL83",
           "name": "AccordionButton",
           "componentImportPath": "@chakra-ui/react"
@@ -676,6 +671,11 @@
           "id": "75EMm8e0N4",
           "name": "FooterWithFourColumns",
           "componentImportPath": "./components/custom/FooterWithFourColumns"
+        },
+        {
+          "id": "HYtD0jZptn",
+          "name": "Accordion",
+          "componentImportPath": "@chakra-ui/react"
         }
       ]
     }

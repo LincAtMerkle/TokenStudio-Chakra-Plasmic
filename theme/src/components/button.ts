@@ -1,3 +1,5 @@
+import { darken, mode, StyleFunctionProps, transparentize } from '@chakra-ui/theme-tools'
+
 const baseStyle = {
   // The styles all button have in common
     fontWeight: 'btn-font-weight',
@@ -114,8 +116,31 @@ const baseStyle = {
         iconColor:'btn-negative-disabled-icon-color'
 
       }
-    }
-  }
+    },
+    link: (props: StyleFunctionProps) => {
+      if (props.colorScheme === 'gray') {
+        return {
+          color: 'muted',
+          _hover: {
+            textDecoration: 'none',
+            color: 'default',
+          },
+          _active: {
+            color: 'default',
+          },
+        }
+      }
+      return {
+        color: mode(`${props.colorScheme}.600`, `${props.colorScheme}.200`)(props),
+        _hover: {
+          color: mode(`${props.colorScheme}.700`, `${props.colorScheme}.300`)(props),
+          textDecoration: 'none',
+        },
+        _active: {
+          color: mode(`${props.colorScheme}.700`, `${props.colorScheme}.300`)(props),
+        },
+      }
+    },  }
 
 export default {
     baseStyle,
