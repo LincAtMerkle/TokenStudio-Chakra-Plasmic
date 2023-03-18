@@ -4,7 +4,7 @@ const baseStyle = {
   color: "text-text-color",
 };
 // Four sizes: xs,sm,md and large
-
+// why 4 ? as the docs say 10
 const sizes = {
   xs: {
     fontSize: "text-xs-text-size",

@@ -79,6 +79,32 @@
           "cssFilePath": "plasmic/plasmic_poc/PlasmicFooterWithFourColumns.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "VR0q09gI2-",
+          "name": "Text",
+          "type": "managed",
+          "projectId": "x7VZoMTkaRPxy26VUXVkvK",
+          "renderModuleFilePath": "plasmic/plasmic_poc/PlasmicText.tsx",
+          "importSpec": {
+            "modulePath": "../pages/text.tsx"
+          },
+          "cssFilePath": "plasmic/plasmic_poc/PlasmicText.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "j-8daIxf9n",
+          "name": "Button",
+          "type": "managed",
+          "projectId": "x7VZoMTkaRPxy26VUXVkvK",
+          "renderModuleFilePath": "plasmic/plasmic_poc/PlasmicButton.tsx",
+          "importSpec": {
+            "modulePath": "../pages/Button.tsx"
+          },
+          "cssFilePath": "plasmic/plasmic_poc/PlasmicButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [

@@ -17,15 +17,15 @@ import { extendTheme, theme as baseTheme } from "@chakra-ui/react";
 // ******
 
 export const colorTokens = {
-  myToken1: {
-    defaultValue: "#FF0000",
-  },
-  myToken2: {
-    defaultValue: "#00FF00",
-  },
-  myToken3: {
-    defaultValue: "#0000FF",
-  },
+  // myToken1: {
+  //   defaultValue: "#FF0000",
+  // },
+  // myToken2: {
+  //   defaultValue: "#00FF00",
+  // },
+  // myToken3: {
+  //   defaultValue: "#0000FF",
+  // },
 };
 
 type ColorTokensType = keyof typeof colorTokens;
