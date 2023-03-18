@@ -16,17 +16,18 @@ import { extendTheme, theme as baseTheme } from "@chakra-ui/react";
 // toggleColorMode, useColorMode, colorMode, setColorMode
 // ******
 
-export const colorTokens = {
-  // myToken1: {
-  //   defaultValue: "#FF0000",
-  // },
-  // myToken2: {
-  //   defaultValue: "#00FF00",
-  // },
-  // myToken3: {
-  //   defaultValue: "#0000FF",
-  // },
-};
+// Get deploy errors
+// export const colorTokens = {
+//   myToken1: {
+//     defaultValue: "#FF0000",
+//   },
+//   myToken2: {
+//     defaultValue: "#00FF00",
+//   },
+//   myToken3: {
+//     defaultValue: "#0000FF",
+//   },
+// };
 
 type ColorTokensType = keyof typeof colorTokens;
 
@@ -41,13 +42,14 @@ export const chakraProviderMeta: GlobalContextMeta<PlasmicChakraProviderProps> =
     ...getComponentNameAndImportMeta("ChakraProvider"),
     props: {
       ...Object.fromEntries(
-        Object.entries(colorTokens).map(([name, { defaultValue }]) => [
-          name,
-          {
-            type: "color",
-            defaultValue,
-          },
-        ])
+        // Get deploy errors
+        // Object.entries(colorTokens).map(([name, { defaultValue }]) => [
+        //   name,
+        //   {
+        //     type: "color",
+        //     defaultValue,
+        //   },
+        // ])
       ),
     },
   };
