@@ -16,20 +16,17 @@ import { extendTheme, theme as baseTheme } from "@chakra-ui/react";
 // toggleColorMode, useColorMode, colorMode, setColorMode
 // ******
 
-export const colorTokens = {
+export let colorTokens = {
   myToken1: {
     defaultValue: "#FF0000",
-    type: "string"
   },
   myToken2: {
     defaultValue: "#00FF00",
-    type: "string"
   },
   myToken3: {
     defaultValue: "#0000FF",
-    type: "string"
   },
-};
+} as const ;
 
 type ColorTokensType = keyof typeof colorTokens;
 
