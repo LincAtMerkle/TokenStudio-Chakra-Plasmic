@@ -9,17 +9,16 @@ export function registerChakraDocs() {
     props: {
       theme: {
         type: "choice",
-        // options: ["hm-light", "hm-dark"],
         options: ["light", "dark"],
         description: "Theme",
-        // defaultValue: "hm-light"  
         defaultValue: "light"  
       },
       path: {
-        //@ts-ignore
+        // @ts-ignore
         type: "string",
         title: "Tokens path",
         description: "Tokens path",
+        // @ts-ignore
         defaultValue: "btn.primary",
       },
       set: {
