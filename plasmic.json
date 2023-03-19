@@ -68,19 +68,6 @@
           "componentType": "page"
         },
         {
-          "id": "BoAoIbtXkM",
-          "name": "FooterWithFourColumns",
-          "type": "managed",
-          "projectId": "x7VZoMTkaRPxy26VUXVkvK",
-          "renderModuleFilePath": "plasmic/plasmic_poc/PlasmicFooterWithFourColumns.tsx",
-          "importSpec": {
-            "modulePath": "../pages/footer-with-four-columns.tsx"
-          },
-          "cssFilePath": "plasmic/plasmic_poc/PlasmicFooterWithFourColumns.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
           "id": "VR0q09gI2-",
           "name": "Text",
           "type": "managed",
