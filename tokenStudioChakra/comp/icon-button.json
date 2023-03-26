@@ -4,35 +4,35 @@
       "default": {
         "solid": {
           "background-color": {
-            "value": "{semantic.color.actions.primary.default.background}",
+            "value": "{semantic.color.actions.primary1.default.background}",
             "type": "color"
           },
           "icon-color": {
-            "value": "{semantic.color.actions.primary.default.text}",
+            "value": "{semantic.color.actions.primary1.default.text}",
             "type": "color"
           }
         },
         "outlined": {
           "border-color": {
-            "value": "{semantic.color.actions.primary.default.border}",
+            "value": "{semantic.color.actions.primary1.default.border}",
             "type": "color"
           },
           "background-color": {
-            "value": "{semantic.color.actions.primary.default.quiet-background}",
+            "value": "{semantic.color.actions.primary1.default.quiet-background}",
             "type": "color"
           },
           "icon-color": {
-            "value": "{semantic.color.actions.primary.default.background}",
+            "value": "{semantic.color.actions.primary1.default.background}",
             "type": "color"
           }
         },
         "ghost": {
           "background-color": {
-            "value": "{semantic.color.actions.primary.focus.quiet-background}",
+            "value": "{semantic.color.actions.primary1.focus.quiet-background}",
             "type": "color"
           },
           "icon-color": {
-            "value": "{semantic.color.actions.primary.default.background}",
+            "value": "{semantic.color.actions.primary1.default.background}",
             "type": "color"
           }
         }
@@ -40,35 +40,35 @@
       "hover": {
         "solid": {
           "background-color": {
-            "value": "{semantic.color.actions.primary.hover.background}",
+            "value": "{semantic.color.actions.primary1.hover.background}",
             "type": "color"
           },
           "icon-color": {
-            "value": "{semantic.color.actions.primary.hover.text}",
+            "value": "{semantic.color.actions.primary1.hover.text}",
             "type": "color"
           }
         },
         "outlined": {
           "border-color": {
-            "value": "{semantic.color.actions.primary.active.border}",
+            "value": "{semantic.color.actions.primary1.active.border}",
             "type": "color"
           },
           "background-color": {
-            "value": "{semantic.color.actions.primary.hover.background}",
+            "value": "{semantic.color.actions.primary1.hover.background}",
             "type": "color"
           },
           "icon-color": {
-            "value": "{semantic.color.actions.primary.hover.text}",
+            "value": "{semantic.color.actions.primary1.hover.text}",
             "type": "color"
           }
         },
         "ghost": {
           "background-color": {
-            "value": "{semantic.color.actions.primary.hover.quiet-background}",
+            "value": "{semantic.color.actions.primary1.hover.quiet-background}",
             "type": "color"
           },
           "icon-color": {
-            "value": "{semantic.color.actions.primary.hover.text}",
+            "value": "{semantic.color.actions.primary1.hover.text}",
             "type": "color"
           }
         }
@@ -76,35 +76,35 @@
       "active": {
         "solid": {
           "background-color": {
-            "value": "{semantic.color.actions.primary.active.background}",
+            "value": "{semantic.color.actions.primary1.active.background}",
             "type": "color"
           },
           "icon-color": {
-            "value": "{semantic.color.actions.primary.active.text}",
+            "value": "{semantic.color.actions.primary1.active.text}",
             "type": "color"
           }
         },
         "outlined": {
           "border-color": {
-            "value": "{semantic.color.actions.primary.active.border}",
+            "value": "{semantic.color.actions.primary1.active.border}",
             "type": "color"
           },
           "background-color": {
-            "value": "{semantic.color.actions.primary.active.background}",
+            "value": "{semantic.color.actions.primary1.active.background}",
             "type": "color"
           },
           "icon-color": {
-            "value": "{semantic.color.actions.primary.active.text}",
+            "value": "{semantic.color.actions.primary1.active.text}",
             "type": "color"
           }
         },
         "ghost": {
           "background-color": {
-            "value": "{semantic.color.actions.primary.active.quiet-background}",
+            "value": "{semantic.color.actions.primary1.active.quiet-background}",
             "type": "color"
           },
           "icon-color": {
-            "value": "{semantic.color.actions.primary.active.text}",
+            "value": "{semantic.color.actions.primary1.active.text}",
             "type": "color"
           }
         }
@@ -114,7 +114,7 @@
       "default": {
         "solid": {
           "background-color": {
-            "value": "{semantic.color.actions.secondary.default.border}",
+            "value": "{semantic.color.actions.secondary1.default.border}",
             "type": "color"
           },
           "icon-color": {
@@ -124,25 +124,25 @@
         },
         "outlined": {
           "border-color": {
-            "value": "{semantic.color.actions.secondary.default.border}",
+            "value": "{semantic.color.actions.secondary1.default.border}",
             "type": "color"
           },
           "background-color": {
-            "value": "{semantic.color.actions.secondary.default.background}",
+            "value": "{semantic.color.actions.secondary1.default.background}",
             "type": "color"
           },
           "icon-color": {
-            "value": "{semantic.color.actions.secondary.default.border}",
+            "value": "{semantic.color.actions.secondary1.default.border}",
             "type": "color"
           }
         },
         "ghost": {
           "background-color": {
-            "value": "{semantic.color.actions.secondary.default.quiet-background}",
+            "value": "{semantic.color.actions.secondary1.default.quiet-background}",
             "type": "color"
           },
           "icon-color": {
-            "value": "{semantic.color.actions.secondary.default.quiet-text}",
+            "value": "{semantic.color.actions.secondary1.default.quiet-text}",
             "type": "color"
           }
         }
@@ -150,35 +150,35 @@
       "hover": {
         "solid": {
           "background-color": {
-            "value": "{semantic.color.actions.secondary.hover.background}",
+            "value": "{semantic.color.actions.secondary1.hover.background}",
             "type": "color"
           },
           "icon-color": {
-            "value": "{semantic.color.actions.secondary.hover.text}",
+            "value": "{semantic.color.actions.secondary1.hover.text}",
             "type": "color"
           }
         },
         "outlined": {
           "border-color": {
-            "value": "{semantic.color.actions.secondary.default.border}",
+            "value": "{semantic.color.actions.secondary1.default.border}",
             "type": "color"
           },
           "background-color": {
-            "value": "{semantic.color.actions.secondary.hover.background}",
+            "value": "{semantic.color.actions.secondary1.hover.background}",
             "type": "color"
           },
           "icon-color": {
-            "value": "{semantic.color.actions.secondary.hover.text}",
+            "value": "{semantic.color.actions.secondary1.hover.text}",
             "type": "color"
           }
         },
         "ghost": {
           "background-color": {
-            "value": "{semantic.color.actions.secondary.hover.quiet-background}",
+            "value": "{semantic.color.actions.secondary1.hover.quiet-background}",
             "type": "color"
           },
           "icon-color": {
-            "value": "{semantic.color.actions.secondary.hover.quiet-text}",
+            "value": "{semantic.color.actions.secondary1.hover.quiet-text}",
             "type": "color"
           }
         }
@@ -186,35 +186,35 @@
       "active": {
         "solid": {
           "background-color": {
-            "value": "{semantic.color.actions.secondary.active.background}",
+            "value": "{semantic.color.actions.secondary1.active.background}",
             "type": "color"
           },
           "icon-color": {
-            "value": "{semantic.color.actions.secondary.active.text}",
+            "value": "{semantic.color.actions.secondary1.active.text}",
             "type": "color"
           }
         },
         "outlined": {
           "border-color": {
-            "value": "{semantic.color.actions.secondary.active.border}",
+            "value": "{semantic.color.actions.secondary1.active.border}",
             "type": "color"
           },
           "background-color": {
-            "value": "{semantic.color.actions.secondary.active.background}",
+            "value": "{semantic.color.actions.secondary1.active.background}",
             "type": "color"
           },
           "icon-color": {
-            "value": "{semantic.color.actions.secondary.active.text}",
+            "value": "{semantic.color.actions.secondary1.active.text}",
             "type": "color"
           }
         },
         "ghost": {
           "background-color": {
-            "value": "{semantic.color.actions.secondary.active.quiet-background}",
+            "value": "{semantic.color.actions.secondary1.active.quiet-background}",
             "type": "color"
           },
           "icon-color": {
-            "value": "{semantic.color.actions.secondary.active.quiet-text}",
+            "value": "{semantic.color.actions.secondary1.active.quiet-text}",
             "type": "color"
           }
         }
@@ -333,25 +333,25 @@
     "disabled": {
       "solid": {
         "background-color": {
-          "value": "{semantic.color.actions.primary.disabled.background}",
+          "value": "{semantic.color.actions.primary1.disabled.background}",
           "type": "color"
         },
         "icon-color": {
-          "value": "{semantic.color.actions.primary.disabled.text}",
+          "value": "{semantic.color.actions.primary1.disabled.text}",
           "type": "color"
         }
       },
       "outlined": {
         "border-color": {
-          "value": "{semantic.color.actions.primary.disabled.border}",
+          "value": "{semantic.color.actions.primary1.disabled.border}",
           "type": "color"
         },
         "background-color": {
-          "value": "{semantic.color.actions.primary.disabled.background}",
+          "value": "{semantic.color.actions.primary1.disabled.background}",
           "type": "color"
         },
         "icon-color": {
-          "value": "{semantic.color.actions.primary.disabled.text}",
+          "value": "{semantic.color.actions.primary1.disabled.text}",
           "type": "color"
         }
       },
@@ -361,7 +361,7 @@
           "type": "color"
         },
         "icon-color": {
-          "value": "{semantic.color.actions.primary.disabled.background}",
+          "value": "{semantic.color.actions.primary1.disabled.background}",
           "type": "color"
         }
       }

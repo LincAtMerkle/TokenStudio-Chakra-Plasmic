@@ -61,14 +61,14 @@ export const tagMeta: ComponentMeta<TagProps> = {
         "TagCloseButton",
       ],
       defaultValue: [
-        { type: "component", name: "TagLeftIcon" },
-        {
-          type: "component",
-          name: "TagLabel",
-          props: { children: { type: "text", value: "Tag" } },
-        },
-        { type: "component", name: "TagRightIcon" },
-        { type: "component", name: "TagCloseButton" },
+        // { type: "component", name: "TagLeftIcon" },
+        // {
+        //   type: "component",
+        //   name: "TagLabel",
+        //   props: { children: { type: "text", value: "Tag" } },
+        // },
+        // { type: "component", name: "TagRightIcon" },
+        // { type: "component", name: "TagCloseButton" },
       ],
     },
   },
@@ -80,10 +80,10 @@ export const tagLeftIconMeta: ComponentMeta<IconProps> = {
     children: {
       type: "slot",
       defaultValue: [
-        {
-          type: "component",
-          name: "GolfIcon",
-        },
+        // {
+        //   type: "component",
+        //   name: "GolfIcon",
+        // },
       ],
     },
   },
@@ -111,10 +111,10 @@ export const tagRightIconMeta: ComponentMeta<IconProps> = {
     children: {
       type: "slot",
       defaultValue: [
-        {
-          type: "component",
-          name: "GolfIcon",
-        },
+        // {
+        //   type: "component",
+        //   name: "GolfIcon",
+        // },
       ],
     },
   },

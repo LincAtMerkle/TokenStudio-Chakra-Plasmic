@@ -47,17 +47,17 @@ export const cardHeaderMeta: ComponentMeta<CardHeaderProps> = {
       type: "choice",
       options: ["sm", "md", "lg"],
     },
-    children: {
-      type: "slot",
-      allowedComponents: [getPlasmicComponentName("ImageWithOverlay")],
+    // children: {
+    //   type: "slot",
+    //   allowedComponents: [getPlasmicComponentName("ImageWithOverlay")],
 
-      defaultValue: [
-        {
-          type: "component",
-          name: getPlasmicComponentName("ImageWithOverlay"),
-        },
-      ],
-    },
+    //   defaultValue: [
+    //     {
+    //       type: "component",
+    //       name: getPlasmicComponentName("ImageWithOverlay"),
+    //     },
+    //   ],
+    // },
   },
 };
 export const cardBodyMeta: ComponentMeta<CardBodyProps> = {

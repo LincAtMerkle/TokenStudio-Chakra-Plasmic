@@ -56,10 +56,10 @@ export const iconButtonMeta: ComponentMeta<IconButtonProps> = {
     icon: {
       type: "slot",
       hidePlaceholder: true,
-      defaultValue: {
-        type: "component",
-        name: getPlasmicComponentName("GolfIcon"),
-      },
+      // defaultValue: {
+      //   type: "component",
+      //   name: getPlasmicComponentName("GolfIcon"),
+      // },
     },
   },
 };

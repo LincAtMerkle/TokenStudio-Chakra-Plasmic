@@ -15,6 +15,10 @@ import {
   BreadcrumbSeparator,
   Button,
   ButtonGroup,
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
   Checkbox,
   CheckboxGroup,
   Code,
@@ -27,6 +31,7 @@ import {
   Highlight,
   Image,
   Input,
+  IconButton,
   Kbd,
   ModalBody,
   ModalCloseButton,
@@ -58,6 +63,7 @@ import {
   StatLabel,
   StatNumber,
   Switch,
+  Stack,
   Tab,
   Table,
   TableCaption,
@@ -66,6 +72,11 @@ import {
   TabPanel,
   TabPanels,
   Tabs,
+  Tag,
+  TagLeftIcon,
+  TagLabel,
+  TagRightIcon,
+  TagCloseButton,
   Tbody,
   Td,
   Text,
@@ -174,6 +185,24 @@ import {
 import { textMeta } from "./registerText";
 import { toastMeta } from "./registerToast";
 import { tooltipMeta } from "./registerTooltip";
+import {
+  cardMeta,
+  cardHeaderMeta,
+  cardBodyMeta,
+  cardFooterMeta,
+} from "./registerCard";
+
+// Added
+// Chakra-UI components
+import {
+  tagMeta,
+  tagLeftIconMeta,
+  tagLabelMeta,
+  tagRightIconMeta,
+  tagCloseButtonMeta,
+} from "./registerTag";
+import { iconButtonMeta } from "./registerIconButton";
+import { stackMeta } from "./registerStack";
 
 export * from "./registerable";
 export * from "./registerAccordion";
@@ -205,6 +234,9 @@ export * from "./registerTabs";
 export * from "./registerText";
 export * from "./registerToast";
 export * from "./registerTooltip";
+export * from "./registerCard";
+export * from "./registerTag";
+export * from "./registerStack";
 
 export function registerAllChakra(loader?: Registerable) {
   const _registerComponent = <T extends React.ComponentType<any>>(
@@ -297,4 +329,18 @@ export function registerAllChakra(loader?: Registerable) {
   _registerComponent(Tabs, tabsMeta);
   _registerComponent(TabPanel, tabPanelMeta);
   _registerComponent(TabPanels, tabPanelsMeta);
+  _registerComponent(Tag, tagMeta);
+  _registerComponent(TagLeftIcon, tagLeftIconMeta);
+  _registerComponent(TagLabel, tagLabelMeta);
+  _registerComponent(TagRightIcon, tagRightIconMeta);
+  _registerComponent(TagCloseButton, tagCloseButtonMeta);
+  _registerComponent(IconButton, iconButtonMeta);
+
+  // Added
+  // Chakra-UI components
+  _registerComponent(Card, cardMeta);
+  _registerComponent(CardHeader, cardHeaderMeta);
+  _registerComponent(CardBody, cardBodyMeta);
+  _registerComponent(CardFooter, cardFooterMeta);
+  _registerComponent(Stack, stackMeta);
 }

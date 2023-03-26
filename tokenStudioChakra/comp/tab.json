@@ -3,7 +3,7 @@
     "unselected": {
       "line": {
         "background-color": {
-          "value": "{semantic.color.actions.primary.default.quiet-background}",
+          "value": "{semantic.color.actions.primary1.default.quiet-background}",
           "type": "color"
         },
         "text-color": {
@@ -13,7 +13,7 @@
       },
       "soft": {
         "background-color": {
-          "value": "{semantic.color.actions.primary.default.quiet-background}",
+          "value": "{semantic.color.actions.primary1.default.quiet-background}",
           "type": "color"
         },
         "text-color": {
@@ -23,7 +23,7 @@
       },
       "solid": {
         "background-color": {
-          "value": "{semantic.color.actions.primary.default.quiet-background}",
+          "value": "{semantic.color.actions.primary1.default.quiet-background}",
           "type": "color"
         },
         "text-color": {

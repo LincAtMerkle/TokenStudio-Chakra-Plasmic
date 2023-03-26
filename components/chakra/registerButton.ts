@@ -87,7 +87,7 @@ export const buttonMeta: ComponentMeta<ButtonProps> = {
     },
     variant: {
       type: "choice",
-      options: ["primary", "secondary", "negative", "ghost", "outline", "solid", "link", "unstyled"],
+      options: ["primary1", "primary2","secondary1", "secondary2","negative", "ghost", "outline", "solid", "link", "unstyled"],
       defaultValue: "primary",
     },
     colorScheme: {

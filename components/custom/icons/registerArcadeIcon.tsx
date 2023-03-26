@@ -4,7 +4,7 @@ import { registerComponent } from "@plasmicapp/host";
 export function registerArcadeIcon() {
   registerComponent(ArcadeIcon, {
     name: "ArcadeIcon",
-    importPath: "@chakra-ui/react",
+    importPath: "./CustomIcons",
     props: {
       viewBox: {
         type: "string",

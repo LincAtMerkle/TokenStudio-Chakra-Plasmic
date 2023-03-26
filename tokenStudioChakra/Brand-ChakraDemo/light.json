@@ -20,7 +20,7 @@
     },
     "bg": {
       "canvas": {
-        "value": "{color.gray.50}",
+        "value": "{color.primary2.50}",
         "type": "color"
       },
       "surface": {
@@ -84,41 +84,41 @@
     },
     "error": {
       "emphasised": {
-        "value": "{color.red.500}",
+        "value": "{color.accent1.500}",
         "type": "color"
       },
       "fg": {
-        "value": "{color.red.400}",
+        "value": "{color.accent1.400}",
         "type": "color"
       }
     },
     "warning": {
       "emphasised": {
-        "value": "{color.orange.500}",
+        "value": "{color.accent2.500}",
         "type": "color"
       },
       "fg": {
-        "value": "{color.orange.400}",
+        "value": "{color.accent2.400}",
         "type": "color"
       }
     },
     "info": {
       "emphasised": {
-        "value": "{color.blue.500}",
+        "value": "{color.primary1.500}",
         "type": "color"
       },
       "fg": {
-        "value": "{color.blue.400}",
+        "value": "{color.primary1.400}",
         "type": "color"
       }
     },
     "success": {
       "emphasised": {
-        "value": "{color.green.500}",
+        "value": "{color.accent3.500}",
         "type": "color"
       },
       "fg": {
-        "value": "{color.green.400}",
+        "value": "{color.accent3.400}",
         "type": "color"
       }
     }
