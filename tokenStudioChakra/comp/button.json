@@ -19,8 +19,9 @@
     "primary1": {
       "default": {
         "background-color": {
-          "value": "{semantic.color.actions.cta1.default.background-color}",
-          "type": "color"
+          "value": "#ff00ff",
+          "type": "color",
+          "description": "{semantic.color.actions.cta1.default.background-color}"
         },
         "text-color": {
           "value": "{semantic.color.actions.primary1.default.text}",
