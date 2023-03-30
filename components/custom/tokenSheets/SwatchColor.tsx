@@ -14,6 +14,7 @@ export function SwatchColor({
         height: "24px",
         width: "24px",
         backgroundColor: color,
+        border: "1px solid #D3D3D3"
       }}
     ></div>
   );
