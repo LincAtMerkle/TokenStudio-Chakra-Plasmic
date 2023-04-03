@@ -171,7 +171,6 @@ function PlasmicTable__RenderFunc(props: {
                       {"TO CONVERT"}
                     </div>
                   </Th>
-
                   <Th
                     className={classNames(
                       "__wab_instance",
@@ -188,7 +187,6 @@ function PlasmicTable__RenderFunc(props: {
                       {"INTO"}
                     </div>
                   </Th>
-
                   <Th
                     className={classNames(
                       "__wab_instance",
@@ -207,7 +205,6 @@ function PlasmicTable__RenderFunc(props: {
                   </Th>
                 </Tr>
               </Thead>
-
               <Tbody
                 className={classNames(
                   "__wab_instance",
@@ -236,7 +233,6 @@ function PlasmicTable__RenderFunc(props: {
                       {"inches"}
                     </div>
                   </Td>
-
                   <Td
                     className={classNames(
                       "__wab_instance",
@@ -253,7 +249,6 @@ function PlasmicTable__RenderFunc(props: {
                       {"millimetres (mm)"}
                     </div>
                   </Td>
-
                   <Td
                     className={classNames(
                       "__wab_instance",
@@ -274,7 +269,6 @@ function PlasmicTable__RenderFunc(props: {
               </Tbody>
             </Table>
           </TableContainer>
-
           <Table
             data-plasmic-name={"chakraUiTable"}
             data-plasmic-override={overrides.chakraUiTable}

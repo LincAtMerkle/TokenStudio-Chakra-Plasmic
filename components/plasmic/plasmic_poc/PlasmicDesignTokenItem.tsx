@@ -150,9 +150,7 @@ function PlasmicDesignTokenItem__RenderFunc(props: {
         path: "swatches",
         type: "private",
         variableType: "variant",
-        initFunc: true
-          ? ({ $props, $state, $queries, $ctx }) => $props.swatches
-          : undefined
+        initFunc: ({ $props, $state, $queries, $ctx }) => $props.swatches
       }
     ],
     [$props, $ctx]
@@ -186,7 +184,6 @@ function PlasmicDesignTokenItem__RenderFunc(props: {
       >
         {"tokenName"}
       </div>
-
       <div
         data-plasmic-name={"textValue"}
         data-plasmic-override={overrides.textValue}
@@ -198,7 +195,6 @@ function PlasmicDesignTokenItem__RenderFunc(props: {
       >
         {"textValue"}
       </div>
-
       <div
         data-plasmic-name={"description"}
         data-plasmic-override={overrides.description}
@@ -210,7 +206,6 @@ function PlasmicDesignTokenItem__RenderFunc(props: {
       >
         {"description"}
       </div>
-
       {(hasVariant($state, "swatches", "sizing") ? true : true) ? (
         <SwatchSizing
           data-plasmic-name={"swatchSizing"}

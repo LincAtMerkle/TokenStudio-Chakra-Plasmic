@@ -152,7 +152,6 @@ function PlasmicText__RenderFunc(props: {
               {"Text"}
             </div>
           </Heading>
-
           <Heading
             className={classNames("__wab_instance", sty.chakraUiHeading__xWpOy)}
             noOfLines={1 as const}
@@ -168,7 +167,6 @@ function PlasmicText__RenderFunc(props: {
               {"Variants"}
             </div>
           </Heading>
-
           {true ? (
             <p.Stack
               as={"div"}
@@ -195,7 +193,6 @@ function PlasmicText__RenderFunc(props: {
                   {"light"}
                 </div>
               </Text>
-
               <Text
                 className={classNames(
                   "__wab_instance",
@@ -214,7 +211,6 @@ function PlasmicText__RenderFunc(props: {
                   {"regular"}
                 </div>
               </Text>
-
               <Text
                 className={classNames(
                   "__wab_instance",
@@ -233,7 +229,6 @@ function PlasmicText__RenderFunc(props: {
                   {"semiBold"}
                 </div>
               </Text>
-
               <Text
                 className={classNames("__wab_instance", sty.chakraUiText__bwCy)}
                 size={"md" as const}
@@ -251,7 +246,6 @@ function PlasmicText__RenderFunc(props: {
               </Text>
             </p.Stack>
           ) : null}
-
           <Heading
             className={classNames("__wab_instance", sty.chakraUiHeading__wivYj)}
             noOfLines={1 as const}
@@ -267,7 +261,6 @@ function PlasmicText__RenderFunc(props: {
               {"Sizes"}
             </div>
           </Heading>
-
           <Text
             className={classNames("__wab_instance", sty.chakraUiText__h1Bpx)}
             size={"xs" as const}
@@ -283,7 +276,6 @@ function PlasmicText__RenderFunc(props: {
               {"Text xs"}
             </div>
           </Text>
-
           <Text
             className={classNames("__wab_instance", sty.chakraUiText__o1QV)}
             size={"sm" as const}
@@ -299,7 +291,6 @@ function PlasmicText__RenderFunc(props: {
               {"Some sm"}
             </div>
           </Text>
-
           <Text
             className={classNames("__wab_instance", sty.chakraUiText__l5Ev)}
             size={"md" as const}
@@ -315,7 +306,6 @@ function PlasmicText__RenderFunc(props: {
               {"Some md"}
             </div>
           </Text>
-
           <Text
             className={classNames("__wab_instance", sty.chakraUiText__u1U0F)}
             size={"lg" as const}
@@ -331,7 +321,6 @@ function PlasmicText__RenderFunc(props: {
               {"Some lg"}
             </div>
           </Text>
-
           <Text
             className={classNames("__wab_instance", sty.chakraUiText__qjIDx)}
             size={"xl" as const}
@@ -347,7 +336,6 @@ function PlasmicText__RenderFunc(props: {
               {"Some xl"}
             </div>
           </Text>
-
           <Text
             className={classNames("__wab_instance", sty.chakraUiText__sonHa)}
             size={"2xl" as const}
@@ -363,7 +351,6 @@ function PlasmicText__RenderFunc(props: {
               {"Some 2xl"}
             </div>
           </Text>
-
           <Text
             className={classNames("__wab_instance", sty.chakraUiText__b3L2Y)}
             size={"2xl" as const}
@@ -379,7 +366,6 @@ function PlasmicText__RenderFunc(props: {
               {"Some 3xl"}
             </div>
           </Text>
-
           <Text
             className={classNames("__wab_instance", sty.chakraUiText__knztV)}
             size={"3xl" as const}
@@ -395,7 +381,6 @@ function PlasmicText__RenderFunc(props: {
               {"Some 4xl"}
             </div>
           </Text>
-
           <Text
             className={classNames("__wab_instance", sty.chakraUiText__d5B34)}
             size={"3xl" as const}
@@ -411,7 +396,6 @@ function PlasmicText__RenderFunc(props: {
               {"Some 5xl"}
             </div>
           </Text>
-
           <Text
             className={classNames("__wab_instance", sty.chakraUiText__qLecf)}
             size={"4xl" as const}
@@ -427,7 +411,6 @@ function PlasmicText__RenderFunc(props: {
               {"Some 6xl"}
             </div>
           </Text>
-
           <Text
             className={classNames("__wab_instance", sty.chakraUiText__qahbr)}
             size={"5xl" as const}
@@ -443,7 +426,6 @@ function PlasmicText__RenderFunc(props: {
               {"Some 7xl"}
             </div>
           </Text>
-
           <Text
             className={classNames("__wab_instance", sty.chakraUiText___4BXp6)}
             size={"6xl" as const}

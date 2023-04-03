@@ -92,6 +92,32 @@
           "cssFilePath": "plasmic/plasmic_poc/PlasmicButton.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "HKcHvxKoTD",
+          "name": "FooterWithFourColumns",
+          "type": "managed",
+          "projectId": "x7VZoMTkaRPxy26VUXVkvK",
+          "renderModuleFilePath": "plasmic/plasmic_poc/PlasmicFooterWithFourColumns.tsx",
+          "importSpec": {
+            "modulePath": "../pages/new-page.tsx"
+          },
+          "cssFilePath": "plasmic/plasmic_poc/PlasmicFooterWithFourColumns.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "XPN2REkT4O",
+          "name": "NewPage2",
+          "type": "managed",
+          "projectId": "x7VZoMTkaRPxy26VUXVkvK",
+          "renderModuleFilePath": "plasmic/plasmic_poc/PlasmicNewPage2.tsx",
+          "importSpec": {
+            "modulePath": "../pages/new-page-2.tsx"
+          },
+          "cssFilePath": "plasmic/plasmic_poc/PlasmicNewPage2.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
@@ -533,7 +559,7 @@
         {
           "id": "AfztZICFbO",
           "name": "ArcadeIcon",
-          "componentImportPath": "@chakra-ui/react"
+          "componentImportPath": "./CustomIcons"
         },
         {
           "id": "5DwjYZpub_G",
@@ -689,6 +715,96 @@
           "id": "HYtD0jZptn",
           "name": "Accordion",
           "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "ewcoARaU9E",
+          "name": "Card",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "fLx6y8qV2V",
+          "name": "CardHeader",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "EhPOg4ImrM",
+          "name": "CardBody",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "hLkSZ0E1JX",
+          "name": "CardFooter",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "jPSVQnU-B-",
+          "name": "Stack",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "Jb3EMpyG3R",
+          "name": "Tag",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "3oH6GdMJfG",
+          "name": "IconButton",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "B3kGPXwCcn",
+          "name": "TagLeftIcon",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "V6WFEWWlDf",
+          "name": "TagLabel",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "xFNM-03Ey4",
+          "name": "TagRightIcon",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "_kva67lA9D",
+          "name": "TagCloseButton",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "UEcNd5IGDiE",
+          "name": "AntdMenuItem",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerMenu"
+        },
+        {
+          "id": "vULIHsbwBSE",
+          "name": "AntdMenuItemGroup",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerMenu"
+        },
+        {
+          "id": "BVvTYt_uHE4",
+          "name": "AntdMenuDivider",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerMenu"
+        },
+        {
+          "id": "wzyTAtQ7Es7",
+          "name": "AntdSubMenu",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerMenu"
+        },
+        {
+          "id": "MzF88fcMiPU",
+          "name": "AntdDropdown",
+          "componentImportPath": "@plasmicpkgs/antd/skinny/registerDropdown"
+        },
+        {
+          "id": "RrXq7H4j46n",
+          "name": "CompRrXq7H4J46N",
+          "componentImportPath": ""
+        },
+        {
+          "id": "ixWyRxIJ6ze",
+          "name": "AntdConfigProvider",
+          "componentImportPath": "@plasmicpkgs/antd5/skinny/registerConfigProvider"
         }
       ]
     }
@@ -707,6 +823,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.215",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.215/dist/plasmic.schema.json"
+  "cliVersion": "0.1.243",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.243/dist/plasmic.schema.json"
 }

@@ -2333,17 +2333,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@plasmicapp/data-sources@npm:0.1.48":
-  version: 0.1.48
-  resolution: "@plasmicapp/data-sources@npm:0.1.48"
+"@plasmicapp/data-sources-context@npm:0.1.9":
+  version: 0.1.9
+  resolution: "@plasmicapp/data-sources-context@npm:0.1.9"
+  peerDependencies:
+    react: ">=16"
+  checksum: 6234f1f8e944cf16e7a5246ea79f8431a3c2c4f6b1eba098ae4d00b75fceace7d6f5ef79109fd8c7fc90b6e3d0cd7668944b5a8627181119e7d3d20a7d22584a
+  languageName: node
+  linkType: hard
+
+"@plasmicapp/data-sources@npm:0.1.58":
+  version: 0.1.58
+  resolution: "@plasmicapp/data-sources@npm:0.1.58"
   dependencies:
-    "@plasmicapp/data-sources-context": 0.1.7
-    "@plasmicapp/host": 1.0.115
+    "@plasmicapp/data-sources-context": 0.1.9
+    "@plasmicapp/host": 1.0.120
     "@plasmicapp/isomorphic-unfetch": ^1.0.1
     "@plasmicapp/query": 0.1.61
   peerDependencies:
     react: ">=16"
-  checksum: 33cfda2a9ed7e4e417a93515b29981737f77fdd809528b9534855e4829321e986a0ecc6f7f11bd9c686e11b86be297fc295bde1b7f0dd4c1096377fe424a7db9
+  checksum: ee4a4b2d013c96c6c4018538e99ac4b7a39fc2271880f7176b07e696c64e27a3b175f41d250a1ac6cf6923ec1129deb0fd3486d8592b32023f81060a27ef8036
   languageName: node
   linkType: hard
 
@@ -2357,6 +2366,19 @@ __metadata:
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
   checksum: d75d14d98a02edea8e97ce81c8909055cf0630dda137150d83c9f343c2494edaf73d766dde00f42730b4f70614246da8ab57c861f2f10fe2a24a8126bce7dbe3
+  languageName: node
+  linkType: hard
+
+"@plasmicapp/host@npm:1.0.120":
+  version: 1.0.120
+  resolution: "@plasmicapp/host@npm:1.0.120"
+  dependencies:
+    "@plasmicapp/query": 0.1.61
+    window-or-global: ^1.0.1
+  peerDependencies:
+    react: ">=16.8.0"
+    react-dom: ">=16.8.0"
+  checksum: 84ea9599a2eef0b2178113f933ea5caff74637f1c0fa4a34a2b73bc617e84ad9a8008b84ce554b55c381042f2044bbbee183abdc59c13c063eb74535249ac06f
   languageName: node
   linkType: hard
 
@@ -2466,13 +2488,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@plasmicapp/react-web@npm:^0.2.166":
-  version: 0.2.174
-  resolution: "@plasmicapp/react-web@npm:0.2.174"
+"@plasmicapp/react-web@npm:^0.2.188":
+  version: 0.2.188
+  resolution: "@plasmicapp/react-web@npm:0.2.188"
   dependencies:
-    "@plasmicapp/data-sources": 0.1.48
-    "@plasmicapp/data-sources-context": 0.1.7
-    "@plasmicapp/host": 1.0.115
+    "@plasmicapp/data-sources": 0.1.58
+    "@plasmicapp/data-sources-context": 0.1.9
+    "@plasmicapp/host": 1.0.120
     "@plasmicapp/query": 0.1.61
     "@react-aria/checkbox": ^3.5.0
     "@react-aria/focus": ^3.7.0
@@ -2500,7 +2522,7 @@ __metadata:
   peerDependencies:
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
-  checksum: cf93b5a49678bdc3535158c1c1246cd1a0e10fa10f7df59a97b5844e2f2bb15362d331ae8d2d1876ca3e89bda9af73612aa30c40bfc886a834d2aced394d67c9
+  checksum: 5da352ba53530342ff59939937b8586fc5c83b42c973acb9caf6d77351b7ca6d806d439648355a476412d85c6b2d09f0f0c56ebb9fee53820a829f95da2c2fc6
   languageName: node
   linkType: hard
 
@@ -3652,7 +3674,7 @@ __metadata:
     "@plasmicapp/cli": ^0.1.205
     "@plasmicapp/host": ^1.0.110
     "@plasmicapp/loader-nextjs": ^1.0.239
-    "@plasmicapp/react-web": ^0.2.166
+    "@plasmicapp/react-web": ^0.2.188
     "@react-aria/utils": ^3.15.0
     "@stitches/react": ^1.2.8
     "@tokens-studio/sd-transforms": ^0.5.2

@@ -157,7 +157,6 @@ function PlasmicHomepage__RenderFunc(props: {
                 {"Focus "}
               </div>
             </Heading>
-
             <Heading
               className={classNames(
                 "__wab_instance",
@@ -176,7 +175,6 @@ function PlasmicHomepage__RenderFunc(props: {
                 {"React code based design system"}
               </div>
             </Heading>
-
             <Text
               className={classNames("__wab_instance", sty.chakraUiText__u6BeP)}
               size={"md" as const}
@@ -194,7 +192,6 @@ function PlasmicHomepage__RenderFunc(props: {
                 }
               </div>
             </Text>
-
             <Button
               data-plasmic-name={"chakraUiButton"}
               data-plasmic-override={overrides.chakraUiButton}
@@ -206,13 +203,12 @@ function PlasmicHomepage__RenderFunc(props: {
                 className={classNames(
                   projectcss.all,
                   projectcss.__wab_text,
-                  sty.text__xcLqz
+                  sty.text__kxS0H
                 )}
               >
-                {"Primary"}
+                {"Button"}
               </div>
             </Button>
-
             <Heading
               className={classNames(
                 "__wab_instance",
@@ -233,7 +229,6 @@ function PlasmicHomepage__RenderFunc(props: {
                 }
               </div>
             </Heading>
-
             <Text
               className={classNames("__wab_instance", sty.chakraUiText__yrhlk)}
               size={"md" as const}
@@ -249,7 +244,6 @@ function PlasmicHomepage__RenderFunc(props: {
                 {"Some Text"}
               </div>
             </Text>
-
             <Switch
               data-plasmic-name={"chakraUiSwitch"}
               data-plasmic-override={overrides.chakraUiSwitch}
@@ -286,7 +280,6 @@ function PlasmicHomepage__RenderFunc(props: {
                   >
                     {"Section 1 title"}
                   </div>
-
                   <AccordionIcon
                     className={classNames(
                       "__wab_instance",
@@ -294,7 +287,6 @@ function PlasmicHomepage__RenderFunc(props: {
                     )}
                   />
                 </AccordionButton>
-
                 <AccordionPanel
                   className={classNames(
                     "__wab_instance",
@@ -323,7 +315,6 @@ function PlasmicHomepage__RenderFunc(props: {
                   </Text>
                 </AccordionPanel>
               </AccordionItem>
-
               <AccordionItem
                 className={classNames(
                   "__wab_instance",
@@ -345,7 +336,6 @@ function PlasmicHomepage__RenderFunc(props: {
                   >
                     {"Section 1 title"}
                   </div>
-
                   <AccordionIcon
                     className={classNames(
                       "__wab_instance",
@@ -353,7 +343,6 @@ function PlasmicHomepage__RenderFunc(props: {
                     )}
                   />
                 </AccordionButton>
-
                 <AccordionPanel
                   className={classNames(
                     "__wab_instance",

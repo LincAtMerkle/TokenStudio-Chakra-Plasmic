@@ -44,6 +44,7 @@
   object-fit: cover;
   position: relative;
   display: none;
+  border-width: 1px;
 }
 .swatchColorswatches_color:global(.__wab_instance) {
   display: flex;
