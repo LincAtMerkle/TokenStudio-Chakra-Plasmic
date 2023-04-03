@@ -14,6 +14,7 @@ export interface GlobalContextsProviderProps {
   chakraProviderProps?: Partial<
     Omit<React.ComponentProps<typeof ChakraProvider>, "children">
   >;
+
   antdConfigProviderProps?: Partial<
     Omit<React.ComponentProps<typeof AntdConfigProvider>, "children">
   >;
