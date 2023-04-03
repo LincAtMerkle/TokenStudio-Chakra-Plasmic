@@ -34,6 +34,7 @@ Object.entries(semanticTokens.colors)
     registerToken({
       type: "color",
       name,
+      //@ts-ignore
       value
     })
   })
@@ -49,6 +50,7 @@ Object.entries(semanticTokens.colors)
     registerToken({
       type: "spacing",
       name,
+      //@ts-ignore
       value
     })
   })
@@ -63,6 +65,7 @@ Object.entries(semanticTokens.colors)
     registerToken({
       type: "font-family",
       name,
+      //@ts-ignore
       value
     })
   })
@@ -92,6 +95,7 @@ Object.entries(semanticTokens.colors)
       // Samuel says "Use line-height for font-weight" for now
       type: "line-height",
       name,
+      //@ts-ignore
       value
     })
   })
@@ -110,6 +114,7 @@ Object.entries(semanticTokens.colors)
       // Samuel says "Use spacing for radii" for now
       type: "spacing",
       name,
+      //@ts-ignore
       value
     })
   })
@@ -125,6 +130,7 @@ Object.entries(semanticTokens.colors)
       // Samuel says "Use spacing for sizes" for now
       type: "spacing",
       name,
+      //@ts-ignore
       value
     })
   })
@@ -140,6 +146,7 @@ Object.entries(semanticTokens.colors)
       // Samuel says "Use spacing for border" for now
       type: "spacing",
       name,
+      //@ts-ignore
       value
     })
   })
