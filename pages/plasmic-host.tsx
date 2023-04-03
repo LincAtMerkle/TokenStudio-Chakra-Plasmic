@@ -80,6 +80,7 @@ Object.entries(semanticTokens.colors)
     registerToken({
       type: "font-size",
       name,
+      //@ts-ignore
       value
     })
   })
