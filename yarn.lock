@@ -2285,9 +2285,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@plasmicapp/cli@npm:^0.1.205":
-  version: 0.1.205
-  resolution: "@plasmicapp/cli@npm:0.1.205"
+"@plasmicapp/cli@npm:^0.1.249":
+  version: 0.1.249
+  resolution: "@plasmicapp/cli@npm:0.1.249"
   dependencies:
     "@babel/core": ^7.12.3
     "@babel/generator": ^7.12.1
@@ -2296,6 +2296,7 @@ __metadata:
     "@sentry/node": ^5.19.2
     axios: ^0.21.1
     chalk: ^4.1.0
+    cli-progress: ^3.12.0
     fast-glob: ^3.2.4
     findup-sync: ^4.0.0
     fs: ^0.0.1-security
@@ -2304,6 +2305,7 @@ __metadata:
     latest-version: ^5.1.0
     lodash: ^4.17.19
     moment: ^2.27.0
+    node-fetch: ^2
     open: ^8.0.9
     pako: ^1.0.11
     path: ^0.12.7
@@ -2320,16 +2322,7 @@ __metadata:
     yargs: ^15.4.1
   bin:
     plasmic: dist/index.js
-  checksum: e8c594ce08b78606f6e599bb286935f3b21374901e4279efe916f8b7673427f89bdeb3cec70c8366fbd2a757c3fd1a4216d2061085d9817d0cdb3f10aece7e33
-  languageName: node
-  linkType: hard
-
-"@plasmicapp/data-sources-context@npm:0.1.7":
-  version: 0.1.7
-  resolution: "@plasmicapp/data-sources-context@npm:0.1.7"
-  peerDependencies:
-    react: ">=16"
-  checksum: 701d8d7dd03ff0e6150b9cc5fb762533474c71c9324d20d2a9b0714cc605d0853bc1d6f5c5ac648d8d33c1ced676768e98419f5dead11812505d403259538159
+  checksum: f6770ea247afdcb8bcc1989017f128be22b2fdbc8c3ada48a8b781171cbd7b84a283481cda4fa30daa70a293f553bbe60db37b8910eb089b15c05af97fb8ed1d
   languageName: node
   linkType: hard
 
@@ -2356,20 +2349,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@plasmicapp/host@npm:1.0.115, @plasmicapp/host@npm:^1.0.110":
-  version: 1.0.115
-  resolution: "@plasmicapp/host@npm:1.0.115"
-  dependencies:
-    "@plasmicapp/query": 0.1.61
-    window-or-global: ^1.0.1
-  peerDependencies:
-    react: ">=16.8.0"
-    react-dom: ">=16.8.0"
-  checksum: d75d14d98a02edea8e97ce81c8909055cf0630dda137150d83c9f343c2494edaf73d766dde00f42730b4f70614246da8ab57c861f2f10fe2a24a8126bce7dbe3
-  languageName: node
-  linkType: hard
-
-"@plasmicapp/host@npm:1.0.120":
+"@plasmicapp/host@npm:1.0.120, @plasmicapp/host@npm:^1.0.120":
   version: 1.0.120
   resolution: "@plasmicapp/host@npm:1.0.120"
   dependencies:
@@ -2392,60 +2372,60 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@plasmicapp/loader-core@npm:1.0.97":
-  version: 1.0.97
-  resolution: "@plasmicapp/loader-core@npm:1.0.97"
+"@plasmicapp/loader-core@npm:1.0.98":
+  version: 1.0.98
+  resolution: "@plasmicapp/loader-core@npm:1.0.98"
   dependencies:
     "@plasmicapp/isomorphic-unfetch": ^1.0.1
-    "@plasmicapp/loader-fetcher": 1.0.21
-  checksum: f221cd3a18329156ff8c0604a02237c5dc4c3093090a7d71f6474a68c151680b911447a606adb441f3b3facb3c27f2970f815b801bfa7b2c0dea74ab923740e1
+    "@plasmicapp/loader-fetcher": 1.0.22
+  checksum: 3d4bc2c4e46916744843572c2e50cb3d57beb468be68bcdeb3a4753b6913992ec141df5a506d815c6ab4e6139360969d3c5118588d7c19d71e416117bb316e1b
   languageName: node
   linkType: hard
 
-"@plasmicapp/loader-edge@npm:1.0.27":
-  version: 1.0.27
-  resolution: "@plasmicapp/loader-edge@npm:1.0.27"
+"@plasmicapp/loader-edge@npm:1.0.28":
+  version: 1.0.28
+  resolution: "@plasmicapp/loader-edge@npm:1.0.28"
   dependencies:
-    "@plasmicapp/loader-fetcher": 1.0.21
-    "@plasmicapp/loader-splits": 1.0.26
-  checksum: d4ff769750f7ab583ab61a8667385673bd37aaffaa36dfdb0115a01fa766bb0221b00e9e6972159b7ae1a79943c2e761367b1018f45d81fc386a9044af49c01a
+    "@plasmicapp/loader-fetcher": 1.0.22
+    "@plasmicapp/loader-splits": 1.0.27
+  checksum: 54f531345e985cbb9bf43dbdbb4393463731aad135e301ab989228bc7d549d9576ddc317bb25db4730b88b6b97bf65923f27377438d3d984c8a551d1eb2fc771
   languageName: node
   linkType: hard
 
-"@plasmicapp/loader-fetcher@npm:1.0.21":
-  version: 1.0.21
-  resolution: "@plasmicapp/loader-fetcher@npm:1.0.21"
+"@plasmicapp/loader-fetcher@npm:1.0.22":
+  version: 1.0.22
+  resolution: "@plasmicapp/loader-fetcher@npm:1.0.22"
   dependencies:
     "@plasmicapp/isomorphic-unfetch": ^1.0.1
-  checksum: 816f907ed805d0f45de9d2a6acd5b6edb11ce9dfc7f0c2f84a6d6370a77e9e462e5a35244cd84c01d895a5ba53aeaab55ba8ff9325c0f7afbc207a8f922b57a8
+  checksum: 0b13eba609c155397f951ca1a203da40792b727f5d9d37959a00be582256c7029b67be9fc95e74e15c46543f5c17bdfb37d4d28dc76f5b0562c62ee7d72918ab
   languageName: node
   linkType: hard
 
-"@plasmicapp/loader-nextjs@npm:^1.0.239":
-  version: 1.0.245
-  resolution: "@plasmicapp/loader-nextjs@npm:1.0.245"
+"@plasmicapp/loader-nextjs@npm:^1.0.253":
+  version: 1.0.253
+  resolution: "@plasmicapp/loader-nextjs@npm:1.0.253"
   dependencies:
-    "@plasmicapp/loader-core": 1.0.97
-    "@plasmicapp/loader-edge": 1.0.27
-    "@plasmicapp/loader-react": 1.0.233
+    "@plasmicapp/loader-core": 1.0.98
+    "@plasmicapp/loader-edge": 1.0.28
+    "@plasmicapp/loader-react": 1.0.241
     "@plasmicapp/watcher": 1.0.70
     server-only: 0.0.1
   peerDependencies:
     next: ">=10.1.0"
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
-  checksum: ab43da3e7e8b85cb6978dae577cb84db886c9f83aec5f8c5bafba944b57671c10fd76ed33fb523e88d4b9181817746f7f55272521e8db692ecc12f9460caa7c7
+  checksum: a768afa87e5794d63c11037d66fea170c41c6e15eea7a96e097397608031b179c9db41ad41bb3f8bd2420c33fceead69aed64eb0a2e4686cedd3582a67511a30
   languageName: node
   linkType: hard
 
-"@plasmicapp/loader-react@npm:1.0.233":
-  version: 1.0.233
-  resolution: "@plasmicapp/loader-react@npm:1.0.233"
+"@plasmicapp/loader-react@npm:1.0.241":
+  version: 1.0.241
+  resolution: "@plasmicapp/loader-react@npm:1.0.241"
   dependencies:
-    "@plasmicapp/data-sources-context": 0.1.7
-    "@plasmicapp/host": 1.0.115
-    "@plasmicapp/loader-core": 1.0.97
-    "@plasmicapp/loader-splits": 1.0.26
+    "@plasmicapp/data-sources-context": 0.1.9
+    "@plasmicapp/host": 1.0.120
+    "@plasmicapp/loader-core": 1.0.98
+    "@plasmicapp/loader-splits": 1.0.27
     "@plasmicapp/query": 0.1.61
     "@plasmicapp/react-ssr-prepass": 2.0.1
     pascalcase: ^1.0.0
@@ -2454,17 +2434,17 @@ __metadata:
   peerDependencies:
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
-  checksum: 4f972b98dbfed0592900507d88a746d47abba8c52ddf04e78ad49efbc54cffc7259e04a2c091a56c8fa153cc7131a3fc872f5b30acf358c0a4d9b9fbbcb41d86
+  checksum: ddb24281199b344b1327296bea77abb355defb0675305223af49c67244ab435e7894e351febed2914a39d2936123bbe71f0a5d075ae420c14aa0561067585a3e
   languageName: node
   linkType: hard
 
-"@plasmicapp/loader-splits@npm:1.0.26":
-  version: 1.0.26
-  resolution: "@plasmicapp/loader-splits@npm:1.0.26"
+"@plasmicapp/loader-splits@npm:1.0.27":
+  version: 1.0.27
+  resolution: "@plasmicapp/loader-splits@npm:1.0.27"
   dependencies:
-    "@plasmicapp/loader-fetcher": 1.0.21
+    "@plasmicapp/loader-fetcher": 1.0.22
     json-logic-js: ^2.0.2
-  checksum: d349d4bcc13a6ae9e567f5de46c525791f81d427233fb8e8f273a1b74da280f4cce3c484b2bee046bd5764f8056086cecd45fd171f1ad99ce1f737ee47e54935
+  checksum: 403594cf9baa3769cec1605f26f77f07b46bccdf5322b007ab4fd3898c9c24eb0b87c0e40ed46b9e0dc20acd7b27ea72bf52e0ce6b6e6af7a256060c72b9367c
   languageName: node
   linkType: hard
 
@@ -3671,9 +3651,9 @@ __metadata:
     "@emotion/styled": ^11.10.6
     "@mdx-js/react": ^1.6.22
     "@next/font": 13.1.6
-    "@plasmicapp/cli": ^0.1.205
-    "@plasmicapp/host": ^1.0.110
-    "@plasmicapp/loader-nextjs": ^1.0.239
+    "@plasmicapp/cli": ^0.1.249
+    "@plasmicapp/host": ^1.0.120
+    "@plasmicapp/loader-nextjs": ^1.0.253
     "@plasmicapp/react-web": ^0.2.188
     "@react-aria/utils": ^3.15.0
     "@stitches/react": ^1.2.8
@@ -4427,6 +4407,15 @@ __metadata:
   dependencies:
     cli-handle-error: ^4.1.0
   checksum: f4a40087e0f9077088ea372cf97a836ade0b696c9b7164e39d5fa08c07af63aca98e2e16c15a71ed40ba6ada21a05ca38e7b0fd43e84e9e770b4d8ed061d532c
+  languageName: node
+  linkType: hard
+
+"cli-progress@npm:^3.12.0":
+  version: 3.12.0
+  resolution: "cli-progress@npm:3.12.0"
+  dependencies:
+    string-width: ^4.2.3
+  checksum: e8390dc3cdf3c72ecfda0a1e8997bfed63a0d837f97366bbce0ca2ff1b452da386caed007b389f0fe972625037b6c8e7ab087c69d6184cc4dfc8595c4c1d3e6e
   languageName: node
   linkType: hard
 
@@ -7586,7 +7575,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-fetch@npm:^2.6.1":
+"node-fetch@npm:^2, node-fetch@npm:^2.6.1":
   version: 2.6.9
   resolution: "node-fetch@npm:2.6.9"
   dependencies:
