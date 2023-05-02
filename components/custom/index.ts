@@ -34,6 +34,7 @@ import { registerSwatchBoxShadow } from "./tokenSheets/registerSwatchBoxShadow";
 import { registerSwatchTypography } from "./tokenSheets/registerSwatchTypography";
 import { registerSwatchComposition } from "./tokenSheets/registerSwatchComposition";
 import { registerFooterWithFourColumns } from "./chakraPro/FooterWithFourColumns/registerFooterWithFourColumns";
+import { registerMarkdown } from "./chakraUIDocs/registerMarkdown";
 
 
 export function registerAllCustom() {
@@ -79,5 +80,8 @@ export function registerAllCustom() {
 
     // ChakraPro
     registerFooterWithFourColumns();
+
+    // Markdown
+    registerMarkdown();
 
 }
