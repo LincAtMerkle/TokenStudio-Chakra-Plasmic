@@ -62,7 +62,8 @@ export const PlasmicTable__ArgProps = new Array<ArgPropType>();
 export type PlasmicTable__OverridesType = {
   root?: p.Flex<"div">;
   chakraUiTableContainer?: p.Flex<typeof TableContainer>;
-  chakraUiTable?: p.Flex<typeof Table>;
+  chakraUiThead?: p.Flex<typeof Thead>;
+  chakraUiTbody?: p.Flex<typeof Tbody>;
   chakraUiTableCaption?: p.Flex<typeof TableCaption>;
 };
 
@@ -144,10 +145,9 @@ function PlasmicTable__RenderFunc(props: {
               variant={"simple" as const}
             >
               <Thead
-                className={classNames(
-                  "__wab_instance",
-                  sty.chakraUiThead__eSGo2
-                )}
+                data-plasmic-name={"chakraUiThead"}
+                data-plasmic-override={overrides.chakraUiThead}
+                className={classNames("__wab_instance", sty.chakraUiThead)}
               >
                 <Tr
                   className={classNames(
@@ -206,10 +206,9 @@ function PlasmicTable__RenderFunc(props: {
                 </Tr>
               </Thead>
               <Tbody
-                className={classNames(
-                  "__wab_instance",
-                  sty.chakraUiTbody__qVaea
-                )}
+                data-plasmic-name={"chakraUiTbody"}
+                data-plasmic-override={overrides.chakraUiTbody}
+                className={classNames("__wab_instance", sty.chakraUiTbody)}
               >
                 <Tr
                   className={classNames(
@@ -270,9 +269,7 @@ function PlasmicTable__RenderFunc(props: {
             </Table>
           </TableContainer>
           <Table
-            data-plasmic-name={"chakraUiTable"}
-            data-plasmic-override={overrides.chakraUiTable}
-            className={classNames("__wab_instance", sty.chakraUiTable)}
+            className={classNames("__wab_instance", sty.chakraUiTable__wcO6)}
             colorScheme={"gray" as const}
             size={"md" as const}
             variant={"simple" as const}
@@ -304,11 +301,17 @@ const PlasmicDescendants = {
   root: [
     "root",
     "chakraUiTableContainer",
-    "chakraUiTable",
+    "chakraUiThead",
+    "chakraUiTbody",
     "chakraUiTableCaption"
   ],
-  chakraUiTableContainer: ["chakraUiTableContainer"],
-  chakraUiTable: ["chakraUiTable", "chakraUiTableCaption"],
+  chakraUiTableContainer: [
+    "chakraUiTableContainer",
+    "chakraUiThead",
+    "chakraUiTbody"
+  ],
+  chakraUiThead: ["chakraUiThead"],
+  chakraUiTbody: ["chakraUiTbody"],
   chakraUiTableCaption: ["chakraUiTableCaption"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -317,7 +320,8 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   chakraUiTableContainer: typeof TableContainer;
-  chakraUiTable: typeof Table;
+  chakraUiThead: typeof Thead;
+  chakraUiTbody: typeof Tbody;
   chakraUiTableCaption: typeof TableCaption;
 };
 
@@ -382,7 +386,8 @@ export const PlasmicTable = Object.assign(
   {
     // Helper components rendering sub-elements
     chakraUiTableContainer: makeNodeComponent("chakraUiTableContainer"),
-    chakraUiTable: makeNodeComponent("chakraUiTable"),
+    chakraUiThead: makeNodeComponent("chakraUiThead"),
+    chakraUiTbody: makeNodeComponent("chakraUiTbody"),
     chakraUiTableCaption: makeNodeComponent("chakraUiTableCaption"),
 
     // Metadata about props expected for PlasmicTable

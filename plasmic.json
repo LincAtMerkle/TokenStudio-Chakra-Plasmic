@@ -805,6 +805,11 @@
           "id": "ixWyRxIJ6ze",
           "name": "AntdConfigProvider",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerConfigProvider"
+        },
+        {
+          "id": "-wXNRmer1Z",
+          "name": "Markdown",
+          "componentImportPath": "./components/custom/chakraUIDocs/Markdown/"
         }
       ]
     }
