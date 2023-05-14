@@ -2565,6 +2565,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@plasmicpkgs/plasmic-query@npm:^0.0.150":
+  version: 0.0.150
+  resolution: "@plasmicpkgs/plasmic-query@npm:0.0.150"
+  peerDependencies:
+    "@plasmicapp/host": ">=1.0.0"
+    "@plasmicapp/query": ">=0.1.0"
+    react: ">=16.8.0"
+    react-dom: ">=16.8.0"
+  checksum: ab5c7f492beb8afab21422b21696c6f60a913de041b0ddaf1d984ebfea98db047a66cec3c139238bf3adb10689e86c50885c2ae6bd5c0a50373a009770fe0dfa
+  languageName: node
+  linkType: hard
+
 "@popperjs/core@npm:^2.9.3":
   version: 2.11.6
   resolution: "@popperjs/core@npm:2.11.6"
@@ -3688,6 +3700,7 @@ __metadata:
     "@plasmicapp/host": ^1.0.120
     "@plasmicapp/loader-nextjs": ^1.0.253
     "@plasmicapp/react-web": ^0.2.188
+    "@plasmicpkgs/plasmic-query": ^0.0.150
     "@react-aria/utils": ^3.15.0
     "@stitches/react": ^1.2.8
     "@tokens-studio/sd-transforms": ^0.5.2

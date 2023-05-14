@@ -812,6 +812,1027 @@
           "componentImportPath": "./components/custom/chakraUIDocs/Markdown/"
         }
       ]
+    },
+    {
+      "projectId": "YUiM7yqBWAqsh8KSnrdj7",
+      "projectApiToken": "yLKpJOE8mD6HqoNCSWF3Em8ut0LBzL7qb3QPqNeOLPjQsSBSc12yhYovnSRSekzgt1xjjbugBGDjOMLGMK4w",
+      "projectName": "plasmic-query",
+      "version": "0.17.0",
+      "cssFilePath": "plasmic/plasmic_query/plasmic_plasmic_query.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "ae7V86eNoXA",
+          "name": "DataFetcher",
+          "componentImportPath": "@plasmicpkgs/plasmic-query"
+        },
+        {
+          "id": "0DrxdjD45dkx",
+          "name": "GraphqlFetcher",
+          "componentImportPath": "@plasmicpkgs/plasmic-query"
+        }
+      ],
+      "jsBundleThemes": []
+    },
+    {
+      "projectId": "nV7sRTPBx6ecWzFNNAWeQg",
+      "projectApiToken": "NIKKvwe5oRoMzc1Ag6Y0edSDYxfGY1n9Aq2D9dqA1tC0nzLJgWADIVPivuIexoJWe1G1klGrrnm1rYErzvt2w",
+      "projectName": "Plasmic POC (localhost)",
+      "version": "latest",
+      "cssFilePath": "plasmic/plasmic_poc_localhost/plasmic_plasmic_poc_localhost.module.css",
+      "components": [
+        {
+          "id": "QBGPHa7ppZ1aTq",
+          "name": "DesignTokenItem",
+          "type": "managed",
+          "projectId": "nV7sRTPBx6ecWzFNNAWeQg",
+          "renderModuleFilePath": "plasmic/plasmic_poc_localhost/PlasmicDesignTokenItem.tsx",
+          "importSpec": {
+            "modulePath": "DesignTokenItem.tsx"
+          },
+          "cssFilePath": "plasmic/plasmic_poc_localhost/PlasmicDesignTokenItem.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "S0E6yeW35J539P",
+          "name": "Table",
+          "type": "managed",
+          "projectId": "nV7sRTPBx6ecWzFNNAWeQg",
+          "renderModuleFilePath": "plasmic/plasmic_poc_localhost/PlasmicTable.tsx",
+          "importSpec": {
+            "modulePath": "../pages/table.tsx"
+          },
+          "cssFilePath": "plasmic/plasmic_poc_localhost/PlasmicTable.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "cAtTstJSenOpIj",
+          "name": "Text",
+          "type": "managed",
+          "projectId": "nV7sRTPBx6ecWzFNNAWeQg",
+          "renderModuleFilePath": "plasmic/plasmic_poc_localhost/PlasmicText.tsx",
+          "importSpec": {
+            "modulePath": "../pages/text.tsx"
+          },
+          "cssFilePath": "plasmic/plasmic_poc_localhost/PlasmicText.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "nd_5TIq5hl4BCD",
+          "name": "Button",
+          "type": "managed",
+          "projectId": "nV7sRTPBx6ecWzFNNAWeQg",
+          "renderModuleFilePath": "plasmic/plasmic_poc_localhost/PlasmicButton.tsx",
+          "importSpec": {
+            "modulePath": "../pages/index.tsx"
+          },
+          "cssFilePath": "plasmic/plasmic_poc_localhost/PlasmicButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "7KMo1Sd6HTa929",
+          "name": "NewPage",
+          "type": "managed",
+          "projectId": "nV7sRTPBx6ecWzFNNAWeQg",
+          "renderModuleFilePath": "plasmic/plasmic_poc_localhost/PlasmicNewPage.tsx",
+          "importSpec": {
+            "modulePath": "../pages/new-page.tsx"
+          },
+          "cssFilePath": "plasmic/plasmic_poc_localhost/PlasmicNewPage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "s4za5IjEKLQiTh",
+          "name": "MarkDownTest",
+          "type": "managed",
+          "projectId": "nV7sRTPBx6ecWzFNNAWeQg",
+          "renderModuleFilePath": "plasmic/plasmic_poc_localhost/PlasmicMarkDownTest.tsx",
+          "importSpec": {
+            "modulePath": "../pages/new-page-2.tsx"
+          },
+          "cssFilePath": "plasmic/plasmic_poc_localhost/PlasmicMarkDownTest.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "XpFLgqdvVc",
+          "name": "NewPage2",
+          "type": "managed",
+          "projectId": "nV7sRTPBx6ecWzFNNAWeQg",
+          "renderModuleFilePath": "plasmic/plasmic_poc_localhost/PlasmicNewPage2.tsx",
+          "importSpec": {
+            "modulePath": "../pages/new-page-3.tsx"
+          },
+          "cssFilePath": "plasmic/plasmic_poc_localhost/PlasmicNewPage2.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "tyIgd4inA60F",
+          "name": "Button2",
+          "type": "managed",
+          "projectId": "nV7sRTPBx6ecWzFNNAWeQg",
+          "renderModuleFilePath": "plasmic/plasmic_poc_localhost/PlasmicButton2.tsx",
+          "importSpec": {
+            "modulePath": "Button2.tsx"
+          },
+          "cssFilePath": "plasmic/plasmic_poc_localhost/PlasmicButton2.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "button"
+        },
+        {
+          "id": "72031lYT5b8J",
+          "name": "TextInput",
+          "type": "managed",
+          "projectId": "nV7sRTPBx6ecWzFNNAWeQg",
+          "renderModuleFilePath": "plasmic/plasmic_poc_localhost/PlasmicTextInput.tsx",
+          "importSpec": {
+            "modulePath": "TextInput.tsx"
+          },
+          "cssFilePath": "plasmic/plasmic_poc_localhost/PlasmicTextInput.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "text-input"
+        }
+      ],
+      "icons": [
+        {
+          "id": "8JlT1dkmxah3Wwy",
+          "name": "LeftIconIcon",
+          "moduleFilePath": "plasmic/plasmic_poc_localhost/icons/PlasmicIcon__LeftIcon.tsx"
+        },
+        {
+          "id": "52IZgKccYr_P",
+          "name": "ChevronRightIcon",
+          "moduleFilePath": "plasmic/plasmic_poc_localhost/icons/PlasmicIcon__ChevronRight.tsx"
+        },
+        {
+          "id": "HUMx9gmaFsM2",
+          "name": "Searchsvg2Icon",
+          "moduleFilePath": "plasmic/plasmic_poc_localhost/icons/PlasmicIcon__Searchsvg2.tsx"
+        },
+        {
+          "id": "YF4jbyk9EhZl",
+          "name": "ChecksvgIcon",
+          "moduleFilePath": "plasmic/plasmic_poc_localhost/icons/PlasmicIcon__Checksvg.tsx"
+        },
+        {
+          "id": "brquOlkiRV7V",
+          "name": "FacebooksvgIcon",
+          "moduleFilePath": "plasmic/plasmic_poc_localhost/icons/PlasmicIcon__Facebooksvg.tsx"
+        },
+        {
+          "id": "d6ifsfFRsE1t",
+          "name": "TwittersvgIcon",
+          "moduleFilePath": "plasmic/plasmic_poc_localhost/icons/PlasmicIcon__Twittersvg.tsx"
+        },
+        {
+          "id": "NLAsS3CHl8w4",
+          "name": "InstagramsvgIcon",
+          "moduleFilePath": "plasmic/plasmic_poc_localhost/icons/PlasmicIcon__Instagramsvg.tsx"
+        },
+        {
+          "id": "NmoSarf4TD_d",
+          "name": "LinkedinsvgIcon",
+          "moduleFilePath": "plasmic/plasmic_poc_localhost/icons/PlasmicIcon__Linkedinsvg.tsx"
+        }
+      ],
+      "images": [
+        {
+          "id": "ItRrSzkC4cr9",
+          "name": "image",
+          "filePath": "../public/plasmic/plasmic_poc_localhost/images/image.svg"
+        },
+        {
+          "id": "XchMrduaL36Y",
+          "name": "image 2",
+          "filePath": "../public/plasmic/plasmic_poc_localhost/images/image2.svg"
+        },
+        {
+          "id": "XkAZUheMAMEc",
+          "name": "image 3",
+          "filePath": "../public/plasmic/plasmic_poc_localhost/images/image3.png"
+        },
+        {
+          "id": "ckxNZl6SmJHI",
+          "name": "image 4",
+          "filePath": "../public/plasmic/plasmic_poc_localhost/images/image4.png"
+        },
+        {
+          "id": "e6ZH_-aK-gPx",
+          "name": "image 5",
+          "filePath": "../public/plasmic/plasmic_poc_localhost/images/image5.png"
+        },
+        {
+          "id": "p0U53PkM973s",
+          "name": "image 6",
+          "filePath": "../public/plasmic/plasmic_poc_localhost/images/image6.png"
+        },
+        {
+          "id": "ysYXku2BlAyn",
+          "name": "image 7",
+          "filePath": "../public/plasmic/plasmic_poc_localhost/images/image7.png"
+        },
+        {
+          "id": "q1CvtSiqfmxm",
+          "name": "image 8",
+          "filePath": "../public/plasmic/plasmic_poc_localhost/images/image8.svg"
+        },
+        {
+          "id": "MUu2SmZo1oz0",
+          "name": "image 9",
+          "filePath": "../public/plasmic/plasmic_poc_localhost/images/image9.svg"
+        },
+        {
+          "id": "3WYIFtZUjQUn",
+          "name": "image 10",
+          "filePath": "../public/plasmic/plasmic_poc_localhost/images/image10.svg"
+        },
+        {
+          "id": "XLx7jsbI_rdU",
+          "name": "image 11",
+          "filePath": "../public/plasmic/plasmic_poc_localhost/images/image11.svg"
+        },
+        {
+          "id": "iHOoHJLMLUig",
+          "name": "image 12",
+          "filePath": "../public/plasmic/plasmic_poc_localhost/images/image12.svg"
+        },
+        {
+          "id": "MlZ4y_Wy3ffj",
+          "name": "image 13",
+          "filePath": "../public/plasmic/plasmic_poc_localhost/images/image13.svg"
+        },
+        {
+          "id": "iRTJl5mdU2RS",
+          "name": "image 14",
+          "filePath": "../public/plasmic/plasmic_poc_localhost/images/image14.svg"
+        },
+        {
+          "id": "8rrCReLZGmWE",
+          "name": "image 15",
+          "filePath": "../public/plasmic/plasmic_poc_localhost/images/image15.svg"
+        },
+        {
+          "id": "ixEM0N6C8mwX",
+          "name": "image 16",
+          "filePath": "../public/plasmic/plasmic_poc_localhost/images/image16.svg"
+        },
+        {
+          "id": "2QJDjPGR3yyg",
+          "name": "image 17",
+          "filePath": "../public/plasmic/plasmic_poc_localhost/images/image17.svg"
+        },
+        {
+          "id": "snK4z8nWz4Ho",
+          "name": "image 18",
+          "filePath": "../public/plasmic/plasmic_poc_localhost/images/image18.svg"
+        },
+        {
+          "id": "TLnkOPTzrnkQ",
+          "name": "image 19",
+          "filePath": "../public/plasmic/plasmic_poc_localhost/images/image19.png"
+        },
+        {
+          "id": "W-gCCAoDmvH8",
+          "name": "image 20",
+          "filePath": "../public/plasmic/plasmic_poc_localhost/images/image20.svg"
+        },
+        {
+          "id": "VHE3LPHLVbrG",
+          "name": "image 21",
+          "filePath": "../public/plasmic/plasmic_poc_localhost/images/image21.svg"
+        },
+        {
+          "id": "SDnyvA3TNi_E",
+          "name": "image 22",
+          "filePath": "../public/plasmic/plasmic_poc_localhost/images/image22.png"
+        },
+        {
+          "id": "ILAA2ye2ewtq",
+          "name": "image 23",
+          "filePath": "../public/plasmic/plasmic_poc_localhost/images/image23.png"
+        },
+        {
+          "id": "lu7Kcr89yYlh",
+          "name": "image 24",
+          "filePath": "../public/plasmic/plasmic_poc_localhost/images/image24.svg"
+        },
+        {
+          "id": "t6w6vak1Ep25",
+          "name": "image 25",
+          "filePath": "../public/plasmic/plasmic_poc_localhost/images/image25.svg"
+        },
+        {
+          "id": "vSdgLoTMVIBv",
+          "name": "image 26",
+          "filePath": "../public/plasmic/plasmic_poc_localhost/images/image26.png"
+        },
+        {
+          "id": "9K18vvEuCg_I",
+          "name": "image 27",
+          "filePath": "../public/plasmic/plasmic_poc_localhost/images/image27.png"
+        },
+        {
+          "id": "u9CMs1hbPbI2",
+          "name": "image 28",
+          "filePath": "../public/plasmic/plasmic_poc_localhost/images/image28.svg"
+        },
+        {
+          "id": "OdAQgTq10HQ0",
+          "name": "image 29",
+          "filePath": "../public/plasmic/plasmic_poc_localhost/images/image29.svg"
+        },
+        {
+          "id": "LAAORIF6OMdp",
+          "name": "image 30",
+          "filePath": "../public/plasmic/plasmic_poc_localhost/images/image30.svg"
+        },
+        {
+          "id": "jYqKoAtBfQxs",
+          "name": "image 31",
+          "filePath": "../public/plasmic/plasmic_poc_localhost/images/image31.svg"
+        },
+        {
+          "id": "mkLQLDYc5b60",
+          "name": "image 32",
+          "filePath": "../public/plasmic/plasmic_poc_localhost/images/image32.svg"
+        },
+        {
+          "id": "tcfpp2X8e9Eh",
+          "name": "image 33",
+          "filePath": "../public/plasmic/plasmic_poc_localhost/images/image33.svg"
+        },
+        {
+          "id": "idvcpDRFRWQn",
+          "name": "image 34",
+          "filePath": "../public/plasmic/plasmic_poc_localhost/images/image34.svg"
+        },
+        {
+          "id": "WmxiDZFIW0pH",
+          "name": "image 35",
+          "filePath": "../public/plasmic/plasmic_poc_localhost/images/image35.png"
+        },
+        {
+          "id": "gpn6Rrr05Xxb",
+          "name": "image 36",
+          "filePath": "../public/plasmic/plasmic_poc_localhost/images/image36.png"
+        }
+      ],
+      "indirect": false,
+      "globalContextsFilePath": "plasmic/plasmic_poc_localhost/PlasmicGlobalContextsProvider.tsx",
+      "codeComponents": [
+        {
+          "id": "pzbjF3y_sGNWd",
+          "name": "PlasmicHead",
+          "componentImportPath": "@plasmicapp/react-web"
+        },
+        {
+          "id": "Z615tYpfbCCvE",
+          "name": "Fetcher",
+          "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        },
+        {
+          "id": "46aX2S5S9tXtDL",
+          "name": "AccordionButton",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "thbIMMK_nuxCdG",
+          "name": "AccordionIcon",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "XKbyRhfIHWVDk_",
+          "name": "AccordionItem",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "Q0SxiAEjG-oYki",
+          "name": "AccordionPanel",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "0kIkcxogDoGhH",
+          "name": "AspectRatio",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "0vs7Hdf7lYLP7",
+          "name": "Avatar",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "B27x6rEnibGSx",
+          "name": "AvatarBadge",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "_c_lvQL0x3bHk",
+          "name": "AvatarGroup",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "wb8Udggy-fwXe",
+          "name": "Badge",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "5l4p9QMkNasU5",
+          "name": "Breadcrumb",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "pI7IOfZoE4yYp",
+          "name": "BreadcrumbItem",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "GU33bAdCLp-TG",
+          "name": "BreadcrumbLink",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "CSW6DeLQLtK4p",
+          "name": "BreadcrumbSeparator",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "v_IlycuEiFdN-",
+          "name": "Button",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "fJsjptD6oaafn",
+          "name": "ButtonGroup",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "pLZle4zEc5dY2",
+          "name": "Checkbox",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "tBA9O4TAtckMu",
+          "name": "CheckboxGroup",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "76u4nRL3wYOp2",
+          "name": "Code",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "lg_Aso8GPCXy5",
+          "name": "Divider",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "musgvR6iN5k7A",
+          "name": "FormControl",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "Bdr4HAMVXwD6M",
+          "name": "FormErrorMessage",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "AtE3RXyIHXAlv",
+          "name": "FormHelperText",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "xgiQaKIrw7wXN",
+          "name": "FormLabel",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "0G7l8BbhtHSG-",
+          "name": "Heading",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "n32-I8Mh0r9wj",
+          "name": "Highlight",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "V3ahvQygSciuR",
+          "name": "Image",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "af17Ycvvo_OQfS",
+          "name": "Input",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "ofj-PezF83ip-j",
+          "name": "Kbd",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "BnGwlQoUEP6uli",
+          "name": "Modal",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "2Dcenp-k02sRIk",
+          "name": "ModalOverlay",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "lHPRZFVyMV_79z",
+          "name": "ModalContent",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "TEBYwaM5f4NQRV",
+          "name": "ModalHeader",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "9L2shUyATEXqrU",
+          "name": "ModalBody",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "uudreMieemN7Cp",
+          "name": "ModalFooter",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "8eMv1jiKAxiaXo",
+          "name": "ModalCloseButton",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "ZcxUq6zO5w6deJ",
+          "name": "NumberInput",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "MktHIEO4P6gw58",
+          "name": "NumberDecrementStepper",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "D3seD1urCWSF9z",
+          "name": "NumberIncrementStepper",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "CsxhkBNOJ_W0A3",
+          "name": "NumberInputField",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "A_Ri8SxRq0t1Km",
+          "name": "NumberInputStepper",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "S9mnx7eRfsgQcv",
+          "name": "Option",
+          "componentImportPath": "@plasmicpkgs/plasmic-chakra-ui"
+        },
+        {
+          "id": "Itq4ZxemN2ZoQY",
+          "name": "Select",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "DdU9qkrOP6CgNk",
+          "name": "PinInput",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "aW5el3_IvQQbmQ",
+          "name": "PinInputField",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "1j0bMsM84svXXS",
+          "name": "Popover",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "5RoXglF5RuhkL2",
+          "name": "PopoverBody",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "Q_Syo9wYUklHjL",
+          "name": "PopoverArrow",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "LsUaA-LktTqCP6",
+          "name": "PopoverCloseButton",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "FY4xLLOJwntK2z",
+          "name": "PopoverContent",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "ykwMHoObUjf-UM",
+          "name": "PopoverHeader",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "siXBeMjbDtDid4",
+          "name": "PopoverTrigger",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "aQnykaZQtAdg6k",
+          "name": "Progress",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "RgOpw_DxI_HlbB",
+          "name": "Radio",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "RTQIhu5Fa2U1g9",
+          "name": "RadioGroup",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "4T7ai2KGxtAmnq",
+          "name": "Stat",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "MXx1OIvZnIh2Sx",
+          "name": "StatArrow",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "BX7LincDEhlMu1",
+          "name": "StatHelpText",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "telsYS9kyejmNy",
+          "name": "StatLabel",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "UXaWLzwafiU4On",
+          "name": "StatNumber",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "-NvC0LgQXxGITF",
+          "name": "Switch",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "7LAWEjV2Iyyowv",
+          "name": "Table",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "Q6F2H8mrSVUoXv",
+          "name": "TableCaption",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "ZLaveuQV2FzR8l",
+          "name": "Tbody",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "ochSN38DrmETRc",
+          "name": "Thead",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "pzHUwbRCFrIkHy",
+          "name": "Tfoot",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "64_T6_Zjd5hSZj",
+          "name": "Td",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "uJiUZk2_Z6yH9F",
+          "name": "Th",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "J70buxAAo8QM9G",
+          "name": "Tr",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "FgTrG2sfqMOBLL",
+          "name": "TableContainer",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "SdN14ngBJybRru",
+          "name": "Text",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "8x13nyrdTcFMUi",
+          "name": "Toast",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "jny7NAC81zTTLh",
+          "name": "Tooltip",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "DK6dSB3ThhsXIj",
+          "name": "TabList",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "F1abSqtZ70GIE5",
+          "name": "Tab",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "oLPrfVOgmP2NL-",
+          "name": "Tabs",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "CtsmYWpMHjwsnu",
+          "name": "TabPanel",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "R86GKzOGccsYxz",
+          "name": "TabPanels",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "0ke_GqR_1yrk8q",
+          "name": "ChakraProvider",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "Cg_xUDXNXriTau",
+          "name": "ToggleColorMode",
+          "componentImportPath": "./ToggleColorMode"
+        },
+        {
+          "id": "N1HrviFeo_ZnfE",
+          "name": "ImageWithOverlay",
+          "componentImportPath": "./ImageWithOverlay"
+        },
+        {
+          "id": "9c6OdMLDMrhOJ5",
+          "name": "ButtonPreview",
+          "componentImportPath": "./components/custom/ButtonPreview"
+        },
+        {
+          "id": "byb75TJmBRhYC6",
+          "name": "GolfIcon",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "4tsy7gZ4wNUoHz",
+          "name": "BowlingIcon",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "vLX1TbXcJdp5nw",
+          "name": "ArcadeIcon",
+          "componentImportPath": "./CustomIcons"
+        },
+        {
+          "id": "lqeL0o2GCJZesJ",
+          "name": "HijinxIcon",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "kWmcm2TIf7RZo9",
+          "name": "WondervilleIcon",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "vmPwQz0qQqMX5t",
+          "name": "KaraokeIcon",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "Is4OLeqqIaxv1M",
+          "name": "LaserIcon",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "yjW3Kh_Pd0If0y",
+          "name": "EscaperoomIcon",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "iAI0gpUZN3HKS9",
+          "name": "FunPassIcon",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "b4cmAvV2lHYkeu",
+          "name": "LocationPinIcon",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "LMlNNTKFKkoGMY",
+          "name": "DartsIcon",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "u2CfM4vBtVRXT7",
+          "name": "ChakraDocs",
+          "componentImportPath": "./components/custom/tokenSheets/ChakraDocs"
+        },
+        {
+          "id": "WeEAjD9tzkcL1S",
+          "name": "SwatchColor",
+          "componentImportPath": "./components/custom/tokenSheets/SwatchColor"
+        },
+        {
+          "id": "wDIDTWAt81va85",
+          "name": "SwatchBorder",
+          "componentImportPath": "./components/custom/tokenSheets/SwatchBorder"
+        },
+        {
+          "id": "wg-ZvIg6tpFgmX",
+          "name": "SwatchOpacity",
+          "componentImportPath": "./components/custom/tokenSheets/SwatchOpacity"
+        },
+        {
+          "id": "GIbj6EQ-5xfVnI",
+          "name": "SwatchTypography",
+          "componentImportPath": "./components/custom/tokenSheets/SwatchTypography"
+        },
+        {
+          "id": "BqMFXxz-YKcj7r",
+          "name": "SwatchSizing",
+          "componentImportPath": "./components/custom/tokenSheets/SwatchSizing"
+        },
+        {
+          "id": "UmsYCeLMY0uSA4",
+          "name": "SwatchBorderRadius",
+          "componentImportPath": "./components/custom/tokenSheets/SwatchBorderRadius"
+        },
+        {
+          "id": "z8b3E4YbZNVSPR",
+          "name": "SwatchSpacing",
+          "componentImportPath": "./components/custom/tokenSheets/SwatchSpacing"
+        },
+        {
+          "id": "1VscPprzbATLtq",
+          "name": "SwatchFontFamily",
+          "componentImportPath": "./components/custom/tokenSheets/SwatchFontFamily"
+        },
+        {
+          "id": "YNN2zKsVIf-l05",
+          "name": "SwatchFontWeights",
+          "componentImportPath": "./components/custom/tokenSheets/SwatchFontWeights"
+        },
+        {
+          "id": "JGzOOwIZKLI5dw",
+          "name": "SwatchFontSizes",
+          "componentImportPath": "./components/custom/tokenSheets/SwatchFontSizes"
+        },
+        {
+          "id": "KxK72gTEhrNmLn",
+          "name": "SwatchBorderWidth",
+          "componentImportPath": "./components/custom/tokenSheets/SwatchBorderWidth"
+        },
+        {
+          "id": "eQm3akx7sKpBaF",
+          "name": "SwatchLineHeights",
+          "componentImportPath": "./components/custom/tokenSheets/SwatchLineHeights"
+        },
+        {
+          "id": "Xm-jJGmF_KFc_7",
+          "name": "SwatchLetterSpacing",
+          "componentImportPath": "./components/custom/tokenSheets/SwatchLetterSpacing"
+        },
+        {
+          "id": "iXhvOFgnxcnZRQ",
+          "name": "SwatchParagraphSpacing",
+          "componentImportPath": "./components/custom/tokenSheets/SwatchParagraphSpacing"
+        },
+        {
+          "id": "8tMGgk2DsXmHyp",
+          "name": "SwatchTextCase",
+          "componentImportPath": "./components/custom/tokenSheets/SwatchTextCase"
+        },
+        {
+          "id": "Uw54plzNZCgk3J",
+          "name": "SwatchTextDecoration",
+          "componentImportPath": "./components/custom/tokenSheets/SwatchTextDecoration"
+        },
+        {
+          "id": "Ptglh9cmZCoV39",
+          "name": "SwatchAssets",
+          "componentImportPath": "./components/custom/tokenSheets/SwatchAssets"
+        },
+        {
+          "id": "UwXqAnWX8HyfyI",
+          "name": "SwatchDimension",
+          "componentImportPath": "./components/custom/tokenSheets/SwatchDimension"
+        },
+        {
+          "id": "Zk9Rh_EVGqnZYu",
+          "name": "SwatchBoxShadow",
+          "componentImportPath": "./components/custom/tokenSheets/SwatchBoxShadow"
+        },
+        {
+          "id": "HYlhkhQFJrRILe",
+          "name": "SwatchComposition",
+          "componentImportPath": "./components/custom/tokenSheets/SwatchComposition"
+        },
+        {
+          "id": "l39wnN4RszoI-9",
+          "name": "FooterWithFourColumns",
+          "componentImportPath": "./components/custom/chakraPro/FooterWithFourColumns/FooterWithFourColumns"
+        },
+        {
+          "id": "2KAN9pHJgUTnhu",
+          "name": "Accordion",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "7PTeodJsbUuZK5",
+          "name": "Tag",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "0btUkvEdUo5Cee",
+          "name": "TagLeftIcon",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "tFmlolOIz7EEyn",
+          "name": "TagLabel",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "jmU-Lr7T0LdXhg",
+          "name": "TagRightIcon",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "aX9cwURI1a_a1D",
+          "name": "TagCloseButton",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "Y3Ef5zVI-jXhUc",
+          "name": "IconButton",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "QrbGKnpGByqBVz",
+          "name": "Card",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "OXnC1rztNEWgP1",
+          "name": "CardHeader",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "H4DHx38BkgTZeh",
+          "name": "CardBody",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "Oy-3KptMRuOThF",
+          "name": "CardFooter",
+          "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "COXAdXyGiCzfNm",
+          "name": "Stack",
+          "componentImportPath": "@chakra-ui/react"
+        }
+      ]
     }
   ],
   "globalVariants": {
@@ -821,6 +1842,12 @@
         "name": "Screen",
         "projectId": "x7VZoMTkaRPxy26VUXVkvK",
         "contextFilePath": "plasmic/plasmic_poc/PlasmicGlobalVariant__Screen.tsx"
+      },
+      {
+        "id": "xM5YozUtiFnH_Z",
+        "name": "Screen",
+        "projectId": "nV7sRTPBx6ecWzFNNAWeQg",
+        "contextFilePath": "plasmic/plasmic_poc_localhost/PlasmicGlobalVariant__Screen.tsx"
       }
     ]
   },

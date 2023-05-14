@@ -2,9 +2,9 @@
 // This file is owned by you, feel free to edit as you see fit.
 import * as React from "react";
 import * as ph from "@plasmicapp/react-web/lib/host";
-import GlobalContextsProvider from "../components/plasmic/plasmic_poc/PlasmicGlobalContextsProvider";
-import { ScreenVariantProvider } from "../components/plasmic/plasmic_poc/PlasmicGlobalVariant__Screen";
-import { PlasmicText } from "../components/plasmic/plasmic_poc/PlasmicText";
+import GlobalContextsProvider from "../components/plasmic/plasmic_poc_localhost/PlasmicGlobalContextsProvider";
+import { ScreenVariantProvider } from "../components/plasmic/plasmic_poc_localhost/PlasmicGlobalVariant__Screen";
+import { PlasmicText } from "../components/plasmic/plasmic_poc_localhost/PlasmicText";
 import { useRouter } from "next/router";
 
 function Text() {
