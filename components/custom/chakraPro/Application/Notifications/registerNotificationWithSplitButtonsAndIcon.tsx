@@ -1,10 +1,10 @@
-import { App }  from "./App";
+import { App }  from "./NotificationWithSplitButtonsAndIcon";
 import {registerComponent } from "@plasmicapp/host";
 
-export function registerLoginWithCentredForm(){
+export function registerNotificationWithSplitButtonsAndIcon(){
     registerComponent(App, {
-        name: "LoginWithCentredForm",
-        importPath: "./components/custom/chakraPro/Cards/LoginWithCentredForm",
+        name: "NotificationWithSplitButtonsAndIcon",
+        importPath: "./components/custom/chakraPro/Aplication/Notifications/NotificationWithSplitButtonsAndIcon",
         
         props: {
           title: {

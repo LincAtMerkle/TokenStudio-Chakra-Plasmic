@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerFloatingInputLabel(){
     registerComponent(App, {
         name: "FloatingInputLabel",
-        importPath: "./components/custom/chakraPro//Form Layouts/Form Elements/FloatingInputLabel",
+        importPath: "./components/custom/chakraPro/Aplication/Form Elements/FloatingInputLabel",
         
         props: {
           title: {

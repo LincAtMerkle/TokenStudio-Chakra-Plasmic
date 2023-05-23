@@ -1,10 +1,10 @@
-import { App }  from "./App";
+import { App }  from "./NotificationWithTwoLinksAndIcon";
 import {registerComponent } from "@plasmicapp/host";
 
-export function registerLoginWithCentredForm(){
+export function registerNotificationWithTwoLinksAndIcon(){
     registerComponent(App, {
-        name: "LoginWithCentredForm",
-        importPath: "./components/custom/chakraPro/Cards/LoginWithCentredForm",
+        name: "NotificationWithTwoLinksAndIcon",
+        importPath: "./components/custom/chakraPro/Aplication/Notifications/NotificationWithTwoLinksAndIcon",
         
         props: {
           title: {

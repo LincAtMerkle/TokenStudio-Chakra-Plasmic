@@ -1,10 +1,10 @@
-import { App }  from "./App";
+import { App }  from "./PageHeaderWithTwoButtons";
 import {registerComponent } from "@plasmicapp/host";
 
-export function registerLoginWithCentredForm(){
+export function registerPageHeaderWithTwoButtons(){
     registerComponent(App, {
-        name: "LoginWithCentredForm",
-        importPath: "./components/custom/chakraPro/Cards/LoginWithCentredForm",
+        name: "PageHeaderWithTwoButtons",
+        importPath: "./components/custom/chakraPro/Aplication/Page Headers/Cards/PageHeaderWithTwoButtons",
         
         props: {
           title: {
