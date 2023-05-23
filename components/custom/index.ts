@@ -33,9 +33,55 @@ import { registerSwatchBorder } from "./tokenSheets/registerSwatchBorder";
 import { registerSwatchBoxShadow } from "./tokenSheets/registerSwatchBoxShadow";
 import { registerSwatchTypography } from "./tokenSheets/registerSwatchTypography";
 import { registerSwatchComposition } from "./tokenSheets/registerSwatchComposition";
-import { registerFooterWithFourColumns } from "./chakraPro/FooterWithFourColumns/registerFooterWithFourColumns";
-// import { registerMarkdown } from "./chakraUIDocs/registerMarkdown";
 
+//Chakra Pro
+//Application
+//Authentication
+import { registerFooterWithFourColumns } from "./chakraPro/FooterWithFourColumns/registerFooterWithFourColumns";
+import { registerLoginWithCentredForm } from "./chakraPro/Application/Authentication/LoginWithCentredForm/register";
+import { registerLoginWithEmailOrProvider } from "./chakraPro/Application/Authentication/LoginWithEmailOrProvider/register";
+import { registerLoginWithEmailPasswordOrGoogle } from "./chakraPro/Application/Authentication/LoginWithEmailPasswordOrGoogle/register";
+import { registerLoginWithFloatingLabel } from "./chakraPro/Application/Authentication/LoginWithFloatingLabel/register";
+import { registerLoginWithFlushedInputs } from "./chakraPro/Application/Authentication/LoginWithFlushedInputs/register";
+import { registerLoginWithGoogleOrEmail } from "./chakraPro/Application/Authentication/LoginWithGoogleOrEmail/register";
+import { registerLoginWithGradient } from "./chakraPro/Application/Authentication/LoginWithGradient/register";
+import { registerLoginWithLeftBackground } from "./chakraPro/Application/Authentication/LoginWithLeftBackground/register";
+import { registerSignUpForm } from "./chakraPro/Application/Authentication/SignUpForm/register";
+import { registerSignUpWithQuote } from "./chakraPro/Application/Authentication/SignUpWithQuote/register";
+//Banner
+import { registerBannerWithButton } from "./chakraPro/Application/Banners/registerBannerWithButton";
+import { registerBannerWithButtonFloating } from "./chakraPro/Application/Banners/registerBannerWithButtonFloating";
+import { registerBannerWithButtonFloatingOnAccent } from "./chakraPro/Application/Banners/registerBannerWithButtonFloatingOnAccent";
+import { registerBannerWithForm } from "./chakraPro/Application/Banners/registerBannerWithForm";
+import { registerBannerWithFormFloating } from "./chakraPro/Application/Banners/registerBannerWithFormFloating";
+import { registerBannerWithFormFloatingOnAccent } from "./chakraPro/Application/Banners/registerBannerWithFormFloatingOnAccent";
+import { registerBannerWithFormOnAccent } from "./chakraPro/Application/Banners/registerBannerWithFormOnAccent";
+import { registerBannerWithText } from "./chakraPro/Application/Banners/registerBannerWithText";
+import { registerBannerWithTextFloating } from "./chakraPro/Application/Banners/registerBannerWithTextFloating";
+import { registerBannerWithTextFloatingOnAccent } from "./chakraPro/Application/Banners/registerBannerWithTextFloatingOnAccent";
+import { registerBannerWithTextOnAccent } from "./chakraPro/Application/Banners/registerBannerWithTextOnAccent";
+import { registerBannerWithTwoButtons } from "./chakraPro/Application/Banners/registerBannerWithTwoButtons";
+import { registerBannerWithTwoButtonsFloating } from "./chakraPro/Application/Banners/registerBannerWithTwoButtonsFloating";
+import { registerBannerWithTwoButtonsFloatingOnAccent } from "./chakraPro/Application/Banners/registerBannerWithTwoButtonsFloatingOnAccent";
+import { registerBannerWithTwoButtonsOnAccent } from "./chakraPro/Application/Banners/registerBannerWithTwoButtonsOnAccent";
+//Card Headers
+import { registerCardHeaderAccentWithAvatar} from "./chakraPro/Application/Card Headers/registerCardHeaderAccentWithAvatar";
+import { registerCardHeaderAccentWithButton} from "./chakraPro/Application/Card Headers/registerCardHeaderAccentWithButton";
+import { registerCardHeaderAccentWithContextMenu} from "./chakraPro/Application/Card Headers/registerCardHeaderAccentWithContextMenu";
+import { registerCardHeaderAccentWithDescription} from "./chakraPro/Application/Card Headers/registerCardHeaderAccentWithDescription";
+import { registerCardHeaderWithAvatar} from "./chakraPro/Application/Card Headers/registerCardHeaderWithAvatar";
+import { registerCardHeaderWithButton} from "./chakraPro/Application/Card Headers/registerCardHeaderWithButton";
+import { registerCardHeaderWithContextMenu} from "./chakraPro/Application/Card Headers/registerCardHeaderWithContextMenu";
+import { registerCardHeaderWithDescription} from "./chakraPro/Application/Card Headers/registerCardHeaderWithDescription";
+import { registerCardHeaderAccentWithAvatar} from "./chakraPro/Application/Card Headers/registerCardHeaderAccentWithAvatar";
+import { registerCardHeaderAccentWithButton} from "./chakraPro/Application/Card Headers/registerCardHeaderAccentWithButton";
+import { registerCardHeaderAccentWithContextMenu} from "./chakraPro/Application/Card Headers/registerCardHeaderAccentWithContextMenu";
+import { registerCardHeaderAccentWithDescription} from "./chakraPro/Application/Card Headers/registerCardHeaderAccentWithDescription";
+import { registerCardHeaderWithAvatar} from "./chakraPro/Application/Card Headers/registerCardHeaderWithAvatar";
+import { registerCardHeaderWithButton} from "./chakraPro/Application/Card Headers/registerCardHeaderWithButton";
+import { registerCardHeaderWithContextMenu} from "./chakraPro/Application/Card Headers/registerCardHeaderWithContextMenu";
+import { registerCardHeaderWithDescription} from "./chakraPro/Application/Card Headers/registerCardHeaderWithDescription";
+// import { registerMarkdown } from "./chakraUIDocs/registerMarkdown";
 
 export function registerAllCustom() {
     registerImageWithOverlay();
@@ -78,9 +124,57 @@ export function registerAllCustom() {
     registerSwatchTypography();
     registerSwatchComposition();
 
-    // ChakraPro
+    // CHAKRAPRO
+    //Authentication
     registerFooterWithFourColumns();
+    registerLoginWithCentredForm();
+    registerLoginWithEmailOrProvider();
+    registerLoginWithEmailPasswordOrGoogle();
+    registerLoginWithFloatingLabel();
+    registerLoginWithFlushedInputs();
+    registerLoginWithGoogleOrEmail();
+    registerLoginWithGradient();
+    registerLoginWithLeftBackground();
+    registerSignUpForm();
+    registerSignUpWithQuote();
+    //Banner
+    registerBannerWithButton();
+    registerBannerWithButtonFloating();
+    registerBannerWithButtonFloatingOnAccent();
+    registerBannerWithForm();
+    registerBannerWithFormFloating();
+    registerBannerWithFormFloatingOnAccent();
+    registerBannerWithFormOnAccent();
+    registerBannerWithText();
+    registerBannerWithTextFloating();
+    registerBannerWithTextFloatingOnAccent();
+    registerBannerWithFormOnAccent();
+    registerBannerWithText();
+    registerBannerWithTextFloating();
+    registerBannerWithTextFloatingOnAccent();
+    registerBannerWithTextOnAccent();
+    registerBannerWithTwoButtons();
+    registerBannerWithTwoButtonsFloating();
+    registerBannerWithTwoButtonsFloatingOnAccent();
+    registerBannerWithTwoButtonsOnAccent();
 
+    //Card Headers
+    registerCardHeaderAccentWithAvatar();
+    registerCardHeaderAccentWithButton();
+    registerCardHeaderAccentWithContextMenu();
+    registerCardHeaderAccentWithDescription();
+    registerCardHeaderWithAvatar();
+    registerCardHeaderWithButton();
+    registerCardHeaderWithContextMenu();
+    registerCardHeaderWithDescription();
+    registerCardHeaderAccentWithAvatar();
+    registerCardHeaderAccentWithButton();
+    registerCardHeaderAccentWithContextMenu();
+    registerCardHeaderAccentWithDescription();
+    registerCardHeaderWithAvatar();
+    registerCardHeaderWithButton();
+    registerCardHeaderWithContextMenu();
+    registerCardHeaderWithDescription();
     // Markdown
     // registerMarkdown();
 

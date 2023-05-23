@@ -1,0 +1,65 @@
+import {
+  Box,
+  Button,
+  Container,
+  Heading,
+  SimpleGrid,
+  Stack,
+  Text,
+  useBreakpointValue,
+} from '@chakra-ui/react'
+import * as React from 'react'
+import { FiArrowRight } from 'react-icons/fi'
+import { stats } from './data'
+import { LogoIcon } from './Logo'
+
+export const App = () => (
+  <Box as="section" bg="bg-accent" color="on-accent">
+    <Container py={{ base: '16', md: '24' }}>
+      <Stack spacing={{ base: '12', md: '16' }}>
+        <Stack spacing={{ base: '4', md: '6' }}>
+          <LogoIcon color="on-accent" />
+          <Stack spacing={{ base: '4', md: '5' }} textAlign="center" align="center">
+            <Heading size={useBreakpointValue({ base: 'sm', md: 'md' })}>
+              Why Chakra UI Pro?
+            </Heading>
+            <Text fontSize={{ base: 'lg', md: 'xl' }} color="on-accent-muted" maxW="3xl">
+              Because this beautiful and responsive React components will help your to realize your
+              next project in no time.
+            </Text>
+          </Stack>
+        </Stack>
+        <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} columnGap="8" rowGap="10">
+          {stats.map((stat, id) => (
+            <Box
+              key={id}
+              borderLeftWidth={{ base: '0', md: '2px' }}
+              borderTopWidth={{ base: '2px', md: '0' }}
+              borderColor="bg-accent-muted"
+              px={{ md: '6' }}
+              pt={{ base: '4', md: '0' }}
+            >
+              <Stack spacing="5">
+                <Stack spacing="1">
+                  <Heading size="lg" color="on-accent">
+                    {stat.value}
+                  </Heading>
+                  <Text color="on-accent-muted" fontSize="lg" fontWeight="medium">
+                    {stat.label}
+                  </Text>
+                </Stack>
+                <Button
+                  variant="link-on-accent"
+                  alignSelf="start"
+                  rightIcon={<FiArrowRight fontSize="1.25rem" />}
+                >
+                  {stat.link.label}
+                </Button>
+              </Stack>
+            </Box>
+          ))}
+        </SimpleGrid>
+      </Stack>
+    </Container>
+  </Box>
+)

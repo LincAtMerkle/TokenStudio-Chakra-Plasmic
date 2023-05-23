@@ -1,0 +1,66 @@
+import {
+  Button,
+  Container,
+  Divider,
+  FormControl,
+  FormLabel,
+  Heading,
+  HStack,
+  Input,
+  Stack,
+  Text,
+  useBreakpointValue,
+} from '@chakra-ui/react'
+import * as React from 'react'
+import { Logo } from './Logo'
+import { GitHubIcon, GoogleIcon, TwitterIcon } from './ProviderIcons'
+
+export const App = () => (
+  <Container maxW="md" py={{ base: '12', md: '24' }}>
+    <Stack spacing="8">
+      <Stack spacing="6">
+        <Logo />
+        <Stack spacing={{ base: '2', md: '3' }} textAlign="center">
+          <Heading size={useBreakpointValue({ base: 'xs', md: 'sm' })}>
+            Log in to your account
+          </Heading>
+          <HStack spacing="1" justify="center">
+            <Text color="muted">Don't have an account?</Text>
+            <Button variant="link" colorScheme="pink">
+              Sign up
+            </Button>
+          </HStack>
+        </Stack>
+      </Stack>
+      <Stack spacing="6">
+        <Stack spacing="4" pt="4">
+          <FormControl>
+            <Input id="email" type="email" placeholder=" " data-peer />
+            <FormLabel htmlFor="email" variant="floating">
+              Email
+            </FormLabel>
+          </FormControl>
+          <Button variant="primary">Continue with email</Button>
+        </Stack>
+        <HStack>
+          <Divider />
+          <Text fontSize="sm" color="muted">
+            OR
+          </Text>
+          <Divider />
+        </HStack>
+        <Stack spacing="3">
+          <Button variant="secondary" leftIcon={<GoogleIcon boxSize="5" />} iconSpacing="3">
+            Continue with Google
+          </Button>
+          <Button variant="secondary" leftIcon={<TwitterIcon boxSize="5" />} iconSpacing="3">
+            Continue with Twitter
+          </Button>
+          <Button variant="secondary" leftIcon={<GitHubIcon boxSize="5" />} iconSpacing="3">
+            Continue with GitHub
+          </Button>
+        </Stack>
+      </Stack>
+    </Stack>
+  </Container>
+)
