@@ -1,9 +1,9 @@
 import { App }  from "./App";
 import {registerComponent } from "@plasmicapp/host";
 
-export function registerLoginWithCentredForm(){
+export function registerDividerWithRadioButtonGroup(){
     registerComponent(App, {
-        name: "LoginWithCentredForm",
+        name: "DividerWithRadioButtonGroup",
         importPath: "./components/custom/chakraPro/Application/Dividers/DividerWithRadioButtonGroup",
         props: {
           title: {

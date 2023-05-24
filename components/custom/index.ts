@@ -83,11 +83,20 @@ import { registerCardWithTwoButtons} from "./chakraPro/Application/Cards/registe
 //Dividers
 import { registerDividerWithRadioButtonGroup} from "./chakraPro/Application/Dividers/DividerWithRadioButtonGroup/register";
 import { registerDividerWithButton} from "./chakraPro/Application/Dividers/registerDividerWithButton";
-import { registerCardWithForm} from "./chakraPro/Application/Dividers/registerDividerWithIconButton";
-import { registerCardWithRightButton} from "./chakraPro/Application/Dividers/registerCardWithRightButton";
-import { registerCardWithSwitch} from "./chakraPro/Application/Dividers/register";
-import { registerCardWithTwoButtons} from "./chakraPro/Application/Dividers/registerCardWithTwoButtons";
-
+import { registerDividerWithIconButton} from "./chakraPro/Application/Dividers/registerDividerWithIconButton";
+import { registerDividerWithIconButtonGroup} from "./chakraPro/Application/Dividers/registerDividerWithIconButtonGroup";
+import { registerDividerWithWithText} from "./chakraPro/Application/Dividers/registerDividerWithWithText";
+//Form Elements
+import { registerCheckboxCardGroup} from "./chakraPro/Application/Form Elements/CheckboxCardGroup/register";
+import { registerCustomSelect} from "./chakraPro/Application/Form Elements/CustomSelect/register";
+import { registerDropZone} from "./chakraPro/Application/Form Elements/DropZone/register";
+import { registerRadioButtonGroup} from "./chakraPro/Application/Form Elements/RadioButtonGroup/register";
+import { registerRadioCardGroup} from "./chakraPro/Application/Form Elements/RadioCardGroup/register";
+import { registerRadioIconButtonGroup} from "./chakraPro/Application/Form Elements/RadioIconButtonGroup/register";
+import { registerFloatingInputLabel} from "./chakraPro/Application/Form Elements/registerFloatingInputLabel";
+//Form Elements
+import { registerFormLayoutWithCards} from "./chakraPro/Application/Form Layouts/FormLayoutWithCards/register";
+import { registerFormWithInlineLabels} from "./chakraPro/Application/Form Layouts/FormWithInlineLabels/register";
 
 
 // import { registerMarkdown } from "./chakraUIDocs/registerMarkdown";
@@ -192,6 +201,23 @@ export function registerAllCustom() {
    registerCardWithRightButton();
    registerCardWithSwitch();
    registerCardWithTwoButtons();
+   //Dividers
+    registerDividerWithRadioButtonGroup();
+    registerDividerWithButton();
+    registerDividerWithIconButton();
+    registerDividerWithIconButtonGroup();
+    registerDividerWithWithText();
+    //Form Elements
+    registerCheckboxCardGroup();
+    registerCustomSelect();
+    registerDropZone();
+    registerRadioButtonGroup();
+    registerRadioCardGroup();
+    registerRadioIconButtonGroup();
+    registerFloatingInputLabel();
+//Form Layouts
+registerFormLayoutWithCards(); 
+registerFormWithInlineLabels();
 
 
 
