@@ -73,14 +73,23 @@ import { registerCardHeaderWithAvatar} from "./chakraPro/Application/Card Header
 import { registerCardHeaderWithButton} from "./chakraPro/Application/Card Headers/registerCardHeaderWithButton";
 import { registerCardHeaderWithContextMenu} from "./chakraPro/Application/Card Headers/registerCardHeaderWithContextMenu";
 import { registerCardHeaderWithDescription} from "./chakraPro/Application/Card Headers/registerCardHeaderWithDescription";
-import { registerCardHeaderAccentWithAvatar} from "./chakraPro/Application/Card Headers/registerCardHeaderAccentWithAvatar";
-import { registerCardHeaderAccentWithButton} from "./chakraPro/Application/Card Headers/registerCardHeaderAccentWithButton";
-import { registerCardHeaderAccentWithContextMenu} from "./chakraPro/Application/Card Headers/registerCardHeaderAccentWithContextMenu";
-import { registerCardHeaderAccentWithDescription} from "./chakraPro/Application/Card Headers/registerCardHeaderAccentWithDescription";
-import { registerCardHeaderWithAvatar} from "./chakraPro/Application/Card Headers/registerCardHeaderWithAvatar";
-import { registerCardHeaderWithButton} from "./chakraPro/Application/Card Headers/registerCardHeaderWithButton";
-import { registerCardHeaderWithContextMenu} from "./chakraPro/Application/Card Headers/registerCardHeaderWithContextMenu";
-import { registerCardHeaderWithDescription} from "./chakraPro/Application/Card Headers/registerCardHeaderWithDescription";
+//Card
+import { registerCardWithAddButton} from "./chakraPro/Application/Cards/CardWithAddButton/register";
+import { registerCardWithDownloadItem} from "./chakraPro/Application/Cards/registerCardWithDownloadItem";
+import { registerCardWithForm} from "./chakraPro/Application/Cards/CardWithForm/register";
+import { registerCardWithRightButton} from "./chakraPro/Application/Cards/registerCardWithRightButton";
+import { registerCardWithSwitch} from "./chakraPro/Application/Cards/CardWithSwitch/register";
+import { registerCardWithTwoButtons} from "./chakraPro/Application/Cards/registerCardWithTwoButtons";
+//Dividers
+import { registerDividerWithRadioButtonGroup} from "./chakraPro/Application/Dividers/DividerWithRadioButtonGroup/register";
+import { registerDividerWithButton} from "./chakraPro/Application/Dividers/registerDividerWithButton";
+import { registerCardWithForm} from "./chakraPro/Application/Dividers/registerDividerWithIconButton";
+import { registerCardWithRightButton} from "./chakraPro/Application/Dividers/registerCardWithRightButton";
+import { registerCardWithSwitch} from "./chakraPro/Application/Dividers/register";
+import { registerCardWithTwoButtons} from "./chakraPro/Application/Dividers/registerCardWithTwoButtons";
+
+
+
 // import { registerMarkdown } from "./chakraUIDocs/registerMarkdown";
 
 export function registerAllCustom() {
@@ -175,6 +184,17 @@ export function registerAllCustom() {
     registerCardHeaderWithButton();
     registerCardHeaderWithContextMenu();
     registerCardHeaderWithDescription();
+
+    //Card
+   registerCardWithAddButton();
+   registerCardWithDownloadItem();
+   registerCardWithForm();
+   registerCardWithRightButton();
+   registerCardWithSwitch();
+   registerCardWithTwoButtons();
+
+
+
     // Markdown
     // registerMarkdown();
 
