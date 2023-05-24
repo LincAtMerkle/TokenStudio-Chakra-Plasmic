@@ -9,9 +9,9 @@ interface NavButtonProps extends ButtonProps {
 export const NavButton = (props: NavButtonProps) => {
   const { icon, label, ...buttonProps } = props
   return (
-    <Button variant="ghost-on-accent" justifyContent="start" {...buttonProps}>
+    <Button variant="ghost" justifyContent="start" {...buttonProps}>
       <HStack spacing="3">
-        <Icon as={icon} boxSize="6" color="on-accent-subtle" />
+        <Icon as={icon} boxSize="6" color="subtle" />
         <Text>{label}</Text>
       </HStack>
     </Button>

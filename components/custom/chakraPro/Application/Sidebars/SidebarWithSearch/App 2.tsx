@@ -1,5 +1,18 @@
 import { Icon } from '@chakra-ui/icons'
-import { Divider, Flex, Input, InputGroup, InputLeftElement, Stack } from '@chakra-ui/react'
+import {
+  Box,
+  Button,
+  Divider,
+  Flex,
+  HStack,
+  Input,
+  InputGroup,
+  InputLeftElement,
+  Progress,
+  Stack,
+  Text,
+  useColorModeValue,
+} from '@chakra-ui/react'
 import * as React from 'react'
 import {
   FiBarChart2,
@@ -15,12 +28,12 @@ import { Logo } from './Logo'
 import { NavButton } from './NavButton'
 import { UserProfile } from './UserProfile'
 
-export const Sidebar = () => (
+export const App = () => (
   <Flex as="section" minH="100vh" bg="bg-canvas">
     <Flex
       flex="1"
-      bg="bg-accent"
-      color="on-accent"
+      bg="bg-surface"
+      boxShadow={useColorModeValue('sm', 'sm-dark')}
       maxW={{ base: 'full', sm: 'xs' }}
       py={{ base: '6', sm: '8' }}
       px={{ base: '4', sm: '6' }}
@@ -30,9 +43,9 @@ export const Sidebar = () => (
           <Logo />
           <InputGroup>
             <InputLeftElement pointerEvents="none">
-              <Icon as={FiSearch} color="on-accent" boxSize="5" />
+              <Icon as={FiSearch} color="muted" boxSize="5" />
             </InputLeftElement>
-            <Input placeholder="Search" variant="filled" colorScheme="pink" />
+            <Input placeholder="Search" />
           </InputGroup>
           <Stack spacing="1">
             <NavButton label="Home" icon={FiHome} />
@@ -47,6 +60,27 @@ export const Sidebar = () => (
             <NavButton label="Help" icon={FiHelpCircle} />
             <NavButton label="Settings" icon={FiSettings} />
           </Stack>
+          <Box bg="bg-subtle" px="4" py="5" borderRadius="lg">
+            <Stack spacing="4">
+              <Stack spacing="1">
+                <Text fontSize="sm" fontWeight="medium">
+                  Almost there
+                </Text>
+                <Text fontSize="sm" color="muted">
+                  Fill in some more information about you and your person.
+                </Text>
+              </Stack>
+              <Progress value={80} size="sm" aria-label="Profile Update Progress" />
+              <HStack spacing="3">
+                <Button variant="link" size="sm">
+                  Dismiss
+                </Button>
+                <Button variant="link" size="sm" colorScheme="pink">
+                  Update profile
+                </Button>
+              </HStack>
+            </Stack>
+          </Box>
           <Divider />
           <UserProfile
             name="Christoph Winston"
