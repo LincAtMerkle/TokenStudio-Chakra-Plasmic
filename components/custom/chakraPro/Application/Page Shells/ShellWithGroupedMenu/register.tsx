@@ -1,10 +1,10 @@
 import { App }  from "./App";
 import {registerComponent } from "@plasmicapp/host";
 
-export function registerLoginWithCentredForm(){
+export function registerShellWithGroupedMenu(){
     registerComponent(App, {
-        name: "LoginWithCentredForm",
-        importPath: "./components/custom/chakraPro/Aplication/Page Shells/Cards/LoginWithCentredForm",
+        name: "ShellWithGroupedMenu",
+        importPath: "./components/custom/chakraPro/Aplication/Page Shells/ShellWithGroupedMenu",
         
         props: {
           title: {

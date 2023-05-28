@@ -1,11 +1,10 @@
 import { App }  from "./App";
 import {registerComponent } from "@plasmicapp/host";
 
-export function registerLoginWithCentredForm(){
+export function registerFeatureWithSideBySideImage(){
     registerComponent(App, {
-        name: "LoginWithCentredForm",
-        importPath: "./components/custom/chakraPro/LoginWithCentredForm",
-        
+        name: "FeatureWithSideBySideImage",
+        importPath: "./components/custom/chakraPro/Marketing/Features/FeatureWithSideBySideImage",
         props: {
           title: {
           type: "string",

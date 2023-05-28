@@ -1,10 +1,10 @@
 import { App }  from "./App";
 import {registerComponent } from "@plasmicapp/host";
 
-export function registerLoginWithCentredForm(){
+export function registerCountdownOnColoredBackground(){
     registerComponent(App, {
-        name: "LoginWithCentredForm",
-        importPath: "./components/custom/chakraPro/LoginWithCentredForm",
+        name: "CountdownOnColoredBackground",
+        importPath: "./components/custom/chakraPro/CountdownOnColoredBackground",
         
         props: {
           title: {

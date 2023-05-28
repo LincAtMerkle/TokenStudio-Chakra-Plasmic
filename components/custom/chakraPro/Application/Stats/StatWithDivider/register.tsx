@@ -1,10 +1,10 @@
 import { App }  from "./App";
 import {registerComponent } from "@plasmicapp/host";
 
-export function registerLoginWithCentredForm(){
+export function registerStatWithDivider(){
     registerComponent(App, {
-        name: "LoginWithCentredForm",
-        importPath: "./components/custom/chakraPro/Aplication/Stats/LoginWithCentredForm",
+        name: "StatWithDivider",
+        importPath: "./components/custom/chakraPro/Aplication/Stats/StatWithDivider",
         
         props: {
           title: {

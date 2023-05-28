@@ -1,10 +1,10 @@
 import { App }  from "./App";
 import {registerComponent } from "@plasmicapp/host";
 
-export function registerLoginWithCentredForm(){
+export function registerShowcaseOnSpanningColumns(){
     registerComponent(App, {
-        name: "LoginWithCentredForm",
-        importPath: "./components/custom/chakraPro/LoginWithCentredForm",
+        name: "ShowcaseOnSpanningColumns",
+        importPath: "./components/custom/chakraPro/ShowcaseOnSpanningColumns",
         
         props: {
           title: {

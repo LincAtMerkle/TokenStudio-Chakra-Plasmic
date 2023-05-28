@@ -1,10 +1,10 @@
 import { App }  from "./App";
 import {registerComponent } from "@plasmicapp/host";
 
-export function registerLoginWithCentredForm(){
+export function registerMenuWithTwoColumns(){
     registerComponent(App, {
-        name: "LoginWithCentredForm",
-        importPath: "./components/custom/chakraPro/LoginWithCentredForm",
+        name: "MenuWithTwoColumns",
+        importPath: "./components/custom/chakraPro/Marketing/Logo Grid/MenuWithTwoColumns",
         
         props: {
           title: {

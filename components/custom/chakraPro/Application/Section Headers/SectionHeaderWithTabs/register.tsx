@@ -1,10 +1,10 @@
 import { App }  from "./App";
 import {registerComponent } from "@plasmicapp/host";
 
-export function registerLoginWithCentredForm(){
+export function registerSectionHeaderWithTabs(){
     registerComponent(App, {
-        name: "LoginWithCentredForm",
-        importPath: "./components/custom/chakraPro/Aplication/Section Headers/LoginWithCentredForm",
+        name: "SectionHeaderWithTabs",
+        importPath: "./components/custom/chakraPro/Aplication/Section Headers/SectionHeaderWithTabs",
         
         props: {
           title: {

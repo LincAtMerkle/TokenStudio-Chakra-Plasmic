@@ -1,10 +1,10 @@
 import { App }  from "./App";
 import {registerComponent } from "@plasmicapp/host";
 
-export function registerLoginWithCentredForm(){
+export function registerGalleryWithVerticalCarousel(){
     registerComponent(App, {
-        name: "LoginWithCentredForm",
-        importPath: "./components/custom/chakraPro/LoginWithCentredForm",
+        name: "GalleryWithVerticalCarousel",
+        importPath: "./components/custom/chakraPro/GalleryWithVerticalCarousel",
         
         props: {
           title: {

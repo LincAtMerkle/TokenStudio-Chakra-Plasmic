@@ -1,10 +1,10 @@
-import { App }  from "./App";
+import { App }  from "./CtaWithImage";
 import {registerComponent } from "@plasmicapp/host";
 
-export function registerLoginWithCentredForm(){
+export function registerCtaWithImage(){
     registerComponent(App, {
-        name: "LoginWithCentredForm",
-        importPath: "./components/custom/chakraPro/LoginWithCentredForm",
+        name: "CtaWithImage",
+        importPath: "./components/custom/chakraPro/Marketing/Call To Actions/registerCtaWithImage",
         
         props: {
           title: {

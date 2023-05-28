@@ -1,10 +1,10 @@
-import { App }  from "./App";
+import { App }  from "./TabsWithLine";
 import {registerComponent } from "@plasmicapp/host";
 
-export function registerLoginWithCentredForm(){
+export function registerTabsWithLine(){
     registerComponent(App, {
-        name: "LoginWithCentredForm",
-        importPath: "./components/custom/chakraPro/LoginWithCentredForm",
+        name: "TabsWithLine",
+        importPath: "./components/custom/chakraPro/Application/Tabs/TabsWithLine",
         
         props: {
           title: {

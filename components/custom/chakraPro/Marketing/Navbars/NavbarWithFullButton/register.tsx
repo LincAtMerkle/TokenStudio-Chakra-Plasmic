@@ -1,10 +1,10 @@
 import { App }  from "./App";
 import {registerComponent } from "@plasmicapp/host";
 
-export function registerLoginWithCentredForm(){
+export function registerNavbarWithFullButton(){
     registerComponent(App, {
-        name: "LoginWithCentredForm",
-        importPath: "./components/custom/chakraPro/LoginWithCentredForm",
+        name: "NavbarWithFullButton",
+        importPath: "./components/custom/chakraPro/Marketing/Navbars/NavbarWithFullButton",
         
         props: {
           title: {

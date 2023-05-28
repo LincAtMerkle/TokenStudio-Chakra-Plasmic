@@ -1,10 +1,10 @@
 import { App }  from "./App";
 import {registerComponent } from "@plasmicapp/host";
 
-export function registerLoginWithCentredForm(){
+export function registerMobileNavWithAccordion(){
     registerComponent(App, {
-        name: "LoginWithCentredForm",
-        importPath: "./components/custom/chakraPro/LoginWithCentredForm",
+        name: "MobileNavWithAccordion",
+        importPath: "./components/custom/chakraPro/Marketing/Navbars/MobileNavWithAccordion",
         
         props: {
           title: {

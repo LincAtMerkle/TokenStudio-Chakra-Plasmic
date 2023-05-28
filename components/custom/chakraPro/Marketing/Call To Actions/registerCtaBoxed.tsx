@@ -1,10 +1,10 @@
-import { App }  from "./App";
+import { App }  from "./CtaBoxed";
 import {registerComponent } from "@plasmicapp/host";
 
-export function registerLoginWithCentredForm(){
+export function registerCtaBoxed(){
     registerComponent(App, {
-        name: "LoginWithCentredForm",
-        importPath: "./components/custom/chakraPro/Aplication/Sidebars/LoginWithCentredForm",
+        name: "CtaBoxed",
+        importPath: "./components/custom/chakraPro/Marketing/Call To Actions/registerCtaBoxed",
         
         props: {
           title: {

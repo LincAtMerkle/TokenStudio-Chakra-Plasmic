@@ -1,10 +1,10 @@
 import { App }  from "./App";
 import {registerComponent } from "@plasmicapp/host";
 
-export function registerLoginWithCentredForm(){
+export function registerFeatureWithThreeColumnsCentred(){
     registerComponent(App, {
-        name: "LoginWithCentredForm",
-        importPath: "./components/custom/chakraPro/LoginWithCentredForm",
+        name: "FeatureWithThreeColumnsCentred",
+        importPath: "./components/custom/chakraPro/Marketing/Features/FeatureWithThreeColumnsCentred",
         
         props: {
           title: {

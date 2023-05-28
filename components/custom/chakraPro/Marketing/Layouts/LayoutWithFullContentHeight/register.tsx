@@ -1,10 +1,10 @@
 import { App }  from "./App";
 import {registerComponent } from "@plasmicapp/host";
 
-export function registerLoginWithCentredForm(){
+export function registerLayoutWithFullContentHeight(){
     registerComponent(App, {
-        name: "LoginWithCentredForm",
-        importPath: "./components/custom/chakraPro/LoginWithCentredForm",
+        name: "LayoutWithFullContentHeight",
+        importPath: "./components/custom/chakraPro/Marketing/Layouts/LayoutWithFullContentHeight",
         
         props: {
           title: {
