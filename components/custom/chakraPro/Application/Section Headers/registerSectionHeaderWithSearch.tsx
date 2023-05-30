@@ -1,4 +1,4 @@
-import { App }  from "./App";
+import { App }  from "./SectionHeaderWithSearch";
 import {registerComponent } from "@plasmicapp/host";
 
 export function registerSectionHeaderWithSearch(){

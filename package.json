@@ -12,6 +12,7 @@
     "@typescript-eslint/eslint-plugin": "^5.54.0",
     "@typescript-eslint/parser": "^5.54.0",
     "color2k": "^2.0.2",
+    "downshift": "^7.6.0",
     "eslint": "8.33.0",
     "eslint-config-next": "13.1.6",
     "expr-eval": "^2.0.2",

@@ -197,9 +197,9 @@ import { registerSizePicker} from "./chakraPro/E-Commerce/Product Pickers/SizePi
 import { registerQuickViewWithHorizontalGallery } from "./chakraPro/E-Commerce/Product Quick Views/QuickViewWithHorizontalGallery/register";
 //Reviews 
 import { registerRating } from "./chakraPro/E-Commerce/Reviews/Rating/register";
-import { registerReviewDialog } from "./chakraPro/E-Commerce/Reviews/ReviewDialog/register";
+// import { registerReviewDialog } from "./chakraPro/E-Commerce/Reviews/ReviewDialog/register";
 import { registerReviewOverview} from "./chakraPro/E-Commerce/Reviews/ReviewOverview/register";
-import { registerReviewQuickOverview} from "./chakraPro/E-Commerce/Reviews/ReviewQuickOverview/register";
+// import { registerReviewQuickOverview} from "./chakraPro/E-Commerce/Reviews/ReviewQuickOverview/register";
 //Shopping Carts
 import { registerCartWithBottomSummary } from "./chakraPro/E-Commerce/Shopping Carts/CartWithBottomSummary/register";
 import { registerCartWithDivider } from "./chakraPro/E-Commerce/Shopping Carts/CartWithDivider/register";
@@ -533,9 +533,9 @@ registerSizePicker();
 registerQuickViewWithHorizontalGallery();
 //Reviews 
 registerRating();
-registerReviewDialog();
-registerReviewOverview();
-registerReviewQuickOverview();
+// registerReviewDialog();
+// registerReviewOverview();
+// registerReviewQuickOverview();
 //Shopping Carts
 registerCartWithBottomSummary();
 registerCartWithDivider();
