@@ -23,7 +23,7 @@ import * as ph from "@plasmicapp/react-web/lib/host";
 import {
   usePlasmicDataConfig,
   executePlasmicDataOp,
-  useDependencyAwareQuery
+  usePlasmicDataOp
 } from "@plasmicapp/react-web/lib/data-sources";
 
 import {
@@ -42,7 +42,6 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import { Button } from "@chakra-ui/react"; // plasmic-import: v_IlycuEiFdN-/codeComponent
 import { ButtonPreview } from "../../custom/ButtonPreview"; // plasmic-import: 9c6OdMLDMrhOJ5/codeComponent
 import { Fetcher } from "@plasmicapp/react-web/lib/data-sources"; // plasmic-import: Z615tYpfbCCvE/codeComponent
 
@@ -102,21 +101,37 @@ function PlasmicMarkDownTest__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
+
   const [$queries, setDollarQueries] = React.useState({});
 
-  useDependencyAwareQuery({
-    name: "query",
-    getDataOp: () => ({
-      sourceId: "wVh4Kh8KdKUddBmFr7EbJb",
-      opId: "b0a292e1-ec19-41a4-9451-d8bf54bc2741",
-      userArgs: {},
-      cacheKey: "plasmic.$.-levP1Bw9LsgC_.$.",
-      invalidatedKeys: ["plasmic_refresh_all"],
-      roleId: null
-    }),
-    $queries,
-    setDollarQueries
-  });
+  const new$Queries = {
+    query: usePlasmicDataOp(
+      (() => {
+        try {
+          return {
+            sourceId: "wVh4Kh8KdKUddBmFr7EbJb",
+            opId: "b0a292e1-ec19-41a4-9451-d8bf54bc2741",
+            userArgs: {},
+            cacheKey: "plasmic.$.-levP1Bw9LsgC_.$.",
+            invalidatedKeys: ["plasmic_refresh_all"],
+            roleId: null
+          };
+        } catch (e) {
+          if (
+            e instanceof TypeError ||
+            e?.plasmicType === "PlasmicUndefinedDataError"
+          ) {
+            return undefined;
+          } else {
+            throw e;
+          }
+        }
+      })()
+    )
+  };
+  if (Object.keys(new$Queries).some(k => new$Queries[k] !== $queries[k])) {
+    setDollarQueries(new$Queries);
+  }
 
   return (
     <React.Fragment>
@@ -143,20 +158,6 @@ function PlasmicMarkDownTest__RenderFunc(props: {
             sty.root
           )}
         >
-          <Button
-            className={classNames("__wab_instance", sty.chakraUiButton___1LP9)}
-            variant={"primary1" as const}
-          >
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__rqmbd
-              )}
-            >
-              {"Button"}
-            </div>
-          </Button>
           <ButtonPreview
             data-plasmic-name={"buttonPreview"}
             data-plasmic-override={overrides.buttonPreview}
@@ -170,80 +171,7 @@ function PlasmicMarkDownTest__RenderFunc(props: {
               data-plasmic-override={overrides.freeBox}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox)}
-            >
-              <Button
-                className={classNames(
-                  "__wab_instance",
-                  sty.chakraUiButton__zHvY
-                )}
-                size={"xl" as const}
-                variant={"primary1" as const}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__c4WrT
-                  )}
-                >
-                  {"Button"}
-                </div>
-              </Button>
-              <Button
-                className={classNames(
-                  "__wab_instance",
-                  sty.chakraUiButton__uWrZs
-                )}
-                size={"sm" as const}
-                variant={"primary1" as const}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__gghTv
-                  )}
-                >
-                  {"Button"}
-                </div>
-              </Button>
-              <Button
-                className={classNames(
-                  "__wab_instance",
-                  sty.chakraUiButton__n7BEu
-                )}
-                size={"md" as const}
-                variant={"primary1" as const}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__ozDCu
-                  )}
-                >
-                  {"Button"}
-                </div>
-              </Button>
-              <Button
-                className={classNames(
-                  "__wab_instance",
-                  sty.chakraUiButton__s0Ji
-                )}
-                size={"lg" as const}
-                variant={"primary1" as const}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__uKdj8
-                  )}
-                >
-                  {"Button"}
-                </div>
-              </Button>
-            </p.Stack>
+            />
           ) : null}
         </div>
       </div>

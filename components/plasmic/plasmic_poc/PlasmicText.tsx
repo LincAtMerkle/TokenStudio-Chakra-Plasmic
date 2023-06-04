@@ -86,7 +86,6 @@ function PlasmicText__RenderFunc(props: {
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
-
   const $props = {
     ...args,
     ...variants
@@ -95,6 +94,7 @@ function PlasmicText__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
+
   const [$queries, setDollarQueries] = React.useState({});
 
   return (

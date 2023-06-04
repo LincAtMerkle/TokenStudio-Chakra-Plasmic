@@ -36,7 +36,7 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import { FooterWithFourColumns } from "../../custom/chakraPro/FooterWithFourColumns/FooterWithFourColumns"; // plasmic-import: 75EMm8e0N4/codeComponent
+import { FooterWithFourColumns } from "../../custom/FooterWithFourColumns"; // plasmic-import: 75EMm8e0N4/codeComponent
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -86,7 +86,6 @@ function PlasmicFooterWithFourColumns__RenderFunc(props: {
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
-
   const $props = {
     ...args,
     ...variants
@@ -95,6 +94,7 @@ function PlasmicFooterWithFourColumns__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
+
   const [$queries, setDollarQueries] = React.useState({});
 
   return (

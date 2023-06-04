@@ -2,9 +2,9 @@
 // This file is owned by you, feel free to edit as you see fit.
 import * as React from "react";
 import * as ph from "@plasmicapp/react-web/lib/host";
-import GlobalContextsProvider from "../components/plasmic/plasmic_poc/PlasmicGlobalContextsProvider";
-import { ScreenVariantProvider } from "../components/plasmic/plasmic_poc/PlasmicGlobalVariant__Screen";
-import { PlasmicButton } from "../components/plasmic/plasmic_poc/PlasmicButton";
+import GlobalContextsProvider from "../components/plasmic/plasmic_poc_localhost/PlasmicGlobalContextsProvider";
+import { ScreenVariantProvider } from "../components/plasmic/plasmic_poc_localhost/PlasmicGlobalVariant__Screen";
+import { PlasmicButton } from "../components/plasmic/plasmic_poc_localhost/PlasmicButton";
 import { useRouter } from "next/router";
 
 function Button() {
@@ -25,14 +25,14 @@ function Button() {
   // Next.js Custom App component
   // (https://nextjs.org/docs/advanced-features/custom-app).
   return (
-    <GlobalContextsProvider>
+    // <GlobalContextsProvider>
       <ph.PageParamsProvider
         params={useRouter()?.query}
         query={useRouter()?.query}
       >
         <PlasmicButton />
       </ph.PageParamsProvider>
-    </GlobalContextsProvider>
+    // </GlobalContextsProvider>
   );
 }
 

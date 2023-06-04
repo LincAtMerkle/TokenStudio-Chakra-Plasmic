@@ -4,23 +4,23 @@ import * as React from "react";
 import * as ph from "@plasmicapp/react-web/lib/host";
 import GlobalContextsProvider from "../components/plasmic/plasmic_poc_localhost/PlasmicGlobalContextsProvider";
 import { ScreenVariantProvider } from "../components/plasmic/plasmic_poc_localhost/PlasmicGlobalVariant__Screen";
-import { PlasmicButton } from "../components/plasmic/plasmic_poc_localhost/PlasmicButton";
+import { PlasmicHomePage } from "../components/plasmic/plasmic_poc_localhost/PlasmicHomePage";
 import { useRouter } from "next/router";
 
-function Button() {
-  // Use PlasmicButton to render this component as it was
+function HomePage() {
+  // Use PlasmicHomePage to render this component as it was
   // designed in Plasmic, by activating the appropriate variants,
   // attaching the appropriate event handlers, etc.  You
   // can also install whatever React hooks you need here to manage state or
   // fetch data.
   //
-  // Props you can pass into PlasmicButton are:
+  // Props you can pass into PlasmicHomePage are:
   // 1. Variants you want to activate,
   // 2. Contents for slots you want to fill,
   // 3. Overrides for any named node in the component to attach behavior and data,
   // 4. Props to set on the root node.
   //
-  // By default, PlasmicButton is wrapped by your project's global
+  // By default, PlasmicHomePage is wrapped by your project's global
   // variant context providers. These wrappers may be moved to
   // Next.js Custom App component
   // (https://nextjs.org/docs/advanced-features/custom-app).
@@ -30,10 +30,10 @@ function Button() {
         params={useRouter()?.query}
         query={useRouter()?.query}
       >
-        <PlasmicButton />
+        <PlasmicHomePage />
       </ph.PageParamsProvider>
     </GlobalContextsProvider>
   );
 }
 
-export default Button;
+export default HomePage;

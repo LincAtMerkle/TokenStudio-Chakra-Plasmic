@@ -4,7 +4,7 @@ import * as React from "react";
 import {
   PlasmicDesignTokenItem,
   DefaultDesignTokenItemProps
-} from "../../../components/plasmic/plasmic_poc/PlasmicDesignTokenItem";
+} from "../../../components/plasmic/plasmic_poc_localhost/PlasmicDesignTokenItem";
 
 import { HTMLElementRefOf } from "@plasmicapp/react-web";
 

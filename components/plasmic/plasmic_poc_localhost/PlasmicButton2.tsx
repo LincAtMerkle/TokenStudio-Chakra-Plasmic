@@ -122,6 +122,7 @@ export type PlasmicButton2__ArgsType = {
   endIcon?: React.ReactNode;
   link?: string;
   submitsForm?: boolean;
+  target?: boolean;
 };
 type ArgPropType = keyof PlasmicButton2__ArgsType;
 export const PlasmicButton2__ArgProps = new Array<ArgPropType>(
@@ -129,7 +130,8 @@ export const PlasmicButton2__ArgProps = new Array<ArgPropType>(
   "children",
   "endIcon",
   "link",
-  "submitsForm"
+  "submitsForm",
+  "target"
 );
 
 export type PlasmicButton2__OverridesType = {
@@ -138,6 +140,7 @@ export type PlasmicButton2__OverridesType = {
 
 export interface DefaultButton2Props extends pp.BaseButtonProps {
   submitsForm?: boolean;
+  target?: boolean;
   color?: SingleChoiceArg<
     | "green"
     | "indigo"
@@ -197,7 +200,9 @@ function PlasmicButton2__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
+
   const [$queries, setDollarQueries] = React.useState({});
+
   const stateSpecs = React.useMemo(
     () => [
       {
@@ -632,7 +637,7 @@ function PlasmicButton2__RenderFunc(props: {
   ) as React.ReactElement | null;
 }
 
-function useBehavior<P extends pp.BaseButtonProps>(
+function useBehavior<P extends pp.PlumeButtonProps>(
   props: P,
   ref: pp.ButtonRef
 ) {

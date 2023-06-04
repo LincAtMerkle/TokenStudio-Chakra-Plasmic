@@ -1,3 +1,5 @@
+
+// import { registerChakraProvider } from "../chakra/registerChakraProvider"; // already registered in Chakra
 import { registerImageWithOverlay } from "./registerImageWithOverlay"
 import { registerButtonPreview } from "./registerButtonPreview"
 import { registerToggleColorMode } from "./registerToggleColorMode"
@@ -308,9 +310,11 @@ import { registerWithRating} from "./chakraPro/Marketing/Testimonials/WithRating
 import { registerWithTwoColumn} from "./chakraPro/Marketing/Testimonials/WithTwoColumn/register";
 import { registerWithVideo} from "./chakraPro/Marketing/Testimonials/WithVideo/register";
 
-// import { registerMarkdown } from "./chakraUIDocs/registerMarkdown";
+import { registerMarkdown } from "./chakraUIDocs/registerMarkdown";
 
 export function registerAllCustom() {
+// registerChakraProvider(); // already registered in Chakra
+
  registerImageWithOverlay();
  registerButtonPreview();
  registerToggleColorMode();
@@ -644,6 +648,6 @@ registerWithRating();
 registerWithTwoColumn();
 registerWithVideo();
 // Markdown
- // registerMarkdown();
+ registerMarkdown();
 
 }

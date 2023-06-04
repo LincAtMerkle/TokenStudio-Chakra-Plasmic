@@ -271,17 +271,6 @@
   min-width: 0;
   padding: 8px;
 }
-.chakraUiButton__z3IRz:global(.__wab_instance) {
-  max-width: 100%;
-  object-fit: cover;
-}
-.text__yp9Xb {
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 800px;
-  min-width: 0;
-}
 .column__i5Ah6 {
   display: flex;
   position: relative;
@@ -293,17 +282,6 @@
   align-items: center;
   min-width: 0;
   padding: 8px;
-}
-.chakraUiButton__sMjVu:global(.__wab_instance) {
-  max-width: 100%;
-  object-fit: cover;
-}
-.text__yF93 {
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 800px;
-  min-width: 0;
 }
 .column___0EUmm {
   display: flex;
@@ -317,18 +295,6 @@
   min-width: 0;
   padding: 8px;
 }
-.chakraUiButton__ouye:global(.__wab_instance) {
-  max-width: 100%;
-  object-fit: cover;
-  background: #dc0808;
-}
-.text___3Me9X {
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 800px;
-  min-width: 0;
-}
 .column__xmFNq {
   display: flex;
   position: relative;
@@ -340,18 +306,6 @@
   align-items: center;
   min-width: 0;
   padding: 8px;
-}
-.chakraUiButton___1Rv2W:global(.__wab_instance) {
-  max-width: 100%;
-  object-fit: cover;
-  position: relative;
-}
-.text__pu86Q {
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 800px;
-  min-width: 0;
 }
 .column__x7V6P {
   display: flex;
@@ -365,18 +319,6 @@
   min-width: 0;
   padding: 8px;
 }
-.chakraUiButton__rQuNq:global(.__wab_instance) {
-  max-width: 100%;
-  object-fit: cover;
-  position: relative;
-}
-.text__e0OvH {
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 800px;
-  min-width: 0;
-}
 .column__q9I3 {
   display: flex;
   position: relative;
@@ -388,18 +330,6 @@
   align-items: center;
   min-width: 0;
   padding: 8px;
-}
-.chakraUiButton___8AOaQ:global(.__wab_instance) {
-  max-width: 100%;
-  object-fit: cover;
-  position: relative;
-}
-.text__gCbEg {
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 800px;
-  min-width: 0;
 }
 .column___0OGUk {
   display: flex;
@@ -413,18 +343,6 @@
   min-width: 0;
   padding: 8px;
 }
-.chakraUiButton__vxHhz:global(.__wab_instance) {
-  max-width: 100%;
-  object-fit: cover;
-  position: relative;
-}
-.text__nSLh {
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 800px;
-  min-width: 0;
-}
 .column__qzUzf {
   display: flex;
   position: relative;
@@ -436,18 +354,6 @@
   align-items: center;
   min-width: 0;
   padding: 8px;
-}
-.chakraUiButton__enukb:global(.__wab_instance) {
-  max-width: 100%;
-  object-fit: cover;
-  position: relative;
-}
-.text__cuNiH {
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 800px;
-  min-width: 0;
 }
 .chakraUiHeading__ch23P:global(.__wab_instance) {
   max-width: 100%;
@@ -518,53 +424,6 @@
     margin-left: 0px;
     margin-top: 50px;
   }
-}
-.chakraUiButton__zxEqp:global(.__wab_instance) {
-  max-width: 100%;
-  object-fit: cover;
-}
-.text__jvMux {
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  min-width: 0;
-}
-.chakraUiButton__h4H8F:global(.__wab_instance) {
-  max-width: 100%;
-  object-fit: cover;
-  position: relative;
-}
-.text__bVZmK {
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  min-width: 0;
-}
-.chakraUiButton___7WIZs:global(.__wab_instance) {
-  max-width: 100%;
-  object-fit: cover;
-  position: relative;
-}
-.text__tgvbR {
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  min-width: 0;
-}
-.chakraUiButton___43Tkk:global(.__wab_instance) {
-  max-width: 100%;
-  object-fit: cover;
-  position: relative;
-}
-.text__ifV3M {
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  min-width: 0;
 }
 .chakraUiHeading__bcQ8M:global(.__wab_instance) {
   max-width: 100%;

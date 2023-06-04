@@ -39,7 +39,6 @@ import {
 import { Heading } from "@chakra-ui/react"; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
 import { Text } from "@chakra-ui/react"; // plasmic-import: SdN14ngBJybRru/codeComponent
 import { ButtonPreview } from "../../custom/ButtonPreview"; // plasmic-import: 9c6OdMLDMrhOJ5/codeComponent
-import { Button } from "@chakra-ui/react"; // plasmic-import: v_IlycuEiFdN-/codeComponent
 import { ChakraDocs } from "../../custom/tokenSheets/ChakraDocs"; // plasmic-import: u2CfM4vBtVRXT7/codeComponent
 
 import { useScreenVariants as useScreenVariantsxM5YozUtiFnHZ } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: xM5YozUtiFnH_Z/globalVariant
@@ -104,6 +103,7 @@ function PlasmicButton__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
+
   const [$queries, setDollarQueries] = React.useState({});
 
   const globalVariants = ensureGlobalVariants({
@@ -295,166 +295,21 @@ function PlasmicButton__RenderFunc(props: {
               hasGap={true}
               className={classNames(projectcss.all, sty.columns__g7B4W)}
             >
-              <div className={classNames(projectcss.all, sty.column__vvFhV)}>
-                <Button
-                  className={classNames(
-                    "__wab_instance",
-                    sty.chakraUiButton__z3IRz
-                  )}
-                  size={"md" as const}
-                  variant={"primary" as const}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__yp9Xb
-                    )}
-                  >
-                    {"Primary"}
-                  </div>
-                </Button>
-              </div>
-              <div className={classNames(projectcss.all, sty.column__i5Ah6)}>
-                <Button
-                  className={classNames(
-                    "__wab_instance",
-                    sty.chakraUiButton__sMjVu
-                  )}
-                  size={"md" as const}
-                  variant={"secondary" as const}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__yF93
-                    )}
-                  >
-                    {"secondary"}
-                  </div>
-                </Button>
-              </div>
-              <div className={classNames(projectcss.all, sty.column___0EUmm)}>
-                <Button
-                  className={classNames(
-                    "__wab_instance",
-                    sty.chakraUiButton__ouye
-                  )}
-                  size={"lg" as const}
-                  variant={"primary1" as const}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text___3Me9X
-                    )}
-                  >
-                    {"negatasasdive"}
-                  </div>
-                </Button>
-              </div>
-              <div className={classNames(projectcss.all, sty.column__xmFNq)}>
-                <Button
-                  className={classNames(
-                    "__wab_instance",
-                    sty.chakraUiButton___1Rv2W
-                  )}
-                  size={"md" as const}
-                  variant={"ghost" as const}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__pu86Q
-                    )}
-                  >
-                    {"GOST"}
-                  </div>
-                </Button>
-              </div>
-              <div className={classNames(projectcss.all, sty.column__x7V6P)}>
-                <Button
-                  className={classNames(
-                    "__wab_instance",
-                    sty.chakraUiButton__rQuNq
-                  )}
-                  size={"md" as const}
-                  variant={"outline" as const}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__e0OvH
-                    )}
-                  >
-                    {"OUTLINE"}
-                  </div>
-                </Button>
-              </div>
-              <div className={classNames(projectcss.all, sty.column__q9I3)}>
-                <Button
-                  className={classNames(
-                    "__wab_instance",
-                    sty.chakraUiButton___8AOaQ
-                  )}
-                  size={"md" as const}
-                  variant={"solid" as const}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__gCbEg
-                    )}
-                  >
-                    {"SOLID"}
-                  </div>
-                </Button>
-              </div>
-              <div className={classNames(projectcss.all, sty.column___0OGUk)}>
-                <Button
-                  className={classNames(
-                    "__wab_instance",
-                    sty.chakraUiButton__vxHhz
-                  )}
-                  size={"md" as const}
-                  variant={"link" as const}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__nSLh
-                    )}
-                  >
-                    {"LINK"}
-                  </div>
-                </Button>
-              </div>
-              <div className={classNames(projectcss.all, sty.column__qzUzf)}>
-                <Button
-                  className={classNames(
-                    "__wab_instance",
-                    sty.chakraUiButton__enukb
-                  )}
-                  size={"md" as const}
-                  variant={"unstyled" as const}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__cuNiH
-                    )}
-                  >
-                    {"unstyled"}
-                  </div>
-                </Button>
-              </div>
+              <div className={classNames(projectcss.all, sty.column__vvFhV)} />
+
+              <div className={classNames(projectcss.all, sty.column__i5Ah6)} />
+
+              <div className={classNames(projectcss.all, sty.column___0EUmm)} />
+
+              <div className={classNames(projectcss.all, sty.column__xmFNq)} />
+
+              <div className={classNames(projectcss.all, sty.column__x7V6P)} />
+
+              <div className={classNames(projectcss.all, sty.column__q9I3)} />
+
+              <div className={classNames(projectcss.all, sty.column___0OGUk)} />
+
+              <div className={classNames(projectcss.all, sty.column__qzUzf)} />
             </p.Stack>
           ) : null}
           <Heading
@@ -477,80 +332,7 @@ function PlasmicButton__RenderFunc(props: {
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__cNtuX)}
-            >
-              <Button
-                className={classNames(
-                  "__wab_instance",
-                  sty.chakraUiButton__zxEqp
-                )}
-                size={"xl" as const}
-                variant={"primary" as const}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__jvMux
-                  )}
-                >
-                  {"Button"}
-                </div>
-              </Button>
-              <Button
-                className={classNames(
-                  "__wab_instance",
-                  sty.chakraUiButton__h4H8F
-                )}
-                size={"sm" as const}
-                variant={"primary" as const}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__bVZmK
-                  )}
-                >
-                  {"Button"}
-                </div>
-              </Button>
-              <Button
-                className={classNames(
-                  "__wab_instance",
-                  sty.chakraUiButton___7WIZs
-                )}
-                size={"md" as const}
-                variant={"primary" as const}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__tgvbR
-                  )}
-                >
-                  {"Button"}
-                </div>
-              </Button>
-              <Button
-                className={classNames(
-                  "__wab_instance",
-                  sty.chakraUiButton___43Tkk
-                )}
-                size={"lg" as const}
-                variant={"primary" as const}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__ifV3M
-                  )}
-                >
-                  {"Button"}
-                </div>
-              </Button>
-            </p.Stack>
+            />
           ) : null}
           <Heading
             className={classNames("__wab_instance", sty.chakraUiHeading__bcQ8M)}
