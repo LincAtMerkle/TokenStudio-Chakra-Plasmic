@@ -7,7 +7,7 @@ import Head from "next/head";
 function MyApp({ Component, pageProps }) {
   return (
     <PlasmicRootProvider Head={Head}>
-      <Component {...pageProps} />
+      A<Component {...pageProps} />B
     </PlasmicRootProvider>
   );
 }

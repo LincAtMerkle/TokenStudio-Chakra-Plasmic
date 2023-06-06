@@ -3165,6 +3165,12 @@
           "name": "FormLabel",
           "displayName": "chakra-ui-FormLabel",
           "componentImportPath": "@chakra-ui/react"
+        },
+        {
+          "id": "PVow0GguAo",
+          "name": "Markdown",
+          "displayName": "Markdown",
+          "componentImportPath": "./components/custom/chakraUIDocs/Markdown/"
         }
       ]
     },
