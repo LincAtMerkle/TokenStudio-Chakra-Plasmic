@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerRating(){
     registerComponent(App, {
         name: "Rating",
-        importPath: "./components/custom/chakraPro/Rating",
+        importPath: "./components/chakra/chakraPro/Rating",
         
         props: {
           title: {

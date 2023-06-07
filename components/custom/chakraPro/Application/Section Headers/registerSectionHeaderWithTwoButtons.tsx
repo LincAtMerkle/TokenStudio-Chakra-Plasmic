@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerSectionHeaderWithTwoButtons(){
     registerComponent(App, {
         name: "SectionHeaderWithTwoButtons",
-        importPath: "./components/custom/chakraPro/Aplication/Section Headers/SectionHeaderWithTwoButtons",
+        importPath: "./components/chakra/chakraPro/Aplication/Section Headers/SectionHeaderWithTwoButtons",
         
         props: {
           title: {

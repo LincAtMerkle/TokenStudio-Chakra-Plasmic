@@ -1,5 +1,6 @@
 import {
-  Box,
+  Box, 
+  BoxProps,
   Container,
   Divider,
   Icon,
@@ -11,9 +12,19 @@ import {
 } from '@chakra-ui/react'
 import * as React from 'react'
 import { FiSearch } from 'react-icons/fi'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Box as="section" bg="bg-surface" pt={{ base: '4', md: '8' }} pb={{ base: '12', md: '24' }}>
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+    return (
+    <Box className={className} as="section" bg="bg-surface" pt={{ base: '4', md: '8' }} pb={{ base: '12', md: '24' }}>
     <Container>
       <Stack spacing="5">
         <Stack spacing="4" direction={{ base: 'column', md: 'row' }} justify="space-between">
@@ -37,3 +48,4 @@ export const App = () => (
     </Container>
   </Box>
 )
+}

@@ -1,5 +1,6 @@
 import {
-  Box,
+  Box, 
+  BoxProps,
   HStack,
   Icon,
   Image,

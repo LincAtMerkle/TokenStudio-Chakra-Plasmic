@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerFooterWithSocialIconsOnAccent(){
     registerComponent(App, {
         name: "FooterWithSocialIconsOnAccent",
-        importPath: "./components/custom/chakraPro/FooterWithSocialIconsOnAccent",
+        importPath: "./components/chakra/chakraPro/FooterWithSocialIconsOnAccent",
         
         props: {
           title: {

@@ -1,11 +1,21 @@
-import { Box, Container, Stack } from '@chakra-ui/react'
+import { Box, BoxProps, Container, ContainerProps, Stack } from '@chakra-ui/react'
 import { BlogPageHeader } from './BlogPageHeader'
 import { BlogPost } from './BlogPost'
 import { posts } from './data'
+import { ReactNode } from 'react';
 
-export const App = () => {
+export type AppProps = ContainerProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
   return (
-    <Container py={{ base: '16', md: '24' }}>
+    <Container 
+    className={className}  py={{ base: '16', md: '24' }}>
       <Stack spacing="10" shouldWrapChildren>
         <BlogPageHeader />
         <Box maxW="2xl" mx="auto">

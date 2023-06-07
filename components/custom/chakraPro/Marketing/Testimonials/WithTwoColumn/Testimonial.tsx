@@ -1,4 +1,4 @@
-import { Box, Flex, HStack, Img, Stack, Text, useColorModeValue as mode } from '@chakra-ui/react'
+import { Box, BoxProps, Flex, HStack, Img, Stack, Text, useColorModeValue as mode } from '@chakra-ui/react'
 import * as React from 'react'
 import { ImQuotesLeft } from 'react-icons/im'
 

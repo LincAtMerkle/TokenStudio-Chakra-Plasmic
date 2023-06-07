@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerLayoutWithStickySidebar(){
     registerComponent(App, {
         name: "LayoutWithStickySidebar",
-        importPath: "./components/custom/chakraPro/Marketing/Layouts/LayoutWithStickySidebar",
+        importPath: "./components/chakra/chakraPro/Marketing/Layouts/LayoutWithStickySidebar",
         
         props: {
           title: {

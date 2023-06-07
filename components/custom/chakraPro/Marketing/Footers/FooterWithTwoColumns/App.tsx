@@ -2,6 +2,7 @@ import {
   Button,
   ButtonGroup,
   Container,
+  ContainerProps,
   Divider,
   IconButton,
   Input,
@@ -11,9 +12,20 @@ import {
 import * as React from 'react'
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import { Logo } from './Logo'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Container as="footer" role="contentinfo">
+export type AppProps = ContainerProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+  return (
+    <Container 
+    className={className} as="footer" role="contentinfo">
     <Stack
       spacing="8"
       direction={{ base: 'column', md: 'row' }}
@@ -87,3 +99,4 @@ export const App = () => (
     </Stack>
   </Container>
 )
+  }

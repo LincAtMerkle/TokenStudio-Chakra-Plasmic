@@ -1,11 +1,21 @@
-import { Box, Grid, Heading, Link, Text } from '@chakra-ui/react'
+import { Box, BoxProps, Grid, Heading, Link, Text } from '@chakra-ui/react'
 import * as React from 'react'
 import { Rating } from './Rating'
 import { Testimonial } from './Testimonial'
+import { ReactNode } from 'react';
 
-export const App = () => {
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
   return (
-    <Box as="section" bg="pink.800" color="white" py="6rem">
+    <Box 
+    className={className} as="section" bg="pink.800" color="white" py="6rem">
       <Box maxW={{ base: 'xl', md: '7xl' }} mx="auto" px={{ base: '6', md: '8' }} py="10">
         <Grid templateColumns={{ base: '1fr', lg: '460px 1fr' }} gap={{ base: '10', lg: '8' }}>
           <Box>

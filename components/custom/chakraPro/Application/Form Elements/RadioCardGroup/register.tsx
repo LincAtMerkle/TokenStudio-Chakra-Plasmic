@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerRadioCardGroup(){
     registerComponent(App, {
         name: "RadioCardGroup",
-        importPath: "./components/custom/chakraPro/Aplication/Form Elements/RadioCardGroup",
+        importPath: "./components/chakra/chakraPro/Aplication/Form Elements/RadioCardGroup",
         
         props: {
           title: {

@@ -1,10 +1,20 @@
-import { Box, Button, Icon, LightMode, Stack, Text } from '@chakra-ui/react'
+import { Box, BoxProps, Button, Icon, LightMode, Stack, Text } from '@chakra-ui/react'
 import * as React from 'react'
 import { VscChromeClose } from 'react-icons/vsc'
 import { Timer } from './Timer'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Box as="section" pt="8" pb="12">
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+    return (
+    <Box className={className} as="section" pt="8" pb="12">
     <Box bg="pink.600" color="white" position="relative">
       <Box
         maxW="7xl"
@@ -50,3 +60,4 @@ export const App = () => (
     </Box>
   </Box>
 )
+}

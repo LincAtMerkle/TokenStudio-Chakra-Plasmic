@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerLoginWithGradient(){
     registerComponent(App, {
         name: "LoginWithGradient",
-        importPath: "./components/custom/chakraPro/Application/Authentication/LoginWithGradient",
+        importPath: "./components/chakra/chakraPro/Application/Authentication/LoginWithGradient",
         
         props: {
           title: {

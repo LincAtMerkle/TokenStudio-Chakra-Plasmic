@@ -1,4 +1,4 @@
-import { Box, BoxProps, Flex, LightMode, ListItem, Text, UnorderedList } from '@chakra-ui/react'
+import { Box, BoxProps,Flex, LightMode, ListItem, Text, UnorderedList } from '@chakra-ui/react'
 import * as React from 'react'
 
 interface PricingCardProps extends BoxProps {

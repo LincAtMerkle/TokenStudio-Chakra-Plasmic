@@ -1,4 +1,4 @@
-import { Box, Flex, FlexProps, HStack, Img, useMenuButton } from '@chakra-ui/react'
+import { Box, BoxProps, Flex, FlexProps, HStack, Img, useMenuButton } from '@chakra-ui/react'
 import * as React from 'react'
 import { HiSelector } from 'react-icons/hi'
 

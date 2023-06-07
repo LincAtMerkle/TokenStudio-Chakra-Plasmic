@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerNotificationWithSplitButtonsAndIcon(){
     registerComponent(App, {
         name: "NotificationWithSplitButtonsAndIcon",
-        importPath: "./components/custom/chakraPro/Aplication/Notifications/NotificationWithSplitButtonsAndIcon",
+        importPath: "./components/chakra/chakraPro/Aplication/Notifications/NotificationWithSplitButtonsAndIcon",
         
         props: {
           title: {

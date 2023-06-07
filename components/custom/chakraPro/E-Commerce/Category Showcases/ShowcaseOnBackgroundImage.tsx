@@ -1,8 +1,18 @@
-import { Box, Flex, Heading, Image, Link, Stack, useColorModeValue } from '@chakra-ui/react'
+import { Box, BoxProps, Flex, Heading, Image, Link, Stack, useColorModeValue } from '@chakra-ui/react'
 import * as React from 'react'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Box position="relative">
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+    return (
+    <Box className={className} position="relative">
     <Image
       src="https://images.unsplash.com/photo-1486308510493-aa64833637bc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1829&q=80"
       alt="Lovely Image"
@@ -43,3 +53,4 @@ export const App = () => (
     </Box>
   </Box>
 )
+}

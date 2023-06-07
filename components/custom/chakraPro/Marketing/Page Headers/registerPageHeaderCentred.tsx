@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerPageHeaderCentred(){
     registerComponent(App, {
         name: "PageHeaderCentred",
-        importPath: "./components/custom/chakraPro/Marketing/Page Headers/PageHeaderCentred",
+        importPath: "./components/chakra/chakraPro/Marketing/Page Headers/PageHeaderCentred",
         
         props: {
           title: {

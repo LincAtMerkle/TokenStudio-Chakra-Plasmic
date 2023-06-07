@@ -1,5 +1,6 @@
 import {
-  Box,
+  Box, 
+  BoxProps,
   Container,
   Heading,
   SimpleGrid,
@@ -10,9 +11,20 @@ import {
 import * as React from 'react'
 import { products } from './data'
 import { PricingCard } from './PricingCard'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Box as="section">
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+  return (
+    <Box 
+    className={className}  as="section">
     <Container py={{ base: '16', md: '24' }}>
       <Stack spacing={{ base: '12', md: '16' }} direction={{ base: 'column', lg: 'row' }}>
         <Stack spacing={{ base: '4', md: '5' }} maxW="md">
@@ -37,3 +49,4 @@ export const App = () => (
     </Container>
   </Box>
 )
+          }

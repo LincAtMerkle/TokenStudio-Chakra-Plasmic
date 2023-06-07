@@ -1,6 +1,7 @@
 import {
   AspectRatio,
   Box,
+  BoxProps,
   Button,
   Center,
   Container,
@@ -18,11 +19,22 @@ import * as React from 'react'
 import { FiPlayCircle } from 'react-icons/fi'
 import { items, tutorials } from './data'
 import { PopoverIcon } from './PopoverIcon'
+import { ReactNode } from 'react';
 
-export const App = () => {
-  const { isOpen, onToggle } = useDisclosure({ isOpen: true })
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+    const { isOpen, onToggle } = useDisclosure({ isOpen: true })
+
   return (
-    <Box as="section" minH="md">
+    <Box 
+    className={className} as="section" minH="md">
       <Container py={{ base: '4', md: '5' }}>
         <Center>
           <Button variant="link" rightIcon={<PopoverIcon isOpen={isOpen} />} onClick={onToggle}>

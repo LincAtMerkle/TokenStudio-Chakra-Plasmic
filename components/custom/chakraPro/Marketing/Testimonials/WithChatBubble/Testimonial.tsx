@@ -1,5 +1,5 @@
 import {
-  Box,
+  Box, 
   BoxProps,
   Center,
   chakra,

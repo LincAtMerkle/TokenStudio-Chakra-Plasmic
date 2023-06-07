@@ -1,5 +1,6 @@
 import {
-  Box,
+  Box, 
+  BoxProps,
   Flex,
   Link,
   SimpleGrid,
@@ -61,7 +62,7 @@ const MobileNavCategorySubmenu = () => (
     <NavFeaturedImage
       height="32"
       bottomOffset="3"
-      label="Men's Suit"
+      label="Men&apos;s Suit"
       imageUrl="https://images.unsplash.com/photo-1623880840102-7df0a9f3545b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=928&q=80"
     />
     <Stack spacing="10" mt="10">

@@ -1,7 +1,8 @@
-import { Box, Container, SimpleGrid } from '@chakra-ui/react'
+import { Box, BoxProps, Container, SimpleGrid } from '@chakra-ui/react'
 import * as React from 'react'
 import { FiMail, FiSend, FiUsers } from 'react-icons/fi'
 import { Stat } from './Stat'
+import { ReactNode } from 'react';
 
 const stats = [
   {
@@ -23,8 +24,18 @@ const stats = [
     delta: { value: '0.1%', isUpwardsTrend: false },
   },
 ]
-export const App = () => (
-  <Box as="section" py={{ base: '4', md: '8' }}>
+
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+    return (
+    <Box className={className} as="section" py={{ base: '4', md: '8' }}>
     <Container>
       <SimpleGrid columns={{ base: 1, md: 3 }} gap={{ base: '5', md: '6' }}>
         {stats.map((stat, id) => (
@@ -34,3 +45,4 @@ export const App = () => (
     </Container>
   </Box>
 )
+}

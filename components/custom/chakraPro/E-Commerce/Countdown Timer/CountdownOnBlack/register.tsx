@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerCountdownOnBlack(){
     registerComponent(App, {
         name: "CountdownOnBlack",
-        importPath: "./components/custom/chakraPro/CountdownOnBlack",
+        importPath: "./components/chakra/chakraPro/CountdownOnBlack",
         
         props: {
           title: {

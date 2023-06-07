@@ -1,9 +1,19 @@
-import { Box, Center, Stack, StackDivider, Text } from '@chakra-ui/react'
+import { Box, BoxProps, Center, Stack, StackDivider, Text } from '@chakra-ui/react'
 import * as React from 'react'
 import { posts } from './data'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Center maxW="sm" mx="auto" py={{ base: '4', md: '8' }}>
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+    return (
+    <Center className={className} maxW="sm" mx="auto" py={{ base: '4', md: '8' }}>
     <Box bg="bg-surface" py="4">
       <Stack divider={<StackDivider />} spacing="4">
         {posts.map((post) => (
@@ -33,3 +43,4 @@ export const App = () => (
     </Box>
   </Center>
 )
+}

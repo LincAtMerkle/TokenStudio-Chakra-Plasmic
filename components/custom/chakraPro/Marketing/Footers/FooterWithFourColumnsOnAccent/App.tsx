@@ -1,5 +1,6 @@
 import {
-  Box,
+  Box, 
+  BoxProps,
   Button,
   ButtonGroup,
   Container,
@@ -14,8 +15,20 @@ import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import { Logo } from './Logo'
 import { links } from './_data'
 
-export const App = () => (
-  <Box bg="bg-accent" color="on-acccent">
+import { ReactNode } from 'react';
+
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+  return (
+    <Box 
+    className={className}bg="bg-accent" color="on-acccent">
     <Container as="footer" role="contentinfo">
       <Stack
         justify="space-between"
@@ -75,3 +88,4 @@ export const App = () => (
     </Container>
   </Box>
 )
+                }

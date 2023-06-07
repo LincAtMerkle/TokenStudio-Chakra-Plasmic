@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerStepsWithCirclesAndText(){
     registerComponent(App, {
         name: "StepsWithCirclesAndText",
-        importPath: "./components/custom/chakraPro/Aplication/Progress Steps/StepsWithCirclesAndText",
+        importPath: "./components/chakra/chakraPro/Aplication/Progress Steps/StepsWithCirclesAndText",
         
         props: {
           title: {

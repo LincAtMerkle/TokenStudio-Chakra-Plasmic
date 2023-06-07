@@ -1,5 +1,6 @@
 import {
-  Box,
+  Box, 
+  BoxProps,
   Button,
   Drawer,
   DrawerBody,
@@ -14,13 +15,22 @@ import * as React from 'react'
 import { data } from './data'
 import { NavAccordion } from './NavAccordion'
 import { NavLayout } from './NavLayout'
+import { ReactNode } from 'react';
 
-export const App = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure()
-  const menuButtonRef = React.useRef<HTMLButtonElement>(null)
-
-  return (
-    <Box minH="100vh" pb={{ base: '12', md: '24' }}>
+  export type AppProps = BoxProps & {
+    children: ReactNode
+  }
+  
+  export function App({
+    className,
+    children,
+    ...rest
+    }: AppProps) {
+      const { isOpen, onOpen, onClose } = useDisclosure()
+      const menuButtonRef = React.useRef<HTMLButtonElement>(null)
+    return (
+      <Box 
+      className={className} minH="100vh" pb={{ base: '12', md: '24' }}>
       <Box as="nav" bg="bg-surface" boxShadow={useColorModeValue('sm', 'sm-dark')}>
         <NavLayout onClickMenu={onOpen} isMenuOpen={isOpen} />
         <Drawer

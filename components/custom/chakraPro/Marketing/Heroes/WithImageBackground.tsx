@@ -1,10 +1,20 @@
-import { Box, Button, Flex, Heading, HStack, Img, Stack, Text } from '@chakra-ui/react'
+import { Box, BoxProps, Button, Flex, Heading, HStack, Img, Stack, Text } from '@chakra-ui/react'
 import * as React from 'react'
 import { HiChevronRight } from 'react-icons/hi'
+import { ReactNode } from 'react';
 
-export const App = () => {
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
   return (
-    <Box bg="gray.800" as="section" minH="140px" position="relative">
+    <Box 
+    className={className} bg="gray.800" as="section" minH="140px" position="relative">
       <Box py="32" position="relative" zIndex={1}>
         <Box maxW={{ base: 'xl', md: '7xl' }} mx="auto" px={{ base: '6', md: '8' }} color="white">
           <Box maxW="xl">

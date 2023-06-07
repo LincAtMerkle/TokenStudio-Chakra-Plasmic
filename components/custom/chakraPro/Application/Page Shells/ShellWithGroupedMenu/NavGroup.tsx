@@ -1,4 +1,4 @@
-import { Box, Stack, Text } from '@chakra-ui/react'
+import { Box, BoxProps, Stack, Text } from '@chakra-ui/react'
 import * as React from 'react'
 
 interface NavGroupProps {

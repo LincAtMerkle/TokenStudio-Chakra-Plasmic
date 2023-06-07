@@ -1,5 +1,6 @@
 import {
-  Box,
+  Box, 
+  BoxProps,
   Button,
   Heading,
   Img,
@@ -10,10 +11,20 @@ import {
 } from '@chakra-ui/react'
 import * as React from 'react'
 import { HiPlay } from 'react-icons/hi'
+import { ReactNode } from 'react';
 
-export function App() {
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
   return (
-    <Box as="section" bg={mode('gray.50', 'gray.800')} pt="16" pb="24">
+    <Box 
+    className={className} as="section" bg={mode('gray.50', 'gray.800')} pt="16" pb="24">
       <Box maxW={{ base: 'xl', md: '7xl' }} mx="auto" px={{ base: '6', md: '8' }}>
         <Stack
           direction={{ base: 'column', lg: 'row' }}

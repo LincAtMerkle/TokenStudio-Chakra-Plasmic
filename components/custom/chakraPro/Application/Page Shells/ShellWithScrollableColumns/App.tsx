@@ -1,9 +1,10 @@
 import {
-  Box,
+  Box, 
   Drawer,
   DrawerContent,
   DrawerOverlay,
   Flex,
+  FlexProps,
   HStack,
   useColorModeValue,
   useDisclosure,
@@ -14,14 +15,23 @@ import { ColumnButton, ColumnHeader, ColumnHeading, ColumnIconButton } from './C
 import { Main } from './Main'
 import { Navbar } from './Navigation'
 import { Sidebar } from './Sidebar'
+import { ReactNode } from 'react';
 
-export const App = () => {
-  const [sidebarIsScrolled, setSidebarIsScrolled] = React.useState(false)
-  const [mainIsScrolled, setmMainIsScrolled] = React.useState(false)
-  const { isOpen, onOpen, onClose } = useDisclosure()
+export type AppProps = FlexProps & {
+  children: ReactNode
+}
 
-  return (
-    <Flex height="100vh">
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+    const [sidebarIsScrolled, setSidebarIsScrolled] = React.useState(false)
+    const [mainIsScrolled, setmMainIsScrolled] = React.useState(false)
+    const { isOpen, onOpen, onClose } = useDisclosure()
+      return (
+    <Flex className={className}
+     height="100vh">
       <Box
         height="full"
         width={{ md: '14rem', xl: '18rem' }}

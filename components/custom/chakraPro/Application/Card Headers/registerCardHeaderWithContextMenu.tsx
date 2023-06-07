@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerCardHeaderWithContextMenu(){
     registerComponent(App, {
         name: "CardHeaderWithContextMenu",
-        importPath: "./components/custom/chakraPro/Card Headers/CardHeaderWithContextMenu",
+        importPath: "./components/chakra/chakraPro/Card Headers/CardHeaderWithContextMenu",
         
         props: {
           title: {

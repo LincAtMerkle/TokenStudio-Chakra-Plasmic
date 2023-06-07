@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerWithTwoColumn(){
     registerComponent(App, {
         name: "WithTwoColumn",
-        importPath: "./components/custom/chakraPro/Marketing/Team/WithTwoColumn",
+        importPath: "./components/chakra/chakraPro/Marketing/Team/WithTwoColumn",
         
         props: {
           title: {

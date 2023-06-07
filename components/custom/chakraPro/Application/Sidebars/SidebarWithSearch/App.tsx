@@ -1,9 +1,10 @@
 import { Icon } from '@chakra-ui/icons'
 import {
-  Box,
+  Box, 
   Button,
   Divider,
   Flex,
+  FlexProps,
   HStack,
   Input,
   InputGroup,
@@ -27,9 +28,19 @@ import {
 import { Logo } from './Logo'
 import { NavButton } from './NavButton'
 import { UserProfile } from './UserProfile'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Flex as="section" minH="100vh" bg="bg-canvas">
+export type AppProps = FlexProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+    return (
+    <Flex className={className} as="section" minH="100vh" bg="bg-canvas">
     <Flex
       flex="1"
       bg="bg-surface"
@@ -92,3 +103,4 @@ export const App = () => (
     </Flex>
   </Flex>
 )
+}

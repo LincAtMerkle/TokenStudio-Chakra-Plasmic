@@ -1,4 +1,4 @@
-import { Box, SimpleGrid, useColorModeValue as mode } from '@chakra-ui/react'
+import { Box, BoxProps, SimpleGrid, useColorModeValue as mode } from '@chakra-ui/react'
 import * as React from 'react'
 import { items } from './NavItemIcons'
 import { NavAction } from './NavAction'

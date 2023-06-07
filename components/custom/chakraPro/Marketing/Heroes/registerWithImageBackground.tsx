@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerWithImageBackground(){
     registerComponent(App, {
         name: "WithImageBackground",
-        importPath: "./components/custom/chakraPro/Marketing/Heroes/WithImageBackground",
+        importPath: "./components/chakra/chakraPro/Marketing/Heroes/WithImageBackground",
         
         props: {
           title: {

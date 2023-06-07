@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerWithLargeImage(){
     registerComponent(App, {
         name: "WithLargeImage",
-        importPath: "./components/custom/chakraPro/Marketing/Team/WithLargeImage",
+        importPath: "./components/chakra/chakraPro/Marketing/Team/WithLargeImage",
         
         props: {
           title: {

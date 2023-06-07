@@ -1,4 +1,4 @@
-import { Box, BoxProps, Image, useColorModeValue as mode } from '@chakra-ui/react'
+import { Box, BoxProps,Image, useColorModeValue as mode } from '@chakra-ui/react'
 import * as React from 'react'
 
 type NavFeaturedImageProps = BoxProps & {

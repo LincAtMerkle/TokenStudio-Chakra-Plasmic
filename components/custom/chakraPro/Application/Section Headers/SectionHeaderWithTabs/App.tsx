@@ -1,5 +1,6 @@
 import {
-  Box,
+  Box, 
+  BoxProps,
   Button,
   Container,
   Stack,
@@ -11,11 +12,21 @@ import {
 } from '@chakra-ui/react'
 import * as React from 'react'
 import { CustomSelect, Option } from './CustomSelect'
+import { ReactNode } from 'react';
 
-export const App = () => {
-  const isMobile = useBreakpointValue({ base: true, md: false })
-  return (
-    <Box as="section" bg="bg-surface" pt={{ base: '4', md: '8' }} pb={{ base: '12', md: '24' }}>
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+    const isMobile = useBreakpointValue({ base: true, md: false })
+    return (
+    <Box className={className}
+    as="section" bg="bg-surface" pt={{ base: '4', md: '8' }} pb={{ base: '12', md: '24' }}>
       <Container>
         <Stack spacing="5">
           <Stack spacing="4" direction={{ base: 'column', sm: 'row' }} justify="space-between">

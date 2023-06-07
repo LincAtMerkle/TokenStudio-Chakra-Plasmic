@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerProductWithCarousel(){
     registerComponent(App, {
         name: "ProductWithCarousel",
-        importPath: "./components/custom/chakraPro/ProductWithCarousel",
+        importPath: "./components/chakra/chakraPro/ProductWithCarousel",
         
         props: {
           title: {

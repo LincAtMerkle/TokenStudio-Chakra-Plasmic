@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerDividerWithIconButtonGroup(){
     registerComponent(App, {
         name: "DividerWithIconButtonGroup",
-        importPath: "./components/custom/chakraPro/Application/Dividers/DividerWithIconButtonGroup",
+        importPath: "./components/chakra/chakraPro/Application/Dividers/DividerWithIconButtonGroup",
         props: {
           title: {
           type: "string",

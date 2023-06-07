@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerPricingWithTable(){
     registerComponent(App, {
         name: "PricingWithTable",
-        importPath: "./components/custom/chakraPro/Marketing/Pricing/PricingWithTable",
+        importPath: "./components/chakra/chakraPro/Marketing/Pricing/PricingWithTable",
         
         props: {
           title: {

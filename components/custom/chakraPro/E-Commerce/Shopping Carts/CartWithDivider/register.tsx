@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerCartWithDivider(){
     registerComponent(App, {
         name: "CartWithDivider",
-        importPath: "./components/custom/chakraPro/CartWithDivider",
+        importPath: "./components/chakra/chakraPro/CartWithDivider",
         
         props: {
           title: {

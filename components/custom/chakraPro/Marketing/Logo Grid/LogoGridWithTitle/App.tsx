@@ -1,9 +1,20 @@
-import { Center, Container, SimpleGrid, Stack, Text } from '@chakra-ui/react'
+import { Center, Container, ContainerProps, SimpleGrid, Stack, Text } from '@chakra-ui/react'
 import * as React from 'react'
 import * as logos from './Logos'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Container py={{ base: '12', md: '16' }}>
+export type AppProps = ContainerProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+  return (
+    <Container 
+    className={className} py={{ base: '12', md: '16' }}>
     <Stack spacing="8">
       <Text
         fontSize={{ base: 'md', md: 'lg' }}
@@ -23,3 +34,4 @@ export const App = () => (
     </Stack>
   </Container>
 )
+        }

@@ -1,9 +1,20 @@
-import { Box, Container, Stack } from '@chakra-ui/react'
+import { Box, BoxProps, Container, ContainerProps, Stack } from '@chakra-ui/react'
 import * as React from 'react'
 import { RadioButton, RadioButtonGroup } from './RadioButtonGroup'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Box as="section" bg="bg-surface" py={{ base: '4', md: '8' }}>
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+    return (
+    <Box 
+    className={className} as="section" bg="bg-surface" py={{ base: '4', md: '8' }}>
     <Container maxW="lg">
       <Stack spacing="5">
         {['md', 'lg'].map((size) => (
@@ -17,3 +28,4 @@ export const App = () => (
     </Container>
   </Box>
 )
+}

@@ -1,9 +1,20 @@
-import { Box, Button, Container, Divider, HStack } from '@chakra-ui/react'
+import { Box, BoxProps, Button, Container, Divider, HStack } from '@chakra-ui/react'
 import * as React from 'react'
 import { FiPlus } from 'react-icons/fi'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Box bg="bg-surface">
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+    return (
+    <Box 
+    className={className} bg="bg-surface">
     <Container py={{ base: '4', md: '8' }}>
       <HStack>
         <Divider />
@@ -15,3 +26,4 @@ export const App = () => (
     </Container>
   </Box>
 )
+}

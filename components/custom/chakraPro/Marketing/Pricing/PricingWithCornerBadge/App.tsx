@@ -1,16 +1,28 @@
-import { Box, SimpleGrid, useColorModeValue } from '@chakra-ui/react'
+import { Box, BoxProps,SimpleGrid, useColorModeValue } from '@chakra-ui/react'
 import * as React from 'react'
 import { SiHive, SiMarketo, SiMicrosoft } from 'react-icons/si'
 import { ActionButton } from './ActionButton'
 import { PricingCard } from './PricingCard'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Box
-    as="section"
-    bg={useColorModeValue('gray.50', 'gray.800')}
-    py="14"
-    px={{ base: '4', md: '8' }}
-  >
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+  return (
+    <Box 
+      className={className}
+      as="section"
+      // bg={useColorModeValue('gray.50', 'gray.800')}
+      bg='gray.50'
+      py="14"
+      px={{ base: '4', md: '8' }}
+    >
     <SimpleGrid
       columns={{ base: 1, lg: 3 }}
       spacing={{ base: '8', lg: '0' }}
@@ -76,3 +88,4 @@ export const App = () => (
     </SimpleGrid>
   </Box>
 )
+      }

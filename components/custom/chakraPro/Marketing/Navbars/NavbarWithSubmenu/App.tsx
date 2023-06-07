@@ -1,5 +1,6 @@
 import {
-  Box,
+  Box, 
+  BoxProps,
   Button,
   ButtonGroup,
   Container,
@@ -12,11 +13,17 @@ import * as React from 'react'
 import { FiMenu } from 'react-icons/fi'
 import { Logo } from './Logo'
 import { ResourcesPopover } from './ResourcesPopover'
+import { ReactNode } from "react";
 
-export const App = () => {
+export type AppProps = BoxProps & {
+  children: ReactNode;
+};
+
+export function App({ className, children, ...rest }: AppProps) {
   const isDesktop = useBreakpointValue({ base: false, lg: true })
   return (
-    <Box as="section" minH="md">
+    <Box className={className} 
+    as="section" minH="md">
       <Box as="nav" bg="bg-surface" boxShadow={useColorModeValue('sm', 'sm-dark')}>
         <Container py={{ base: '4', lg: '5' }}>
           <HStack spacing="10" justify="space-between">

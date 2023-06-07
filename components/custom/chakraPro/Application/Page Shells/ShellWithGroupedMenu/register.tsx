@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerShellWithGroupedMenu(){
     registerComponent(App, {
         name: "ShellWithGroupedMenu",
-        importPath: "./components/custom/chakraPro/Aplication/Page Shells/ShellWithGroupedMenu",
+        importPath: "./components/chakra/chakraPro/Aplication/Page Shells/ShellWithGroupedMenu",
         
         props: {
           title: {

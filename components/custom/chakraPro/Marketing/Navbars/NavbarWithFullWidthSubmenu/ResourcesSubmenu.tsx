@@ -3,6 +3,7 @@ import {
   Box,
   Button,
   Container,
+  ContainerProps,
   Icon,
   Image,
   Link,

@@ -1,10 +1,22 @@
-import { Box, Button, Flex, Heading, SimpleGrid, Text, useColorModeValue } from '@chakra-ui/react'
+import { Box, BoxProps,Button, Flex, Heading, SimpleGrid, Text, useColorModeValue } from '@chakra-ui/react'
 import * as React from 'react'
 import { DurationSwitch } from './DurationSwitch'
 import { PricingCard } from './PricingCard'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Box as="section" bg={useColorModeValue('gray.50', 'gray.800')} py="24">
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+  return (
+    <Box 
+    className={className}
+    as="section" bg={useColorModeValue('gray.50', 'gray.800')} py="24">
     <Box maxW={{ base: 'xl', md: '7xl' }} mx="auto" px={{ base: '6', md: '8' }}>
       <Box textAlign={{ base: 'center', lg: 'start' }}>
         <Heading
@@ -100,3 +112,4 @@ export const App = () => (
     </Box>
   </Box>
 )
+        }

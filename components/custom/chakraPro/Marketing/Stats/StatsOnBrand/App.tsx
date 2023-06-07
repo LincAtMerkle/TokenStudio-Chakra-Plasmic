@@ -1,6 +1,8 @@
 import {
-  Box,
+  Box, 
+  BoxProps,
   Container,
+  ContainerProps,
   Heading,
   SimpleGrid,
   Stack,
@@ -10,9 +12,20 @@ import {
 import * as React from 'react'
 import { stats } from './data'
 import { Stat } from './Stat'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Container py={{ base: '16', md: '24' }}>
+export type AppProps = ContainerProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+  return (
+    <Container 
+    className={className} py={{ base: '16', md: '24' }}>
     <Stack spacing={{ base: '12', md: '16' }}>
       <Stack spacing={{ base: '4', md: '5' }} textAlign="center" align="center">
         <Heading size={useBreakpointValue({ base: 'sm', md: 'md' })}>Why Chakra UI Pro?</Heading>
@@ -37,3 +50,4 @@ export const App = () => (
     </Stack>
   </Container>
 )
+}

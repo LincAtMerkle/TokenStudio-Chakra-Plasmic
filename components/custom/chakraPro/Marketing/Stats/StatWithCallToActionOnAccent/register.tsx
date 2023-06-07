@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerStatWithCallToActionOnAccent(){
     registerComponent(App, {
         name: "StatWithCallToActionOnAccent",
-        importPath: "./components/custom/chakraPro/Marketing/Stats/StatWithCallToActionOnAccent",
+        importPath: "./components/chakra/chakraPro/Marketing/Stats/StatWithCallToActionOnAccent",
         
         props: {
           title: {

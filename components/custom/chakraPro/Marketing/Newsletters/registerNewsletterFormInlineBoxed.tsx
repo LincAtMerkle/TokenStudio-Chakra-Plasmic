@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerNewsletterFormInlineBoxed(){
     registerComponent(App, {
         name: "NewsletterFormInlineBoxed",
-        importPath: "./components/custom/chakraPro/Marketing/Newsletters/NewsletterFormInlineBoxed",
+        importPath: "./components/chakra/chakraPro/Marketing/Newsletters/NewsletterFormInlineBoxed",
         
         props: {
           title: {

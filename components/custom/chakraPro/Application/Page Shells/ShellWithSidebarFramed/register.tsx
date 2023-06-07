@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerShellWithSidebarFramed(){
     registerComponent(App, {
         name: "ShellWithSidebarFramed",
-        importPath: "./components/custom/chakraPro/Aplication/Page Shells/ShellWithSidebarFramed",
+        importPath: "./components/chakra/chakraPro/Aplication/Page Shells/ShellWithSidebarFramed",
         
         props: {
           title: {

@@ -1,12 +1,22 @@
-import { Box, Button, SimpleGrid, useColorModeValue } from '@chakra-ui/react'
+import { Box, BoxProps, Button, SimpleGrid, useColorModeValue } from '@chakra-ui/react'
 import * as React from 'react'
 import { CardWithAvatar } from './CardWithAvatar'
 import data from './data.json'
 import { FollowerCount } from './FollowerCount'
 import { UserInfo } from './UserInfo'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Box bg={useColorModeValue('gray.100', 'gray.800')} px={{ base: '6', md: '8' }} py="12">
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+    return (
+    <Box className={className} bg={useColorModeValue('gray.100', 'gray.800')} px={{ base: '6', md: '8' }} py="12">
     <Box as="section" maxW={{ base: 'xs', md: '3xl' }} mx="auto">
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing="6">
         {data.map((user) => {
@@ -25,3 +35,4 @@ export const App = () => (
     </Box>
   </Box>
 )
+}

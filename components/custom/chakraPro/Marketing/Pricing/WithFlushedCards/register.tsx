@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerWithFlushedCards(){
     registerComponent(App, {
         name: "WithFlushedCards",
-        importPath: "./components/custom/chakraPro/Marketing/Pricing/WithFlushedCards",
+        importPath: "./components/chakra/chakraPro/Marketing/Pricing/WithFlushedCards",
         
         props: {
           title: {

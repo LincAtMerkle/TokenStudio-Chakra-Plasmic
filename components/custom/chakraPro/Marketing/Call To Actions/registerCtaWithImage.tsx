@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerCtaWithImage(){
     registerComponent(App, {
         name: "CtaWithImage",
-        importPath: "./components/custom/chakraPro/Marketing/Call To Actions/registerCtaWithImage",
+        importPath: "./components/chakra/chakraPro/Marketing/Call To Actions/registerCtaWithImage",
         
         props: {
           title: {

@@ -1,5 +1,6 @@
 import {
-  Box,
+  Box, 
+  BoxProps,
   Container,
   Heading,
   Icon,
@@ -15,9 +16,20 @@ import * as React from 'react'
 import { FiSearch } from 'react-icons/fi'
 import { BlogPost } from './BlogPost'
 import { posts } from './data'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Box bg="bg-surface">
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+  return (
+    <Box 
+    className={className} bg="bg-surface">
     <Box bg="bg-accent" color="on-accent">
       <Container pt={{ base: '16', md: '24' }} pb={{ base: '32', md: '48' }}>
         <Stack spacing={{ base: '8', md: '10' }} align="center">
@@ -57,3 +69,4 @@ export const App = () => (
     </Container>
   </Box>
 )
+}

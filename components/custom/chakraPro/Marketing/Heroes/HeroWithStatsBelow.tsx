@@ -1,9 +1,19 @@
-import { Box, Button, Center, Heading, LightMode, SimpleGrid, Text } from '@chakra-ui/react'
+import { Box, BoxProps, Button, Center, Heading, LightMode, SimpleGrid, Text } from '@chakra-ui/react'
 import * as React from 'react'
+import { ReactNode } from 'react';
 
-export const App = () => {
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
   return (
-    <Box
+    <Box 
+    className={className}
       as="section"
       bg="gray.800"
       py="12"

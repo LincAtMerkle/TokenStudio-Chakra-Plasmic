@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerPricingWithCornerBadge(){
     registerComponent(App, {
         name: "PricingWithCornerBadge",
-        importPath: "./components/custom/chakraPro/Marketing/Pricing/PricingWithCornerBadge",
+        importPath: "./components/chakra/chakraPro/Marketing/Pricing/PricingWithCornerBadge",
         
         props: {
           title: {

@@ -1,12 +1,22 @@
-import { Box, Button, Heading, Text, useColorModeValue } from '@chakra-ui/react'
+import { Box, BoxProps, Button, Heading, Text, useColorModeValue } from '@chakra-ui/react'
 import * as React from 'react'
 import { HiPencilAlt } from 'react-icons/hi'
 import { CardContent } from './CardContent'
 import { CardWithAvatar } from './CardWithAvatar'
 import { UserInfo } from './UserInfo'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Box as="section" pt="20" pb="12" position="relative">
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+    return (
+    <Box className={className} as="section" pt="20" pb="12" position="relative">
     <Box position="absolute" inset="0" height="32" bg="pink.600" />
     <CardWithAvatar
       maxW="xl"
@@ -32,3 +42,4 @@ export const App = () => (
     </CardWithAvatar>
   </Box>
 )
+}

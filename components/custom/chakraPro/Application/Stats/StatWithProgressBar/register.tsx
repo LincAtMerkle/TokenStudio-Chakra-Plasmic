@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerStatWithProgressBar(){
     registerComponent(App, {
         name: "StatWithProgressBar",
-        importPath: "./components/custom/chakraPro/Aplication/Stats/StatWithProgressBar",
+        importPath: "./components/chakra/chakraPro/Aplication/Stats/StatWithProgressBar",
         
         props: {
           title: {

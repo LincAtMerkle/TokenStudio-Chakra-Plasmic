@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerFiltersWithDropdown(){
     registerComponent(App, {
         name: "FiltersWithDropdown",
-        importPath: "./components/custom/chakraPro/FiltersWithDropdown",
+        importPath: "./components/chakra/chakraPro/FiltersWithDropdown",
         
         props: {
           title: {

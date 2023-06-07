@@ -22,7 +22,7 @@ export const features = [
   {
     name: 'Themeable',
     description:
-      "Your style. Your pink. Customize the components as you need them. It's that simple.",
+      "Your style. Your pink. Customize the components as you need them. It&apos;s that simple.",
     icon: FaPaintBrush,
   },
   {

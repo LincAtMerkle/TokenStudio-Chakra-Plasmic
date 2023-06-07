@@ -1,6 +1,7 @@
 import {
   Badge,
   Box,
+  BoxProps,
   Button,
   Heading,
   HStack,
@@ -11,10 +12,20 @@ import {
 } from '@chakra-ui/react'
 import * as React from 'react'
 import { HiArrowRight } from 'react-icons/hi'
+import { ReactNode } from 'react';
 
-export const App = () => {
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
   return (
-    <Box
+    <Box 
+    className={className}
       as="section"
       bg={mode('gray.50', 'gray.800')}
       pb="24"

@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerSectionHeaderWithTabs(){
     registerComponent(App, {
         name: "SectionHeaderWithTabs",
-        importPath: "./components/custom/chakraPro/Aplication/Section Headers/SectionHeaderWithTabs",
+        importPath: "./components/chakra/chakraPro/Aplication/Section Headers/SectionHeaderWithTabs",
         
         props: {
           title: {

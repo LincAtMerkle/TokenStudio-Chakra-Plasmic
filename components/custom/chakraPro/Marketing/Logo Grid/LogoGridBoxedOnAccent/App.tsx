@@ -1,9 +1,20 @@
-import { Box, Center, Container, SimpleGrid, Stack, Text } from '@chakra-ui/react'
+import { Box, BoxProps, Center, Container, SimpleGrid, Stack, Text } from '@chakra-ui/react'
 import * as React from 'react'
 import * as logos from './Logos'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Box bg="bg-surface" color="on-accent">
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+  return (
+    <Box 
+    className={className} bg="bg-surface" color="on-accent">
     <Container py={{ base: '4', md: '8' }}>
       <Box
         bg="bg-accent"
@@ -27,3 +38,4 @@ export const App = () => (
     </Container>
   </Box>
 )
+            }

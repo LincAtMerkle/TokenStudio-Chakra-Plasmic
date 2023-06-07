@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerReviewQuickOverview(){
     registerComponent(App, {
         name: "ReviewQuickOverview",
-        importPath: "./components/custom/chakraPro/ReviewQuickOverview",
+        importPath: "./components/chakra/chakraPro/ReviewQuickOverview",
         
         props: {
           title: {

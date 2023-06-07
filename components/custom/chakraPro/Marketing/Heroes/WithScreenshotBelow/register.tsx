@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerWithScreenshotBelow(){
     registerComponent(App, {
         name: "WithScreenshotBelow",
-        importPath: "./components/custom/chakraPro/Marketing/Footers/WithScreenshotBelow",
+        importPath: "./components/chakra/chakraPro/Marketing/Footers/WithScreenshotBelow",
         
         props: {
           title: {

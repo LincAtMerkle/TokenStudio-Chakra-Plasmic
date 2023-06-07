@@ -1,8 +1,9 @@
 import {
-  Box,
+  Box, 
   Button,
   ButtonGroup,
   Container,
+  ContainerProps,
   HStack,
   Icon,
   Input,
@@ -16,11 +17,21 @@ import {
 import * as React from 'react'
 import { FiSearch } from 'react-icons/fi'
 import { MemberTable } from './MemberTable'
+import { ReactNode } from 'react';
 
-export const App = () => {
-  const isMobile = useBreakpointValue({ base: true, md: false })
-  return (
-    <Container py={{ base: '4', md: '8' }} px={{ base: '0', md: 8 }}>
+export type AppProps = ContainerProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+    const isMobile = useBreakpointValue({ base: true, md: false })
+    return (
+    <Container className={className}
+    py={{ base: '4', md: '8' }} px={{ base: '0', md: 8 }}>
       <Box
         bg="bg-surface"
         boxShadow={{ base: 'none', md: useColorModeValue('sm', 'sm-dark') }}

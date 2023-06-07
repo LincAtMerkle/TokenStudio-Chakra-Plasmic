@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerMenuFullWidth(){
     registerComponent(App, {
         name: "MenuFullWidth",
-        importPath: "./components/custom/chakraPro/Marketing/Logo Grid/MenuFullWidth",
+        importPath: "./components/chakra/chakraPro/Marketing/Logo Grid/MenuFullWidth",
         
         props: {
           title: {

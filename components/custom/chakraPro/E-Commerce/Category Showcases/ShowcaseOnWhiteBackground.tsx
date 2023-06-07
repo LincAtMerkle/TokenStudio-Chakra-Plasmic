@@ -1,5 +1,6 @@
 import {
-  Box,
+  Box, 
+  BoxProps,
   Flex,
   Heading,
   HStack,
@@ -12,9 +13,19 @@ import {
 } from '@chakra-ui/react'
 import * as React from 'react'
 import { FaArrowRight } from 'react-icons/fa'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Box maxW="7xl" mx="auto" px={{ base: '0', lg: '12' }} py={{ base: '0', lg: '12' }}>
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+    return (
+    <Box className={className} maxW="7xl" mx="auto" px={{ base: '0', lg: '12' }} py={{ base: '0', lg: '12' }}>
     <Stack direction={{ base: 'column-reverse', lg: 'row' }} spacing={{ base: '0', lg: '20' }}>
       <Box
         width={{ lg: 'sm' }}
@@ -63,3 +74,4 @@ export const App = () => (
     </Stack>
   </Box>
 )
+}

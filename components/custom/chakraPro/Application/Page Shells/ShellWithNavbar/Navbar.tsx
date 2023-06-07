@@ -1,6 +1,7 @@
 import {
   Avatar,
   Box,
+  BoxProps,
   Button,
   ButtonGroup,
   Container,

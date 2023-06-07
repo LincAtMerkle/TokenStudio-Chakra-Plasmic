@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerMenuWithTwoColumns(){
     registerComponent(App, {
         name: "MenuWithTwoColumns",
-        importPath: "./components/custom/chakraPro/Marketing/Logo Grid/MenuWithTwoColumns",
+        importPath: "./components/chakra/chakraPro/Marketing/Logo Grid/MenuWithTwoColumns",
         
         props: {
           title: {

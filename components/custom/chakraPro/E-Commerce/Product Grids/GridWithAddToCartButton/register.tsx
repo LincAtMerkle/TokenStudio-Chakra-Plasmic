@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerGridWithAddToCartButton(){
     registerComponent(App, {
         name: "GridWithAddToCartButton",
-        importPath: "./components/custom/chakraPro/GridWithAddToCartButton",
+        importPath: "./components/chakra/chakraPro/GridWithAddToCartButton",
         
         props: {
           title: {

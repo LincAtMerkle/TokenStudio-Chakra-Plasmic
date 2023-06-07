@@ -1,6 +1,7 @@
 import {
   Button,
   Container,
+  ContainerProps,
   Divider,
   Heading,
   HStack,
@@ -12,9 +13,20 @@ import {
 import * as React from 'react'
 import { Logo } from './Logo'
 import { GitHubIcon, GoogleIcon, TwitterIcon } from './ProviderIcons'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Container maxW="md" py={{ base: '12', md: '24' }}>
+export type AppProps = ContainerProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+  return (
+    <Container 
+    className={className} maxW="md" py={{ base: '12', md: '24' }}>
     <Stack spacing="8">
       <Stack spacing="6">
         <Logo />
@@ -60,3 +72,4 @@ export const App = () => (
     </Stack>
   </Container>
 )
+  }

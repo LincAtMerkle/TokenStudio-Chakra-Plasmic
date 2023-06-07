@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerCartWithDrawer(){
     registerComponent(App, {
         name: "CartWithDrawer",
-        importPath: "./components/custom/chakraPro/CartWithDrawer",
+        importPath: "./components/chakra/chakraPro/CartWithDrawer",
         
         props: {
           title: {

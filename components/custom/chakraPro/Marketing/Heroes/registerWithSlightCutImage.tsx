@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerWithSlightCutImage(){
     registerComponent(App, {
         name: "WithSlightCutImage",
-        importPath: "./components/custom/chakraPro/Marketing/Heroes/WithSlightCutImage",
+        importPath: "./components/chakra/chakraPro/Marketing/Heroes/WithSlightCutImage",
         
         props: {
           title: {

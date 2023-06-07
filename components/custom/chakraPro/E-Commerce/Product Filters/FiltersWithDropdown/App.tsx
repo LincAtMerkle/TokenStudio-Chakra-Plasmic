@@ -1,5 +1,6 @@
 import {
-  Box,
+  Box, 
+  BoxProps,
   Flex,
   Heading,
   HStack,
@@ -18,9 +19,19 @@ import {
 } from './Filter'
 import { MobileFilter } from './MobileFilter'
 import { breadcrumbData } from './_data'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Box
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+    return (
+    <Box className={className}
     maxW="7xl"
     mx="auto"
     px={{ base: '4', md: '8', lg: '12' }}
@@ -28,7 +39,7 @@ export const App = () => (
   >
     <ProductBreadcrumb data={breadcrumbData} />
     <Heading size="lg" mt={{ base: '6', md: '10' }} mb="8">
-      Men's Watches
+      Men&apos;s Watches
     </Heading>
 
     <Flex justify="space-between" align="center" display={{ base: 'none', md: 'flex' }}>
@@ -71,3 +82,4 @@ export const App = () => (
     />
   </Box>
 )
+}

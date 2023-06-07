@@ -2,6 +2,7 @@ import {
   Button,
   Center,
   Container,
+  ContainerProps,
   Icon,
   Link,
   Popover,
@@ -13,9 +14,20 @@ import {
 import * as React from 'react'
 import { items } from './data'
 import { PopoverIcon } from './PopoverIcon'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Container as="section" minH="2xl" py={{ base: '4', md: '5' }}>
+export type AppProps = ContainerProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+  return (
+    <Container 
+    className={className} as="section" minH="2xl" py={{ base: '4', md: '5' }}>
     <Center>
       <Popover trigger="hover" isOpen={true} placement="bottom" gutter={12}>
         {({ isOpen }) => (
@@ -48,3 +60,4 @@ export const App = () => (
     </Center>
   </Container>
 )
+                }

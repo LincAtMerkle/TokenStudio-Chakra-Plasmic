@@ -1,6 +1,7 @@
 import {
   Button,
   Container,
+  ContainerProps,
   FormControl,
   FormHelperText,
   Heading,
@@ -10,9 +11,19 @@ import {
   useBreakpointValue,
 } from '@chakra-ui/react'
 import * as React from 'react'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Container py={{ base: '16', md: '24' }}>
+export type AppProps = ContainerProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+    return (
+    <Container className={className} py={{ base: '16', md: '24' }}>
     <Stack
       spacing={{ base: '8', md: '8' }}
       direction={{ base: 'column', lg: 'row' }}
@@ -38,3 +49,4 @@ export const App = () => (
     </Stack>
   </Container>
 )
+    }

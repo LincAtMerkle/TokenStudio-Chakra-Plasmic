@@ -1,5 +1,6 @@
 import {
-  Box,
+  Box, 
+  BoxProps,
   Flex,
   Heading,
   HStack,
@@ -13,9 +14,19 @@ import * as React from 'react'
 import { FaArrowRight } from 'react-icons/fa'
 import { CategoryCard } from './CatetgoryCard'
 import { categories } from './_data'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Box
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+    return (
+    <Box className={className}
     maxW="7xl"
     mx="auto"
     px={{ base: '4', md: '8', lg: '12' }}
@@ -27,7 +38,7 @@ export const App = () => (
         align={{ base: 'start', md: 'center' }}
         direction={{ base: 'column', md: 'row' }}
       >
-        <Heading size="lg">Season's Favorites</Heading>
+        <Heading size="lg">Season&apos;s Favorites</Heading>
         <HStack spacing={{ base: '2', md: '3' }}>
           <Link
             fontSize={{ base: 'md', md: 'lg' }}
@@ -51,3 +62,4 @@ export const App = () => (
     </Stack>
   </Box>
 )
+}

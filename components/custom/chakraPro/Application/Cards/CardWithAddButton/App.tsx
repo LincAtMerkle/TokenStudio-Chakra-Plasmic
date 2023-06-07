@@ -1,5 +1,6 @@
 import {
-  Box,
+  Box, 
+  BoxProps,
   Button,
   Container,
   IconButton,
@@ -11,9 +12,20 @@ import {
 import * as React from 'react'
 import { FiEdit2, FiTrash2 } from 'react-icons/fi'
 import { experiences } from './data'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Box as="section" py={{ base: '4', md: '8' }}>
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+    return (
+    <Box 
+    className={className} as="section" py={{ base: '4', md: '8' }}>
     <Container maxW="3xl">
       <Box
         bg="bg-surface"
@@ -61,3 +73,4 @@ export const App = () => (
     </Container>
   </Box>
 )
+}

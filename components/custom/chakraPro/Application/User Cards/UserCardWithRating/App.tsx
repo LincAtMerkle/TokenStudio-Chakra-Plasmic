@@ -1,6 +1,7 @@
 import {
   Avatar,
   Box,
+  BoxProps,
   Button,
   HStack,
   Icon,
@@ -14,9 +15,19 @@ import * as React from 'react'
 import { HiCash, HiLocationMarker, HiShieldCheck } from 'react-icons/hi'
 import { Card } from './Card'
 import { CustomerReviews } from './CustomerReviews'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Box as="section" bg={useColorModeValue('gray.100', 'gray.800')} py="12">
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+    return (
+    <Box className={className} as="section" bg={useColorModeValue('gray.100', 'gray.800')} py="12">
     <Card>
       <Stack
         direction={{ base: 'column', md: 'row' }}
@@ -89,3 +100,4 @@ export const App = () => (
     </Card>
   </Box>
 )
+}

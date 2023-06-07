@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerProductOverviewTable(){
     registerComponent(ProductOverviewTable, {
         name: "ProductOverviewTable",
-        importPath: "./components/custom/chakraPro/Application/Banner/ProductOverviewTable",
+        importPath: "./components/chakra/chakraPro/Application/Banner/ProductOverviewTable",
         
         props: {
           title: {

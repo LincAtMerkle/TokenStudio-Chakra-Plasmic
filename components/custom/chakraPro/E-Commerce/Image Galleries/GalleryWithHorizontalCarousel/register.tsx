@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerGalleryWithHorizontalCarousel(){
     registerComponent(App, {
         name: "GalleryWithHorizontalCarousel",
-        importPath: "./components/custom/chakraPro/GalleryWithHorizontalCarousel",
+        importPath: "./components/chakra/chakraPro/GalleryWithHorizontalCarousel",
         
         props: {
           title: {

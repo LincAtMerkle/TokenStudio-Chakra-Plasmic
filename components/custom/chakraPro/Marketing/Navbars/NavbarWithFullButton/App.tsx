@@ -1,5 +1,6 @@
 import {
-  Box,
+  Box, 
+  BoxProps,
   Button,
   ButtonGroup,
   Container,
@@ -11,11 +12,23 @@ import {
 import * as React from 'react'
 import { FiMenu } from 'react-icons/fi'
 import { Logo } from './Logo'
+import { ReactNode } from 'react';
 
-export const App = () => {
-  const isDesktop = useBreakpointValue({ base: false, lg: true })
-  return (
-    <Box as="section" pb={{ base: '12', md: '24' }}>
+  export type AppProps = BoxProps & {
+    children: ReactNode
+  }
+  
+  export function App({
+    className,
+    children,
+    ...rest
+    }: AppProps) {
+      const isDesktop = useBreakpointValue({ base: false, lg: true })
+
+    return (
+      <Box 
+      className={className}
+      as="section" pb={{ base: '12', md: '24' }}>
       <Box as="nav" bg="bg-surface" py={{ base: '4', lg: '5' }}>
         <Container>
           <HStack spacing="10" justify="space-between">

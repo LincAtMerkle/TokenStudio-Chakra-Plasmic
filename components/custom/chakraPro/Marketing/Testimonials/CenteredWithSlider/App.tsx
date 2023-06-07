@@ -1,10 +1,21 @@
-import { Box, Circle, Flex, HStack, Text, useColorModeValue } from '@chakra-ui/react'
+import { Box, BoxProps, Circle, Flex, HStack, Text, useColorModeValue } from '@chakra-ui/react'
 import * as React from 'react'
 import { Quotee } from './Quotee'
 import { QuoteIcon } from './QuoteIcon'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Box as="section" bg={useColorModeValue('gray.50', 'gray.800')}>
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+  return (
+    <Box 
+    className={className} as="section" bg={useColorModeValue('gray.50', 'gray.800')}>
     <Box maxW="3xl" mx="auto" px={{ base: '6', md: '8' }} pt="12" pb="16">
       <Flex direction="column" align="center" textAlign="center">
         <QuoteIcon
@@ -30,3 +41,4 @@ export const App = () => (
     </Box>
   </Box>
 )
+}

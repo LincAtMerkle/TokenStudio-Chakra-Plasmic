@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerStatWithCta(){
     registerComponent(App, {
         name: "StatWithCta",
-        importPath: "./components/custom/chakraPro/Aplication/Stats/StatWithCta",
+        importPath: "./components/chakra/chakraPro/Aplication/Stats/StatWithCta",
         
         props: {
           title: {

@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerQuantityPicker(){
     registerComponent(App, {
         name: "QuantityPicker",
-        importPath: "./components/custom/chakraPro/QuantityPicker",
+        importPath: "./components/chakra/chakraPro/QuantityPicker",
         
         props: {
           title: {

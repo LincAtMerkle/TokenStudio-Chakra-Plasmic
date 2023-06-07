@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerGridQuiteMinimalistic(){
     registerComponent(App, {
         name: "GridQuiteMinimalistic",
-        importPath: "./components/custom/chakraPro/GridQuiteMinimalistic",
+        importPath: "./components/chakra/chakraPro/GridQuiteMinimalistic",
         
         props: {
           title: {

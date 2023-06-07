@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerGridWithButtonGroup(){
     registerComponent(App, {
         name: "GridWithButtonGroup",
-        importPath: "./components/custom/chakraPro/GridWithButtonGroup",
+        importPath: "./components/chakra/chakraPro/GridWithButtonGroup",
         
         props: {
           title: {

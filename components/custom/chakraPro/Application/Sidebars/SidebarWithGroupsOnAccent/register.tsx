@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerSidebarWithGroupsOnAccent(){
     registerComponent(App, {
         name: "SidebarWithGroupsOnAccent",
-        importPath: "./components/custom/chakraPro/Aplication/Sidebars/SidebarWithGroupsOnAccent",
+        importPath: "./components/chakra/chakraPro/Aplication/Sidebars/SidebarWithGroupsOnAccent",
         
         props: {
           title: {

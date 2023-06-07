@@ -1,4 +1,4 @@
-import { Box, BoxProps, Heading, Stack, Text, useColorModeValue } from '@chakra-ui/react'
+import { Box, BoxProps,Heading, Stack, Text, useColorModeValue } from '@chakra-ui/react'
 import * as React from 'react'
 
 export const Main = (props: BoxProps) => (

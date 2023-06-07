@@ -5,6 +5,7 @@ import {
   Center,
   DarkMode,
   Flex,
+  FlexProps,
   Heading,
   HStack,
   Stack,
@@ -15,9 +16,20 @@ import {
 import * as React from 'react'
 import { Logo } from './Logo'
 import { SignInForm } from './SignInForm'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Flex
+export type AppProps = FlexProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+  return (
+    <Flex 
+    className={className}
     minH={{ base: 'auto', md: '100vh' }}
     bgGradient={useBreakpointValue({
       md: mode(
@@ -40,7 +52,7 @@ export const App = () => (
                     Start making your dreams come true
                   </Heading>
                   <Text fontSize="lg" maxW="md" fontWeight="medium">
-                    Create an account and discover the worlds' best UI component framework.
+                    Create an account and discover the world&apos;s  best UI component framework.
                   </Text>
                 </Stack>
                 <HStack spacing="4">
@@ -78,3 +90,4 @@ export const App = () => (
     </Flex>
   </Flex>
 )
+  }

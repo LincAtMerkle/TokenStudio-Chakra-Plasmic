@@ -2,6 +2,7 @@ import {
   Button,
   Checkbox,
   Container,
+  ContainerProps,
   FormControl,
   FormLabel,
   Heading,
@@ -14,9 +15,20 @@ import {
 import * as React from 'react'
 import { Logo } from './Logo'
 import { GoogleIcon } from './ProviderIcons'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Container maxW="md" py={{ base: '12', md: '24' }}>
+export type AppProps = ContainerProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+  return (
+    <Container 
+    className={className} maxW="md" py={{ base: '12', md: '24' }}>
     <Stack spacing="8">
       <Stack spacing="6">
         <Logo />
@@ -25,7 +37,7 @@ export const App = () => (
             Log in to your account
           </Heading>
           <HStack spacing="1" justify="center">
-            <Text color="muted">Don't have an account?</Text>
+            <Text color="muted">Don&apos;t have an account?</Text>
             <Button variant="link" colorScheme="pink">
               Sign up
             </Button>
@@ -59,3 +71,4 @@ export const App = () => (
     </Stack>
   </Container>
 )
+  }

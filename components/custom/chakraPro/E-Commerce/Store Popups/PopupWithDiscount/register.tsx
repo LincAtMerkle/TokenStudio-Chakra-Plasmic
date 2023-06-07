@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerPopupWithDiscount(){
     registerComponent(App, {
         name: "PopupWithDiscount",
-        importPath: "./components/custom/chakraPro/PopupWithDiscount",
+        importPath: "./components/chakra/chakraPro/PopupWithDiscount",
         
         props: {
           title: {

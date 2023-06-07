@@ -1,6 +1,7 @@
 import { Rating } from '@chakra-ui-pro/rating/src/Rating'
 import {
-  Box,
+  Box, 
+  BoxProps,
   Button,
   Heading,
   HStack,
@@ -12,9 +13,19 @@ import {
 import * as React from 'react'
 import { ReviewItem } from './ReviewItem'
 import { reviews } from './_data'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Box
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+    return (
+    <Box className={className}
     maxW="7xl"
     mx="auto"
     px={{ base: '4', md: '8', lg: '12' }}
@@ -57,3 +68,4 @@ export const App = () => (
     </Stack>
   </Box>
 )
+}

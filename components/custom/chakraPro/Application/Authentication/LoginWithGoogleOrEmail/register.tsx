@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerLoginWithGoogleOrEmail(){
     registerComponent(App, {
         name: "LoginWithGoogleOrEmail",
-        importPath: "./components/custom/chakraPro/Application/Authentication/LoginWithGoogleOrEmail",
+        importPath: "./components/chakra/chakraPro/Application/Authentication/LoginWithGoogleOrEmail",
         
         props: {
           title: {

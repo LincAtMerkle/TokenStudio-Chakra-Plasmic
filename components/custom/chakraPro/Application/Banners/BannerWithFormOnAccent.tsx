@@ -1,5 +1,6 @@
 import {
-  Box,
+  Box, 
+  BoxProps,
   Button,
   CloseButton,
   Container,
@@ -13,11 +14,21 @@ import {
 } from '@chakra-ui/react'
 import * as React from 'react'
 import { FiMail } from 'react-icons/fi'
+import { ReactNode } from 'react';
 
-export const App = () => {
-  const isMobile = useBreakpointValue({ base: true, md: false })
-  return (
-    <Box as="section" pb={{ base: '12', md: '24' }}>
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+    const isMobile = useBreakpointValue({ base: true, md: false })
+    return (
+    <Box 
+    className={className}  as="section" pb={{ base: '12', md: '24' }}>
       <Box bg="bg-accent" color="on-accent">
         <Container py={{ base: '4', md: '2.5' }} position="relative">
           <CloseButton display={{ md: 'none' }} position="absolute" right="2" top="2" />
@@ -39,7 +50,7 @@ export const App = () => {
               <Stack spacing="0.5" pe={{ base: '4', sm: '0' }}>
                 <Text fontWeight="medium">Subscribe to our newsletter</Text>
                 <Text color="on-accent-muted">
-                  This way you'll be the first to know when we launch.
+                  This way you&apos;ll be the first to know when we launch.
                 </Text>
               </Stack>
             </Stack>

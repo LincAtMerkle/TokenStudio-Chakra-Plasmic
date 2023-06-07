@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerNavbarWithSubmenu(){
     registerComponent(App, {
         name: "NavbarWithSubmenu",
-        importPath: "./components/custom/chakraPro/Marketing/Navbars/NavbarWithSubmenu",
+        importPath: "./components/chakra/chakraPro/Marketing/Navbars/NavbarWithSubmenu",
         
         props: {
           title: {

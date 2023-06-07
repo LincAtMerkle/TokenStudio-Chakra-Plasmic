@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerFiltersWithSidebar(){
     registerComponent(App, {
         name: "FiltersWithSidebar",
-        importPath: "./components/custom/chakraPro/FiltersWithSidebar",
+        importPath: "./components/chakra/chakraPro/FiltersWithSidebar",
         
         props: {
           title: {

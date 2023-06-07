@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerLogoGridWithTiles(){
     registerComponent(App, {
         name: "LogoGridWithTiles",
-        importPath: "./components/custom/chakraPro/Marketing/Logo Grid/LogoGridWithTiles",
+        importPath: "./components/chakra/chakraPro/Marketing/Logo Grid/LogoGridWithTiles",
         
         props: {
           title: {

@@ -1,6 +1,7 @@
 import {
   AspectRatio,
   Box,
+  BoxProps,
   Button,
   Heading,
   HStack,
@@ -23,10 +24,19 @@ import { Promos } from './Promos'
 import { QuantityPicker } from './QuantityPicker'
 import { Share } from './Share'
 import { SizePicker } from './SizePicker'
+import { ReactNode } from 'react';
 
-export const App = () => {
-  return (
-    <Box
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+    return (
+    <Box className={className}
       maxW="7xl"
       mx="auto"
       px={{ base: '4', md: '8', lg: '12' }}

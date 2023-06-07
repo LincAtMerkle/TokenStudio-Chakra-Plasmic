@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerGridWithFavouriteButton(){
     registerComponent(App, {
         name: "GridWithFavouriteButton",
-        importPath: "./components/custom/chakraPro/GridWithFavouriteButton",
+        importPath: "./components/chakra/chakraPro/GridWithFavouriteButton",
         
         props: {
           title: {

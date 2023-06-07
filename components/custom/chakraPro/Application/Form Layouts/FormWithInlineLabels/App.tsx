@@ -3,6 +3,7 @@ import {
   Box,
   Button,
   Container,
+  ContainerProps,
   Divider,
   Flex,
   FormControl,
@@ -18,9 +19,19 @@ import {
 } from '@chakra-ui/react'
 import * as React from 'react'
 import { Dropzone } from './Dropzone'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Container py={{ base: '4', md: '8' }}>
+export type AppProps = ContainerProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+    return (
+    <Container className={className} py={{ base: '4', md: '8' }}>
     <Stack spacing="5">
       <Stack spacing="4" direction={{ base: 'column', sm: 'row' }} justify="space-between">
         <Box>
@@ -111,3 +122,4 @@ export const App = () => (
     </Stack>
   </Container>
 )
+}

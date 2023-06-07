@@ -1,11 +1,21 @@
-import { Box, Center, Divider, Flex, Img, Stack } from '@chakra-ui/react'
+import { Box, BoxProps, Center, Divider, Flex, Img, Stack } from '@chakra-ui/react'
 import * as React from 'react'
 import { BsFillPlayFill } from 'react-icons/bs'
 import { Logo } from './Logo'
+import { ReactNode } from 'react';
 
-export const App = () => {
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
   return (
-    <Box as="section" py="12">
+    <Box 
+    className={className} as="section" py="12">
       <Box maxW="7xl" mx="auto" px={{ base: '6', md: '8' }}>
         <Flex align={{ lg: 'center' }} direction={{ base: 'column', md: 'row' }}>
           <Box

@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerCardHeaderAccentWithAvatar(){
     registerComponent(App, {
         name: "CardHeaderAccentWithAvatar",
-        importPath: "./components/custom/chakraPro/Card Headers/CardHeaderAccentWithAvatar",
+        importPath: "./components/chakra/chakraPro/Card Headers/CardHeaderAccentWithAvatar",
         
         props: {
           title: {

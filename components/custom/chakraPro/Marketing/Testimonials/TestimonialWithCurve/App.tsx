@@ -1,4 +1,4 @@
-import { Box, Flex, Img, SimpleGrid, Text, useColorModeValue as mode } from '@chakra-ui/react'
+import { Box, BoxProps, Flex, Img, SimpleGrid, Text, useColorModeValue as mode } from '@chakra-ui/react'
 import * as React from 'react'
 import { ImQuotesLeft, ImQuotesRight } from 'react-icons/im'
 import { ChatMonkey, Plumtic } from './Logo'
@@ -106,10 +106,19 @@ const Testimonial = (props: TestimonialProps) => {
     </Flex>
   )
 }
+import { ReactNode } from 'react';
 
-export const App = () => {
-  return (
-    <Box as="section" bg={mode('gray.100', 'gray.800')} py="12">
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+    return (
+    <Box className={className} as="section" bg={mode('gray.100', 'gray.800')} py="12">
       <Box maxW={{ base: 'xl', md: '6xl' }} mx="auto" px={{ md: '8' }}>
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing="10">
           <Testimonial

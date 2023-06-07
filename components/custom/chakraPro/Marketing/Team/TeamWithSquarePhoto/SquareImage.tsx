@@ -1,4 +1,4 @@
-import { Box, ImageProps, Img } from '@chakra-ui/react'
+import { Box, BoxProps, ImageProps, Img } from '@chakra-ui/react'
 import React from 'react'
 
 export const SquareImage = (props: ImageProps) => (

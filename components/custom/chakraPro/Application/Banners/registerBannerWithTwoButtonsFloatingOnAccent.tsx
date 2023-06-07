@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerBannerWithTwoButtonsFloatingOnAccent(){
     registerComponent(App, {
         name: "BannerWithTwoButtonsFloatingOnAccent",
-        importPath: "./components/custom/chakraPro/Application/Banner/BannerWithTwoButtonsFloatingOnAccent",
+        importPath: "./components/chakra/chakraPro/Application/Banner/BannerWithTwoButtonsFloatingOnAccent",
         
         props: {
           title: {

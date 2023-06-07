@@ -1,8 +1,19 @@
-import { Box, Button, Container, Stack, Text, useColorModeValue } from '@chakra-ui/react'
+import { Box, BoxProps, Button, Container, Stack, Text, useColorModeValue } from '@chakra-ui/react'
 import * as React from 'react'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Box as="section" py={{ base: '4', md: '8' }}>
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+    return (
+    <Box 
+    className={className} as="section" py={{ base: '4', md: '8' }}>
     <Container maxW="3xl">
       <Box
         bg="bg-surface"
@@ -31,3 +42,4 @@ export const App = () => (
     </Container>
   </Box>
 )
+}

@@ -1,4 +1,4 @@
-import { Box, Container, Stack, StackDivider, useColorModeValue } from '@chakra-ui/react'
+import { Box, BoxProps, Container, Stack, StackDivider, useColorModeValue } from '@chakra-ui/react'
 import * as React from 'react'
 import { Stat } from './Stat'
 
@@ -7,9 +7,19 @@ const stats = [
   { label: 'Avg. Open Rate', value: '56.87%', delta: { value: '2.3%', isUpwardsTrend: true } },
   { label: 'Avg. Click Rate', value: '12.87%', delta: { value: '0.1%', isUpwardsTrend: false } },
 ]
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Box as="section" py={{ base: '4', md: '8' }}>
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+    return (
+    <Box className={className} as="section" py={{ base: '4', md: '8' }}>
     <Container>
       <Box bg="bg-surface" borderRadius="lg" boxShadow={useColorModeValue('sm', 'sm-dark')}>
         <Stack direction={{ base: 'column', md: 'row' }} divider={<StackDivider />} spacing="0">
@@ -21,3 +31,4 @@ export const App = () => (
     </Container>
   </Box>
 )
+}

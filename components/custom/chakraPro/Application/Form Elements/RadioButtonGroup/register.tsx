@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerRadioButtonGroup(){
     registerComponent(App, {
         name: "RadioButtonGroup",
-        importPath: "./components/custom/chakraPro/Aplication/Form Elements/RadioButtonGroup",
+        importPath: "./components/chakra/chakraPro/Aplication/Form Elements/RadioButtonGroup",
         
         props: {
           title: {

@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerCheckboxCardGroup(){
     registerComponent(App, {
         name: "CheckboxCardGroup",
-        importPath: "./components/custom/chakraPro/Aplication/Form Elements/CheckboxCardGroup",
+        importPath: "./components/chakra/chakraPro/Aplication/Form Elements/CheckboxCardGroup",
         
         props: {
           title: {

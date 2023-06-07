@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerShellWithSidebarOnFullAccent(){
     registerComponent(App, {
         name: "ShellWithSidebarOnFullAccent",
-        importPath: "./components/custom/chakraPro/Aplication/Page Shells/ShellWithSidebarOnFullAccent",
+        importPath: "./components/chakra/chakraPro/Aplication/Page Shells/ShellWithSidebarOnFullAccent",
         
         props: {
           title: {

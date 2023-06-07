@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerShellWithNavbar(){
     registerComponent(App, {
         name: "ShellWithNavbar",
-        importPath: "./components/custom/chakraPro/Aplication/Page Shells/Cards/ShellWithNavbar",
+        importPath: "./components/chakra/chakraPro/Aplication/Page Shells/Cards/ShellWithNavbar",
         
         props: {
           title: {

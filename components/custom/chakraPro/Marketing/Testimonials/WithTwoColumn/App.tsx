@@ -1,10 +1,20 @@
-import { Box, SimpleGrid, useColorModeValue as mode } from '@chakra-ui/react'
+import { Box, BoxProps, SimpleGrid, useColorModeValue as mode } from '@chakra-ui/react'
 import * as React from 'react'
 import { Testimonial } from './Testimonial'
+import { ReactNode } from 'react';
 
-export const App = () => {
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
   return (
-    <Box as="section" bg={mode('gray.50', 'gray.800')}>
+    <Box 
+    className={className} as="section" bg={mode('gray.50', 'gray.800')}>
       <Box maxW={{ base: 'xl', md: '7xl' }} mx="auto" px={{ base: '6', md: '8' }}>
         <SimpleGrid py="16" columns={{ base: 1, lg: 2 }} spacing={{ base: '16', lg: '32' }}>
           <Testimonial

@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerBannerWithFormFloating(){
     registerComponent(App, {
         name: "BannerWithFormFloating",
-        importPath: "./components/custom/chakraPro/Application/Banner/BannerWithFormFloating",
+        importPath: "./components/chakra/chakraPro/Application/Banner/BannerWithFormFloating",
         
         props: {
           title: {

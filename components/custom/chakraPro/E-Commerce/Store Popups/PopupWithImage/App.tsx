@@ -1,6 +1,7 @@
 import {
   AspectRatio,
   Box,
+  BoxProps,
   Flex,
   Heading,
   Image,
@@ -18,9 +19,19 @@ import {
 import * as React from 'react'
 import { Logo } from './Logo'
 import { SubscribeForm } from './SubscribeForm'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Box height="100vh">
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+    return (
+    <Box className={className} height="100vh">
     <Modal
       isOpen={true}
       onClose={() => void 0}
@@ -83,3 +94,4 @@ export const App = () => (
     </Modal>
   </Box>
 )
+}

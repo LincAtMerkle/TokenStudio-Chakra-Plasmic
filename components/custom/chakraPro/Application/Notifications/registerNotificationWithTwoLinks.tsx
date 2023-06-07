@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerNotificationWithTwoLinks(){
     registerComponent(App, {
         name: "NotificationWithTwoLinks",
-        importPath: "./components/custom/chakraPro/Aplication/Notifications/NotificationWithTwoLinks",
+        importPath: "./components/chakra/chakraPro/Aplication/Notifications/NotificationWithTwoLinks",
         
         props: {
           title: {

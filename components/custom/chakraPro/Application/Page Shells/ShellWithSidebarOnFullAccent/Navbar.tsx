@@ -1,4 +1,4 @@
-import { Box, Drawer, DrawerContent, DrawerOverlay, Flex, useDisclosure } from '@chakra-ui/react'
+import { Box, BoxProps, Drawer, DrawerContent, DrawerOverlay, Flex, useDisclosure } from '@chakra-ui/react'
 import * as React from 'react'
 import { Logo } from './Logo'
 import { Sidebar } from './Sidebar'

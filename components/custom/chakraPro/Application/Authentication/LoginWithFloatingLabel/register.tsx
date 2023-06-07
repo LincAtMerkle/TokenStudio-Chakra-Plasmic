@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerLoginWithFloatingLabel(){
     registerComponent(App, {
         name: "LoginWithFloatingLabel",
-        importPath: "./components/custom/chakraPro/Application/Authentication/LoginWithFloatingLabel",
+        importPath: "./components/chakra/chakraPro/Application/Authentication/LoginWithFloatingLabel",
         
         props: {
           title: {

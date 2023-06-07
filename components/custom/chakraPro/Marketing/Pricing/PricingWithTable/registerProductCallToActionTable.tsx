@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerProductCallToActionTable(){
     registerComponent(ProductCallToActionTable, {
         name: "ProductCallToActionTable",
-        importPath: "./components/custom/chakraPro/Application/Banner/ProductCallToActionTable",
+        importPath: "./components/chakra/chakraPro/Application/Banner/ProductCallToActionTable",
         
         props: {
           title: {

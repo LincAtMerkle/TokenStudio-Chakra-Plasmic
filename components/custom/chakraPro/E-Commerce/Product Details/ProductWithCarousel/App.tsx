@@ -1,5 +1,6 @@
 import {
-  Box,
+  Box, 
+  BoxProps,
   Button,
   Heading,
   HStack,
@@ -19,10 +20,19 @@ import { PriceTag } from './PriceTag'
 import { QuantityPicker } from './QuantityPicker'
 import { SizePicker } from './SizePicker'
 import { images } from './_data'
+import { ReactNode } from 'react';
 
-export const App = () => {
-  return (
-    <Box
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+    return (
+    <Box className={className}
       maxW="7xl"
       mx="auto"
       px={{ base: '4', md: '8', lg: '12' }}

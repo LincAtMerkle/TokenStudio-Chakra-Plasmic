@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerBlogWithCards(){
     registerComponent(App, {
         name: "BlogWithCards",
-        importPath: "./components/custom/chakraPro/Marketing/Blog/BlogWithCards",
+        importPath: "./components/chakra/chakraPro/Marketing/Blog/BlogWithCards",
         
         props: {
           title: {

@@ -1,5 +1,6 @@
 import {
-  Box,
+  Box, 
+  BoxProps,
   Container,
   Heading,
   Image,
@@ -9,11 +10,22 @@ import {
   useColorMode,
   useColorModeValue,
 } from '@chakra-ui/react'
+import { ReactNode } from 'react';
 
-export const App = () => {
-  const { colorMode } = useColorMode()
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+    const { colorMode } = useColorMode()
   return (
-    <Box as="section">
+    <Box 
+    className={className}
+     as="section">
       <Box bg="bg-accent" color="on-accent">
         <Container pt={{ base: '16', md: '24' }} pb={{ base: '28', md: '40' }}>
           <Stack spacing={{ base: '8', md: '10' }} align="center">

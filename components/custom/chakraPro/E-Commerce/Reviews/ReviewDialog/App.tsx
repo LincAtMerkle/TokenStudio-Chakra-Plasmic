@@ -1,5 +1,6 @@
 import {
-  Box,
+  Box, 
+  BoxProps,
   Heading,
   Modal,
   ModalBody,
@@ -11,9 +12,19 @@ import {
 } from '@chakra-ui/react'
 import * as React from 'react'
 import { ReviewForm } from './ReviewForm'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Box height="100vh">
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+    return (
+    <Box className={className} height="100vh">
     {/*`trapFocus` and `blockScrollOnMount` are only switched off so that the preview works properly. */}
     <Modal
       isOpen={true}
@@ -52,3 +63,4 @@ export const App = () => (
     </Modal>
   </Box>
 )
+}

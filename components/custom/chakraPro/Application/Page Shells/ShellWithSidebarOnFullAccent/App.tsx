@@ -1,8 +1,9 @@
 import {
-  Box,
+  Box, 
   Button,
   Container,
   Flex,
+  FlexProps,
   Heading,
   HStack,
   Stack,
@@ -12,11 +13,20 @@ import {
 import { FiDownloadCloud } from 'react-icons/fi'
 import { Navbar } from './Navbar'
 import { Sidebar } from './Sidebar'
+import { ReactNode } from 'react';
 
-export const App = () => {
-  const isDesktop = useBreakpointValue({ base: false, lg: true })
-  return (
-    <Flex
+export type AppProps = FlexProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+    const isDesktop = useBreakpointValue({ base: false, lg: true })
+    return (
+    <Flex className={className}
       as="section"
       direction={{ base: 'column', lg: 'row' }}
       height="100vh"

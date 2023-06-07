@@ -1,5 +1,6 @@
 import {
-  Box,
+  Box, 
+  BoxProps,
   Button,
   Container,
   Heading,
@@ -9,9 +10,20 @@ import {
   useBreakpointValue,
 } from '@chakra-ui/react'
 import * as React from 'react'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Box bg="bg-surface">
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+  return (
+    <Box 
+    className={className} bg="bg-surface">
     <Container py={{ base: '16', md: '24' }}>
       <Stack direction={{ base: 'column', md: 'row' }} spacing={{ base: '12', lg: '16' }}>
         <Stack spacing={{ base: '8', md: '10' }} width="full" justify="center">
@@ -20,7 +32,7 @@ export const App = () => (
               Ready for your free trial?
             </Heading>
             <Text fontSize={{ base: 'lg', md: 'xl' }} color="muted">
-              No credit card is required. You'll be ready to go within a few minutes. Let's go.
+              No credit card is required. you&apos;ll be ready to go within a few minutes. Let's go.
             </Text>
           </Stack>
           <Stack direction={{ base: 'column-reverse', md: 'row' }} spacing="3">
@@ -42,3 +54,4 @@ export const App = () => (
     </Container>
   </Box>
 )
+  }

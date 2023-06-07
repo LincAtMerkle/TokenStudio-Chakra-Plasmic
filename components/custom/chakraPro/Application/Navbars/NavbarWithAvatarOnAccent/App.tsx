@@ -1,6 +1,7 @@
 import {
   Avatar,
   Box,
+  BoxProps,
   Button,
   ButtonGroup,
   Container,
@@ -12,11 +13,20 @@ import {
 import * as React from 'react'
 import { FiHelpCircle, FiMenu, FiSearch, FiSettings } from 'react-icons/fi'
 import { Logo } from './Logo'
+import { ReactNode } from 'react';
 
-export const App = () => {
-  const isDesktop = useBreakpointValue({ base: false, lg: true })
-  return (
-    <Box as="section" pb={{ base: '12', md: '24' }}>
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+const isDesktop = useBreakpointValue({ base: false, lg: true })
+    return (
+    <Box className={className} as="section" pb={{ base: '12', md: '24' }}>
       <Box as="nav" bg="bg-accent" color="on-accent">
         <Container py={{ base: '3', lg: '4' }}>
           <Flex justify="space-between">

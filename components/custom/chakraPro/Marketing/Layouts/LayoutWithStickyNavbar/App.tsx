@@ -1,13 +1,25 @@
-import { Flex } from '@chakra-ui/react'
+import { Flex, FlexProps } from '@chakra-ui/react'
 import * as React from 'react'
 import { Footer } from './Footer'
 import { Main } from './Main'
 import { Navbar } from './Navbar'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Flex direction="column" flex="1">
+export type AppProps = FlexProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+  return (
+    <Flex 
+    className={className} direction="column" flex="1">
     <Navbar />
     <Main />
     <Footer />
   </Flex>
 )
+  }

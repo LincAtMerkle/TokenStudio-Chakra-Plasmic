@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerTabsWithLineVertical(){
     registerComponent(App, {
         name: "TabsWithLineVertical",
-        importPath: "./components/custom/chakraPro/Application/Tabs/TabsWithLineVertical",
+        importPath: "./components/chakra/chakraPro/Application/Tabs/TabsWithLineVertical",
         
         props: {
           title: {

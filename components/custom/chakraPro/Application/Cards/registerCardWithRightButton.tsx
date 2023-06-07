@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerCardWithRightButton(){
     registerComponent(App, {
         name: "CardWithRightButton",
-        importPath: "./components/custom/chakraPro/Application/Cards/CardWithRightButton",
+        importPath: "./components/chakra/chakraPro/Application/Cards/CardWithRightButton",
         
         props: {
           title: {

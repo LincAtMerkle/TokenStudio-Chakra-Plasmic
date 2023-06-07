@@ -1,7 +1,8 @@
-import { Box, BoxProps, Button, Flex, HStack, IconButton, useDisclosure } from '@chakra-ui/react'
+import { Box, BoxProps,Button, Flex, HStack, IconButton, useDisclosure } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 import * as React from 'react'
 import { Logo } from './Logo'
+import { ReactNode } from 'react';
 
 const HamburgerIcon = (props: React.SVGAttributes<SVGSVGElement>) => (
   <svg viewBox="0 0 80 62" width="1em" height="1em" fill="currentColor" {...props}>
@@ -15,11 +16,21 @@ const NavItem = (props: BoxProps & React.AnchorHTMLAttributes<HTMLAnchorElement>
   <Box as="a" href="#" fontSize="sm" {...props} />
 )
 
-export const App = () => {
-  const nav = useDisclosure()
-  const ref = React.useRef<HTMLDivElement>(null)
-  return (
-    <Box as="header" pb="20">
+
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+    const nav = useDisclosure()
+    const ref = React.useRef<HTMLDivElement>(null)
+    return (
+    <Box 
+    className={className} as="header" pb="20">
       <Box borderBottomWidth="1px" px="4" bg="bg-surface">
         <Flex align="center" justify="space-between" height="4.5rem">
           <Logo />

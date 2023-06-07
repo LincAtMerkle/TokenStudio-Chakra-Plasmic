@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerShowcaseOnSpanningColumns(){
     registerComponent(App, {
         name: "ShowcaseOnSpanningColumns",
-        importPath: "./components/custom/chakraPro/ShowcaseOnSpanningColumns",
+        importPath: "./components/chakra/chakraPro/ShowcaseOnSpanningColumns",
         
         props: {
           title: {

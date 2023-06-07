@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerShowcaseOnWhiteBackground(){
     registerComponent(App, {
         name: "ShowcaseOnWhiteBackground",
-        importPath: "./components/custom/chakraPro/E-Commerce/Category Showcases/registerShowcaseOnWhiteBackground",
+        importPath: "./components/chakra/chakraPro/E-Commerce/Category Showcases/registerShowcaseOnWhiteBackground",
         
         props: {
           title: {

@@ -1,5 +1,6 @@
 import {
-  Box,
+  Box, 
+  BoxProps,
   Checkbox,
   CheckboxGroup,
   CheckboxGroupProps,

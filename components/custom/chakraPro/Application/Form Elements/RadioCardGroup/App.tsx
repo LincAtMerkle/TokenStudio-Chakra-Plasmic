@@ -1,10 +1,19 @@
-import { Box, Container, Text } from '@chakra-ui/react'
+import { Box, BoxProps, Container, Text } from '@chakra-ui/react'
 import * as React from 'react'
 import { RadioCard, RadioCardGroup } from './RadioCardGroup'
+import { ReactNode } from 'react';
 
-export const App = () => {
-  return (
-    <Box as="section" bg="bg-surface" py={{ base: '4', md: '8' }}>
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+    return (
+    <Box className={className} as="section" bg="bg-surface" py={{ base: '4', md: '8' }}>
       <Container maxW="lg">
         <RadioCardGroup defaultValue="one" spacing="3">
           {['one', 'two', 'three'].map((option) => (

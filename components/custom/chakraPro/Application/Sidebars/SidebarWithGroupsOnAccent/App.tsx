@@ -1,4 +1,4 @@
-import { Flex, Stack, Text } from '@chakra-ui/react'
+import { Flex, FlexProps, Stack, Text } from '@chakra-ui/react'
 import * as React from 'react'
 import {
   FiBarChart2,
@@ -13,9 +13,19 @@ import {
 } from 'react-icons/fi'
 import { Logo } from './Logo'
 import { NavButton } from './NavButton'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Flex as="section" minH="100vh" bg="bg-canvas">
+export type AppProps = FlexProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+    return (
+    <Flex className={className} as="section" minH="100vh" bg="bg-canvas">
     <Flex
       flex="1"
       bg="bg-accent"
@@ -56,3 +66,4 @@ export const App = () => (
     </Flex>
   </Flex>
 )
+    }

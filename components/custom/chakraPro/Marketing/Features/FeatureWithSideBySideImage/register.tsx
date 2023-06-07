@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerFeatureWithSideBySideImage(){
     registerComponent(App, {
         name: "FeatureWithSideBySideImage",
-        importPath: "./components/custom/chakraPro/Marketing/Features/FeatureWithSideBySideImage",
+        importPath: "./components/chakra/chakraPro/Marketing/Features/FeatureWithSideBySideImage",
         props: {
           title: {
           type: "string",

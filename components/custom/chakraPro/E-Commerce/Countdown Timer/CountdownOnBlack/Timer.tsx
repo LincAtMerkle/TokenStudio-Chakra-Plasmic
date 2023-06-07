@@ -1,4 +1,4 @@
-import { Box, HStack, Text } from '@chakra-ui/react'
+import { Box, BoxProps, HStack, Text } from '@chakra-ui/react'
 import * as React from 'react'
 import { useTimer } from './useTimer'
 

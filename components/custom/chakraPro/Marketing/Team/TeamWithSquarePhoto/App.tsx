@@ -1,5 +1,6 @@
 import {
-  Box,
+  Box, 
+  BoxProps,
   Container,
   Heading,
   HStack,
@@ -14,9 +15,20 @@ import * as React from 'react'
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import { members } from './data'
 import { SquareImage } from './SquareImage'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Box bg="bg-surface">
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+  return (
+    <Box 
+    className={className} bg="bg-surface">
     <Container py={{ base: '16', md: '24' }}>
       <Stack spacing={{ base: '12', md: '16' }}>
         <Stack spacing="3">
@@ -65,3 +77,4 @@ export const App = () => (
     </Container>
   </Box>
 )
+}

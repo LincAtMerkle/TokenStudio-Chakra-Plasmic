@@ -1,7 +1,8 @@
 import {
-  Box,
+  Box, 
   Center,
   Flex,
+  FlexProps,
   HStack,
   useColorModeValue as mode,
   VisuallyHidden,
@@ -18,9 +19,15 @@ import { NavAction } from './NavAction'
 import { NavCategoryMenu } from './NavCategoryMenu'
 import { NavCategorySubmenu } from './NavCategorySubmenu'
 import { SearchInput } from './SearchInput'
+import { ReactNode } from "react";
 
-export const App = () => (
-  <>
+export type AppProps = FlexProps & {
+  children: ReactNode;
+};
+
+export function App({ className, children, ...rest }: AppProps) {
+  return (
+    <Flex className={className}>
     <Flex direction="column" pb="4.5rem" overflow="hidden" display={{ base: 'flex', lg: 'none' }}>
       <Box px="4" py="4" borderBottomWidth="1px" overflow="auto">
         <Flex align="center" justify="space-between" mb="3" display={{ base: 'flex', lg: 'none' }}>
@@ -71,5 +78,6 @@ export const App = () => (
       <NavCategorySubmenu.Desktop />
       <Box bg="blackAlpha.400" pos="fixed" zIndex="-1" inset="0" />
     </Box>
-  </>
+  </Flex>
 )
+}

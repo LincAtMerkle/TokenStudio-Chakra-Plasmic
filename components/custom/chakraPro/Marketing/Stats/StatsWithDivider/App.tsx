@@ -1,5 +1,6 @@
 import {
-  Box,
+  Box, 
+  BoxProps,
   Container,
   Heading,
   Stack,
@@ -10,11 +11,21 @@ import {
 import * as React from 'react'
 import { stats } from './data'
 import { Stat } from './Stat'
+  import { ReactNode } from 'react';
 
-export const App = () => {
-  const isMobile = useBreakpointValue({ base: true, md: false })
-  return (
-    <Box bg="bg-surface">
+  export type AppProps = BoxProps & {
+    children: ReactNode
+  }
+  
+  export function App({
+    className,
+    children,
+    ...rest
+    }: AppProps) {
+      const isMobile = useBreakpointValue({ base: true, md: false })
+    return (
+      <Box 
+      className={className} bg="bg-surface">
       <Container py={{ base: '16', md: '24' }}>
         <Stack spacing={{ base: '12', md: '16' }} textAlign="center" align="center">
           <Stack spacing={{ base: '4', md: '5' }}>

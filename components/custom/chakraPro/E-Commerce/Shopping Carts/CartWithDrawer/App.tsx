@@ -1,5 +1,6 @@
 import {
-  Box,
+  Box, 
+  BoxProps,
   Button,
   Drawer,
   DrawerCloseButton,
@@ -16,9 +17,19 @@ import * as React from 'react'
 import { FiPackage } from 'react-icons/fi'
 import { CartItem } from './CartItem'
 import { cartData } from './_data'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Box height="100vh">
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+    return (
+    <Box className={className} height="100vh">
     <Drawer
       isOpen
       onClose={() => void 0}
@@ -57,3 +68,4 @@ export const App = () => (
     </Drawer>
   </Box>
 )
+}

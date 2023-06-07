@@ -1,4 +1,4 @@
-import { Box, BoxProps, HStack } from '@chakra-ui/react'
+import { Box, BoxProps,HStack } from '@chakra-ui/react'
 import * as React from 'react'
 import { FaStar } from 'react-icons/fa'
 

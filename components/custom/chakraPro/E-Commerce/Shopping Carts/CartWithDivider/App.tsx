@@ -1,5 +1,6 @@
 import {
-  Box,
+  Box, 
+  BoxProps,
   Flex,
   Heading,
   HStack,
@@ -11,9 +12,19 @@ import * as React from 'react'
 import { CartItem } from './CartItem'
 import { CartOrderSummary } from './CartOrderSummary'
 import { cartData } from './_data'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Box
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+    return (
+    <Box className={className}
     maxW={{ base: '3xl', lg: '7xl' }}
     mx="auto"
     px={{ base: '4', md: '8', lg: '12' }}
@@ -46,3 +57,4 @@ export const App = () => (
     </Stack>
   </Box>
 )
+}

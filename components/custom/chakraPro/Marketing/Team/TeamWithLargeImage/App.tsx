@@ -1,6 +1,7 @@
 import {
   Button,
   Container,
+  ContainerProps,
   Heading,
   HStack,
   Icon,
@@ -14,9 +15,20 @@ import {
 import * as React from 'react'
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import { members } from './data'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Container py={{ base: '16', md: '24' }}>
+export type AppProps = ContainerProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+  return (
+    <Container 
+    className={className} py={{ base: '16', md: '24' }}>
     <Stack spacing={{ base: '12', md: '16' }}>
       <Stack
         spacing={{ base: '8', md: '10' }}
@@ -74,3 +86,4 @@ export const App = () => (
     </Stack>
   </Container>
 )
+}

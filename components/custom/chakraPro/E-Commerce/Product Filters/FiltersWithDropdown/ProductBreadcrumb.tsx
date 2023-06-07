@@ -1,5 +1,6 @@
 import {
-  Box,
+  Box, 
+  BoxProps,
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,

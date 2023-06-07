@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerTableWithSearch(){
     registerComponent(App, {
         name: "TableWithSearch",
-        importPath: "./components/custom/chakraPro/Aplication/Tables/TableWithSearch",
+        importPath: "./components/chakra/chakraPro/Aplication/Tables/TableWithSearch",
         
         props: {
           title: {

@@ -2,6 +2,7 @@ import {
   Avatar,
   AvatarBadge,
   Box,
+  BoxProps,
   Center,
   HStack,
   Stack,
@@ -10,9 +11,19 @@ import {
 } from '@chakra-ui/react'
 import * as React from 'react'
 import { members } from './data'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Center maxW="sm" mx="auto" py={{ base: '4', md: '8' }}>
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+    return (
+    <Center className={className} maxW="sm" mx="auto" py={{ base: '4', md: '8' }}>
     <Box bg="bg-surface" py="4">
       <Stack divider={<StackDivider />} spacing="4">
         {members.map((member) => (
@@ -50,3 +61,4 @@ export const App = () => (
     </Box>
   </Center>
 )
+}

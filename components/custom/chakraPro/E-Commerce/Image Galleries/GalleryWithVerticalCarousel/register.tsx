@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerGalleryWithVerticalCarousel(){
     registerComponent(App, {
         name: "GalleryWithVerticalCarousel",
-        importPath: "./components/custom/chakraPro/GalleryWithVerticalCarousel",
+        importPath: "./components/chakra/chakraPro/GalleryWithVerticalCarousel",
         
         props: {
           title: {

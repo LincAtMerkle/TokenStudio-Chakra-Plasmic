@@ -1,5 +1,6 @@
 import {
-  Box,
+  Box, 
+  BoxProps,
   Container,
   Heading,
   Icon,
@@ -11,9 +12,20 @@ import {
 } from '@chakra-ui/react'
 import * as React from 'react'
 import { features } from './data'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Box as="section" bg="bg-surface">
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+  return (
+    <Box 
+    className={className}  as="section" bg="bg-surface">
     <Container py={{ base: '16', md: '24' }}>
       <Stack spacing={{ base: '12', md: '16' }}>
         <Stack spacing={{ base: '4', md: '5' }} align="center" textAlign="center">
@@ -59,3 +71,4 @@ export const App = () => (
     </Container>
   </Box>
 )
+          }

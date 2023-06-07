@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerSectionHeaderWithSearch(){
     registerComponent(App, {
         name: "SectionHeaderWithSearch",
-        importPath: "./components/custom/chakraPro/Aplication/Section Headers/SectionHeaderWithSearch",
+        importPath: "./components/chakra/chakraPro/Aplication/Section Headers/SectionHeaderWithSearch",
         
         props: {
           title: {

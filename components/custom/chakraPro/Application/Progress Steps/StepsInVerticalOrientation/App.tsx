@@ -1,13 +1,24 @@
-import { Box, Center, Container, Stack } from '@chakra-ui/react'
+import { Box, BoxProps, Center, Container, Stack } from '@chakra-ui/react'
 import * as React from 'react'
 import { steps } from './data'
 import { Step } from './Step'
 import { useStep } from './useStep'
+import { ReactNode } from 'react';
 
-export const App = () => {
-  const [currentStep, { setStep }] = useStep({ maxStep: steps.length, initialStep: 2 })
-  return (
-    <Box bg="bg-surface">
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+    const [currentStep, { setStep }] = useStep({ maxStep: steps.length, initialStep: 2 })
+    return (
+    <Box 
+    className={className}
+    bg="bg-surface">
       <Container py={{ base: '4', md: '8' }}>
         <Center>
           <Stack spacing="0">

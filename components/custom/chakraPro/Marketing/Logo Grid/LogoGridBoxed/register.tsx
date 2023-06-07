@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerLogoGridBoxed(){
     registerComponent(App, {
         name: "LogoGridBoxed",
-        importPath: "./components/custom/chakraPro/Marketing/Logo Grid/LogoGridBoxed",
+        importPath: "./components/chakra/chakraPro/Marketing/Logo Grid/LogoGridBoxed",
         
         props: {
           title: {

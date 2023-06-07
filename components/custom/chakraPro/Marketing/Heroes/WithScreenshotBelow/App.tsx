@@ -1,5 +1,6 @@
 import {
-  Box,
+  Box, 
+  BoxProps,
   Button,
   Circle,
   Heading,
@@ -14,10 +15,20 @@ import {
 import * as React from 'react'
 import { FaPlay } from 'react-icons/fa'
 import * as Logos from './Brands'
+import { ReactNode } from 'react';
 
-export const App = () => {
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
   return (
-    <Box>
+    <Box 
+    className={className}>
       <Box as="section" bg="gray.800" color="white" py="7.5rem">
         <Box maxW={{ base: 'xl', md: '5xl' }} mx="auto" px={{ base: '6', md: '8' }}>
           <Box textAlign="center">

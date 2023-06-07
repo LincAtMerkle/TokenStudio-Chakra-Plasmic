@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerPricingWithThreeTiers(){
     registerComponent(App, {
         name: "PricingWithThreeTiers",
-        importPath: "./components/custom/chakraPro/Marketing/Pricing/PricingWithThreeTiers",
+        importPath: "./components/chakra/chakraPro/Marketing/Pricing/PricingWithThreeTiers",
         
         props: {
           title: {

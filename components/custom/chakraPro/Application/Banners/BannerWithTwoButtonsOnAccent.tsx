@@ -1,5 +1,6 @@
 import {
-  Box,
+  Box, 
+  BoxProps,
   Button,
   CloseButton,
   Container,
@@ -12,11 +13,21 @@ import {
 } from '@chakra-ui/react'
 import * as React from 'react'
 import { BiCookie } from 'react-icons/bi'
+import { ReactNode } from 'react';
 
-export const App = () => {
-  const isMobile = useBreakpointValue({ base: true, md: false })
-  return (
-    <Box as="section" pb={{ base: '12', md: '24' }}>
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+    const isMobile = useBreakpointValue({ base: true, md: false })
+    return (
+    <Box 
+    className={className}  as="section" pb={{ base: '12', md: '24' }}>
       <Box bg="bg-accent" color="on-accent">
         <Container py={{ base: '4', md: '2.5' }} position="relative">
           <CloseButton display={{ md: 'none' }} position="absolute" right="2" top="2" />

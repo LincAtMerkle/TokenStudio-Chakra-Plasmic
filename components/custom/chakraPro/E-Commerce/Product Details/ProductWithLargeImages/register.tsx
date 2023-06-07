@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerProductWithLargeImages(){
     registerComponent(App, {
         name: "ProductWithLargeImages",
-        importPath: "./components/custom/chakraPro/ProductWithLargeImages",
+        importPath: "./components/chakra/chakraPro/ProductWithLargeImages",
         
         props: {
           title: {

@@ -1,4 +1,4 @@
-import { Box, Center, Flex, HStack, Icon, Text, useColorModeValue as mode } from '@chakra-ui/react'
+import { Box, BoxProps, Center, Flex, HStack, Icon, Text, useColorModeValue as mode } from '@chakra-ui/react'
 import * as React from 'react'
 
 type NavActionProps = {

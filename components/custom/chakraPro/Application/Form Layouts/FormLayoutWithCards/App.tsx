@@ -1,10 +1,20 @@
-import { Box, Container, Stack, StackDivider, Text } from '@chakra-ui/react'
+import { Box, Container, ContainerProps, Stack, StackDivider, Text } from '@chakra-ui/react'
 import * as React from 'react'
 import { PersonalInfoCard } from './AddressCard'
 import { ProfileCard } from './ProfileCard'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Container py={{ base: '4', md: '8' }}>
+export type AppProps = ContainerProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+    return (
+    <Container className={className} py={{ base: '4', md: '8' }}>
     <Stack spacing="5" divider={<StackDivider />}>
       <Stack
         direction={{ base: 'column', lg: 'row' }}
@@ -40,3 +50,4 @@ export const App = () => (
     </Stack>
   </Container>
 )
+}

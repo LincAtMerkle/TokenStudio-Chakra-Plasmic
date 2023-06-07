@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerLoginWithLeftBackground(){
     registerComponent(App, {
         name: "LoginWithLeftBackground",
-        importPath: "./components/custom/chakraPro/Application/Authentication/LoginWithLeftBackground",
+        importPath: "./components/chakra/chakraPro/Application/Authentication/LoginWithLeftBackground",
         
         props: {
           title: {

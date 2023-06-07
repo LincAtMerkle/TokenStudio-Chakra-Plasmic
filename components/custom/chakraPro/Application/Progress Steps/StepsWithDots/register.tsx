@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerStepsWithDots(){
     registerComponent(App, {
         name: "StepsWithDots",
-        importPath: "./components/custom/chakraPro/Aplication/Progress Steps/StepsWithDots",
+        importPath: "./components/chakra/chakraPro/Aplication/Progress Steps/StepsWithDots",
         
         props: {
           title: {

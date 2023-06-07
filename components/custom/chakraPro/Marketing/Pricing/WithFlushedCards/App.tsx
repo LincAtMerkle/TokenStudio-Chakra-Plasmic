@@ -1,5 +1,6 @@
 import {
-  Box,
+  Box, 
+  BoxProps,
   Button,
   Flex,
   Heading,
@@ -12,9 +13,20 @@ import * as React from 'react'
 import { DurationSwitcher } from './DurationSwitch'
 import { PricingCard } from './PricingCard'
 
-export const App = () => {
+import { ReactNode } from 'react';
+
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
   return (
-    <Box as="section" bg={mode('gray.100', 'gray.800')} py="24">
+    <Box 
+    className={className}  as="section" bg={mode('gray.100', 'gray.800')} py="24">
       <Box maxW={{ base: 'xl', md: '5xl' }} mx="auto" px={{ base: '6', md: '8' }}>
         <Flex direction="column" align={{ base: 'flex-start', md: 'center' }} maxW="2xl" mx="auto">
           <Heading

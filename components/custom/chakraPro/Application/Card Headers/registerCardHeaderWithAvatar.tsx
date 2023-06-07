@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerCardHeaderWithAvatar(){
     registerComponent(App, {
         name: "CardHeaderWithAvatar",
-        importPath: "./components/custom/chakraPro/Card Headers/CardHeaderWithAvatar",
+        importPath: "./components/chakra/chakraPro/Card Headers/CardHeaderWithAvatar",
         
         props: {
           title: {

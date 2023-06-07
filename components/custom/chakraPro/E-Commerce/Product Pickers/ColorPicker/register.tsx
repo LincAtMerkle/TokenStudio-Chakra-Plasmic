@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerColorPicker(){
     registerComponent(App, {
         name: "ColorPicker",
-        importPath: "./components/custom/chakraPro/ColorPicker",
+        importPath: "./components/chakra/chakraPro/ColorPicker",
         
         props: {
           title: {

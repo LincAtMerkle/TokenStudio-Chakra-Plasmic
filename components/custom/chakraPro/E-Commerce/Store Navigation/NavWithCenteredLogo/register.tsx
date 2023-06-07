@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerNavWithCenteredLogo(){
     registerComponent(App, {
         name: "NavWithCenteredLogo",
-        importPath: "./components/custom/chakraPro/NavWithCenteredLogo",
+        importPath: "./components/chakra/chakraPro/NavWithCenteredLogo",
         
         props: {
           title: {

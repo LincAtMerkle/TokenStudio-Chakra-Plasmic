@@ -1,4 +1,4 @@
-import { Box } from '@chakra-ui/react'
+import { Box, BoxProps } from '@chakra-ui/react'
 import * as React from 'react'
 import { Placeholder } from './Placeholder'
 

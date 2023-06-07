@@ -1,4 +1,4 @@
-import { Box, Popover } from '@chakra-ui/react'
+import { Box, BoxProps, Popover } from '@chakra-ui/react'
 import React from 'react'
 import { CheckboxFilter } from './CheckboxFilter'
 import { ColorPicker } from './ColorPicker'

@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerListWithDraggableElements(){
     registerComponent(App, {
         name: "ListWithDraggableElements",
-        importPath: "./components/custom/chakraPro/Aplication/Lists/ListWithDraggableElements",
+        importPath: "./components/chakra/chakraPro/Aplication/Lists/ListWithDraggableElements",
         
         props: {
           title: {

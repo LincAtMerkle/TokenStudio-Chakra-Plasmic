@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerDividerWithRadioButtonGroup(){
     registerComponent(App, {
         name: "DividerWithRadioButtonGroup",
-        importPath: "./components/custom/chakraPro/Application/Dividers/DividerWithRadioButtonGroup",
+        importPath: "./components/chakra/chakraPro/Application/Dividers/DividerWithRadioButtonGroup",
         props: {
           title: {
           type: "string",

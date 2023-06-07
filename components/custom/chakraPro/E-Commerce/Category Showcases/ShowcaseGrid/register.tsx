@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerShowcaseGrid(){
     registerComponent(App, {
         name: "ShowcaseGrid",
-        importPath: "./components/custom/chakraPro/ShowcaseGrid",
+        importPath: "./components/chakra/chakraPro/ShowcaseGrid",
         
         props: {
           title: {

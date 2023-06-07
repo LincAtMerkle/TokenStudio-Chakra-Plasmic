@@ -3,6 +3,7 @@ import {
   Button,
   Checkbox,
   Container,
+  ContainerProps,
   Divider,
   FormControl,
   FormLabel,
@@ -18,9 +19,21 @@ import * as React from 'react'
 import { Logo } from './Logo'
 import { OAuthButtonGroup } from './OAuthButtonGroup'
 import { PasswordField } from './PasswordField'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Container maxW="lg" py={{ base: '12', md: '24' }} px={{ base: '0', sm: '8' }}>
+export type AppProps = ContainerProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+  return (
+    <Container 
+    className={className}
+    maxW="lg" py={{ base: '12', md: '24' }} px={{ base: '0', sm: '8' }}>
     <Stack spacing="8">
       <Stack spacing="6">
         <Logo />
@@ -29,20 +42,22 @@ export const App = () => (
             Log in to your account
           </Heading>
           <HStack spacing="1" justify="center">
-            <Text color="muted">Don't have an account?</Text>
+            <Text color="muted">Dont have an account?</Text>
             <Button variant="link" colorScheme="pink">
               Sign up
             </Button>
           </HStack>
-        </Stack>
+        </Stack> 
       </Stack>
+              
       <Box
         py={{ base: '0', sm: '8' }}
         px={{ base: '4', sm: '10' }}
-        bg={useBreakpointValue({ base: 'transparent', sm: 'bg-surface' })}
+        // bg={useBreakpointValue({ base: 'transparent', sm: 'bg-surface' })}
         boxShadow={{ base: 'none', sm: useColorModeValue('md', 'md-dark') }}
         borderRadius={{ base: 'none', sm: 'xl' }}
       >
+
         <Stack spacing="6">
           <Stack spacing="5">
             <FormControl>
@@ -70,6 +85,7 @@ export const App = () => (
           </Stack>
         </Stack>
       </Box>
-    </Stack>
+    </Stack> 
   </Container>
 )
+  }

@@ -1,4 +1,4 @@
-import { Box, Circle, Flex, Stack, useColorModeValue as mode } from '@chakra-ui/react'
+import { Box, BoxProps, Circle, Flex, Stack, useColorModeValue as mode } from '@chakra-ui/react'
 import * as React from 'react'
 import {
   BiBuoy,
@@ -17,10 +17,19 @@ import {
 import { AccountSwitcher } from './AccountSwitcher'
 import { NavGroup } from './NavGroup'
 import { NavItem } from './NavItem'
+import { ReactNode } from 'react';
 
-export const App = () => {
-  return (
-    <Box height="100vh" overflow="hidden" position="relative">
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+    return (
+    <Box className={className} height="100vh" overflow="hidden" position="relative">
       <Flex h="full" id="app-container">
         <Box w="64" bg="gray.900" color="white" fontSize="sm">
           <Flex h="full" direction="column" px="4" py="4">

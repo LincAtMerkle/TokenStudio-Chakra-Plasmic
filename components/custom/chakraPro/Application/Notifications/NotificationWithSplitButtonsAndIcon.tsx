@@ -1,5 +1,6 @@
 import {
-  Box,
+  Box, 
+  BoxProps,
   Button,
   Center,
   Flex,
@@ -11,9 +12,19 @@ import {
 } from '@chakra-ui/react'
 import * as React from 'react'
 import { FiInfo } from 'react-icons/fi'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Box
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+    return (
+    <Box className={className}
     as="section"
     pt={{ base: '4', md: '8' }}
     pb={{ base: '12', md: '24' }}
@@ -54,3 +65,4 @@ export const App = () => (
     </Flex>
   </Box>
 )
+}

@@ -1,4 +1,4 @@
-import { Box, Image, Text } from '@chakra-ui/react'
+import { Box, BoxProps, Image, Text } from '@chakra-ui/react'
 import * as React from 'react'
 
 type NavProductItemProps = {

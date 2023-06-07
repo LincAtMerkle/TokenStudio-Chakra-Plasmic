@@ -1,4 +1,4 @@
-import { Box, Button, Heading, Input, Stack, Text, useBreakpointValue } from '@chakra-ui/react'
+import { Box, BoxProps, Button, Heading, Input, Stack, Text, useBreakpointValue } from '@chakra-ui/react'
 
 export const BlogPageHeader = () => {
   return (

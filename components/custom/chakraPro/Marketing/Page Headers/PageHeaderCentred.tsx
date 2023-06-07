@@ -1,7 +1,13 @@
-import { Box, Container, Heading, Stack, Text, useBreakpointValue } from '@chakra-ui/react'
+import { Box, BoxProps, Container, Heading, Stack, Text, useBreakpointValue } from '@chakra-ui/react'
+import { ReactNode } from "react";
 
-export const App = () => (
-  <Box as="section" bg="bg-surface" py={{ base: '16', md: '24' }}>
+export type AppProps = BoxProps & {
+  children: ReactNode;
+};
+
+export function App({ className, children, ...rest }: AppProps) {
+  return (
+    <Box className={className} as="section" bg="bg-surface" py={{ base: '16', md: '24' }}>
     <Container>
       <Stack spacing={{ base: '4', md: '6' }} align="center" textAlign="center">
         <Stack spacing="3">
@@ -19,3 +25,4 @@ export const App = () => (
     </Container>
   </Box>
 )
+}

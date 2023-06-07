@@ -1,5 +1,6 @@
 import {
-  Box,
+  Box, 
+  BoxProps,
   Heading,
   HStack,
   SimpleGrid,
@@ -10,6 +11,7 @@ import {
 import * as React from 'react'
 import { HiCheckCircle } from 'react-icons/hi'
 import { PricingCard } from './PricingCard'
+import { ReactNode } from 'react';
 
 const FeatureItem = (props: TextProps) => (
   <HStack>
@@ -18,9 +20,20 @@ const FeatureItem = (props: TextProps) => (
   </HStack>
 )
 
-export const App = () => {
+
+
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
   return (
-    <Box as="section" bg={mode('gray.50', 'gray.800')} py="20">
+    <Box 
+    className={className} as="section" bg={mode('gray.50', 'gray.800')} py="20">
       <Box maxW={{ base: 'xl', md: '5xl' }} mx="auto" px={{ base: '6', md: '8' }}>
         <Box maxW="2xl" mx="auto" textAlign={{ sm: 'center' }}>
           <Text

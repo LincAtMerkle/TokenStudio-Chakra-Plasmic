@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerCardWithDownloadItem(){
     registerComponent(App, {
         name: "CardWithDownloadItem",
-        importPath: "./components/custom/chakraPro/Application/Cards/CardWithDownloadItem",
+        importPath: "./components/chakra/chakraPro/Application/Cards/CardWithDownloadItem",
         
         props: {
           title: {

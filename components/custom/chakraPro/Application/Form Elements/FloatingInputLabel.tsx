@@ -1,8 +1,18 @@
-import { Box, Container, FormControl, FormLabel, Input, Stack } from '@chakra-ui/react'
+import { Box, BoxProps, Container, FormControl, FormLabel, Input, Stack } from '@chakra-ui/react'
 import * as React from 'react'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Box as="section" bg="bg-surface" pt="12" pb={{ base: '4', md: '8' }}>
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+    return (
+    <Box className={className} as="section" bg="bg-surface" pt="12" pb={{ base: '4', md: '8' }}>
     <Container maxW="lg">
       <Stack spacing="10">
         <FormControl>
@@ -28,3 +38,4 @@ export const App = () => (
     </Container>
   </Box>
 )
+}

@@ -1,5 +1,6 @@
 import {
-  Box,
+  Box, 
+  BoxProps,
   Flex,
   Heading,
   HStack,
@@ -12,9 +13,19 @@ import {
 } from '@chakra-ui/react'
 import * as React from 'react'
 import { FaArrowRight } from 'react-icons/fa'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Box
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+    return (
+    <Box className={className}
     bg={{
       base: useColorModeValue('white', 'gray.800'),
       lg: useColorModeValue('pink.200', 'pink.500'),
@@ -32,7 +43,7 @@ export const App = () => (
         >
           <Stack spacing={{ base: '8', lg: '10' }}>
             <Stack spacing={{ base: '2', lg: '4' }}>
-              <Heading size="xl">It's summer time!</Heading>
+              <Heading size="xl">It&apos;s summer time!</Heading>
               <Heading size="xl" fontWeight="normal">
                 Get the best fashion
               </Heading>
@@ -68,3 +79,4 @@ export const App = () => (
     </Box>
   </Box>
 )
+}

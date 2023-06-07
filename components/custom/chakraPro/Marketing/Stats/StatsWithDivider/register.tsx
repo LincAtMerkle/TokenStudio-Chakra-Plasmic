@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerStatsWithDivider(){
     registerComponent(App, {
         name: "StatsWithDivider",
-        importPath: "./components/custom/chakraPro/Marketing/Stats/StatsWithDivider",
+        importPath: "./components/chakra/chakraPro/Marketing/Stats/StatsWithDivider",
         
         props: {
           title: {

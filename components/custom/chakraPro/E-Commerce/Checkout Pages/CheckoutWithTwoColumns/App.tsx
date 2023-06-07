@@ -1,12 +1,22 @@
-import { Box, Flex, Stack, useBreakpointValue, useColorModeValue } from '@chakra-ui/react'
+import { Box, BoxProps, Flex, Stack, useBreakpointValue, useColorModeValue } from '@chakra-ui/react'
 import * as React from 'react'
 import { OrderSummary } from './OrderSummary'
 import { PaymentInformation } from './PaymentInformation'
 import { ShippingInformation } from './ShippingInformation'
 import { ShippingMethod } from './ShippingMethod'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Box
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+    return (
+    <Box className={className}
     bgGradient={useColorModeValue(
       'linear(to-l, gray.50 50%, white 50%)',
       'linear(to-l, gray.700 50%, gray.800 50%)',
@@ -37,3 +47,4 @@ export const App = () => (
     </Flex>
   </Box>
 )
+}

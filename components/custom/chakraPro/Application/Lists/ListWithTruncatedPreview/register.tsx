@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerListWithTruncatedPreview(){
     registerComponent(App, {
         name: "ListWithTruncatedPreview",
-        importPath: "./components/custom/chakraPro/Aplication/Lists/ListWithTruncatedPreview",
+        importPath: "./components/chakra/chakraPro/Aplication/Lists/ListWithTruncatedPreview",
         
         props: {
           title: {

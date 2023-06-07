@@ -1,4 +1,4 @@
-import { Box, Container, FormControl, FormLabel, HStack, Icon, Text } from '@chakra-ui/react'
+import { Box, BoxProps, Container, FormControl, FormLabel, HStack, Icon, Text } from '@chakra-ui/react'
 import * as React from 'react'
 import { FiMonitor, FiMoon, FiSun } from 'react-icons/fi'
 import { CustomSelect } from './CustomSelect'

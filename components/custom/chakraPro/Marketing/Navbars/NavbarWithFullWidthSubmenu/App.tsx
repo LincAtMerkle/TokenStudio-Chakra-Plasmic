@@ -1,5 +1,6 @@
 import {
-  Box,
+  Box, 
+  BoxProps,
   Button,
   ButtonGroup,
   Container,
@@ -15,12 +16,23 @@ import { FiMenu } from 'react-icons/fi'
 import { PopoverIcon } from './PopoverIcon'
 import { Logo } from './Logo'
 import { ResourcesSubmenu } from './ResourcesSubmenu'
+import { ReactNode } from 'react';
 
-export const App = () => {
-  const isDesktop = useBreakpointValue({ base: false, lg: true })
-  const { onToggle, isOpen } = useDisclosure({ defaultIsOpen: true })
-  return (
-    <Box as="section" minH="md">
+  export type AppProps = BoxProps & {
+    children: ReactNode
+  }
+  
+  export function App({
+    className,
+    children,
+    ...rest
+    }: AppProps) {
+      const isDesktop = useBreakpointValue({ base: false, lg: true })
+      const { onToggle, isOpen } = useDisclosure({ defaultIsOpen: true })    
+    return (
+      <Box 
+      className={className}
+      as="section" minH="md">
       <Box as="nav" bg="bg-surface">
         <Container py={{ base: '4', lg: '5' }}>
           <HStack spacing="10" justify="space-between">

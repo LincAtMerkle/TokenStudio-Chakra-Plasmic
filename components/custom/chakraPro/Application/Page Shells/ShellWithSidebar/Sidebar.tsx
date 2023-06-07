@@ -1,6 +1,7 @@
 import { Icon } from '@chakra-ui/icons'
 import {
-  Box,
+  Box, 
+  BoxProps,
   Button,
   Divider,
   Flex,

@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerSectionHeaderWithFilterButtonGroup(){
     registerComponent(App, {
         name: "SectionHeaderWithFilterButtonGroup",
-        importPath: "./components/custom/chakraPro/Aplication/Section Headers/SectionHeaderWithFilterButtonGroup",
+        importPath: "./components/chakra/chakraPro/Aplication/Section Headers/SectionHeaderWithFilterButtonGroup",
         
         props: {
           title: {

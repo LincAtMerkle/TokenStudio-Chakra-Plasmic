@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerWithFeaturedLogos(){
     registerComponent(App, {
         name: "WithFeaturedLogos",
-        importPath: "./components/custom/chakraPro/Marketing/Footers/WithFeaturedLogos",
+        importPath: "./components/chakra/chakraPro/Marketing/Footers/WithFeaturedLogos",
         
         props: {
           title: {

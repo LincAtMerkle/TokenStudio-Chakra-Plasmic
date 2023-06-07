@@ -1,5 +1,6 @@
 import {
-  Box,
+  Box, 
+  BoxProps,
   Button,
   Container,
   Divider,
@@ -12,9 +13,20 @@ import {
 import * as React from 'react'
 import { Logo } from './Logo'
 import { GoogleIcon } from './ProviderIcons'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Box bgGradient={{ sm: 'linear(to-r, pink.600, purple.600)' }} py={{ base: '12', md: '24' }}>
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+  return (
+    <Box 
+    className={className} bgGradient={{ sm: 'linear(to-r, pink.600, purple.600)' }} py={{ base: '12', md: '24' }}>
     <Container
       maxW="md"
       py={{ base: '0', sm: '8' }}
@@ -57,3 +69,4 @@ export const App = () => (
     </Container>
   </Box>
 )
+  }

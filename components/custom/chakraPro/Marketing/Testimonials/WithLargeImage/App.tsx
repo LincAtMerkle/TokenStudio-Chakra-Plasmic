@@ -1,11 +1,22 @@
-import { Box, Img, SimpleGrid, Stack, Text, useColorModeValue as mode } from '@chakra-ui/react'
+import { Box, BoxProps, Img, SimpleGrid, Stack, Text, useColorModeValue as mode } from '@chakra-ui/react'
 import * as React from 'react'
 import { HiChartBar, HiClock, HiCurrencyDollar } from 'react-icons/hi'
 import { Logo } from './Logo'
 import { Stat } from './Stat'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Box bg={mode('gray.50', 'gray.800')} as="section" py={{ base: '12', md: '24' }}>
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+  return (
+    <Box 
+    className={className} bg={mode('gray.50', 'gray.800')} as="section" py={{ base: '12', md: '24' }}>
     <Box maxW={{ base: 'xl', md: '7xl' }} mx="auto" px={{ base: '6', md: '8' }}>
       <Stack
         direction={{ base: 'column', md: 'row' }}
@@ -71,3 +82,4 @@ export const App = () => (
     </Box>
   </Box>
 )
+}

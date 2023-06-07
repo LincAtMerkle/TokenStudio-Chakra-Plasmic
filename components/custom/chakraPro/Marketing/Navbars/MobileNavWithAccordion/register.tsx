@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerMobileNavWithAccordion(){
     registerComponent(App, {
         name: "MobileNavWithAccordion",
-        importPath: "./components/custom/chakraPro/Marketing/Navbars/MobileNavWithAccordion",
+        importPath: "./components/chakra/chakraPro/Marketing/Navbars/MobileNavWithAccordion",
         
         props: {
           title: {

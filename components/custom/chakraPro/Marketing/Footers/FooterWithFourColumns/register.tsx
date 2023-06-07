@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerFooterWithFourColumns(){
     registerComponent(App, {
         name: "FooterWithFourColumns",
-        importPath: "./components/custom/chakraPro/Marketing/Footers/FooterWithFourColumns",
+        importPath: "./components/chakra/chakraPro/Marketing/Footers/FooterWithFourColumns",
         
         props: {
           title: {

@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerSignUpWithQuote(){
     registerComponent(App, {
         name: "SignUpWithQuote",
-        importPath: "./components/custom/chakraPro/Application/Authentication/SignUpWithQuote",
+        importPath: "./components/chakra/chakraPro/Application/Authentication/SignUpWithQuote",
         
         props: {
           title: {

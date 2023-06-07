@@ -1,11 +1,22 @@
-import { Box, Container, Heading, Stack, Text, useBreakpointValue } from '@chakra-ui/react'
+import { Box, BoxProps, Container, Heading, Stack, Text, useBreakpointValue } from '@chakra-ui/react'
 import * as React from 'react'
 import { features } from './data'
 import { PricingCard } from './PricingCard'
 import { PricingFeature } from './PricingFeature'
+import { ReactNode } from 'react';
 
-export const App = () => (
-  <Box as="section">
+export type AppProps = BoxProps & {
+  children: ReactNode
+}
+
+export function App({
+  className,
+  children,
+  ...rest
+  }: AppProps) {
+  return (
+    <Box 
+    className={className} as="section">
     <Container py={{ base: '16', md: '24' }}>
       <Stack spacing={{ base: '12', md: '16' }}>
         <Stack spacing={{ base: '4', md: '6' }}>
@@ -34,3 +45,4 @@ export const App = () => (
     </Container>
   </Box>
 )
+            }

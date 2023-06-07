@@ -4,7 +4,7 @@ import {registerComponent } from "@plasmicapp/host";
 export function registerStateWithLabel(){
     registerComponent(App, {
         name: "StateWithLabel",
-        importPath: "./components/custom/chakraPro/Aplication/Stats/StateWithLabel",
+        importPath: "./components/chakra/chakraPro/Aplication/Stats/StateWithLabel",
         
         props: {
           title: {
