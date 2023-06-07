@@ -6,14 +6,14 @@ __metadata:
   cacheKey: 8
 
 "@0no-co/graphql.web@npm:^1.0.1":
-  version: 1.0.3
-  resolution: "@0no-co/graphql.web@npm:1.0.3"
+  version: 1.0.4
+  resolution: "@0no-co/graphql.web@npm:1.0.4"
   peerDependencies:
     graphql: ^14.0.0 || ^15.0.0 || ^16.0.0
   peerDependenciesMeta:
     graphql:
       optional: true
-  checksum: 898e8262e976a39a2ecd710c8d7af8d3c006d9c95198700510833d0664ca67de6635a9e2dca14ac033baa7e0c917891766a1a0d91daaba972e8a1b3ed28e46fe
+  checksum: d415fb2f063a024e2d382e8dc5e66929d0d9bf94f2c22e03cde201dc2fa03e15d21274dbe5c23a26ce016a4cac3db93ad99fb454de76fd94bc1600fd7062eebe
   languageName: node
   linkType: hard
 
@@ -5004,9 +5004,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.411":
-  version: 1.4.421
-  resolution: "electron-to-chromium@npm:1.4.421"
-  checksum: 91baf5e7de012bdd61ca85623cd95da8441d1b8e8268f3999a4cd110b9451be1be2975eb1268ee34a99c2703a07e4b0dc7e940b96b39800c65c3840a9a8ec62f
+  version: 1.4.423
+  resolution: "electron-to-chromium@npm:1.4.423"
+  checksum: 24af6be35b9f0eafd880cb2b5897235df7cba7f0558e1447f20de8560ec00055edb81759725c775b8d70fdd63415440a5e4886dd48ecff767c9794d85a0f37d8
   languageName: node
   linkType: hard
 
