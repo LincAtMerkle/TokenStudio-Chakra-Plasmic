@@ -3,7 +3,7 @@ import {
   AccordionItemProps,
   AccordionPanelProps,
   AccordionProps,
-  IconProps,
+  AccordionIconProps,
 } from "@chakra-ui/react";
 import { CodeComponentMeta } from "@plasmicapp/host/registerComponent";
 import {
@@ -130,7 +130,7 @@ export const accordionPanelMeta: CodeComponentMeta<AccordionPanelProps> = {
   },
 };
 
-export const accordionIconMeta: CodeComponentMeta<IconProps> = {
+export const accordionIconMeta: CodeComponentMeta<AccordionIconProps> = {
   ...getComponentNameAndImportMeta("AccordionIcon", "AccordionButton"),
   props: {},
 };
