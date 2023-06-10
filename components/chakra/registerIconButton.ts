@@ -1,11 +1,11 @@
 import { IconButtonProps } from "@chakra-ui/react";
-import { ComponentMeta } from "@plasmicapp/host/registerComponent";
+import { CodeComponentMeta } from "@plasmicapp/host/registerComponent";
 import {
   getComponentNameAndImportMeta,
   getPlasmicComponentName,
 } from "./utils";
 
-export const iconButtonMeta: ComponentMeta<IconButtonProps> = {
+export const iconButtonMeta: CodeComponentMeta<IconButtonProps> = {
   ...getComponentNameAndImportMeta("IconButton"),
   props: {
     size: {

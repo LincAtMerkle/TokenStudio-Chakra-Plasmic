@@ -22,6 +22,7 @@ import {
   Checkbox,
   CheckboxGroup,
   Code,
+  Container,
   Divider,
   FormControl,
   FormErrorMessage,
@@ -64,6 +65,8 @@ import {
   StatNumber,
   Switch,
   Stack,
+  HStack,
+  VStack,
   Tab,
   Table,
   TableCaption,
@@ -92,7 +95,7 @@ import {
 import { Registerable } from "./registerable";
 
 import registerComponent, {
-  ComponentMeta,
+  CodeComponentMeta,
 } from "@plasmicapp/host/registerComponent";
 import {
   accordionButtonMeta,
@@ -114,6 +117,7 @@ import { buttonGroupMeta, buttonMeta } from "./registerButton";
 import { registerChakraProvider } from "./registerChakraProvider";
 import { checkboxGroupMeta, checkboxMeta } from "./registerCheckBox";
 import { codeMeta } from "./registerCode";
+import { containerMeta } from "./registerContainer";
 import { dividerMeta } from "./registerDivider";
 import {
   formControlMeta,
@@ -202,7 +206,11 @@ import {
   tagCloseButtonMeta,
 } from "./registerTag";
 import { iconButtonMeta } from "./registerIconButton";
-import { stackMeta } from "./registerStack";
+import { 
+  stackMeta,
+  vStackMeta,
+  hStackMeta,
+ } from "./registerStack";
 
 export * from "./registerable";
 export * from "./registerAccordion";
@@ -214,6 +222,7 @@ export * from "./registerButton";
 export * from "./registerChakraProvider";
 export * from "./registerCheckBox";
 export * from "./registerCode";
+export * from "./registerContainer";
 export * from "./registerDivider";
 export * from "./registerFormControl";
 export * from "./registerHeading";
@@ -241,7 +250,7 @@ export * from "./registerStack";
 export function registerAllChakra(loader?: Registerable) {
   const _registerComponent = <T extends React.ComponentType<any>>(
     Component: T,
-    defaultMeta: ComponentMeta<React.ComponentProps<T>>
+    defaultMeta: CodeComponentMeta<React.ComponentProps<T>>
   ) => {
     if (loader) {
       loader.registerComponent(Component, defaultMeta);
@@ -270,6 +279,7 @@ export function registerAllChakra(loader?: Registerable) {
   _registerComponent(Checkbox, checkboxMeta);
   _registerComponent(CheckboxGroup, checkboxGroupMeta);
   _registerComponent(Code, codeMeta);
+  _registerComponent(Container, containerMeta);
   _registerComponent(Divider, dividerMeta);
   _registerComponent(FormControl, formControlMeta);
   _registerComponent(FormErrorMessage, formErrorMessageMeta);
@@ -343,4 +353,6 @@ export function registerAllChakra(loader?: Registerable) {
   _registerComponent(CardBody, cardBodyMeta);
   _registerComponent(CardFooter, cardFooterMeta);
   _registerComponent(Stack, stackMeta);
+  _registerComponent(HStack, hStackMeta);
+  _registerComponent(VStack, vStackMeta);
 }

@@ -1,5 +1,5 @@
 import { DartsIcon } from "./CustomIcons";
-import { registerComponent } from "@plasmicapp/host";
+import { registerComponent } from '@plasmicapp/react-web/lib/host';
 
 export function registerDartsIcon() {
   registerComponent(DartsIcon, {

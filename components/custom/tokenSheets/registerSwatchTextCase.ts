@@ -1,5 +1,5 @@
 import { SwatchTextCase } from "./SwatchTextCase";
-import { registerComponent } from "@plasmicapp/host";
+import { registerComponent } from '@plasmicapp/react-web/lib/host';
 
 export function registerSwatchTextCase() {
   registerComponent(SwatchTextCase, {

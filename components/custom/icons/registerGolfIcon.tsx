@@ -1,5 +1,5 @@
 import { GolfIcon } from "./CustomIcons";
-import { registerComponent } from "@plasmicapp/host";
+import { registerComponent } from '@plasmicapp/react-web/lib/host';
 
 export function registerGolfIcon() {
   registerComponent(GolfIcon, {

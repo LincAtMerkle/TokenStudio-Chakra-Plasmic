@@ -4,14 +4,14 @@ import {
   IconProps,
   TagCloseButtonProps,
 } from "@chakra-ui/react";
-import { registerComponent } from "@plasmicapp/host";
-import { ComponentMeta } from "@plasmicapp/host/registerComponent";
+import { registerComponent } from '@plasmicapp/react-web/lib/host';
+import { CodeComponentMeta } from "@plasmicapp/host/registerComponent";
 import {
   getComponentNameAndImportMeta,
   getPlasmicComponentName,
 } from "./utils";
 
-export const tagMeta: ComponentMeta<TagProps> = {
+export const tagMeta: CodeComponentMeta<TagProps> = {
   ...getComponentNameAndImportMeta("Tag"),
   props: {
     spacing: {
@@ -74,7 +74,7 @@ export const tagMeta: ComponentMeta<TagProps> = {
   },
 };
 
-export const tagLeftIconMeta: ComponentMeta<IconProps> = {
+export const tagLeftIconMeta: CodeComponentMeta<IconProps> = {
   ...getComponentNameAndImportMeta("TagLeftIcon"),
   props: {
     children: {
@@ -89,7 +89,7 @@ export const tagLeftIconMeta: ComponentMeta<IconProps> = {
   },
 };
 
-export const tagLabelMeta: ComponentMeta<TagLabelProps> = {
+export const tagLabelMeta: CodeComponentMeta<TagLabelProps> = {
   ...getComponentNameAndImportMeta("TagLabel"),
 
   props: {
@@ -105,7 +105,7 @@ export const tagLabelMeta: ComponentMeta<TagLabelProps> = {
   },
 };
 
-export const tagRightIconMeta: ComponentMeta<IconProps> = {
+export const tagRightIconMeta: CodeComponentMeta<IconProps> = {
   ...getComponentNameAndImportMeta("TagRightIcon"),
   props: {
     children: {
@@ -120,7 +120,7 @@ export const tagRightIconMeta: ComponentMeta<IconProps> = {
   },
 };
 
-export const tagCloseButtonMeta: ComponentMeta<TagCloseButtonProps> = {
+export const tagCloseButtonMeta: CodeComponentMeta<TagCloseButtonProps> = {
   ...getComponentNameAndImportMeta("TagCloseButton"),
   props: {},
 };

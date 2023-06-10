@@ -1,5 +1,5 @@
 import { SwatchLetterSpacing } from "./SwatchLetterSpacing";
-import { registerComponent } from "@plasmicapp/host";
+import { registerComponent } from '@plasmicapp/react-web/lib/host';
 
 export function registerSwatchLetterSpacing() {
   registerComponent(SwatchLetterSpacing, {

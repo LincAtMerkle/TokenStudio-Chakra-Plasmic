@@ -1,5 +1,5 @@
 import { SwatchSizing } from "./SwatchSizing";
-import { registerComponent } from "@plasmicapp/host";
+import { registerComponent } from '@plasmicapp/react-web/lib/host';
 
 export function registerSwatchSizing() {
   registerComponent(SwatchSizing, {

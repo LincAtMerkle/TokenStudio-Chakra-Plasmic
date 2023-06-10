@@ -5,13 +5,13 @@ import {
   NumberInputProps,
   NumberInputStepperProps,
 } from "@chakra-ui/react";
-import { ComponentMeta } from "@plasmicapp/host/registerComponent";
+import { CodeComponentMeta } from "@plasmicapp/host/registerComponent";
 import {
   getComponentNameAndImportMeta,
   getPlasmicComponentName,
 } from "./utils";
 
-export const numberInputMeta: ComponentMeta<NumberInputProps> = {
+export const numberInputMeta: CodeComponentMeta<NumberInputProps> = {
   ...getComponentNameAndImportMeta("NumberInput"),
   props: {
     size: {
@@ -90,7 +90,7 @@ export const numberInputMeta: ComponentMeta<NumberInputProps> = {
   },
 };
 
-export const numberInputStepperMeta: ComponentMeta<NumberInputStepperProps> = {
+export const numberInputStepperMeta: CodeComponentMeta<NumberInputStepperProps> = {
   ...getComponentNameAndImportMeta("NumberInputStepper", "NumberInput"),
   props: {
     children: {
@@ -113,7 +113,7 @@ export const numberInputStepperMeta: ComponentMeta<NumberInputStepperProps> = {
   },
 };
 
-export const numberDecrementStepperMeta: ComponentMeta<NumberDecrementStepperProps> = {
+export const numberDecrementStepperMeta: CodeComponentMeta<NumberDecrementStepperProps> = {
   ...getComponentNameAndImportMeta(
     "NumberDecrementStepper",
     "NumberInputStepper"
@@ -121,7 +121,7 @@ export const numberDecrementStepperMeta: ComponentMeta<NumberDecrementStepperPro
   props: {},
 };
 
-export const numberIncrementStepperMeta: ComponentMeta<NumberIncrementStepperProps> = {
+export const numberIncrementStepperMeta: CodeComponentMeta<NumberIncrementStepperProps> = {
   ...getComponentNameAndImportMeta(
     "NumberIncrementStepper",
     "NumberInputStepper"
@@ -129,7 +129,7 @@ export const numberIncrementStepperMeta: ComponentMeta<NumberIncrementStepperPro
   props: {},
 };
 
-export const numberInputFieldMeta: ComponentMeta<NumberInputFieldProps> = {
+export const numberInputFieldMeta: CodeComponentMeta<NumberInputFieldProps> = {
   ...getComponentNameAndImportMeta("NumberInputField", "NumberInput"),
   props: {},
 };

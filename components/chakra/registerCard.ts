@@ -1,11 +1,11 @@
 import { CardProps, CardHeaderProps, CardBodyProps, CardFooterProps, IconProps } from "@chakra-ui/react";
-import { ComponentMeta } from "@plasmicapp/host/registerComponent";
+import { CodeComponentMeta } from "@plasmicapp/host/registerComponent";
 import {
   getComponentNameAndImportMeta,
   getPlasmicComponentName,
 } from "./utils";
 
-export const cardMeta: ComponentMeta<CardProps> = {
+export const cardMeta: CodeComponentMeta<CardProps> = {
   ...getComponentNameAndImportMeta("Card"),
   props: {
     size: {
@@ -40,7 +40,7 @@ export const cardMeta: ComponentMeta<CardProps> = {
     },
   },
 };
-export const cardHeaderMeta: ComponentMeta<CardHeaderProps> = {
+export const cardHeaderMeta: CodeComponentMeta<CardHeaderProps> = {
   ...getComponentNameAndImportMeta("CardHeader", "Card"),
   props: {
     size: {
@@ -60,7 +60,7 @@ export const cardHeaderMeta: ComponentMeta<CardHeaderProps> = {
     // },
   },
 };
-export const cardBodyMeta: ComponentMeta<CardBodyProps> = {
+export const cardBodyMeta: CodeComponentMeta<CardBodyProps> = {
   ...getComponentNameAndImportMeta("CardBody", "Card"),
   props: {
     children: {
@@ -81,7 +81,7 @@ export const cardBodyMeta: ComponentMeta<CardBodyProps> = {
     },
   },
 };
-export const cardFooterMeta: ComponentMeta<CardFooterProps> = {
+export const cardFooterMeta: CodeComponentMeta<CardFooterProps> = {
   ...getComponentNameAndImportMeta("CardFooter", "Card"),
   props: {
     children: {

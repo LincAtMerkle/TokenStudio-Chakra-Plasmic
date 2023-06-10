@@ -1,5 +1,5 @@
 import { SwatchTypography } from "./SwatchTypography";
-import { registerComponent } from "@plasmicapp/host";
+import { registerComponent } from '@plasmicapp/react-web/lib/host';
 
 export function registerSwatchTypography() {
   registerComponent(SwatchTypography, {
