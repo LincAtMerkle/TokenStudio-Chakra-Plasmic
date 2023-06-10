@@ -1,4 +1,4 @@
-import { Rating } from '@chakra-ui-pro/rating/src/Rating'
+// import { Rating } from '@chakra-ui-pro/rating/src/Rating'
 import {
   Button,
   FormControl,
@@ -34,7 +34,7 @@ export const ReviewForm = (props: React.ComponentProps<'form'>) => (
 
       <FormControl id="rating">
         <FormLabel color={useColorModeValue('gray.700', 'gray.200')}>Rating</FormLabel>
-        <Rating defaultValue={2} size="xl" />
+        {/* <Rating defaultValue={2} size="xl" /> */}
       </FormControl>
 
       <FormControl id="title">

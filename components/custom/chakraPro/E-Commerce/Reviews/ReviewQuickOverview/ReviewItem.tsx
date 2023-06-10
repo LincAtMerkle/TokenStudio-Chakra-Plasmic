@@ -1,4 +1,4 @@
-import { Rating } from '@chakra-ui-pro/rating/src/Rating'
+//import { Rating } from '@chakra-ui-pro/rating/src/Rating'
 import { Heading, Stack, Text, useColorModeValue } from '@chakra-ui/react'
 import * as React from 'react'
 import { Review } from './_data'
@@ -12,7 +12,7 @@ export const ReviewItem = (props: Props) => {
   return (
     <Stack spacing="2.5">
       <Stack direction="row" spacing="3">
-        <Rating defaultValue={review.rating} size="sm" />
+        {/* <Rating defaultValue={review.rating} size="sm" /> */}
         <Heading size="sm" fontWeight="medium" color={useColorModeValue('black', 'white')}>
           {review.title}
         </Heading>

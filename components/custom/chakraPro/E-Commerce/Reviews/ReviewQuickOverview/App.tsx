@@ -1,4 +1,4 @@
-import { Rating } from '@chakra-ui-pro/rating/src/Rating'
+// import { Rating } from '@chakra-ui-pro/rating/src/Rating'
 import {
   Box, 
   BoxProps,
@@ -45,7 +45,7 @@ export function App({
             4.3
           </Text>
           <Stack spacing="1">
-            <Rating defaultValue={4} size="sm" />
+            {/* <Rating defaultValue={4} size="sm" /> */}
             <Text lineHeight="1" color={useColorModeValue('gray.600', 'gray.400')}>
               Based on 12 reviews
             </Text>
