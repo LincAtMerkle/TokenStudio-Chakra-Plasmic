@@ -22,11 +22,11 @@ export function registerLoginWithCentredForm() {
                 name: getPlasmicComponentName('Stack'),
                 props: {
                   children: [
-                      // {
-                      //   type: 'component',
-                      //   name: getPlasmicComponentName('Logo'),
-                      //   props: {},
-                      // },
+                      {
+                        type: 'component',
+                        name: 'Logo',
+                        props: {},
+                      },
                       {
                         type: 'component',
                         name: getPlasmicComponentName('Stack'),
@@ -134,11 +134,11 @@ export function registerLoginWithCentredForm() {
                                                   // type: 'email',
                                                 },
                                               },
-                                              // {
-                                              //   type: 'component',
-                                              //   name: getPlasmicComponentName('PasswordField'),
-                                              //   props: {},
-                                              // },
+                                              {
+                                                type: 'component',
+                                                name: 'PasswordField',
+                                                props: {},
+                                              },
                                             ],
                                           },
                                         },
@@ -222,11 +222,11 @@ export function registerLoginWithCentredForm() {
                                             ],
                                           },
                                         },
-                                        // {
-                                        //   type: 'component',
-                                        //   name: getPlasmicComponentName('OAuthButtonGroup'),
+                                        {
+                                          type: 'component',
+                                          name: 'OAuthButtonGroup',
                                          
-                                        // },
+                                        },
                                       ],
                                     },
                                   },

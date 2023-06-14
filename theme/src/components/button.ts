@@ -47,8 +47,8 @@ const sizes = {
 const variants = {
   // Two variants: outline and solid
   primary1: {
-    // bg: 'btn-primary-default-background-color',
-    bg: "btn-primary1-default-background-color",
+    bg: '#ff00ff',
+    // bg: "btn-primary1-default-background-color",
     color: "btn-primary1-default-text-color",
     borderColor: "btn-primary1-default-border-color",
     iconColor: "btn-primary1-default-icon-color",

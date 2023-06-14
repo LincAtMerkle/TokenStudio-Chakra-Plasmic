@@ -40,6 +40,9 @@ import { registerSwatchComposition } from "./tokenSheets/registerSwatchCompositi
 ////Application
 //Authentication
 import { registerLoginWithCentredForm } from "./chakraPro/Application/Authentication/LoginWithCentredForm/register";
+import { registerLogo } from "./chakraPro/Application/Authentication/LoginWithCentredForm/registerLogo";
+import { registerOAuthButtonGroup } from "./chakraPro/Application/Authentication/LoginWithCentredForm/registerOAuthButtonGroup";
+import { registerPasswordField } from "./chakraPro/Application/Authentication/LoginWithCentredForm/registerPasswordField";
 import { registerLoginWithEmailOrProvider } from "./chakraPro/Application/Authentication/LoginWithEmailOrProvider/register";
 import { registerLoginWithEmailPasswordOrGoogle } from "./chakraPro/Application/Authentication/LoginWithEmailPasswordOrGoogle/register";
 import { registerLoginWithFloatingLabel } from "./chakraPro/Application/Authentication/LoginWithFloatingLabel/register";
@@ -358,6 +361,9 @@ export function registerAllCustom() {
  // CHAKRAPRO
  //Authentication
  registerLoginWithCentredForm();
+ registerLogo();
+ registerPasswordField();
+ registerOAuthButtonGroup();
  registerLoginWithEmailOrProvider();
  registerLoginWithEmailPasswordOrGoogle();
  registerLoginWithFloatingLabel();

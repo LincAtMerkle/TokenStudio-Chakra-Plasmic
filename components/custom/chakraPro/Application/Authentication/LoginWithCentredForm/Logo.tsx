@@ -1,4 +1,7 @@
-import { chakra, HTMLChakraProps } from '@chakra-ui/react'
+import {
+  chakra,
+  HTMLChakraProps,
+} from '@chakra-ui/react'
 
 export const Logo = (props: HTMLChakraProps<'svg'>) => (
   <chakra.svg
