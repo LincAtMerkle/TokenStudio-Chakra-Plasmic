@@ -24,6 +24,6 @@
     "semantic/dark",
     "Brand-ChakraDemo/light",
     "Brand-ChakraDemo/dark",
-    "Layouts"
+    "layout/composition"
   ]
 }
