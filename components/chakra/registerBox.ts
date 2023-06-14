@@ -2,8 +2,8 @@ import { BoxProps } from "@chakra-ui/react";
 import { CodeComponentMeta } from "@plasmicapp/host/registerComponent";
 import { getComponentNameAndImportMeta } from "./utils";
 
-export const containerMeta: CodeComponentMeta<BoxProps> = {
-  ...getComponentNameAndImportMeta("Container"),
+export const boxMeta: CodeComponentMeta<BoxProps> = {
+  ...getComponentNameAndImportMeta("Box"),
   props: {
     py: {
       type: "number",

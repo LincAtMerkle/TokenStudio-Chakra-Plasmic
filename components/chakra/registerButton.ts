@@ -56,22 +56,10 @@ export const buttonGroupMeta: CodeComponentMeta<ButtonGroupProps> = {
         {
           type: "component",
           name: getPlasmicComponentName("Button"),
-          props: {
-            children: {
-              type: "text",
-              value: "Button 1",
-            },
-          },
         },
         {
           type: "component",
           name: getPlasmicComponentName("Button"),
-          props: {
-            children: {
-              type: "text",
-              value: "Button 2",
-            },
-          },
         },
       ],
     },
@@ -79,7 +67,7 @@ export const buttonGroupMeta: CodeComponentMeta<ButtonGroupProps> = {
 };
 
 export const buttonMeta: CodeComponentMeta<ButtonProps> = {
-  ...getComponentNameAndImportMeta("Button", "ButtonGroup"),
+  ...getComponentNameAndImportMeta("Button"),
   props: {
     size: {
       type: "choice",

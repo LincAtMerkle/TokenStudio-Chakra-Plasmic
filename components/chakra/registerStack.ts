@@ -11,7 +11,7 @@ export const stackMeta: CodeComponentMeta<StackProps> = {
     direction: {
       type: "choice",
       options: ["row", "column"],
-      defaultValue: "row",
+      defaultValue: "column",
     },
     align: {
       type: "choice",
@@ -31,6 +31,12 @@ export const stackMeta: CodeComponentMeta<StackProps> = {
     },
     children: {
       type: "slot",
+      defaultValue: [
+        {
+          type: 'text',
+          value: 'Click me!'
+        }
+      ]
     },
   },
 };
@@ -61,6 +67,12 @@ export const hStackMeta: CodeComponentMeta<StackProps> = {
     },
     children: {
       type: "slot",
+      defaultValue: [
+        {
+          type: 'text',
+          value: 'Click me!'
+        }
+      ]
     },
   },
 };
@@ -91,6 +103,12 @@ export const vStackMeta: CodeComponentMeta<StackProps> = {
     },
     children: {
       type: "slot",
+      defaultValue: [
+        {
+          type: 'text',
+          value: 'Click me!'
+        }
+      ]
     },
   },
 };

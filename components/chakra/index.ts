@@ -15,6 +15,7 @@ import {
   BreadcrumbSeparator,
   Button,
   ButtonGroup,
+  Box,
   Card,
   CardHeader,
   CardBody,
@@ -91,12 +92,11 @@ import {
   Tr,
 } from "@chakra-ui/react";
 
-
 import { Registerable } from "./registerable";
-
 import registerComponent, {
   CodeComponentMeta,
 } from "@plasmicapp/host/registerComponent";
+
 import {
   accordionButtonMeta,
   accordionIconMeta,
@@ -114,6 +114,7 @@ import {
   breadcrumbSeparatorMeta,
 } from "./registerBreadcrumb";
 import { buttonGroupMeta, buttonMeta } from "./registerButton";
+import { boxMeta } from "./registerBox";
 import { registerChakraProvider } from "./registerChakraProvider";
 import { checkboxGroupMeta, checkboxMeta } from "./registerCheckBox";
 import { codeMeta } from "./registerCode";
@@ -212,6 +213,8 @@ import {
   hStackMeta,
  } from "./registerStack";
 
+
+
 export * from "./registerable";
 export * from "./registerAccordion";
 export * from "./registerAspectRatio";
@@ -219,6 +222,7 @@ export * from "./registerAvatar";
 export * from "./registerBadge";
 export * from "./registerBreadcrumb";
 export * from "./registerButton";
+export * from "./registerBox";
 export * from "./registerChakraProvider";
 export * from "./registerCheckBox";
 export * from "./registerCode";
@@ -274,6 +278,7 @@ export function registerAllChakra(loader?: Registerable) {
   _registerComponent(BreadcrumbItem, breadcrumbItemMeta);
   _registerComponent(BreadcrumbLink, breadcrumbLinkMeta);
   _registerComponent(BreadcrumbSeparator, breadcrumbSeparatorMeta);
+  _registerComponent(Box, boxMeta);
   _registerComponent(Button, buttonMeta);
   _registerComponent(ButtonGroup, buttonGroupMeta);
   _registerComponent(Checkbox, checkboxMeta);
@@ -354,5 +359,5 @@ export function registerAllChakra(loader?: Registerable) {
   _registerComponent(CardFooter, cardFooterMeta);
   _registerComponent(Stack, stackMeta);
   _registerComponent(HStack, hStackMeta);
-  _registerComponent(VStack, vStackMeta);
+  _registerComponent(VStack, vStackMeta)
 }
