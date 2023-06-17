@@ -1,0 +1,20 @@
+{
+  "composition": {
+    "1": {
+      "value": {
+        "verticalPadding": "38",
+        "horizontalPadding": "40",
+        "itemSpacing": "24"
+      },
+      "type": "composition"
+    },
+    "2": {
+      "value": {
+        "verticalPadding": "60",
+        "horizontalPadding": "80",
+        "itemSpacing": "40"
+      },
+      "type": "composition"
+    }
+  }
+}
