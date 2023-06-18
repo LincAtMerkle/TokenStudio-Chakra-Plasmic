@@ -115,7 +115,7 @@ import {
 } from "./registerBreadcrumb";
 import { buttonGroupMeta, buttonMeta } from "./registerButton";
 import { boxMeta } from "./registerBox";
-import { registerChakraProvider } from "./registerChakraProvider";
+// import { registerChakraProvider } from "./registerChakraProvider";
 import { checkboxGroupMeta, checkboxMeta } from "./registerCheckBox";
 import { codeMeta } from "./registerCode";
 import { containerMeta } from "./registerContainer";
@@ -223,7 +223,7 @@ export * from "./registerBadge";
 export * from "./registerBreadcrumb";
 export * from "./registerButton";
 export * from "./registerBox";
-export * from "./registerChakraProvider";
+// export * from "./registerChakraProvider";
 export * from "./registerCheckBox";
 export * from "./registerCode";
 export * from "./registerContainer";
@@ -262,7 +262,7 @@ export function registerAllChakra(loader?: Registerable) {
       registerComponent(Component, defaultMeta);
     }
   };
-  registerChakraProvider(loader);
+  // registerChakraProvider(loader);
 
   _registerComponent(Accordion, accordionMeta);
   _registerComponent(AccordionButton, accordionButtonMeta);

@@ -1,6 +1,6 @@
 import { ButtonGroupProps, ButtonProps } from "@chakra-ui/react";
 import { CodeComponentMeta } from "@plasmicapp/host/registerComponent";
-import { colorTokens } from "./registerChakraProvider";
+// import { colorTokens } from "./registerChakraProvider";
 import {
   getComponentNameAndImportMeta,
   getPlasmicComponentName,
@@ -12,7 +12,7 @@ export const buttonGroupMeta: CodeComponentMeta<ButtonGroupProps> = {
     colorScheme: {
       type: "choice",
       options: [
-        ...Object.keys(colorTokens),
+        // ...Object.keys(colorTokens),
         "whiteAlpha",
         "blackAlpha",
         "gray",
@@ -81,7 +81,7 @@ export const buttonMeta: CodeComponentMeta<ButtonProps> = {
     colorScheme: {
       type: "choice",
       options: [
-        ...Object.keys(colorTokens),
+        // ...Object.keys(colorTokens),
         "whiteAlpha",
         "blackAlpha",
         "gray",

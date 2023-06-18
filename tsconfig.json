@@ -1,36 +1,42 @@
 {
-  "compilerOptions": {
-    "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
-    "baseUrl": ".",
-    "paths": {
-      "@/*": [
-        "./*"
-      ]
-    }
-  },
+  "$schema": "https://json.schemastore.org/tsconfig",
   "include": [
+    "src",
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
   ],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "target": "esnext",
+    "noImplicitAny": false,
+    "module": "esnext",
+    "rootDir": ".",
+    "composite": true,
+    "moduleResolution": "node",
+    "lib": ["esnext", "dom", "dom.iterable"],
+    "strict": true,
+    "noEmit": true,
+    "allowJs": true,
+    "sourceMap": true,
+    "incremental": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "typeRoots": ["node_modules/@types"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./*"
+      ],
+      "#/*": ["src/*"],
+      "#selectors": ["src/redux/selectors"],
+      "#vpages": ["src/virtualPages/*"],
+      "#selectors/*": ["src/redux/selectors/*"]
+    }
+  }
 }
