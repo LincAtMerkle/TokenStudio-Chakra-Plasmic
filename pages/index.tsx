@@ -48,11 +48,12 @@ function HomePage() {
 
   return (
     // <GlobalContextsProvider>
+    <ChakraBaseProvider>
       <ph.PageParamsProvider
         params={useRouter()?.query}
         query={useRouter()?.query}
       >
-<ChakraBaseProvider>
+{/* <ChakraBaseProvider>
     <ModifierProvider modifiers={{ color, type }}>
       <Stack direction='column' gap={6} justify='center' align='center'>
         <Stack direction='row' gap={2}>
@@ -113,12 +114,14 @@ function HomePage() {
     </ModifierProvider>
 
 
-  </ChakraBaseProvider>
+  </ChakraBaseProvider> */}
 
 
         <PlasmicHomePage />
       </ph.PageParamsProvider>
-    // </GlobalContextsProvider>
+    {/* </GlobalContextsProvider> */}
+    </ChakraBaseProvider>
+    
   );
 }
 

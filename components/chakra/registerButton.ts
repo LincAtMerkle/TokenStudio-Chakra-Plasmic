@@ -1,4 +1,6 @@
-import { ButtonGroupProps, ButtonProps } from "@chakra-ui/react";
+import { ButtonProps } from "../../src/components/button/button";
+import { ButtonGroupProps } from "../../src/components/button/button-group";
+
 import { CodeComponentMeta } from "@plasmicapp/host/registerComponent";
 // import { colorTokens } from "./registerChakraProvider";
 import {
