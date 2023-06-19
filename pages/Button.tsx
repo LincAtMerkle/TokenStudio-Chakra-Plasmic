@@ -25,14 +25,14 @@ function Button() {
   // Next.js Custom App component
   // (https://nextjs.org/docs/advanced-features/custom-app).
   return (
-    // <GlobalContextsProvider>
+    <GlobalContextsProvider>
       <ph.PageParamsProvider
         params={useRouter()?.query}
         query={useRouter()?.query}
       >
         <PlasmicButton />
       </ph.PageParamsProvider>
-    // </GlobalContextsProvider>
+    </GlobalContextsProvider>
   );
 }
 

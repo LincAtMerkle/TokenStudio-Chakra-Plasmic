@@ -13,7 +13,7 @@ import {
   BreadcrumbItem,
   BreadcrumbLink,
   BreadcrumbSeparator,
-  Button,
+  // Button,
   ButtonGroup,
   Box,
   Card,
@@ -91,6 +91,8 @@ import {
   Tooltip,
   Tr,
 } from "@chakra-ui/react";
+
+import { Button } from "../../src/components/button/button"
 
 import { Registerable } from "./registerable";
 import registerComponent, {
