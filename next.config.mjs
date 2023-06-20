@@ -13,7 +13,7 @@ const config = {
     formats: ['image/avif', 'image/webp'],
     domains: ['raw.githubusercontent.com'],
   },
-  // output: 'export',
+  output: 'export',
   publicRuntimeConfig: {
   },
   webpack: (config, options) => {

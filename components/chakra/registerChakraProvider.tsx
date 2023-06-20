@@ -3,7 +3,7 @@ import { GlobalContextMeta } from "@plasmicapp/host";
 import registerGlobalContext from "@plasmicapp/host/registerGlobalContext";
 import { Registerable } from "./registerable";
 import { getComponentNameAndImportMeta } from "./utils";
-import { theme as proTheme } from "../../theme/src/index";
+// import { theme as proTheme } from "../../theme/src/index";
 import { extendTheme, theme as baseTheme } from "@chakra-ui/react";
 
 // ******
@@ -57,7 +57,7 @@ export function PlasmicChakraProvider(props: PlasmicChakraProviderProps) {
     {
       colors: { ...baseTheme.colors, brand: baseTheme.colors.yellow },
     },
-    proTheme
+    // proTheme
   );
   return <ChakraProvider theme={theme}>{props.children}</ChakraProvider>;
 }

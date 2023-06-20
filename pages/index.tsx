@@ -47,22 +47,30 @@ function HomePage() {
     setType(key);
   }
 
+  // return (
+  //   <GlobalContextsProvider>
+  //   <ChakraBaseProvider>
+  //   <ModifierProvider modifiers={{ color, type }}>
+  //     <ph.PageParamsProvider
+  //       params={useRouter()?.query}
+  //       query={useRouter()?.query}
+  //     >
+  //       <ModifierProvider modifiers={{ color: 'blue' }}>
+  //           <ChakraButton>Click Me </ChakraButton>
+  //         </ModifierProvider>
+  //           <PlasmicHomePage />
+  //     </ph.PageParamsProvider>
+  //   </ModifierProvider>
+  //   </ChakraBaseProvider>
+  //   </GlobalContextsProvider>  
+  // );
   return (
-    // <GlobalContextsProvider>
-    <ChakraBaseProvider>
-    <ModifierProvider modifiers={{ color, type }}>
-      <ph.PageParamsProvider
-        params={useRouter()?.query}
-        query={useRouter()?.query}
-      >
-        <ModifierProvider modifiers={{ color: 'blue' }}>
-            <ChakraButton>Click Me </ChakraButton>
-          </ModifierProvider>
-            <PlasmicHomePage />
-      </ph.PageParamsProvider>
-    </ModifierProvider>
-    </ChakraBaseProvider>
-    // </GlobalContextsProvider>  
+    <ph.PageParamsProvider
+      params={useRouter()?.query}
+      query={useRouter()?.query}
+    >
+      <PlasmicHomePage />
+    </ph.PageParamsProvider>
   );
 }
 
