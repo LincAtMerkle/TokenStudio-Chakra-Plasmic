@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import * as React from 'react'
+import * as React from 'react';
 import {
   BoxProps,
 } from '@chakra-ui/react'
@@ -11,17 +11,16 @@ export type ModifierProps = BoxProps & {
   children: ReactNode
 }
 
-const [color, setColor] = React.useState('blue');
-const [type, setType] = React.useState('casual');
-
 export function Modifier({
   className,
   children,
   ...rest
   }: ModifierProps) {
+  const [color, setColor] = React.useState('blue');
+  const [type, setType] = React.useState('casual');    
   return (
     <div className={className}>
-    <ModifierProvider modifiers={{ color: 'blue' }}>
+    <ModifierProvider modifiers={{ color: 'blue', type: 'business' }}>
         {children}
       </ModifierProvider>
       </div>
