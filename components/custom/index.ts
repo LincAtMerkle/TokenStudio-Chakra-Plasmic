@@ -3,6 +3,7 @@
 import { registerImageWithOverlay } from "./registerImageWithOverlay"
 import { registerButtonPreview } from "./registerButtonPreview"
 import { registerToggleColorMode } from "./registerToggleColorMode"
+import { registerModifier } from "./registerModifier"
 // import { registerChakraDocs } from "./tokenSheets/registerChakraDocs"
 import { registerGolfIcon } from "./icons/registerGolfIcon";
 import { registerBowlingIcon } from "./icons/registerBowlingIcon";
@@ -321,6 +322,8 @@ export function registerAllCustom() {
  registerImageWithOverlay();
  registerButtonPreview();
  registerToggleColorMode();
+ registerModifier();
+ 
 //  registerChakraDocs();
  
  //Custom icons
