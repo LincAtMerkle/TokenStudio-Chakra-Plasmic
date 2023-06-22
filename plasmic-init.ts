@@ -1,4 +1,5 @@
 import { initPlasmicLoader } from "@plasmicapp/loader-nextjs";
+import { ModifierContext } from "./src/components/tokensCtx";
 export const PLASMIC = initPlasmicLoader({
   projects: [
     { // Plasmic POC (locahost)
@@ -10,3 +11,21 @@ export const PLASMIC = initPlasmicLoader({
   // Disable for production to ensure you render only published changes.
   preview: true,
 })
+
+PLASMIC.registerGlobalContext(ModifierContext, {
+  name: "ModifierContext",
+  props: {
+    // Simple scalar props
+    tokenId: 'string',
+    darkMode: 'boolean',
+    
+    // Some props can take an enum of options
+    productFilter: {
+      type: 'choice',
+      options: ['shirts', 'boots', 'jackets']
+    },
+    
+    // Some props can take an arbitrary JSON object
+    config: 'object',
+  }
+});

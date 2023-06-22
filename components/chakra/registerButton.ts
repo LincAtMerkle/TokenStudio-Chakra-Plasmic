@@ -1,5 +1,4 @@
-import { ButtonProps } from "../../src/components/button/button";
-import { ButtonGroupProps } from "../../src/components/button/button-group";
+import { ButtonProps, ButtonGroupProps } from "@chakra-ui/react";
 
 import { CodeComponentMeta } from "@plasmicapp/host/registerComponent";
 // import { colorTokens } from "./registerChakraProvider";
@@ -37,7 +36,7 @@ export const buttonGroupMeta: CodeComponentMeta<ButtonGroupProps> = {
     },
     size: {
       type: "choice",
-      options: ["xl", "sm", "md", "lg"],
+      options: ["xs", "sm", "md", "lg"],
       defaultValue: "md",
     },
     isAttached: {
@@ -73,7 +72,7 @@ export const buttonMeta: CodeComponentMeta<ButtonProps> = {
   props: {
     size: {
       type: "choice",
-      options: ["xl", "sm", "md", "lg"],
+      options: ["xs", "sm", "md", "lg"],
     },
     variant: {
       type: "choice",

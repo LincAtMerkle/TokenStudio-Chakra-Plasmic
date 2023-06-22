@@ -1,0 +1,52 @@
+/**
+ * Do not edit directly, this file was auto-generated
+ */
+
+:host {
+  --avatar-font-color: #ffffff;
+  --avatar-icon-color: #ffffff;
+  --avatar-border-radius: 100px;
+  --avatar-badge-2xs-border-width: 1px;
+  --avatar-badge-xs-border-width: 2px;
+  --avatar-badge-sm-border-width: 2px;
+  --avatar-badge-md-border-width: 4px;
+  --avatar-badge-lg-border-width: 5px;
+  --avatar-badge-xl-border-width: 6px;
+  --avatar-badge-2xl-border-width: 6px;
+  --avatar-badge-border-color: #2A3F6D;
+  --avatar-badge-border-radius: 100px;
+  --avatar-xxs-height: 20px;
+  --avatar-xxs-width: 20px;
+  --avatar-xxs-text-size: 10px;
+  --avatar-xxs-icon-size: 16px;
+  --avatar-xs-height: 24px;
+  --avatar-xs-width: 24px;
+  --avatar-xs-text-size: 10px;
+  --avatar-xs-icon-size: 20px;
+  --avatar-s-height: 32px;
+  --avatar-s-width: 32px;
+  --avatar-s-text-size: 10px;
+  --avatar-s-icon-size: 24px;
+  --avatar-m-height: 36px;
+  --avatar-m-width: 36px;
+  --avatar-m-text-size: 12px;
+  --avatar-m-icon-size: 32px;
+  --avatar-l-height: 40px;
+  --avatar-l-width: 40px;
+  --avatar-l-text-size: 14px;
+  --avatar-l-icon-size: 32px;
+  --avatar-xl-height: 48px;
+  --avatar-xl-width: 48px;
+  --avatar-xl-text-size: 16px;
+  --avatar-xl-icon-size: 40px;
+  --avatar-xxl-height: 64px;
+  --avatar-xxl-width: 64px;
+  --avatar-xxl-text-size: 22px;
+  --avatar-xxl-icon-size: 56px;
+  --avatar-xxxl-height: 80px;
+  --avatar-xxxl-width: 80px;
+  --avatar-xxxl-text-size: 24px;
+  --avatar-xxxl-icon-size: 72px;
+  --avatar-background-color: #41547D;
+  --avatar-font-family: Inter;
+}

@@ -18,6 +18,11 @@ export const textMeta: CodeComponentMeta<TextProps> = {
       options: ["light", "regular", "semiBold", "bold"],
       defaultValue: "regular",
     },
+    fontStyle: {
+      type: "choice",
+      options: ["normal", "italic", "oblique"],
+      defaultValue: "normal",
+    },
     children: {
       type: "slot",
       defaultValue: [

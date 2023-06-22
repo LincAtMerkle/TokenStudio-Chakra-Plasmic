@@ -26,16 +26,16 @@ export const modifierProviderMeta: GlobalContextMeta<PlasmicModifierProviderProp
       type: "choice",
       options: [
         // ...Object.keys(colorTokens),
-        "green",
-        "blue",
+        "light",
+        "dark",
       ],
-      defaultValue: "green",
+      defaultValue: "light",
     },
-    type: {
-      type: "choice",
-      options: ["casual", "business", "md", "lg"],
-      defaultValue: "casual",
-    },
+    // type: {
+    //   type: "choice",
+    //   options: ["casual", "business", "md", "lg"],
+    //   defaultValue: "casual",
+    // },
   },
 };
 

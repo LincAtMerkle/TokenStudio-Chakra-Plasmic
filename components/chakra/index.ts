@@ -83,7 +83,6 @@ import {
   TagCloseButton,
   Tbody,
   Td,
-  Text,
   Tfoot,
   Th,
   Thead,
@@ -92,7 +91,8 @@ import {
   Tr,
 } from "@chakra-ui/react";
 
-import { Button } from "../../src/components/button/button"
+import { Button } from "../../src/components/button"
+import { Text } from "../../src/components/text"
 
 import { Registerable } from "./registerable";
 import registerComponent, {
