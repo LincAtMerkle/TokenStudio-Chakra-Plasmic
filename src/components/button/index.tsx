@@ -6,9 +6,8 @@ import { ComponentProvider, wrapTokens } from "../tokensCtx";
 const ChakraButton = wrapTokens(_Button, "container");
 
 export const Button = (props: ButtonProps) => {
-  console.log("BUTTON PROPS", props);
   return (
-    <ComponentProvider name="button">
+    <ComponentProvider name="button" className={props.className}>
       <ChakraButton {...props}/>
     </ComponentProvider>
   );

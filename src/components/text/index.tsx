@@ -6,5 +6,5 @@ import { ComponentProvider, wrapTokens } from "../tokensCtx";
 const ChakraText = wrapTokens(chakra.p, "container");
 
 export const Text = ({...props}: TextProps) => {
-  return <ComponentProvider name="text"><ChakraText {...props} /></ComponentProvider>
+  return <ComponentProvider className={props.className} name="text"><ChakraText {...props} /></ComponentProvider>
 }

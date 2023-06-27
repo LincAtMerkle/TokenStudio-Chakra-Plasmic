@@ -173,11 +173,13 @@ export const useComponentCtx = () => {
 export interface ComponentProviderProps {
   name: string;
   children: any;
+  className?: string;
 }
 
 export const ComponentProvider = ({
   name,
   children,
+  className,
 }: ComponentProviderProps) => {
   const modifiers = useModifiers();
 
@@ -221,7 +223,7 @@ export const ComponentProvider = ({
 
   return (
     <ComponentContext.Provider value={{ name, map: cssSync || css }}>
-      <root.div styleSheets={styleSheets}>{children}</root.div>
+      <root.div styleSheets={styleSheets} className={className}>{children}</root.div>
     </ComponentContext.Provider>
   );
 };
