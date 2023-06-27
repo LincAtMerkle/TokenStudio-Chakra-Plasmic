@@ -5,7 +5,7 @@
   "scripts": {
     "build": "cross-env NODE_ENV=production next build",
     "clean": "next --help",
-    "dev": "next dev",
+    "dev": "yarn build:tokens && next dev",
     "build:tokens": "node build-tokens.cjs",
     "format": "run-p format:*",
     "format:eslint": "eslint --ext .tsx,.ts,.js,.html --fix .",

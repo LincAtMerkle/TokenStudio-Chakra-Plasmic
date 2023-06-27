@@ -1,15 +1,14 @@
 
-import { Button as ChakraButton } from '#/components/button';
+import { Button as ChakraButton } from '../components/button';
 import { Button, DropdownMenu, Heading, Stack } from '@tokens-studio/ui'
 import React from 'react';
 import { ChakraBaseProvider } from '@chakra-ui/react'
-import { ModifierProvider } from '#/components/tokensCtx';
+import { ModifierProvider } from '../components/tokensCtx';
 
 const Index = () => {
 
 
-  const [color, setColor] = React.useState('blue');
-  const [type, setType] = React.useState('casual');
+  const [color, setColor] = React.useState('light');
 
 
   const handleColorChange = (ev) => {
@@ -17,14 +16,9 @@ const Index = () => {
     setColor(key);
   }
 
-  const handleTypeChange = (ev) => {
-    const key = ev.currentTarget.dataset.key;
-    setType(key);
-  }
-
 
   return <ChakraBaseProvider>
-    <ModifierProvider modifiers={{ color, type }}>
+    <ModifierProvider modifiers={{ color }}>
       <Stack direction='column' gap={6} justify='center' align='center'>
         <Stack direction='row' gap={2}>
           <DropdownMenu>
@@ -35,23 +29,9 @@ const Index = () => {
             </DropdownMenu.Trigger>
             <DropdownMenu.Portal>
               <DropdownMenu.Content>
-                <DropdownMenu.Item onClick={handleColorChange} data-key='blue'>Blue</DropdownMenu.Item>
-                <DropdownMenu.Item onClick={handleColorChange} data-key='green'>Green</DropdownMenu.Item>
-                <DropdownMenu.Item onClick={handleColorChange} data-key='purple'>Purple</DropdownMenu.Item>
-              </DropdownMenu.Content>
-            </DropdownMenu.Portal>
-          </DropdownMenu>
-
-          <DropdownMenu>
-            <DropdownMenu.Trigger asChild>
-              <Button variant="secondary" asDropdown size="medium">
-                Type {type}
-              </Button>
-            </DropdownMenu.Trigger>
-            <DropdownMenu.Portal>
-              <DropdownMenu.Content>
-                <DropdownMenu.Item onClick={handleTypeChange} data-key='business'>Business</DropdownMenu.Item>
-                <DropdownMenu.Item onClick={handleTypeChange} data-key='casual'>Casual</DropdownMenu.Item>
+                <DropdownMenu.Item onClick={handleColorChange} data-key='light'>light</DropdownMenu.Item>
+                <DropdownMenu.Item onClick={handleColorChange} data-key='dark'>dark</DropdownMenu.Item>
+                <DropdownMenu.Item onClick={handleColorChange} data-key='light'>light</DropdownMenu.Item>
               </DropdownMenu.Content>
             </DropdownMenu.Portal>
           </DropdownMenu>
@@ -66,16 +46,12 @@ const Index = () => {
           These buttons are only overwriting the color modifier, but should still be able to be affected by the type modifier
         </Heading>
         <Stack direction='row' gap={6} justify='center'>
-          <ModifierProvider modifiers={{ color: 'blue' }}>
-            <ChakraButton>Click Me </ChakraButton>
+          <ModifierProvider modifiers={{ color: 'light' }}>
+            <ChakraButton>Click Me light</ChakraButton>
           </ModifierProvider>
-          <ModifierProvider modifiers={{ color: 'green' }}>
-            <ChakraButton>Click Me </ChakraButton>
+          <ModifierProvider modifiers={{ color: 'dark' }}>
+            <ChakraButton>Click Me dark</ChakraButton>
           </ModifierProvider>
-          <ModifierProvider modifiers={{ color: 'purple' }}>
-            <ChakraButton>Click Me </ChakraButton>
-          </ModifierProvider>
-
 
         </Stack>
       </Stack>

@@ -101,3 +101,9 @@
     color: var(--button-link-disabled-text-color);
     border-color:  var(--button-link-disabled-border-color);
 }
+
+.button__primary1 {
+    color: var(--button-primary1-default-background-color);
+    color: var(--button-primary1-disabled-text-color);
+    border-color:  var(--button-primary1-disabled-border-color);
+}

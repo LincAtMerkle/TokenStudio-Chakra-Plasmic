@@ -18,6 +18,6 @@
   --text-regular-font-weight: 400;
   --text-semi-bold-font-weight: Semi Bold;
   --text-bold-font-weight: 700;
-  --text-text-color: #000;
+  --text-text-color: #F23A1D;
   --text-line-height: 1.5;
 }
