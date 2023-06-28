@@ -1,41 +1,27 @@
-import { ComponentStyleConfig } from '@chakra-ui/react'
-
-const Avatar: ComponentStyleConfig = {
-  parts: ['container', 'badge'],
-  // The styles all Checkbox have in common
-  baseStyle: {
+  .avatar__container {
     badge: {
-      borderRadius: 'avatar-border-radius',
-      height: '100%'
-    }
-    // bg: 'btn-primary-default-background-color',
-    // borderColor: 'btn-primary-default-background-color'
-    // Width: 'checkbox.border-width'
-  },
-  // Three sizes: sm md and large
-  sizes: {
-    sm: {
-      container: {
-        height: 'avatar-s-height',
-        width: 'avatar-s-width'
-      }
-    },
-    md: {
-      container: {
-        height: 'avatar-m-height',
-        width: 'avatar-m-width'
-      }
-    },
-    lg: {
-      container: {
-        height: 'avatar-l-height',
-        width: 'avatar-l-width'
-      }
-    }
-  },
-  defaultProps: {
-    size: 'sm'
-  }
-}
+      border-radius: var(--avatar-border-radius);
+      height: 100%
 
-export default Avatar
+    }
+    // background: var(--btn-primary-default-background-color);
+    // border-color: var(--btn-primary-default-background-color)
+    // Width: var(--checkbox.border-width)
+  }
+
+  .avatar__sm {
+
+        height: var(--avatar-s-height);
+        width: var(--avatar-s-width)
+    }
+  .avatar__md {
+
+        height: var(--avatar-m-height);
+        width: var(--avatar-m-width)
+    }
+
+  .avatar__lg {
+
+        height: var(--avatar-l-height);
+        width: var(--avatar-l-width)
+      }

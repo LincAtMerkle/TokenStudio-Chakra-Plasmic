@@ -1,48 +1,32 @@
-import { darken, mode, StyleFunctionProps, transparentize } from '@chakra-ui/theme-tools'
-
-const baseStyle = {
-  textTransform: 'normal',
-  fontWeight: 'medium',
-  borderRadius: '2xl',
+.badge__container {
+  text-transform: var(--normal);
+  font-weight: var(--medium);
+  border-radius: var(--2xl);
 }
 
-const sizes = {
-  lg: {
-    fontSize: 'sm',
-    px: '3',
-    py: '1',
-  },
-  md: {
-    fontSize: 'sm',
-    lineHeight: '1.25rem',
-    px: '2.5',
-    py: '0.5',
-  },
-  sm: {
-    fontSize: 'xs',
-    lineHeight: '1.5',
-    px: '2',
-    py: '0.5',
-  },
-}
 
-const variants = {
-  subtle: (props: StyleFunctionProps) => ({
-    bg: mode(
-      darken(`${props.colorScheme}.50`, 2)(props.theme),
-      transparentize(`${props.colorScheme}.200`, 0.16)(props.theme),
-    )(props),
-  }),
-}
+.badge__lg {
+    font-size: var(--sm);
+    padding-left: var(--3);
+    padding-right: var(--3);
+    padding-top: var(--1);
+    padding-bottom: var(--1);
+  }
 
-const defaultProps = {
-  size: 'md',
-  variant: 'subtle',
-}
+.badge__md {
+    font-size: var(--sm);
+    line-height: var(--1.25rem);
+    padding-left: var(--2.5);
+    padding-right: var(--2.5);
+    padding-top: var(--0.5);
+    padding-bottom: var(--0.5);
+  }
 
-export default {
-  baseStyle,
-  defaultProps,
-  variants,
-  sizes,
-}
+.badge__sm {
+    font-size: var(--xs);
+    line-height: var(--1.5);
+    padding-left: var(--2);
+    padding-right: var(--2);
+    padding-top: var(--0.5);
+    padding-bottom: var(--0.5);
+  }

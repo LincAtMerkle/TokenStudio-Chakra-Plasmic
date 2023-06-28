@@ -1,32 +1,28 @@
-const baseStyle = {
+.progress__container {
   track: {
-    borderRadius: 'base',
-  },
+    border-radius: var(--base);
+  }
+
 }
 
-const variants = {
+
   solid: {
     track: {
-      bg: 'bg-muted',
-    },
-  },
+      background: var(--bg-muted);
+    }
+
+  }
+
   'on-accent': {
     track: {
-      bg: 'transparent',
-    },
+      background: var(--transparent);
+    }
+
     filledTrack: {
-      bg: 'brand.50',
-    },
-  },
+      background: var(--brand.50);
+    }
+
+  }
+
 }
 
-const defaultProps = {
-  colorScheme: 'brand',
-  variant: 'solid',
-}
-
-export default {
-  variants,
-  baseStyle,
-  defaultProps,
-}

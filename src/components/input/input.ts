@@ -1,92 +1,93 @@
-import { mode, StyleFunctionProps, transparentize } from '@chakra-ui/theme-tools'
-
-const variants = {
-  outline: (props: StyleFunctionProps) => ({
-    field: {
-      borderRadius: 'lg',
+.field__outline {
+      border-radius: var(--lg);
       bg: mode('white', 'gray.800')(props),
-      _hover: { borderColor: mode('gray.300', 'gray.600')(props) },
+      _hover: { border-color: mode('gray.300', 'gray.600')(props) }
+
       _focus: {
-        borderColor: mode('brand.500', 'brand.200')(props),
-        boxShadow: mode(
+        border-color: mode('brand.500', 'brand.200')(props),
+        box-shadow: mode(
           `0px 0px 0px 1px ${transparentize(`brand.500`, 1.0)(props.theme)}`,
           `0px 0px 0px 1px ${transparentize(`brand.200`, 1.0)(props.theme)}`,
         )(props),
-      },
-    },
+      }
+
+
+
     addon: {
-      borderRadius: 'lg',
+      border-radius: var(--lg);
       bg: mode('gray.50', 'gray.700')(props),
-    },
-  }),
-  'outline-on-accent': (props: StyleFunctionProps) => ({
-    field: {
-      bg: 'white',
-      borderRadius: 'lg',
-      color: 'gray.900',
-      borderWidth: '1px',
-      borderColor: 'brand.50',
+    }
+
+  },
+
+  .field__outline-on-accent {
+
+      background: var(--white);
+      border-radius: var(--lg);
+      color: var(--gray.900);
+      border-width: var(--1px);
+      border-color: var(--brand.50);
       _placeholder: {
-        color: 'gray.500',
-      },
+        color: var(--gray.500);
+      }
+
       _hover: {
-        borderColor: 'brand.100',
-      },
+        border-color: var(--brand.100);
+      }
+
       _focus: {
-        borderColor: 'brand.200',
-        boxShadow: `0px 0px 0px 1px ${transparentize(`brand.200`, 1.0)(props.theme)}`,
-      },
-    },
-  }),
-  filled: (props: StyleFunctionProps) => {
+        border-color: var(--brand.200);
+        box-shadow: `0px 0px 0px 1px ${transparentize(`brand.200`, 1.0)(props.theme)}`,
+      }
+
+
+
+  },
+  .field__filled {
     if (props.colorScheme === 'gray') {
       return {
         field: {
           bg: mode('white', 'gray.800')(props),
           _hover: {
-            borderColor: mode('gray.200', 'gray.700')(props),
+            border-color: mode('gray.200', 'gray.700')(props),
             bg: mode('white', 'gray.700')(props),
-          },
+          }
+
           _focus: {
-            borderColor: 'accent',
+            border-color: var(--accent);
             bg: mode('white', 'gray.800')(props),
-          },
-        },
+          }
+
+        }
+
       }
     }
     return {
       field: {
-        bg: 'bg-accent-subtle',
-        color: 'on-accent',
+        background: var(--bg-accent-subtle);
+        color: var(--on-accent);
         _placeholder: {
-          color: 'on-accent',
-        },
+          color: var(--on-accent);
+        }
+
         _hover: {
-          borderColor: 'brand.400',
-          bg: 'bg-accent-subtle',
-        },
+          border-color: var(--brand.400);
+          background: var(--bg-accent-subtle);
+        }
+
         _focus: {
-          bg: 'bg-accent-subtle',
-          borderColor: 'brand.300',
-        },
-      },
+          background: var(--bg-accent-subtle);
+          border-color: var(--brand.300);
+        }
+
+      }
+
     }
-  },
+  }
+
 }
 
-const sizes = {
-  lg: {
-    field: {
-      fontSize: 'md',
-      borderRadius: 'lg',
-    },
-  },
-}
-
-export default {
-  variants,
-  sizes,
-  defaultProps: {
-    colorScheme: 'gray',
-  },
+.field__input__lg {
+      font-size: var(--md);
+      border-radius: var(--lg);
 }

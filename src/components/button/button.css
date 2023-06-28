@@ -92,7 +92,7 @@
 }
 
 .button__link {
-    borderStyle: none;
+    border-style: none;
     color: var(--button-link-default-text-color);
     background: transparent;
 }
@@ -119,17 +119,20 @@
       color: var(--button-primary1-hover-text-color);
       border-color: var(--button-primary1-hover-border-color);
       icon-color: var(--button-primary1-hover-icon-color);
-    },
+    }
+
     _active: {
-      bg: var(--button-primary1-active-background-color);
+      background: var(--button-primary1-active-background-color);
       color: var(--button-primary1-active-text-color);
       border-color: var(--button-primary1-active-border-color);
       icon-color: var(--button-primary1-active-icon-color);
-    },
+    }
+
     _disabled: {
       background: var(--button-primary1-disabled-background-color);
       color: var(--button-primary1-disabled-text-color);
       border-color: var(--button-primary1-disabled-border-color);
       icon-color: var(--button-primary1-disabled-icon-color);
-    },
+    }
+
 }

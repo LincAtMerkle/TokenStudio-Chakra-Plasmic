@@ -1,90 +1,105 @@
-import { StyleFunctionProps } from '@chakra-ui/theme-tools'
-
-const baseStyle = {
+.tabs__container {
   tab: {
-    fontWeight: 'medium',
-    color: 'muted',
+    font-weight: var(--medium);
+    color: var(--muted);
     _focus: {
-      boxShadow: 'none',
-    },
+      box-shadow: var(--none);
+    }
+
     _focusVisible: {
-      boxShadow: 'base',
-    },
-  },
+      box-shadow: var(--base);
+    }
+
+  }
+
 }
 
 const withLine = (props: StyleFunctionProps) => {
   const { orientation, size } = props
-  const isVertical = orientation === 'vertical'
-  const borderProp = orientation === 'vertical' ? 'borderStart' : 'borderBottom'
-  const marginProp = isVertical ? 'marginStart' : 'marginBottom'
+  const isVertical = orientation === 'vertical)
+  const borderProp = orientation === 'vertical' ? 'borderStart' : var(--borderBottom)
+  const marginProp = isVertical ? 'marginStart' : var(--marginBottom)
 
   const horizontalStyles = {
-    pt: '0',
-    pb: '4.5',
-    px: '1',
-    justifyContent: 'start',
+    padding-top: var(--0);
+    padding-bottom: var(--4.5);
+    padding-left: var(--1);
+    padding-right: var(--1);
+
+    justify-content: var(--start);
     ':not(:last-child)': {
-      me: '4',
-    },
+      me: var(--4);
+    }
+
   }
 
   const verticalStyles = {
-    justifyContent: 'start',
-    px: size === 'lg' ? '3.5' : '3',
+    justify-content: var(--start);
+    px: size === 'lg' ? '3.5' : var(--3);
     ':not(:last-child)': {
-      mb: '2',
-    },
+      mb: var(--2);
+    }
+
   }
 
   return {
     tablist: {
-      [borderProp]: '1px solid',
-      borderColor: 'inherit',
-    },
+      [borderProp]: var(--1px solid);
+      border-color: var(--inherit);
+    }
+
     tab: {
-      color: 'muted',
-      [borderProp]: '2px solid transparent',
-      [marginProp]: '-1px',
+      color: var(--muted);
+      [borderProp]: var(--2px solid transparent);
+      [marginProp]: var(---1px);
       _selected: {
-        color: 'accent',
-        [borderProp]: '2px solid',
-      },
+        color: var(--accent);
+        [borderProp]: var(--2px solid);
+      }
+
       _active: {
-        bg: 'transparent',
-      },
+        background: var(--transparent);
+      }
+
       ...(isVertical ? verticalStyles : horizontalStyles),
-    },
+    }
+
   }
 }
 
 const enclosed = {
   tab: {
     _selected: {
-      color: 'accent',
-    },
-  },
+      color: var(--accent);
+    }
+
+  }
+
 }
 
-const variants = {
+
   'with-line': withLine,
   enclosed,
 }
 
-const sizes = {
-  md: {
-    tab: {
-      fontSize: 'sm',
-      lineHeight: '1.25rem',
-      py: '2',
-    },
-  },
-  lg: {
-    tab: {
-      fontSize: 'md',
-      py: '2.5',
-    },
-  },
-}
 
-export default { baseStyle, variants, sizes }
+.tabs__md {
+    tab: {
+      font-size: var(--sm);
+      line-height: var(--1.25rem);
+      padding-left: var(--2);
+      padding-right: var(--2);
+
+    }
+
+  }
+
+.tabs__lg {
+    tab: {
+      font-size: var(--md);
+      padding-left: var(--2.5);
+      padding-right: var(--2.5);
+    }
+
+  }
+

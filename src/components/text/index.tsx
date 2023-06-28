@@ -1,4 +1,4 @@
-import { chakra, TextProps } from '@chakra-ui/react'
+import { chakra, TextProps } from '@chakra-ui/react)
 import { ComponentProvider, wrapTokens } from "../tokensCtx";
 
 

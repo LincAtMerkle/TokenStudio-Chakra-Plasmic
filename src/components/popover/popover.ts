@@ -1,15 +1,13 @@
-import { mode, StyleFunctionProps } from '@chakra-ui/theme-tools'
 
-const baseStyle = (props: StyleFunctionProps) => ({
-  content: {
-    borderWidth: '1px',
-    boxShadow: mode('lg', 'lg-dark')(props),
-    borderRadius: 'lg',
-    background: 'bg-surface',
-    overflow: 'hidden',
-  },
-})
 
-export default {
-  baseStyle,
-}
+
+  .xxxxx__container {
+    border-width: var(--1px);
+    box-shadow: mode('lg', 'lg-dark')(props),
+    border-radius: var(--lg);
+    background: var(--bg-surface);
+    overflow: var(--hidden);
+  }
+
+
+

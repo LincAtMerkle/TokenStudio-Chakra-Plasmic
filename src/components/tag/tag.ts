@@ -1,42 +1,26 @@
-const parts = ["container", "label", "closeButton"];
-// The styles all tag have in common
-
-const baseStyle = {
+.tag__container {
   container: {
     background: "btn-primary-default-background-color",
-    bgColor: "btn-primary-default-background-color",
-  },
+    bgColor: "btn-primary-default-background-color"
+  }
 };
-// Four sizes: sm,md and lg
-const sizes = {
-  sm: {
+.tag__sm {
     container: {
-      minH: "tag-sm-height",
-      fontSize: "btn-xs-text-size",
-    },
-  },
-  md: {
-    container: {
-      minH: "tag-md-height",
-      fontSize: "btn-sm-text-size",
-    },
-  },
-  lg: {
-    container: {
-      minH: "tag-lg-height",
-      fontSize: "btn-md-text-size",
-    },
-  },
-};
-// Two variants: outline and solid
-// The default size and variant values
-const defaultProps = {
-  size: "md",
-};
+      min-height: "tag-sm-height",
+      font-size: "btn-xs-text-size",
+    }
+  }
 
-export default {
-  baseStyle,
-  sizes,
-  // variants,
-  defaultProps,
-};
+.tag__md {
+    container: {
+      min-height: "tag-md-height",
+      font-size: "btn-sm-text-size",
+    }
+  }
+
+.tag__lg {
+    container: {
+      min-height: "tag-lg-height",
+      font-size: "btn-md-text-size",
+    }
+  }

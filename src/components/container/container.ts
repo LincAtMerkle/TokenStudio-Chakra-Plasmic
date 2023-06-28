@@ -1,6 +1,7 @@
-const baseStyle = {
-  maxW: '7xl',
-  px: { base: '4', md: '8' },
+.container__container {
+  max-width: var(--7xl);
+  px: { base: var(--4', md: var(--8' }
+
 }
 
-export default { baseStyle }
+

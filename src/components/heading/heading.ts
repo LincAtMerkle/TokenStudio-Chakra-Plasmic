@@ -1,58 +1,73 @@
-const baseStyle = {
-  fontFamily: "heading-font-family",
-  lineHeight: "heading-line-height",
+.heading__container {
+  font-family: "heading-font-family",
+  line-height: "heading-line-height",
   color: "heading-text-color",
 };
 
-const sizes = {
-  xs: {
-    fontSize: "heading-xs-text-size",
-  },
-  sm: {
-    fontSize: "heading-sm-text-size",
-  },
-  md: {
-    fontSize: "heading-md-text-size",
-  },
-  lg: {
-    fontSize: "heading-lg-text-size",
-  },
-  xl: {
-    fontSize: "heading-xl-text-size",
-  },
-  xxl: {
-    fontSize: "heading-2xl-text-size",
-  },
-  xxxl: {
-    fontSize: "heading-3xl-text-size",
-  },
-  xxxxl: {
-    fontSize: "heading-4xl-text-size",
-  },
-};
 
-const variants = {
-  light: {
-    fontWeight: "heading-light-font-weight",
-  },
-  regular: {
-    fontWeight: "heading-regular-font-weight",
-  },
-  semiBold: {
-    fontWeight: "heading-semi-bold-font-weight",
-  },
-  bold: {
-    fontWeight: "heading-bold-font-weight",
-  },
-};
+.heading__xs {
+    font-size: "heading-xs-text-size"
+  }
 
-const defaultProps = {
-  variant: "regular",
-};
 
-export default {
-  baseStyle,
-  sizes,
-  variants,
-  defaultProps,
-};
+.heading__sm {
+    font-size: "heading-sm-text-size"
+  }
+
+
+.heading__md {
+    font-size: "heading-md-text-size"
+  }
+
+
+.heading__lg {
+    font-size: "heading-lg-text-size"
+  }
+
+
+.heading__xl {
+    font-size: "heading-xl-text-size"
+  }
+
+
+.heading__xxl {
+    font-size: "heading-2xl-text-size"
+  }
+
+
+.heading__xxxl {
+    font-size: "heading-3xl-text-size"
+  }
+
+
+.heading__xxxxl {
+    font-size: "heading-4xl-text-size"
+  }
+
+
+
+
+.heading__light: {
+    font-weight: "heading-light-font-weight"
+  }
+
+
+  .heading__regular: {
+    font-weight: "heading-regular-font-weight"
+  }
+
+
+  .heading__semiBold: {
+    font-weight: "heading-semi-bold-font-weight"
+  }
+
+
+  .heading__bold: {
+    font-weight: "heading-bold-font-weight"
+  }
+
+
+
+
+
+

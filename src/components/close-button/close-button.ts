@@ -1,12 +1,12 @@
-const baseStyle = {
+.close-button__container {
   _focus: {
-    boxShadow: 'none',
-  },
+    box-shadow: var(--none);
+  }
+
   _focusVisible: {
-    boxShadow: 'outline',
-  },
+    box-shadow: var(--outline);
+  }
+
 }
 
-export default {
-  baseStyle,
-}
+

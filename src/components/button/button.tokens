@@ -91,7 +91,7 @@
 }
 
 .button__link {
-    borderStyle: none;
+    border-style: none;
     color: var(--button-link-default-text-color);
     background: transparent;
 }

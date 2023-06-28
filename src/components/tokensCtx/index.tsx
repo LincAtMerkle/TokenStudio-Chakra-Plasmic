@@ -41,7 +41,8 @@ export const ModifierProvider = ({ modifiers, children } : ModifierProviderProps
       ...ctx?.modifiers,
       ...modifiers,
     };
-  }, [ctx?.modifiers, modifiers]);
+  }
+ [ctx?.modifiers, modifiers]);
 
   return (
     <ModifierContext.Provider
@@ -54,7 +55,8 @@ export const ModifierProvider = ({ modifiers, children } : ModifierProviderProps
 
 export const ComponentContext = react.createContext({
   name: "",
-  map: {},
+  map: {}
+
 });
 
 export const useComponentCtx = () => {
@@ -82,20 +84,23 @@ export const ComponentProvider = ({
   const css = useMemo(async () => {
     if (typeof window) {
       const { default: compSheet } = await import(`../${name}/${name}.tokens`, {
-        assert: { type: "css" },
+        assert: { type: "css" }
+
       });
 
       // const { default: sheet2 } = await import(
       //     `../${name}/tokens/${name}-${type}-${color}.tokens`,
       //     {
-      //         assert: { type: "css" },
+      //         assert: { type: "css" }
+
       //     }
       // );
 
       const { default: colorSheet } = await import(
         `../${name}/tokens/${name}-${color}.tokens`,
         {
-          assert: { type: "css" },
+          assert: { type: "css" }
+
         }
       );
 
@@ -110,7 +115,8 @@ export const ComponentProvider = ({
       // setStyleSheets([sheet]);
       return compSheet;
     }
-  }, [type, color, name, setStyleSheets]);
+  }
+ [type, color, name, setStyleSheets]);
 
   return (
     <ComponentContext.Provider value={{ name, map: cssSync || css }}>

@@ -1,65 +1,59 @@
-const baseStyle = {
-  color: 'emphasized',
-  mb: '1.5',
-  fontSize: 'sm',
+.form-label__container {
+  color: var(--emphasized);
+  mb: var(--1.5);
+  font-size: var(--sm);
 }
 
-const sizes = {
-  sm: {
-    _peerPlaceholderShown: {
-      fontSize: 'sm',
-      top: '1.5',
-      left: '4',
-    },
-  },
-  md: {
-    _peerPlaceholderShown: {
-      fontSize: 'md',
-      top: '2',
-      left: '4',
-    },
-  },
-  lg: {
-    _peerPlaceholderShown: {
-      fontSize: 'lg',
-      top: '2.5',
-      left: '4',
-    },
-  },
-}
 
-const variants = {
+.form-label__sm {
+    _peerPlaceholderShown: {
+      font-size: var(--sm);
+      top: var(--1.5);
+      left: var(--4);
+    }
+
+  }
+
+.form-label__md {
+    _peerPlaceholderShown: {
+      font-size: var(--md);
+      top: var(--2);
+      left: var(--4);
+    }
+
+  }
+
+.form-label__lg {
+    _peerPlaceholderShown: {
+      font-size: var(--lg);
+      top: var(--2.5);
+      left: var(--4);
+    }
+
+  }
+
+
   inline: () => ({
     margin: 0,
-    minW: '2xs',
+    min-width: var(--2xs);
   }),
   floating: () => ({
-    position: 'absolute',
-    transition: 'all 0.12s ease-in',
-    pointerEvents: 'none',
-    top: '-27px',
-    left: '0',
+    position: var(--absolute);
+    transition: var(--all 0.12s ease-in);
+    pointer-events: var(--none);
+    top: var(---27px);
+    left: var(--0);
     _peerPlaceholderShown: {
-      fontWeight: 'normal',
-      color: 'subtle',
-    },
+      font-weight: var(--normal);
+      color: var(--subtle);
+    }
+
     _peerFocus: {
-      fontSize: 'sm',
-      fontWeight: 'medium',
-      top: '-27px',
-      left: '0',
-      color: 'muted',
-    },
+      font-size: var(--sm);
+      font-weight: var(--medium);
+      top: var(---27px);
+      left: var(--0);
+      color: var(--muted);
+    }
+
   }),
-}
-
-const defaultProps = {
-  size: 'md',
-}
-
-export default {
-  baseStyle,
-  sizes,
-  variants,
-  defaultProps,
-}

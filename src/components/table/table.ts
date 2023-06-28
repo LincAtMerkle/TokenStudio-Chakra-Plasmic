@@ -1,72 +1,82 @@
-import { mode, StyleFunctionProps, transparentize } from '@chakra-ui/theme-tools'
-
-const baseStyle = {
+.table__container {
   table: {
-    bg: 'bg-surface',
-    whiteSpace: 'nowrap',
-  },
+    background: var(--bg-surface);
+    white-space: var(--nowrap);
+  }
+
   th: {
-    fontWeight: 'medium',
-    textTransform: 'normal',
-    letterSpacing: 'normal',
-    borderTopWidth: '1px',
-    whiteSpace: 'nowrap',
-  },
+    font-weight: var(--medium);
+    text-transform: var(--normal);
+    letter-spacing: var(--normal);
+    border-top-width: var(--1px);
+    white-space: var(--nowrap);
+  }
+
 }
 
-const variants = {
+
   simple: (props: StyleFunctionProps) => ({
     th: {
-      color: 'muted',
+      color: var(--muted);
       bg: mode('gray.50', transparentize('gray.700', 0.4)(props.theme))(props),
-    },
+    }
+
   }),
   striped: (props: StyleFunctionProps) => ({
     th: {
-      color: 'muted',
-      borderBottomWidth: '0px',
-    },
+      color: var(--muted);
+      border-bottom-width: var(--0px);
+    }
+
     thead: {
       'th,td': {
-        borderWidth: '0px',
-      },
-    },
+        border-width: var(--0px);
+      }
+
+    }
+
     tbody: {
       tr: {
         'th,td': {
-          borderWidth: '0px',
-        },
+          border-width: var(--0px);
+        }
+
         '&:last-of-type': {
           'th, td': {
-            borderBottomWidth: '1px',
-          },
-        },
+            border-bottom-width: var(--1px);
+          }
+
+        }
+
         '&:nth-of-type(odd)': {
           'th, td': {
-            borderBottomWidth: '0px',
-          },
+            border-bottom-width: var(--0px);
+          }
+
           td: {
             bg: mode('gray.50', transparentize('gray.700', 0.4)(props.theme))(props),
-          },
-        },
-      },
-    },
+          }
+
+        }
+
+      }
+
+    }
+
   }),
 }
 
-const sizes = {
-  md: {
+
+.table__md {
     th: {
-      lineHeight: '1.25rem',
-    },
+      line-height: var(--1.25rem);
+    }
+
     td: {
-      fontSize: 'sm',
-    },
-  },
+      font-size: var(--sm);
+    }
+
+  }
+
 }
 
-export default {
-  sizes,
-  baseStyle,
-  variants,
-}
