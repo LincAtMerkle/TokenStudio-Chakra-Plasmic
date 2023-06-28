@@ -2,7 +2,7 @@
   "color": {
     "primary1": {
       "50": {
-        "value": "#C2C9D7",
+        "value": "#ff00ff",
         "type": "color",
         "description": "Primary Merkle Blue"
       },
