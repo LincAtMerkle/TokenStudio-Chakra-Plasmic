@@ -7,7 +7,7 @@ const baseStyle = (props: StyleFunctionProps) => ({
   }
 
   control: {
-    bg: mode('white', 'gray.800')(props),
+    background: mode('white', 'gray.800')(props);
     border-radius: var(--base);
   }
 
@@ -32,18 +32,18 @@ const baseStyle = (props: StyleFunctionProps) => ({
 
   primary: (props: StyleFunctionProps) =>
     props.theme.components['Checkbox']['variants']['solid']({
-      ...props,
+      ...props;
       variant: var(--solid);
       colorScheme: var(--brand);
-    }),
+    });
   'primary-on-accent': () => ({
     background: var(--brand.50);
     color: var(--brand.600);
-    _hover: { background: var(--brand.100' }
+    ._hover { background: var(--brand.100' }
 
     _active: { background: var(--brand.100' }
 
-  }),
+  });
 }
 
 

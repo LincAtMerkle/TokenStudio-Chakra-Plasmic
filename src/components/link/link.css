@@ -1,0 +1,23 @@
+.menu {
+  border-radius: var(--lg);
+  /* option 1 */
+  ._hover {
+    text-decoration: var(--none);
+    background: var(--bg-subtle);
+  }
+  /* option 2 */
+  &:hover {
+    text-decoration: var(--none);
+    background: var(--bg-subtle);
+  }
+  /* option 3 */
+  > hover {
+    text-decoration: var(--none);
+    background: var(--bg-subtle);
+  }
+}
+/* option 4 */
+.menu:hover {
+  text-decoration: var(--none);
+  background: var(--bg-subtle);
+}

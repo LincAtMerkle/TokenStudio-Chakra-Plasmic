@@ -18,10 +18,10 @@
   simple: (props: StyleFunctionProps) => ({
     th: {
       color: var(--muted);
-      bg: mode('gray.50', transparentize('gray.700', 0.4)(props.theme))(props),
+      background: mode('gray.50', transparentize('gray.700', 0.4)(props.theme))(props);
     }
 
-  }),
+  });
   striped: (props: StyleFunctionProps) => ({
     th: {
       color: var(--muted);
@@ -54,7 +54,7 @@
           }
 
           td: {
-            bg: mode('gray.50', transparentize('gray.700', 0.4)(props.theme))(props),
+            background: mode('gray.50', transparentize('gray.700', 0.4)(props.theme))(props);
           }
 
         }
@@ -63,7 +63,7 @@
 
     }
 
-  }),
+  });
 }
 
 

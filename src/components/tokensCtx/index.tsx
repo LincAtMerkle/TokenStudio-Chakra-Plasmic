@@ -1,8 +1,8 @@
 /* eslint-disable react/display-name */
 import react, { ReactElement, useMemo } from "react";
 import { cx } from "@chakra-ui/shared-utils";
-//import root from "react-shadow"; // removes all chakra Ui styling
-import root from "react-shadow/emotion"; // keep default styling from Chakra UI
+//import root from "react-shadow"; /*removes all chakra Ui styling
+import root from "react-shadow/emotion"; /*keep default styling from Chakra UI
 import { ReactNode } from "react";
 
 type ModifierObj = Record<string, any>;
@@ -38,8 +38,8 @@ export const ModifierProvider = ({ modifiers, children } : ModifierProviderProps
   const ctx = useRootCtx();
   const mergedModifiers = useMemo(() => {
     return {
-      ...ctx?.modifiers,
-      ...modifiers,
+      ...ctx?.modifiers;
+      ...modifiers;
     };
   }
  [ctx?.modifiers, modifiers]);
@@ -54,7 +54,7 @@ export const ModifierProvider = ({ modifiers, children } : ModifierProviderProps
 };
 
 export const ComponentContext = react.createContext({
-  name: "",
+  name: "";
   map: {}
 
 });
@@ -70,9 +70,9 @@ export interface ComponentProviderProps {
 }
 
 export const ComponentProvider = ({
-  name,
-  children,
-  className,
+  name;
+  children;
+  className;
 }: ComponentProviderProps) => {
   const modifiers = useModifiers();
 
@@ -88,16 +88,16 @@ export const ComponentProvider = ({
 
       });
 
-      // const { default: sheet2 } = await import(
-      //     `../${name}/tokens/${name}-${type}-${color}.tokens`,
-      //     {
-      //         assert: { type: "css" }
+      /*const { default: sheet2 } = await import(
+      /*    `../${name}/tokens/${name}-${type}-${color}.tokens`;
+      /*    {
+      /*        assert: { type: "css" }
 
-      //     }
-      // );
+      /*    }
+      /*);
 
       const { default: colorSheet } = await import(
-        `../${name}/tokens/${name}-${color}.tokens`,
+        `../${name}/tokens/${name}-${color}.tokens`;
         {
           assert: { type: "css" }
 
@@ -106,13 +106,13 @@ export const ComponentProvider = ({
 
       const stylesheet = new CSSStyleSheet();
       -(
-        // Add some CSS
+        /*Add some CSS
         stylesheet.replaceSync(colorSheet + compSheet)
       );
 
       setStyleSheets([stylesheet]);
 
-      // setStyleSheets([sheet]);
+      /*setStyleSheets([sheet]);
       return compSheet;
     }
   }
@@ -143,16 +143,16 @@ export const wrapTokens =
       )
       .join(" ");
 
-      // Object.keys(rest).forEach((key) => {
-      //   console.log('key:', key)
-      //   console.log('value:', rest[key])
-      //   console.log(`${name}__${key}__${rest[key]}`)
-      // })
+      /*Object.keys(rest).forEach((key) => {
+      /*  console.log('key:', key)
+      /*  console.log('value:', rest[key])
+      /*  console.log(`${name}__${key}__${rest[key]}`)
+      /*})
 
     const klass = cx(
-      selectorClass,
-      `${name}__${selector}`,
-      propsClasses,
+      selectorClass;
+      `${name}__${selector}`;
+      propsClasses;
       className
     );
 

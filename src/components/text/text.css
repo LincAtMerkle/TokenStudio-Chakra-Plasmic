@@ -1,10 +1,10 @@
 .text__container {
-  font-family: "text-font-family",
-  line-height: "text-line-height",
-  color: "text-text-color",
+  font-family: "text-font-family";
+  line-height: "text-line-height";
+  color: "text-text-color";
 };
-// Four sizes: xs,sm,md and large
-// why 4 ? as the docs say 10
+/*Four sizes: xs,sm,md and large
+/*why 4 ? as the docs say 10
 
 .text__xs {
     font-size: "text-xs-text-size"
@@ -57,7 +57,7 @@
 
 
 };
-// Two variants: outline and solid
+/*Two variants: outline and solid
 
 
   light: {
@@ -82,7 +82,7 @@
 
 }
 
-// The default size and variant values
+/*The default size and variant values
 
 
 

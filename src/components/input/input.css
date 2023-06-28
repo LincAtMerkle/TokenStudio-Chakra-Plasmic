@@ -1,24 +1,24 @@
 .field__outline {
       border-radius: var(--lg);
-      bg: mode('white', 'gray.800')(props),
-      _hover: { border-color: mode('gray.300', 'gray.600')(props) }
+      background: mode('white', 'gray.800')(props);
+      ._hover { border-color: mode('gray.300', 'gray.600')(props) }
 
-      _focus: {
-        border-color: mode('brand.500', 'brand.200')(props),
+      ._focus {
+        border-color: mode('brand.500', 'brand.200')(props);
         box-shadow: mode(
-          `0px 0px 0px 1px ${transparentize(`brand.500`, 1.0)(props.theme)}`,
-          `0px 0px 0px 1px ${transparentize(`brand.200`, 1.0)(props.theme)}`,
-        )(props),
+          `0px 0px 0px 1px ${transparentize(`brand.500`, 1.0)(props.theme)}`;
+          `0px 0px 0px 1px ${transparentize(`brand.200`, 1.0)(props.theme)}`;
+        )(props);
       }
 
 
 
     addon: {
       border-radius: var(--lg);
-      bg: mode('gray.50', 'gray.700')(props),
+      background: mode('gray.50', 'gray.700')(props);
     }
 
-  },
+  };
 
   .field__outline-on-accent {
 
@@ -31,31 +31,30 @@
         color: var(--gray.500);
       }
 
-      _hover: {
+      ._hover {
         border-color: var(--brand.100);
       }
 
-      _focus: {
+      ._focus {
         border-color: var(--brand.200);
-        box-shadow: `0px 0px 0px 1px ${transparentize(`brand.200`, 1.0)(props.theme)}`,
+        box-shadow: `0px 0px 0px 1px ${transparentize(`brand.200`, 1.0)(props.theme)}`;
       }
 
 
 
-  },
+  };
   .field__filled {
     if (props.colorScheme === 'gray') {
       return {
-        field: {
-          bg: mode('white', 'gray.800')(props),
-          _hover: {
-            border-color: mode('gray.200', 'gray.700')(props),
-            bg: mode('white', 'gray.700')(props),
+        .field {
+          background: mode('white', 'gray.800')(props);
+          ._hover {
+            border-color: mode('gray.200', 'gray.700')(props);
+            background: mode('white', 'gray.700')(props);
           }
-
-          _focus: {
+          ._focus {
             border-color: var(--accent);
-            bg: mode('white', 'gray.800')(props),
+            background: mode('white', 'gray.800')(props);
           }
 
         }
@@ -63,19 +62,19 @@
       }
     }
     return {
-      field: {
+      .field {
         background: var(--bg-accent-subtle);
         color: var(--on-accent);
         _placeholder: {
           color: var(--on-accent);
         }
 
-        _hover: {
+        ._hover {
           border-color: var(--brand.400);
           background: var(--bg-accent-subtle);
         }
 
-        _focus: {
+        ._focus {
           background: var(--bg-accent-subtle);
           border-color: var(--brand.300);
         }

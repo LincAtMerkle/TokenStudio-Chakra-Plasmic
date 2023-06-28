@@ -4,11 +4,11 @@
     border-radius: var(--icon-button-border-radius);
     border: var(--btn-border-width);
     border-style: var(--solid);
-    _isRound: {
+    ._isRound {
         border-radius: var(--icon-button-round-border-radius)
     }
   }
-  // Four sizes: xs,sm,md and large
+  /*Four sizes: xs,sm,md and large
   const sizes  = {
   .iconButton__xs {
       height: var(--icon-button-xs-height);
@@ -38,8 +38,8 @@
       background: var(--icon-button-default-background-color);
       color: var(--icon-button-default-icon-color);
       border-color: var(--icon-button-default-border-color);
-      iconColor:"icon-button-default-icon-color",
-      _hover: {
+      iconColor:"icon-button-default-icon-color";
+      ._hover {
         background: var(--btn-primary-hover-background-color);
         color: var(--btn-primary-hover-text-color);
         border-color: var(--btn-primary-hover-border-color);
@@ -53,7 +53,7 @@
         iconColor:'btn-primary-active-icon-color)
       }
 
-      _disabled: {
+      ._disabled {
         background: var(--btn-primary-disabled-background-color);
         color: var(--btn-primary-disabled-text-color);
         border-color: var(--btn-primary-disabled-border-color);
@@ -66,7 +66,7 @@
       color: var(--btn-secondary-default-text-color);
       border-color: var(--btn-secondary-default-border-color);
       iconColor:'btn-secondary-default-icon-color);
-      _hover: {
+      ._hover {
         background: var(--btn-secondary-hover-background-color);
         color: var(--btn-secondary-hover-text-color);
         border-color: var(--btn-secondary-hover-border-color);
@@ -80,7 +80,7 @@
         iconColor:'btn-secondary-active-icon-color)
       }
 
-      _disabled: {
+      ._disabled {
         background: var(--btn-secondary-disabled-background-color);
         color: var(--btn-secondary-disabled-text-color);
         border-color: var(--btn-secondary-disabled-border-color);
@@ -93,7 +93,7 @@
       color: var(--btn-negative-default-text-color);
       border-color: var(--btn-negative-default-border-color);
       iconColor:'btn-negative-default-icon-color);
-      _hover: {
+      ._hover {
         background: var(--btn-negative-hover-background-color);
         color: var(--btn-negative-hover-text-color);
         border-color: var(--btn-negative-hover-border-color);
@@ -110,7 +110,7 @@
 
       }
 
-      _disabled: {
+      ._disabled {
         background: var(--btn-negative-disabled-background-color);
         color: var(--btn-negative-disabled-text-color);
         border-color: var(--btn-negative-disabled-border-color);

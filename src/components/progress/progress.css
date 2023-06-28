@@ -1,0 +1,20 @@
+.progress__container {
+  .track {
+    border-radius: var(--base);
+  }
+}
+
+.progress__solid {
+  .track {
+    background: var(--bg-muted);
+  }
+}
+
+progress__on-accent {
+  .track {
+    background: var(--transparent);
+  }
+  .filled-track {
+    background: var(--brand.50);
+  }
+}

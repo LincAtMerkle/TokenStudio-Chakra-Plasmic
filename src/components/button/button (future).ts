@@ -41,29 +41,29 @@
 
   primary: (props: StyleFunctionProps) =>
     props.theme.components['Button']['variants']['solid']({
-      ...props,
+      ...props;
       variant: var(--solid);
       colorScheme: var(--gray);
-    }),
+    });
   'primary-on-accent': () => ({
     background: var(--bg-accent);
     color: var(--brand.600);
-    _hover: { background: var(--brand.100' }
+    ._hover { background: var(--brand.100' }
 
     _active: { background: var(--brand.100' }
 
-  }),
+  });
   secondary: (props: StyleFunctionProps) =>
     props.theme.components['Button']['variants']['outline']({
-      ...props,
+      ...props;
       variant: var(--outline);
       colorScheme: var(--purple);
-    }),
+    });
   'secondary-on-accent': {
     color: var(--white);
     border-color: var(--brand.50);
     border-width: var(--1px);
-    _hover: { background: var(--whiteAlpha.200' }
+    ._hover { background: var(--whiteAlpha.200' }
 
     _active: { background: var(--whiteAlpha.200' }
 
@@ -71,44 +71,44 @@
 
   outline: (props: StyleFunctionProps) => ({
     color: var(--emphasized);
-    // bg: mode('white', 'gray.800')(props),
-    bg: mode('btn-bg', 'gray.800')(props),
-    fg: mode('btn-fg', 'gray.800')(props),
-    _hover: {
-      bg: mode(
-        darken('gray.50', 1)(props.theme),
-        transparentize('gray.700', 0.4)(props.theme),
-      )(props),
+    /*bg: mode('white', 'gray.800')(props);
+    background: mode('btn-bg', 'gray.800')(props);
+    fg: mode('btn-fg', 'gray.800')(props);
+    ._hover {
+      background: mode(
+        darken('gray.50', 1)(props.theme);
+        transparentize('gray.700', 0.4)(props.theme);
+      )(props);
     }
 
-    _checked: {
-      bg: mode('gray.100', 'gray.700')(props),
+    ._checked {
+      background: mode('gray.100', 'gray.700')(props);
     }
 
     _active: {
-      bg: mode('gray.100', 'gray.700')(props),
+      background: mode('gray.100', 'gray.700')(props);
     }
 
-  }),
+  });
   ghost: (props: StyleFunctionProps) => ({
     color: var(--emphasized);
-    _hover: {
-      bg: mode(darken('gray.50', 1)(props.theme), darken('gray.700', 4)(props.theme))(props),
+    ._hover {
+      background: mode(darken('gray.50', 1)(props.theme), darken('gray.700', 4)(props.theme))(props);
     }
 
     _active: {
-      bg: mode(darken('gray.50', 1)(props.theme), darken('gray.700', 4)(props.theme))(props),
+      background: mode(darken('gray.50', 1)(props.theme), darken('gray.700', 4)(props.theme))(props);
     }
 
     _activeLink: {
-      bg: mode('gray.100', 'gray.700')(props),
+      background: mode('gray.100', 'gray.700')(props);
     }
 
-  }),
+  });
   'ghost-on-accent': (props: StyleFunctionProps) => ({
     color: var(--brand.50);
-    _hover: {
-      bg: transparentize('brand.500', 0.67)(props.theme),
+    ._hover {
+      background: transparentize('brand.500', 0.67)(props.theme);
     }
 
     _activeLink: {
@@ -116,12 +116,12 @@
       background: var(--bg-accent-subtle);
     }
 
-  }),
+  });
   link: (props: StyleFunctionProps) => {
     if (props.colorScheme === 'gray') {
       return {
         color: var(--muted);
-        _hover: {
+        ._hover {
           text-decoration: var(--none);
           color: var(--default);
         }
@@ -133,14 +133,14 @@
       }
     }
     return {
-      color: mode(`${props.colorScheme}.600`, `${props.colorScheme}.200`)(props),
-      _hover: {
-        color: mode(`${props.colorScheme}.700`, `${props.colorScheme}.300`)(props),
+      color: mode(`${props.colorScheme}.600`, `${props.colorScheme}.200`)(props);
+      ._hover {
+        color: mode(`${props.colorScheme}.700`, `${props.colorScheme}.300`)(props);
         text-decoration: var(--none);
       }
 
       _active: {
-        color: mode(`${props.colorScheme}.700`, `${props.colorScheme}.300`)(props),
+        color: mode(`${props.colorScheme}.700`, `${props.colorScheme}.300`)(props);
       }
 
     }
@@ -148,12 +148,12 @@
 
   'link-on-accent': () => {
     return {
-      padding: 0,
+      padding: 0;
       height: var(--auto);
       line-height: var(--normal);
       verticalAlign: var(--baseline);
       color: var(--brand.50);
-      _hover: {
+      ._hover {
         color: var(--white);
       }
 

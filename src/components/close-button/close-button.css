@@ -1,12 +1,9 @@
 .close-button__container {
-  _focus: {
+  ._focus {
     box-shadow: var(--none);
   }
 
-  _focusVisible: {
+  ._focusVisible {
     box-shadow: var(--outline);
   }
-
 }
-
-
