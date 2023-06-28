@@ -4,6 +4,9 @@
     border: none;
     padding: 0.5em;
     background-color: var(--button-primary1-default-background-color);
+
+    border-style: "solid";
+
     border-radius: var(--button-border-radius);
     border-width: var(--button-border-width);
     border-color: var(--button-primary1-default-border-color);
@@ -12,6 +15,9 @@
     font-weight: var(--button-font-weight);
     color: var(--button-primary1-default-text-color);
     line-height: var(--button-line-height);
+
+    text-transform: "uppercase";
+    width: "auto";
 
     > span {
         color: var(--button-primary1-default-icon-color);
