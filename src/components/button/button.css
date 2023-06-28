@@ -128,7 +128,7 @@
       icon-color: var(--button-primary1-active-icon-color);
     }
 
-    _disabled: {
+    ._disabled {
       background: var(--button-primary1-disabled-background-color);
       color: var(--button-primary1-disabled-text-color);
       border-color: var(--button-primary1-disabled-border-color);
