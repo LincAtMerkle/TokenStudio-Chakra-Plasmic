@@ -114,14 +114,14 @@
     color: var(--button-primary1-default-text-color);
     border-color: var(--button-primary1-default-border-color);
     icon-color: var(--button-primary1-default-icon-color);
-    _hover: {
+    ._hover {
       background: var(--button-primary1-hover-background-color);
       color: var(--button-primary1-hover-text-color);
       border-color: var(--button-primary1-hover-border-color);
       icon-color: var(--button-primary1-hover-icon-color);
     }
 
-    _active: {
+    ._active {
       background: var(--button-primary1-active-background-color);
       color: var(--button-primary1-active-text-color);
       border-color: var(--button-primary1-active-border-color);

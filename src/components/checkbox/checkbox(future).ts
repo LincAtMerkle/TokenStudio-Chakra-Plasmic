@@ -41,7 +41,7 @@ const baseStyle = (props: StyleFunctionProps) => ({
     color: var(--brand.600);
     ._hover { background: var(--brand.100' }
 
-    _active: { background: var(--brand.100' }
+    ._active { background: var(--brand.100' }
 
   });
 }

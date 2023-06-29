@@ -50,7 +50,7 @@
     color: var(--brand.600);
     ._hover { background: var(--brand.100' }
 
-    _active: { background: var(--brand.100' }
+    ._active { background: var(--brand.100' }
 
   });
   secondary: (props: StyleFunctionProps) =>
@@ -65,7 +65,7 @@
     border-width: var(--1px);
     ._hover { background: var(--whiteAlpha.200' }
 
-    _active: { background: var(--whiteAlpha.200' }
+    ._active { background: var(--whiteAlpha.200' }
 
   }
 
@@ -85,7 +85,7 @@
       background: mode('gray.100', 'gray.700')(props);
     }
 
-    _active: {
+    ._active {
       background: mode('gray.100', 'gray.700')(props);
     }
 
@@ -96,7 +96,7 @@
       background: mode(darken('gray.50', 1)(props.theme), darken('gray.700', 4)(props.theme))(props);
     }
 
-    _active: {
+    ._active {
       background: mode(darken('gray.50', 1)(props.theme), darken('gray.700', 4)(props.theme))(props);
     }
 
@@ -126,7 +126,7 @@
           color: var(--default);
         }
 
-        _active: {
+        ._active {
           color: var(--default);
         }
 
@@ -139,7 +139,7 @@
         text-decoration: var(--none);
       }
 
-      _active: {
+      ._active {
         color: mode(`${props.colorScheme}.700`, `${props.colorScheme}.300`)(props);
       }
 
@@ -157,7 +157,7 @@
         color: var(--white);
       }
 
-      _active: {
+      ._active {
         color: var(--white);
       }
 

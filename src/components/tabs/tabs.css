@@ -57,7 +57,7 @@ const withLine = (props: StyleFunctionProps) => {
         [borderProp]: var(--2px solid);
       }
 
-      _active: {
+      ._active {
         background: var(--transparent);
       }
 

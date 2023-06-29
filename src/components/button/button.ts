@@ -6,8 +6,8 @@ import {
   }
  from "@chakra-ui/theme-tools";
   
-  .xxxxx__container {
-    /*The styles all button have in common
+  .button__container {
+    /*The styles all button have in common*/
     font-weight: "btn-font-weight";
     
     text-transform: "uppercase";
@@ -20,29 +20,29 @@ import {
 ;
   
   
-    /*Four sizes: xs,sm,md and large
-  .xxxxx__xs {
+    /*Four sizes: xs,sm,md and large*/
+  .button__xs {
       padding-left: "btn-xs-padding-left";
       padding-right: "btn-xs-padding-right";
       height: "btn-xs-height";
       font-size: "btn-xs-text-size";
     }
 
-  .xxxxx__sm {
+  .button__sm {
       padding-left: "btn-sm-padding-left";
       padding-right: "btn-sm-padding-right";
       height: "btn-sm-height";
       font-size: "btn-sm-text-size";
     }
 
-  .xxxxx__md {
+  .button__md {
       padding-left: "btn-md-padding-left";
       padding-right: "btn-md-padding-right";
       height: "btn-md-height";
       font-size: "btn-md-text-size";
     }
 
-  .xxxxx__lg {
+  .button__lg {
       padding-left: "btn-lg-padding-left";
       padding-right: "btn-lg-padding-right";
       height: "btn-lg-height";
@@ -52,10 +52,10 @@ import {
 
   
   
-    /*Two variants: outline and solid
+    /*Two variants: outline and solid*/
     primary1: {
       background: var(--#ff00ff);
-      /*bg: "btn-primary1-default-background-color";
+      /*bg: "btn-primary1-default-background-color";*/
       color: "btn-primary1-default-text-color";
       border-color: "btn-primary1-default-border-color";
       iconColor: "btn-primary1-default-icon-color";
@@ -66,7 +66,7 @@ import {
         iconColor: "btn-primary1-hover-icon-color";
       }
 
-      _active: {
+      ._active {
         background: "btn-primary1-active-background-color";
         color: "btn-primary1-active-text-color";
         border-color: "btn-primary1-active-border-color";
@@ -83,7 +83,7 @@ import {
     }
 
     primary2: {
-      /*background: var(--btn-primary-default-background-color);
+      /*background: var(--btn-primary-default-background-color);*/
       background: "btn-primary2-default-background-color";
       color: "btn-primary2-default-text-color";
       border-color: "btn-primary2-default-border-color";
@@ -95,7 +95,7 @@ import {
         iconColor: "btn-primary2-hover-icon-color";
       }
 
-      _active: {
+      ._active {
         background: "btn-primary2-active-background-color";
         color: "btn-primary2-active-text-color";
         border-color: "btn-primary2-active-border-color";
@@ -123,7 +123,7 @@ import {
         iconColor: "btn-secondary1-hover-icon-color";
       }
 
-      _active: {
+      ._active {
         background: "btn-secondary1-active-background-color";
         color: "btn-secondary1-active-text-color";
         border-color: "btn-secondary1-active-border-color";
@@ -151,7 +151,7 @@ import {
         iconColor: "btn-secondary2-hover-icon-color";
       }
 
-      _active: {
+      ._active {
         background: "btn-secondary2-active-background-color";
         color: "btn-secondary2-active-text-color";
         border-color: "btn-secondary2-active-border-color";
@@ -286,7 +286,7 @@ import {
         color: "btn-link-hover-text-color";
       }
 
-      _active: {
+      ._active {
         color: "btn-link-active-text-color";
       }
 
@@ -303,7 +303,7 @@ import {
         color: var(--);
       }
 
-      _active: {
+      ._active {
         color: var(--);
       }
 

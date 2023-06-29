@@ -93,7 +93,8 @@
 
 .custom-select__sm {
     .field {
-      px: 3;
+      padding-left: 3;
+      padding-right: 3;
       height: 8;
       font-size: var(--sm);
       border-radius: var(--sm);
@@ -105,7 +106,8 @@
     }
 
     .option {
-      px: 3;
+      padding-left: 3;
+      padding-right: 3;
       height: 8;
       font-size: var(--sm);
     }
@@ -114,7 +116,8 @@
 
 .custom-select__md {
     .field {
-      px: 4;
+      padding-left: 4;
+      padding-right: 4;
       height: 10;
       font-size: var(--md);
       border-radius: var(--md);
@@ -126,7 +129,8 @@
     }
 
     .option {
-      px: 4;
+      padding-left: 4;
+      padding-right: 4;
       height: 10;
       font-size: var(--md);
     }
@@ -135,7 +139,8 @@
 
 .custom-select__lg {
     .field {
-      px: 4;
+      padding-left: 4;
+      padding-right: 4;
       height: 12;
       font-size: var(--lg);
       border-radius: var(--md);
@@ -147,7 +152,8 @@
     }
 
     .option {
-      px: 4;
+      padding-left: 4;
+      padding-right: 4;
       height: 12;
       font-size: var(--lg);
     }
