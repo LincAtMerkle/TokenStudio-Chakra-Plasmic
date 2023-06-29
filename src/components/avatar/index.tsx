@@ -1,14 +1,14 @@
 import React from "react";
-import { chakra, ButtonProps, Button as _Button } from "@chakra-ui/react";
+import { chakra, AvatarProps, Avatar as _Avatar } from "@chakra-ui/react";
 import { ComponentProvider, wrapTokens } from "../tokensCtx";
 
 // @ts-ignore TODO: fix types
-const ChakraButton = wrapTokens(_Button, "container");
+const ChakraAvatar = wrapTokens(_Avatar, "container");
 
-export const Button = (props: ButtonProps) => {
+export const Avatar = (props: AvatarProps) => {
   return (
-    <ComponentProvider name="button" className={props.className}>
-      <ChakraButton {...props}/>
+    <ComponentProvider name="avatar" className={props.className}>
+      <ChakraAvatar {...props}/>
     </ComponentProvider>
   );
 };

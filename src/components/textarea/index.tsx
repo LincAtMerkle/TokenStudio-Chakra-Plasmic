@@ -1,14 +1,14 @@
 import React from "react";
-import { chakra, ButtonProps, Button as _Button } from "@chakra-ui/react";
+import { chakra, TextareaProps, Textarea as _Textarea } from "@chakra-ui/react";
 import { ComponentProvider, wrapTokens } from "../tokensCtx";
 
 // @ts-ignore TODO: fix types
-const ChakraButton = wrapTokens(_Button, "container");
+const ChakraTextarea = wrapTokens(_Textarea, "container");
 
-export const Button = (props: ButtonProps) => {
+export const Textarea = (props: TextareaProps) => {
   return (
-    <ComponentProvider name="button" className={props.className}>
-      <ChakraButton {...props}/>
+    <ComponentProvider name="Textarea" className={props.className}>
+      <ChakraTextarea {...props}/>
     </ComponentProvider>
   );
 };
