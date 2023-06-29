@@ -58,7 +58,7 @@ async function run() {
                 "link",
                 "popover",
                 "progress",
-                "radioCard",
+                "radio",
                 "switch",
                 "table",
                 "tabs",

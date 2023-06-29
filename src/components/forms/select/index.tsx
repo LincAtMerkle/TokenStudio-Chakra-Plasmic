@@ -1,14 +1,14 @@
 import React from "react";
-import { chakra, CustomSelectProps, CustomSelect as _CustomSelect } from "@chakra-ui/react";
+import { chakra, SelectProps, Select as _CustomSelect } from "@chakra-ui/react";
 import { ComponentProvider, wrapTokens } from "../tokensCtx";
 
 // @ts-ignore TODO: fix types
 const ChakraCustomSelect = wrapTokens(_CustomSelect, "container");
 
-export const CustomSelect = (props: CustomSelectProps) => {
+export const CustomSelect = (props: SelectProps) => {
   return (
     <ComponentProvider name="customSelect" className={props.className}>
-      <ChakraCustomSelect {...props}/>
+      <ChakraSelect {...props}/>
     </ComponentProvider>
   );
 };
