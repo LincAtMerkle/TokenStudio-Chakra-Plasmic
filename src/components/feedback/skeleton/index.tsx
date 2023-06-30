@@ -1,14 +1,14 @@
 import React from "react";
-import { chakra, TagProps, Tag as _Tag } from "@chakra-ui/react";
-import { ComponentProvider, wrapTokens } from "../tokensCtx";
+import { chakra, SkeletonProps, Skeleton as _Skeleton } from "@chakra-ui/react";
+import { ComponentProvider, wrapTokens } from "../../tokensCtx";
 
 // @ts-ignore TODO: fix types
-const ChakraTag = wrapTokens(_Tag, "container");
+const ChakraSkeleton = wrapTokens(_Skeleton, "container");
 
-export const Tag = (props: TagProps) => {
+export const Skeleton = (props: SkeletonProps) => {
   return (
-    <ComponentProvider name="tag" className={props.className}>
-      <ChakraTag {...props}/>
+    <ComponentProvider name="skeleton" className={props.className}>
+      <ChakraSkeleton {...props}/>
     </ComponentProvider>
   );
 };

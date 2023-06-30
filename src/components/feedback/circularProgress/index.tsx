@@ -1,14 +1,14 @@
 import React from "react";
-import { chakra, TagProps, Tag as _Tag } from "@chakra-ui/react";
-import { ComponentProvider, wrapTokens } from "../tokensCtx";
+import { chakra, CircularProgressProps, CircularProgress as _CircularProgress } from "@chakra-ui/react";
+import { ComponentProvider, wrapTokens } from "../../tokensCtx";
 
 // @ts-ignore TODO: fix types
-const ChakraTag = wrapTokens(_Tag, "container");
+const ChakraCircularProgress = wrapTokens(_CircularProgress, "container");
 
-export const Tag = (props: TagProps) => {
+export const CircularProgress = (props: CircularProgressProps) => {
   return (
-    <ComponentProvider name="tag" className={props.className}>
-      <ChakraTag {...props}/>
+    <ComponentProvider name="circularProgress" className={props.className}>
+      <ChakraCircularProgress {...props}/>
     </ComponentProvider>
   );
 };

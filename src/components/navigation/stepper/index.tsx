@@ -1,14 +1,14 @@
 import React from "react";
-import { chakra, TagProps, Tag as _Tag } from "@chakra-ui/react";
-import { ComponentProvider, wrapTokens } from "../tokensCtx";
+import { chakra, StepperProps, Stepper as _Stepper } from "@chakra-ui/react";
+import { ComponentProvider, wrapTokens } from "../../tokensCtx";
 
 // @ts-ignore TODO: fix types
-const ChakraTag = wrapTokens(_Tag, "container");
+const ChakraStepper = wrapTokens(_Stepper, "container");
 
-export const Tag = (props: TagProps) => {
+export const Stepper = (props: StepperProps) => {
   return (
-    <ComponentProvider name="tag" className={props.className}>
-      <ChakraTag {...props}/>
+    <ComponentProvider name="stepper" className={props.className}>
+      <ChakraStepper {...props}/>
     </ComponentProvider>
   );
 };

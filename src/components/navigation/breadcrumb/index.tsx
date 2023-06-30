@@ -1,14 +1,14 @@
 import React from "react";
-import { chakra, TagProps, Tag as _Tag } from "@chakra-ui/react";
-import { ComponentProvider, wrapTokens } from "../tokensCtx";
+import { chakra, BreadcrumbProps, Breadcrumb as _Breadcrumb } from "@chakra-ui/react";
+import { ComponentProvider, wrapTokens } from "../../tokensCtx";
 
 // @ts-ignore TODO: fix types
-const ChakraTag = wrapTokens(_Tag, "container");
+const ChakraBreadcrumb = wrapTokens(_Breadcrumb, "container");
 
-export const Tag = (props: TagProps) => {
+export const Breadcrumb = (props: BreadcrumbProps) => {
   return (
-    <ComponentProvider name="tag" className={props.className}>
-      <ChakraTag {...props}/>
+    <ComponentProvider name="breadcrumb" className={props.className}>
+      <ChakraBreadcrumb {...props}/>
     </ComponentProvider>
   );
 };

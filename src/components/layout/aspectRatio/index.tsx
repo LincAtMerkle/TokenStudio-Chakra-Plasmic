@@ -1,14 +1,14 @@
 import React from "react";
-import { chakra, TagProps, Tag as _Tag } from "@chakra-ui/react";
-import { ComponentProvider, wrapTokens } from "../tokensCtx";
+import { chakra, AspectRatioProps, AspectRatio as _AspectRatio } from "@chakra-ui/react";
+import { ComponentProvider, wrapTokens } from "../../tokensCtx";
 
 // @ts-ignore TODO: fix types
-const ChakraTag = wrapTokens(_Tag, "container");
+const ChakraAspectRatio = wrapTokens(_AspectRatio, "container");
 
-export const Tag = (props: TagProps) => {
+export const AspectRatio = (props: AspectRatioProps) => {
   return (
-    <ComponentProvider name="tag" className={props.className}>
-      <ChakraTag {...props}/>
+    <ComponentProvider name="aspectRatio" className={props.className}>
+      <ChakraAspectRatio {...props}/>
     </ComponentProvider>
   );
 };

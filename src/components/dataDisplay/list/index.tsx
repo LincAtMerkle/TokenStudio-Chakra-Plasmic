@@ -1,14 +1,14 @@
 import React from "react";
-import { chakra, SwitchProps, Switch as _Switch } from "@chakra-ui/react";
-import { ComponentProvider, wrapTokens } from "../tokensCtx";
+import { chakra, ListProps, List as _List } from "@chakra-ui/react";
+import { ComponentProvider, wrapTokens } from "../../tokensCtx";
 
 // @ts-ignore TODO: fix types
-const ChakraSwitch = wrapTokens(_Switch, "container");
+const ChakraList = wrapTokens(_List, "container");
 
-export const Switch = (props: SwitchProps) => {
+export const List = (props: ListProps) => {
   return (
-    <ComponentProvider name="switch" className={props.className}>
-      <ChakraSwitch {...props}/>
+    <ComponentProvider name="list" className={props.className}>
+      <ChakraList {...props}/>
     </ComponentProvider>
   );
 };

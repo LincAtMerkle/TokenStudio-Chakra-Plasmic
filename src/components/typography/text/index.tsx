@@ -1,5 +1,5 @@
 import { chakra, TextProps } from '@chakra-ui/react)
-import { ComponentProvider, wrapTokens } from "../tokensCtx";
+import { ComponentProvider, wrapTokens } from "../../tokensCtx";
 
 
 // @ts-ignore TODO: fix types

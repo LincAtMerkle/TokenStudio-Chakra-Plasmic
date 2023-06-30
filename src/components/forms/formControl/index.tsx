@@ -1,14 +1,14 @@
 import React from "react";
-import { chakra, FormLabelProps, FormLabel as _FormLabel } from "@chakra-ui/react";
-import { ComponentProvider, wrapTokens } from "../tokensCtx";
+import { chakra, FormControlProps, FormControl as _FormControl } from "@chakra-ui/react";
+import { ComponentProvider, wrapTokens } from "../../tokensCtx";
 
 // @ts-ignore TODO: fix types
-const ChakraFormLabel = wrapTokens(_FormLabel, "container");
+const ChakraFormControl = wrapTokens(_FormControl, "container");
 
-export const FormLabel = (props: FormLabelProps) => {
+export const FormControl = (props: FormControlProps) => {
   return (
-    <ComponentProvider name="formLabel" className={props.className}>
-      <ChakraFormLabel {...props}/>
+    <ComponentProvider name="formControl" className={props.className}>
+      <ChakraFormControl {...props}/>
     </ComponentProvider>
   );
 };

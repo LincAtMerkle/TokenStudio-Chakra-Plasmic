@@ -1,14 +1,14 @@
 import React from "react";
-import { chakra, TagProps, Tag as _Tag } from "@chakra-ui/react";
-import { ComponentProvider, wrapTokens } from "../tokensCtx";
+import { chakra, AlertDialogProps, AlertDialog as _AlertDialog } from "@chakra-ui/react";
+import { ComponentProvider, wrapTokens } from "../../tokensCtx";
 
 // @ts-ignore TODO: fix types
-const ChakraTag = wrapTokens(_Tag, "container");
+const ChakraAlertDialog = wrapTokens(_AlertDialog, "container");
 
-export const Tag = (props: TagProps) => {
+export const AlertDialog = (props: AlertDialogProps) => {
   return (
-    <ComponentProvider name="tag" className={props.className}>
-      <ChakraTag {...props}/>
+    <ComponentProvider name="alertDialog" className={props.className}>
+      <ChakraAlertDialog {...props}/>
     </ComponentProvider>
   );
 };

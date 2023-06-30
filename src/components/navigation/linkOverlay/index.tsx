@@ -1,14 +1,14 @@
 import React from "react";
-import { chakra, TagProps, Tag as _Tag } from "@chakra-ui/react";
-import { ComponentProvider, wrapTokens } from "../tokensCtx";
+import { chakra, LinkOverlayProps, LinkOverlay as _LinkOverlay } from "@chakra-ui/react";
+import { ComponentProvider, wrapTokens } from "../../tokensCtx";
 
 // @ts-ignore TODO: fix types
-const ChakraTag = wrapTokens(_Tag, "container");
+const ChakraLinkOverlay = wrapTokens(_LinkOverlay, "container");
 
-export const Tag = (props: TagProps) => {
+export const LinkOverlay = (props: LinkOverlayProps) => {
   return (
-    <ComponentProvider name="tag" className={props.className}>
-      <ChakraTag {...props}/>
+    <ComponentProvider name="linkOverlay" className={props.className}>
+      <ChakraLinkOverlay {...props}/>
     </ComponentProvider>
   );
 };

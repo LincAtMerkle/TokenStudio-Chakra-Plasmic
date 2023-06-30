@@ -1,14 +1,14 @@
 import React from "react";
-import { chakra, TagProps, Tag as _Tag } from "@chakra-ui/react";
-import { ComponentProvider, wrapTokens } from "../tokensCtx";
+import { chakra, GridProps, Grid as _Grid } from "@chakra-ui/react";
+import { ComponentProvider, wrapTokens } from "../../tokensCtx";
 
 // @ts-ignore TODO: fix types
-const ChakraTag = wrapTokens(_Tag, "container");
+const ChakraGrid = wrapTokens(_Grid, "container");
 
-export const Tag = (props: TagProps) => {
+export const Grid = (props: GridProps) => {
   return (
-    <ComponentProvider name="tag" className={props.className}>
-      <ChakraTag {...props}/>
+    <ComponentProvider name="grid" className={props.className}>
+      <ChakraGrid {...props}/>
     </ComponentProvider>
   );
 };

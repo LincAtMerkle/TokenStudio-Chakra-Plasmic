@@ -1,14 +1,14 @@
 import React from "react";
-import { chakra, TagProps, Tag as _Tag } from "@chakra-ui/react";
-import { ComponentProvider, wrapTokens } from "../tokensCtx";
+import { chakra, AccordionProps, Accordion as _Accordion } from "@chakra-ui/react";
+import { ComponentProvider, wrapTokens } from "../../tokensCtx";
 
 // @ts-ignore TODO: fix types
-const ChakraTag = wrapTokens(_Tag, "container");
+const ChakraAccordion = wrapTokens(_Accordion, "container");
 
-export const Tag = (props: TagProps) => {
+export const Accordion = (props: AccordionProps) => {
   return (
-    <ComponentProvider name="tag" className={props.className}>
-      <ChakraTag {...props}/>
+    <ComponentProvider name="accordion" className={props.className}>
+      <ChakraAccordion {...props}/>
     </ComponentProvider>
   );
 };

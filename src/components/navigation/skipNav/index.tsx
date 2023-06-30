@@ -1,14 +1,14 @@
 import React from "react";
-import { chakra, TagProps, Tag as _Tag } from "@chakra-ui/react";
-import { ComponentProvider, wrapTokens } from "../tokensCtx";
+import { chakra, SkipNavProps, SkipNav as _SkipNav } from "@chakra-ui/react";
+import { ComponentProvider, wrapTokens } from "../../tokensCtx";
 
 // @ts-ignore TODO: fix types
-const ChakraTag = wrapTokens(_Tag, "container");
+const ChakraSkipNav = wrapTokens(_SkipNav, "container");
 
-export const Tag = (props: TagProps) => {
+export const SkipNav = (props: SkipNavProps) => {
   return (
-    <ComponentProvider name="tag" className={props.className}>
-      <ChakraTag {...props}/>
+    <ComponentProvider name="skipNav" className={props.className}>
+      <ChakraSkipNav {...props}/>
     </ComponentProvider>
   );
 };

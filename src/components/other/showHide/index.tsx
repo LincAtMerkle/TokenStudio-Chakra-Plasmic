@@ -1,14 +1,14 @@
 import React from "react";
-import { chakra, TagProps, Tag as _Tag } from "@chakra-ui/react";
-import { ComponentProvider, wrapTokens } from "../tokensCtx";
+import { chakra, ShowHideProps, ShowHide as _ShowHide } from "@chakra-ui/react";
+import { ComponentProvider, wrapTokens } from "../../tokensCtx";
 
 // @ts-ignore TODO: fix types
-const ChakraTag = wrapTokens(_Tag, "container");
+const ChakraShowHide = wrapTokens(_ShowHide, "container");
 
-export const Tag = (props: TagProps) => {
+export const ShowHide = (props: ShowHideProps) => {
   return (
-    <ComponentProvider name="tag" className={props.className}>
-      <ChakraTag {...props}/>
+    <ComponentProvider name="showHide" className={props.className}>
+      <ChakraShowHide {...props}/>
     </ComponentProvider>
   );
 };

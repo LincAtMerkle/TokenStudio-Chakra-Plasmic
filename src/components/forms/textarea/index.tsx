@@ -1,6 +1,6 @@
 import React from "react";
 import { chakra, TextareaProps, Textarea as _Textarea } from "@chakra-ui/react";
-import { ComponentProvider, wrapTokens } from "../tokensCtx";
+import { ComponentProvider, wrapTokens } from "../../tokensCtx";
 
 // @ts-ignore TODO: fix types
 const ChakraTextarea = wrapTokens(_Textarea, "container");

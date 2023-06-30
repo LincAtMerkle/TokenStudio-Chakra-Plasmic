@@ -1,14 +1,14 @@
 import React from "react";
-import { chakra, TagProps, Tag as _Tag } from "@chakra-ui/react";
-import { ComponentProvider, wrapTokens } from "../tokensCtx";
+import { chakra, IconProps, Icon as _Icon } from "@chakra-ui/react";
+import { ComponentProvider, wrapTokens } from "../../tokensCtx";
 
 // @ts-ignore TODO: fix types
-const ChakraTag = wrapTokens(_Tag, "container");
+const ChakraIcon = wrapTokens(_Icon, "container");
 
-export const Tag = (props: TagProps) => {
+export const Icon = (props: IconProps) => {
   return (
-    <ComponentProvider name="tag" className={props.className}>
-      <ChakraTag {...props}/>
+    <ComponentProvider name="icon" className={props.className}>
+      <ChakraIcon {...props}/>
     </ComponentProvider>
   );
 };

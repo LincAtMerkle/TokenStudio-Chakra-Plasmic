@@ -1,14 +1,14 @@
 import React from "react";
-import { chakra, TagProps, Tag as _Tag } from "@chakra-ui/react";
-import { ComponentProvider, wrapTokens } from "../tokensCtx";
+import { chakra, EditableProps, Editable as _Editable } from "@chakra-ui/react";
+import { ComponentProvider, wrapTokens } from "../../tokensCtx";
 
 // @ts-ignore TODO: fix types
-const ChakraTag = wrapTokens(_Tag, "container");
+const ChakraEditable = wrapTokens(_Editable, "container");
 
-export const Tag = (props: TagProps) => {
+export const Editable = (props: EditableProps) => {
   return (
-    <ComponentProvider name="tag" className={props.className}>
-      <ChakraTag {...props}/>
+    <ComponentProvider name="editable" className={props.className}>
+      <ChakraEditable {...props}/>
     </ComponentProvider>
   );
 };
