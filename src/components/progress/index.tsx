@@ -1,4 +1,4 @@
-import { ProgressProps, Progress as _Progress } from "@chakra-ui/react";
+import { ProgressProps, Progress as ChakraProgressComponent } from "@chakra-ui/react";
 import { wrapTokens } from "../tokensCtx";
 
 const Wrapped = wrapTokens(ChakraProgressComponent, 'container');

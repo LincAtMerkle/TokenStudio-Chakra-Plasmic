@@ -1,4 +1,4 @@
-import { ToastProps, Toast as _Toast } from "@chakra-ui/react";
+import { ToastProps, Toast as ChakraToastComponent } from "@chakra-ui/react";
 import { wrapTokens } from "../tokensCtx";
 
 const Wrapped = wrapTokens(ChakraToastComponent, 'container');

@@ -1,4 +1,4 @@
-import { PinInputProps, PinInput as _PinInput } from "@chakra-ui/react";
+import { PinInputProps, PinInput as ChakraPinInputComponent } from "@chakra-ui/react";
 import { wrapTokens } from "../tokensCtx";
 
 const Wrapped = wrapTokens(ChakraPinInputComponent, 'container');

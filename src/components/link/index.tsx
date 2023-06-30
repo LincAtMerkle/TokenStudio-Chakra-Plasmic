@@ -1,4 +1,4 @@
-import { LinkProps, Link as _Link } from "@chakra-ui/react";
+import { LinkProps, Link as ChakraLinkComponent } from "@chakra-ui/react";
 import { wrapTokens } from "../tokensCtx";
 
 const Wrapped = wrapTokens(ChakraLinkComponent, 'container');

@@ -1,4 +1,4 @@
-import { StatProps, Stat as _Stat } from "@chakra-ui/react";
+import { StatProps, Stat as ChakraStatComponent } from "@chakra-ui/react";
 import { wrapTokens } from "../tokensCtx";
 
 const Wrapped = wrapTokens(ChakraStatComponent, 'container');

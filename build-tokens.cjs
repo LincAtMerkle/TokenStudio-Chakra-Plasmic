@@ -64,7 +64,7 @@ async function run() {
                 // "spinner",
                 // "toast",
 
-                // "button",
+                "button",
                 // "checkbox",
                 // "editable",
                 // "formControl",

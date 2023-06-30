@@ -1,4 +1,4 @@
-import { TextareaProps, Textarea as _Textarea } from "@chakra-ui/react";
+import { TextareaProps, Textarea as ChakraTextareaComponent } from "@chakra-ui/react";
 import { wrapTokens } from "../tokensCtx";
 
 const Wrapped = wrapTokens(ChakraTextareaComponent, 'container');

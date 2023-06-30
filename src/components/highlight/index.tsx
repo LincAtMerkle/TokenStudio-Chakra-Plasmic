@@ -1,4 +1,4 @@
-import { HighlightProps, Highlight as _Highlight } from "@chakra-ui/react";
+import { HighlightProps, Highlight as ChakraHighlightComponent } from "@chakra-ui/react";
 import { wrapTokens } from "../tokensCtx";
 
 const Wrapped = wrapTokens(ChakraHighlightComponent, 'container');

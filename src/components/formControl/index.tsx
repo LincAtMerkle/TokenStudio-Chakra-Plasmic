@@ -1,4 +1,4 @@
-import { FormControlProps, FormControl as _FormControl } from "@chakra-ui/react";
+import { FormControlProps, FormControl as ChakraFormControlComponent } from "@chakra-ui/react";
 import { wrapTokens } from "../tokensCtx";
 
 const Wrapped = wrapTokens(ChakraFormControlComponent, 'container');

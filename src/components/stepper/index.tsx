@@ -1,4 +1,4 @@
-import { StepperProps, Stepper as _Stepper } from "@chakra-ui/react";
+import { StepperProps, Stepper as ChakraStepperComponent } from "@chakra-ui/react";
 import { wrapTokens } from "../tokensCtx";
 
 const Wrapped = wrapTokens(ChakraStepperComponent, 'container');

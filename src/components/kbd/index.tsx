@@ -1,4 +1,4 @@
-import { KbdProps, Kbd as _Kbd } from "@chakra-ui/react";
+import { KbdProps, Kbd as ChakraKbdComponent } from "@chakra-ui/react";
 import { wrapTokens } from "../tokensCtx";
 
 const Wrapped = wrapTokens(ChakraKbdComponent, 'container');

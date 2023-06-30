@@ -1,4 +1,4 @@
-import { SkipNavProps, SkipNav as _SkipNav } from "@chakra-ui/react";
+import { SkipNavProps, SkipNav as ChakraSkipNavComponent } from "@chakra-ui/react";
 import { wrapTokens } from "../tokensCtx";
 
 const Wrapped = wrapTokens(ChakraSkipNavComponent, 'container');

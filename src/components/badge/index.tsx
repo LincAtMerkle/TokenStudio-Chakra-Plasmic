@@ -1,4 +1,4 @@
-import { BadgeProps, Badge as _Badge } from "@chakra-ui/react";
+import { BadgeProps, Badge as ChakraBadgeComponent } from "@chakra-ui/react";
 import { wrapTokens } from "../tokensCtx";
 
 const Wrapped = wrapTokens(ChakraBadgeComponent, 'container');

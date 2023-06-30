@@ -1,4 +1,4 @@
-import { ShowHideProps, ShowHide as _ShowHide } from "@chakra-ui/react";
+import { ShowHideProps, ShowHide as ChakraShowHideComponent } from "@chakra-ui/react";
 import { wrapTokens } from "../tokensCtx";
 
 const Wrapped = wrapTokens(ChakraShowHideComponent, 'container');

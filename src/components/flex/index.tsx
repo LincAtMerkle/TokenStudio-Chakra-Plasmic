@@ -1,4 +1,4 @@
-import { FlexProps, Flex as _Flex } from "@chakra-ui/react";
+import { FlexProps, Flex as ChakraFlexComponent } from "@chakra-ui/react";
 import { wrapTokens } from "../tokensCtx";
 
 const Wrapped = wrapTokens(ChakraFlexComponent, 'container');

@@ -1,4 +1,4 @@
-import { TabsProps, Tabs as _Tabs } from "@chakra-ui/react";
+import { TabsProps, Tabs as ChakraTabsComponent } from "@chakra-ui/react";
 import { wrapTokens } from "../tokensCtx";
 
 const Wrapped = wrapTokens(ChakraTabsComponent, 'container');

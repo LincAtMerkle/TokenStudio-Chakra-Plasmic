@@ -1,4 +1,4 @@
-import { SkeletonProps, Skeleton as _Skeleton } from "@chakra-ui/react";
+import { SkeletonProps, Skeleton as ChakraSkeletonComponent } from "@chakra-ui/react";
 import { wrapTokens } from "../tokensCtx";
 
 const Wrapped = wrapTokens(ChakraSkeletonComponent, 'container');

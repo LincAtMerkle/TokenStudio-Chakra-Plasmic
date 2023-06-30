@@ -1,4 +1,4 @@
-import { CloseButtonProps, CloseButton as _CloseButton } from "@chakra-ui/react";
+import { CloseButtonProps, CloseButton as ChakraCloseButtonComponent } from "@chakra-ui/react";
 import { wrapTokens } from "../tokensCtx";
 
 const Wrapped = wrapTokens(ChakraCloseButtonComponent, 'container');

@@ -1,4 +1,4 @@
-import { TableProps, Table as _Table } from "@chakra-ui/react";
+import { TableProps, Table as ChakraTableComponent } from "@chakra-ui/react";
 import { wrapTokens } from "../tokensCtx";
 
 const Wrapped = wrapTokens(ChakraTableComponent, 'container');

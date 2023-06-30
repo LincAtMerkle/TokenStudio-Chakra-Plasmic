@@ -1,4 +1,4 @@
-import { SpinnerProps, Spinner as _Spinner } from "@chakra-ui/react";
+import { SpinnerProps, Spinner as ChakraSpinnerComponent } from "@chakra-ui/react";
 import { wrapTokens } from "../tokensCtx";
 
 const Wrapped = wrapTokens(ChakraSpinnerComponent, 'container');

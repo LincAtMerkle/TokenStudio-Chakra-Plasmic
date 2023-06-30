@@ -1,4 +1,4 @@
-import { StackProps, Stack as _Stack } from "@chakra-ui/react";
+import { StackProps, Stack as ChakraStackComponent } from "@chakra-ui/react";
 import { wrapTokens } from "../tokensCtx";
 
 const Wrapped = wrapTokens(ChakraStackComponent, 'container');

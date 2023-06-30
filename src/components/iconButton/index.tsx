@@ -1,4 +1,4 @@
-import { IconButtonProps, IconButton as _IconButton } from "@chakra-ui/react";
+import { IconButtonProps, IconButton as ChakraIconButtonComponent } from "@chakra-ui/react";
 import { wrapTokens } from "../tokensCtx";
 
 const Wrapped = wrapTokens(ChakraIconButtonComponent, 'container');

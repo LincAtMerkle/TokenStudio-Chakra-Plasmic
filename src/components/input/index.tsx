@@ -1,4 +1,4 @@
-import { InputProps, Input as _Input } from "@chakra-ui/react";
+import { InputProps, Input as ChakraInputComponent } from "@chakra-ui/react";
 import { wrapTokens } from "../tokensCtx";
 
 const Wrapped = wrapTokens(ChakraInputComponent, 'container');

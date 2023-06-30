@@ -1,4 +1,4 @@
-import { NumberInputProps, NumberInput as _NumberInput } from "@chakra-ui/react";
+import { NumberInputProps, NumberInput as ChakraNumberInputComponent } from "@chakra-ui/react";
 import { wrapTokens } from "../tokensCtx";
 
 const Wrapped = wrapTokens(ChakraNumberInputComponent, 'container');

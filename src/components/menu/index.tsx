@@ -1,4 +1,4 @@
-import { MenuProps, Menu as _Menu } from "@chakra-ui/react";
+import { MenuProps, Menu as ChakraMenuComponent } from "@chakra-ui/react";
 import { wrapTokens } from "../tokensCtx";
 
 const Wrapped = wrapTokens(ChakraMenuComponent, 'container');

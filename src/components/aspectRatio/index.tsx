@@ -1,4 +1,4 @@
-import { AspectRatioProps, AspectRatio as _AspectRatio } from "@chakra-ui/react";
+import { AspectRatioProps, AspectRatio as ChakraAspectRatioComponent } from "@chakra-ui/react";
 import { wrapTokens } from "../tokensCtx";
 
 const Wrapped = wrapTokens(ChakraAspectRatioComponent, 'container');

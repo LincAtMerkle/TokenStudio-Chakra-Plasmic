@@ -1,4 +1,4 @@
-import { AvatarProps, Avatar as _Avatar } from "@chakra-ui/react";
+import { AvatarProps, Avatar as ChakraAvatarComponent } from "@chakra-ui/react";
 import { wrapTokens } from "../tokensCtx";
 
 const Wrapped = wrapTokens(ChakraAvatarComponent, 'container');

@@ -1,4 +1,4 @@
-import { ModalProps, Modal as _Modal } from "@chakra-ui/react";
+import { ModalProps, Modal as ChakraModalComponent } from "@chakra-ui/react";
 import { wrapTokens } from "../tokensCtx";
 
 const Wrapped = wrapTokens(ChakraModalComponent, 'container');

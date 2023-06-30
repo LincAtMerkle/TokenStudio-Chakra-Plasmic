@@ -1,4 +1,4 @@
-import { RadioProps, Radio as _Radio } from "@chakra-ui/react";
+import { RadioProps, Radio as ChakraRadioComponent } from "@chakra-ui/react";
 import { wrapTokens } from "../tokensCtx";
 
 const Wrapped = wrapTokens(ChakraRadioComponent, 'container');

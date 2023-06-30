@@ -1,4 +1,4 @@
-import { AccordionProps, Accordion as _Accordion } from "@chakra-ui/react";
+import { AccordionProps, Accordion as ChakraAccordionComponent } from "@chakra-ui/react";
 import { wrapTokens } from "../tokensCtx";
 
 const Wrapped = wrapTokens(ChakraAccordionComponent, 'container');

@@ -1,4 +1,4 @@
-import { CircularProgressProps, CircularProgress as _CircularProgress } from "@chakra-ui/react";
+import { CircularProgressProps, CircularProgress as ChakraCircularProgressComponent } from "@chakra-ui/react";
 import { wrapTokens } from "../tokensCtx";
 
 const Wrapped = wrapTokens(ChakraCircularProgressComponent, 'container');

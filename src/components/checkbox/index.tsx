@@ -1,4 +1,4 @@
-import { CheckboxProps, Checkbox as _Checkbox } from "@chakra-ui/react";
+import { CheckboxProps, Checkbox as ChakraCheckboxComponent } from "@chakra-ui/react";
 import { wrapTokens } from "../tokensCtx";
 
 const Wrapped = wrapTokens(ChakraCheckboxComponent, 'container');

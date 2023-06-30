@@ -1,4 +1,4 @@
-import { BoxProps, Box as _Box } from "@chakra-ui/react";
+import { BoxProps, Box as ChakraBoxComponent } from "@chakra-ui/react";
 import { wrapTokens } from "../tokensCtx";
 
 const Wrapped = wrapTokens(ChakraBoxComponent, 'container');

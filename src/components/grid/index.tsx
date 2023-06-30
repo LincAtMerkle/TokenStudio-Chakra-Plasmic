@@ -1,4 +1,4 @@
-import { GridProps, Grid as _Grid } from "@chakra-ui/react";
+import { GridProps, Grid as ChakraGridComponent } from "@chakra-ui/react";
 import { wrapTokens } from "../tokensCtx";
 
 const Wrapped = wrapTokens(ChakraGridComponent, 'container');

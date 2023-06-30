@@ -1,4 +1,4 @@
-import { EditableProps, Editable as _Editable } from "@chakra-ui/react";
+import { EditableProps, Editable as ChakraEditableComponent } from "@chakra-ui/react";
 import { wrapTokens } from "../tokensCtx";
 
 const Wrapped = wrapTokens(ChakraEditableComponent, 'container');

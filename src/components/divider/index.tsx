@@ -1,4 +1,4 @@
-import { DividerProps, Divider as _Divider } from "@chakra-ui/react";
+import { DividerProps, Divider as ChakraDividerComponent } from "@chakra-ui/react";
 import { wrapTokens } from "../tokensCtx";
 
 const Wrapped = wrapTokens(ChakraDividerComponent, 'container');

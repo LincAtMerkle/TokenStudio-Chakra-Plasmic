@@ -1,4 +1,4 @@
-import { ListProps, List as _List } from "@chakra-ui/react";
+import { ListProps, List as ChakraListComponent } from "@chakra-ui/react";
 import { wrapTokens } from "../tokensCtx";
 
 const Wrapped = wrapTokens(ChakraListComponent, 'container');

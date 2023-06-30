@@ -1,4 +1,4 @@
-import { SliderProps, Slider as _Slider } from "@chakra-ui/react";
+import { SliderProps, Slider as ChakraSliderComponent } from "@chakra-ui/react";
 import { wrapTokens } from "../tokensCtx";
 
 const Wrapped = wrapTokens(ChakraSliderComponent, 'container');

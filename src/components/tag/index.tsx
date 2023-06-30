@@ -1,5 +1,5 @@
-import { TagProps, Tag as _Tag } from "@chakra-ui/react";
-import { wrapTokens } from "../../tokensCtx";
+import { TagProps, Tag as ChakraTagComponent } from "@chakra-ui/react";
+import { wrapTokens } from "../tokensCtx";
 
 const Wrapped = wrapTokens(ChakraTagComponent, 'container');
 

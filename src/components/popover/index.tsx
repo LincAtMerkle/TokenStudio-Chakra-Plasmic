@@ -1,4 +1,4 @@
-import { PopoverProps, Popover as _Popover } from "@chakra-ui/react";
+import { PopoverProps, Popover as ChakraPopoverComponent } from "@chakra-ui/react";
 import { wrapTokens } from "../tokensCtx";
 
 const Wrapped = wrapTokens(ChakraPopoverComponent, 'container');

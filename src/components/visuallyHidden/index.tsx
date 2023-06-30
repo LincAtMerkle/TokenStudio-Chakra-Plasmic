@@ -1,4 +1,4 @@
-import { VisuallyHiddenProps, VisuallyHidden as _VisuallyHidden } from "@chakra-ui/react";
+import { VisuallyHiddenProps, VisuallyHidden as ChakraVisuallyHiddenComponent } from "@chakra-ui/react";
 import { wrapTokens } from "../tokensCtx";
 
 const Wrapped = wrapTokens(ChakraVisuallyHiddenComponent, 'container');
