@@ -1,0 +1,34 @@
+/**
+ * Do not edit directly, this file was auto-generated
+ */
+
+:host {
+  --checkbox-sm-width: 12px;
+  --checkbox-sm-height: 12px;
+  --checkbox-sm-checkmark-width: 8px;
+  --checkbox-sm-checkmark-height: 8px;
+  --checkbox-md-width: 16px;
+  --checkbox-md-height: 16px;
+  --checkbox-md-checkmark-width: 12px;
+  --checkbox-md-checkmark-height: 12px;
+  --checkbox-lg-width: 20px;
+  --checkbox-lg-height: 20px;
+  --checkbox-lg-checkmark-width: 16px;
+  --checkbox-lg-checkmark-height: 16px;
+  --checkbox-unselected-default-border-color: #41547D;
+  --checkbox-unselected-default-background-color: #ffffff;
+  --checkbox-unselected-error-border-color: #E74D4D;
+  --checkbox-unselected-error-background-color: #ffffff;
+  --checkbox-unselected-disabled-border-color: #41547D;
+  --checkbox-unselected-disabled-background-color: #D6D6DF;
+  --checkbox-selected-default-border-color: #41547D;
+  --checkbox-selected-default-background-color: #41547D;
+  --checkbox-selected-hover-border-color: #647496;
+  --checkbox-selected-hover-background-color: #647496;
+  --checkbox-selected-disabled-border-color: #41547D;
+  --checkbox-selected-disabled-background-color: #D6D6DF;
+  --checkbox-checkmark-selected-default-icon-color: #ffffff;
+  --checkbox-checkmark-selected-hover-icon-color: #ffffff;
+  --checkbox-checkmark-selected-disabled-icon-color: #41547D;
+  --checkbox-border-width: 1px;
+}

@@ -118,6 +118,9 @@ async function run() {
           },
         },
       }));
+
+
+      
     configs.forEach((cfg) => {
         const sd = StyleDictionary.extend(cfg);
         sd.cleanAllPlatforms();

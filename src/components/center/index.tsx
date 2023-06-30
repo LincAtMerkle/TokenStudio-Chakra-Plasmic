@@ -1,6 +1,6 @@
 import React from "react";
 import { chakra, CenterProps, Center as _Center } from "@chakra-ui/react";
-import { ComponentProvider, wrapTokens } from "../../tokensCtx";
+import { ComponentProvider, wrapTokens } from "../tokensCtx";
 
 // @ts-ignore TODO: fix types
 const ChakraCenter = wrapTokens(_Center, "container");

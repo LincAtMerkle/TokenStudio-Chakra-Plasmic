@@ -1,0 +1,73 @@
+/**
+ * Do not edit directly, this file was auto-generated
+ */
+
+:host {
+  --input-sm-height: 32px;
+  --input-sm-icon-size: 20px;
+  --input-sm-padding-left: 12px;
+  --input-sm-padding-right: 12px;
+  --input-sm-text-size: 14px;
+  --input-md-height: 40px;
+  --input-md-icon-size: 20px;
+  --input-md-padding-left: 16px;
+  --input-md-padding-right: 16px;
+  --input-md-text-size: 16px;
+  --input-lg-height: 48px;
+  --input-lg-icon-size: 24px;
+  --input-lg-padding-left: 16px;
+  --input-lg-padding-right: 16px;
+  --input-lg-text-size: 18px;
+  --input-space-between: 8px;
+  --input-border-radius: 4px;
+  --input-border-width: 1px;
+  --input-default-outlined-border-color: #F94F35;
+  --input-default-outlined-background-color: #861217;
+  --input-default-outlined-text-color: #FF7E6A;
+  --input-default-outlined-icon-color: #FF7E6A;
+  --input-default-filled-background-color: #861217;
+  --input-default-filled-text-color: #F94F35;
+  --input-default-filled-icon-color: #F94F35;
+  --input-default-flushed-border-color: #F94F35;
+  --input-default-flushed-background-color: #861217;
+  --input-default-flushed-text-color: #FF7E6A;
+  --input-default-flushed-icon-color: #FF7E6A;
+  --input-hover-outlined-border-color: #F94F35;
+  --input-hover-outlined-background-color: #ffffff;
+  --input-hover-outlined-text-color: #FF7E6A;
+  --input-hover-outlined-icon-color: #FF7E6A;
+  --input-hover-filled-background-color: #FFBAB0;
+  --input-hover-filled-text-color: #F94F35;
+  --input-hover-filled-icon-color: #F94F35;
+  --input-hover-flushed-border-color: #F94F35;
+  --input-hover-flushed-background-color: #FFBAB0;
+  --input-hover-flushed-text-color: #F94F35;
+  --input-hover-flushed-icon-color: #F94F35;
+  --input-focus-outlined-border-color: #C2C9D7;
+  --input-focus-outlined-background-color: #861217;
+  --input-focus-outlined-text-color: #FF7E6A;
+  --input-focus-outlined-icon-color: #FF7E6A;
+  --input-focus-filled-border-color: #C2C9D7;
+  --input-focus-filled-background-color: #861217;
+  --input-focus-filled-text-color: #F94F35;
+  --input-focus-filled-icon-color: #F94F35;
+  --input-focus-flushed-border-color: #C2C9D7;
+  --input-focus-flushed-background-color: #861217;
+  --input-invalid-outlined-border-color: #E74D4D;
+  --input-invalid-outlined-background-color: #861217;
+  --input-invalid-outlined-text-color: #E74D4D;
+  --input-invalid-filled-border-color: #E74D4D;
+  --input-invalid-filled-background-color: #861217;
+  --input-invalid-filled-text-color: #E74D4D;
+  --input-invalid-flushed-border-color: #E74D4D;
+  --input-invalid-flushed-background-color: #861217;
+  --input-invalid-flushed-text-color: #E74D4D;
+  --input-invalid-icon-icon-color: #E74D4D;
+  --input-disabled-border-color: #FF7E6A;
+  --input-disabled-background-color: #FF9788;
+  --input-disabled-text-color: #FF7E6A;
+  --input-disabled-icon-color: #FF7E6A;
+  --input-add-on-background-color: #FFBAB0;
+  --input-font-weight: 400;
+  --input-font-family: Inter;
+}

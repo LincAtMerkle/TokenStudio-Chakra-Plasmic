@@ -1,6 +1,6 @@
 import React from "react";
 import { chakra, BreadcrumbProps, Breadcrumb as _Breadcrumb } from "@chakra-ui/react";
-import { ComponentProvider, wrapTokens } from "../../tokensCtx";
+import { ComponentProvider, wrapTokens } from "../tokensCtx";
 
 // @ts-ignore TODO: fix types
 const ChakraBreadcrumb = wrapTokens(_Breadcrumb, "container");

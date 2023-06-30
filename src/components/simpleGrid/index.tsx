@@ -1,6 +1,6 @@
 import React from "react";
 import { chakra, SimpleGridProps, SimpleGrid as _SimpleGrid } from "@chakra-ui/react";
-import { ComponentProvider, wrapTokens } from "../../tokensCtx";
+import { ComponentProvider, wrapTokens } from "../tokensCtx";
 
 // @ts-ignore TODO: fix types
 const ChakraSimpleGrid = wrapTokens(_SimpleGrid, "container");

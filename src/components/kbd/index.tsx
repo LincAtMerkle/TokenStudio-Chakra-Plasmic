@@ -1,6 +1,6 @@
 import React from "react";
 import { chakra, KbdProps, Kbd as _Kbd } from "@chakra-ui/react";
-import { ComponentProvider, wrapTokens } from "../../tokensCtx";
+import { ComponentProvider, wrapTokens } from "../tokensCtx";
 
 // @ts-ignore TODO: fix types
 const ChakraKbd = wrapTokens(_Switch, "container");

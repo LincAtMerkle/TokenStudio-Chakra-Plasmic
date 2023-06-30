@@ -1,0 +1,28 @@
+/**
+ * Do not edit directly, this file was auto-generated
+ */
+
+:host {
+  --switch-sm-width: 26px;
+  --switch-sm-height: 16px;
+  --switch-sm-thumb-width: 12px;
+  --switch-sm-thumb-height: 12px;
+  --switch-md-width: 34px;
+  --switch-md-height: 20px;
+  --switch-md-thumb-width: 16px;
+  --switch-md-thumb-height: 16px;
+  --switch-default-border-color: #F94F35;
+  --switch-disabled-border-color: #FF7E6A;
+  --switch-selected-default-border-color: #41547D;
+  --switch-selected-disabled-border-color: #647496;
+  --switch-thumb-unselected-default-background-color: #861217;
+  --switch-thumb-unselected-disabled-background-color: #FF9788;
+  --switch-thumb-selected-default-background-color: #861217;
+  --switch-thumb-selected-disabled-background-color: #ffffff;
+  --switch-lg-width: 50px;
+  --switch-lg-height: 28px;
+  --switch-lg-thumb-width: 24px;
+  --switch-lg-thumb-height: 24px;
+  --switch-border-radius: 100px;
+  --switch-space-between: 8px;
+}

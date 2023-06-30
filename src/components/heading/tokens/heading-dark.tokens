@@ -1,0 +1,21 @@
+/**
+ * Do not edit directly, this file was auto-generated
+ */
+
+:host {
+  --heading-xs-text-size: 16px;
+  --heading-sm-text-size: 18px;
+  --heading-md-text-size: 22px;
+  --heading-lg-text-size: 28px;
+  --heading-xl-text-size: 36px;
+  --heading-2xl-text-size: 44px;
+  --heading-3xl-text-size: 48px;
+  --heading-4xl-text-size: 60px;
+  --heading-light-font-weight: 300;
+  --heading-regular-font-weight: 400;
+  --heading-semi-bold-font-weight: Semi Bold;
+  --heading-bold-font-weight: 700;
+  --heading-font-family: Inter;
+  --heading-text-color: #F23A1D;
+  --heading-line-height: 1.2;
+}

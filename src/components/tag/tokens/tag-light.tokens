@@ -1,0 +1,34 @@
+/**
+ * Do not edit directly, this file was auto-generated
+ */
+
+:host {
+  --tag-sm-height: 24px;
+  --tag-sm-icon-size: 8px;
+  --tag-sm-padding-left: 12px;
+  --tag-sm-padding-right: 12px;
+  --tag-sm-padding-top: 6px;
+  --tag-sm-padding-bottom: 6px;
+  --tag-sm-text-size: 14px;
+  --tag-md-height: 32px;
+  --tag-md-icon-size: 16px;
+  --tag-md-padding-left: 16px;
+  --tag-md-padding-right: 16px;
+  --tag-md-padding-top: 8px;
+  --tag-md-padding-bottom: 8px;
+  --tag-md-text-size: 16px;
+  --tag-lg-height: 40px;
+  --tag-lg-icon-size: 24px;
+  --tag-lg-padding-left: 16px;
+  --tag-lg-padding-right: 16px;
+  --tag-lg-padding-top: 8px;
+  --tag-lg-padding-bottom: 8px;
+  --tag-lg-text-size: 18px;
+  --tag-default-background-color: #FF7E6A;
+  --tag-default-text-color: #ffffff;
+  --tag-default-icon-color: #ffffff;
+  --tag-space-between: 8px;
+  --tag-font-weight: 400;
+  --tag-font-family: Inter;
+  --tag-border-radius: 100px;
+}

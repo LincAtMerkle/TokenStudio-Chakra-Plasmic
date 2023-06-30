@@ -1,6 +1,6 @@
 import React from "react";
 import { chakra, ProgressProps, Progress as _Progress } from "@chakra-ui/react";
-import { ComponentProvider, wrapTokens } from "../../tokensCtx";
+import { ComponentProvider, wrapTokens } from "../tokensCtx";
 
 // @ts-ignore TODO: fix types
 const ChakraProgress = wrapTokens(_Progress, "container");

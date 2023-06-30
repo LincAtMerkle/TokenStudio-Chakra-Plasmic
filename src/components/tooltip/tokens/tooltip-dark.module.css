@@ -1,0 +1,16 @@
+/**
+ * Do not edit directly, this file was auto-generated
+ */
+
+:host {
+  --tooltip-border-radius: 4px;
+  --tooltip-font-family: Inter;
+  --tooltip-font-weight: 400;
+  --tooltip-text-size: 14px;
+  --tooltip-text-color: #FFBAB0;
+  --tooltip-background-color: #FF7E6A;
+  --tooltip-padding-left: 16px;
+  --tooltip-padding-right: 16px;
+  --tooltip-padding-top: 16px;
+  --tooltip-padding-bottom: 16px;
+}

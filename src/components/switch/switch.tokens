@@ -1,0 +1,54 @@
+.switch__container {
+
+  .chakra-switch__track {
+    background: var(--switch-default-border-color);
+    .chakra-switch__thumb {
+      background: var(--switch-thumb-unselected-default-background-color);
+    }
+  }
+
+  .chakra-switch__track[data-checked] {
+    background: var(--switch-selected-default-border-color);
+    .chakra-switch__thumb {
+      background: var(--switch-thumb-selected-default-background-color);
+    }
+  }
+
+  .chakra-switch__track[data-disabled] {
+    background: var(--switch-disabled-border-color);
+    opacity: 1;
+    .chakra-switch__thumb {
+      background: var(--switch-thumb-unselected-disabled-background-color);
+    }
+  }
+
+  .chakra-switch__track[data-checked][data-disabled] {
+    background: var(--switch-selected-disabled-border-color);
+    opacity: 1;
+    .chakra-switch__thumb {
+      background: var(--switch-thumb-selected-disabled-background-color);
+    }
+  }
+
+}
+
+.switch__sm {
+ .chakra-switch__thumb {
+  height: var(--switch-sm-thumb-height);
+  width: var(--switch-sm-thumb-width);
+ }
+}
+
+.switch__md {
+  .chakra-switch__thumb {
+    height: var(--switch-md-thumb-height);
+    width: var(--switch-md-thumb-width);
+   }
+}
+
+.switch__lg {
+  .chakra-switch__thumb {
+    height: var(--switch-lg-thumb-height);
+    width: var(--switch-lg-thumb-width);
+   }
+}

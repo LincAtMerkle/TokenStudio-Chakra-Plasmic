@@ -64,7 +64,6 @@ import {
   StatHelpText,
   StatLabel,
   StatNumber,
-  Switch,
   Stack,
   HStack,
   VStack,
@@ -93,6 +92,7 @@ import {
 
 import { Button } from "../../src/components/button"
 import { Text } from "../../src/components/text"
+import { Switch } from "@/src/components/switch";
 
 import { Registerable } from "./registerable";
 import registerComponent, {

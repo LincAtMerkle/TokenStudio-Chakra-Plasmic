@@ -1,0 +1,41 @@
+/**
+ * Do not edit directly, this file was auto-generated
+ */
+
+:host {
+  --select-sm-height: 32px;
+  --select-sm-icon-size: 20px;
+  --select-sm-text-size: 14px;
+  --select-md-height: 40px;
+  --select-md-icon-size: 20px;
+  --select-md-text-size: 16px;
+  --select-lg-height: 48px;
+  --select-lg-icon-size: 20px;
+  --select-lg-text-size: 18px;
+  --select-space-between: 12px;
+  --select-border-radius: 4px;
+  --select-border-width: 1px;
+  --select-default-border-color: #FF9788;
+  --select-default-background-color: #ffffff;
+  --select-default-text-color: #12295D;
+  --select-default-icon-color: #12295D;
+  --select-hover-border-color: #FF9788;
+  --select-hover-background-color: #ffffff;
+  --select-hover-text-color: #12295D;
+  --select-hover-icon-color: #12295D;
+  --select-focus-border-color: #C2C9D7;
+  --select-focus-background-color: #ffffff;
+  --select-focus-text-color: #12295D;
+  --select-focus-icon-color: #12295D;
+  --select-focus-border-width: 4px;
+  --select-invalid-border-color: #E74D4D;
+  --select-invalid-background-color: #ffffff;
+  --select-invalid-text-color: #E74D4D;
+  --select-invalid-icon-color: #E74D4D;
+  --select-disabled-border-color: #41547D;
+  --select-disabled-background-color: #D6D6DF;
+  --select-disabled-text-color: #41547D;
+  --select-disabled-icon-color: #41547D;
+  --select-font-family: Inter;
+  --select-font-weight: 400;
+}

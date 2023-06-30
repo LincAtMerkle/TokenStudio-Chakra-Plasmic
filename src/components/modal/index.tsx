@@ -1,6 +1,6 @@
 import React from "react";
 import { chakra, ModalProps, Modal as _Modal } from "@chakra-ui/react";
-import { ComponentProvider, wrapTokens } from "../../tokensCtx";
+import { ComponentProvider, wrapTokens } from "../tokensCtx";
 
 // @ts-ignore TODO: fix types
 const ChakraModal = wrapTokens(_Modal, "container");

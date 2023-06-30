@@ -1,6 +1,6 @@
 import React from "react";
 import { chakra, SliderProps, Slider as _Slider } from "@chakra-ui/react";
-import { ComponentProvider, wrapTokens } from "../../tokensCtx";
+import { ComponentProvider, wrapTokens } from "../tokensCtx";
 
 // @ts-ignore TODO: fix types
 const ChakraSlider = wrapTokens(_Slider, "container");

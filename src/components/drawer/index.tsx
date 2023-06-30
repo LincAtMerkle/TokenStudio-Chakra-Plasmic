@@ -1,6 +1,6 @@
 import React from "react";
 import { chakra, DrawerProps, Drawer as _Drawer } from "@chakra-ui/react";
-import { ComponentProvider, wrapTokens } from "../../tokensCtx";
+import { ComponentProvider, wrapTokens } from "../tokensCtx";
 
 // @ts-ignore TODO: fix types
 const ChakraDrawer = wrapTokens(_Drawer, "container");

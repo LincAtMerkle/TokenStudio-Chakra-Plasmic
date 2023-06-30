@@ -1,0 +1,38 @@
+/**
+ * Do not edit directly, this file was auto-generated
+ */
+
+:host {
+  --radio-sm-width: 14px;
+  --radio-sm-height: 14px;
+  --radio-sm-checkmark-width: 6px;
+  --radio-sm-checkmark-height: 6px;
+  --radio-md-width: 18px;
+  --radio-md-height: 18px;
+  --radio-md-checkmark-width: 10px;
+  --radio-md-checkmark-height: 10px;
+  --radio-lg-width: 22px;
+  --radio-lg-height: 22px;
+  --radio-lg-checkmark-width: 12px;
+  --radio-lg-checkmark-height: 12px;
+  --radio-unselected-default-border-color: #41547D;
+  --radio-unselected-default-background-color: #861217;
+  --radio-unselected-error-border-color: #E74D4D;
+  --radio-unselected-error-background-color: #861217;
+  --radio-unselected-disabled-border-color: #FF7E6A;
+  --radio-unselected-disabled-background-color: #FF9788;
+  --radio-unselected-border-width: 1px;
+  --radio-selected-default-border-color: #41547D;
+  --radio-selected-default-background-color: #861217;
+  --radio-selected-hover-border-color: #647496;
+  --radio-selected-hover-background-color: #861217;
+  --radio-selected-disabled-border-color: #FF7E6A;
+  --radio-selected-sm-border-width: 4px;
+  --radio-selected-md-border-width: 5px;
+  --radio-selected-lg-border-width: 6px;
+  --radio-checkmark-selected-default-background-color: #861217;
+  --radio-checkmark-selected-hover-background-color: #ffffff;
+  --radio-checkmark-selected-disabled-background-color: #FF9788;
+  --radio-checkmark-border-radius: 16px;
+  --radio-border-radius: 16px;
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import { chakra, TooltipProps, Tooltip as _Tooltip } from "@chakra-ui/react";
-import { ComponentProvider, wrapTokens } from "../../tokensCtx";
+import { ComponentProvider, wrapTokens } from "../tokensCtx";
 
 // @ts-ignore TODO: fix types
 const Chakraooltip = wrapTokens(ooltip, "container");

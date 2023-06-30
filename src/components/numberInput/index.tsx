@@ -1,6 +1,6 @@
 import React from "react";
 import { chakra, NumberInputProps, NumberInput as _NumberInput } from "@chakra-ui/react";
-import { ComponentProvider, wrapTokens } from "../../tokensCtx";
+import { ComponentProvider, wrapTokens } from "../tokensCtx";
 
 // @ts-ignore TODO: fix types
 const ChakraNumberInput = wrapTokens(_NumberInput, "container");
