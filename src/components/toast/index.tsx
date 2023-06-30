@@ -1,14 +1,8 @@
-import React from "react";
-import { chakra, ToastProps, Toast as _Toast } from "@chakra-ui/react";
-import { ComponentProvider, wrapTokens } from "../tokensCtx";
+import { ToastProps, Toast as _Toast } from "@chakra-ui/react";
+import { wrapTokens } from "../tokensCtx";
 
-// @ts-ignore TODO: fix types
-const ChakraToast = wrapTokens(_Toast, "container");
+const Wrapped = wrapTokens(ChakraToastComponent, 'container');
 
 export const Toast = (props: ToastProps) => {
-  return (
-    <ComponentProvider name="toast" className={props.className}>
-      <ChakraToast {...props}/>
-    </ComponentProvider>
-  );
+  return <Wrapped {...props} />;
 };

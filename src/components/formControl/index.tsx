@@ -1,14 +1,8 @@
-import React from "react";
-import { chakra, FormControlProps, FormControl as _FormControl } from "@chakra-ui/react";
-import { ComponentProvider, wrapTokens } from "../tokensCtx";
+import { FormControlProps, FormControl as _FormControl } from "@chakra-ui/react";
+import { wrapTokens } from "../tokensCtx";
 
-// @ts-ignore TODO: fix types
-const ChakraFormControl = wrapTokens(_FormControl, "container");
+const Wrapped = wrapTokens(ChakraFormControlComponent, 'container');
 
 export const FormControl = (props: FormControlProps) => {
-  return (
-    <ComponentProvider name="formControl" className={props.className}>
-      <ChakraFormControl {...props}/>
-    </ComponentProvider>
-  );
+  return <Wrapped {...props} />;
 };

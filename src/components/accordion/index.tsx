@@ -1,14 +1,8 @@
-import React from "react";
-import { chakra, AccordionProps, Accordion as _Accordion } from "@chakra-ui/react";
-import { ComponentProvider, wrapTokens } from "../tokensCtx";
+import { AccordionProps, Accordion as _Accordion } from "@chakra-ui/react";
+import { wrapTokens } from "../tokensCtx";
 
-// @ts-ignore TODO: fix types
-const ChakraAccordion = wrapTokens(_Accordion, "container");
+const Wrapped = wrapTokens(ChakraAccordionComponent, 'container');
 
 export const Accordion = (props: AccordionProps) => {
-  return (
-    <ComponentProvider name="accordion" className={props.className}>
-      <ChakraAccordion {...props}/>
-    </ComponentProvider>
-  );
+  return <Wrapped {...props} />;
 };

@@ -1,14 +1,8 @@
-import React from "react";
-import { chakra, HeadingProps, Heading as _Heading } from "@chakra-ui/react";
-import { ComponentProvider, wrapTokens } from "../tokensCtx";
+import { HeadingProps, Heading as _Heading } from "@chakra-ui/react";
+import { wrapTokens } from "../tokensCtx";
 
-// @ts-ignore TODO: fix types
-const ChakraHeading = wrapTokens(_Heading, "container");
+const Wrapped = wrapTokens(ChakraHeadingComponent, 'container');
 
 export const Heading = (props: HeadingProps) => {
-  return (
-    <ComponentProvider name="heading" className={props.className}>
-      <ChakraHeading {...props}/>
-    </ComponentProvider>
-  );
+  return <Wrapped {...props} />;
 };

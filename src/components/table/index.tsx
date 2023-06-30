@@ -1,14 +1,8 @@
-import React from "react";
-import { chakra, TableProps, Table as _Table } from "@chakra-ui/react";
-import { ComponentProvider, wrapTokens } from "../tokensCtx";
+import { TableProps, Table as _Table } from "@chakra-ui/react";
+import { wrapTokens } from "../tokensCtx";
 
-// @ts-ignore TODO: fix types
-const ChakraTable = wrapTokens(_Table, "container");
+const Wrapped = wrapTokens(ChakraTableComponent, 'container');
 
 export const Table = (props: TableProps) => {
-  return (
-    <ComponentProvider name="table" className={props.className}>
-      <ChakraTable {...props}/>
-    </ComponentProvider>
-  );
+  return <Wrapped {...props} />;
 };

@@ -1,14 +1,8 @@
-import React from "react";
-import { chakra, AspectRatioProps, AspectRatio as _AspectRatio } from "@chakra-ui/react";
-import { ComponentProvider, wrapTokens } from "../tokensCtx";
+import { AspectRatioProps, AspectRatio as _AspectRatio } from "@chakra-ui/react";
+import { wrapTokens } from "../tokensCtx";
 
-// @ts-ignore TODO: fix types
-const ChakraAspectRatio = wrapTokens(_AspectRatio, "container");
+const Wrapped = wrapTokens(ChakraAspectRatioComponent, 'container');
 
 export const AspectRatio = (props: AspectRatioProps) => {
-  return (
-    <ComponentProvider name="aspectRatio" className={props.className}>
-      <ChakraAspectRatio {...props}/>
-    </ComponentProvider>
-  );
+  return <Wrapped {...props} />;
 };

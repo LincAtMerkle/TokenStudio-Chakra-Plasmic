@@ -1,14 +1,8 @@
-import React from "react";
-import { chakra, StatProps, Stat as _Stat } from "@chakra-ui/react";
-import { ComponentProvider, wrapTokens } from "../tokensCtx";
+import { StatProps, Stat as _Stat } from "@chakra-ui/react";
+import { wrapTokens } from "../tokensCtx";
 
-// @ts-ignore TODO: fix types
-const ChakraStat = wrapTokens(_Stat, "container");
+const Wrapped = wrapTokens(ChakraStatComponent, 'container');
 
 export const Stat = (props: StatProps) => {
-  return (
-    <ComponentProvider name="stat" className={props.className}>
-      <ChakraStat {...props}/>
-    </ComponentProvider>
-  );
+  return <Wrapped {...props} />;
 };

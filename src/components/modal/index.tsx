@@ -1,14 +1,8 @@
-import React from "react";
-import { chakra, ModalProps, Modal as _Modal } from "@chakra-ui/react";
-import { ComponentProvider, wrapTokens } from "../tokensCtx";
+import { ModalProps, Modal as _Modal } from "@chakra-ui/react";
+import { wrapTokens } from "../tokensCtx";
 
-// @ts-ignore TODO: fix types
-const ChakraModal = wrapTokens(_Modal, "container");
+const Wrapped = wrapTokens(ChakraModalComponent, 'container');
 
 export const Modal = (props: ModalProps) => {
-  return (
-    <ComponentProvider name="modal" className={props.className}>
-      <ChakraModal {...props}/>
-    </ComponentProvider>
-  );
+  return <Wrapped {...props} />;
 };

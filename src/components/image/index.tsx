@@ -1,14 +1,8 @@
-import React from "react";
-import { chakra, ImageProps, Image as _Image } from "@chakra-ui/react";
-import { ComponentProvider, wrapTokens } from "../tokensCtx";
+import { ImageProps, Image as _Image } from "@chakra-ui/react";
+import { wrapTokens } from "../tokensCtx";
 
-// @ts-ignore TODO: fix types
-const ChakraImage = wrapTokens(_Image, "container");
+const Wrapped = wrapTokens(ChakraImageComponent, 'container');
 
 export const Image = (props: ImageProps) => {
-  return (
-    <ComponentProvider name="image" className={props.className}>
-      <ChakraImage {...props}/>
-    </ComponentProvider>
-  );
+  return <Wrapped {...props} />;
 };

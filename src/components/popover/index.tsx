@@ -1,14 +1,8 @@
-import React from "react";
-import { chakra, PopoverProps, Popover as _Popover } from "@chakra-ui/react";
-import { ComponentProvider, wrapTokens } from "../tokensCtx";
+import { PopoverProps, Popover as _Popover } from "@chakra-ui/react";
+import { wrapTokens } from "../tokensCtx";
 
-// @ts-ignore TODO: fix types
-const ChakraPopover = wrapTokens(_Popover, "container");
+const Wrapped = wrapTokens(ChakraPopoverComponent, 'container');
 
 export const Popover = (props: PopoverProps) => {
-  return (
-    <ComponentProvider name="popover" className={props.className}>
-      <ChakraPopover {...props}/>
-    </ComponentProvider>
-  );
+  return <Wrapped {...props} />;
 };

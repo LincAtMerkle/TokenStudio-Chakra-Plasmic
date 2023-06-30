@@ -1,14 +1,8 @@
-import React from "react";
-import { chakra, LinkOverlayProps, LinkOverlay as _LinkOverlay } from "@chakra-ui/react";
-import { ComponentProvider, wrapTokens } from "../tokensCtx";
+import { LinkOverlayProps, LinkOverlay as _LinkOverlay } from "@chakra-ui/react";
+import { wrapTokens } from "../tokensCtx";
 
-// @ts-ignore TODO: fix types
-const ChakraLinkOverlay = wrapTokens(_LinkOverlay, "container");
+const Wrapped = wrapTokens(ChakraLinkOverlayComponent, 'container');
 
 export const LinkOverlay = (props: LinkOverlayProps) => {
-  return (
-    <ComponentProvider name="linkOverlay" className={props.className}>
-      <ChakraLinkOverlay {...props}/>
-    </ComponentProvider>
-  );
+  return <Wrapped {...props} />;
 };

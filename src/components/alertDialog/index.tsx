@@ -1,14 +1,8 @@
-import React from "react";
-import { chakra, AlertDialogProps, AlertDialog as _AlertDialog } from "@chakra-ui/react";
-import { ComponentProvider, wrapTokens } from "../tokensCtx";
+import { AlertDialogProps, AlertDialog as _AlertDialog } from "@chakra-ui/react";
+import { wrapTokens } from "../tokensCtx";
 
-// @ts-ignore TODO: fix types
-const ChakraAlertDialog = wrapTokens(_AlertDialog, "container");
+const Wrapped = wrapTokens(ChakraAlertDialogComponent, 'container');
 
 export const AlertDialog = (props: AlertDialogProps) => {
-  return (
-    <ComponentProvider name="alertDialog" className={props.className}>
-      <ChakraAlertDialog {...props}/>
-    </ComponentProvider>
-  );
+  return <Wrapped {...props} />;
 };

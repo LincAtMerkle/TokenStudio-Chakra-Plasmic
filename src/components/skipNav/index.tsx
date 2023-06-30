@@ -1,14 +1,8 @@
-import React from "react";
-import { chakra, SkipNavProps, SkipNav as _SkipNav } from "@chakra-ui/react";
-import { ComponentProvider, wrapTokens } from "../tokensCtx";
+import { SkipNavProps, SkipNav as _SkipNav } from "@chakra-ui/react";
+import { wrapTokens } from "../tokensCtx";
 
-// @ts-ignore TODO: fix types
-const ChakraSkipNav = wrapTokens(_SkipNav, "container");
+const Wrapped = wrapTokens(ChakraSkipNavComponent, 'container');
 
 export const SkipNav = (props: SkipNavProps) => {
-  return (
-    <ComponentProvider name="skipNav" className={props.className}>
-      <ChakraSkipNav {...props}/>
-    </ComponentProvider>
-  );
+  return <Wrapped {...props} />;
 };

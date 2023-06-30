@@ -1,14 +1,8 @@
-import React from "react";
-import { chakra, RangeSliderProps, RangeSlider as _RangeSlider } from "@chakra-ui/react";
-import { ComponentProvider, wrapTokens } from "../tokensCtx";
+import { RangeSliderProps, RangeSlider as _RangeSlider } from "@chakra-ui/react";
+import { wrapTokens } from "../tokensCtx";
 
-// @ts-ignore TODO: fix types
-const ChakraRangeSlider = wrapTokens(_RangeSlider, "container");
+const Wrapped = wrapTokens(ChakraRangeSliderComponent, 'container');
 
 export const RangeSlider = (props: RangeSliderProps) => {
-  return (
-    <ComponentProvider name="rangeSlider" className={props.className}>
-      <ChakraRangeSlider {...props}/>
-    </ComponentProvider>
-  );
+  return <Wrapped {...props} />;
 };

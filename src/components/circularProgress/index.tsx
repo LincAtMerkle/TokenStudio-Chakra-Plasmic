@@ -1,14 +1,8 @@
-import React from "react";
-import { chakra, CircularProgressProps, CircularProgress as _CircularProgress } from "@chakra-ui/react";
-import { ComponentProvider, wrapTokens } from "../tokensCtx";
+import { CircularProgressProps, CircularProgress as _CircularProgress } from "@chakra-ui/react";
+import { wrapTokens } from "../tokensCtx";
 
-// @ts-ignore TODO: fix types
-const ChakraCircularProgress = wrapTokens(_CircularProgress, "container");
+const Wrapped = wrapTokens(ChakraCircularProgressComponent, 'container');
 
 export const CircularProgress = (props: CircularProgressProps) => {
-  return (
-    <ComponentProvider name="circularProgress" className={props.className}>
-      <ChakraCircularProgress {...props}/>
-    </ComponentProvider>
-  );
+  return <Wrapped {...props} />;
 };

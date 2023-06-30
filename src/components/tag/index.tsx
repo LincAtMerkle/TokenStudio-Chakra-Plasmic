@@ -1,14 +1,8 @@
-import React from "react";
-import { chakra, TagProps, Tag as _Tag } from "@chakra-ui/react";
-import { ComponentProvider, wrapTokens } from "../../tokensCtx";
+import { TagProps, Tag as _Tag } from "@chakra-ui/react";
+import { wrapTokens } from "../../tokensCtx";
 
-// @ts-ignore TODO: fix types
-const ChakraTag = wrapTokens(_Tag, "container");
+const Wrapped = wrapTokens(ChakraTagComponent, 'container');
 
 export const Tag = (props: TagProps) => {
-  return (
-    <ComponentProvider name="tag" className={props.className}>
-      <ChakraTag {...props}/>
-    </ComponentProvider>
-  );
+  return <Wrapped {...props} />;
 };

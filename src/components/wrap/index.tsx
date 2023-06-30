@@ -1,14 +1,8 @@
-import React from "react";
-import { chakra, WrapProps, Wrap as _Wrap } from "@chakra-ui/react";
-import { ComponentProvider, wrapTokens } from "../tokensCtx";
+import { WrapProps, Wrap as _Wrap } from "@chakra-ui/react";
+import { wrapTokens } from "../tokensCtx";
 
-// @ts-ignore TODO: fix types
-const ChakraWrap = wrapTokens(_Wrap, "container");
+const Wrapped = wrapTokens(ChakraWrapComponent, 'container');
 
 export const Wrap = (props: WrapProps) => {
-  return (
-    <ComponentProvider name="wrap" className={props.className}>
-      <ChakraWrap {...props}/>
-    </ComponentProvider>
-  );
+  return <Wrapped {...props} />;
 };

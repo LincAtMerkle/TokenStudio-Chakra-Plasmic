@@ -1,14 +1,8 @@
-import React from "react";
-import { chakra, VisuallyHiddenProps, VisuallyHidden as _VisuallyHidden } from "@chakra-ui/react";
-import { ComponentProvider, wrapTokens } from "../tokensCtx";
+import { VisuallyHiddenProps, VisuallyHidden as _VisuallyHidden } from "@chakra-ui/react";
+import { wrapTokens } from "../tokensCtx";
 
-// @ts-ignore TODO: fix types
-const ChakraVisuallyHidden = wrapTokens(_VisuallyHidden, "container");
+const Wrapped = wrapTokens(ChakraVisuallyHiddenComponent, 'container');
 
 export const VisuallyHidden = (props: VisuallyHiddenProps) => {
-  return (
-    <ComponentProvider name="visuallyHidden" className={props.className}>
-      <ChakraVisuallyHidden {...props}/>
-    </ComponentProvider>
-  );
+  return <Wrapped {...props} />;
 };

@@ -1,14 +1,8 @@
-import React from "react";
-import { chakra, FlexProps, Flex as _Flex } from "@chakra-ui/react";
-import { ComponentProvider, wrapTokens } from "../tokensCtx";
+import { FlexProps, Flex as _Flex } from "@chakra-ui/react";
+import { wrapTokens } from "../tokensCtx";
 
-// @ts-ignore TODO: fix types
-const ChakraFlex = wrapTokens(_Flex, "container");
+const Wrapped = wrapTokens(ChakraFlexComponent, 'container');
 
 export const Flex = (props: FlexProps) => {
-  return (
-    <ComponentProvider name="flex" className={props.className}>
-      <ChakraFlex {...props}/>
-    </ComponentProvider>
-  );
+  return <Wrapped {...props} />;
 };

@@ -1,14 +1,8 @@
-import React from "react";
-import { chakra, IconProps, Icon as _Icon } from "@chakra-ui/react";
-import { ComponentProvider, wrapTokens } from "../tokensCtx";
+import { IconProps, Icon as _Icon } from "@chakra-ui/react";
+import { wrapTokens } from "../tokensCtx";
 
-// @ts-ignore TODO: fix types
-const ChakraIcon = wrapTokens(_Icon, "container");
+const Wrapped = wrapTokens(ChakraIconComponent, 'container');
 
 export const Icon = (props: IconProps) => {
-  return (
-    <ComponentProvider name="icon" className={props.className}>
-      <ChakraIcon {...props}/>
-    </ComponentProvider>
-  );
+  return <Wrapped {...props} />;
 };

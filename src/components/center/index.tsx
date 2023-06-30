@@ -1,14 +1,8 @@
-import React from "react";
-import { chakra, CenterProps, Center as _Center } from "@chakra-ui/react";
-import { ComponentProvider, wrapTokens } from "../tokensCtx";
+import { CenterProps, Center as _Center } from "@chakra-ui/react";
+import { wrapTokens } from "../tokensCtx";
 
-// @ts-ignore TODO: fix types
-const ChakraCenter = wrapTokens(_Center, "container");
+const Wrapped = wrapTokens(ChakraCenterComponent, 'container');
 
 export const Center = (props: CenterProps) => {
-  return (
-    <ComponentProvider name="center" className={props.className}>
-      <ChakraCenter {...props}/>
-    </ComponentProvider>
-  );
+  return <Wrapped {...props} />;
 };
