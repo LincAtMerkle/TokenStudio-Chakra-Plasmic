@@ -190,7 +190,7 @@ export const ComponentProvider = ({
 
   const css = useMemo(async () => {
     if (typeof window) {
-      const { default: compSheet } = await import(`../${name}/${name}.tokens`, {
+      const { default: compSheet } = await import(`../${name}/${name}.css`, {
         assert: { type: "css" },
       });
 
@@ -202,7 +202,7 @@ export const ComponentProvider = ({
       // );
 
       const { default: colorSheet } = await import(
-        `../${name}/tokens/${name}-${color}.tokens`,
+        `../${name}/tokens/${name}-${color}.css`,
         {
           assert: { type: "css" },
         }
