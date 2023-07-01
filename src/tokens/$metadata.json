@@ -70,7 +70,9 @@
     "comp/wrap",
     "semantic/light",
     "semantic/dark",
-    "Brand-ChakraDemo/light",
-    "Brand-ChakraDemo/dark"
+    "Brand-A/light",
+    "Brand-A/dark",
+    "Brand-B/light",
+    "Brand-B/dark"
   ]
 }
