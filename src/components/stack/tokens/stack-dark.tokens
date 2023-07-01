@@ -1,0 +1,7 @@
+/**
+ * Do not edit directly, this file was auto-generated
+ */
+
+:host {
+  --stack-xs-icon-size: sm;
+}

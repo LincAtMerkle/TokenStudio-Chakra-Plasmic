@@ -1,0 +1,7 @@
+/**
+ * Do not edit directly, this file was auto-generated
+ */
+
+:host {
+  --aspect-ratio-xs-icon-size: sm;
+}
