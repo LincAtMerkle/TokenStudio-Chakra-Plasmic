@@ -70,9 +70,9 @@
     "comp/wrap",
     "semantic/light",
     "semantic/dark",
-    "brand-c/dark",
-    "brand-c/light",
     "brand-b/light",
-    "brand-b/dark"
+    "brand-b/dark",
+    "brand-c/dark",
+    "brand-c/light"
   ]
 }
