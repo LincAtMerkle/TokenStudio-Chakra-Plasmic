@@ -23,8 +23,7 @@
       "comp/icon-button": "enabled",
       "comp/tab": "enabled",
       "comp/text": "enabled",
-      "comp/tooltip": "enabled",
-      "comp/badge": "disabled"
+      "comp/tooltip": "enabled"
     },
     "$figmaStyleReferences": {
       "semantic.fg.default": "S:ae2ad440d2e0fefc55c2fe7347c708be165ac701,",
@@ -638,8 +637,7 @@
       "comp/icon-button": "enabled",
       "comp/tab": "enabled",
       "comp/text": "enabled",
-      "comp/tooltip": "enabled",
-      "comp/badge": "disabled"
+      "comp/tooltip": "enabled"
     },
     "$figmaStyleReferences": {}
   }
