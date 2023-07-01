@@ -1,316 +1,205 @@
-import {
-    darken;
-    mode;
-    StyleFunctionProps;
-    transparentize
+import { defineStyle, defineStyleConfig } from "@chakra-ui/styled-system"
+import { mode, transparentize } from "@chakra-ui/theme-tools"
+import { runIfFn } from "../utils/run-if-fn"
+
+const baseStyle = defineStyle({
+  lineHeight: "1.2",
+  borderRadius: "md",
+  fontWeight: "semibold",
+  transitionProperty: "common",
+  transitionDuration: "normal",
+  _focusVisible: {
+    boxShadow: "outline",
+  },
+  _disabled: {
+    opacity: 0.4,
+    cursor: "not-allowed",
+    boxShadow: "none",
+  },
+  _hover: {
+    _disabled: {
+      bg: "initial",
+    },
+  },
+})
+
+const variantGhost = defineStyle((props) => {
+  const { colorScheme: c, theme } = props
+
+  if (c === "gray") {
+    return {
+      color: mode(`gray.800`, `whiteAlpha.900`)(props),
+      _hover: {
+        bg: mode(`gray.100`, `whiteAlpha.200`)(props),
+      },
+      _active: { bg: mode(`gray.200`, `whiteAlpha.300`)(props) },
+    }
   }
- from "@chakra-ui/theme-tools";
-  
-  .button__container {
-    /*The styles all button have in common*/
-    font-weight: "btn-font-weight";
-    
-    text-transform: "uppercase";
-    width: "auto";
-    border-radius: "btn-border-radius";
-    font-family: "btn-font-family";
-    border: "btn-border-width";
-    border-style: "solid"
+
+  const darkHoverBg = transparentize(`${c}.200`, 0.12)(theme)
+  const darkActiveBg = transparentize(`${c}.200`, 0.24)(theme)
+
+  return {
+    color: mode(`${c}.600`, `${c}.200`)(props),
+    bg: "transparent",
+    _hover: {
+      bg: mode(`${c}.50`, darkHoverBg)(props),
+    },
+    _active: {
+      bg: mode(`${c}.100`, darkActiveBg)(props),
+    },
   }
-;
-  
-  
-    /*Four sizes: xs,sm,md and large*/
-  .button__xs {
-      padding-left: "btn-xs-padding-left";
-      padding-right: "btn-xs-padding-right";
-      height: "btn-xs-height";
-      font-size: "btn-xs-text-size";
+})
+
+const variantOutline = defineStyle((props) => {
+  const { colorScheme: c } = props
+  const borderColor = mode(`gray.200`, `whiteAlpha.300`)(props)
+  return {
+    border: "1px solid",
+    borderColor: c === "gray" ? borderColor : "currentColor",
+    ".chakra-button__group[data-attached][data-orientation=horizontal] > &:not(:last-of-type)":
+      { marginEnd: "-1px" },
+    ".chakra-button__group[data-attached][data-orientation=vertical] > &:not(:last-of-type)":
+      { marginBottom: "-1px" },
+    ...runIfFn(variantGhost, props),
+  }
+})
+
+type AccessibleColor = {
+  bg?: string
+  color?: string
+  hoverBg?: string
+  activeBg?: string
+}
+
+/** Accessible color overrides for less accessible colors. */
+const accessibleColorMap: { [key: string]: AccessibleColor } = {
+  yellow: {
+    bg: "yellow.400",
+    color: "black",
+    hoverBg: "yellow.500",
+    activeBg: "yellow.600",
+  },
+  cyan: {
+    bg: "cyan.400",
+    color: "black",
+    hoverBg: "cyan.500",
+    activeBg: "cyan.600",
+  },
+}
+
+const variantSolid = defineStyle((props) => {
+  const { colorScheme: c } = props
+
+  if (c === "gray") {
+    const bg = mode(`gray.100`, `whiteAlpha.200`)(props)
+
+    return {
+      bg,
+      color: mode(`gray.800`, `whiteAlpha.900`)(props),
+      _hover: {
+        bg: mode(`gray.200`, `whiteAlpha.300`)(props),
+        _disabled: {
+          bg,
+        },
+      },
+      _active: { bg: mode(`gray.300`, `whiteAlpha.400`)(props) },
     }
+  }
 
-  .button__sm {
-      padding-left: "btn-sm-padding-left";
-      padding-right: "btn-sm-padding-right";
-      height: "btn-sm-height";
-      font-size: "btn-sm-text-size";
-    }
+  const {
+    bg = `${c}.500`,
+    color = "white",
+    hoverBg = `${c}.600`,
+    activeBg = `${c}.700`,
+  } = accessibleColorMap[c] ?? {}
 
-  .button__md {
-      padding-left: "btn-md-padding-left";
-      padding-right: "btn-md-padding-right";
-      height: "btn-md-height";
-      font-size: "btn-md-text-size";
-    }
+  const background = mode(bg, `${c}.200`)(props)
 
-  .button__lg {
-      padding-left: "btn-lg-padding-left";
-      padding-right: "btn-lg-padding-right";
-      height: "btn-lg-height";
-      font-size: "btn-lg-text-size";
-    }
+  return {
+    bg: background,
+    color: mode(color, `gray.800`)(props),
+    _hover: {
+      bg: mode(hoverBg, `${c}.300`)(props),
+      _disabled: {
+        bg: background,
+      },
+    },
+    _active: { bg: mode(activeBg, `${c}.400`)(props) },
+  }
+})
 
+const variantLink = defineStyle((props) => {
+  const { colorScheme: c } = props
+  return {
+    padding: 0,
+    height: "auto",
+    lineHeight: "normal",
+    verticalAlign: "baseline",
+    color: mode(`${c}.500`, `${c}.200`)(props),
+    _hover: {
+      textDecoration: "underline",
+      _disabled: {
+        textDecoration: "none",
+      },
+    },
+    _active: {
+      color: mode(`${c}.700`, `${c}.500`)(props),
+    },
+  }
+})
 
-  
-  
-    /*Two variants: outline and solid*/
-    primary1: {
-      background: var(--#ff00ff);
-      /*bg: "btn-primary1-default-background-color";*/
-      color: "btn-primary1-default-text-color";
-      border-color: "btn-primary1-default-border-color";
-      iconColor: "btn-primary1-default-icon-color";
-      ._hover {
-        background: "btn-primary1-hover-background-color";
-        color: "btn-primary1-hover-text-color";
-        border-color: "btn-primary1-hover-border-color";
-        iconColor: "btn-primary1-hover-icon-color";
-      }
+const variantUnstyled = defineStyle({
+  bg: "none",
+  color: "inherit",
+  display: "inline",
+  lineHeight: "inherit",
+  m: "0",
+  p: "0",
+})
 
-      ._active {
-        background: "btn-primary1-active-background-color";
-        color: "btn-primary1-active-text-color";
-        border-color: "btn-primary1-active-border-color";
-        iconColor: "btn-primary1-active-icon-color";
-      }
+const variants = {
+  ghost: variantGhost,
+  outline: variantOutline,
+  solid: variantSolid,
+  link: variantLink,
+  unstyled: variantUnstyled,
+}
 
-      ._disabled {
-        background: "btn-primary1-disabled-background-color";
-        color: "btn-primary1-disabled-text-color";
-        border-color: "btn-primary1-disabled-border-color";
-        iconColor: "btn-primary1-disabled-icon-color";
-      }
+const sizes = {
+  lg: defineStyle({
+    h: "12",
+    minW: "12",
+    fontSize: "lg",
+    px: "6",
+  }),
+  md: defineStyle({
+    h: "10",
+    minW: "10",
+    fontSize: "md",
+    px: "4",
+  }),
+  sm: defineStyle({
+    h: "8",
+    minW: "8",
+    fontSize: "sm",
+    px: "3",
+  }),
+  xs: defineStyle({
+    h: "6",
+    minW: "6",
+    fontSize: "xs",
+    px: "2",
+  }),
+}
 
-    }
-
-    primary2: {
-      /*background: var(--btn-primary-default-background-color);*/
-      background: "btn-primary2-default-background-color";
-      color: "btn-primary2-default-text-color";
-      border-color: "btn-primary2-default-border-color";
-      iconColor: "btn-primary2-default-icon-color";
-      ._hover {
-        background: "btn-primary2-hover-background-color";
-        color: "btn-primary2-hover-text-color";
-        border-color: "btn-primary2-hover-border-color";
-        iconColor: "btn-primary2-hover-icon-color";
-      }
-
-      ._active {
-        background: "btn-primary2-active-background-color";
-        color: "btn-primary2-active-text-color";
-        border-color: "btn-primary2-active-border-color";
-        iconColor: "btn-primary2-active-icon-color";
-      }
-
-      ._disabled {
-        background: "btn-primary2-disabled-background-color";
-        color: "btn-primary2-disabled-text-color";
-        border-color: "btn-primary2-disabled-border-color";
-        iconColor: "btn-primary2-disabled-icon-color";
-      }
-
-    }
-
-    secondary1: {
-      background: "btn-secondary1-default-background-color";
-      color: "btn-secondary1-default-text-color";
-      border-color: "btn-secondary1-default-border-color";
-      iconColor: "btn-secondary1-default-icon-color";
-      ._hover {
-        background: "btn-secondary1-hover-background-color";
-        color: "btn-secondary1-hover-text-color";
-        border-color: "btn-secondary1-hover-border-color";
-        iconColor: "btn-secondary1-hover-icon-color";
-      }
-
-      ._active {
-        background: "btn-secondary1-active-background-color";
-        color: "btn-secondary1-active-text-color";
-        border-color: "btn-secondary1-active-border-color";
-        iconColor: "btn-secondary1-active-icon-color";
-      }
-
-      ._disabled {
-        background: "btn-secondary1-disabled-background-color";
-        color: "btn-secondary1-disabled-text-color";
-        border-color: "btn-secondary1-disabled-border-color";
-        iconColor: "btn-secondary1-disabled-icon-color";
-      }
-
-    }
-
-    secondary2: {
-      background: "btn-secondary2-default-background-color";
-      color: "btn-secondary2-default-text-color";
-      border-color: "btn-secondary2-default-border-color";
-      iconColor: "btn-secondary2-default-icon-color";
-      ._hover {
-        background: "btn-secondary2-hover-background-color";
-        color: "btn-secondary2-hover-text-color";
-        border-color: "btn-secondary2-hover-border-color";
-        iconColor: "btn-secondary2-hover-icon-color";
-      }
-
-      ._active {
-        background: "btn-secondary2-active-background-color";
-        color: "btn-secondary2-active-text-color";
-        border-color: "btn-secondary2-active-border-color";
-        iconColor: "btn-secondary2-active-icon-color";
-      }
-
-      ._disabled {
-        background: "btn-secondary2-disabled-background-color";
-        color: "btn-secondary2-disabled-text-color";
-        border-color: "btn-secondary2-disabled-border-color";
-        iconColor: "btn-secondary2-disabled-icon-color";
-      }
-
-    }
-
-    negative: {
-      background: "btn-negative-default-background-color";
-      color: "btn-negative-default-text-color";
-      border-color: "btn-negative-default-border-color";
-      iconColor: "btn-negative-default-icon-color";
-      ._hover {
-        background: "btn-negative-hover-background-color";
-        color: "btn-negative-hover-text-color";
-        border-color: "btn-negative-hover-border-color";
-        iconColor: "btn-negative-hover-icon-color";
-      }
-
-      _acive: {
-        background: "btn-negative-acive-background-color";
-        color: "btn-negative-acive-text-color";
-        border-color: "btn-negative-active-border-color";
-        iconColor: "btn-negative-active-icon-color";
-      }
-
-      ._disabled {
-        background: "btn-negative-disabled-background-color";
-        color: "btn-negative-disabled-text-color";
-        border-color: "btn-negative-disabled-border-color";
-        iconColor: "btn-negative-disabled-icon-color";
-      }
-
-    }
-
-    ghost: {
-      background: "btn-ghost-default-background-color";
-      color: "btn-ghost-default-text-color";
-      border-color: "btn-ghost-default-border-color";
-      iconColor: "btn-ghost-default-icon-color";
-      ._hover {
-        background: "btn-ghost-hover-background-color";
-        color: "btn-ghost-hover-text-color";
-        border-color: "btn-ghost-hover-border-color";
-        iconColor: "btn-ghost-hover-icon-color";
-      }
-
-      _acive: {
-        background: "btn-ghost-acive-background-color";
-        color: "btn-ghost-acive-text-color";
-        border-color: "btn-ghost-active-border-color";
-        iconColor: "btn-ghost-active-icon-color";
-      }
-
-      ._disabled {
-        background: "btn-ghost-disabled-background-color";
-        color: "btn-ghost-disabled-text-color";
-        border-color: "btn-ghost-disabled-border-color";
-        iconColor: "btn-ghost-disabled-icon-color";
-      }
-
-    }
-
-    outline: {
-      background: "btn-outline-default-background-color";
-      color: "btn-outline-default-text-color";
-      border-color: "btn-outline-default-border-color";
-      iconColor: "btn-outline-default-icon-color";
-      ._hover {
-        background: "btn-outline-hover-background-color";
-        color: "btn-outline-hover-text-color";
-        border-color: "btn-outline-hover-border-color";
-        iconColor: "btn-outline-hover-icon-color";
-      }
-
-      _acive: {
-        background: "btn-outline-acive-background-color";
-        color: "btn-outline-acive-text-color";
-        border-color: "btn-outline-active-border-color";
-        iconColor: "btn-outline-active-icon-color";
-      }
-
-      ._disabled {
-        background: "btn-outline-disabled-background-color";
-        color: "btn-outline-disabled-text-color";
-        border-color: "btn-outline-disabled-border-color";
-        iconColor: "btn-outline-disabled-icon-color";
-      }
-
-    }
-
-    solid: {
-      background: "btn-solid-default-background-color";
-      color: "btn-solid-default-text-color";
-      border-color: "btn-solid-default-border-color";
-      iconColor: "btn-solid-default-icon-color";
-      ._hover {
-        background: "btn-solid-hover-background-color";
-        color: "btn-solid-hover-text-color";
-        border-color: "btn-solid-hover-border-color";
-        iconColor: "btn-solid-hover-icon-color";
-      }
-
-      _acive: {
-        background: "btn-solid-acive-background-color";
-        color: "btn-solid-acive-text-color";
-        border-color: "btn-solid-active-border-color";
-        iconColor: "btn-solid-active-icon-color";
-      }
-
-      ._disabled {
-        background: "btn-solid-disabled-background-color";
-        color: "btn-solid-disabled-text-color";
-        border-color: "btn-solid-disabled-border-color";
-        iconColor: "btn-solid-disabled-icon-color";
-      }
-
-    }
-
-    link: {
-      color: "btn-link-default-text-color";
-      border-style: "none";
-      ._hover {
-        color: "btn-link-hover-text-color";
-      }
-
-      ._active {
-        color: "btn-link-active-text-color";
-      }
-
-      ._disabled {
-        color: "btn-link-disabled-text-color";
-      }
-
-    }
-
-    unstyled: {
-      color: var(--);
-      border-style: var(--);
-      ._hover {
-        color: var(--);
-      }
-
-      ._active {
-        color: var(--);
-      }
-
-      ._disabled {
-        color: var(--);
-      }
-    }
-
-  };
-  
+export const buttonTheme = defineStyleConfig({
+  baseStyle,
+  variants,
+  sizes,
+  defaultProps: {
+    variant: "solid",
+    size: "md",
+    colorScheme: "gray",
+  },
+})
