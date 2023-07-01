@@ -674,8 +674,6 @@
       "core/size": "source",
       "core/space": "source",
       "core/typography": "source",
-      "semantic/light": "enabled",
-      "semantic/dark": "enabled",
       "comp/accordion": "enabled",
       "comp/alert": "enabled",
       "comp/alertDialog": "enabled",
@@ -738,10 +736,12 @@
       "comp/transitions": "enabled",
       "comp/visuallyHidden": "enabled",
       "comp/wrap": "enabled",
-      "brand-c/dark": "disabled",
-      "brand-c/light": "disabled",
+      "semantic/light": "enabled",
+      "semantic/dark": "enabled",
       "brand-b/dark": "disabled",
-      "brand-b/light": "disabled"
+      "brand-b/light": "disabled",
+      "brand-c/dark": "disabled",
+      "brand-c/light": "disabled"
     },
     "$figmaStyleReferences": {}
   }
