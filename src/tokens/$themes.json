@@ -72,7 +72,7 @@
       "comp/transitions": "enabled",
       "comp/visuallyHidden": "enabled",
       "comp/wrap": "enabled"
-       },
+    },
     "$figmaStyleReferences": {
       "semantic.fg.default": "S:ae2ad440d2e0fefc55c2fe7347c708be165ac701,",
       "semantic.fg.muted": "S:0864420e78b163db4c3eabfe50aeafbc158af426,",
