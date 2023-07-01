@@ -71,7 +71,11 @@
       "comp/tooltip": "enabled",
       "comp/transitions": "enabled",
       "comp/visuallyHidden": "enabled",
-      "comp/wrap": "enabled"
+      "comp/wrap": "enabled",
+      "brand-c/dark": "disabled",
+      "brand-c/light": "disabled",
+      "brand-b/dark": "disabled",
+      "brand-b/light": "disabled"
     },
     "$figmaStyleReferences": {
       "semantic.fg.default": "S:ae2ad440d2e0fefc55c2fe7347c708be165ac701,",
@@ -733,7 +737,11 @@
       "comp/tooltip": "enabled",
       "comp/transitions": "enabled",
       "comp/visuallyHidden": "enabled",
-      "comp/wrap": "enabled"
+      "comp/wrap": "enabled",
+      "brand-c/dark": "disabled",
+      "brand-c/light": "disabled",
+      "brand-b/dark": "disabled",
+      "brand-b/light": "disabled"
     },
     "$figmaStyleReferences": {}
   }
