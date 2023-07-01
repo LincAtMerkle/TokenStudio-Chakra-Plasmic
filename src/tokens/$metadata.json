@@ -20,6 +20,7 @@
     "comp/tag",
     "comp/text",
     "comp/tooltip",
+    "comp/badge",
     "semantic/light",
     "semantic/dark",
     "Brand-ChakraDemo/light",
