@@ -1,4 +1,4 @@
-.form-label__container {
+.formControl__container {
   color: var(--emphasized);
   margin-bottom: var(--1.5);
   font-size: var(--sm);

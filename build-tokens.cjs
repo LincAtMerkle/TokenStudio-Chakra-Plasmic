@@ -43,7 +43,7 @@ async function run() {
             transformGroup: "custom/tokens-studio",
             files: generateFilesArr(
               [
-                // "badge",
+                "badge",
                 // "card",
                 // "code",
                 // "divider",
@@ -64,7 +64,7 @@ async function run() {
                 // "spinner",
                 // "toast",
 
-                "button",
+                // "button",
                 // "checkbox",
                 // "editable",
                 // "formControl",
@@ -76,7 +76,7 @@ async function run() {
                 // "rangeSlider",
                 // "select",
                 // "slider",
-                "switch",
+                // "switch",
                 // "textarea",
 
                 // "aspectRatio",

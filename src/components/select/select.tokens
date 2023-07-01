@@ -1,4 +1,4 @@
-.custom-select__container {
+.select__container {
   .field {
     width: 100%;
     display: var(--inline-flex);
