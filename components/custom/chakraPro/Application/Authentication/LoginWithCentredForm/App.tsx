@@ -16,8 +16,10 @@ export function App({
   }: AppProps) {
   return (
     <Container 
-    className={className}
-    maxW="lg" py={{ base: '12', md: '24' }} px={{ base: '0', sm: '8' }}>
+      className={className}
+      // maxW="lg" 
+      py={{ base: '12', md: '24' }} 
+      px={{ base: '0', sm: '8' }}>
       {children}
   </Container>
 )

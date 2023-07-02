@@ -32,6 +32,7 @@ export function registerLoginWithCentredForm() {
                         name: getPlasmicComponentName('Stack'),
                         props: {
                           spacing: '8',
+                          align: "center",
                           children: [
                             {
                               type: 'component',
