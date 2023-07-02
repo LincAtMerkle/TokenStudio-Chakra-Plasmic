@@ -1,50 +1,51 @@
-
+import { mode, StyleFunctionProps } from '@chakra-ui/theme-tools'
 
 const baseStyle = (props: StyleFunctionProps) => ({
   label: {
-    color: var(--muted);
-    font-weight: var(--medium);
-  }
-
+    color: 'muted',
+    fontWeight: 'medium',
+  },
   control: {
-    background: mode('white', 'gray.800')(props);
-    border-radius: var(--base);
-  }
-
+    bg: mode('white', 'gray.800')(props),
+    borderRadius: 'base',
+  },
 })
 
-
-.xxxxx__md {
+const sizes = {
+  md: {
     label: {
-      font-size: var(--sm);
-    }
-
-  }
-
+      fontSize: 'sm',
+    },
+  },
   xxl:{
     label: {
-      font-size: var(--xl);
-    }
-
+      fontSize: 'xl',
+    },
   }
 }
 
-
+const variants = {
   primary: (props: StyleFunctionProps) =>
     props.theme.components['Checkbox']['variants']['solid']({
-      ...props;
-      variant: var(--solid);
-      colorScheme: var(--brand);
-    });
+      ...props,
+      variant: 'solid',
+      colorScheme: 'brand',
+    }),
   'primary-on-accent': () => ({
-    background: var(--brand.50);
-    color: var(--brand.600);
-    ._hover { background: var(--brand.100' }
-
-    ._active { background: var(--brand.100' }
-
-  });
+    bg: 'brand.50',
+    color: 'brand.600',
+    _hover: { bg: 'brand.100' },
+    _active: { bg: 'brand.100' },
+  }),
 }
 
+const defaultProps = {
+  colorScheme: 'brand',
+}
 
-
+export default {
+  baseStyle,
+  sizes,
+  variants,
+  defaultProps,
+}
