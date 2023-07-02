@@ -1,0 +1,22 @@
+{
+    "loginWithCentredForm": {
+      "lg": {
+        "padding-left": {
+          "value": "{semantic.spacing.actions.lg.padding-left}",
+          "type": "spacing"
+        },
+        "padding-right": {
+          "value": "{semantic.spacing.actions.lg.padding-right}",
+          "type": "spacing"
+        },
+        "padding-top": {
+          "value": "{semantic.spacing.actions.lg.padding-top}",
+          "type": "spacing"
+        },
+        "padding-bottom": {
+          "value": "{semantic.spacing.actions.lg.padding-bottom}",
+          "type": "spacing"
+        }
+      }
+    }
+  }
