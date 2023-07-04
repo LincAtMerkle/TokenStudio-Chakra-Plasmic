@@ -3,5 +3,6 @@
  */
 
 :host {
-  --container-xs-icon-size: sm;
+  --container-colorful-variant-default-background-color: #41547D;
+  --container-colorful-variant-default-color: #ffffff;
 }

@@ -1,8 +1,39 @@
 .container__container {
-  max-width: var(--7xl);
-  /* orignal
-  px: { base: '4', md: '8' }, 
-  */  
-  px: { base: var(--4', md: var(--8' }
+  /* background: var(--); */
+  background: #ffff00;
+  border-radius: var(--);
+  font-weight: var(--)
+}
 
-}å
+.container__sm {
+    max-width: var(--);
+    padding: var(--);
+    font-size: var(--)
+};
+
+.container__md {
+  max-width: var(--);
+  padding: var(--);
+  font-size: var(--)
+};
+
+.container__lg {
+  max-width: var(--);
+  padding: var(--);
+  font-size: var(--)
+};
+
+.container__colorfulVariant {
+  /* background: var(--); */
+  background: #ff00ff;
+  color: var(--)
+};
+
+.container__boldVariant {
+  border-radius: var(--);
+  border: var(--);
+  font-family: var(--);
+  /* background: var(--); */
+  background: #00ffff;
+  color: var(--)
+};
