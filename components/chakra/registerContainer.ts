@@ -5,30 +5,28 @@ import { getComponentNameAndImportMeta } from "./utils";
 export const containerMeta: CodeComponentMeta<ContainerProps> = {
   ...getComponentNameAndImportMeta("Container"),
   props: {
-    // py: {
-    //   type: "number",
-    //   defaultValue: 12,
-    // },
-    // px: {
-    //   type: "number",
-    //   defaultValue: 0,
-    // },
+    py: { // can use py
+      type: "choice",
+      options: [
+        "0", "25", "50", "75",
+      ],
+      defaultValue: "5",
+    },
+    px: {
+      type: "number",
+      defaultValue: 0,
+    },
     centerContent:{
       type: "boolean",
       defaultValue: false,
     },
-    size:{
-      type: "choice",
-      options: ["sm", "md", "lg"],
-      defaultValue: "md",
-    },
     variant:{
       type: "choice",
       options: [
-        "colorful",
-        "bold",
+        "colorfulVariant",
+        "boldVariant",
       ],
-      defaultValue: "colorful",
+      defaultValue: "colorfulVariant",
     },
     children: {
       type: "slot",

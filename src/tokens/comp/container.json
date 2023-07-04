@@ -11,6 +11,19 @@
             "type": "color"
           }
         }
-    }
+    },
+    "boldVariant": {
+      "default": {
+        "background-color": {
+          "value": "{semantic.color.actions.cta1.default.background-color}",
+          "type": "color"
+        },
+        "color": {
+          "value": "{semantic.color.actions.primary1.default.text}",
+          "type": "color"
+        }
+      }
+  }
+
   }
 }

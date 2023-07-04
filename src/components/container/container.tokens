@@ -1,39 +1,13 @@
 .container__container {
-  /* background: var(--); */
-  background: #ffff00;
   border-radius: var(--);
-  font-weight: var(--)
 }
 
-.container__sm {
-    max-width: var(--);
-    padding: var(--);
-    font-size: var(--)
-};
-
-.container__md {
-  max-width: var(--);
-  padding: var(--);
-  font-size: var(--)
-};
-
-.container__lg {
-  max-width: var(--);
-  padding: var(--);
-  font-size: var(--)
-};
-
+ 
 .container__colorfulVariant {
-  /* background: var(--); */
   background: #ff00ff;
-  color: var(--)
-};
+}
 
+ 
 .container__boldVariant {
-  border-radius: var(--);
-  border: var(--);
-  font-family: var(--);
-  /* background: var(--); */
   background: #00ffff;
-  color: var(--)
-};
+}

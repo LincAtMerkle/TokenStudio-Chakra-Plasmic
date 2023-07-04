@@ -23,7 +23,6 @@ import {
   Checkbox,
   CheckboxGroup,
   Code,
-  Container,
   Divider,
   FormControl,
   FormErrorMessage,
@@ -93,6 +92,7 @@ import {
 import { Button } from "../../src/components/button"
 import { Text } from "../../src/components/text"
 import { Switch } from "@/src/components/switch";
+import { Container } from "@/src/components/container"
 
 import { Registerable } from "./registerable";
 import registerComponent, {
