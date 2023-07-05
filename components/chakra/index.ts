@@ -1,98 +1,95 @@
-import {
-  Accordion,
-  AccordionButton,
-  AccordionIcon,
-  AccordionItem,
-  AccordionPanel,
-  AspectRatio,
-  Avatar,
-  AvatarBadge,
-  AvatarGroup,
-  Badge,
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbSeparator,
-  // Button,
-  ButtonGroup,
-  Box,
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Checkbox,
-  CheckboxGroup,
-  Code,
-  Divider,
-  FormControl,
-  FormErrorMessage,
-  FormHelperText,
-  FormLabel,
-  Heading,
-  Highlight,
-  Image,
-  Input,
-  IconButton,
-  Kbd,
-  ModalBody,
-  ModalCloseButton,
-  ModalContent,
-  ModalFooter,
-  ModalHeader,
-  ModalOverlay,
-  NumberDecrementStepper,
-  NumberIncrementStepper,
-  NumberInput,
-  NumberInputField,
-  NumberInputStepper,
-  PinInput,
-  PinInputField,
-  Popover,
-  PopoverArrow,
-  PopoverBody,
-  PopoverCloseButton,
-  PopoverContent,
-  PopoverHeader,
-  PopoverTrigger,
-  Progress,
-  Radio,
-  RadioGroup,
-  Select,
-  Stat,
-  StatArrow,
-  StatHelpText,
-  StatLabel,
-  StatNumber,
-  Stack,
-  HStack,
-  VStack,
-  Tab,
-  Table,
-  TableCaption,
-  TableContainer,
-  TabList,
-  TabPanel,
-  TabPanels,
-  Tabs,
-  Tag,
-  TagLeftIcon,
-  TagLabel,
-  TagRightIcon,
-  TagCloseButton,
-  Tbody,
-  Td,
-  Tfoot,
-  Th,
-  Thead,
-  Toast,
-  Tooltip,
-  Tr,
-} from "@chakra-ui/react";
-
-import { Button } from "../../src/components/button"
-import { Text } from "../../src/components/text"
-import { Switch } from "@/src/components/switch";
+import { Accordion } from "@/src/components/accordion"
+import { AccordionButton } from "@/src/components/accordionButton"
+import { AccordionIcon } from "@/src/components/accordionIcon"
+import { AccordionItem } from "@/src/components/accordionItem"
+import { AccordionPanel } from "@/src/components/accordionPanel"
+import { AspectRatio } from "@/src/components/aspectRatio"
+import { Avatar } from "@/src/components/avatar"
+import { AvatarBadge } from "@/src/components/avatarBadge"
+import { AvatarGroup } from "@/src/components/avatarGroup"
+import { Badge } from "@/src/components/badge"
+import { Breadcrumb } from "@/src/components/breadcrumb"
+import { BreadcrumbItem } from "@/src/components/breadcrumbItem"
+import { BreadcrumbLink } from "@/src/components/breadcrumbLink"
+import { BreadcrumbSeparator } from "@/src/components/breadcrumbSeparator"
+import { Button } from "@/src/components/button"
+import { ButtonGroup } from "@/src/components/buttonGroup"
+import { Box } from "@/src/components/box"
+import { Card } from "@/src/components/card"
+import { CardHeader } from "@/src/components/cardHeader"
+import { CardBody } from "@/src/components/cardBody"
+import { CardFooter } from "@/src/components/cardFooter"
+import { Checkbox } from "@/src/components/checkbox"
+import { CheckboxGroup } from "@/src/components/checkboxGroup"
+import { Code } from "@/src/components/code"
 import { Container } from "@/src/components/container"
+import { Divider } from "@/src/components/divider"
+import { FormControl } from "@/src/components/formControl"
+import { FormErrorMessage } from "@/src/components/formErrorMessage"
+import { FormHelperText } from "@/src/components/formHelperText"
+import { FormLabel } from "@/src/components/formLabel"
+import { Heading } from "@/src/components/heading"
+import { Highlight } from "@/src/components/highlight"
+import { Image } from "@/src/components/image"
+import { Input } from "@/src/components/input"
+import { IconButton } from "@/src/components/iconButton"
+import { Kbd } from "@/src/components/kbd"
+import { Modal } from "@/src/components/modal"
+import { ModalBody } from "@/src/components/modalBody"
+import { ModalCloseButton } from "@/src/components/modalCloseButton"
+import { ModalContent } from "@/src/components/modalContent"
+import { ModalFooter } from "@/src/components/modalFooter"
+import { ModalHeader } from "@/src/components/modalHeader"
+import { ModalOverlay } from "@/src/components/modalOverlay"
+import { NumberDecrementStepper } from "@/src/components/numberDecrementStepper"
+import { NumberIncrementStepper } from "@/src/components/numberIncrementStepper"
+import { NumberInput } from "@/src/components/numberInput"
+import { NumberInputField } from "@/src/components/numberInputField"
+import { NumberInputStepper } from "@/src/components/numberInputStepper"
+import { PinInput } from "@/src/components/pinInput"
+import { PinInputField } from "@/src/components/pinInputField"
+import { Popover } from "@/src/components/popover"
+import { PopoverArrow } from "@/src/components/popoverArrow"
+import { PopoverBody } from "@/src/components/popoverBody"
+import { PopoverCloseButton } from "@/src/components/popoverCloseButton"
+import { PopoverContent } from "@/src/components/popoverContent"
+import { PopoverHeader } from "@/src/components/PopoverHeaderutton"
+import { PopoverTrigger } from "@/src/components/popoverTrigger"
+import { Progress } from "@/src/components/progress"
+import { Radio } from "@/src/components/radio"
+import { RadioGroup } from "@/src/components/radioGroup"
+import { Select } from "@/src/components/select"
+import { Stat } from "@/src/components/stat"
+import { StatArrow } from "@/src/components/statArrow"
+import { StatHelpText } from "@/src/components/statHelpText"
+import { StatLabel } from "@/src/components/statLabel"
+import { StatNumber } from "@/src/components/statNumber"
+import { Stack } from "@/src/components/stack"
+import { Switch } from "@/src/components/switch";
+import { HStack } from "@/src/components/hStack"
+import { VStack } from "@/src/components/vStack"
+import { Tab } from "@/src/components/tab"
+import { Table } from "@/src/components/table"
+import { TableCaption } from "@/src/components/tableCaption"
+import { TableContainer } from "@/src/components/tableContainer"
+import { TabList } from "@/src/components/tabList"
+import { TabPanel } from "@/src/components/tabPanel"
+import { TabPanels } from "@/src/components/tabPanels"
+import { Tabs } from "@/src/components/tabs"
+import { Tag } from "@/src/components/tag"
+import { TagLeftIcon } from "@/src/components/tagLeftIcon"
+import { TagLabel } from "@/src/components/tagLabel"
+import { TagRightIcon } from "@/src/components/tagRightIcon"
+import { TagCloseButton } from "@/src/components/tagCloseButton"
+import { Text } from "@/src/components/text"
+import { Tbody } from "@/src/components/tbody"
+import { Td } from "@/src/components/td"
+import { Tfoot } from "@/src/components/tfoot"
+import { Th } from "@/src/components/th"
+import { Thead } from "@/src/components/thead"
+import { Toast } from "@/src/components/toast"
+import { Tooltip } from "@/src/components/tooltip"
+import { Tr } from "@/src/components/tr"
 
 import { Registerable } from "./registerable";
 import registerComponent, {
@@ -134,13 +131,12 @@ import { imageMeta } from "./registerImage";
 import { inputMeta } from "./registerInput";
 import { kbdMeta } from "./registerKbd";
 import {
-  Modal,
+  modalMeta,
   modalBodyMeta,
   modalCloseButtonMeta,
   modalContentMeta,
   modalFooterMeta,
   modalHeaderMeta,
-  modalMeta,
   modalOverlayMeta,
 } from "./registerModal";
 import {
