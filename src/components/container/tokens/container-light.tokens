@@ -5,4 +5,6 @@
 :host {
   --container-colorful-variant-default-background-color: #41547D;
   --container-colorful-variant-default-color: #ffffff;
+  --container-bold-variant-default-background-color: #41547D;
+  --container-bold-variant-default-color: #ffffff;
 }
