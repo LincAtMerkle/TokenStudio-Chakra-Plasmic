@@ -1,8 +1,12 @@
 import React, { useEffect, useMemo, useState } from "react";
 
-import metadata from "../../../theme/tokenStudioChakra/$metadata.json";
-// import lightTokens from "../../../theme/documentationTokens/hm-light.json"; 
-// import darkTokens from "../../../theme/documentationTokens/hm-dark.json";
+import metadata from "../../../src/tokens/$metadata.json";
+
+/* 
+This need alot of work I think, as it was looking at just these 2 files.
+Now it needs to look at comp tokens and also core, sematic and brand tokens.
+Maybe best I show you Greg in Main branch. 
+*/
 import lightTokens from "../../../theme/documentationTokens/light.json"; 
 import darkTokens from "../../../theme/documentationTokens/dark.json";
 
