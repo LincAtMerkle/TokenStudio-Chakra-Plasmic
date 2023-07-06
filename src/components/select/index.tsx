@@ -3,6 +3,6 @@ import { wrapTokens } from "../tokensCtx";
 
 const Wrapped = wrapTokens(ChakraSelectComponent, 'container');
 
-export const CustomSelect = (props: SelectProps) => {
+export const Select = (props: SelectProps) => {
   return <Wrapped {...props} />;
 };

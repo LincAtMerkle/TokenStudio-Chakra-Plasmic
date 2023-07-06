@@ -1,0 +1,38 @@
+import { AlertProps, AlertDialogProps } from "@chakra-ui/react";
+
+import { CodeComponentMeta } from "@plasmicapp/host/registerComponent";
+import {
+  getComponentNameAndImportMeta,
+  getPlasmicComponentName,
+} from "./utils";
+
+export const alertMeta: CodeComponentMeta<AlertProps> = {
+  ...getComponentNameAndImportMeta("Alert"),
+  props: {
+    size: {
+      type: "choice",
+      options: ["", "", ""],
+      defaultValue: "",
+    },
+    variant: {
+      type: "choice",
+      options: ["", "", ""],
+      defaultValue: "",
+    },
+
+    children: {
+      type: "slot",
+      defaultValue: {
+        type: "text",
+        value: "Alert",
+      },
+    },
+  },
+};
+
+export const alertDialogMeta: CodeComponentMeta<AlertDialogProps> = {
+  ...getComponentNameAndImportMeta("AlertDialog"),
+  props: {
+
+  },
+};
