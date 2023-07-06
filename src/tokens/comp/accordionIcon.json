@@ -1,0 +1,10 @@
+{
+    "accordionIcon": {
+      "xs": {
+        "icon-size": {
+          "value": "sm",
+          "type": "sizing"
+        }
+      }
+    }
+  }

@@ -1,0 +1,21 @@
+/**
+ * Do not edit directly, this file was auto-generated
+ */
+
+:host {
+  --tab-unselected-line-background-color: hsla(255,0%,100%,0.01);
+  --tab-unselected-line-text-color: #2A3F6D;
+  --tab-unselected-soft-background-color: hsla(255,0%,100%,0.01);
+  --tab-unselected-soft-text-color: #2A3F6D;
+  --tab-unselected-solid-background-color: hsla(255,0%,100%,0.01);
+  --tab-unselected-solid-text-color: #2A3F6D;
+  --tab-selected-line-text-color: #2A3F6D;
+  --tab-selected-line-border-color: #2A3F6D;
+  --tab-selected-soft-background-color: #41547D;
+  --tab-selected-soft-text-color: #ffffff;
+  --tab-selected-solid-background-color: #2A3F6D;
+  --tab-selected-solid-text-color: #ffffff;
+  --tab-font-family: Inter;
+  --tab-text-size: 16px;
+  --tab-font-weight: 400;
+}
