@@ -168,8 +168,7 @@ import { imageMeta } from "./registerImage";
 import { inputMeta } from "./registerInput";
 import { kbdMeta } from "./registerKbd";
 
-import { linkMeta } from "./registerLink"
-import { linkOverlayMeta } from "./registerLinkOverlay"
+import { linkMeta, linkOverlayMeta} from "./registerLink"
 import { listMeta } from "./registerList"
 import { menuMeta } from "./registerMenu"
 import {
@@ -203,7 +202,7 @@ import { portalMeta } from "./registerPortal"
 import { progressMeta } from "./registerProgress";
 import { radioGroupMeta, radioMeta } from "./registerRadio";
 
-import { rangeSliderMeta } from "./registerrangeSlider"
+import { rangeSliderMeta } from "./registerRangeSlider"
 import { Option, optionMeta, selectMeta } from "./registerSelect";
 
 import { showHideMeta } from "./registerShowHide"
@@ -364,8 +363,8 @@ export function registerAllChakra(loader?: Registerable) {
   _registerComponent(Checkbox, checkboxMeta);
   _registerComponent(CheckboxGroup, checkboxGroupMeta);
 
-import { CircularProgress } from "@/src/components/circularProgress"
-import { CloseButton } from "@/src/components/closeButton"
+  _registerComponent(CircularProgress, circularProgressMeta);
+  _registerComponent(CloseButton, closeButtonMeta );
   _registerComponent(Code, codeMeta);
   _registerComponent(Container, containerMeta);
   _registerComponent(Divider, dividerMeta);
@@ -374,17 +373,17 @@ import { CloseButton } from "@/src/components/closeButton"
   _registerComponent(FormHelperText, formHelperTextMeta);
   _registerComponent(FormLabel, formLabelMeta);
 
-import { Grid } from "@/src/components/grid"
+  _registerComponent(Grid, gridMeta);
   _registerComponent(Heading, headingMeta);
   _registerComponent(Highlight, highlightMeta);
   _registerComponent(Image, imageMeta);
   _registerComponent(Input, inputMeta);
   _registerComponent(Kbd, kbdMeta);
 
-import { Link } from "@/src/components/link"
-import { LinkOverlay } from "@/src/components/linkOverlay"
-import { List } from "@/src/components/list"
-import { Menu } from "@/src/components/menu"
+  _registerComponent(Link, linkMeta );
+  _registerComponent(LinkOverlay, linkOverlayMeta);
+  _registerComponent(List, listMeta );
+  _registerComponent(Menu, menuMeta);
   _registerComponent(Modal, modalMeta);
   _registerComponent(ModalOverlay, modalOverlayMeta);
   _registerComponent(ModalContent, modalContentMeta);
@@ -400,12 +399,12 @@ import { Menu } from "@/src/components/menu"
   _registerComponent(Option, optionMeta);
   _registerComponent(Select, selectMeta);
 
-import { ShowHide } from "@/src/components/showHide"
-import { SimpleGrid } from "@/src/components/simpleGrid"
-import { Skeleton } from "@/src/components/skeleton"
-import { SkipNav } from "@/src/components/skipNav"
-import { Slider } from "@/src/components/slider"
-import { Spinner } from "@/src/components/spinner"
+  _registerComponent(ShowHide, showHideMeta );
+  _registerComponent(SimpleGrid, simpleGridMeta) ;
+  _registerComponent(Skeleton, skeletonMeta);
+  _registerComponent(SkipNav, skipNavMeta );
+  _registerComponent(Slider, sliderMeta);
+  _registerComponent(Spinner, spinnerMeta);
   _registerComponent(PinInput, pinInputMeta);
   _registerComponent(PinInputField, pinInputFieldMeta);
   _registerComponent(Popover, popoverMeta);
@@ -416,19 +415,19 @@ import { Spinner } from "@/src/components/spinner"
   _registerComponent(PopoverHeader, popoverHeaderMeta);
   _registerComponent(PopoverTrigger, popoverTriggerMeta);
 
-import { Portal } from "@/src/components/portal"
+  _registerComponent(Portal, portalMeta);
   _registerComponent(Progress, progressMeta);
   _registerComponent(Radio, radioMeta);
   _registerComponent(RadioGroup, radioGroupMeta);
 
-import { RangeSlider } from "@/src/components/rangeSlider"
+  _registerComponent(RangeSlider, rangeSliderMeta);
   _registerComponent(Stat, statMeta);
   _registerComponent(StatArrow, statArrowMeta);
   _registerComponent(StatHelpText, statHelpTextMeta);
   _registerComponent(StatLabel, statLabelMeta);
   _registerComponent(StatNumber, statNumberMeta);
 
-import { Stepper } from "@/src/components/stepper"
+  _registerComponent(Stepper, stepperMeta);
   _registerComponent(Switch, switchMeta);
   _registerComponent(Table, tableMeta);
   _registerComponent(TableCaption, tableCaptionMeta);
@@ -438,13 +437,13 @@ import { Stepper } from "@/src/components/stepper"
   _registerComponent(Td, tdMeta);
   _registerComponent(Th, thMeta);
 
-import { Transitions } from "@/src/components/transitions"
-import { VisuallyHidden } from "@/src/components/visuallyHidden"
+  _registerComponent(Transitions, transitionsMeta);
+  _registerComponent(VisuallyHidden,visuallyHiddenMeta);
   _registerComponent(Tr, trMeta);
   _registerComponent(TableContainer, tableContainerMeta);
   _registerComponent(Text, textMeta);
 
-import { Textarea } from "@/src/components/textarea"
+  _registerComponent(Textarea, textareaMeta );
   _registerComponent(Toast, toastMeta);
   _registerComponent(Tooltip, tooltipMeta);
   _registerComponent(TabList, tabListMeta);
@@ -470,5 +469,5 @@ import { Textarea } from "@/src/components/textarea"
   _registerComponent(HStack, hStackMeta);
   _registerComponent(VStack, vStackMeta)
 
-import { Wrap } from "@/src/components/wrap"
+  _registerComponent(Wrap, wrapMeta );
 }
