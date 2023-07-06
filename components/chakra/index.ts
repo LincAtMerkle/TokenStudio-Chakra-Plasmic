@@ -3,37 +3,52 @@ import { AccordionButton } from "@/src/components/accordionButton"
 import { AccordionIcon } from "@/src/components/accordionIcon"
 import { AccordionItem } from "@/src/components/accordionItem"
 import { AccordionPanel } from "@/src/components/accordionPanel"
+import { Alert } from "@/src/components/alert"
+import { AlertDialog } from "@/src/components/alertDialog"
 import { AspectRatio } from "@/src/components/aspectRatio"
 import { Avatar } from "@/src/components/avatar"
 import { AvatarBadge } from "@/src/components/avatarBadge"
 import { AvatarGroup } from "@/src/components/avatarGroup"
 import { Badge } from "@/src/components/badge"
+import { Box } from "@/src/components/box"
 import { Breadcrumb } from "@/src/components/breadcrumb"
 import { BreadcrumbItem } from "@/src/components/breadcrumbItem"
 import { BreadcrumbLink } from "@/src/components/breadcrumbLink"
 import { BreadcrumbSeparator } from "@/src/components/breadcrumbSeparator"
 import { Button } from "@/src/components/button"
 import { ButtonGroup } from "@/src/components/buttonGroup"
-import { Box } from "@/src/components/box"
 import { Card } from "@/src/components/card"
-import { CardHeader } from "@/src/components/cardHeader"
 import { CardBody } from "@/src/components/cardBody"
 import { CardFooter } from "@/src/components/cardFooter"
+import { CardHeader } from "@/src/components/cardHeader"
+import { Center } from "@/src/components/center"
 import { Checkbox } from "@/src/components/checkbox"
 import { CheckboxGroup } from "@/src/components/checkboxGroup"
+import { CircularProgress } from "@/src/components/circularProgress"
+import { CloseButton } from "@/src/components/closeButton"
 import { Code } from "@/src/components/code"
 import { Container } from "@/src/components/container"
 import { Divider } from "@/src/components/divider"
+import { Drawer } from "@/src/components/drawer"
+import { Editable } from "@/src/components/editable"
+import { Flex } from "@/src/components/flex"
 import { FormControl } from "@/src/components/formControl"
 import { FormErrorMessage } from "@/src/components/formErrorMessage"
 import { FormHelperText } from "@/src/components/formHelperText"
 import { FormLabel } from "@/src/components/formLabel"
+import { Grid } from "@/src/components/grid"
 import { Heading } from "@/src/components/heading"
 import { Highlight } from "@/src/components/highlight"
+import { HStack } from "@/src/components/hStack"
+import { Icon } from "@/src/components/icon"
+import { IconButton } from "@/src/components/iconButton"
 import { Image } from "@/src/components/image"
 import { Input } from "@/src/components/input"
-import { IconButton } from "@/src/components/iconButton"
 import { Kbd } from "@/src/components/kbd"
+import { Link } from "@/src/components/link"
+import { LinkOverlay } from "@/src/components/linkOverlay"
+import { List } from "@/src/components/list"
+import { Menu } from "@/src/components/menu"
 import { Modal } from "@/src/components/modal"
 import { ModalBody } from "@/src/components/modalBody"
 import { ModalCloseButton } from "@/src/components/modalCloseButton"
@@ -53,43 +68,55 @@ import { PopoverArrow } from "@/src/components/popoverArrow"
 import { PopoverBody } from "@/src/components/popoverBody"
 import { PopoverCloseButton } from "@/src/components/popoverCloseButton"
 import { PopoverContent } from "@/src/components/popoverContent"
-import { PopoverHeader } from "@/src/components/PopoverHeaderutton"
+import { PopoverHeader } from "@/src/components/popoverHeader"
 import { PopoverTrigger } from "@/src/components/popoverTrigger"
+import { Portal } from "@/src/components/portal"
 import { Progress } from "@/src/components/progress"
 import { Radio } from "@/src/components/radio"
 import { RadioGroup } from "@/src/components/radioGroup"
+import { RangeSlider } from "@/src/components/rangeSlider"
 import { Select } from "@/src/components/select"
+import { ShowHide } from "@/src/components/showHide"
+import { SimpleGrid } from "@/src/components/simpleGrid"
+import { Skeleton } from "@/src/components/skeleton"
+import { SkipNav } from "@/src/components/skipNav"
+import { Slider } from "@/src/components/slider"
+import { Spinner } from "@/src/components/spinner"
+import { Stack } from "@/src/components/stack"
 import { Stat } from "@/src/components/stat"
 import { StatArrow } from "@/src/components/statArrow"
 import { StatHelpText } from "@/src/components/statHelpText"
 import { StatLabel } from "@/src/components/statLabel"
 import { StatNumber } from "@/src/components/statNumber"
-import { Stack } from "@/src/components/stack"
-import { Switch } from "@/src/components/switch";
-import { HStack } from "@/src/components/hStack"
-import { VStack } from "@/src/components/vStack"
+import { Stepper } from "@/src/components/stepper"
+import { Switch } from "@/src/components/switch"
 import { Tab } from "@/src/components/tab"
+import { Table } from "@/src/components/table"
+import { TableCaption } from "@/src/components/tableCaption"
+import { TableContainer } from "@/src/components/tableContainer"
 import { TabList } from "@/src/components/tabList"
 import { TabPanel } from "@/src/components/tabPanel"
 import { TabPanels } from "@/src/components/tabPanels"
 import { Tabs } from "@/src/components/tabs"
 import { Tag } from "@/src/components/tag"
-import { TagLeftIcon } from "@/src/components/tagLeftIcon"
-import { TagLabel } from "@/src/components/tagLabel"
-import { TagRightIcon } from "@/src/components/tagRightIcon"
 import { TagCloseButton } from "@/src/components/tagCloseButton"
-import { Text } from "@/src/components/text"
-import { Table } from "@/src/components/table"
-import { TableCaption } from "@/src/components/tableCaption"
-import { TableContainer } from "@/src/components/tableContainer"
+import { TagLabel } from "@/src/components/tagLabel"
+import { TagLeftIcon } from "@/src/components/tagLeftIcon"
+import { TagRightIcon } from "@/src/components/tagRightIcon"
 import { Tbody } from "@/src/components/tbody"
 import { Td } from "@/src/components/td"
+import { Text } from "@/src/components/text"
+import { Textarea } from "@/src/components/textarea"
 import { Tfoot } from "@/src/components/tfoot"
 import { Th } from "@/src/components/th"
-import { Tr } from "@/src/components/tr"
 import { Thead } from "@/src/components/thead"
 import { Toast } from "@/src/components/toast"
 import { Tooltip } from "@/src/components/tooltip"
+import { Tr } from "@/src/components/tr"
+import { Transitions } from "@/src/components/transitions"
+import { VisuallyHidden } from "@/src/components/visuallyHidden"
+import { VStack } from "@/src/components/vStack"
+import { Wrap } from "@/src/components/wrap"
 
 import { Registerable } from "./registerable";
 import registerComponent, {
@@ -103,6 +130,8 @@ import {
   accordionMeta,
   accordionPanelMeta,
 } from "./registerAccordion";
+import { alertMeta } from "./registerAlert"
+import { alertDialogMeta } from "./registerAlert"
 import { aspectRatioMeta } from "./registerAspectRatio";
 import { avatarBadgeMeta, avatarGroupMeta, avatarMeta } from "./registerAvatar";
 import { badgeMeta } from "./registerBadge";
@@ -116,20 +145,33 @@ import { buttonGroupMeta, buttonMeta } from "./registerButton";
 import { boxMeta } from "./registerBox";
 import { modifierProvider } from "./registerModifierProvider";
 import { checkboxGroupMeta, checkboxMeta } from "./registerCheckBox";
+import { circularProgressMeta } from "./registerCircularProgress"
+import { closeButtonMeta } from "./registerCloseButton"
 import { codeMeta } from "./registerCode";
 import { containerMeta } from "./registerContainer";
 import { dividerMeta } from "./registerDivider";
+import { drawerMeta } from "./registerDrawer"
+import { editableMeta } from "./registerEditable"
+import { flexMeta } from "./registerFlex"
+
 import {
   formControlMeta,
   formErrorMessageMeta,
   formHelperTextMeta,
   formLabelMeta,
 } from "./registerFormControl";
+import { gridMeta } from "./registerGrid"
+
 import { headingMeta } from "./registerHeading";
 import { highlightMeta } from "./registerHighlight";
 import { imageMeta } from "./registerImage";
 import { inputMeta } from "./registerInput";
 import { kbdMeta } from "./registerKbd";
+
+import { linkMeta } from "./registerLink"
+import { linkOverlayMeta } from "./registerLinkOverlay"
+import { listMeta } from "./registerList"
+import { menuMeta } from "./registerMenu"
 import {
   modalMeta,
   modalBodyMeta,
@@ -156,9 +198,20 @@ import {
   popoverMeta,
   popoverTriggerMeta,
 } from "./registerPopover";
+
+import { portalMeta } from "./registerPortal"
 import { progressMeta } from "./registerProgress";
 import { radioGroupMeta, radioMeta } from "./registerRadio";
+
+import { rangeSliderMeta } from "./registerrangeSlider"
 import { Option, optionMeta, selectMeta } from "./registerSelect";
+
+import { showHideMeta } from "./registerShowHide"
+import { simpleGridMeta } from "./registerSimpleGrid"
+import { skeletonMeta } from "./registerSkeleton"
+import { skipNavMeta } from "./registerSkipNav"
+import { sliderMeta } from "./registerSlider"
+import { spinnerMeta } from "./registerSpinner"
 import {
   statArrowMeta,
   statHelpTextMeta,
@@ -166,6 +219,8 @@ import {
   statMeta,
   statNumberMeta,
 } from "./registerStat";
+import { stepperMeta } from "./registerStepper"
+
 import { switchMeta } from "./registerSwitch";
 import {
   tableCaptionMeta,
@@ -178,6 +233,9 @@ import {
   thMeta,
   trMeta,
 } from "./registerTable";
+
+import { transitionsMeta } from "./registerTransitions"
+import { visuallyHiddenMeta } from "./registerVisuallyHidden"
 import {
   tabListMeta,
   tabMeta,
@@ -186,6 +244,8 @@ import {
   tabsMeta,
 } from "./registerTabs";
 import { textMeta } from "./registerText";
+
+import { textareaMeta } from "./registerTextarea"
 import { toastMeta } from "./registerToast";
 import { tooltipMeta } from "./registerTooltip";
 import {
@@ -194,6 +254,7 @@ import {
   cardBodyMeta,
   cardFooterMeta,
 } from "./registerCard";
+import { centerMeta } from "./registerCenter"
 
 // Added
 // Chakra-UI components
@@ -211,21 +272,32 @@ import {
   hStackMeta,
  } from "./registerStack";
 
-
-
+ import { wrapMeta } from "./registerWrap"
 export * from "./registerable";
+
+/* 
+Add all registers here
+*/
+
 export * from "./registerAccordion";
+export * from "./registerAlert";
 export * from "./registerAspectRatio";
 export * from "./registerAvatar";
 export * from "./registerBadge";
+export * from "./registerBox";
 export * from "./registerBreadcrumb";
 export * from "./registerButton";
-export * from "./registerBox";
+export * from "./registerCard";
+
 export * from "./registerModifierProvider";
 export * from "./registerCheckBox";
 export * from "./registerCode";
 export * from "./registerContainer";
 export * from "./registerDivider";
+
+export * from "./registerDrawer";
+export * from "./registerEditable";
+export * from "./registerFlex";
 export * from "./registerFormControl";
 export * from "./registerHeading";
 export * from "./registerHighlight";
@@ -238,6 +310,13 @@ export * from "./registerPopover";
 export * from "./registerProgress";
 export * from "./registerRadio";
 export * from "./registerSelect";
+
+export * from "./registerShowHide";
+export * from "./registerSimpleGrid";
+export * from "./registerSkeleton";
+export * from "./registerSkipNav";
+export * from "./registerSlider";
+export * from "./registerSpinner";
 export * from "./registerStat";
 export * from "./registerSwitch";
 export * from "./registerTable";
@@ -267,6 +346,9 @@ export function registerAllChakra(loader?: Registerable) {
   _registerComponent(AccordionIcon, accordionIconMeta);
   _registerComponent(AccordionItem, accordionItemMeta);
   _registerComponent(AccordionPanel, accordionPanelMeta);
+  _registerComponent(Alert, alertMeta);
+  _registerComponent(AlertDialog, alertDialogMeta);
+
   _registerComponent(AspectRatio, aspectRatioMeta);
   _registerComponent(Avatar, avatarMeta);
   _registerComponent(AvatarBadge, avatarBadgeMeta);
@@ -281,6 +363,9 @@ export function registerAllChakra(loader?: Registerable) {
   _registerComponent(ButtonGroup, buttonGroupMeta);
   _registerComponent(Checkbox, checkboxMeta);
   _registerComponent(CheckboxGroup, checkboxGroupMeta);
+
+import { CircularProgress } from "@/src/components/circularProgress"
+import { CloseButton } from "@/src/components/closeButton"
   _registerComponent(Code, codeMeta);
   _registerComponent(Container, containerMeta);
   _registerComponent(Divider, dividerMeta);
@@ -288,11 +373,18 @@ export function registerAllChakra(loader?: Registerable) {
   _registerComponent(FormErrorMessage, formErrorMessageMeta);
   _registerComponent(FormHelperText, formHelperTextMeta);
   _registerComponent(FormLabel, formLabelMeta);
+
+import { Grid } from "@/src/components/grid"
   _registerComponent(Heading, headingMeta);
   _registerComponent(Highlight, highlightMeta);
   _registerComponent(Image, imageMeta);
   _registerComponent(Input, inputMeta);
   _registerComponent(Kbd, kbdMeta);
+
+import { Link } from "@/src/components/link"
+import { LinkOverlay } from "@/src/components/linkOverlay"
+import { List } from "@/src/components/list"
+import { Menu } from "@/src/components/menu"
   _registerComponent(Modal, modalMeta);
   _registerComponent(ModalOverlay, modalOverlayMeta);
   _registerComponent(ModalContent, modalContentMeta);
@@ -307,6 +399,13 @@ export function registerAllChakra(loader?: Registerable) {
   _registerComponent(NumberInputStepper, numberInputStepperMeta);
   _registerComponent(Option, optionMeta);
   _registerComponent(Select, selectMeta);
+
+import { ShowHide } from "@/src/components/showHide"
+import { SimpleGrid } from "@/src/components/simpleGrid"
+import { Skeleton } from "@/src/components/skeleton"
+import { SkipNav } from "@/src/components/skipNav"
+import { Slider } from "@/src/components/slider"
+import { Spinner } from "@/src/components/spinner"
   _registerComponent(PinInput, pinInputMeta);
   _registerComponent(PinInputField, pinInputFieldMeta);
   _registerComponent(Popover, popoverMeta);
@@ -316,14 +415,20 @@ export function registerAllChakra(loader?: Registerable) {
   _registerComponent(PopoverContent, popoverContentMeta);
   _registerComponent(PopoverHeader, popoverHeaderMeta);
   _registerComponent(PopoverTrigger, popoverTriggerMeta);
+
+import { Portal } from "@/src/components/portal"
   _registerComponent(Progress, progressMeta);
   _registerComponent(Radio, radioMeta);
   _registerComponent(RadioGroup, radioGroupMeta);
+
+import { RangeSlider } from "@/src/components/rangeSlider"
   _registerComponent(Stat, statMeta);
   _registerComponent(StatArrow, statArrowMeta);
   _registerComponent(StatHelpText, statHelpTextMeta);
   _registerComponent(StatLabel, statLabelMeta);
   _registerComponent(StatNumber, statNumberMeta);
+
+import { Stepper } from "@/src/components/stepper"
   _registerComponent(Switch, switchMeta);
   _registerComponent(Table, tableMeta);
   _registerComponent(TableCaption, tableCaptionMeta);
@@ -332,9 +437,14 @@ export function registerAllChakra(loader?: Registerable) {
   _registerComponent(Tfoot, tfootMeta);
   _registerComponent(Td, tdMeta);
   _registerComponent(Th, thMeta);
+
+import { Transitions } from "@/src/components/transitions"
+import { VisuallyHidden } from "@/src/components/visuallyHidden"
   _registerComponent(Tr, trMeta);
   _registerComponent(TableContainer, tableContainerMeta);
   _registerComponent(Text, textMeta);
+
+import { Textarea } from "@/src/components/textarea"
   _registerComponent(Toast, toastMeta);
   _registerComponent(Tooltip, tooltipMeta);
   _registerComponent(TabList, tabListMeta);
@@ -353,9 +463,12 @@ export function registerAllChakra(loader?: Registerable) {
   // Chakra-UI components
   _registerComponent(Card, cardMeta);
   _registerComponent(CardHeader, cardHeaderMeta);
+  Center
   _registerComponent(CardBody, cardBodyMeta);
   _registerComponent(CardFooter, cardFooterMeta);
   _registerComponent(Stack, stackMeta);
   _registerComponent(HStack, hStackMeta);
   _registerComponent(VStack, vStackMeta)
+
+import { Wrap } from "@/src/components/wrap"
 }
