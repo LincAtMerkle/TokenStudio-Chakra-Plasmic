@@ -1,4 +1,5 @@
 .accordion__container {
-
-  
+    borderTopWidth: "10px";
+    background: #ff00ff;
+    color: #ff0000;
 }

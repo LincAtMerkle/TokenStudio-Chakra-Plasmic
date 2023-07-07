@@ -71,8 +71,6 @@
     "@mdx-js/react": "^1.6.22",
     "@next/font": "13.1.6",
     "@plasmicapp/cli": "^0.1.249",
-    "@plasmicapp/host": "^1.0.120",
-    "@plasmicapp/loader-nextjs": "^1.0.253",
     "@plasmicapp/react-web": "^0.2.222",
     "@types/eslint": "^8.4.10",
     "@types/next": "^9.0.0",

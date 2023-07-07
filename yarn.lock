@@ -2588,7 +2588,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@plasmicapp/host@npm:1.0.147, @plasmicapp/host@npm:^1.0.120":
+"@plasmicapp/host@npm:1.0.147":
   version: 1.0.147
   resolution: "@plasmicapp/host@npm:1.0.147"
   dependencies:
@@ -2611,82 +2611,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@plasmicapp/loader-core@npm:1.0.104":
-  version: 1.0.104
-  resolution: "@plasmicapp/loader-core@npm:1.0.104"
-  dependencies:
-    "@plasmicapp/isomorphic-unfetch": ^1.0.1
-    "@plasmicapp/loader-fetcher": 1.0.27
-  checksum: b973fa9f0ceed877e6473ce8dd6abd06faaba5b02cb618e2dbf50f6df57d8439cb2c2c7d8fa2eed0f33d64fe8e7b6c2c6ac5aeb72db9dde38fe91a045e27015c
-  languageName: node
-  linkType: hard
-
-"@plasmicapp/loader-edge@npm:1.0.33":
-  version: 1.0.33
-  resolution: "@plasmicapp/loader-edge@npm:1.0.33"
-  dependencies:
-    "@plasmicapp/loader-fetcher": 1.0.27
-    "@plasmicapp/loader-splits": 1.0.32
-  checksum: bea0dd351929cb2951ec344beea785f06a943430e1a51cfe9f1b2c110b0438f7fc64dd817b9e069db086e8c5a62e8f67bc98c50ab2bfbdd74507e6a6c3fedaee
-  languageName: node
-  linkType: hard
-
-"@plasmicapp/loader-fetcher@npm:1.0.27":
-  version: 1.0.27
-  resolution: "@plasmicapp/loader-fetcher@npm:1.0.27"
-  dependencies:
-    "@plasmicapp/isomorphic-unfetch": ^1.0.1
-  checksum: f3fcb006297cfebda17493025c37b48a582af408f6677eccb13d0e2ad0963fef9c1b32f15dc44ec0fd30743e0da96d542496b43c89d4c722ea628258fe4ad52f
-  languageName: node
-  linkType: hard
-
-"@plasmicapp/loader-nextjs@npm:^1.0.253":
-  version: 1.0.285
-  resolution: "@plasmicapp/loader-nextjs@npm:1.0.285"
-  dependencies:
-    "@plasmicapp/loader-core": 1.0.104
-    "@plasmicapp/loader-edge": 1.0.33
-    "@plasmicapp/loader-react": 1.0.270
-    "@plasmicapp/watcher": 1.0.72
-    server-only: 0.0.1
-  peerDependencies:
-    next: ">=10.1.0"
-    react: ">=16.8.0"
-    react-dom: ">=16.8.0"
-  checksum: 130eca92e0796bb10f376df80199ac80110f4b3792c5a563f8054df3671ff8fea01c8e52e44a1a6b6f2f78409c3eef199b90f372e5ca29b6c2ada2236eaa0c0c
-  languageName: node
-  linkType: hard
-
-"@plasmicapp/loader-react@npm:1.0.270":
-  version: 1.0.270
-  resolution: "@plasmicapp/loader-react@npm:1.0.270"
-  dependencies:
-    "@plasmicapp/data-sources-context": 0.1.11
-    "@plasmicapp/host": 1.0.147
-    "@plasmicapp/loader-core": 1.0.104
-    "@plasmicapp/loader-splits": 1.0.32
-    "@plasmicapp/query": 0.1.67
-    "@plasmicapp/react-ssr-prepass": 2.0.2
-    pascalcase: ^1.0.0
-    react-is: ^17.0.2
-    server-only: 0.0.1
-  peerDependencies:
-    react: ">=16.8.0"
-    react-dom: ">=16.8.0"
-  checksum: 7804f8a35b6972c6bf119467540ed65712d098f87413d2e848d276c7158bfbf353720dbff62795646bec8973b32f7fa1c4d118b42ea97d9236583a18827403fa
-  languageName: node
-  linkType: hard
-
-"@plasmicapp/loader-splits@npm:1.0.32":
-  version: 1.0.32
-  resolution: "@plasmicapp/loader-splits@npm:1.0.32"
-  dependencies:
-    "@plasmicapp/loader-fetcher": 1.0.27
-    json-logic-js: ^2.0.2
-  checksum: 400b24f7e5bc1d720e7fde13c99fb7b6827db2a296e9e0f81a5eb528fa8be8ee87b4da48e7bf8da1c9b9d18dad87d912eaf0bcb498f47185f4af40c4a78f3d8b
-  languageName: node
-  linkType: hard
-
 "@plasmicapp/query@npm:0.1.67":
   version: 0.1.67
   resolution: "@plasmicapp/query@npm:0.1.67"
@@ -2695,15 +2619,6 @@ __metadata:
   peerDependencies:
     react: ">=16"
   checksum: a4f4557b9fb53f2b323f861bf9d12846394c24a763f8b6357d75cad291e061d9e777fd616be3d645e7b0014ffc8a20c48e4eb007149ea0db01f670008616b3a7
-  languageName: node
-  linkType: hard
-
-"@plasmicapp/react-ssr-prepass@npm:2.0.2":
-  version: 2.0.2
-  resolution: "@plasmicapp/react-ssr-prepass@npm:2.0.2"
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0 || ^18.0.0
-  checksum: 18c54b993544abdb8a6baa1039796e614605067cb079f6111a16de1791c5a40a90411072ff04f7b4aefbfc9e6c9a30fed0b376bc37a11b8c1cec343c73b800c9
   languageName: node
   linkType: hard
 
@@ -2742,15 +2657,6 @@ __metadata:
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
   checksum: 8b5deab4f2a78e4ef1f32ef1643fd3772ebe32886f476e2450a1dc0a79c31cff5f3c2840d24eb5279a7f986d05e3823af838c55d179694badc5364c3d3aaa833
-  languageName: node
-  linkType: hard
-
-"@plasmicapp/watcher@npm:1.0.72":
-  version: 1.0.72
-  resolution: "@plasmicapp/watcher@npm:1.0.72"
-  dependencies:
-    socket.io-client: ^4.1.2
-  checksum: c7ced761fa1655a67a8efeee2d1d0ac01345bd2dde74bb23d154967b3aff0fafa68b9935c93df1a67f67c284266f684b1d03a94d5d9a6bde62f66f8093bb008a
   languageName: node
   linkType: hard
 
@@ -4767,8 +4673,6 @@ __metadata:
     "@mdx-js/react": ^1.6.22
     "@next/font": 13.1.6
     "@plasmicapp/cli": ^0.1.249
-    "@plasmicapp/host": ^1.0.120
-    "@plasmicapp/loader-nextjs": ^1.0.253
     "@plasmicapp/react-web": ^0.2.222
     "@plasmicpkgs/plasmic-query": ^0.0.150
     "@react-aria/utils": ^3.15.0
@@ -8547,13 +8451,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"json-logic-js@npm:^2.0.2":
-  version: 2.0.2
-  resolution: "json-logic-js@npm:2.0.2"
-  checksum: 34846500b76a25a86de65560afe358e844b384f0f61c1832fed6a9dfc8f45d884be0b0c8ab033d1a2df7c92b33910d8cee1b3d28e0f461cc55c715d2761219ef
-  languageName: node
-  linkType: hard
-
 "json-parse-better-errors@npm:^1.0.1":
   version: 1.0.2
   resolution: "json-parse-better-errors@npm:1.0.2"
@@ -9684,13 +9581,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pascalcase@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "pascalcase@npm:1.0.0"
-  checksum: 512268b402418d4993d13d801128062ab908cae28e19c2f4eacfda6940eacbf1f30debedce0dc0e000847db20b9b5f2b24076e7bbd15a426c968479390cef793
-  languageName: node
-  linkType: hard
-
 "path-case@npm:^3.0.4":
   version: 3.0.4
   resolution: "path-case@npm:3.0.4"
@@ -10589,13 +10479,6 @@ __metadata:
     tslib: ^2.0.3
     upper-case-first: ^2.0.2
   checksum: 3cfe6c0143e649132365695706702d7f729f484fa7b25f43435876efe7af2478243eefb052bacbcce10babf9319fd6b5b6bc59b94c80a1c819bcbb40651465d5
-  languageName: node
-  linkType: hard
-
-"server-only@npm:0.0.1":
-  version: 0.0.1
-  resolution: "server-only@npm:0.0.1"
-  checksum: c432348956641ea3f460af8dc3765f3a1bdbcf7a1e0205b0756d868e6e6fe8934cdee6bff68401a1dd49ba4a831c75916517a877446d54b334f7de36fa273e53
   languageName: node
   linkType: hard
 
