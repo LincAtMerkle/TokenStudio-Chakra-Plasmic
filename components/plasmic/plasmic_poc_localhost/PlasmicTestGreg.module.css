@@ -1,0 +1,244 @@
+.testGreg {
+  display: grid;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  align-content: flex-start;
+  justify-items: center;
+  justify-content: flex-start;
+  align-items: center;
+  background: #ffffff;
+  min-width: 0;
+  min-height: 0;
+  grid-template-columns:
+    var(--plsmc-viewport-gap) 1fr minmax(0, var(--plsmc-wide-chunk))
+    min(
+      var(--plsmc-standard-width),
+      calc(100% - var(--plsmc-viewport-gap) - var(--plsmc-viewport-gap))
+    )
+    minmax(0, var(--plsmc-wide-chunk)) 1fr var(--plsmc-viewport-gap);
+}
+:where(.testGreg > *) {
+  grid-column: 4;
+}
+.chakraUiButton__lq94P:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+.text__lmEoT {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.chakraUiButton__ylGg:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+.text__vdmay {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.chakraUiButton__kiR8L:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+.text__vdtC {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.chakraUiSwitch:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+.chakraUiText__icVqZ:global(.__wab_instance) {
+  position: relative;
+  text-align: left;
+  max-width: 141px;
+  width: 100%;
+  min-width: 0;
+}
+.text__aPhN {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.loginWithCentredForm:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+.chakraUiContainer:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.chakraUiStack__bwbrS:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.logo:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.chakraUiStack___2SApl:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.chakraUiStack__bFv7U:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.chakraUiHeading:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.text__sXEpX {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.chakraUiHStack___7QlNb:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.chakraUiText__eLmAu:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.text__tvs7T {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.chakraUiButton__ho6Me:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.text__vWqts {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.chakraUiBox:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.chakraUiStack__tG5Xb:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.chakraUiStack__dHxaL:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.chakraUiFormControl:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.chakraUiFormLabel:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.text__n0MJp {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.chakraUiInput:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.passwordField:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.chakraUiHStack__zNaF:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.chakraUiCheckbox:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.text___3N4Bp {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.chakraUiButton__lSdXq:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.text__njMxB {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.chakraUiStack___9Ggin:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.chakraUiButton__ztR8Z:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.text__jIYwh {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.chakraUiHStack__a5Knp:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.chakraUiDivider__nPxc:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.chakraUiText__zf24I:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.text__sUx35 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.chakraUiDivider__rcgp8:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.oAuthButtonGroup:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}

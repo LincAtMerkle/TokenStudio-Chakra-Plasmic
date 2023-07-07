@@ -11,14 +11,14 @@
 // Plasmic Project: nV7sRTPBx6ecWzFNNAWeQg
 // Component: XrCMl6ptWC
 
-import * as React from "react";
+import * as React from 'react';
 
-import Head from "next/head";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/router';
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
+import * as p from '@plasmicapp/react-web';
+import * as ph from '@plasmicapp/react-web/lib/host';
 
 import {
   hasVariant,
@@ -34,15 +34,15 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
-} from "@plasmicapp/react-web";
-import { Heading } from "@chakra-ui/react"; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
-import { TableWithSearch } from "../../custom/chakraPro/Aplication/Tables/TableWithSearch"; // plasmic-import: yWDJOl1EDpZx/codeComponent
+  ensureGlobalVariants,
+} from '@plasmicapp/react-web';
+import { Heading } from '@chakra-ui/react'; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
+import { TableWithSearch } from '../../chakra/chakraPro/Aplication/Tables/TableWithSearch'; // plasmic-import: yWDJOl1EDpZx/codeComponent
 
-import "@plasmicapp/react-web/lib/plasmic.css";
+import '@plasmicapp/react-web/lib/plasmic.css';
 
-import projectcss from "./plasmic_plasmic_poc_localhost.module.css"; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
-import sty from "./PlasmicTables.module.css"; // plasmic-import: XrCMl6ptWC/css
+import projectcss from './plasmic_plasmic_poc_localhost.module.css'; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
+import sty from './PlasmicTables.module.css'; // plasmic-import: XrCMl6ptWC/css
 
 export type PlasmicTables__VariantMembers = {};
 export type PlasmicTables__VariantsArgs = {};
@@ -54,7 +54,7 @@ type ArgPropType = keyof PlasmicTables__ArgsType;
 export const PlasmicTables__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicTables__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: p.Flex<'div'>;
   tableWithSearch?: p.Flex<typeof TableWithSearch>;
 };
 
@@ -88,7 +88,7 @@ function PlasmicTables__RenderFunc(props: {
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
@@ -109,7 +109,7 @@ function PlasmicTables__RenderFunc(props: {
 
       <div className={projectcss.plasmic_page_wrapper}>
         <div
-          data-plasmic-name={"root"}
+          data-plasmic-name={'root'}
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
@@ -124,11 +124,11 @@ function PlasmicTables__RenderFunc(props: {
         >
           <Heading
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.chakraUiHeading___4He3P
             )}
             noOfLines={1 as const}
-            size={"4xl" as const}
+            size={'4xl' as const}
           >
             <div
               className={classNames(
@@ -137,13 +137,13 @@ function PlasmicTables__RenderFunc(props: {
                 sty.text__kX506
               )}
             >
-              {"Tables"}
+              {'Tables'}
             </div>
           </Heading>
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__yvGq)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__yvGq)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -152,13 +152,13 @@ function PlasmicTables__RenderFunc(props: {
                 sty.text__n8Tcz
               )}
             >
-              {"Table with search"}
+              {'Table with search'}
             </div>
           </Heading>
           <TableWithSearch
-            data-plasmic-name={"tableWithSearch"}
+            data-plasmic-name={'tableWithSearch'}
             data-plasmic-override={overrides.tableWithSearch}
-            className={classNames("__wab_instance", sty.tableWithSearch)}
+            className={classNames('__wab_instance', sty.tableWithSearch)}
           />
         </div>
       </div>
@@ -167,18 +167,18 @@ function PlasmicTables__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "tableWithSearch"],
-  tableWithSearch: ["tableWithSearch"]
+  root: ['root', 'tableWithSearch'],
+  tableWithSearch: ['tableWithSearch'],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  root: 'div';
   tableWithSearch: typeof TableWithSearch;
 };
 
-type ReservedPropsType = "variants" | "args" | "overrides";
+type ReservedPropsType = 'variants' | 'args' | 'overrides';
 type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicTables__OverridesType,
   DescendantsType<T>
@@ -214,7 +214,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicTables__ArgProps,
-          internalVariantPropNames: PlasmicTables__VariantProps
+          internalVariantPropNames: PlasmicTables__VariantProps,
         }),
       [props, nodeName]
     );
@@ -222,11 +222,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
-  if (nodeName === "root") {
-    func.displayName = "PlasmicTables";
+  if (nodeName === 'root') {
+    func.displayName = 'PlasmicTables';
   } else {
     func.displayName = `PlasmicTables.${nodeName}`;
   }
@@ -235,10 +235,10 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicTables = Object.assign(
   // Top-level PlasmicTables renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent('root'),
   {
     // Helper components rendering sub-elements
-    tableWithSearch: makeNodeComponent("tableWithSearch"),
+    tableWithSearch: makeNodeComponent('tableWithSearch'),
 
     // Metadata about props expected for PlasmicTables
     internalVariantProps: PlasmicTables__VariantProps,
@@ -246,11 +246,11 @@ export const PlasmicTables = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "",
-      description: "",
-      ogImageSrc: "",
-      canonical: ""
-    }
+      title: '',
+      description: '',
+      ogImageSrc: '',
+      canonical: '',
+    },
   }
 );
 

@@ -11,14 +11,14 @@
 // Plasmic Project: nV7sRTPBx6ecWzFNNAWeQg
 // Component: LwPAmeRAMP
 
-import * as React from "react";
+import * as React from 'react';
 
-import Head from "next/head";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/router';
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
+import * as p from '@plasmicapp/react-web';
+import * as ph from '@plasmicapp/react-web/lib/host';
 
 import {
   hasVariant,
@@ -34,13 +34,45 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
-} from "@plasmicapp/react-web";
+  ensureGlobalVariants,
+} from '@plasmicapp/react-web';
+import { Button } from '@chakra-ui/react'; // plasmic-import: TdxMoalAZRL/codeComponent
+import { ButtonGroup } from '@chakra-ui/react'; // plasmic-import: HKqOVAlsNyz/codeComponent
+import { Checkbox } from '@chakra-ui/react'; // plasmic-import: FOG2BpAjXwH/codeComponent
+import { FormControl } from '@chakra-ui/react'; // plasmic-import: 7qBVfEit46s/codeComponent
+import { FormLabel } from '@chakra-ui/react'; // plasmic-import: qrPwpFjI80f/codeComponent
+import { Input } from '@chakra-ui/react'; // plasmic-import: af17Ycvvo_OQfS/codeComponent
+import { Progress } from '@chakra-ui/react'; // plasmic-import: aQnykaZQtAdg6k/codeComponent
+import { Switch } from '@chakra-ui/react'; // plasmic-import: -NvC0LgQXxGITF/codeComponent
+import { Tabs } from '@chakra-ui/react'; // plasmic-import: oLPrfVOgmP2NL-/codeComponent
+import { TabList } from '@chakra-ui/react'; // plasmic-import: DK6dSB3ThhsXIj/codeComponent
+import { Tab } from '@chakra-ui/react'; // plasmic-import: F1abSqtZ70GIE5/codeComponent
+import { TabPanels } from '@chakra-ui/react'; // plasmic-import: R86GKzOGccsYxz/codeComponent
+import { TabPanel } from '@chakra-ui/react'; // plasmic-import: CtsmYWpMHjwsnu/codeComponent
+import { Avatar } from '@chakra-ui/react'; // plasmic-import: DRaal8SRSag/codeComponent
+import { AvatarBadge } from '@chakra-ui/react'; // plasmic-import: mV6df7ks5Uk/codeComponent
+import { Accordion } from '@chakra-ui/react'; // plasmic-import: 2KAN9pHJgUTnhu/codeComponent
+import { AccordionItem } from '@chakra-ui/react'; // plasmic-import: i21aTMORw6/codeComponent
+import { AccordionButton } from '@chakra-ui/react'; // plasmic-import: BaAYoc7wxa/codeComponent
+import { AccordionIcon } from '@chakra-ui/react'; // plasmic-import: ZgWEbLwSSK/codeComponent
+import { AccordionPanel } from '@chakra-ui/react'; // plasmic-import: 17VrZJ3mR8/codeComponent
+import { Text } from '@chakra-ui/react'; // plasmic-import: SdN14ngBJybRru/codeComponent
+import { Toast } from '@chakra-ui/react'; // plasmic-import: 8x13nyrdTcFMUi/codeComponent
+import { Heading } from '@chakra-ui/react'; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
+import { LoginWithCentredForm } from '../../chakra/chakraPro/Application/Authentication/LoginWithCentredForm'; // plasmic-import: PZuCg-eLQu/codeComponent
+import { Container } from '@chakra-ui/react'; // plasmic-import: N75QIOSVwX/codeComponent
+import { Stack } from '@chakra-ui/react'; // plasmic-import: COXAdXyGiCzfNm/codeComponent
+import { Logo } from '../../chakra/chakraPro/Application/Authentication/LoginWithCentredForm'; // plasmic-import: 1Ex1wCgkK3/codeComponent
+import { HStack } from '@chakra-ui/react'; // plasmic-import: s_UAyIpoEi/codeComponent
+import { Box } from '@chakra-ui/react'; // plasmic-import: -E4B7lTUoD/codeComponent
+import { PasswordField } from '../../chakra/chakraPro/Application/Authentication/LoginWithCentredForm'; // plasmic-import: 3w3N64VhcL/codeComponent
+import { Divider } from '@chakra-ui/react'; // plasmic-import: 5hSSW3LzA3B/codeComponent
+import { OAuthButtonGroup } from '../../chakra/chakraPro/Application/Authentication/LoginWithCentredForm'; // plasmic-import: LW0AKH5m61/codeComponent
 
-import "@plasmicapp/react-web/lib/plasmic.css";
+import '@plasmicapp/react-web/lib/plasmic.css';
 
-import projectcss from "./plasmic_plasmic_poc_localhost.module.css"; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
-import sty from "./PlasmicHomePage.module.css"; // plasmic-import: LwPAmeRAMP/css
+import projectcss from './plasmic_plasmic_poc_localhost.module.css'; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
+import sty from './PlasmicHomePage.module.css'; // plasmic-import: LwPAmeRAMP/css
 
 export type PlasmicHomePage__VariantMembers = {};
 export type PlasmicHomePage__VariantsArgs = {};
@@ -52,7 +84,23 @@ type ArgPropType = keyof PlasmicHomePage__ArgsType;
 export const PlasmicHomePage__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHomePage__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: p.Flex<'div'>;
+  chakraUiButtonGroup?: p.Flex<typeof ButtonGroup>;
+  chakraUiProgress?: p.Flex<typeof Progress>;
+  chakraUiSwitch?: p.Flex<typeof Switch>;
+  chakraUiTabs?: p.Flex<typeof Tabs>;
+  chakraUiTabList?: p.Flex<typeof TabList>;
+  chakraUiTabPanels?: p.Flex<typeof TabPanels>;
+  chakraUiAvatar?: p.Flex<typeof Avatar>;
+  chakraUiAvatarBadge?: p.Flex<typeof AvatarBadge>;
+  chakraUiAccordion?: p.Flex<typeof Accordion>;
+  chakraUiToast?: p.Flex<typeof Toast>;
+  loginWithCentredForm?: p.Flex<typeof LoginWithCentredForm>;
+  chakraUiContainer?: p.Flex<typeof Container>;
+  logo?: p.Flex<typeof Logo>;
+  chakraUiBox?: p.Flex<typeof Box>;
+  passwordField?: p.Flex<typeof PasswordField>;
+  oAuthButtonGroup?: p.Flex<typeof OAuthButtonGroup>;
 };
 
 export interface DefaultHomePageProps {}
@@ -85,7 +133,7 @@ function PlasmicHomePage__RenderFunc(props: {
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
@@ -106,7 +154,7 @@ function PlasmicHomePage__RenderFunc(props: {
 
       <div className={projectcss.plasmic_page_wrapper}>
         <div
-          data-plasmic-name={"root"}
+          data-plasmic-name={'root'}
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
@@ -118,23 +166,810 @@ function PlasmicHomePage__RenderFunc(props: {
             projectcss.plasmic_tokens,
             sty.root
           )}
-        />
+        >
+          <Button
+            className={classNames('__wab_instance', sty.chakraUiButton__iHHkq)}
+            size={'lg' as const}
+            variant={'primary' as const}
+          >
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__npA5M
+              )}
+            >
+              {'Button'}
+            </div>
+          </Button>
+          <ButtonGroup
+            data-plasmic-name={'chakraUiButtonGroup'}
+            data-plasmic-override={overrides.chakraUiButtonGroup}
+            className={classNames('__wab_instance', sty.chakraUiButtonGroup)}
+            isAttached={false}
+            isDisabled={false}
+            size={'md' as const}
+            spacing={'0.5rem' as const}
+          >
+            <Button
+              className={classNames(
+                '__wab_instance',
+                sty.chakraUiButton___9Xq1I
+              )}
+              variant={'primary' as const}
+            >
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__nsHk
+                )}
+              >
+                {'Button'}
+              </div>
+            </Button>
+            <Button
+              className={classNames(
+                '__wab_instance',
+                sty.chakraUiButton___8V87L
+              )}
+              variant={'primary' as const}
+            >
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__eWa4O
+                )}
+              >
+                {'Button'}
+              </div>
+            </Button>
+          </ButtonGroup>
+          <Checkbox
+            className={classNames(
+              '__wab_instance',
+              sty.chakraUiCheckbox__g5V6V
+            )}
+            colorScheme={'blue' as const}
+            spacing={'0.5rem' as const}
+          >
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__bJoY5
+              )}
+            >
+              {'Checkbox'}
+            </div>
+          </Checkbox>
+          <FormControl
+            className={classNames(
+              '__wab_instance',
+              sty.chakraUiFormControl__bgEks
+            )}
+          >
+            <FormLabel
+              className={classNames(
+                '__wab_instance',
+                sty.chakraUiFormLabel__gjvRm
+              )}
+            >
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__fa6Bj
+                )}
+              >
+                {'Label'}
+              </div>
+            </FormLabel>
+            <Input
+              className={classNames('__wab_instance', sty.chakraUiInput__oKonp)}
+              errorBorderColor={'red.500' as const}
+              focusBorderColor={'blue.500' as const}
+            />
+          </FormControl>
+          <Progress
+            data-plasmic-name={'chakraUiProgress'}
+            data-plasmic-override={overrides.chakraUiProgress}
+            className={classNames('__wab_instance', sty.chakraUiProgress)}
+            colorScheme={'blue' as const}
+            max={100 as const}
+            min={0 as const}
+            size={'md' as const}
+          />
+
+          <Switch
+            data-plasmic-name={'chakraUiSwitch'}
+            data-plasmic-override={overrides.chakraUiSwitch}
+            className={classNames('__wab_instance', sty.chakraUiSwitch)}
+            colorScheme={'blue' as const}
+            size={'lg' as const}
+            spacing={'0.5rem' as const}
+          />
+
+          <Tabs
+            data-plasmic-name={'chakraUiTabs'}
+            data-plasmic-override={overrides.chakraUiTabs}
+            className={classNames('__wab_instance', sty.chakraUiTabs)}
+            variant={'line' as const}
+          >
+            <TabList
+              data-plasmic-name={'chakraUiTabList'}
+              data-plasmic-override={overrides.chakraUiTabList}
+              className={classNames('__wab_instance', sty.chakraUiTabList)}
+            >
+              <Tab
+                className={classNames('__wab_instance', sty.chakraUiTab__oUu8N)}
+              >
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__gyiGo
+                  )}
+                >
+                  {'Tab 1'}
+                </div>
+              </Tab>
+              <Tab
+                className={classNames('__wab_instance', sty.chakraUiTab__cdDzx)}
+              >
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__amvum
+                  )}
+                >
+                  {'Tab 2'}
+                </div>
+              </Tab>
+              <Tab
+                className={classNames('__wab_instance', sty.chakraUiTab__eRc4Q)}
+              >
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__aYbhr
+                  )}
+                >
+                  {'Tab 3'}
+                </div>
+              </Tab>
+            </TabList>
+            <TabPanels
+              data-plasmic-name={'chakraUiTabPanels'}
+              data-plasmic-override={overrides.chakraUiTabPanels}
+              className={classNames('__wab_instance', sty.chakraUiTabPanels)}
+            >
+              <TabPanel
+                className={classNames(
+                  '__wab_instance',
+                  sty.chakraUiTabPanel__e5DzI
+                )}
+              >
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__haEwI
+                  )}
+                >
+                  {"Tab 1's Panel Content"}
+                </div>
+              </TabPanel>
+              <TabPanel
+                className={classNames(
+                  '__wab_instance',
+                  sty.chakraUiTabPanel__n7Y5Q
+                )}
+              >
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__ioo4Z
+                  )}
+                >
+                  {"Tab 2's Panel Content"}
+                </div>
+              </TabPanel>
+              <TabPanel
+                className={classNames(
+                  '__wab_instance',
+                  sty.chakraUiTabPanel__hvZmq
+                )}
+              >
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__cZokD
+                  )}
+                >
+                  {"Tab 3's Panel Content"}
+                </div>
+              </TabPanel>
+            </TabPanels>
+          </Tabs>
+          <Avatar
+            data-plasmic-name={'chakraUiAvatar'}
+            data-plasmic-override={overrides.chakraUiAvatar}
+            className={classNames('__wab_instance', sty.chakraUiAvatar)}
+            name={'Kola Tioluwani' as const}
+            src={'https://bit.ly/dan-abramov' as const}
+          >
+            <AvatarBadge
+              data-plasmic-name={'chakraUiAvatarBadge'}
+              data-plasmic-override={overrides.chakraUiAvatarBadge}
+              bg={'green.500' as const}
+              boxSize={'1.25em' as const}
+              className={classNames('__wab_instance', sty.chakraUiAvatarBadge)}
+            />
+          </Avatar>
+          <Accordion
+            data-plasmic-name={'chakraUiAccordion'}
+            data-plasmic-override={overrides.chakraUiAccordion}
+            className={classNames('__wab_instance', sty.chakraUiAccordion)}
+          >
+            <AccordionItem
+              className={classNames(
+                '__wab_instance',
+                sty.chakraUiAccordionItem__e3Fpi
+              )}
+            >
+              <AccordionButton
+                className={classNames(
+                  '__wab_instance',
+                  sty.chakraUiAccordionButton___8DIMz
+                )}
+              >
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__xaIaD
+                  )}
+                >
+                  {'Section 1 title'}
+                </div>
+                <AccordionIcon
+                  className={classNames(
+                    '__wab_instance',
+                    sty.chakraUiAccordionIcon__mCy6W
+                  )}
+                />
+              </AccordionButton>
+              <AccordionPanel
+                className={classNames(
+                  '__wab_instance',
+                  sty.chakraUiAccordionPanel__t9NbS
+                )}
+              >
+                <Text
+                  className={classNames(
+                    '__wab_instance',
+                    sty.chakraUiText__tm8E1
+                  )}
+                  fontStyle={'normal' as const}
+                  size={'md' as const}
+                  variant={'regular' as const}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__k4Oe8
+                    )}
+                  >
+                    {
+                      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+                    }
+                  </div>
+                </Text>
+              </AccordionPanel>
+            </AccordionItem>
+            <AccordionItem
+              className={classNames(
+                '__wab_instance',
+                sty.chakraUiAccordionItem__eaSw7
+              )}
+            >
+              <AccordionButton
+                className={classNames(
+                  '__wab_instance',
+                  sty.chakraUiAccordionButton__nT3MT
+                )}
+              >
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__pqaf1
+                  )}
+                >
+                  {'Section 1 title'}
+                </div>
+                <AccordionIcon
+                  className={classNames(
+                    '__wab_instance',
+                    sty.chakraUiAccordionIcon__cHdDh
+                  )}
+                />
+              </AccordionButton>
+              <AccordionPanel
+                className={classNames(
+                  '__wab_instance',
+                  sty.chakraUiAccordionPanel__kXy
+                )}
+              >
+                <Text
+                  className={classNames(
+                    '__wab_instance',
+                    sty.chakraUiText__oxbA9
+                  )}
+                  fontStyle={'normal' as const}
+                  size={'md' as const}
+                  variant={'regular' as const}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__l5Tmf
+                    )}
+                  >
+                    {
+                      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+                    }
+                  </div>
+                </Text>
+              </AccordionPanel>
+            </AccordionItem>
+          </Accordion>
+          <Button
+            className={classNames('__wab_instance', sty.chakraUiButton__pfV46)}
+            variant={'primary' as const}
+          >
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__emqCw
+              )}
+            >
+              {'Button'}
+            </div>
+          </Button>
+          <Toast
+            data-plasmic-name={'chakraUiToast'}
+            data-plasmic-override={overrides.chakraUiToast}
+            className={classNames('__wab_instance', sty.chakraUiToast)}
+            description={'Toast description' as const}
+            duration={5000 as const}
+            title={'Toast Title' as const}
+          />
+
+          <Heading
+            className={classNames('__wab_instance', sty.chakraUiHeading__tFiax)}
+            noOfLines={1 as const}
+            size={'xl' as const}
+          >
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__vC4DD
+              )}
+            >
+              {
+                'Basic text writing, including headings, body text, lists, and more.'
+              }
+            </div>
+          </Heading>
+          <Text
+            className={classNames('__wab_instance', sty.chakraUiText__biiGd)}
+            fontStyle={'normal' as const}
+            size={'xl' as const}
+            variant={'regular' as const}
+          >
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text___2NMpb
+              )}
+            >
+              {'Some Text'}
+            </div>
+          </Text>
+          <LoginWithCentredForm
+            data-plasmic-name={'loginWithCentredForm'}
+            data-plasmic-override={overrides.loginWithCentredForm}
+            className={classNames('__wab_instance', sty.loginWithCentredForm)}
+          >
+            <Container
+              data-plasmic-name={'chakraUiContainer'}
+              data-plasmic-override={overrides.chakraUiContainer}
+              centerContent={true}
+              className={classNames('__wab_instance', sty.chakraUiContainer)}
+              px={100 as const}
+              py={'50' as const}
+              variant={'boldVariant' as const}
+            >
+              <Stack
+                className={classNames(
+                  '__wab_instance',
+                  sty.chakraUiStack__yxWzh
+                )}
+                direction={'column' as const}
+                spacing={8 as const}
+              >
+                <Logo
+                  data-plasmic-name={'logo'}
+                  data-plasmic-override={overrides.logo}
+                  className={classNames('__wab_instance', sty.logo)}
+                />
+
+                <Stack
+                  className={classNames(
+                    '__wab_instance',
+                    sty.chakraUiStack__wt6Wo
+                  )}
+                  direction={'column' as const}
+                  spacing={'8' as const}
+                >
+                  <Stack
+                    className={classNames(
+                      '__wab_instance',
+                      sty.chakraUiStack__ahG9Y
+                    )}
+                    direction={'column' as const}
+                    spacing={'20' as const}
+                  >
+                    <Heading
+                      className={classNames(
+                        '__wab_instance',
+                        sty.chakraUiHeading__rGnSl
+                      )}
+                      noOfLines={1 as const}
+                      size={'20' as const}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__gnAIq
+                        )}
+                      >
+                        {'Log in to your account'}
+                      </div>
+                    </Heading>
+                    <HStack
+                      className={classNames(
+                        '__wab_instance',
+                        sty.chakraUiHStack__pToNa
+                      )}
+                      direction={'row' as const}
+                      justify={'center' as const}
+                      spacing={'1' as const}
+                    >
+                      <Text
+                        className={classNames(
+                          '__wab_instance',
+                          sty.chakraUiText__ujGNb
+                        )}
+                        fontStyle={'normal' as const}
+                        size={'md' as const}
+                        variant={'regular' as const}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__zhf5Z
+                          )}
+                        >
+                          {"Don't have an account?"}
+                        </div>
+                      </Text>
+                      <Button
+                        className={classNames(
+                          '__wab_instance',
+                          sty.chakraUiButton__dWnLu
+                        )}
+                        colorScheme={'pink' as const}
+                        variant={'link' as const}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text___2Wm9W
+                          )}
+                        >
+                          {'Sign up'}
+                        </div>
+                      </Button>
+                    </HStack>
+                  </Stack>
+                </Stack>
+                <Box
+                  data-plasmic-name={'chakraUiBox'}
+                  data-plasmic-override={overrides.chakraUiBox}
+                  className={classNames('__wab_instance', sty.chakraUiBox)}
+                  px={'4' as const}
+                  py={'0' as const}
+                >
+                  <Stack
+                    className={classNames(
+                      '__wab_instance',
+                      sty.chakraUiStack__xUPg7
+                    )}
+                    direction={'column' as const}
+                    spacing={'6' as const}
+                  >
+                    <Stack
+                      className={classNames(
+                        '__wab_instance',
+                        sty.chakraUiStack__rhCuv
+                      )}
+                      direction={'column' as const}
+                      spacing={'5' as const}
+                    >
+                      <FormControl
+                        className={classNames(
+                          '__wab_instance',
+                          sty.chakraUiFormControl__q1G1S
+                        )}
+                      >
+                        <FormLabel
+                          className={classNames(
+                            '__wab_instance',
+                            sty.chakraUiFormLabel__cUbEd
+                          )}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__jtYrY
+                            )}
+                          >
+                            {'Email'}
+                          </div>
+                        </FormLabel>
+                        <Input
+                          className={classNames(
+                            '__wab_instance',
+                            sty.chakraUiInput__vNhJr
+                          )}
+                          errorBorderColor={'red.500' as const}
+                          focusBorderColor={'blue.500' as const}
+                        />
+
+                        <PasswordField
+                          data-plasmic-name={'passwordField'}
+                          data-plasmic-override={overrides.passwordField}
+                          className={classNames(
+                            '__wab_instance',
+                            sty.passwordField
+                          )}
+                        />
+                      </FormControl>
+                      <HStack
+                        className={classNames(
+                          '__wab_instance',
+                          sty.chakraUiHStack__nlBqr
+                        )}
+                        direction={'row' as const}
+                        justify={'space-between' as const}
+                        spacing={8 as const}
+                      >
+                        <Checkbox
+                          className={classNames(
+                            '__wab_instance',
+                            sty.chakraUiCheckbox__hv6Rq
+                          )}
+                          colorScheme={'blue' as const}
+                          spacing={'0.5rem' as const}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__uauc2
+                            )}
+                          >
+                            {'Checkbox'}
+                          </div>
+                        </Checkbox>
+                        <Button
+                          className={classNames(
+                            '__wab_instance',
+                            sty.chakraUiButton__kNf7O
+                          )}
+                          colorScheme={'pink' as const}
+                          size={'sm' as const}
+                          variant={'link' as const}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__rhCy
+                            )}
+                          >
+                            {'Forgot password?'}
+                          </div>
+                        </Button>
+                      </HStack>
+                    </Stack>
+                    <Stack
+                      className={classNames(
+                        '__wab_instance',
+                        sty.chakraUiStack___7Bp3U
+                      )}
+                      direction={'column' as const}
+                      spacing={'6' as const}
+                    >
+                      <Button
+                        className={classNames(
+                          '__wab_instance',
+                          sty.chakraUiButton__oHi37
+                        )}
+                        variant={'primary' as const}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__kJcJp
+                          )}
+                        >
+                          {'Sign in'}
+                        </div>
+                      </Button>
+                      <HStack
+                        className={classNames(
+                          '__wab_instance',
+                          sty.chakraUiHStack__hg8Lc
+                        )}
+                        direction={'row' as const}
+                        spacing={8 as const}
+                      >
+                        <Divider
+                          className={classNames(
+                            '__wab_instance',
+                            sty.chakraUiDivider__wjLpQ
+                          )}
+                        />
+
+                        <Text
+                          className={classNames(
+                            '__wab_instance',
+                            sty.chakraUiText__alh2L
+                          )}
+                          fontStyle={'normal' as const}
+                          size={'md' as const}
+                          variant={'regular' as const}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__i77Za
+                            )}
+                          >
+                            {'or continue with'}
+                          </div>
+                        </Text>
+                        <Divider
+                          className={classNames(
+                            '__wab_instance',
+                            sty.chakraUiDivider__wnOaF
+                          )}
+                        />
+                      </HStack>
+                      <OAuthButtonGroup
+                        data-plasmic-name={'oAuthButtonGroup'}
+                        data-plasmic-override={overrides.oAuthButtonGroup}
+                        className={classNames(
+                          '__wab_instance',
+                          sty.oAuthButtonGroup
+                        )}
+                      />
+                    </Stack>
+                  </Stack>
+                </Box>
+              </Stack>
+            </Container>
+          </LoginWithCentredForm>
+        </div>
       </div>
     </React.Fragment>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  root: ["root"]
+  root: [
+    'root',
+    'chakraUiButtonGroup',
+    'chakraUiProgress',
+    'chakraUiSwitch',
+    'chakraUiTabs',
+    'chakraUiTabList',
+    'chakraUiTabPanels',
+    'chakraUiAvatar',
+    'chakraUiAvatarBadge',
+    'chakraUiAccordion',
+    'chakraUiToast',
+    'loginWithCentredForm',
+    'chakraUiContainer',
+    'logo',
+    'chakraUiBox',
+    'passwordField',
+    'oAuthButtonGroup',
+  ],
+  chakraUiButtonGroup: ['chakraUiButtonGroup'],
+  chakraUiProgress: ['chakraUiProgress'],
+  chakraUiSwitch: ['chakraUiSwitch'],
+  chakraUiTabs: ['chakraUiTabs', 'chakraUiTabList', 'chakraUiTabPanels'],
+  chakraUiTabList: ['chakraUiTabList'],
+  chakraUiTabPanels: ['chakraUiTabPanels'],
+  chakraUiAvatar: ['chakraUiAvatar', 'chakraUiAvatarBadge'],
+  chakraUiAvatarBadge: ['chakraUiAvatarBadge'],
+  chakraUiAccordion: ['chakraUiAccordion'],
+  chakraUiToast: ['chakraUiToast'],
+  loginWithCentredForm: [
+    'loginWithCentredForm',
+    'chakraUiContainer',
+    'logo',
+    'chakraUiBox',
+    'passwordField',
+    'oAuthButtonGroup',
+  ],
+  chakraUiContainer: [
+    'chakraUiContainer',
+    'logo',
+    'chakraUiBox',
+    'passwordField',
+    'oAuthButtonGroup',
+  ],
+  logo: ['logo'],
+  chakraUiBox: ['chakraUiBox', 'passwordField', 'oAuthButtonGroup'],
+  passwordField: ['passwordField'],
+  oAuthButtonGroup: ['oAuthButtonGroup'],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  root: 'div';
+  chakraUiButtonGroup: typeof ButtonGroup;
+  chakraUiProgress: typeof Progress;
+  chakraUiSwitch: typeof Switch;
+  chakraUiTabs: typeof Tabs;
+  chakraUiTabList: typeof TabList;
+  chakraUiTabPanels: typeof TabPanels;
+  chakraUiAvatar: typeof Avatar;
+  chakraUiAvatarBadge: typeof AvatarBadge;
+  chakraUiAccordion: typeof Accordion;
+  chakraUiToast: typeof Toast;
+  loginWithCentredForm: typeof LoginWithCentredForm;
+  chakraUiContainer: typeof Container;
+  logo: typeof Logo;
+  chakraUiBox: typeof Box;
+  passwordField: typeof PasswordField;
+  oAuthButtonGroup: typeof OAuthButtonGroup;
 };
 
-type ReservedPropsType = "variants" | "args" | "overrides";
+type ReservedPropsType = 'variants' | 'args' | 'overrides';
 type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicHomePage__OverridesType,
   DescendantsType<T>
@@ -170,7 +1005,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicHomePage__ArgProps,
-          internalVariantPropNames: PlasmicHomePage__VariantProps
+          internalVariantPropNames: PlasmicHomePage__VariantProps,
         }),
       [props, nodeName]
     );
@@ -178,11 +1013,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
-  if (nodeName === "root") {
-    func.displayName = "PlasmicHomePage";
+  if (nodeName === 'root') {
+    func.displayName = 'PlasmicHomePage';
   } else {
     func.displayName = `PlasmicHomePage.${nodeName}`;
   }
@@ -191,9 +1026,25 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicHomePage = Object.assign(
   // Top-level PlasmicHomePage renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent('root'),
   {
     // Helper components rendering sub-elements
+    chakraUiButtonGroup: makeNodeComponent('chakraUiButtonGroup'),
+    chakraUiProgress: makeNodeComponent('chakraUiProgress'),
+    chakraUiSwitch: makeNodeComponent('chakraUiSwitch'),
+    chakraUiTabs: makeNodeComponent('chakraUiTabs'),
+    chakraUiTabList: makeNodeComponent('chakraUiTabList'),
+    chakraUiTabPanels: makeNodeComponent('chakraUiTabPanels'),
+    chakraUiAvatar: makeNodeComponent('chakraUiAvatar'),
+    chakraUiAvatarBadge: makeNodeComponent('chakraUiAvatarBadge'),
+    chakraUiAccordion: makeNodeComponent('chakraUiAccordion'),
+    chakraUiToast: makeNodeComponent('chakraUiToast'),
+    loginWithCentredForm: makeNodeComponent('loginWithCentredForm'),
+    chakraUiContainer: makeNodeComponent('chakraUiContainer'),
+    logo: makeNodeComponent('logo'),
+    chakraUiBox: makeNodeComponent('chakraUiBox'),
+    passwordField: makeNodeComponent('passwordField'),
+    oAuthButtonGroup: makeNodeComponent('oAuthButtonGroup'),
 
     // Metadata about props expected for PlasmicHomePage
     internalVariantProps: PlasmicHomePage__VariantProps,
@@ -201,11 +1052,11 @@ export const PlasmicHomePage = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "",
-      description: "",
-      ogImageSrc: "",
-      canonical: ""
-    }
+      title: '',
+      description: '',
+      ogImageSrc: '',
+      canonical: '',
+    },
   }
 );
 

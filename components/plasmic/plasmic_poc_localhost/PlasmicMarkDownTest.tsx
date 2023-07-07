@@ -11,20 +11,20 @@
 // Plasmic Project: nV7sRTPBx6ecWzFNNAWeQg
 // Component: s4za5IjEKLQiTh
 
-import * as React from "react";
+import * as React from 'react';
 
-import Head from "next/head";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/router';
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
+import * as p from '@plasmicapp/react-web';
+import * as ph from '@plasmicapp/react-web/lib/host';
 
 import {
   usePlasmicDataConfig,
   executePlasmicDataOp,
-  usePlasmicDataOp
-} from "@plasmicapp/react-web/lib/data-sources";
+  usePlasmicDataOp,
+} from '@plasmicapp/react-web/lib/data-sources';
 
 import {
   hasVariant,
@@ -40,15 +40,15 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
-} from "@plasmicapp/react-web";
-import { ButtonPreview } from "../../custom/ButtonPreview"; // plasmic-import: 9c6OdMLDMrhOJ5/codeComponent
-import { Fetcher } from "@plasmicapp/react-web/lib/data-sources"; // plasmic-import: Z615tYpfbCCvE/codeComponent
+  ensureGlobalVariants,
+} from '@plasmicapp/react-web';
+import { ButtonPreview } from '../../custom/ButtonPreview'; // plasmic-import: 9c6OdMLDMrhOJ5/codeComponent
+import { Fetcher } from '@plasmicapp/react-web/lib/data-sources'; // plasmic-import: Z615tYpfbCCvE/codeComponent
 
-import "@plasmicapp/react-web/lib/plasmic.css";
+import '@plasmicapp/react-web/lib/plasmic.css';
 
-import projectcss from "./plasmic_plasmic_poc_localhost.module.css"; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
-import sty from "./PlasmicMarkDownTest.module.css"; // plasmic-import: s4za5IjEKLQiTh/css
+import projectcss from './plasmic_plasmic_poc_localhost.module.css'; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
+import sty from './PlasmicMarkDownTest.module.css'; // plasmic-import: s4za5IjEKLQiTh/css
 
 export type PlasmicMarkDownTest__VariantMembers = {};
 export type PlasmicMarkDownTest__VariantsArgs = {};
@@ -60,9 +60,9 @@ type ArgPropType = keyof PlasmicMarkDownTest__ArgsType;
 export const PlasmicMarkDownTest__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicMarkDownTest__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: p.Flex<'div'>;
   buttonPreview?: p.Flex<typeof ButtonPreview>;
-  freeBox?: p.Flex<"div">;
+  freeBox?: p.Flex<'div'>;
 };
 
 export interface DefaultMarkDownTestProps {}
@@ -95,7 +95,7 @@ function PlasmicMarkDownTest__RenderFunc(props: {
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
@@ -109,17 +109,17 @@ function PlasmicMarkDownTest__RenderFunc(props: {
       (() => {
         try {
           return {
-            sourceId: "wVh4Kh8KdKUddBmFr7EbJb",
-            opId: "b0a292e1-ec19-41a4-9451-d8bf54bc2741",
+            sourceId: 'wVh4Kh8KdKUddBmFr7EbJb',
+            opId: 'b0a292e1-ec19-41a4-9451-d8bf54bc2741',
             userArgs: {},
-            cacheKey: "plasmic.$.-levP1Bw9LsgC_.$.",
-            invalidatedKeys: ["plasmic_refresh_all"],
-            roleId: null
+            cacheKey: 'plasmic.$.-levP1Bw9LsgC_.$.',
+            invalidatedKeys: ['plasmic_refresh_all'],
+            roleId: null,
           };
         } catch (e) {
           if (
             e instanceof TypeError ||
-            e?.plasmicType === "PlasmicUndefinedDataError"
+            e?.plasmicType === 'PlasmicUndefinedDataError'
           ) {
             return undefined;
           } else {
@@ -127,9 +127,9 @@ function PlasmicMarkDownTest__RenderFunc(props: {
           }
         }
       })()
-    )
+    ),
   };
-  if (Object.keys(new$Queries).some(k => new$Queries[k] !== $queries[k])) {
+  if (Object.keys(new$Queries).some((k) => new$Queries[k] !== $queries[k])) {
     setDollarQueries(new$Queries);
   }
 
@@ -145,7 +145,7 @@ function PlasmicMarkDownTest__RenderFunc(props: {
 
       <div className={projectcss.plasmic_page_wrapper}>
         <div
-          data-plasmic-name={"root"}
+          data-plasmic-name={'root'}
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
@@ -159,15 +159,15 @@ function PlasmicMarkDownTest__RenderFunc(props: {
           )}
         >
           <ButtonPreview
-            data-plasmic-name={"buttonPreview"}
+            data-plasmic-name={'buttonPreview'}
             data-plasmic-override={overrides.buttonPreview}
-            className={classNames("__wab_instance", sty.buttonPreview)}
+            className={classNames('__wab_instance', sty.buttonPreview)}
           />
 
           {true ? (
             <p.Stack
-              as={"div"}
-              data-plasmic-name={"freeBox"}
+              as={'div'}
+              data-plasmic-name={'freeBox'}
               data-plasmic-override={overrides.freeBox}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox)}
@@ -180,20 +180,20 @@ function PlasmicMarkDownTest__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "buttonPreview", "freeBox"],
-  buttonPreview: ["buttonPreview"],
-  freeBox: ["freeBox"]
+  root: ['root', 'buttonPreview', 'freeBox'],
+  buttonPreview: ['buttonPreview'],
+  freeBox: ['freeBox'],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  root: 'div';
   buttonPreview: typeof ButtonPreview;
-  freeBox: "div";
+  freeBox: 'div';
 };
 
-type ReservedPropsType = "variants" | "args" | "overrides";
+type ReservedPropsType = 'variants' | 'args' | 'overrides';
 type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicMarkDownTest__OverridesType,
   DescendantsType<T>
@@ -229,7 +229,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicMarkDownTest__ArgProps,
-          internalVariantPropNames: PlasmicMarkDownTest__VariantProps
+          internalVariantPropNames: PlasmicMarkDownTest__VariantProps,
         }),
       [props, nodeName]
     );
@@ -237,11 +237,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
-  if (nodeName === "root") {
-    func.displayName = "PlasmicMarkDownTest";
+  if (nodeName === 'root') {
+    func.displayName = 'PlasmicMarkDownTest';
   } else {
     func.displayName = `PlasmicMarkDownTest.${nodeName}`;
   }
@@ -250,11 +250,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicMarkDownTest = Object.assign(
   // Top-level PlasmicMarkDownTest renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent('root'),
   {
     // Helper components rendering sub-elements
-    buttonPreview: makeNodeComponent("buttonPreview"),
-    freeBox: makeNodeComponent("freeBox"),
+    buttonPreview: makeNodeComponent('buttonPreview'),
+    freeBox: makeNodeComponent('freeBox'),
 
     // Metadata about props expected for PlasmicMarkDownTest
     internalVariantProps: PlasmicMarkDownTest__VariantProps,
@@ -262,11 +262,11 @@ export const PlasmicMarkDownTest = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "",
-      description: "",
-      ogImageSrc: "",
-      canonical: ""
-    }
+      title: '',
+      description: '',
+      ogImageSrc: '',
+      canonical: '',
+    },
   }
 );
 

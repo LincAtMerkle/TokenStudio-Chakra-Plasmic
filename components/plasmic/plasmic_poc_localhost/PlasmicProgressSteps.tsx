@@ -11,14 +11,14 @@
 // Plasmic Project: nV7sRTPBx6ecWzFNNAWeQg
 // Component: 92NigGtu2F
 
-import * as React from "react";
+import * as React from 'react';
 
-import Head from "next/head";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/router';
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
+import * as p from '@plasmicapp/react-web';
+import * as ph from '@plasmicapp/react-web/lib/host';
 
 import {
   hasVariant,
@@ -34,20 +34,20 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
-} from "@plasmicapp/react-web";
-import { Heading } from "@chakra-ui/react"; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
-import { StepsWithLine } from "../../custom/chakraPro/Aplication/Progress Steps/StepsWithLine"; // plasmic-import: wTv1kTgRjPP/codeComponent
-import { StepsWithDots } from "../../custom/chakraPro/Aplication/Progress Steps/StepsWithDots"; // plasmic-import: mBxuPVHD_U6/codeComponent
-import { StepsWithCirclesAndText } from "../../custom/chakraPro/Aplication/Progress Steps/StepsWithCirclesAndText"; // plasmic-import: su1uDug1Bon/codeComponent
-import { StepsWithCircles } from "../../custom/chakraPro/Aplication/Progress Steps/StepsWithCircles"; // plasmic-import: NPhTI6__mr9/codeComponent
-import { StepsInVerticalOrientation } from "../../custom/chakraPro/Aplication/Progress Steps/StepsInVerticalOrientation"; // plasmic-import: SZJQYryAOeX/codeComponent
-import { StepsWithAccent } from "../../custom/chakraPro/Aplication/Progress Steps/StepsWithAccent"; // plasmic-import: 7D1aK9oI2KG/codeComponent
+  ensureGlobalVariants,
+} from '@plasmicapp/react-web';
+import { Heading } from '@chakra-ui/react'; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
+import { StepsWithLine } from '../../chakra/chakraPro/Aplication/Progress Steps/StepsWithLine'; // plasmic-import: wTv1kTgRjPP/codeComponent
+import { StepsWithDots } from '../../chakra/chakraPro/Aplication/Progress Steps/StepsWithDots'; // plasmic-import: mBxuPVHD_U6/codeComponent
+import { StepsWithCirclesAndText } from '../../chakra/chakraPro/Aplication/Progress Steps/StepsWithCirclesAndText'; // plasmic-import: su1uDug1Bon/codeComponent
+import { StepsWithCircles } from '../../chakra/chakraPro/Aplication/Progress Steps/StepsWithCircles'; // plasmic-import: NPhTI6__mr9/codeComponent
+import { StepsInVerticalOrientation } from '../../chakra/chakraPro/Aplication/Progress Steps/StepsInVerticalOrientation'; // plasmic-import: SZJQYryAOeX/codeComponent
+import { StepsWithAccent } from '../../chakra/chakraPro/Aplication/Progress Steps/StepsWithAccent'; // plasmic-import: 7D1aK9oI2KG/codeComponent
 
-import "@plasmicapp/react-web/lib/plasmic.css";
+import '@plasmicapp/react-web/lib/plasmic.css';
 
-import projectcss from "./plasmic_plasmic_poc_localhost.module.css"; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
-import sty from "./PlasmicProgressSteps.module.css"; // plasmic-import: 92NigGtu2F/css
+import projectcss from './plasmic_plasmic_poc_localhost.module.css'; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
+import sty from './PlasmicProgressSteps.module.css'; // plasmic-import: 92NigGtu2F/css
 
 export type PlasmicProgressSteps__VariantMembers = {};
 export type PlasmicProgressSteps__VariantsArgs = {};
@@ -59,7 +59,7 @@ type ArgPropType = keyof PlasmicProgressSteps__ArgsType;
 export const PlasmicProgressSteps__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicProgressSteps__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: p.Flex<'div'>;
   stepsWithLine?: p.Flex<typeof StepsWithLine>;
   stepsWithDots?: p.Flex<typeof StepsWithDots>;
   stepsWithCirclesAndText?: p.Flex<typeof StepsWithCirclesAndText>;
@@ -98,7 +98,7 @@ function PlasmicProgressSteps__RenderFunc(props: {
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
@@ -119,7 +119,7 @@ function PlasmicProgressSteps__RenderFunc(props: {
 
       <div className={projectcss.plasmic_page_wrapper}>
         <div
-          data-plasmic-name={"root"}
+          data-plasmic-name={'root'}
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
@@ -133,9 +133,9 @@ function PlasmicProgressSteps__RenderFunc(props: {
           )}
         >
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__f8Y9)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__f8Y9)}
             noOfLines={1 as const}
-            size={"4xl" as const}
+            size={'4xl' as const}
           >
             <div
               className={classNames(
@@ -144,13 +144,13 @@ function PlasmicProgressSteps__RenderFunc(props: {
                 sty.text___7Xvnj
               )}
             >
-              {"Progress Steps"}
+              {'Progress Steps'}
             </div>
           </Heading>
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__uzMI)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__uzMI)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -159,19 +159,19 @@ function PlasmicProgressSteps__RenderFunc(props: {
                 sty.text___0Ihzo
               )}
             >
-              {"Steps with line"}
+              {'Steps with line'}
             </div>
           </Heading>
           <StepsWithLine
-            data-plasmic-name={"stepsWithLine"}
+            data-plasmic-name={'stepsWithLine'}
             data-plasmic-override={overrides.stepsWithLine}
-            className={classNames("__wab_instance", sty.stepsWithLine)}
+            className={classNames('__wab_instance', sty.stepsWithLine)}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__vq2EQ)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__vq2EQ)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -180,19 +180,19 @@ function PlasmicProgressSteps__RenderFunc(props: {
                 sty.text___9Gert
               )}
             >
-              {"Steps with dots"}
+              {'Steps with dots'}
             </div>
           </Heading>
           <StepsWithDots
-            data-plasmic-name={"stepsWithDots"}
+            data-plasmic-name={'stepsWithDots'}
             data-plasmic-override={overrides.stepsWithDots}
-            className={classNames("__wab_instance", sty.stepsWithDots)}
+            className={classNames('__wab_instance', sty.stepsWithDots)}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__g76Ie)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__g76Ie)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -201,22 +201,22 @@ function PlasmicProgressSteps__RenderFunc(props: {
                 sty.text___1CuZj
               )}
             >
-              {"Steps with circles and text"}
+              {'Steps with circles and text'}
             </div>
           </Heading>
           <StepsWithCirclesAndText
-            data-plasmic-name={"stepsWithCirclesAndText"}
+            data-plasmic-name={'stepsWithCirclesAndText'}
             data-plasmic-override={overrides.stepsWithCirclesAndText}
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.stepsWithCirclesAndText
             )}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__kkEx1)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__kkEx1)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -225,19 +225,19 @@ function PlasmicProgressSteps__RenderFunc(props: {
                 sty.text__ix4Zc
               )}
             >
-              {"Steps with circles"}
+              {'Steps with circles'}
             </div>
           </Heading>
           <StepsWithCircles
-            data-plasmic-name={"stepsWithCircles"}
+            data-plasmic-name={'stepsWithCircles'}
             data-plasmic-override={overrides.stepsWithCircles}
-            className={classNames("__wab_instance", sty.stepsWithCircles)}
+            className={classNames('__wab_instance', sty.stepsWithCircles)}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__juTgT)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__juTgT)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -246,22 +246,22 @@ function PlasmicProgressSteps__RenderFunc(props: {
                 sty.text__daSdn
               )}
             >
-              {"Steps in vertical orientation"}
+              {'Steps in vertical orientation'}
             </div>
           </Heading>
           <StepsInVerticalOrientation
-            data-plasmic-name={"stepsInVerticalOrientation"}
+            data-plasmic-name={'stepsInVerticalOrientation'}
             data-plasmic-override={overrides.stepsInVerticalOrientation}
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.stepsInVerticalOrientation
             )}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__bkFR)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__bkFR)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -270,13 +270,13 @@ function PlasmicProgressSteps__RenderFunc(props: {
                 sty.text__heraO
               )}
             >
-              {"Steps with accent"}
+              {'Steps with accent'}
             </div>
           </Heading>
           <StepsWithAccent
-            data-plasmic-name={"stepsWithAccent"}
+            data-plasmic-name={'stepsWithAccent'}
             data-plasmic-override={overrides.stepsWithAccent}
-            className={classNames("__wab_instance", sty.stepsWithAccent)}
+            className={classNames('__wab_instance', sty.stepsWithAccent)}
           />
         </div>
       </div>
@@ -286,26 +286,26 @@ function PlasmicProgressSteps__RenderFunc(props: {
 
 const PlasmicDescendants = {
   root: [
-    "root",
-    "stepsWithLine",
-    "stepsWithDots",
-    "stepsWithCirclesAndText",
-    "stepsWithCircles",
-    "stepsInVerticalOrientation",
-    "stepsWithAccent"
+    'root',
+    'stepsWithLine',
+    'stepsWithDots',
+    'stepsWithCirclesAndText',
+    'stepsWithCircles',
+    'stepsInVerticalOrientation',
+    'stepsWithAccent',
   ],
-  stepsWithLine: ["stepsWithLine"],
-  stepsWithDots: ["stepsWithDots"],
-  stepsWithCirclesAndText: ["stepsWithCirclesAndText"],
-  stepsWithCircles: ["stepsWithCircles"],
-  stepsInVerticalOrientation: ["stepsInVerticalOrientation"],
-  stepsWithAccent: ["stepsWithAccent"]
+  stepsWithLine: ['stepsWithLine'],
+  stepsWithDots: ['stepsWithDots'],
+  stepsWithCirclesAndText: ['stepsWithCirclesAndText'],
+  stepsWithCircles: ['stepsWithCircles'],
+  stepsInVerticalOrientation: ['stepsInVerticalOrientation'],
+  stepsWithAccent: ['stepsWithAccent'],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  root: 'div';
   stepsWithLine: typeof StepsWithLine;
   stepsWithDots: typeof StepsWithDots;
   stepsWithCirclesAndText: typeof StepsWithCirclesAndText;
@@ -314,7 +314,7 @@ type NodeDefaultElementType = {
   stepsWithAccent: typeof StepsWithAccent;
 };
 
-type ReservedPropsType = "variants" | "args" | "overrides";
+type ReservedPropsType = 'variants' | 'args' | 'overrides';
 type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicProgressSteps__OverridesType,
   DescendantsType<T>
@@ -350,7 +350,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicProgressSteps__ArgProps,
-          internalVariantPropNames: PlasmicProgressSteps__VariantProps
+          internalVariantPropNames: PlasmicProgressSteps__VariantProps,
         }),
       [props, nodeName]
     );
@@ -358,11 +358,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
-  if (nodeName === "root") {
-    func.displayName = "PlasmicProgressSteps";
+  if (nodeName === 'root') {
+    func.displayName = 'PlasmicProgressSteps';
   } else {
     func.displayName = `PlasmicProgressSteps.${nodeName}`;
   }
@@ -371,15 +371,15 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicProgressSteps = Object.assign(
   // Top-level PlasmicProgressSteps renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent('root'),
   {
     // Helper components rendering sub-elements
-    stepsWithLine: makeNodeComponent("stepsWithLine"),
-    stepsWithDots: makeNodeComponent("stepsWithDots"),
-    stepsWithCirclesAndText: makeNodeComponent("stepsWithCirclesAndText"),
-    stepsWithCircles: makeNodeComponent("stepsWithCircles"),
-    stepsInVerticalOrientation: makeNodeComponent("stepsInVerticalOrientation"),
-    stepsWithAccent: makeNodeComponent("stepsWithAccent"),
+    stepsWithLine: makeNodeComponent('stepsWithLine'),
+    stepsWithDots: makeNodeComponent('stepsWithDots'),
+    stepsWithCirclesAndText: makeNodeComponent('stepsWithCirclesAndText'),
+    stepsWithCircles: makeNodeComponent('stepsWithCircles'),
+    stepsInVerticalOrientation: makeNodeComponent('stepsInVerticalOrientation'),
+    stepsWithAccent: makeNodeComponent('stepsWithAccent'),
 
     // Metadata about props expected for PlasmicProgressSteps
     internalVariantProps: PlasmicProgressSteps__VariantProps,
@@ -387,11 +387,11 @@ export const PlasmicProgressSteps = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "",
-      description: "",
-      ogImageSrc: "",
-      canonical: ""
-    }
+      title: '',
+      description: '',
+      ogImageSrc: '',
+      canonical: '',
+    },
   }
 );
 

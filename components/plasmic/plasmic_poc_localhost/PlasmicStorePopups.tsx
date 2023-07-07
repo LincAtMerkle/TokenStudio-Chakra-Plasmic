@@ -11,14 +11,14 @@
 // Plasmic Project: nV7sRTPBx6ecWzFNNAWeQg
 // Component: 3tzuu6WRKT
 
-import * as React from "react";
+import * as React from 'react';
 
-import Head from "next/head";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/router';
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
+import * as p from '@plasmicapp/react-web';
+import * as ph from '@plasmicapp/react-web/lib/host';
 
 import {
   hasVariant,
@@ -34,14 +34,14 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
-} from "@plasmicapp/react-web";
-import { Heading } from "@chakra-ui/react"; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
+  ensureGlobalVariants,
+} from '@plasmicapp/react-web';
+import { Heading } from '@chakra-ui/react'; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
 
-import "@plasmicapp/react-web/lib/plasmic.css";
+import '@plasmicapp/react-web/lib/plasmic.css';
 
-import projectcss from "./plasmic_plasmic_poc_localhost.module.css"; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
-import sty from "./PlasmicStorePopups.module.css"; // plasmic-import: 3tzuu6WRKT/css
+import projectcss from './plasmic_plasmic_poc_localhost.module.css'; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
+import sty from './PlasmicStorePopups.module.css'; // plasmic-import: 3tzuu6WRKT/css
 
 export type PlasmicStorePopups__VariantMembers = {};
 export type PlasmicStorePopups__VariantsArgs = {};
@@ -53,7 +53,7 @@ type ArgPropType = keyof PlasmicStorePopups__ArgsType;
 export const PlasmicStorePopups__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicStorePopups__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: p.Flex<'div'>;
 };
 
 export interface DefaultStorePopupsProps {}
@@ -86,7 +86,7 @@ function PlasmicStorePopups__RenderFunc(props: {
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
@@ -107,7 +107,7 @@ function PlasmicStorePopups__RenderFunc(props: {
 
       <div className={projectcss.plasmic_page_wrapper}>
         <div
-          data-plasmic-name={"root"}
+          data-plasmic-name={'root'}
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
@@ -121,9 +121,9 @@ function PlasmicStorePopups__RenderFunc(props: {
           )}
         >
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__cTgaz)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__cTgaz)}
             noOfLines={1 as const}
-            size={"4xl" as const}
+            size={'4xl' as const}
           >
             <div
               className={classNames(
@@ -132,13 +132,13 @@ function PlasmicStorePopups__RenderFunc(props: {
                 sty.text___1Mh8
               )}
             >
-              {"Store Popups"}
+              {'Store Popups'}
             </div>
           </Heading>
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__xUcGm)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__xUcGm)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -147,13 +147,13 @@ function PlasmicStorePopups__RenderFunc(props: {
                 sty.text__iN3L
               )}
             >
-              {"Popup with discount"}
+              {'Popup with discount'}
             </div>
           </Heading>
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__yfHyW)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__yfHyW)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -162,7 +162,7 @@ function PlasmicStorePopups__RenderFunc(props: {
                 sty.text__nZ5Qb
               )}
             >
-              {"Popup with image"}
+              {'Popup with image'}
             </div>
           </Heading>
         </div>
@@ -172,16 +172,16 @@ function PlasmicStorePopups__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root"]
+  root: ['root'],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  root: 'div';
 };
 
-type ReservedPropsType = "variants" | "args" | "overrides";
+type ReservedPropsType = 'variants' | 'args' | 'overrides';
 type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicStorePopups__OverridesType,
   DescendantsType<T>
@@ -217,7 +217,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicStorePopups__ArgProps,
-          internalVariantPropNames: PlasmicStorePopups__VariantProps
+          internalVariantPropNames: PlasmicStorePopups__VariantProps,
         }),
       [props, nodeName]
     );
@@ -225,11 +225,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
-  if (nodeName === "root") {
-    func.displayName = "PlasmicStorePopups";
+  if (nodeName === 'root') {
+    func.displayName = 'PlasmicStorePopups';
   } else {
     func.displayName = `PlasmicStorePopups.${nodeName}`;
   }
@@ -238,7 +238,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicStorePopups = Object.assign(
   // Top-level PlasmicStorePopups renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent('root'),
   {
     // Helper components rendering sub-elements
 
@@ -248,11 +248,11 @@ export const PlasmicStorePopups = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "",
-      description: "",
-      ogImageSrc: "",
-      canonical: ""
-    }
+      title: '',
+      description: '',
+      ogImageSrc: '',
+      canonical: '',
+    },
   }
 );
 

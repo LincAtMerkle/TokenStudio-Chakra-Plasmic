@@ -132,7 +132,7 @@
 .children2 {
   display: block;
   font-size: 20px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 600;
   letter-spacing: 0em;
   line-height: 28px;
@@ -553,14 +553,6 @@
   max-width: 800px;
   min-width: 0;
 }
-.chakraDocs__feOIj:global(.__wab_instance) {
-  max-width: 100%;
-  object-fit: cover;
-  position: relative;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-}
 .column__qW7WT {
   display: flex;
   position: relative;
@@ -610,13 +602,6 @@
   height: auto;
   max-width: 800px;
   min-width: 0;
-}
-.chakraDocs___7Z035:global(.__wab_instance) {
-  max-width: 100%;
-  object-fit: cover;
-  position: relative;
-  display: flex;
-  flex-direction: column;
 }
 .column__ivEw {
   display: flex;
@@ -668,12 +653,10 @@
   max-width: 800px;
   min-width: 0;
 }
-.chakraDocs__mM4ZM:global(.__wab_instance) {
+.chakraUiButton__erPP:global(.__wab_instance) {
   max-width: 100%;
   object-fit: cover;
   position: relative;
-  display: flex;
-  flex-direction: column;
 }
 .column___2Rghv {
   display: flex;
@@ -725,10 +708,15 @@
   max-width: 800px;
   min-width: 0;
 }
-.chakraDocs__sjtDg:global(.__wab_instance) {
+.chakraUiButton__jsaxi:global(.__wab_instance) {
   max-width: 100%;
   object-fit: cover;
   position: relative;
-  display: flex;
-  flex-direction: column;
+}
+.text__jcsHu {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
 }

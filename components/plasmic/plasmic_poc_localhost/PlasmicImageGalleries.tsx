@@ -11,14 +11,14 @@
 // Plasmic Project: nV7sRTPBx6ecWzFNNAWeQg
 // Component: Ze4HPnY59P
 
-import * as React from "react";
+import * as React from 'react';
 
-import Head from "next/head";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/router';
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
+import * as p from '@plasmicapp/react-web';
+import * as ph from '@plasmicapp/react-web/lib/host';
 
 import {
   hasVariant,
@@ -34,17 +34,17 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
-} from "@plasmicapp/react-web";
-import { Heading } from "@chakra-ui/react"; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
-import { GalleryWithVerticalCarousel } from "../../custom/chakraPro/GalleryWithVerticalCarousel"; // plasmic-import: 2qhZmuaFwex-/codeComponent
-import { GalleryWithCarousel } from "../../custom/chakraPro/GalleryWithCarousel"; // plasmic-import: nMPK5pqw5_U0/codeComponent
-import { GalleryWithHorizontalCarousel } from "../../custom/chakraPro/GalleryWithHorizontalCarousel"; // plasmic-import: EAEwrV52DHmK/codeComponent
+  ensureGlobalVariants,
+} from '@plasmicapp/react-web';
+import { Heading } from '@chakra-ui/react'; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
+import { GalleryWithVerticalCarousel } from '../../chakra/chakraPro/GalleryWithVerticalCarousel'; // plasmic-import: 2qhZmuaFwex-/codeComponent
+import { GalleryWithCarousel } from '../../chakra/chakraPro/GalleryWithCarousel'; // plasmic-import: nMPK5pqw5_U0/codeComponent
+import { GalleryWithHorizontalCarousel } from '../../chakra/chakraPro/GalleryWithHorizontalCarousel'; // plasmic-import: EAEwrV52DHmK/codeComponent
 
-import "@plasmicapp/react-web/lib/plasmic.css";
+import '@plasmicapp/react-web/lib/plasmic.css';
 
-import projectcss from "./plasmic_plasmic_poc_localhost.module.css"; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
-import sty from "./PlasmicImageGalleries.module.css"; // plasmic-import: Ze4HPnY59P/css
+import projectcss from './plasmic_plasmic_poc_localhost.module.css'; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
+import sty from './PlasmicImageGalleries.module.css'; // plasmic-import: Ze4HPnY59P/css
 
 export type PlasmicImageGalleries__VariantMembers = {};
 export type PlasmicImageGalleries__VariantsArgs = {};
@@ -56,7 +56,7 @@ type ArgPropType = keyof PlasmicImageGalleries__ArgsType;
 export const PlasmicImageGalleries__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicImageGalleries__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: p.Flex<'div'>;
   galleryWithVerticalCarousel?: p.Flex<typeof GalleryWithVerticalCarousel>;
   galleryWithCarousel?: p.Flex<typeof GalleryWithCarousel>;
   galleryWithHorizontalCarousel?: p.Flex<typeof GalleryWithHorizontalCarousel>;
@@ -92,7 +92,7 @@ function PlasmicImageGalleries__RenderFunc(props: {
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
@@ -113,7 +113,7 @@ function PlasmicImageGalleries__RenderFunc(props: {
 
       <div className={projectcss.plasmic_page_wrapper}>
         <div
-          data-plasmic-name={"root"}
+          data-plasmic-name={'root'}
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
@@ -127,9 +127,9 @@ function PlasmicImageGalleries__RenderFunc(props: {
           )}
         >
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__w9Wn)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__w9Wn)}
             noOfLines={1 as const}
-            size={"4xl" as const}
+            size={'4xl' as const}
           >
             <div
               className={classNames(
@@ -138,16 +138,16 @@ function PlasmicImageGalleries__RenderFunc(props: {
                 sty.text__mdpNo
               )}
             >
-              {"Image Galleries"}
+              {'Image Galleries'}
             </div>
           </Heading>
           <Heading
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.chakraUiHeading___6Cer0
             )}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -156,22 +156,22 @@ function PlasmicImageGalleries__RenderFunc(props: {
                 sty.text__ir0Ri
               )}
             >
-              {"Gallery with vertical carousel"}
+              {'Gallery with vertical carousel'}
             </div>
           </Heading>
           <GalleryWithVerticalCarousel
-            data-plasmic-name={"galleryWithVerticalCarousel"}
+            data-plasmic-name={'galleryWithVerticalCarousel'}
             data-plasmic-override={overrides.galleryWithVerticalCarousel}
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.galleryWithVerticalCarousel
             )}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__dS8Rw)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__dS8Rw)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -180,19 +180,19 @@ function PlasmicImageGalleries__RenderFunc(props: {
                 sty.text__yzdnY
               )}
             >
-              {"Gallery with carousel"}
+              {'Gallery with carousel'}
             </div>
           </Heading>
           <GalleryWithCarousel
-            data-plasmic-name={"galleryWithCarousel"}
+            data-plasmic-name={'galleryWithCarousel'}
             data-plasmic-override={overrides.galleryWithCarousel}
-            className={classNames("__wab_instance", sty.galleryWithCarousel)}
+            className={classNames('__wab_instance', sty.galleryWithCarousel)}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__oi3BV)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__oi3BV)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -201,14 +201,14 @@ function PlasmicImageGalleries__RenderFunc(props: {
                 sty.text___9Rht
               )}
             >
-              {"Gallery with horizontal carousel"}
+              {'Gallery with horizontal carousel'}
             </div>
           </Heading>
           <GalleryWithHorizontalCarousel
-            data-plasmic-name={"galleryWithHorizontalCarousel"}
+            data-plasmic-name={'galleryWithHorizontalCarousel'}
             data-plasmic-override={overrides.galleryWithHorizontalCarousel}
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.galleryWithHorizontalCarousel
             )}
           />
@@ -220,26 +220,26 @@ function PlasmicImageGalleries__RenderFunc(props: {
 
 const PlasmicDescendants = {
   root: [
-    "root",
-    "galleryWithVerticalCarousel",
-    "galleryWithCarousel",
-    "galleryWithHorizontalCarousel"
+    'root',
+    'galleryWithVerticalCarousel',
+    'galleryWithCarousel',
+    'galleryWithHorizontalCarousel',
   ],
-  galleryWithVerticalCarousel: ["galleryWithVerticalCarousel"],
-  galleryWithCarousel: ["galleryWithCarousel"],
-  galleryWithHorizontalCarousel: ["galleryWithHorizontalCarousel"]
+  galleryWithVerticalCarousel: ['galleryWithVerticalCarousel'],
+  galleryWithCarousel: ['galleryWithCarousel'],
+  galleryWithHorizontalCarousel: ['galleryWithHorizontalCarousel'],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  root: 'div';
   galleryWithVerticalCarousel: typeof GalleryWithVerticalCarousel;
   galleryWithCarousel: typeof GalleryWithCarousel;
   galleryWithHorizontalCarousel: typeof GalleryWithHorizontalCarousel;
 };
 
-type ReservedPropsType = "variants" | "args" | "overrides";
+type ReservedPropsType = 'variants' | 'args' | 'overrides';
 type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicImageGalleries__OverridesType,
   DescendantsType<T>
@@ -275,7 +275,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicImageGalleries__ArgProps,
-          internalVariantPropNames: PlasmicImageGalleries__VariantProps
+          internalVariantPropNames: PlasmicImageGalleries__VariantProps,
         }),
       [props, nodeName]
     );
@@ -283,11 +283,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
-  if (nodeName === "root") {
-    func.displayName = "PlasmicImageGalleries";
+  if (nodeName === 'root') {
+    func.displayName = 'PlasmicImageGalleries';
   } else {
     func.displayName = `PlasmicImageGalleries.${nodeName}`;
   }
@@ -296,15 +296,15 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicImageGalleries = Object.assign(
   // Top-level PlasmicImageGalleries renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent('root'),
   {
     // Helper components rendering sub-elements
     galleryWithVerticalCarousel: makeNodeComponent(
-      "galleryWithVerticalCarousel"
+      'galleryWithVerticalCarousel'
     ),
-    galleryWithCarousel: makeNodeComponent("galleryWithCarousel"),
+    galleryWithCarousel: makeNodeComponent('galleryWithCarousel'),
     galleryWithHorizontalCarousel: makeNodeComponent(
-      "galleryWithHorizontalCarousel"
+      'galleryWithHorizontalCarousel'
     ),
 
     // Metadata about props expected for PlasmicImageGalleries
@@ -313,11 +313,11 @@ export const PlasmicImageGalleries = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "",
-      description: "",
-      ogImageSrc: "",
-      canonical: ""
-    }
+      title: '',
+      description: '',
+      ogImageSrc: '',
+      canonical: '',
+    },
   }
 );
 

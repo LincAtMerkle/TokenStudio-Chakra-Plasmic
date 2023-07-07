@@ -11,14 +11,14 @@
 // Plasmic Project: nV7sRTPBx6ecWzFNNAWeQg
 // Component: fPDpzZbj8-
 
-import * as React from "react";
+import * as React from 'react';
 
-import Head from "next/head";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/router';
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
+import * as p from '@plasmicapp/react-web';
+import * as ph from '@plasmicapp/react-web/lib/host';
 
 import {
   hasVariant,
@@ -34,15 +34,15 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
-} from "@plasmicapp/react-web";
-import { Heading } from "@chakra-ui/react"; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
-import { CheckoutWithTwoColumns } from "../../custom/chakraPro/CheckoutWithTwoColumns"; // plasmic-import: qBsfcmLdsm61/codeComponent
+  ensureGlobalVariants,
+} from '@plasmicapp/react-web';
+import { Heading } from '@chakra-ui/react'; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
+import { CheckoutWithTwoColumns } from '../../chakra/chakraPro/CheckoutWithTwoColumns'; // plasmic-import: qBsfcmLdsm61/codeComponent
 
-import "@plasmicapp/react-web/lib/plasmic.css";
+import '@plasmicapp/react-web/lib/plasmic.css';
 
-import projectcss from "./plasmic_plasmic_poc_localhost.module.css"; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
-import sty from "./PlasmicCheckoutPages.module.css"; // plasmic-import: fPDpzZbj8-/css
+import projectcss from './plasmic_plasmic_poc_localhost.module.css'; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
+import sty from './PlasmicCheckoutPages.module.css'; // plasmic-import: fPDpzZbj8-/css
 
 export type PlasmicCheckoutPages__VariantMembers = {};
 export type PlasmicCheckoutPages__VariantsArgs = {};
@@ -54,7 +54,7 @@ type ArgPropType = keyof PlasmicCheckoutPages__ArgsType;
 export const PlasmicCheckoutPages__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicCheckoutPages__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: p.Flex<'div'>;
   checkoutWithTwoColumns?: p.Flex<typeof CheckoutWithTwoColumns>;
 };
 
@@ -88,7 +88,7 @@ function PlasmicCheckoutPages__RenderFunc(props: {
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
@@ -109,7 +109,7 @@ function PlasmicCheckoutPages__RenderFunc(props: {
 
       <div className={projectcss.plasmic_page_wrapper}>
         <div
-          data-plasmic-name={"root"}
+          data-plasmic-name={'root'}
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
@@ -123,9 +123,9 @@ function PlasmicCheckoutPages__RenderFunc(props: {
           )}
         >
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__rzUqY)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__rzUqY)}
             noOfLines={1 as const}
-            size={"4xl" as const}
+            size={'4xl' as const}
           >
             <div
               className={classNames(
@@ -134,13 +134,13 @@ function PlasmicCheckoutPages__RenderFunc(props: {
                 sty.text___5NMbF
               )}
             >
-              {"Checkout Pages"}
+              {'Checkout Pages'}
             </div>
           </Heading>
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__g7H4C)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__g7H4C)}
             noOfLines={1 as const}
-            size={"lg" as const}
+            size={'lg' as const}
           >
             <div
               className={classNames(
@@ -149,13 +149,13 @@ function PlasmicCheckoutPages__RenderFunc(props: {
                 sty.text__r9A8F
               )}
             >
-              {"Checkout with two columns"}
+              {'Checkout with two columns'}
             </div>
           </Heading>
           <CheckoutWithTwoColumns
-            data-plasmic-name={"checkoutWithTwoColumns"}
+            data-plasmic-name={'checkoutWithTwoColumns'}
             data-plasmic-override={overrides.checkoutWithTwoColumns}
-            className={classNames("__wab_instance", sty.checkoutWithTwoColumns)}
+            className={classNames('__wab_instance', sty.checkoutWithTwoColumns)}
           />
         </div>
       </div>
@@ -164,18 +164,18 @@ function PlasmicCheckoutPages__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "checkoutWithTwoColumns"],
-  checkoutWithTwoColumns: ["checkoutWithTwoColumns"]
+  root: ['root', 'checkoutWithTwoColumns'],
+  checkoutWithTwoColumns: ['checkoutWithTwoColumns'],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  root: 'div';
   checkoutWithTwoColumns: typeof CheckoutWithTwoColumns;
 };
 
-type ReservedPropsType = "variants" | "args" | "overrides";
+type ReservedPropsType = 'variants' | 'args' | 'overrides';
 type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicCheckoutPages__OverridesType,
   DescendantsType<T>
@@ -211,7 +211,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicCheckoutPages__ArgProps,
-          internalVariantPropNames: PlasmicCheckoutPages__VariantProps
+          internalVariantPropNames: PlasmicCheckoutPages__VariantProps,
         }),
       [props, nodeName]
     );
@@ -219,11 +219,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
-  if (nodeName === "root") {
-    func.displayName = "PlasmicCheckoutPages";
+  if (nodeName === 'root') {
+    func.displayName = 'PlasmicCheckoutPages';
   } else {
     func.displayName = `PlasmicCheckoutPages.${nodeName}`;
   }
@@ -232,10 +232,10 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicCheckoutPages = Object.assign(
   // Top-level PlasmicCheckoutPages renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent('root'),
   {
     // Helper components rendering sub-elements
-    checkoutWithTwoColumns: makeNodeComponent("checkoutWithTwoColumns"),
+    checkoutWithTwoColumns: makeNodeComponent('checkoutWithTwoColumns'),
 
     // Metadata about props expected for PlasmicCheckoutPages
     internalVariantProps: PlasmicCheckoutPages__VariantProps,
@@ -243,11 +243,11 @@ export const PlasmicCheckoutPages = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "",
-      description: "",
-      ogImageSrc: "",
-      canonical: ""
-    }
+      title: '',
+      description: '',
+      ogImageSrc: '',
+      canonical: '',
+    },
   }
 );
 

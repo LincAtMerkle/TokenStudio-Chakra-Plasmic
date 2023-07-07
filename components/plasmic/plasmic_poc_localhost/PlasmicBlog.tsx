@@ -11,14 +11,14 @@
 // Plasmic Project: nV7sRTPBx6ecWzFNNAWeQg
 // Component: DNnc5x7zTa
 
-import * as React from "react";
+import * as React from 'react';
 
-import Head from "next/head";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/router';
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
+import * as p from '@plasmicapp/react-web';
+import * as ph from '@plasmicapp/react-web/lib/host';
 
 import {
   hasVariant,
@@ -34,18 +34,18 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
-} from "@plasmicapp/react-web";
-import { Heading } from "@chakra-ui/react"; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
-import { BlogWithSingleColumn } from "../../custom/chakraPro/Marketing/Blog/BlogWithSingleColumn"; // plasmic-import: Hs-yNgBEQTbN/codeComponent
-import { BlogWithHeroImage } from "../../custom/chakraPro/Marketing/Blog/BlogWithHeroImage"; // plasmic-import: LWrFiaxqVhg5/codeComponent
-import { BlogWithCards } from "../../custom/chakraPro/Marketing/Blog/BlogWithCards"; // plasmic-import: kEFhtXU0qfxW/codeComponent
-import { BlogWithThreeColumns } from "../../custom/chakraPro/Marketing/Blog/BlogWithThreeColumns"; // plasmic-import: n4jaO5VrHVCm/codeComponent
+  ensureGlobalVariants,
+} from '@plasmicapp/react-web';
+import { Heading } from '@chakra-ui/react'; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
+import { BlogWithSingleColumn } from '../../chakra/chakraPro/Marketing/Blog/BlogWithSingleColumn'; // plasmic-import: Hs-yNgBEQTbN/codeComponent
+import { BlogWithHeroImage } from '../../chakra/chakraPro/Marketing/Blog/BlogWithHeroImage'; // plasmic-import: LWrFiaxqVhg5/codeComponent
+import { BlogWithCards } from '../../chakra/chakraPro/Marketing/Blog/BlogWithCards'; // plasmic-import: kEFhtXU0qfxW/codeComponent
+import { BlogWithThreeColumns } from '../../chakra/chakraPro/Marketing/Blog/BlogWithThreeColumns'; // plasmic-import: n4jaO5VrHVCm/codeComponent
 
-import "@plasmicapp/react-web/lib/plasmic.css";
+import '@plasmicapp/react-web/lib/plasmic.css';
 
-import projectcss from "./plasmic_plasmic_poc_localhost.module.css"; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
-import sty from "./PlasmicBlog.module.css"; // plasmic-import: DNnc5x7zTa/css
+import projectcss from './plasmic_plasmic_poc_localhost.module.css'; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
+import sty from './PlasmicBlog.module.css'; // plasmic-import: DNnc5x7zTa/css
 
 export type PlasmicBlog__VariantMembers = {};
 export type PlasmicBlog__VariantsArgs = {};
@@ -57,7 +57,7 @@ type ArgPropType = keyof PlasmicBlog__ArgsType;
 export const PlasmicBlog__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicBlog__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: p.Flex<'div'>;
   blogWithSingleColumn?: p.Flex<typeof BlogWithSingleColumn>;
   blogWithHeroImage?: p.Flex<typeof BlogWithHeroImage>;
   blogWithCards?: p.Flex<typeof BlogWithCards>;
@@ -94,7 +94,7 @@ function PlasmicBlog__RenderFunc(props: {
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
@@ -115,7 +115,7 @@ function PlasmicBlog__RenderFunc(props: {
 
       <div className={projectcss.plasmic_page_wrapper}>
         <div
-          data-plasmic-name={"root"}
+          data-plasmic-name={'root'}
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
@@ -129,9 +129,9 @@ function PlasmicBlog__RenderFunc(props: {
           )}
         >
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__a9WHk)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__a9WHk)}
             noOfLines={1 as const}
-            size={"4xl" as const}
+            size={'4xl' as const}
           >
             <div
               className={classNames(
@@ -140,13 +140,13 @@ function PlasmicBlog__RenderFunc(props: {
                 sty.text__ompYm
               )}
             >
-              {"Blog"}
+              {'Blog'}
             </div>
           </Heading>
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__zCurl)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__zCurl)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -155,13 +155,13 @@ function PlasmicBlog__RenderFunc(props: {
                 sty.text__tacRa
               )}
             >
-              {"Blog minimalistic"}
+              {'Blog minimalistic'}
             </div>
           </Heading>
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__wwNgZ)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__wwNgZ)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -170,19 +170,19 @@ function PlasmicBlog__RenderFunc(props: {
                 sty.text__jcvt1
               )}
             >
-              {"Blog with single column"}
+              {'Blog with single column'}
             </div>
           </Heading>
           <BlogWithSingleColumn
-            data-plasmic-name={"blogWithSingleColumn"}
+            data-plasmic-name={'blogWithSingleColumn'}
             data-plasmic-override={overrides.blogWithSingleColumn}
-            className={classNames("__wab_instance", sty.blogWithSingleColumn)}
+            className={classNames('__wab_instance', sty.blogWithSingleColumn)}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__z9Rtt)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__z9Rtt)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -191,19 +191,19 @@ function PlasmicBlog__RenderFunc(props: {
                 sty.text__asK6P
               )}
             >
-              {"Blog with hero image"}
+              {'Blog with hero image'}
             </div>
           </Heading>
           <BlogWithHeroImage
-            data-plasmic-name={"blogWithHeroImage"}
+            data-plasmic-name={'blogWithHeroImage'}
             data-plasmic-override={overrides.blogWithHeroImage}
-            className={classNames("__wab_instance", sty.blogWithHeroImage)}
+            className={classNames('__wab_instance', sty.blogWithHeroImage)}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__mODn)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__mODn)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -212,22 +212,22 @@ function PlasmicBlog__RenderFunc(props: {
                 sty.text___1PmGe
               )}
             >
-              {"Blog with cards"}
+              {'Blog with cards'}
             </div>
           </Heading>
           <BlogWithCards
-            data-plasmic-name={"blogWithCards"}
+            data-plasmic-name={'blogWithCards'}
             data-plasmic-override={overrides.blogWithCards}
-            className={classNames("__wab_instance", sty.blogWithCards)}
+            className={classNames('__wab_instance', sty.blogWithCards)}
           />
 
           <Heading
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.chakraUiHeading___9CUgs
             )}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -236,13 +236,13 @@ function PlasmicBlog__RenderFunc(props: {
                 sty.text__iDb7H
               )}
             >
-              {"Blog with three columns"}
+              {'Blog with three columns'}
             </div>
           </Heading>
           <BlogWithThreeColumns
-            data-plasmic-name={"blogWithThreeColumns"}
+            data-plasmic-name={'blogWithThreeColumns'}
             data-plasmic-override={overrides.blogWithThreeColumns}
-            className={classNames("__wab_instance", sty.blogWithThreeColumns)}
+            className={classNames('__wab_instance', sty.blogWithThreeColumns)}
           />
         </div>
       </div>
@@ -252,29 +252,29 @@ function PlasmicBlog__RenderFunc(props: {
 
 const PlasmicDescendants = {
   root: [
-    "root",
-    "blogWithSingleColumn",
-    "blogWithHeroImage",
-    "blogWithCards",
-    "blogWithThreeColumns"
+    'root',
+    'blogWithSingleColumn',
+    'blogWithHeroImage',
+    'blogWithCards',
+    'blogWithThreeColumns',
   ],
-  blogWithSingleColumn: ["blogWithSingleColumn"],
-  blogWithHeroImage: ["blogWithHeroImage"],
-  blogWithCards: ["blogWithCards"],
-  blogWithThreeColumns: ["blogWithThreeColumns"]
+  blogWithSingleColumn: ['blogWithSingleColumn'],
+  blogWithHeroImage: ['blogWithHeroImage'],
+  blogWithCards: ['blogWithCards'],
+  blogWithThreeColumns: ['blogWithThreeColumns'],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  root: 'div';
   blogWithSingleColumn: typeof BlogWithSingleColumn;
   blogWithHeroImage: typeof BlogWithHeroImage;
   blogWithCards: typeof BlogWithCards;
   blogWithThreeColumns: typeof BlogWithThreeColumns;
 };
 
-type ReservedPropsType = "variants" | "args" | "overrides";
+type ReservedPropsType = 'variants' | 'args' | 'overrides';
 type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicBlog__OverridesType,
   DescendantsType<T>
@@ -310,7 +310,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicBlog__ArgProps,
-          internalVariantPropNames: PlasmicBlog__VariantProps
+          internalVariantPropNames: PlasmicBlog__VariantProps,
         }),
       [props, nodeName]
     );
@@ -318,11 +318,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
-  if (nodeName === "root") {
-    func.displayName = "PlasmicBlog";
+  if (nodeName === 'root') {
+    func.displayName = 'PlasmicBlog';
   } else {
     func.displayName = `PlasmicBlog.${nodeName}`;
   }
@@ -331,13 +331,13 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicBlog = Object.assign(
   // Top-level PlasmicBlog renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent('root'),
   {
     // Helper components rendering sub-elements
-    blogWithSingleColumn: makeNodeComponent("blogWithSingleColumn"),
-    blogWithHeroImage: makeNodeComponent("blogWithHeroImage"),
-    blogWithCards: makeNodeComponent("blogWithCards"),
-    blogWithThreeColumns: makeNodeComponent("blogWithThreeColumns"),
+    blogWithSingleColumn: makeNodeComponent('blogWithSingleColumn'),
+    blogWithHeroImage: makeNodeComponent('blogWithHeroImage'),
+    blogWithCards: makeNodeComponent('blogWithCards'),
+    blogWithThreeColumns: makeNodeComponent('blogWithThreeColumns'),
 
     // Metadata about props expected for PlasmicBlog
     internalVariantProps: PlasmicBlog__VariantProps,
@@ -345,11 +345,11 @@ export const PlasmicBlog = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "",
-      description: "",
-      ogImageSrc: "",
-      canonical: ""
-    }
+      title: '',
+      description: '',
+      ogImageSrc: '',
+      canonical: '',
+    },
   }
 );
 

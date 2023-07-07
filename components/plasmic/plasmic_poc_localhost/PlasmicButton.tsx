@@ -11,14 +11,14 @@
 // Plasmic Project: nV7sRTPBx6ecWzFNNAWeQg
 // Component: nd_5TIq5hl4BCD
 
-import * as React from "react";
+import * as React from 'react';
 
-import Head from "next/head";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/router';
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
+import * as p from '@plasmicapp/react-web';
+import * as ph from '@plasmicapp/react-web/lib/host';
 
 import {
   hasVariant,
@@ -34,21 +34,21 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
-} from "@plasmicapp/react-web";
-import { Heading } from "@chakra-ui/react"; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
-import { Text } from "@chakra-ui/react"; // plasmic-import: SdN14ngBJybRru/codeComponent
-import { ButtonPreview } from "../../custom/ButtonPreview"; // plasmic-import: 9c6OdMLDMrhOJ5/codeComponent
-import { ChakraDocs } from "../../custom/tokenSheets/ChakraDocs"; // plasmic-import: u2CfM4vBtVRXT7/codeComponent
+  ensureGlobalVariants,
+} from '@plasmicapp/react-web';
+import { Heading } from '@chakra-ui/react'; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
+import { Text } from '@chakra-ui/react'; // plasmic-import: SdN14ngBJybRru/codeComponent
+import { ButtonPreview } from '../../custom/ButtonPreview'; // plasmic-import: 9c6OdMLDMrhOJ5/codeComponent
+import { Button } from '@chakra-ui/react'; // plasmic-import: TdxMoalAZRL/codeComponent
 
-import { useScreenVariants as useScreenVariantsxM5YozUtiFnHZ } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: xM5YozUtiFnH_Z/globalVariant
+import { useScreenVariants as useScreenVariantsxM5YozUtiFnHZ } from './PlasmicGlobalVariant__Screen'; // plasmic-import: xM5YozUtiFnH_Z/globalVariant
 
-import "@plasmicapp/react-web/lib/plasmic.css";
+import '@plasmicapp/react-web/lib/plasmic.css';
 
-import projectcss from "./plasmic_plasmic_poc_localhost.module.css"; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
-import sty from "./PlasmicButton.module.css"; // plasmic-import: nd_5TIq5hl4BCD/css
+import projectcss from './plasmic_plasmic_poc_localhost.module.css'; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
+import sty from './PlasmicButton.module.css'; // plasmic-import: nd_5TIq5hl4BCD/css
 
-import LeftIconIcon from "./icons/PlasmicIcon__LeftIcon"; // plasmic-import: 8JlT1dkmxah3Wwy/icon
+import LeftIconIcon from './icons/PlasmicIcon__LeftIcon'; // plasmic-import: 8JlT1dkmxah3Wwy/icon
 
 export type PlasmicButton__VariantMembers = {};
 export type PlasmicButton__VariantsArgs = {};
@@ -60,10 +60,10 @@ type ArgPropType = keyof PlasmicButton__ArgsType;
 export const PlasmicButton__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicButton__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: p.Flex<'div'>;
   chakraUiText?: p.Flex<typeof Text>;
-  button?: p.Flex<"div">;
-  children2?: p.Flex<"div">;
+  button?: p.Flex<'div'>;
+  children2?: p.Flex<'div'>;
   buttonPreview?: p.Flex<typeof ButtonPreview>;
 };
 
@@ -97,7 +97,7 @@ function PlasmicButton__RenderFunc(props: {
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
@@ -107,7 +107,7 @@ function PlasmicButton__RenderFunc(props: {
   const [$queries, setDollarQueries] = React.useState({});
 
   const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantsxM5YozUtiFnHZ()
+    screen: useScreenVariantsxM5YozUtiFnHZ(),
   });
 
   return (
@@ -135,7 +135,7 @@ function PlasmicButton__RenderFunc(props: {
 
       <div className={projectcss.plasmic_page_wrapper}>
         <div
-          data-plasmic-name={"root"}
+          data-plasmic-name={'root'}
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
@@ -149,9 +149,9 @@ function PlasmicButton__RenderFunc(props: {
           )}
         >
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__rbHu)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__rbHu)}
             noOfLines={1 as const}
-            size={"4xl" as const}
+            size={'4xl' as const}
           >
             <div
               className={classNames(
@@ -160,13 +160,13 @@ function PlasmicButton__RenderFunc(props: {
                 sty.text__fYlYv
               )}
             >
-              {"Button"}
+              {'Button'}
             </div>
           </Heading>
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__veTf)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__veTf)}
             noOfLines={1 as const}
-            size={"lg" as const}
+            size={'lg' as const}
           >
             <div
               className={classNames(
@@ -175,15 +175,16 @@ function PlasmicButton__RenderFunc(props: {
                 sty.text___0AiIa
               )}
             >
-              {"Chakra UI"}
+              {'Chakra UI'}
             </div>
           </Heading>
           <Text
-            data-plasmic-name={"chakraUiText"}
+            data-plasmic-name={'chakraUiText'}
             data-plasmic-override={overrides.chakraUiText}
-            className={classNames("__wab_instance", sty.chakraUiText)}
-            size={"md" as const}
-            variant={"regular" as const}
+            className={classNames('__wab_instance', sty.chakraUiText)}
+            fontStyle={'normal' as const}
+            size={'md' as const}
+            variant={'regular' as const}
           >
             <div
               className={classNames(
@@ -193,23 +194,23 @@ function PlasmicButton__RenderFunc(props: {
               )}
             >
               {
-                "Chakra UI is a set of modular and accessible UI components that are built using React. The Chakra UI button is one of these components and it provides a sleek and customizable button that can be used in various web applications. It also provides features like loading spinners, icon buttons, and variant styles such as primary, secondary, and tertiary buttons. These buttons are widely used in web development to enhance the user interface and provide a more interactive experience."
+                'Chakra UI is a set of modular and accessible UI components that are built using React. The Chakra UI button is one of these components and it provides a sleek and customizable button that can be used in various web applications. It also provides features like loading spinners, icon buttons, and variant styles such as primary, secondary, and tertiary buttons. These buttons are widely used in web development to enhance the user interface and provide a more interactive experience.'
               }
             </div>
           </Text>
           {true ? (
             <p.Stack
-              as={"div"}
+              as={'div'}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__wfHrE)}
             >
               <Heading
                 className={classNames(
-                  "__wab_instance",
+                  '__wab_instance',
                   sty.chakraUiHeading__ggAjL
                 )}
                 noOfLines={1 as const}
-                size={"lg" as const}
+                size={'lg' as const}
               >
                 <div
                   className={classNames(
@@ -218,23 +219,23 @@ function PlasmicButton__RenderFunc(props: {
                     sty.text__vb3P
                   )}
                 >
-                  {"Figma"}
+                  {'Figma'}
                 </div>
               </Heading>
               <p.Stack
-                as={"div"}
-                data-plasmic-name={"button"}
+                as={'div'}
+                data-plasmic-name={'button'}
                 data-plasmic-override={overrides.button}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.button)}
               >
                 <LeftIconIcon
                   className={classNames(projectcss.all, sty.svg__wzCz1)}
-                  role={"img"}
+                  role={'img'}
                 />
 
                 <div
-                  data-plasmic-name={"children2"}
+                  data-plasmic-name={'children2'}
                   data-plasmic-override={overrides.children2}
                   className={classNames(
                     projectcss.all,
@@ -242,21 +243,21 @@ function PlasmicButton__RenderFunc(props: {
                     sty.children2
                   )}
                 >
-                  {"Button"}
+                  {'Button'}
                 </div>
                 {false ? (
                   <LeftIconIcon
                     className={classNames(projectcss.all, sty.svg__rbbvJ)}
-                    role={"img"}
+                    role={'img'}
                   />
                 ) : null}
               </p.Stack>
             </p.Stack>
           ) : null}
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__vIMq)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__vIMq)}
             noOfLines={1 as const}
-            size={"2xl" as const}
+            size={'2xl' as const}
           >
             <div
               className={classNames(
@@ -265,19 +266,19 @@ function PlasmicButton__RenderFunc(props: {
                 sty.text__iSkFs
               )}
             >
-              {"Code Preview"}
+              {'Code Preview'}
             </div>
           </Heading>
           <ButtonPreview
-            data-plasmic-name={"buttonPreview"}
+            data-plasmic-name={'buttonPreview'}
             data-plasmic-override={overrides.buttonPreview}
-            className={classNames("__wab_instance", sty.buttonPreview)}
+            className={classNames('__wab_instance', sty.buttonPreview)}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__saY8)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__saY8)}
             noOfLines={1 as const}
-            size={"2xl" as const}
+            size={'2xl' as const}
           >
             <div
               className={classNames(
@@ -286,12 +287,12 @@ function PlasmicButton__RenderFunc(props: {
                 sty.text__yoHTh
               )}
             >
-              {"Variants"}
+              {'Variants'}
             </div>
           </Heading>
           {true ? (
             <p.Stack
-              as={"div"}
+              as={'div'}
               hasGap={true}
               className={classNames(projectcss.all, sty.columns__g7B4W)}
             >
@@ -313,9 +314,9 @@ function PlasmicButton__RenderFunc(props: {
             </p.Stack>
           ) : null}
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__ch23P)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__ch23P)}
             noOfLines={1 as const}
-            size={"2xl" as const}
+            size={'2xl' as const}
           >
             <div
               className={classNames(
@@ -324,20 +325,20 @@ function PlasmicButton__RenderFunc(props: {
                 sty.text__i8Qt
               )}
             >
-              {"Sizes"}
+              {'Sizes'}
             </div>
           </Heading>
           {true ? (
             <p.Stack
-              as={"div"}
+              as={'div'}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__cNtuX)}
             />
           ) : null}
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__bcQ8M)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__bcQ8M)}
             noOfLines={1 as const}
-            size={"2xl" as const}
+            size={'2xl' as const}
           >
             <div
               className={classNames(
@@ -346,29 +347,29 @@ function PlasmicButton__RenderFunc(props: {
                 sty.text__ifst6
               )}
             >
-              {"Button Tokens"}
+              {'Button Tokens'}
             </div>
           </Heading>
           {true ? (
             <p.Stack
-              as={"div"}
+              as={'div'}
               hasGap={true}
               className={classNames(projectcss.all, sty.columns__p6Gwa)}
             >
               <div className={classNames(projectcss.all, sty.column__kakWz)}>
                 {true ? (
                   <p.Stack
-                    as={"div"}
+                    as={'div'}
                     hasGap={true}
                     className={classNames(projectcss.all, sty.freeBox__lBkjL)}
                   >
                     <Heading
                       className={classNames(
-                        "__wab_instance",
+                        '__wab_instance',
                         sty.chakraUiHeading__vwLTf
                       )}
                       noOfLines={1 as const}
-                      size={"xl" as const}
+                      size={'xl' as const}
                     >
                       <div
                         className={classNames(
@@ -377,37 +378,26 @@ function PlasmicButton__RenderFunc(props: {
                           sty.text__sjbY4
                         )}
                       >
-                        {"All"}
+                        {'All'}
                       </div>
                     </Heading>
-                    {true ? (
-                      <ChakraDocs
-                        className={classNames(
-                          "__wab_instance",
-                          sty.chakraDocs__feOIj
-                        )}
-                        path={"btn.primary1.default" as const}
-                        set={"core/color" as const}
-                        theme={"light" as const}
-                      />
-                    ) : null}
                   </p.Stack>
                 ) : null}
               </div>
               <div className={classNames(projectcss.all, sty.column__qW7WT)}>
                 {true ? (
                   <p.Stack
-                    as={"div"}
+                    as={'div'}
                     hasGap={true}
                     className={classNames(projectcss.all, sty.freeBox__bmKeG)}
                   >
                     <Heading
                       className={classNames(
-                        "__wab_instance",
+                        '__wab_instance',
                         sty.chakraUiHeading__bKmww
                       )}
                       noOfLines={1 as const}
-                      size={"xl" as const}
+                      size={'xl' as const}
                     >
                       <div
                         className={classNames(
@@ -416,37 +406,26 @@ function PlasmicButton__RenderFunc(props: {
                           sty.text__uPvwm
                         )}
                       >
-                        {"Primary"}
+                        {'Primary'}
                       </div>
                     </Heading>
-                    {true ? (
-                      <ChakraDocs
-                        className={classNames(
-                          "__wab_instance",
-                          sty.chakraDocs___7Z035
-                        )}
-                        path={"btn.primary2.default" as const}
-                        set={"core/color" as const}
-                        theme={"light" as const}
-                      />
-                    ) : null}
                   </p.Stack>
                 ) : null}
               </div>
               <div className={classNames(projectcss.all, sty.column__ivEw)}>
                 {true ? (
                   <p.Stack
-                    as={"div"}
+                    as={'div'}
                     hasGap={true}
                     className={classNames(projectcss.all, sty.freeBox__xeOIi)}
                   >
                     <Heading
                       className={classNames(
-                        "__wab_instance",
+                        '__wab_instance',
                         sty.chakraUiHeading___7UAdK
                       )}
                       noOfLines={1 as const}
-                      size={"xl" as const}
+                      size={'xl' as const}
                     >
                       <div
                         className={classNames(
@@ -455,37 +434,33 @@ function PlasmicButton__RenderFunc(props: {
                           sty.text__dmlqV
                         )}
                       >
-                        {"Secondary"}
+                        {'Secondary'}
                       </div>
                     </Heading>
-                    {true ? (
-                      <ChakraDocs
-                        className={classNames(
-                          "__wab_instance",
-                          sty.chakraDocs__mM4ZM
-                        )}
-                        path={"btn" as const}
-                        set={"core/color" as const}
-                        theme={"light" as const}
-                      />
-                    ) : null}
+                    <Button
+                      className={classNames(
+                        '__wab_instance',
+                        sty.chakraUiButton__erPP
+                      )}
+                      variant={'primary' as const}
+                    />
                   </p.Stack>
                 ) : null}
               </div>
               <div className={classNames(projectcss.all, sty.column___2Rghv)}>
                 {true ? (
                   <p.Stack
-                    as={"div"}
+                    as={'div'}
                     hasGap={true}
                     className={classNames(projectcss.all, sty.freeBox__ms762)}
                   >
                     <Heading
                       className={classNames(
-                        "__wab_instance",
+                        '__wab_instance',
                         sty.chakraUiHeading__o3LQc
                       )}
                       noOfLines={1 as const}
-                      size={"xl" as const}
+                      size={'xl' as const}
                     >
                       <div
                         className={classNames(
@@ -494,25 +469,29 @@ function PlasmicButton__RenderFunc(props: {
                           sty.text__osdX
                         )}
                       >
-                        {"Negative"}
+                        {'Negative'}
                       </div>
                     </Heading>
-                    {true ? (
-                      <ChakraDocs
-                        className={classNames(
-                          "__wab_instance",
-                          sty.chakraDocs__sjtDg
-                        )}
-                        path={"btn.secondary2.default" as const}
-                        set={"core/color" as const}
-                        theme={"light" as const}
-                      />
-                    ) : null}
                   </p.Stack>
                 ) : null}
               </div>
             </p.Stack>
           ) : null}
+          <Button
+            className={classNames('__wab_instance', sty.chakraUiButton__jsaxi)}
+            size={'lg' as const}
+            variant={'primary' as const}
+          >
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__jcsHu
+              )}
+            >
+              {'Button'}
+            </div>
+          </Button>
         </div>
       </div>
     </React.Fragment>
@@ -520,24 +499,24 @@ function PlasmicButton__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "chakraUiText", "button", "children2", "buttonPreview"],
-  chakraUiText: ["chakraUiText"],
-  button: ["button", "children2"],
-  children2: ["children2"],
-  buttonPreview: ["buttonPreview"]
+  root: ['root', 'chakraUiText', 'button', 'children2', 'buttonPreview'],
+  chakraUiText: ['chakraUiText'],
+  button: ['button', 'children2'],
+  children2: ['children2'],
+  buttonPreview: ['buttonPreview'],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  root: 'div';
   chakraUiText: typeof Text;
-  button: "div";
-  children2: "div";
+  button: 'div';
+  children2: 'div';
   buttonPreview: typeof ButtonPreview;
 };
 
-type ReservedPropsType = "variants" | "args" | "overrides";
+type ReservedPropsType = 'variants' | 'args' | 'overrides';
 type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicButton__OverridesType,
   DescendantsType<T>
@@ -573,7 +552,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicButton__ArgProps,
-          internalVariantPropNames: PlasmicButton__VariantProps
+          internalVariantPropNames: PlasmicButton__VariantProps,
         }),
       [props, nodeName]
     );
@@ -581,11 +560,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
-  if (nodeName === "root") {
-    func.displayName = "PlasmicButton";
+  if (nodeName === 'root') {
+    func.displayName = 'PlasmicButton';
   } else {
     func.displayName = `PlasmicButton.${nodeName}`;
   }
@@ -594,13 +573,13 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicButton = Object.assign(
   // Top-level PlasmicButton renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent('root'),
   {
     // Helper components rendering sub-elements
-    chakraUiText: makeNodeComponent("chakraUiText"),
-    button: makeNodeComponent("button"),
-    children2: makeNodeComponent("children2"),
-    buttonPreview: makeNodeComponent("buttonPreview"),
+    chakraUiText: makeNodeComponent('chakraUiText'),
+    button: makeNodeComponent('button'),
+    children2: makeNodeComponent('children2'),
+    buttonPreview: makeNodeComponent('buttonPreview'),
 
     // Metadata about props expected for PlasmicButton
     internalVariantProps: PlasmicButton__VariantProps,
@@ -608,11 +587,11 @@ export const PlasmicButton = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "Button",
-      description: "",
-      ogImageSrc: "",
-      canonical: ""
-    }
+      title: 'Button',
+      description: '',
+      ogImageSrc: '',
+      canonical: '',
+    },
   }
 );
 

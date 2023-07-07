@@ -11,14 +11,14 @@
 // Plasmic Project: nV7sRTPBx6ecWzFNNAWeQg
 // Component: cBdpKj_F4u
 
-import * as React from "react";
+import * as React from 'react';
 
-import Head from "next/head";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/router';
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
+import * as p from '@plasmicapp/react-web';
+import * as ph from '@plasmicapp/react-web/lib/host';
 
 import {
   hasVariant,
@@ -34,18 +34,18 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
-} from "@plasmicapp/react-web";
-import { Heading } from "@chakra-ui/react"; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
-import { NavbarWithTwoRows } from "../../custom/chakraPro/Aplication/Navbars/NavbarWithTwoRows"; // plasmic-import: yJff6CWBPde/codeComponent
-import { NavbarWithTwoRowsOnAccent } from "../../custom/chakraPro/Aplication/Navbars/NavbarWithTwoRowsOnAccent"; // plasmic-import: KOUGqjNdd6L/codeComponent
-import { NavbarWithAvatarOnAccent } from "../../custom/chakraPro/Aplication/Navbars/NavbarWithAvatarOnAccent"; // plasmic-import: c6sn-jmfLCW/codeComponent
-import { NavbarWithAvatar } from "../../custom/chakraPro/Aplication/Navbars/NavbarWithAvatar"; // plasmic-import: HPiHQtoXgV7/codeComponent
+  ensureGlobalVariants,
+} from '@plasmicapp/react-web';
+import { Heading } from '@chakra-ui/react'; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
+import { NavbarWithTwoRows } from '../../chakra/chakraPro/Aplication/Navbars/NavbarWithTwoRows'; // plasmic-import: yJff6CWBPde/codeComponent
+import { NavbarWithTwoRowsOnAccent } from '../../chakra/chakraPro/Aplication/Navbars/NavbarWithTwoRowsOnAccent'; // plasmic-import: KOUGqjNdd6L/codeComponent
+import { NavbarWithAvatarOnAccent } from '../../chakra/chakraPro/Aplication/Navbars/NavbarWithAvatarOnAccent'; // plasmic-import: c6sn-jmfLCW/codeComponent
+import { NavbarWithAvatar } from '../../chakra/chakraPro/Aplication/Navbars/NavbarWithAvatar'; // plasmic-import: HPiHQtoXgV7/codeComponent
 
-import "@plasmicapp/react-web/lib/plasmic.css";
+import '@plasmicapp/react-web/lib/plasmic.css';
 
-import projectcss from "./plasmic_plasmic_poc_localhost.module.css"; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
-import sty from "./PlasmicNavbars.module.css"; // plasmic-import: cBdpKj_F4u/css
+import projectcss from './plasmic_plasmic_poc_localhost.module.css'; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
+import sty from './PlasmicNavbars.module.css'; // plasmic-import: cBdpKj_F4u/css
 
 export type PlasmicNavbars__VariantMembers = {};
 export type PlasmicNavbars__VariantsArgs = {};
@@ -57,7 +57,7 @@ type ArgPropType = keyof PlasmicNavbars__ArgsType;
 export const PlasmicNavbars__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicNavbars__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: p.Flex<'div'>;
   navbarWithTwoRows?: p.Flex<typeof NavbarWithTwoRows>;
   navbarWithTwoRowsOnAccent?: p.Flex<typeof NavbarWithTwoRowsOnAccent>;
   navbarWithAvatarOnAccent?: p.Flex<typeof NavbarWithAvatarOnAccent>;
@@ -94,7 +94,7 @@ function PlasmicNavbars__RenderFunc(props: {
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
@@ -115,7 +115,7 @@ function PlasmicNavbars__RenderFunc(props: {
 
       <div className={projectcss.plasmic_page_wrapper}>
         <div
-          data-plasmic-name={"root"}
+          data-plasmic-name={'root'}
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
@@ -129,9 +129,9 @@ function PlasmicNavbars__RenderFunc(props: {
           )}
         >
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__gmGXh)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__gmGXh)}
             noOfLines={1 as const}
-            size={"4xl" as const}
+            size={'4xl' as const}
           >
             <div
               className={classNames(
@@ -140,13 +140,13 @@ function PlasmicNavbars__RenderFunc(props: {
                 sty.text__llboW
               )}
             >
-              {"Navbars"}
+              {'Navbars'}
             </div>
           </Heading>
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__hlW0Q)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__hlW0Q)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -155,19 +155,19 @@ function PlasmicNavbars__RenderFunc(props: {
                 sty.text__lh8Sc
               )}
             >
-              {"Navbar with two rows"}
+              {'Navbar with two rows'}
             </div>
           </Heading>
           <NavbarWithTwoRows
-            data-plasmic-name={"navbarWithTwoRows"}
+            data-plasmic-name={'navbarWithTwoRows'}
             data-plasmic-override={overrides.navbarWithTwoRows}
-            className={classNames("__wab_instance", sty.navbarWithTwoRows)}
+            className={classNames('__wab_instance', sty.navbarWithTwoRows)}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__bAYsE)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__bAYsE)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -176,25 +176,25 @@ function PlasmicNavbars__RenderFunc(props: {
                 sty.text___5VdXr
               )}
             >
-              {"Navbar with two rows on accent"}
+              {'Navbar with two rows on accent'}
             </div>
           </Heading>
           <NavbarWithTwoRowsOnAccent
-            data-plasmic-name={"navbarWithTwoRowsOnAccent"}
+            data-plasmic-name={'navbarWithTwoRowsOnAccent'}
             data-plasmic-override={overrides.navbarWithTwoRowsOnAccent}
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.navbarWithTwoRowsOnAccent
             )}
           />
 
           <Heading
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.chakraUiHeading___6Nl0O
             )}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -203,22 +203,22 @@ function PlasmicNavbars__RenderFunc(props: {
                 sty.text__oDdkw
               )}
             >
-              {"Navbar with avatar on accent"}
+              {'Navbar with avatar on accent'}
             </div>
           </Heading>
           <NavbarWithAvatarOnAccent
-            data-plasmic-name={"navbarWithAvatarOnAccent"}
+            data-plasmic-name={'navbarWithAvatarOnAccent'}
             data-plasmic-override={overrides.navbarWithAvatarOnAccent}
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.navbarWithAvatarOnAccent
             )}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__sq1NG)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__sq1NG)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -227,13 +227,13 @@ function PlasmicNavbars__RenderFunc(props: {
                 sty.text__nsPy9
               )}
             >
-              {"Navbar with avatar"}
+              {'Navbar with avatar'}
             </div>
           </Heading>
           <NavbarWithAvatar
-            data-plasmic-name={"navbarWithAvatar"}
+            data-plasmic-name={'navbarWithAvatar'}
             data-plasmic-override={overrides.navbarWithAvatar}
-            className={classNames("__wab_instance", sty.navbarWithAvatar)}
+            className={classNames('__wab_instance', sty.navbarWithAvatar)}
           />
         </div>
       </div>
@@ -243,29 +243,29 @@ function PlasmicNavbars__RenderFunc(props: {
 
 const PlasmicDescendants = {
   root: [
-    "root",
-    "navbarWithTwoRows",
-    "navbarWithTwoRowsOnAccent",
-    "navbarWithAvatarOnAccent",
-    "navbarWithAvatar"
+    'root',
+    'navbarWithTwoRows',
+    'navbarWithTwoRowsOnAccent',
+    'navbarWithAvatarOnAccent',
+    'navbarWithAvatar',
   ],
-  navbarWithTwoRows: ["navbarWithTwoRows"],
-  navbarWithTwoRowsOnAccent: ["navbarWithTwoRowsOnAccent"],
-  navbarWithAvatarOnAccent: ["navbarWithAvatarOnAccent"],
-  navbarWithAvatar: ["navbarWithAvatar"]
+  navbarWithTwoRows: ['navbarWithTwoRows'],
+  navbarWithTwoRowsOnAccent: ['navbarWithTwoRowsOnAccent'],
+  navbarWithAvatarOnAccent: ['navbarWithAvatarOnAccent'],
+  navbarWithAvatar: ['navbarWithAvatar'],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  root: 'div';
   navbarWithTwoRows: typeof NavbarWithTwoRows;
   navbarWithTwoRowsOnAccent: typeof NavbarWithTwoRowsOnAccent;
   navbarWithAvatarOnAccent: typeof NavbarWithAvatarOnAccent;
   navbarWithAvatar: typeof NavbarWithAvatar;
 };
 
-type ReservedPropsType = "variants" | "args" | "overrides";
+type ReservedPropsType = 'variants' | 'args' | 'overrides';
 type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicNavbars__OverridesType,
   DescendantsType<T>
@@ -301,7 +301,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicNavbars__ArgProps,
-          internalVariantPropNames: PlasmicNavbars__VariantProps
+          internalVariantPropNames: PlasmicNavbars__VariantProps,
         }),
       [props, nodeName]
     );
@@ -309,11 +309,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
-  if (nodeName === "root") {
-    func.displayName = "PlasmicNavbars";
+  if (nodeName === 'root') {
+    func.displayName = 'PlasmicNavbars';
   } else {
     func.displayName = `PlasmicNavbars.${nodeName}`;
   }
@@ -322,13 +322,13 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicNavbars = Object.assign(
   // Top-level PlasmicNavbars renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent('root'),
   {
     // Helper components rendering sub-elements
-    navbarWithTwoRows: makeNodeComponent("navbarWithTwoRows"),
-    navbarWithTwoRowsOnAccent: makeNodeComponent("navbarWithTwoRowsOnAccent"),
-    navbarWithAvatarOnAccent: makeNodeComponent("navbarWithAvatarOnAccent"),
-    navbarWithAvatar: makeNodeComponent("navbarWithAvatar"),
+    navbarWithTwoRows: makeNodeComponent('navbarWithTwoRows'),
+    navbarWithTwoRowsOnAccent: makeNodeComponent('navbarWithTwoRowsOnAccent'),
+    navbarWithAvatarOnAccent: makeNodeComponent('navbarWithAvatarOnAccent'),
+    navbarWithAvatar: makeNodeComponent('navbarWithAvatar'),
 
     // Metadata about props expected for PlasmicNavbars
     internalVariantProps: PlasmicNavbars__VariantProps,
@@ -336,11 +336,11 @@ export const PlasmicNavbars = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "",
-      description: "",
-      ogImageSrc: "",
-      canonical: ""
-    }
+      title: '',
+      description: '',
+      ogImageSrc: '',
+      canonical: '',
+    },
   }
 );
 

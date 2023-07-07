@@ -11,14 +11,14 @@
 // Plasmic Project: nV7sRTPBx6ecWzFNNAWeQg
 // Component: QBGPHa7ppZ1aTq
 
-import * as React from "react";
+import * as React from 'react';
 
-import Head from "next/head";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/router';
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
+import * as p from '@plasmicapp/react-web';
+import * as ph from '@plasmicapp/react-web/lib/host';
 
 import {
   hasVariant,
@@ -34,26 +34,26 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
-} from "@plasmicapp/react-web";
-import { SwatchSizing } from "../../custom/tokenSheets/SwatchSizing"; // plasmic-import: BqMFXxz-YKcj7r/codeComponent
-import { SwatchSpacing } from "../../custom/tokenSheets/SwatchSpacing"; // plasmic-import: z8b3E4YbZNVSPR/codeComponent
-import { SwatchColor } from "../../custom/tokenSheets/SwatchColor"; // plasmic-import: WeEAjD9tzkcL1S/codeComponent
+  ensureGlobalVariants,
+} from '@plasmicapp/react-web';
+import { SwatchSizing } from '../../custom/tokenSheets/SwatchSizing'; // plasmic-import: BqMFXxz-YKcj7r/codeComponent
+import { SwatchSpacing } from '../../custom/tokenSheets/SwatchSpacing'; // plasmic-import: z8b3E4YbZNVSPR/codeComponent
+import { SwatchColor } from '../../custom/tokenSheets/SwatchColor'; // plasmic-import: WeEAjD9tzkcL1S/codeComponent
 
-import "@plasmicapp/react-web/lib/plasmic.css";
+import '@plasmicapp/react-web/lib/plasmic.css';
 
-import projectcss from "./plasmic_plasmic_poc_localhost.module.css"; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
-import sty from "./PlasmicDesignTokenItem.module.css"; // plasmic-import: QBGPHa7ppZ1aTq/css
+import projectcss from './plasmic_plasmic_poc_localhost.module.css'; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
+import sty from './PlasmicDesignTokenItem.module.css'; // plasmic-import: QBGPHa7ppZ1aTq/css
 
 export type PlasmicDesignTokenItem__VariantMembers = {
-  swatches: "color" | "spacing" | "sizing";
+  swatches: 'color' | 'spacing' | 'sizing';
 };
 export type PlasmicDesignTokenItem__VariantsArgs = {
-  swatches?: SingleChoiceArg<"color" | "spacing" | "sizing">;
+  swatches?: SingleChoiceArg<'color' | 'spacing' | 'sizing'>;
 };
 type VariantPropType = keyof PlasmicDesignTokenItem__VariantsArgs;
 export const PlasmicDesignTokenItem__VariantProps = new Array<VariantPropType>(
-  "swatches"
+  'swatches'
 );
 
 export type PlasmicDesignTokenItem__ArgsType = {
@@ -66,19 +66,19 @@ export type PlasmicDesignTokenItem__ArgsType = {
 };
 type ArgPropType = keyof PlasmicDesignTokenItem__ArgsType;
 export const PlasmicDesignTokenItem__ArgProps = new Array<ArgPropType>(
-  "color",
-  "border",
-  "opacity",
-  "typography",
-  "sizing",
-  "spacing"
+  'color',
+  'border',
+  'opacity',
+  'typography',
+  'sizing',
+  'spacing'
 );
 
 export type PlasmicDesignTokenItem__OverridesType = {
-  root?: p.Flex<"div">;
-  tokenName?: p.Flex<"div">;
-  textValue?: p.Flex<"div">;
-  description?: p.Flex<"div">;
+  root?: p.Flex<'div'>;
+  tokenName?: p.Flex<'div'>;
+  textValue?: p.Flex<'div'>;
+  description?: p.Flex<'div'>;
   swatchSizing?: p.Flex<typeof SwatchSizing>;
   swatchSpacing?: p.Flex<typeof SwatchSpacing>;
   swatchColor?: p.Flex<typeof SwatchColor>;
@@ -91,7 +91,7 @@ export interface DefaultDesignTokenItemProps {
   typography?: string;
   sizing?: string;
   spacing?: string;
-  swatches?: SingleChoiceArg<"color" | "spacing" | "sizing">;
+  swatches?: SingleChoiceArg<'color' | 'spacing' | 'sizing'>;
   className?: string;
 }
 
@@ -124,11 +124,11 @@ function PlasmicDesignTokenItem__RenderFunc(props: {
     () =>
       Object.assign(
         {
-          border: "1" as const,
-          opacity: "0.5" as const,
-          typography: "inter" as const,
-          sizing: "10" as const,
-          spacing: "10" as const
+          border: '1' as const,
+          opacity: '0.5' as const,
+          typography: 'inter' as const,
+          sizing: '10' as const,
+          spacing: '10' as const,
         },
         props.args
       ),
@@ -136,7 +136,7 @@ function PlasmicDesignTokenItem__RenderFunc(props: {
   );
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
@@ -148,19 +148,24 @@ function PlasmicDesignTokenItem__RenderFunc(props: {
   const stateSpecs = React.useMemo(
     () => [
       {
-        path: "swatches",
-        type: "private",
-        variableType: "variant",
-        initFunc: ({ $props, $state, $queries, $ctx }) => $props.swatches
-      }
+        path: 'swatches',
+        type: 'private',
+        variableType: 'variant',
+        initFunc: ({ $props, $state, $queries, $ctx }) => $props.swatches,
+      },
     ],
-    [$props, $ctx]
+    [$props, $ctx, $refs]
   );
-  const $state = p.useDollarState(stateSpecs, { $props, $ctx, $queries });
+  const $state = p.useDollarState(stateSpecs, {
+    $props,
+    $ctx,
+    $queries,
+    $refs,
+  });
 
   return (
     <div
-      data-plasmic-name={"root"}
+      data-plasmic-name={'root'}
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
@@ -171,11 +176,11 @@ function PlasmicDesignTokenItem__RenderFunc(props: {
         projectcss.plasmic_mixins,
         projectcss.plasmic_tokens,
         sty.root,
-        { [sty.rootswatches_color]: hasVariant($state, "swatches", "color") }
+        { [sty.rootswatches_color]: hasVariant($state, 'swatches', 'color') }
       )}
     >
       <div
-        data-plasmic-name={"tokenName"}
+        data-plasmic-name={'tokenName'}
         data-plasmic-override={overrides.tokenName}
         className={classNames(
           projectcss.all,
@@ -183,10 +188,10 @@ function PlasmicDesignTokenItem__RenderFunc(props: {
           sty.tokenName
         )}
       >
-        {"tokenName"}
+        {'tokenName'}
       </div>
       <div
-        data-plasmic-name={"textValue"}
+        data-plasmic-name={'textValue'}
         data-plasmic-override={overrides.textValue}
         className={classNames(
           projectcss.all,
@@ -194,10 +199,10 @@ function PlasmicDesignTokenItem__RenderFunc(props: {
           sty.textValue
         )}
       >
-        {"textValue"}
+        {'textValue'}
       </div>
       <div
-        data-plasmic-name={"description"}
+        data-plasmic-name={'description'}
         data-plasmic-override={overrides.description}
         className={classNames(
           projectcss.all,
@@ -205,53 +210,53 @@ function PlasmicDesignTokenItem__RenderFunc(props: {
           sty.description
         )}
       >
-        {"description"}
+        {'description'}
       </div>
-      {(hasVariant($state, "swatches", "sizing") ? true : true) ? (
+      {(hasVariant($state, 'swatches', 'sizing') ? true : true) ? (
         <SwatchSizing
-          data-plasmic-name={"swatchSizing"}
+          data-plasmic-name={'swatchSizing'}
           data-plasmic-override={overrides.swatchSizing}
-          className={classNames("__wab_instance", sty.swatchSizing, {
+          className={classNames('__wab_instance', sty.swatchSizing, {
             [sty.swatchSizingswatches_sizing]: hasVariant(
               $state,
-              "swatches",
-              "sizing"
-            )
+              'swatches',
+              'sizing'
+            ),
           })}
-          size={"80px" as const}
+          size={'80px' as const}
         />
       ) : null}
-      {(hasVariant($state, "swatches", "spacing") ? true : true) ? (
+      {(hasVariant($state, 'swatches', 'spacing') ? true : true) ? (
         <SwatchSpacing
-          data-plasmic-name={"swatchSpacing"}
+          data-plasmic-name={'swatchSpacing'}
           data-plasmic-override={overrides.swatchSpacing}
-          className={classNames("__wab_instance", sty.swatchSpacing, {
+          className={classNames('__wab_instance', sty.swatchSpacing, {
             [sty.swatchSpacingswatches_sizing]: hasVariant(
               $state,
-              "swatches",
-              "sizing"
+              'swatches',
+              'sizing'
             ),
             [sty.swatchSpacingswatches_spacing]: hasVariant(
               $state,
-              "swatches",
-              "spacing"
-            )
+              'swatches',
+              'spacing'
+            ),
           })}
-          space={"10" as const}
+          space={'10' as const}
         />
       ) : null}
-      {(hasVariant($state, "swatches", "color") ? true : true) ? (
+      {(hasVariant($state, 'swatches', 'color') ? true : true) ? (
         <SwatchColor
-          data-plasmic-name={"swatchColor"}
+          data-plasmic-name={'swatchColor'}
           data-plasmic-override={overrides.swatchColor}
-          className={classNames("__wab_instance", sty.swatchColor, {
+          className={classNames('__wab_instance', sty.swatchColor, {
             [sty.swatchColorswatches_color]: hasVariant(
               $state,
-              "swatches",
-              "color"
-            )
+              'swatches',
+              'color'
+            ),
           })}
-          color={"red" as const}
+          color={'red' as const}
         />
       ) : null}
     </div>
@@ -260,35 +265,35 @@ function PlasmicDesignTokenItem__RenderFunc(props: {
 
 const PlasmicDescendants = {
   root: [
-    "root",
-    "tokenName",
-    "textValue",
-    "description",
-    "swatchSizing",
-    "swatchSpacing",
-    "swatchColor"
+    'root',
+    'tokenName',
+    'textValue',
+    'description',
+    'swatchSizing',
+    'swatchSpacing',
+    'swatchColor',
   ],
-  tokenName: ["tokenName"],
-  textValue: ["textValue"],
-  description: ["description"],
-  swatchSizing: ["swatchSizing"],
-  swatchSpacing: ["swatchSpacing"],
-  swatchColor: ["swatchColor"]
+  tokenName: ['tokenName'],
+  textValue: ['textValue'],
+  description: ['description'],
+  swatchSizing: ['swatchSizing'],
+  swatchSpacing: ['swatchSpacing'],
+  swatchColor: ['swatchColor'],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
-  tokenName: "div";
-  textValue: "div";
-  description: "div";
+  root: 'div';
+  tokenName: 'div';
+  textValue: 'div';
+  description: 'div';
   swatchSizing: typeof SwatchSizing;
   swatchSpacing: typeof SwatchSpacing;
   swatchColor: typeof SwatchColor;
 };
 
-type ReservedPropsType = "variants" | "args" | "overrides";
+type ReservedPropsType = 'variants' | 'args' | 'overrides';
 type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicDesignTokenItem__OverridesType,
   DescendantsType<T>
@@ -324,7 +329,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicDesignTokenItem__ArgProps,
-          internalVariantPropNames: PlasmicDesignTokenItem__VariantProps
+          internalVariantPropNames: PlasmicDesignTokenItem__VariantProps,
         }),
       [props, nodeName]
     );
@@ -332,11 +337,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
-  if (nodeName === "root") {
-    func.displayName = "PlasmicDesignTokenItem";
+  if (nodeName === 'root') {
+    func.displayName = 'PlasmicDesignTokenItem';
   } else {
     func.displayName = `PlasmicDesignTokenItem.${nodeName}`;
   }
@@ -345,19 +350,19 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicDesignTokenItem = Object.assign(
   // Top-level PlasmicDesignTokenItem renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent('root'),
   {
     // Helper components rendering sub-elements
-    tokenName: makeNodeComponent("tokenName"),
-    textValue: makeNodeComponent("textValue"),
-    description: makeNodeComponent("description"),
-    swatchSizing: makeNodeComponent("swatchSizing"),
-    swatchSpacing: makeNodeComponent("swatchSpacing"),
-    swatchColor: makeNodeComponent("swatchColor"),
+    tokenName: makeNodeComponent('tokenName'),
+    textValue: makeNodeComponent('textValue'),
+    description: makeNodeComponent('description'),
+    swatchSizing: makeNodeComponent('swatchSizing'),
+    swatchSpacing: makeNodeComponent('swatchSpacing'),
+    swatchColor: makeNodeComponent('swatchColor'),
 
     // Metadata about props expected for PlasmicDesignTokenItem
     internalVariantProps: PlasmicDesignTokenItem__VariantProps,
-    internalArgProps: PlasmicDesignTokenItem__ArgProps
+    internalArgProps: PlasmicDesignTokenItem__ArgProps,
   }
 );
 

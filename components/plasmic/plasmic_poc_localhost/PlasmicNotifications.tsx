@@ -11,14 +11,14 @@
 // Plasmic Project: nV7sRTPBx6ecWzFNNAWeQg
 // Component: -tKq2UCKd-
 
-import * as React from "react";
+import * as React from 'react';
 
-import Head from "next/head";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/router';
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
+import * as p from '@plasmicapp/react-web';
+import * as ph from '@plasmicapp/react-web/lib/host';
 
 import {
   hasVariant,
@@ -34,19 +34,19 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
-} from "@plasmicapp/react-web";
-import { Heading } from "@chakra-ui/react"; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
-import { NotificationWithTwoLinksAndIcon } from "../../custom/chakraPro/Aplication/Notifications/NotificationWithTwoLinksAndIcon"; // plasmic-import: 1suj14Z7ses/codeComponent
-import { NotificationWithTwoLinks } from "../../custom/chakraPro/Aplication/Notifications/NotificationWithTwoLinks"; // plasmic-import: odOeVF8q4XU/codeComponent
-import { NotificationWithAvatar } from "../../custom/chakraPro/Aplication/Notifications/NotificationWithAvatar"; // plasmic-import: AK1_Q4jt921/codeComponent
-import { NotificationWithSplitButtonsAndIcon } from "../../custom/chakraPro/Aplication/Notifications/NotificationWithSplitButtonsAndIcon"; // plasmic-import: Ei7fHEjLdZq/codeComponent
-import { NotificationWithSplitButtons } from "../../custom/chakraPro/Aplication/Notifications/NotificationWithSplitButtons"; // plasmic-import: 8GwAnWvln4r/codeComponent
+  ensureGlobalVariants,
+} from '@plasmicapp/react-web';
+import { Heading } from '@chakra-ui/react'; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
+import { NotificationWithTwoLinksAndIcon } from '../../chakra/chakraPro/Aplication/Notifications/NotificationWithTwoLinksAndIcon'; // plasmic-import: 1suj14Z7ses/codeComponent
+import { NotificationWithTwoLinks } from '../../chakra/chakraPro/Aplication/Notifications/NotificationWithTwoLinks'; // plasmic-import: odOeVF8q4XU/codeComponent
+import { NotificationWithAvatar } from '../../chakra/chakraPro/Aplication/Notifications/NotificationWithAvatar'; // plasmic-import: AK1_Q4jt921/codeComponent
+import { NotificationWithSplitButtonsAndIcon } from '../../chakra/chakraPro/Aplication/Notifications/NotificationWithSplitButtonsAndIcon'; // plasmic-import: Ei7fHEjLdZq/codeComponent
+import { NotificationWithSplitButtons } from '../../chakra/chakraPro/Aplication/Notifications/NotificationWithSplitButtons'; // plasmic-import: 8GwAnWvln4r/codeComponent
 
-import "@plasmicapp/react-web/lib/plasmic.css";
+import '@plasmicapp/react-web/lib/plasmic.css';
 
-import projectcss from "./plasmic_plasmic_poc_localhost.module.css"; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
-import sty from "./PlasmicNotifications.module.css"; // plasmic-import: -tKq2UCKd-/css
+import projectcss from './plasmic_plasmic_poc_localhost.module.css'; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
+import sty from './PlasmicNotifications.module.css'; // plasmic-import: -tKq2UCKd-/css
 
 export type PlasmicNotifications__VariantMembers = {};
 export type PlasmicNotifications__VariantsArgs = {};
@@ -58,7 +58,7 @@ type ArgPropType = keyof PlasmicNotifications__ArgsType;
 export const PlasmicNotifications__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicNotifications__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: p.Flex<'div'>;
   notificationWithTwoLinksAndIcon?: p.Flex<
     typeof NotificationWithTwoLinksAndIcon
   >;
@@ -100,7 +100,7 @@ function PlasmicNotifications__RenderFunc(props: {
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
@@ -121,7 +121,7 @@ function PlasmicNotifications__RenderFunc(props: {
 
       <div className={projectcss.plasmic_page_wrapper}>
         <div
-          data-plasmic-name={"root"}
+          data-plasmic-name={'root'}
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
@@ -135,9 +135,9 @@ function PlasmicNotifications__RenderFunc(props: {
           )}
         >
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__hbkh5)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__hbkh5)}
             noOfLines={1 as const}
-            size={"4xl" as const}
+            size={'4xl' as const}
           >
             <div
               className={classNames(
@@ -146,13 +146,13 @@ function PlasmicNotifications__RenderFunc(props: {
                 sty.text__cu91U
               )}
             >
-              {"Notifications"}
+              {'Notifications'}
             </div>
           </Heading>
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__bUTbb)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__bUTbb)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -161,22 +161,22 @@ function PlasmicNotifications__RenderFunc(props: {
                 sty.text__iniA6
               )}
             >
-              {"Notification with two links and icon"}
+              {'Notification with two links and icon'}
             </div>
           </Heading>
           <NotificationWithTwoLinksAndIcon
-            data-plasmic-name={"notificationWithTwoLinksAndIcon"}
+            data-plasmic-name={'notificationWithTwoLinksAndIcon'}
             data-plasmic-override={overrides.notificationWithTwoLinksAndIcon}
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.notificationWithTwoLinksAndIcon
             )}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__iwiAl)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__iwiAl)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -185,22 +185,22 @@ function PlasmicNotifications__RenderFunc(props: {
                 sty.text__qJHju
               )}
             >
-              {"Notification with two links"}
+              {'Notification with two links'}
             </div>
           </Heading>
           <NotificationWithTwoLinks
-            data-plasmic-name={"notificationWithTwoLinks"}
+            data-plasmic-name={'notificationWithTwoLinks'}
             data-plasmic-override={overrides.notificationWithTwoLinks}
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.notificationWithTwoLinks
             )}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__fBs7J)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__fBs7J)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -209,19 +209,19 @@ function PlasmicNotifications__RenderFunc(props: {
                 sty.text__nJ9TM
               )}
             >
-              {"Notification with avatar"}
+              {'Notification with avatar'}
             </div>
           </Heading>
           <NotificationWithAvatar
-            data-plasmic-name={"notificationWithAvatar"}
+            data-plasmic-name={'notificationWithAvatar'}
             data-plasmic-override={overrides.notificationWithAvatar}
-            className={classNames("__wab_instance", sty.notificationWithAvatar)}
+            className={classNames('__wab_instance', sty.notificationWithAvatar)}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__ryCOq)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__ryCOq)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -230,24 +230,24 @@ function PlasmicNotifications__RenderFunc(props: {
                 sty.text__q35Of
               )}
             >
-              {"Notification with split buttons and icon"}
+              {'Notification with split buttons and icon'}
             </div>
           </Heading>
           <NotificationWithSplitButtonsAndIcon
-            data-plasmic-name={"notificationWithSplitButtonsAndIcon"}
+            data-plasmic-name={'notificationWithSplitButtonsAndIcon'}
             data-plasmic-override={
               overrides.notificationWithSplitButtonsAndIcon
             }
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.notificationWithSplitButtonsAndIcon
             )}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__kQAhA)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__kQAhA)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -256,14 +256,14 @@ function PlasmicNotifications__RenderFunc(props: {
                 sty.text__bTonG
               )}
             >
-              {"Notification with split buttons"}
+              {'Notification with split buttons'}
             </div>
           </Heading>
           <NotificationWithSplitButtons
-            data-plasmic-name={"notificationWithSplitButtons"}
+            data-plasmic-name={'notificationWithSplitButtons'}
             data-plasmic-override={overrides.notificationWithSplitButtons}
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.notificationWithSplitButtons
             )}
           />
@@ -275,24 +275,24 @@ function PlasmicNotifications__RenderFunc(props: {
 
 const PlasmicDescendants = {
   root: [
-    "root",
-    "notificationWithTwoLinksAndIcon",
-    "notificationWithTwoLinks",
-    "notificationWithAvatar",
-    "notificationWithSplitButtonsAndIcon",
-    "notificationWithSplitButtons"
+    'root',
+    'notificationWithTwoLinksAndIcon',
+    'notificationWithTwoLinks',
+    'notificationWithAvatar',
+    'notificationWithSplitButtonsAndIcon',
+    'notificationWithSplitButtons',
   ],
-  notificationWithTwoLinksAndIcon: ["notificationWithTwoLinksAndIcon"],
-  notificationWithTwoLinks: ["notificationWithTwoLinks"],
-  notificationWithAvatar: ["notificationWithAvatar"],
-  notificationWithSplitButtonsAndIcon: ["notificationWithSplitButtonsAndIcon"],
-  notificationWithSplitButtons: ["notificationWithSplitButtons"]
+  notificationWithTwoLinksAndIcon: ['notificationWithTwoLinksAndIcon'],
+  notificationWithTwoLinks: ['notificationWithTwoLinks'],
+  notificationWithAvatar: ['notificationWithAvatar'],
+  notificationWithSplitButtonsAndIcon: ['notificationWithSplitButtonsAndIcon'],
+  notificationWithSplitButtons: ['notificationWithSplitButtons'],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  root: 'div';
   notificationWithTwoLinksAndIcon: typeof NotificationWithTwoLinksAndIcon;
   notificationWithTwoLinks: typeof NotificationWithTwoLinks;
   notificationWithAvatar: typeof NotificationWithAvatar;
@@ -300,7 +300,7 @@ type NodeDefaultElementType = {
   notificationWithSplitButtons: typeof NotificationWithSplitButtons;
 };
 
-type ReservedPropsType = "variants" | "args" | "overrides";
+type ReservedPropsType = 'variants' | 'args' | 'overrides';
 type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicNotifications__OverridesType,
   DescendantsType<T>
@@ -336,7 +336,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicNotifications__ArgProps,
-          internalVariantPropNames: PlasmicNotifications__VariantProps
+          internalVariantPropNames: PlasmicNotifications__VariantProps,
         }),
       [props, nodeName]
     );
@@ -344,11 +344,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
-  if (nodeName === "root") {
-    func.displayName = "PlasmicNotifications";
+  if (nodeName === 'root') {
+    func.displayName = 'PlasmicNotifications';
   } else {
     func.displayName = `PlasmicNotifications.${nodeName}`;
   }
@@ -357,19 +357,19 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicNotifications = Object.assign(
   // Top-level PlasmicNotifications renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent('root'),
   {
     // Helper components rendering sub-elements
     notificationWithTwoLinksAndIcon: makeNodeComponent(
-      "notificationWithTwoLinksAndIcon"
+      'notificationWithTwoLinksAndIcon'
     ),
-    notificationWithTwoLinks: makeNodeComponent("notificationWithTwoLinks"),
-    notificationWithAvatar: makeNodeComponent("notificationWithAvatar"),
+    notificationWithTwoLinks: makeNodeComponent('notificationWithTwoLinks'),
+    notificationWithAvatar: makeNodeComponent('notificationWithAvatar'),
     notificationWithSplitButtonsAndIcon: makeNodeComponent(
-      "notificationWithSplitButtonsAndIcon"
+      'notificationWithSplitButtonsAndIcon'
     ),
     notificationWithSplitButtons: makeNodeComponent(
-      "notificationWithSplitButtons"
+      'notificationWithSplitButtons'
     ),
 
     // Metadata about props expected for PlasmicNotifications
@@ -378,11 +378,11 @@ export const PlasmicNotifications = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "",
-      description: "",
-      ogImageSrc: "",
-      canonical: ""
-    }
+      title: '',
+      description: '',
+      ogImageSrc: '',
+      canonical: '',
+    },
   }
 );
 

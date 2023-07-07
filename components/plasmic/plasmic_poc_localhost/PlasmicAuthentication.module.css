@@ -13,21 +13,921 @@
   min-width: 0;
   min-height: 0;
   grid-template-columns:
-    1fr minmax(0, var(--plsmc-wide-chunk)) var(--plsmc-viewport-gap)
+    var(--plsmc-viewport-gap) 1fr minmax(0, var(--plsmc-wide-chunk))
     min(
       var(--plsmc-standard-width),
       calc(100% - var(--plsmc-viewport-gap) - var(--plsmc-viewport-gap))
     )
-    var(--plsmc-viewport-gap) minmax(0, var(--plsmc-wide-chunk)) 1fr;
+    minmax(0, var(--plsmc-wide-chunk)) 1fr var(--plsmc-viewport-gap);
   padding: 100px;
 }
 :where(.root > *) {
   grid-column: 4;
 }
+.text__wXpdP {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  font-size: 50px;
+  font-weight: 700;
+  min-width: 0;
+}
+.text___5YCw6 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  font-size: 40px;
+  min-width: 0;
+}
+.freeBox__qpb3J {
+  background: #fbfcfd;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  padding: 100px;
+}
+.freeBox__qpb3J > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: calc(0px - 10px);
+  width: calc(100% + 10px);
+}
+.freeBox__qpb3J > :global(.__wab_flex-container) > *,
+.freeBox__qpb3J > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox__qpb3J > :global(.__wab_flex-container) > picture > img,
+.freeBox__qpb3J
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 10px;
+}
+.freeBox__qoXo {
+  width: 448px;
+  height: 612px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+}
+.chakraUiStack2 {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  flex-direction: column;
+}
+.chakraUiStack2 > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(0px - 24px);
+  height: calc(100% + 24px);
+}
+.chakraUiStack2 > :global(.__wab_flex-container) > *,
+.chakraUiStack2 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.chakraUiStack2 > :global(.__wab_flex-container) > picture > img,
+.chakraUiStack2
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 24px;
+}
+.freeBox__mm2Wt {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.svg__k37Ob {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #3182ce;
+  width: 448px;
+  height: 48px;
+  display: block;
+  flex-shrink: 0;
+}
+.chakraUiStack3 {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+.chakraUiStack3 > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: calc(0px - 12px);
+  height: calc(100% + 12px);
+}
+.chakraUiStack3 > :global(.__wab_flex-container) > *,
+.chakraUiStack3 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.chakraUiStack3 > :global(.__wab_flex-container) > picture > img,
+.chakraUiStack3
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 12px;
+}
+.text__guSxo {
+  display: block;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0em;
+  line-height: 38px;
+  color: rgba(22, 24, 34, 1);
+  position: relative;
+}
+.freeBox___6FjFv {
+  width: 448px;
+  height: 24px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+}
+.text__ewqsP {
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(73, 84, 103, 1);
+  position: absolute;
+  top: 0px;
+  left: 105px;
+  transform: translate(-0.39000000000000057px, 0px);
+  height: auto;
+}
+.text__dzZKq {
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: rgba(42, 107, 175, 1);
+  position: absolute;
+  top: 2px;
+  left: 285px;
+  transform: translate(0.35899999999998045px, 0px);
+}
+.freeBox__cv4My {
+  background: rgba(255, 255, 255, 1);
+  filter: drop-shadow(0px 4px 4px rgba(44, 54, 71, 0.1))
+    drop-shadow(0px 0px 0.5px rgba(44, 54, 71, 0.05));
+  width: auto;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 178px;
+  left: 0px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-radius: 12px;
+  padding: 32px 40px;
+}
+.chakraUiStack4 {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+.chakraUiStack4 > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(0px - 24px);
+  height: calc(100% + 24px);
+}
+.chakraUiStack4 > :global(.__wab_flex-container) > *,
+.chakraUiStack4 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.chakraUiStack4 > :global(.__wab_flex-container) > picture > img,
+.chakraUiStack4
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 24px;
+}
+.chakraUiStack5 {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+.chakraUiStack5 > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(0px - 20px);
+  height: calc(100% + 20px);
+}
+.chakraUiStack5 > :global(.__wab_flex-container) > *,
+.chakraUiStack5 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.chakraUiStack5 > :global(.__wab_flex-container) > picture > img,
+.chakraUiStack5
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 20px;
+}
+.freeBox__tQdEm {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+.freeBox__tQdEm > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(0px - 6px);
+  height: calc(100% + 6px);
+}
+.freeBox__tQdEm > :global(.__wab_flex-container) > *,
+.freeBox__tQdEm > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox__tQdEm > :global(.__wab_flex-container) > picture > img,
+.freeBox__tQdEm
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 6px;
+}
+.text___6Qstn {
+  display: block;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 21px;
+  color: rgba(22, 24, 34, 1);
+  position: relative;
+}
+.freeBox__muIif {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: inset 0px 0px 0px 1px rgba(225, 231, 239, 1);
+  width: 368px;
+  height: 40px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+.chakraUiPasswordField {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+.chakraUiPasswordField > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(0px - 6px);
+  height: calc(100% + 6px);
+}
+.chakraUiPasswordField > :global(.__wab_flex-container) > *,
+.chakraUiPasswordField
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > *,
+.chakraUiPasswordField > :global(.__wab_flex-container) > picture > img,
+.chakraUiPasswordField
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 6px;
+}
+.labelPassword {
+  display: block;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 21px;
+  color: rgba(22, 24, 34, 1);
+  position: relative;
+}
+.divchakraInputGroup {
+  width: 368px;
+  height: 40px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+}
+.input {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: inset 0px 0px 0px 1px rgba(225, 231, 239, 1);
+  height: 40px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  border-radius: 8px;
+}
+.buttonRevealPasswordSvg {
+  width: 14px;
+  height: 14px;
+  display: block;
+  position: absolute;
+  top: 13px;
+  left: 341px;
+  overflow: hidden;
+}
+.svg__xJTtA {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #2b6cb0;
+  width: 14px;
+  height: 14px;
+  display: block;
+  top: 0px;
+  left: 0px;
+}
+.chakraUiHStack2 {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  padding-right: 0.309px;
+}
+.chakraUiHStack2 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: calc(0px - 124.69px);
+  width: calc(100% + 124.69px);
+}
+.chakraUiHStack2 > :global(.__wab_flex-container) > *,
+.chakraUiHStack2 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.chakraUiHStack2 > :global(.__wab_flex-container) > picture > img,
+.chakraUiHStack2
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 124.69px;
+}
+.freeBox__rav8G {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+}
+.freeBox__rav8G > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+}
+.freeBox__rav8G > :global(.__wab_flex-container) > *,
+.freeBox__rav8G > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox__rav8G > :global(.__wab_flex-container) > picture > img,
+.freeBox__rav8G
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 8px;
+}
+.spanchakraCheckboxControl {
+  background: rgba(48, 129, 205, 1);
+  box-shadow: inset 0px 0px 0px 1px rgba(48, 129, 205, 1);
+  width: 16px;
+  height: 16px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+  border-radius: 4px;
+}
+.svg2 {
+  width: 12px;
+  height: 10px;
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  overflow: hidden;
+}
+.svg___98V0B {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #fff;
+  width: 12px;
+  height: 10px;
+  display: block;
+  top: 0px;
+  left: 0px;
+}
+.text__udvfU {
+  display: block;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 20px;
+  color: rgba(44, 54, 71, 1);
+  position: relative;
+}
+.chakraUiButton2 {
+  display: block;
+  font-size: 14px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: rgba(42, 107, 175, 1);
+  position: relative;
+}
+.chakraUiStack6 {
+  width: 368px;
+  height: 148px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+}
+.freeBox___2SMyf {
+  width: 368px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  top: 64px;
+  left: 0px;
+}
+.separator {
+  transform: translate(0px, -0.5px);
+  height: 1px;
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  right: 245px;
+}
+.orContinueWith {
+  position: absolute;
+  top: 1px;
+  left: 131px;
+  width: 108px;
+  height: 17px;
+  transform: translate(-0.47100000000000364px, 0px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.text__gUxTl {
+  display: block;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 20px;
+  color: rgba(73, 84, 103, 1);
+}
+.separator2 {
+  transform: translate(0.4490000000000123px, -0.5px);
+  height: 1px;
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 245px;
+  right: 0px;
+}
+.chakraUiButton3 {
+  background: rgba(48, 129, 205, 1);
+  filter: drop-shadow(0px 1px 1px rgba(44, 54, 71, 0.1))
+    drop-shadow(0px 0px 0.5px rgba(44, 54, 71, 0.05));
+  width: auto;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-radius: 8px;
+  padding: 10.59px 161.86px 12.409px 160.139px;
+}
+.text__rdFCn {
+  display: block;
+  font-size: 14px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0em;
+  line-height: 16.799px;
+  color: rgba(255, 255, 255, 1);
+  position: relative;
+}
+.buttonGroup {
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 108px;
+  left: 0px;
+  right: 0px;
+  flex-direction: row;
+  width: auto;
+}
+.buttonGroup > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: calc(0px - 16px);
+  width: calc(100% + 16px);
+}
+.buttonGroup > :global(.__wab_flex-container) > *,
+.buttonGroup > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.buttonGroup > :global(.__wab_flex-container) > picture > img,
+.buttonGroup
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 16px;
+}
+.chakraUiButton4 {
+  background: rgba(255, 255, 255, 0.002);
+  box-shadow: inset 0px 0px 0px 1px rgba(202, 212, 223, 1);
+  filter: drop-shadow(0px 1px 1px rgba(44, 54, 71, 0.1))
+    drop-shadow(0px 0px 0.5px rgba(44, 54, 71, 0.05));
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-radius: 8px;
+  padding: 10px 46px;
+}
+.svg3 {
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.frame {
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.img {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  transform: translate(0.212px, 0px);
+  width: 19.574px;
+  height: 19.999px;
+  display: block !important;
+  top: 0px;
+  left: 0px;
+}
+.img > picture > img {
+  object-fit: cover;
+}
+.img > :global(.__wab_img-spacer) > img {
+  object-fit: cover;
+}
+.button {
+  background: rgba(255, 255, 255, 0.002);
+  box-shadow: inset 0px 0px 0px 1px rgba(202, 212, 223, 1),
+    0px 1px 2px 0px rgba(44, 54, 71, 0.1),
+    0px 0px 1px 0px rgba(44, 54, 71, 0.05);
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-radius: 8px;
+  padding: 10px 46px;
+}
+.svg4 {
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.svg___3KgYg {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #03a9f4;
+  width: 20px;
+  height: 20px;
+  display: block;
+  top: 0px;
+  left: 0px;
+}
+.button2 {
+  background: rgba(255, 255, 255, 0.002);
+  box-shadow: inset 0px 0px 0px 1px rgba(202, 212, 223, 1),
+    0px 1px 2px 0px rgba(44, 54, 71, 0.1),
+    0px 0px 1px 0px rgba(44, 54, 71, 0.05);
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-radius: 8px;
+  padding: 10px 46px;
+}
+.svg5 {
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.svg__hka7F {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #2d3748;
+  width: 20px;
+  height: 20px;
+  display: block;
+  top: 0px;
+  left: 0px;
+}
+.text__yUgqp {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  font-size: 40px;
+  min-width: 0;
+}
 .loginWithCentredForm:global(.__wab_instance) {
   max-width: 100%;
   object-fit: cover;
   position: relative;
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+.chakraUiContainer___1X4BC:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  background: #fbfcfd;
+  padding: 100px;
+}
+.chakraUiStack__oWju5:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.logo:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  width: 448px;
+  height: 48px;
+  color: #3182ce;
+}
+.chakraUiStack__dcBKz:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.chakraUiStack__iIQx3:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.chakraUiHeading__jAduY:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.text__uI3LQ {
+  position: relative;
+  font-family: 'Inter', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: rgba(22, 24, 34, 1);
+  text-align: center;
+  line-height: 38px;
+  letter-spacing: 0em;
+}
+.chakraUiHStack__ftZkj:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.chakraUiText__o1Udf:global(.__wab_instance) {
+  object-fit: cover;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(73, 84, 103, 1);
+  text-align: center;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+.text__aHtA {
+  position: relative;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(73, 84, 103, 1);
+  text-align: center;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+.chakraUiButton__rIa1B:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.text__hvO92 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.chakraUiBox__ck0Ri:global(.__wab_instance) {
+  object-fit: cover;
+  width: auto;
+  height: auto;
+  background: rgba(255, 255, 255, 1);
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  filter: blur(0px);
+  box-shadow: 0px 4px 16px 0px #0000001a;
+  border-radius: 12px;
+  padding: 32px 40px;
+}
+.chakraUiStack__fq0WL:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.chakraUiStack__e8Jg:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.chakraUiFormControl___7A0EB:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.chakraUiFormLabel__h9IOy:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.text__iy5VE {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.chakraUiInput__lFqb4:global(.__wab_instance) {
+  object-fit: cover;
+  width: 368px;
+  height: 40px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: inset 0px 0px 0px 1px rgba(225, 231, 239, 1);
+  border-radius: 8px;
+}
+.passwordField:global(.__wab_instance) {
+  object-fit: cover;
+  width: 368px;
+  height: 40px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: inset 0px 0px 0px 1px rgba(225, 231, 239, 1);
+  border-radius: 8px;
+}
+.chakraUiHStack___69HNb:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.chakraUiCheckbox___5O3Fi:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.text__z8Sa {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.chakraUiButton__uEn5Q:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.text__nObZs {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.chakraUiStack__q7Jlv:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.chakraUiButton__nNrCm:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.text___2FxaP {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.chakraUiHStack__yRn7:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.chakraUiDivider__sM2Kz:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.chakraUiText__qvKBz:global(.__wab_instance) {
+  object-fit: cover;
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  color: rgba(73, 84, 103, 1);
+  line-height: 20px;
+  letter-spacing: 0em;
+  width: 100%;
+  max-width: 133px;
+  min-width: 0;
+}
+.text__vEppB {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.chakraUiDivider__cwFvb:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.oAuthButtonGroup:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.text__dWni {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  font-size: 50px;
+  font-weight: 700;
+  min-width: 0;
 }
 .loginWithEmailOrProvider:global(.__wab_instance) {
   max-width: 100%;
@@ -79,17 +979,17 @@
   grid-column-start: 1;
   grid-column-end: -1;
   grid-template-columns:
-    1fr minmax(0, var(--plsmc-wide-chunk)) var(--plsmc-viewport-gap)
+    var(--plsmc-viewport-gap) 1fr minmax(0, var(--plsmc-wide-chunk))
     min(
       var(--plsmc-standard-width),
       calc(100% - var(--plsmc-viewport-gap) - var(--plsmc-viewport-gap))
     )
-    var(--plsmc-viewport-gap) minmax(0, var(--plsmc-wide-chunk)) 1fr;
+    minmax(0, var(--plsmc-wide-chunk)) 1fr var(--plsmc-viewport-gap);
   padding: 8px 0;
 }
 :where(.section > *) {
   grid-column: 4;
 }
-.text {
+.text__ymbTr {
   position: relative;
 }

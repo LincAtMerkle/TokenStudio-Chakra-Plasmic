@@ -11,14 +11,14 @@
 // Plasmic Project: nV7sRTPBx6ecWzFNNAWeQg
 // Component: sas7Dyyu6T
 
-import * as React from "react";
+import * as React from 'react';
 
-import Head from "next/head";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/router';
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
+import * as p from '@plasmicapp/react-web';
+import * as ph from '@plasmicapp/react-web/lib/host';
 
 import {
   hasVariant,
@@ -34,21 +34,21 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
-} from "@plasmicapp/react-web";
-import { Heading } from "@chakra-ui/react"; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
-import { RadioCardGroup } from "../../custom/chakraPro/Aplication/Form Elements/RadioCardGroup"; // plasmic-import: Hcz7qxxcjKH/codeComponent
-import { CheckboxCardGroup } from "../../custom/chakraPro/Aplication/Form Elements/CheckboxCardGroup"; // plasmic-import: h0k1Y8pUqQN/codeComponent
-import { RadioIconButtonGroup } from "../../custom/chakraPro/Aplication/Form Elements/RadioIconButtonGroup"; // plasmic-import: rAF3B97j9uF/codeComponent
-import { RadioButtonGroup } from "../../custom/chakraPro/Aplication/Form Elements/RadioButtonGroup"; // plasmic-import: U1QKOrLQ4bz/codeComponent
-import { DropZone } from "../../custom/chakraPro/Aplication/Form Elements/DropZone"; // plasmic-import: zT_lkH4L9yk/codeComponent
-import { FloatingInputLabel } from "../../custom/chakraPro/Aplication/Form Elements/FloatingInputLabel"; // plasmic-import: bZ3QvTI7POU/codeComponent
-import { CustomSelect } from "../../custom/chakraPro/Aplication/Form Elements/CustomSelect"; // plasmic-import: 0-B_ScD-fya/codeComponent
+  ensureGlobalVariants,
+} from '@plasmicapp/react-web';
+import { Heading } from '@chakra-ui/react'; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
+import { RadioCardGroup } from '../../chakra/chakraPro/Aplication/Form Elements/RadioCardGroup'; // plasmic-import: Hcz7qxxcjKH/codeComponent
+import { CheckboxCardGroup } from '../../chakra/chakraPro/Aplication/Form Elements/CheckboxCardGroup'; // plasmic-import: h0k1Y8pUqQN/codeComponent
+import { RadioIconButtonGroup } from '../../chakra/chakraPro/Aplication/Form Elements/RadioIconButtonGroup'; // plasmic-import: rAF3B97j9uF/codeComponent
+import { RadioButtonGroup } from '../../chakra/chakraPro/Aplication/Form Elements/RadioButtonGroup'; // plasmic-import: U1QKOrLQ4bz/codeComponent
+import { DropZone } from '../../chakra/chakraPro/Aplication/Form Elements/DropZone'; // plasmic-import: zT_lkH4L9yk/codeComponent
+import { FloatingInputLabel } from '../../chakra/chakraPro/Aplication/Form Elements/FloatingInputLabel'; // plasmic-import: bZ3QvTI7POU/codeComponent
+import { CustomSelect } from '../../chakra/chakraPro/Aplication/Form Elements/CustomSelect'; // plasmic-import: 0-B_ScD-fya/codeComponent
 
-import "@plasmicapp/react-web/lib/plasmic.css";
+import '@plasmicapp/react-web/lib/plasmic.css';
 
-import projectcss from "./plasmic_plasmic_poc_localhost.module.css"; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
-import sty from "./PlasmicFormElements.module.css"; // plasmic-import: sas7Dyyu6T/css
+import projectcss from './plasmic_plasmic_poc_localhost.module.css'; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
+import sty from './PlasmicFormElements.module.css'; // plasmic-import: sas7Dyyu6T/css
 
 export type PlasmicFormElements__VariantMembers = {};
 export type PlasmicFormElements__VariantsArgs = {};
@@ -60,7 +60,7 @@ type ArgPropType = keyof PlasmicFormElements__ArgsType;
 export const PlasmicFormElements__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicFormElements__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: p.Flex<'div'>;
   radioCardGroup?: p.Flex<typeof RadioCardGroup>;
   checkboxCardGroup?: p.Flex<typeof CheckboxCardGroup>;
   radioIconButtonGroup?: p.Flex<typeof RadioIconButtonGroup>;
@@ -100,7 +100,7 @@ function PlasmicFormElements__RenderFunc(props: {
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
@@ -121,7 +121,7 @@ function PlasmicFormElements__RenderFunc(props: {
 
       <div className={projectcss.plasmic_page_wrapper}>
         <div
-          data-plasmic-name={"root"}
+          data-plasmic-name={'root'}
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
@@ -135,9 +135,9 @@ function PlasmicFormElements__RenderFunc(props: {
           )}
         >
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__ykIcO)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__ykIcO)}
             noOfLines={1 as const}
-            size={"4xl" as const}
+            size={'4xl' as const}
           >
             <div
               className={classNames(
@@ -146,13 +146,13 @@ function PlasmicFormElements__RenderFunc(props: {
                 sty.text__shISu
               )}
             >
-              {"Form Elements"}
+              {'Form Elements'}
             </div>
           </Heading>
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__fo9ZC)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__fo9ZC)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -161,19 +161,19 @@ function PlasmicFormElements__RenderFunc(props: {
                 sty.text__eZaD
               )}
             >
-              {"Radio card group"}
+              {'Radio card group'}
             </div>
           </Heading>
           <RadioCardGroup
-            data-plasmic-name={"radioCardGroup"}
+            data-plasmic-name={'radioCardGroup'}
             data-plasmic-override={overrides.radioCardGroup}
-            className={classNames("__wab_instance", sty.radioCardGroup)}
+            className={classNames('__wab_instance', sty.radioCardGroup)}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__kqDpN)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__kqDpN)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -182,19 +182,19 @@ function PlasmicFormElements__RenderFunc(props: {
                 sty.text__cDRgL
               )}
             >
-              {"Checkbox card group"}
+              {'Checkbox card group'}
             </div>
           </Heading>
           <CheckboxCardGroup
-            data-plasmic-name={"checkboxCardGroup"}
+            data-plasmic-name={'checkboxCardGroup'}
             data-plasmic-override={overrides.checkboxCardGroup}
-            className={classNames("__wab_instance", sty.checkboxCardGroup)}
+            className={classNames('__wab_instance', sty.checkboxCardGroup)}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__hoo5J)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__hoo5J)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -203,19 +203,19 @@ function PlasmicFormElements__RenderFunc(props: {
                 sty.text__bfqTr
               )}
             >
-              {"Radio icon button group"}
+              {'Radio icon button group'}
             </div>
           </Heading>
           <RadioIconButtonGroup
-            data-plasmic-name={"radioIconButtonGroup"}
+            data-plasmic-name={'radioIconButtonGroup'}
             data-plasmic-override={overrides.radioIconButtonGroup}
-            className={classNames("__wab_instance", sty.radioIconButtonGroup)}
+            className={classNames('__wab_instance', sty.radioIconButtonGroup)}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__iiVw6)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__iiVw6)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -224,19 +224,19 @@ function PlasmicFormElements__RenderFunc(props: {
                 sty.text__jKHo
               )}
             >
-              {"Radio button group"}
+              {'Radio button group'}
             </div>
           </Heading>
           <RadioButtonGroup
-            data-plasmic-name={"radioButtonGroup"}
+            data-plasmic-name={'radioButtonGroup'}
             data-plasmic-override={overrides.radioButtonGroup}
-            className={classNames("__wab_instance", sty.radioButtonGroup)}
+            className={classNames('__wab_instance', sty.radioButtonGroup)}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__rLIyc)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__rLIyc)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -245,19 +245,19 @@ function PlasmicFormElements__RenderFunc(props: {
                 sty.text__hGzrK
               )}
             >
-              {"Drop zone"}
+              {'Drop zone'}
             </div>
           </Heading>
           <DropZone
-            data-plasmic-name={"dropZone"}
+            data-plasmic-name={'dropZone'}
             data-plasmic-override={overrides.dropZone}
-            className={classNames("__wab_instance", sty.dropZone)}
+            className={classNames('__wab_instance', sty.dropZone)}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__vPlpq)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__vPlpq)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -266,19 +266,19 @@ function PlasmicFormElements__RenderFunc(props: {
                 sty.text___3R6Ri
               )}
             >
-              {"Floating input label"}
+              {'Floating input label'}
             </div>
           </Heading>
           <FloatingInputLabel
-            data-plasmic-name={"floatingInputLabel"}
+            data-plasmic-name={'floatingInputLabel'}
             data-plasmic-override={overrides.floatingInputLabel}
-            className={classNames("__wab_instance", sty.floatingInputLabel)}
+            className={classNames('__wab_instance', sty.floatingInputLabel)}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__lQlpR)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__lQlpR)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -287,13 +287,13 @@ function PlasmicFormElements__RenderFunc(props: {
                 sty.text___8Ew1
               )}
             >
-              {"Custom select"}
+              {'Custom select'}
             </div>
           </Heading>
           <CustomSelect
-            data-plasmic-name={"customSelect"}
+            data-plasmic-name={'customSelect'}
             data-plasmic-override={overrides.customSelect}
-            className={classNames("__wab_instance", sty.customSelect)}
+            className={classNames('__wab_instance', sty.customSelect)}
           />
         </div>
       </div>
@@ -303,28 +303,28 @@ function PlasmicFormElements__RenderFunc(props: {
 
 const PlasmicDescendants = {
   root: [
-    "root",
-    "radioCardGroup",
-    "checkboxCardGroup",
-    "radioIconButtonGroup",
-    "radioButtonGroup",
-    "dropZone",
-    "floatingInputLabel",
-    "customSelect"
+    'root',
+    'radioCardGroup',
+    'checkboxCardGroup',
+    'radioIconButtonGroup',
+    'radioButtonGroup',
+    'dropZone',
+    'floatingInputLabel',
+    'customSelect',
   ],
-  radioCardGroup: ["radioCardGroup"],
-  checkboxCardGroup: ["checkboxCardGroup"],
-  radioIconButtonGroup: ["radioIconButtonGroup"],
-  radioButtonGroup: ["radioButtonGroup"],
-  dropZone: ["dropZone"],
-  floatingInputLabel: ["floatingInputLabel"],
-  customSelect: ["customSelect"]
+  radioCardGroup: ['radioCardGroup'],
+  checkboxCardGroup: ['checkboxCardGroup'],
+  radioIconButtonGroup: ['radioIconButtonGroup'],
+  radioButtonGroup: ['radioButtonGroup'],
+  dropZone: ['dropZone'],
+  floatingInputLabel: ['floatingInputLabel'],
+  customSelect: ['customSelect'],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  root: 'div';
   radioCardGroup: typeof RadioCardGroup;
   checkboxCardGroup: typeof CheckboxCardGroup;
   radioIconButtonGroup: typeof RadioIconButtonGroup;
@@ -334,7 +334,7 @@ type NodeDefaultElementType = {
   customSelect: typeof CustomSelect;
 };
 
-type ReservedPropsType = "variants" | "args" | "overrides";
+type ReservedPropsType = 'variants' | 'args' | 'overrides';
 type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicFormElements__OverridesType,
   DescendantsType<T>
@@ -370,7 +370,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicFormElements__ArgProps,
-          internalVariantPropNames: PlasmicFormElements__VariantProps
+          internalVariantPropNames: PlasmicFormElements__VariantProps,
         }),
       [props, nodeName]
     );
@@ -378,11 +378,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
-  if (nodeName === "root") {
-    func.displayName = "PlasmicFormElements";
+  if (nodeName === 'root') {
+    func.displayName = 'PlasmicFormElements';
   } else {
     func.displayName = `PlasmicFormElements.${nodeName}`;
   }
@@ -391,16 +391,16 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicFormElements = Object.assign(
   // Top-level PlasmicFormElements renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent('root'),
   {
     // Helper components rendering sub-elements
-    radioCardGroup: makeNodeComponent("radioCardGroup"),
-    checkboxCardGroup: makeNodeComponent("checkboxCardGroup"),
-    radioIconButtonGroup: makeNodeComponent("radioIconButtonGroup"),
-    radioButtonGroup: makeNodeComponent("radioButtonGroup"),
-    dropZone: makeNodeComponent("dropZone"),
-    floatingInputLabel: makeNodeComponent("floatingInputLabel"),
-    customSelect: makeNodeComponent("customSelect"),
+    radioCardGroup: makeNodeComponent('radioCardGroup'),
+    checkboxCardGroup: makeNodeComponent('checkboxCardGroup'),
+    radioIconButtonGroup: makeNodeComponent('radioIconButtonGroup'),
+    radioButtonGroup: makeNodeComponent('radioButtonGroup'),
+    dropZone: makeNodeComponent('dropZone'),
+    floatingInputLabel: makeNodeComponent('floatingInputLabel'),
+    customSelect: makeNodeComponent('customSelect'),
 
     // Metadata about props expected for PlasmicFormElements
     internalVariantProps: PlasmicFormElements__VariantProps,
@@ -408,11 +408,11 @@ export const PlasmicFormElements = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "",
-      description: "",
-      ogImageSrc: "",
-      canonical: ""
-    }
+      title: '',
+      description: '',
+      ogImageSrc: '',
+      canonical: '',
+    },
   }
 );
 

@@ -11,14 +11,14 @@
 // Plasmic Project: nV7sRTPBx6ecWzFNNAWeQg
 // Component: 1difr1CYPa
 
-import * as React from "react";
+import * as React from 'react';
 
-import Head from "next/head";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/router';
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
+import * as p from '@plasmicapp/react-web';
+import * as ph from '@plasmicapp/react-web/lib/host';
 
 import {
   hasVariant,
@@ -34,14 +34,14 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
-} from "@plasmicapp/react-web";
-import { LoginWithGoogleOrEmail } from "../../custom/chakraPro/Application/Authentication/LoginWithGoogleOrEmail"; // plasmic-import: o9rnxGtWcA/codeComponent
+  ensureGlobalVariants,
+} from '@plasmicapp/react-web';
+import { LoginWithGoogleOrEmail } from '../../chakra/chakraPro/Application/Authentication/LoginWithGoogleOrEmail'; // plasmic-import: o9rnxGtWcA/codeComponent
 
-import "@plasmicapp/react-web/lib/plasmic.css";
+import '@plasmicapp/react-web/lib/plasmic.css';
 
-import projectcss from "./plasmic_plasmic_poc_localhost.module.css"; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
-import sty from "./PlasmicLoginWithGoogleOrEmail.module.css"; // plasmic-import: 1difr1CYPa/css
+import projectcss from './plasmic_plasmic_poc_localhost.module.css'; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
+import sty from './PlasmicLoginWithGoogleOrEmail.module.css'; // plasmic-import: 1difr1CYPa/css
 
 export type PlasmicLoginWithGoogleOrEmail__VariantMembers = {};
 export type PlasmicLoginWithGoogleOrEmail__VariantsArgs = {};
@@ -54,7 +54,7 @@ type ArgPropType = keyof PlasmicLoginWithGoogleOrEmail__ArgsType;
 export const PlasmicLoginWithGoogleOrEmail__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicLoginWithGoogleOrEmail__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: p.Flex<'div'>;
   loginWithGoogleOrEmail?: p.Flex<typeof LoginWithGoogleOrEmail>;
 };
 
@@ -90,7 +90,7 @@ function PlasmicLoginWithGoogleOrEmail__RenderFunc(props: {
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
@@ -101,7 +101,7 @@ function PlasmicLoginWithGoogleOrEmail__RenderFunc(props: {
 
   return (
     <div
-      data-plasmic-name={"root"}
+      data-plasmic-name={'root'}
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
@@ -115,27 +115,27 @@ function PlasmicLoginWithGoogleOrEmail__RenderFunc(props: {
       )}
     >
       <LoginWithGoogleOrEmail
-        data-plasmic-name={"loginWithGoogleOrEmail"}
+        data-plasmic-name={'loginWithGoogleOrEmail'}
         data-plasmic-override={overrides.loginWithGoogleOrEmail}
-        className={classNames("__wab_instance", sty.loginWithGoogleOrEmail)}
+        className={classNames('__wab_instance', sty.loginWithGoogleOrEmail)}
       />
     </div>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  root: ["root", "loginWithGoogleOrEmail"],
-  loginWithGoogleOrEmail: ["loginWithGoogleOrEmail"]
+  root: ['root', 'loginWithGoogleOrEmail'],
+  loginWithGoogleOrEmail: ['loginWithGoogleOrEmail'],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  root: 'div';
   loginWithGoogleOrEmail: typeof LoginWithGoogleOrEmail;
 };
 
-type ReservedPropsType = "variants" | "args" | "overrides";
+type ReservedPropsType = 'variants' | 'args' | 'overrides';
 type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicLoginWithGoogleOrEmail__OverridesType,
   DescendantsType<T>
@@ -171,7 +171,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicLoginWithGoogleOrEmail__ArgProps,
-          internalVariantPropNames: PlasmicLoginWithGoogleOrEmail__VariantProps
+          internalVariantPropNames: PlasmicLoginWithGoogleOrEmail__VariantProps,
         }),
       [props, nodeName]
     );
@@ -179,11 +179,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
-  if (nodeName === "root") {
-    func.displayName = "PlasmicLoginWithGoogleOrEmail";
+  if (nodeName === 'root') {
+    func.displayName = 'PlasmicLoginWithGoogleOrEmail';
   } else {
     func.displayName = `PlasmicLoginWithGoogleOrEmail.${nodeName}`;
   }
@@ -192,14 +192,14 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicLoginWithGoogleOrEmail = Object.assign(
   // Top-level PlasmicLoginWithGoogleOrEmail renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent('root'),
   {
     // Helper components rendering sub-elements
-    loginWithGoogleOrEmail: makeNodeComponent("loginWithGoogleOrEmail"),
+    loginWithGoogleOrEmail: makeNodeComponent('loginWithGoogleOrEmail'),
 
     // Metadata about props expected for PlasmicLoginWithGoogleOrEmail
     internalVariantProps: PlasmicLoginWithGoogleOrEmail__VariantProps,
-    internalArgProps: PlasmicLoginWithGoogleOrEmail__ArgProps
+    internalArgProps: PlasmicLoginWithGoogleOrEmail__ArgProps,
   }
 );
 

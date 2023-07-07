@@ -11,14 +11,14 @@
 // Plasmic Project: nV7sRTPBx6ecWzFNNAWeQg
 // Component: FlGjhk8wtu
 
-import * as React from "react";
+import * as React from 'react';
 
-import Head from "next/head";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/router';
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
+import * as p from '@plasmicapp/react-web';
+import * as ph from '@plasmicapp/react-web/lib/host';
 
 import {
   hasVariant,
@@ -34,16 +34,16 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
-} from "@plasmicapp/react-web";
-import { Heading } from "@chakra-ui/react"; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
-import { TabsWithLineVertical } from "../../custom/chakraPro/Application/Tabs/TabsWithLineVertical"; // plasmic-import: pZWzC-ylRw0i/codeComponent
-import { TabsWithLine } from "../../custom/chakraPro/Application/Tabs/TabsWithLine"; // plasmic-import: Grknh1Q__zVF/codeComponent
+  ensureGlobalVariants,
+} from '@plasmicapp/react-web';
+import { Heading } from '@chakra-ui/react'; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
+import { TabsWithLineVertical } from '../../chakra/chakraPro/Application/Tabs/TabsWithLineVertical'; // plasmic-import: pZWzC-ylRw0i/codeComponent
+import { TabsWithLine } from '../../chakra/chakraPro/Application/Tabs/TabsWithLine'; // plasmic-import: Grknh1Q__zVF/codeComponent
 
-import "@plasmicapp/react-web/lib/plasmic.css";
+import '@plasmicapp/react-web/lib/plasmic.css';
 
-import projectcss from "./plasmic_plasmic_poc_localhost.module.css"; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
-import sty from "./PlasmicTabs.module.css"; // plasmic-import: FlGjhk8wtu/css
+import projectcss from './plasmic_plasmic_poc_localhost.module.css'; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
+import sty from './PlasmicTabs.module.css'; // plasmic-import: FlGjhk8wtu/css
 
 export type PlasmicTabs__VariantMembers = {};
 export type PlasmicTabs__VariantsArgs = {};
@@ -55,7 +55,7 @@ type ArgPropType = keyof PlasmicTabs__ArgsType;
 export const PlasmicTabs__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicTabs__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: p.Flex<'div'>;
   tabsWithLineVertical?: p.Flex<typeof TabsWithLineVertical>;
   tabsWithLine?: p.Flex<typeof TabsWithLine>;
 };
@@ -90,7 +90,7 @@ function PlasmicTabs__RenderFunc(props: {
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
@@ -111,7 +111,7 @@ function PlasmicTabs__RenderFunc(props: {
 
       <div className={projectcss.plasmic_page_wrapper}>
         <div
-          data-plasmic-name={"root"}
+          data-plasmic-name={'root'}
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
@@ -125,9 +125,9 @@ function PlasmicTabs__RenderFunc(props: {
           )}
         >
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__q7T3O)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__q7T3O)}
             noOfLines={1 as const}
-            size={"4xl" as const}
+            size={'4xl' as const}
           >
             <div
               className={classNames(
@@ -136,13 +136,13 @@ function PlasmicTabs__RenderFunc(props: {
                 sty.text__gPvY
               )}
             >
-              {"Tabs"}
+              {'Tabs'}
             </div>
           </Heading>
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__i372Y)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__i372Y)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -151,19 +151,19 @@ function PlasmicTabs__RenderFunc(props: {
                 sty.text__tc6E7
               )}
             >
-              {"Tabs with line vertical"}
+              {'Tabs with line vertical'}
             </div>
           </Heading>
           <TabsWithLineVertical
-            data-plasmic-name={"tabsWithLineVertical"}
+            data-plasmic-name={'tabsWithLineVertical'}
             data-plasmic-override={overrides.tabsWithLineVertical}
-            className={classNames("__wab_instance", sty.tabsWithLineVertical)}
+            className={classNames('__wab_instance', sty.tabsWithLineVertical)}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__rAaMp)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__rAaMp)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -172,13 +172,13 @@ function PlasmicTabs__RenderFunc(props: {
                 sty.text__xkda9
               )}
             >
-              {"Tabs with line"}
+              {'Tabs with line'}
             </div>
           </Heading>
           <TabsWithLine
-            data-plasmic-name={"tabsWithLine"}
+            data-plasmic-name={'tabsWithLine'}
             data-plasmic-override={overrides.tabsWithLine}
-            className={classNames("__wab_instance", sty.tabsWithLine)}
+            className={classNames('__wab_instance', sty.tabsWithLine)}
           />
         </div>
       </div>
@@ -187,20 +187,20 @@ function PlasmicTabs__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "tabsWithLineVertical", "tabsWithLine"],
-  tabsWithLineVertical: ["tabsWithLineVertical"],
-  tabsWithLine: ["tabsWithLine"]
+  root: ['root', 'tabsWithLineVertical', 'tabsWithLine'],
+  tabsWithLineVertical: ['tabsWithLineVertical'],
+  tabsWithLine: ['tabsWithLine'],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  root: 'div';
   tabsWithLineVertical: typeof TabsWithLineVertical;
   tabsWithLine: typeof TabsWithLine;
 };
 
-type ReservedPropsType = "variants" | "args" | "overrides";
+type ReservedPropsType = 'variants' | 'args' | 'overrides';
 type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicTabs__OverridesType,
   DescendantsType<T>
@@ -236,7 +236,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicTabs__ArgProps,
-          internalVariantPropNames: PlasmicTabs__VariantProps
+          internalVariantPropNames: PlasmicTabs__VariantProps,
         }),
       [props, nodeName]
     );
@@ -244,11 +244,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
-  if (nodeName === "root") {
-    func.displayName = "PlasmicTabs";
+  if (nodeName === 'root') {
+    func.displayName = 'PlasmicTabs';
   } else {
     func.displayName = `PlasmicTabs.${nodeName}`;
   }
@@ -257,11 +257,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicTabs = Object.assign(
   // Top-level PlasmicTabs renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent('root'),
   {
     // Helper components rendering sub-elements
-    tabsWithLineVertical: makeNodeComponent("tabsWithLineVertical"),
-    tabsWithLine: makeNodeComponent("tabsWithLine"),
+    tabsWithLineVertical: makeNodeComponent('tabsWithLineVertical'),
+    tabsWithLine: makeNodeComponent('tabsWithLine'),
 
     // Metadata about props expected for PlasmicTabs
     internalVariantProps: PlasmicTabs__VariantProps,
@@ -269,11 +269,11 @@ export const PlasmicTabs = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "",
-      description: "",
-      ogImageSrc: "",
-      canonical: ""
-    }
+      title: '',
+      description: '',
+      ogImageSrc: '',
+      canonical: '',
+    },
   }
 );
 

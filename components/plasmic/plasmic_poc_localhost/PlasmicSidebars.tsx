@@ -11,14 +11,14 @@
 // Plasmic Project: nV7sRTPBx6ecWzFNNAWeQg
 // Component: kskSLsQBDs
 
-import * as React from "react";
+import * as React from 'react';
 
-import Head from "next/head";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/router';
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
+import * as p from '@plasmicapp/react-web';
+import * as ph from '@plasmicapp/react-web/lib/host';
 
 import {
   hasVariant,
@@ -34,14 +34,14 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
-} from "@plasmicapp/react-web";
-import { Heading } from "@chakra-ui/react"; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
+  ensureGlobalVariants,
+} from '@plasmicapp/react-web';
+import { Heading } from '@chakra-ui/react'; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
 
-import "@plasmicapp/react-web/lib/plasmic.css";
+import '@plasmicapp/react-web/lib/plasmic.css';
 
-import projectcss from "./plasmic_plasmic_poc_localhost.module.css"; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
-import sty from "./PlasmicSidebars.module.css"; // plasmic-import: kskSLsQBDs/css
+import projectcss from './plasmic_plasmic_poc_localhost.module.css'; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
+import sty from './PlasmicSidebars.module.css'; // plasmic-import: kskSLsQBDs/css
 
 export type PlasmicSidebars__VariantMembers = {};
 export type PlasmicSidebars__VariantsArgs = {};
@@ -53,7 +53,7 @@ type ArgPropType = keyof PlasmicSidebars__ArgsType;
 export const PlasmicSidebars__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicSidebars__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: p.Flex<'div'>;
 };
 
 export interface DefaultSidebarsProps {}
@@ -86,7 +86,7 @@ function PlasmicSidebars__RenderFunc(props: {
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
@@ -107,7 +107,7 @@ function PlasmicSidebars__RenderFunc(props: {
 
       <div className={projectcss.plasmic_page_wrapper}>
         <div
-          data-plasmic-name={"root"}
+          data-plasmic-name={'root'}
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
@@ -122,11 +122,11 @@ function PlasmicSidebars__RenderFunc(props: {
         >
           <Heading
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.chakraUiHeading___1ZPeU
             )}
             noOfLines={1 as const}
-            size={"4xl" as const}
+            size={'4xl' as const}
           >
             <div
               className={classNames(
@@ -136,14 +136,14 @@ function PlasmicSidebars__RenderFunc(props: {
               )}
             >
               {
-                "Basic text writing, including headings, body text, lists, and more."
+                'Basic text writing, including headings, body text, lists, and more.'
               }
             </div>
           </Heading>
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__k4HaU)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__k4HaU)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -153,14 +153,14 @@ function PlasmicSidebars__RenderFunc(props: {
               )}
             >
               {
-                "Basic text writing, including headings, body text, lists, and more."
+                'Basic text writing, including headings, body text, lists, and more.'
               }
             </div>
           </Heading>
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__akdj)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__akdj)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -170,14 +170,14 @@ function PlasmicSidebars__RenderFunc(props: {
               )}
             >
               {
-                "Basic text writing, including headings, body text, lists, and more."
+                'Basic text writing, including headings, body text, lists, and more.'
               }
             </div>
           </Heading>
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__xaBt8)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__xaBt8)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -187,14 +187,14 @@ function PlasmicSidebars__RenderFunc(props: {
               )}
             >
               {
-                "Basic text writing, including headings, body text, lists, and more."
+                'Basic text writing, including headings, body text, lists, and more.'
               }
             </div>
           </Heading>
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__eoYss)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__eoYss)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -204,7 +204,7 @@ function PlasmicSidebars__RenderFunc(props: {
               )}
             >
               {
-                "Basic text writing, including headings, body text, lists, and more."
+                'Basic text writing, including headings, body text, lists, and more.'
               }
             </div>
           </Heading>
@@ -215,16 +215,16 @@ function PlasmicSidebars__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root"]
+  root: ['root'],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  root: 'div';
 };
 
-type ReservedPropsType = "variants" | "args" | "overrides";
+type ReservedPropsType = 'variants' | 'args' | 'overrides';
 type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicSidebars__OverridesType,
   DescendantsType<T>
@@ -260,7 +260,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicSidebars__ArgProps,
-          internalVariantPropNames: PlasmicSidebars__VariantProps
+          internalVariantPropNames: PlasmicSidebars__VariantProps,
         }),
       [props, nodeName]
     );
@@ -268,11 +268,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
-  if (nodeName === "root") {
-    func.displayName = "PlasmicSidebars";
+  if (nodeName === 'root') {
+    func.displayName = 'PlasmicSidebars';
   } else {
     func.displayName = `PlasmicSidebars.${nodeName}`;
   }
@@ -281,7 +281,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicSidebars = Object.assign(
   // Top-level PlasmicSidebars renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent('root'),
   {
     // Helper components rendering sub-elements
 
@@ -291,11 +291,11 @@ export const PlasmicSidebars = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "",
-      description: "",
-      ogImageSrc: "",
-      canonical: ""
-    }
+      title: '',
+      description: '',
+      ogImageSrc: '',
+      canonical: '',
+    },
   }
 );
 

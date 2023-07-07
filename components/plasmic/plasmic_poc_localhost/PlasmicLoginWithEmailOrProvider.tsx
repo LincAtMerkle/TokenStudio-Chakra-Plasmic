@@ -11,14 +11,14 @@
 // Plasmic Project: nV7sRTPBx6ecWzFNNAWeQg
 // Component: Sivc4-Ha02
 
-import * as React from "react";
+import * as React from 'react';
 
-import Head from "next/head";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/router';
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
+import * as p from '@plasmicapp/react-web';
+import * as ph from '@plasmicapp/react-web/lib/host';
 
 import {
   hasVariant,
@@ -34,14 +34,14 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
-} from "@plasmicapp/react-web";
-import { LoginWithEmailOrProvider } from "../../custom/chakraPro/Application/Authentication/LoginWithEmailOrProvider"; // plasmic-import: PtPeV_aiJw/codeComponent
+  ensureGlobalVariants,
+} from '@plasmicapp/react-web';
+import { LoginWithEmailOrProvider } from '../../chakra/chakraPro/Application/Authentication/LoginWithEmailOrProvider'; // plasmic-import: PtPeV_aiJw/codeComponent
 
-import "@plasmicapp/react-web/lib/plasmic.css";
+import '@plasmicapp/react-web/lib/plasmic.css';
 
-import projectcss from "./plasmic_plasmic_poc_localhost.module.css"; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
-import sty from "./PlasmicLoginWithEmailOrProvider.module.css"; // plasmic-import: Sivc4-Ha02/css
+import projectcss from './plasmic_plasmic_poc_localhost.module.css'; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
+import sty from './PlasmicLoginWithEmailOrProvider.module.css'; // plasmic-import: Sivc4-Ha02/css
 
 export type PlasmicLoginWithEmailOrProvider__VariantMembers = {};
 export type PlasmicLoginWithEmailOrProvider__VariantsArgs = {};
@@ -55,7 +55,7 @@ export const PlasmicLoginWithEmailOrProvider__ArgProps =
   new Array<ArgPropType>();
 
 export type PlasmicLoginWithEmailOrProvider__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: p.Flex<'div'>;
   loginWithEmailOrProvider?: p.Flex<typeof LoginWithEmailOrProvider>;
 };
 
@@ -91,7 +91,7 @@ function PlasmicLoginWithEmailOrProvider__RenderFunc(props: {
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
@@ -102,7 +102,7 @@ function PlasmicLoginWithEmailOrProvider__RenderFunc(props: {
 
   return (
     <div
-      data-plasmic-name={"root"}
+      data-plasmic-name={'root'}
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
@@ -116,27 +116,27 @@ function PlasmicLoginWithEmailOrProvider__RenderFunc(props: {
       )}
     >
       <LoginWithEmailOrProvider
-        data-plasmic-name={"loginWithEmailOrProvider"}
+        data-plasmic-name={'loginWithEmailOrProvider'}
         data-plasmic-override={overrides.loginWithEmailOrProvider}
-        className={classNames("__wab_instance", sty.loginWithEmailOrProvider)}
+        className={classNames('__wab_instance', sty.loginWithEmailOrProvider)}
       />
     </div>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  root: ["root", "loginWithEmailOrProvider"],
-  loginWithEmailOrProvider: ["loginWithEmailOrProvider"]
+  root: ['root', 'loginWithEmailOrProvider'],
+  loginWithEmailOrProvider: ['loginWithEmailOrProvider'],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  root: 'div';
   loginWithEmailOrProvider: typeof LoginWithEmailOrProvider;
 };
 
-type ReservedPropsType = "variants" | "args" | "overrides";
+type ReservedPropsType = 'variants' | 'args' | 'overrides';
 type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicLoginWithEmailOrProvider__OverridesType,
   DescendantsType<T>
@@ -173,7 +173,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicLoginWithEmailOrProvider__ArgProps,
           internalVariantPropNames:
-            PlasmicLoginWithEmailOrProvider__VariantProps
+            PlasmicLoginWithEmailOrProvider__VariantProps,
         }),
       [props, nodeName]
     );
@@ -181,11 +181,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
-  if (nodeName === "root") {
-    func.displayName = "PlasmicLoginWithEmailOrProvider";
+  if (nodeName === 'root') {
+    func.displayName = 'PlasmicLoginWithEmailOrProvider';
   } else {
     func.displayName = `PlasmicLoginWithEmailOrProvider.${nodeName}`;
   }
@@ -194,14 +194,14 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicLoginWithEmailOrProvider = Object.assign(
   // Top-level PlasmicLoginWithEmailOrProvider renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent('root'),
   {
     // Helper components rendering sub-elements
-    loginWithEmailOrProvider: makeNodeComponent("loginWithEmailOrProvider"),
+    loginWithEmailOrProvider: makeNodeComponent('loginWithEmailOrProvider'),
 
     // Metadata about props expected for PlasmicLoginWithEmailOrProvider
     internalVariantProps: PlasmicLoginWithEmailOrProvider__VariantProps,
-    internalArgProps: PlasmicLoginWithEmailOrProvider__ArgProps
+    internalArgProps: PlasmicLoginWithEmailOrProvider__ArgProps,
   }
 );
 

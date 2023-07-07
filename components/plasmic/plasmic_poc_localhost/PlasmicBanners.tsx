@@ -11,14 +11,14 @@
 // Plasmic Project: nV7sRTPBx6ecWzFNNAWeQg
 // Component: qJIgrPkskm
 
-import * as React from "react";
+import * as React from 'react';
 
-import Head from "next/head";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/router';
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
+import * as p from '@plasmicapp/react-web';
+import * as ph from '@plasmicapp/react-web/lib/host';
 
 import {
   hasVariant,
@@ -34,27 +34,27 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
-} from "@plasmicapp/react-web";
-import { BannerWithButton } from "../../custom/chakraPro/Application/Banner/BannerWithButton"; // plasmic-import: aUw-sqA_-N/codeComponent
-import { BannerWithTwoButtonsOnAccent } from "../../custom/chakraPro/Application/Banner/BannerWithTwoButtonsOnAccent"; // plasmic-import: dYtiLDCItAk/codeComponent
-import { BannerWithTwoButtonsFloatingOnAccent } from "../../custom/chakraPro/Application/Banner/BannerWithTwoButtonsFloatingOnAccent"; // plasmic-import: K-33e-QJIN2/codeComponent
-import { BannerWithTextOnAccent } from "../../custom/chakraPro/Application/Banner/BannerWithTextOnAccent"; // plasmic-import: wcXJjJrvsBo/codeComponent
-import { BannerWithTextFloatingOnAccent } from "../../custom/chakraPro/Application/Banner/BannerWithTextFloatingOnAccent"; // plasmic-import: 04fdUJ81yni/codeComponent
-import { BannerWithButtonFloating } from "../../custom/chakraPro/Application/Banner/BannerWithButtonFloating"; // plasmic-import: TqJg85CwVc/codeComponent
-import { BannerWithFormOnAccent } from "../../custom/chakraPro/Application/Banner/BannerWithFormOnAccent"; // plasmic-import: _McpO7JTBwY/codeComponent
-import { BannerWithFormFloatingOnAccent } from "../../custom/chakraPro/Application/Banner/BannerWithFormFloatingOnAccent"; // plasmic-import: LBeeJweHJIG/codeComponent
-import { BannerWithTwoButtonsFloating } from "../../custom/chakraPro/Application/Banner/BannerWithTwoButtonsFloating"; // plasmic-import: _uIVCSIoRs0/codeComponent
-import { BannerWithTwoButtons } from "../../custom/chakraPro/Application/Banner/BannerWithTwoButtons"; // plasmic-import: IpMaBoz9L-O/codeComponent
-import { BannerWithTextFloating } from "../../custom/chakraPro/Application/Banner/BannerWithTextFloating"; // plasmic-import: Dos_fYLdW1p/codeComponent
-import { BannerWithText } from "../../custom/chakraPro/Application/Banner/BannerWithText"; // plasmic-import: wywxmuaBofJ/codeComponent
-import { BannerWithFormFloating } from "../../custom/chakraPro/Application/Banner/BannerWithFormFloating"; // plasmic-import: M9EoEQH9HF/codeComponent
-import { BannerWithForm } from "../../custom/chakraPro/Application/Banner/BannerWithForm"; // plasmic-import: 5kfD9qT8tF/codeComponent
+  ensureGlobalVariants,
+} from '@plasmicapp/react-web';
+import { BannerWithButton } from '../../chakra/chakraPro/Application/Banner/BannerWithButton'; // plasmic-import: aUw-sqA_-N/codeComponent
+import { BannerWithTwoButtonsOnAccent } from '../../chakra/chakraPro/Application/Banner/BannerWithTwoButtonsOnAccent'; // plasmic-import: dYtiLDCItAk/codeComponent
+import { BannerWithTwoButtonsFloatingOnAccent } from '../../chakra/chakraPro/Application/Banner/BannerWithTwoButtonsFloatingOnAccent'; // plasmic-import: K-33e-QJIN2/codeComponent
+import { BannerWithTextOnAccent } from '../../chakra/chakraPro/Application/Banner/BannerWithTextOnAccent'; // plasmic-import: wcXJjJrvsBo/codeComponent
+import { BannerWithTextFloatingOnAccent } from '../../chakra/chakraPro/Application/Banner/BannerWithTextFloatingOnAccent'; // plasmic-import: 04fdUJ81yni/codeComponent
+import { BannerWithButtonFloating } from '../../chakra/chakraPro/Application/Banner/BannerWithButtonFloating'; // plasmic-import: TqJg85CwVc/codeComponent
+import { BannerWithFormOnAccent } from '../../chakra/chakraPro/Application/Banner/BannerWithFormOnAccent'; // plasmic-import: _McpO7JTBwY/codeComponent
+import { BannerWithFormFloatingOnAccent } from '../../chakra/chakraPro/Application/Banner/BannerWithFormFloatingOnAccent'; // plasmic-import: LBeeJweHJIG/codeComponent
+import { BannerWithTwoButtonsFloating } from '../../chakra/chakraPro/Application/Banner/BannerWithTwoButtonsFloating'; // plasmic-import: _uIVCSIoRs0/codeComponent
+import { BannerWithTwoButtons } from '../../chakra/chakraPro/Application/Banner/BannerWithTwoButtons'; // plasmic-import: IpMaBoz9L-O/codeComponent
+import { BannerWithTextFloating } from '../../chakra/chakraPro/Application/Banner/BannerWithTextFloating'; // plasmic-import: Dos_fYLdW1p/codeComponent
+import { BannerWithText } from '../../chakra/chakraPro/Application/Banner/BannerWithText'; // plasmic-import: wywxmuaBofJ/codeComponent
+import { BannerWithFormFloating } from '../../chakra/chakraPro/Application/Banner/BannerWithFormFloating'; // plasmic-import: M9EoEQH9HF/codeComponent
+import { BannerWithForm } from '../../chakra/chakraPro/Application/Banner/BannerWithForm'; // plasmic-import: 5kfD9qT8tF/codeComponent
 
-import "@plasmicapp/react-web/lib/plasmic.css";
+import '@plasmicapp/react-web/lib/plasmic.css';
 
-import projectcss from "./plasmic_plasmic_poc_localhost.module.css"; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
-import sty from "./PlasmicBanners.module.css"; // plasmic-import: qJIgrPkskm/css
+import projectcss from './plasmic_plasmic_poc_localhost.module.css'; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
+import sty from './PlasmicBanners.module.css'; // plasmic-import: qJIgrPkskm/css
 
 export type PlasmicBanners__VariantMembers = {};
 export type PlasmicBanners__VariantsArgs = {};
@@ -66,7 +66,7 @@ type ArgPropType = keyof PlasmicBanners__ArgsType;
 export const PlasmicBanners__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicBanners__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: p.Flex<'div'>;
   bannerWithButton?: p.Flex<typeof BannerWithButton>;
   bannerWithTwoButtonsOnAccent?: p.Flex<typeof BannerWithTwoButtonsOnAccent>;
   bannerWithTwoButtonsFloatingOnAccent?: p.Flex<
@@ -76,7 +76,7 @@ export type PlasmicBanners__OverridesType = {
   bannerWithTextFloatingOnAccent?: p.Flex<
     typeof BannerWithTextFloatingOnAccent
   >;
-  text?: p.Flex<"div">;
+  text?: p.Flex<'div'>;
   bannerWithFormOnAccent?: p.Flex<typeof BannerWithFormOnAccent>;
   bannerWithFormFloatingOnAccent?: p.Flex<
     typeof BannerWithFormFloatingOnAccent
@@ -119,7 +119,7 @@ function PlasmicBanners__RenderFunc(props: {
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
@@ -140,7 +140,7 @@ function PlasmicBanners__RenderFunc(props: {
 
       <div className={projectcss.plasmic_page_wrapper}>
         <div
-          data-plasmic-name={"root"}
+          data-plasmic-name={'root'}
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
@@ -154,55 +154,55 @@ function PlasmicBanners__RenderFunc(props: {
           )}
         >
           <BannerWithButton
-            data-plasmic-name={"bannerWithButton"}
+            data-plasmic-name={'bannerWithButton'}
             data-plasmic-override={overrides.bannerWithButton}
-            className={classNames("__wab_instance", sty.bannerWithButton)}
+            className={classNames('__wab_instance', sty.bannerWithButton)}
           />
 
           <BannerWithTwoButtonsOnAccent
-            data-plasmic-name={"bannerWithTwoButtonsOnAccent"}
+            data-plasmic-name={'bannerWithTwoButtonsOnAccent'}
             data-plasmic-override={overrides.bannerWithTwoButtonsOnAccent}
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.bannerWithTwoButtonsOnAccent
             )}
           />
 
           <BannerWithTwoButtonsFloatingOnAccent
-            data-plasmic-name={"bannerWithTwoButtonsFloatingOnAccent"}
+            data-plasmic-name={'bannerWithTwoButtonsFloatingOnAccent'}
             data-plasmic-override={
               overrides.bannerWithTwoButtonsFloatingOnAccent
             }
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.bannerWithTwoButtonsFloatingOnAccent
             )}
           />
 
           <BannerWithTextOnAccent
-            data-plasmic-name={"bannerWithTextOnAccent"}
+            data-plasmic-name={'bannerWithTextOnAccent'}
             data-plasmic-override={overrides.bannerWithTextOnAccent}
-            className={classNames("__wab_instance", sty.bannerWithTextOnAccent)}
+            className={classNames('__wab_instance', sty.bannerWithTextOnAccent)}
           />
 
           <BannerWithTextFloatingOnAccent
-            data-plasmic-name={"bannerWithTextFloatingOnAccent"}
+            data-plasmic-name={'bannerWithTextFloatingOnAccent'}
             data-plasmic-override={overrides.bannerWithTextFloatingOnAccent}
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.bannerWithTextFloatingOnAccent
             )}
           />
 
           <BannerWithButtonFloating
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.bannerWithButtonFloating__z72Ne
             )}
           />
 
           <div
-            data-plasmic-name={"text"}
+            data-plasmic-name={'text'}
             data-plasmic-override={overrides.text}
             className={classNames(
               projectcss.all,
@@ -210,65 +210,65 @@ function PlasmicBanners__RenderFunc(props: {
               sty.text
             )}
           >
-            {"Banner with button on accent"}
+            {'Banner with button on accent'}
           </div>
           <BannerWithFormOnAccent
-            data-plasmic-name={"bannerWithFormOnAccent"}
+            data-plasmic-name={'bannerWithFormOnAccent'}
             data-plasmic-override={overrides.bannerWithFormOnAccent}
-            className={classNames("__wab_instance", sty.bannerWithFormOnAccent)}
+            className={classNames('__wab_instance', sty.bannerWithFormOnAccent)}
           />
 
           <BannerWithFormFloatingOnAccent
-            data-plasmic-name={"bannerWithFormFloatingOnAccent"}
+            data-plasmic-name={'bannerWithFormFloatingOnAccent'}
             data-plasmic-override={overrides.bannerWithFormFloatingOnAccent}
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.bannerWithFormFloatingOnAccent
             )}
           />
 
           <BannerWithTwoButtonsFloating
-            data-plasmic-name={"bannerWithTwoButtonsFloating"}
+            data-plasmic-name={'bannerWithTwoButtonsFloating'}
             data-plasmic-override={overrides.bannerWithTwoButtonsFloating}
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.bannerWithTwoButtonsFloating
             )}
           />
 
           <BannerWithTwoButtons
-            data-plasmic-name={"bannerWithTwoButtons"}
+            data-plasmic-name={'bannerWithTwoButtons'}
             data-plasmic-override={overrides.bannerWithTwoButtons}
-            className={classNames("__wab_instance", sty.bannerWithTwoButtons)}
+            className={classNames('__wab_instance', sty.bannerWithTwoButtons)}
           />
 
           <BannerWithTextFloating
-            data-plasmic-name={"bannerWithTextFloating"}
+            data-plasmic-name={'bannerWithTextFloating'}
             data-plasmic-override={overrides.bannerWithTextFloating}
-            className={classNames("__wab_instance", sty.bannerWithTextFloating)}
+            className={classNames('__wab_instance', sty.bannerWithTextFloating)}
           />
 
           <BannerWithText
-            data-plasmic-name={"bannerWithText"}
+            data-plasmic-name={'bannerWithText'}
             data-plasmic-override={overrides.bannerWithText}
-            className={classNames("__wab_instance", sty.bannerWithText)}
+            className={classNames('__wab_instance', sty.bannerWithText)}
           />
 
           <BannerWithFormFloating
-            data-plasmic-name={"bannerWithFormFloating"}
+            data-plasmic-name={'bannerWithFormFloating'}
             data-plasmic-override={overrides.bannerWithFormFloating}
-            className={classNames("__wab_instance", sty.bannerWithFormFloating)}
+            className={classNames('__wab_instance', sty.bannerWithFormFloating)}
           />
 
           <BannerWithForm
-            data-plasmic-name={"bannerWithForm"}
+            data-plasmic-name={'bannerWithForm'}
             data-plasmic-override={overrides.bannerWithForm}
-            className={classNames("__wab_instance", sty.bannerWithForm)}
+            className={classNames('__wab_instance', sty.bannerWithForm)}
           />
 
           <BannerWithButtonFloating
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.bannerWithButtonFloating__xlm0E
             )}
           />
@@ -280,50 +280,50 @@ function PlasmicBanners__RenderFunc(props: {
 
 const PlasmicDescendants = {
   root: [
-    "root",
-    "bannerWithButton",
-    "bannerWithTwoButtonsOnAccent",
-    "bannerWithTwoButtonsFloatingOnAccent",
-    "bannerWithTextOnAccent",
-    "bannerWithTextFloatingOnAccent",
-    "text",
-    "bannerWithFormOnAccent",
-    "bannerWithFormFloatingOnAccent",
-    "bannerWithTwoButtonsFloating",
-    "bannerWithTwoButtons",
-    "bannerWithTextFloating",
-    "bannerWithText",
-    "bannerWithFormFloating",
-    "bannerWithForm"
+    'root',
+    'bannerWithButton',
+    'bannerWithTwoButtonsOnAccent',
+    'bannerWithTwoButtonsFloatingOnAccent',
+    'bannerWithTextOnAccent',
+    'bannerWithTextFloatingOnAccent',
+    'text',
+    'bannerWithFormOnAccent',
+    'bannerWithFormFloatingOnAccent',
+    'bannerWithTwoButtonsFloating',
+    'bannerWithTwoButtons',
+    'bannerWithTextFloating',
+    'bannerWithText',
+    'bannerWithFormFloating',
+    'bannerWithForm',
   ],
-  bannerWithButton: ["bannerWithButton"],
-  bannerWithTwoButtonsOnAccent: ["bannerWithTwoButtonsOnAccent"],
+  bannerWithButton: ['bannerWithButton'],
+  bannerWithTwoButtonsOnAccent: ['bannerWithTwoButtonsOnAccent'],
   bannerWithTwoButtonsFloatingOnAccent: [
-    "bannerWithTwoButtonsFloatingOnAccent"
+    'bannerWithTwoButtonsFloatingOnAccent',
   ],
-  bannerWithTextOnAccent: ["bannerWithTextOnAccent"],
-  bannerWithTextFloatingOnAccent: ["bannerWithTextFloatingOnAccent"],
-  text: ["text"],
-  bannerWithFormOnAccent: ["bannerWithFormOnAccent"],
-  bannerWithFormFloatingOnAccent: ["bannerWithFormFloatingOnAccent"],
-  bannerWithTwoButtonsFloating: ["bannerWithTwoButtonsFloating"],
-  bannerWithTwoButtons: ["bannerWithTwoButtons"],
-  bannerWithTextFloating: ["bannerWithTextFloating"],
-  bannerWithText: ["bannerWithText"],
-  bannerWithFormFloating: ["bannerWithFormFloating"],
-  bannerWithForm: ["bannerWithForm"]
+  bannerWithTextOnAccent: ['bannerWithTextOnAccent'],
+  bannerWithTextFloatingOnAccent: ['bannerWithTextFloatingOnAccent'],
+  text: ['text'],
+  bannerWithFormOnAccent: ['bannerWithFormOnAccent'],
+  bannerWithFormFloatingOnAccent: ['bannerWithFormFloatingOnAccent'],
+  bannerWithTwoButtonsFloating: ['bannerWithTwoButtonsFloating'],
+  bannerWithTwoButtons: ['bannerWithTwoButtons'],
+  bannerWithTextFloating: ['bannerWithTextFloating'],
+  bannerWithText: ['bannerWithText'],
+  bannerWithFormFloating: ['bannerWithFormFloating'],
+  bannerWithForm: ['bannerWithForm'],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  root: 'div';
   bannerWithButton: typeof BannerWithButton;
   bannerWithTwoButtonsOnAccent: typeof BannerWithTwoButtonsOnAccent;
   bannerWithTwoButtonsFloatingOnAccent: typeof BannerWithTwoButtonsFloatingOnAccent;
   bannerWithTextOnAccent: typeof BannerWithTextOnAccent;
   bannerWithTextFloatingOnAccent: typeof BannerWithTextFloatingOnAccent;
-  text: "div";
+  text: 'div';
   bannerWithFormOnAccent: typeof BannerWithFormOnAccent;
   bannerWithFormFloatingOnAccent: typeof BannerWithFormFloatingOnAccent;
   bannerWithTwoButtonsFloating: typeof BannerWithTwoButtonsFloating;
@@ -334,7 +334,7 @@ type NodeDefaultElementType = {
   bannerWithForm: typeof BannerWithForm;
 };
 
-type ReservedPropsType = "variants" | "args" | "overrides";
+type ReservedPropsType = 'variants' | 'args' | 'overrides';
 type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicBanners__OverridesType,
   DescendantsType<T>
@@ -370,7 +370,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicBanners__ArgProps,
-          internalVariantPropNames: PlasmicBanners__VariantProps
+          internalVariantPropNames: PlasmicBanners__VariantProps,
         }),
       [props, nodeName]
     );
@@ -378,11 +378,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
-  if (nodeName === "root") {
-    func.displayName = "PlasmicBanners";
+  if (nodeName === 'root') {
+    func.displayName = 'PlasmicBanners';
   } else {
     func.displayName = `PlasmicBanners.${nodeName}`;
   }
@@ -391,33 +391,33 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicBanners = Object.assign(
   // Top-level PlasmicBanners renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent('root'),
   {
     // Helper components rendering sub-elements
-    bannerWithButton: makeNodeComponent("bannerWithButton"),
+    bannerWithButton: makeNodeComponent('bannerWithButton'),
     bannerWithTwoButtonsOnAccent: makeNodeComponent(
-      "bannerWithTwoButtonsOnAccent"
+      'bannerWithTwoButtonsOnAccent'
     ),
     bannerWithTwoButtonsFloatingOnAccent: makeNodeComponent(
-      "bannerWithTwoButtonsFloatingOnAccent"
+      'bannerWithTwoButtonsFloatingOnAccent'
     ),
-    bannerWithTextOnAccent: makeNodeComponent("bannerWithTextOnAccent"),
+    bannerWithTextOnAccent: makeNodeComponent('bannerWithTextOnAccent'),
     bannerWithTextFloatingOnAccent: makeNodeComponent(
-      "bannerWithTextFloatingOnAccent"
+      'bannerWithTextFloatingOnAccent'
     ),
-    text: makeNodeComponent("text"),
-    bannerWithFormOnAccent: makeNodeComponent("bannerWithFormOnAccent"),
+    text: makeNodeComponent('text'),
+    bannerWithFormOnAccent: makeNodeComponent('bannerWithFormOnAccent'),
     bannerWithFormFloatingOnAccent: makeNodeComponent(
-      "bannerWithFormFloatingOnAccent"
+      'bannerWithFormFloatingOnAccent'
     ),
     bannerWithTwoButtonsFloating: makeNodeComponent(
-      "bannerWithTwoButtonsFloating"
+      'bannerWithTwoButtonsFloating'
     ),
-    bannerWithTwoButtons: makeNodeComponent("bannerWithTwoButtons"),
-    bannerWithTextFloating: makeNodeComponent("bannerWithTextFloating"),
-    bannerWithText: makeNodeComponent("bannerWithText"),
-    bannerWithFormFloating: makeNodeComponent("bannerWithFormFloating"),
-    bannerWithForm: makeNodeComponent("bannerWithForm"),
+    bannerWithTwoButtons: makeNodeComponent('bannerWithTwoButtons'),
+    bannerWithTextFloating: makeNodeComponent('bannerWithTextFloating'),
+    bannerWithText: makeNodeComponent('bannerWithText'),
+    bannerWithFormFloating: makeNodeComponent('bannerWithFormFloating'),
+    bannerWithForm: makeNodeComponent('bannerWithForm'),
 
     // Metadata about props expected for PlasmicBanners
     internalVariantProps: PlasmicBanners__VariantProps,
@@ -425,11 +425,11 @@ export const PlasmicBanners = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "",
-      description: "",
-      ogImageSrc: "",
-      canonical: ""
-    }
+      title: '',
+      description: '',
+      ogImageSrc: '',
+      canonical: '',
+    },
   }
 );
 

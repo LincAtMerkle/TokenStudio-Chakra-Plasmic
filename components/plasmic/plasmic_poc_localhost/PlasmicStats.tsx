@@ -11,14 +11,14 @@
 // Plasmic Project: nV7sRTPBx6ecWzFNNAWeQg
 // Component: 7bXBp4WmDb
 
-import * as React from "react";
+import * as React from 'react';
 
-import Head from "next/head";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/router';
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
+import * as p from '@plasmicapp/react-web';
+import * as ph from '@plasmicapp/react-web/lib/host';
 
 import {
   hasVariant,
@@ -34,20 +34,20 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
-} from "@plasmicapp/react-web";
-import { Heading } from "@chakra-ui/react"; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
-import { StateWithLabel } from "../../custom/chakraPro/Aplication/Stats/StateWithLabel"; // plasmic-import: qbvteujTZnh/codeComponent
-import { StatWithCta } from "../../custom/chakraPro/Aplication/Stats/StatWithCta"; // plasmic-import: A6zM0dbulAQ/codeComponent
-import { StatWithLabelAndIndicator } from "../../custom/chakraPro/Aplication/Stats/StatWithLabelAndIndicator"; // plasmic-import: oCZkimd1KegC/codeComponent
-import { StatWithProgressBar } from "../../custom/chakraPro/Aplication/Stats/StatWithProgressBar"; // plasmic-import: enKi7qqZcoKd/codeComponent
-import { StatWithIcon } from "../../custom/chakraPro/Aplication/Stats/StatWithIcon"; // plasmic-import: WEK-fJdCbJQ6/codeComponent
-import { StatWithDivider } from "../../custom/chakraPro/Aplication/Stats/StatWithDivider"; // plasmic-import: XEYFkyEmGfEG/codeComponent
+  ensureGlobalVariants,
+} from '@plasmicapp/react-web';
+import { Heading } from '@chakra-ui/react'; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
+import { StateWithLabel } from '../../chakra/chakraPro/Aplication/Stats/StateWithLabel'; // plasmic-import: qbvteujTZnh/codeComponent
+import { StatWithCta } from '../../chakra/chakraPro/Aplication/Stats/StatWithCta'; // plasmic-import: A6zM0dbulAQ/codeComponent
+import { StatWithLabelAndIndicator } from '../../chakra/chakraPro/Aplication/Stats/StatWithLabelAndIndicator'; // plasmic-import: oCZkimd1KegC/codeComponent
+import { StatWithProgressBar } from '../../chakra/chakraPro/Aplication/Stats/StatWithProgressBar'; // plasmic-import: enKi7qqZcoKd/codeComponent
+import { StatWithIcon } from '../../chakra/chakraPro/Aplication/Stats/StatWithIcon'; // plasmic-import: WEK-fJdCbJQ6/codeComponent
+import { StatWithDivider } from '../../chakra/chakraPro/Aplication/Stats/StatWithDivider'; // plasmic-import: XEYFkyEmGfEG/codeComponent
 
-import "@plasmicapp/react-web/lib/plasmic.css";
+import '@plasmicapp/react-web/lib/plasmic.css';
 
-import projectcss from "./plasmic_plasmic_poc_localhost.module.css"; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
-import sty from "./PlasmicStats.module.css"; // plasmic-import: 7bXBp4WmDb/css
+import projectcss from './plasmic_plasmic_poc_localhost.module.css'; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
+import sty from './PlasmicStats.module.css'; // plasmic-import: 7bXBp4WmDb/css
 
 export type PlasmicStats__VariantMembers = {};
 export type PlasmicStats__VariantsArgs = {};
@@ -59,7 +59,7 @@ type ArgPropType = keyof PlasmicStats__ArgsType;
 export const PlasmicStats__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicStats__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: p.Flex<'div'>;
   stateWithLabel?: p.Flex<typeof StateWithLabel>;
   statWithCta?: p.Flex<typeof StatWithCta>;
   statWithLabelAndIndicator?: p.Flex<typeof StatWithLabelAndIndicator>;
@@ -98,7 +98,7 @@ function PlasmicStats__RenderFunc(props: {
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
@@ -119,7 +119,7 @@ function PlasmicStats__RenderFunc(props: {
 
       <div className={projectcss.plasmic_page_wrapper}>
         <div
-          data-plasmic-name={"root"}
+          data-plasmic-name={'root'}
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
@@ -133,9 +133,9 @@ function PlasmicStats__RenderFunc(props: {
           )}
         >
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__sCIrS)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__sCIrS)}
             noOfLines={1 as const}
-            size={"4xl" as const}
+            size={'4xl' as const}
           >
             <div
               className={classNames(
@@ -144,13 +144,13 @@ function PlasmicStats__RenderFunc(props: {
                 sty.text___6H76
               )}
             >
-              {"Stats"}
+              {'Stats'}
             </div>
           </Heading>
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__e4SmV)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__e4SmV)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -159,19 +159,19 @@ function PlasmicStats__RenderFunc(props: {
                 sty.text__nMVg
               )}
             >
-              {"State with label"}
+              {'State with label'}
             </div>
           </Heading>
           <StateWithLabel
-            data-plasmic-name={"stateWithLabel"}
+            data-plasmic-name={'stateWithLabel'}
             data-plasmic-override={overrides.stateWithLabel}
-            className={classNames("__wab_instance", sty.stateWithLabel)}
+            className={classNames('__wab_instance', sty.stateWithLabel)}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__b2LMf)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__b2LMf)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -180,18 +180,18 @@ function PlasmicStats__RenderFunc(props: {
                 sty.text___43J0P
               )}
             >
-              {"Stat with cta"}
+              {'Stat with cta'}
             </div>
             <StatWithCta
-              data-plasmic-name={"statWithCta"}
+              data-plasmic-name={'statWithCta'}
               data-plasmic-override={overrides.statWithCta}
-              className={classNames("__wab_instance", sty.statWithCta)}
+              className={classNames('__wab_instance', sty.statWithCta)}
             />
           </Heading>
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__qCn48)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__qCn48)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -200,22 +200,22 @@ function PlasmicStats__RenderFunc(props: {
                 sty.text__gMzo9
               )}
             >
-              {"Stat with label and indicator"}
+              {'Stat with label and indicator'}
             </div>
           </Heading>
           <StatWithLabelAndIndicator
-            data-plasmic-name={"statWithLabelAndIndicator"}
+            data-plasmic-name={'statWithLabelAndIndicator'}
             data-plasmic-override={overrides.statWithLabelAndIndicator}
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.statWithLabelAndIndicator
             )}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__ihJmQ)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__ihJmQ)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -224,19 +224,19 @@ function PlasmicStats__RenderFunc(props: {
                 sty.text__j72Vq
               )}
             >
-              {"Stat with progress bar"}
+              {'Stat with progress bar'}
             </div>
           </Heading>
           <StatWithProgressBar
-            data-plasmic-name={"statWithProgressBar"}
+            data-plasmic-name={'statWithProgressBar'}
             data-plasmic-override={overrides.statWithProgressBar}
-            className={classNames("__wab_instance", sty.statWithProgressBar)}
+            className={classNames('__wab_instance', sty.statWithProgressBar)}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__wn9Qs)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__wn9Qs)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -245,19 +245,19 @@ function PlasmicStats__RenderFunc(props: {
                 sty.text__nvPDe
               )}
             >
-              {"Stat with icon"}
+              {'Stat with icon'}
             </div>
           </Heading>
           <StatWithIcon
-            data-plasmic-name={"statWithIcon"}
+            data-plasmic-name={'statWithIcon'}
             data-plasmic-override={overrides.statWithIcon}
-            className={classNames("__wab_instance", sty.statWithIcon)}
+            className={classNames('__wab_instance', sty.statWithIcon)}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__lTdgz)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__lTdgz)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -266,13 +266,13 @@ function PlasmicStats__RenderFunc(props: {
                 sty.text__dEVd5
               )}
             >
-              {"Stat with divider"}
+              {'Stat with divider'}
             </div>
           </Heading>
           <StatWithDivider
-            data-plasmic-name={"statWithDivider"}
+            data-plasmic-name={'statWithDivider'}
             data-plasmic-override={overrides.statWithDivider}
-            className={classNames("__wab_instance", sty.statWithDivider)}
+            className={classNames('__wab_instance', sty.statWithDivider)}
           />
         </div>
       </div>
@@ -282,26 +282,26 @@ function PlasmicStats__RenderFunc(props: {
 
 const PlasmicDescendants = {
   root: [
-    "root",
-    "stateWithLabel",
-    "statWithCta",
-    "statWithLabelAndIndicator",
-    "statWithProgressBar",
-    "statWithIcon",
-    "statWithDivider"
+    'root',
+    'stateWithLabel',
+    'statWithCta',
+    'statWithLabelAndIndicator',
+    'statWithProgressBar',
+    'statWithIcon',
+    'statWithDivider',
   ],
-  stateWithLabel: ["stateWithLabel"],
-  statWithCta: ["statWithCta"],
-  statWithLabelAndIndicator: ["statWithLabelAndIndicator"],
-  statWithProgressBar: ["statWithProgressBar"],
-  statWithIcon: ["statWithIcon"],
-  statWithDivider: ["statWithDivider"]
+  stateWithLabel: ['stateWithLabel'],
+  statWithCta: ['statWithCta'],
+  statWithLabelAndIndicator: ['statWithLabelAndIndicator'],
+  statWithProgressBar: ['statWithProgressBar'],
+  statWithIcon: ['statWithIcon'],
+  statWithDivider: ['statWithDivider'],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  root: 'div';
   stateWithLabel: typeof StateWithLabel;
   statWithCta: typeof StatWithCta;
   statWithLabelAndIndicator: typeof StatWithLabelAndIndicator;
@@ -310,7 +310,7 @@ type NodeDefaultElementType = {
   statWithDivider: typeof StatWithDivider;
 };
 
-type ReservedPropsType = "variants" | "args" | "overrides";
+type ReservedPropsType = 'variants' | 'args' | 'overrides';
 type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicStats__OverridesType,
   DescendantsType<T>
@@ -346,7 +346,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicStats__ArgProps,
-          internalVariantPropNames: PlasmicStats__VariantProps
+          internalVariantPropNames: PlasmicStats__VariantProps,
         }),
       [props, nodeName]
     );
@@ -354,11 +354,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
-  if (nodeName === "root") {
-    func.displayName = "PlasmicStats";
+  if (nodeName === 'root') {
+    func.displayName = 'PlasmicStats';
   } else {
     func.displayName = `PlasmicStats.${nodeName}`;
   }
@@ -367,15 +367,15 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicStats = Object.assign(
   // Top-level PlasmicStats renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent('root'),
   {
     // Helper components rendering sub-elements
-    stateWithLabel: makeNodeComponent("stateWithLabel"),
-    statWithCta: makeNodeComponent("statWithCta"),
-    statWithLabelAndIndicator: makeNodeComponent("statWithLabelAndIndicator"),
-    statWithProgressBar: makeNodeComponent("statWithProgressBar"),
-    statWithIcon: makeNodeComponent("statWithIcon"),
-    statWithDivider: makeNodeComponent("statWithDivider"),
+    stateWithLabel: makeNodeComponent('stateWithLabel'),
+    statWithCta: makeNodeComponent('statWithCta'),
+    statWithLabelAndIndicator: makeNodeComponent('statWithLabelAndIndicator'),
+    statWithProgressBar: makeNodeComponent('statWithProgressBar'),
+    statWithIcon: makeNodeComponent('statWithIcon'),
+    statWithDivider: makeNodeComponent('statWithDivider'),
 
     // Metadata about props expected for PlasmicStats
     internalVariantProps: PlasmicStats__VariantProps,
@@ -383,11 +383,11 @@ export const PlasmicStats = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "",
-      description: "",
-      ogImageSrc: "",
-      canonical: ""
-    }
+      title: '',
+      description: '',
+      ogImageSrc: '',
+      canonical: '',
+    },
   }
 );
 

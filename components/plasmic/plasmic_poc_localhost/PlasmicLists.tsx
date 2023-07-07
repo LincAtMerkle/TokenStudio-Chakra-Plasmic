@@ -11,14 +11,14 @@
 // Plasmic Project: nV7sRTPBx6ecWzFNNAWeQg
 // Component: YKR4hXK5QC
 
-import * as React from "react";
+import * as React from 'react';
 
-import Head from "next/head";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/router';
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
+import * as p from '@plasmicapp/react-web';
+import * as ph from '@plasmicapp/react-web/lib/host';
 
 import {
   hasVariant,
@@ -34,17 +34,17 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
-} from "@plasmicapp/react-web";
-import { Heading } from "@chakra-ui/react"; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
-import { ListWithAvatar } from "../../custom/chakraPro/Aplication/Lists/ListWithAvatar"; // plasmic-import: MYDf-TWOuMd/codeComponent
-import { ListWithTruncatedPreview } from "../../custom/chakraPro/Aplication/Lists/ListWithTruncatedPreview"; // plasmic-import: jhbrk1p4IvR/codeComponent
-import { ListWithDraggableElements } from "../../custom/chakraPro/Aplication/Lists/ListWithDraggableElements"; // plasmic-import: uadThA52p4w/codeComponent
+  ensureGlobalVariants,
+} from '@plasmicapp/react-web';
+import { Heading } from '@chakra-ui/react'; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
+import { ListWithAvatar } from '../../chakra/chakraPro/Aplication/Lists/ListWithAvatar'; // plasmic-import: MYDf-TWOuMd/codeComponent
+import { ListWithTruncatedPreview } from '../../chakra/chakraPro/Aplication/Lists/ListWithTruncatedPreview'; // plasmic-import: jhbrk1p4IvR/codeComponent
+import { ListWithDraggableElements } from '../../chakra/chakraPro/Aplication/Lists/ListWithDraggableElements'; // plasmic-import: uadThA52p4w/codeComponent
 
-import "@plasmicapp/react-web/lib/plasmic.css";
+import '@plasmicapp/react-web/lib/plasmic.css';
 
-import projectcss from "./plasmic_plasmic_poc_localhost.module.css"; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
-import sty from "./PlasmicLists.module.css"; // plasmic-import: YKR4hXK5QC/css
+import projectcss from './plasmic_plasmic_poc_localhost.module.css'; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
+import sty from './PlasmicLists.module.css'; // plasmic-import: YKR4hXK5QC/css
 
 export type PlasmicLists__VariantMembers = {};
 export type PlasmicLists__VariantsArgs = {};
@@ -56,7 +56,7 @@ type ArgPropType = keyof PlasmicLists__ArgsType;
 export const PlasmicLists__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicLists__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: p.Flex<'div'>;
   listWithAvatar?: p.Flex<typeof ListWithAvatar>;
   listWithTruncatedPreview?: p.Flex<typeof ListWithTruncatedPreview>;
   listWithDraggableElements?: p.Flex<typeof ListWithDraggableElements>;
@@ -92,7 +92,7 @@ function PlasmicLists__RenderFunc(props: {
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
@@ -113,7 +113,7 @@ function PlasmicLists__RenderFunc(props: {
 
       <div className={projectcss.plasmic_page_wrapper}>
         <div
-          data-plasmic-name={"root"}
+          data-plasmic-name={'root'}
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
@@ -128,11 +128,11 @@ function PlasmicLists__RenderFunc(props: {
         >
           <Heading
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.chakraUiHeading___9Fx0F
             )}
             noOfLines={1 as const}
-            size={"4xl" as const}
+            size={'4xl' as const}
           >
             <div
               className={classNames(
@@ -141,13 +141,13 @@ function PlasmicLists__RenderFunc(props: {
                 sty.text__zk0W
               )}
             >
-              {"Lists"}
+              {'Lists'}
             </div>
           </Heading>
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__pXkkW)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__pXkkW)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -156,22 +156,22 @@ function PlasmicLists__RenderFunc(props: {
                 sty.text__cwS7K
               )}
             >
-              {"List with avatar"}
+              {'List with avatar'}
             </div>
           </Heading>
           <ListWithAvatar
-            data-plasmic-name={"listWithAvatar"}
+            data-plasmic-name={'listWithAvatar'}
             data-plasmic-override={overrides.listWithAvatar}
-            className={classNames("__wab_instance", sty.listWithAvatar)}
+            className={classNames('__wab_instance', sty.listWithAvatar)}
           />
 
           <Heading
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.chakraUiHeading___6Oo89
             )}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -180,22 +180,22 @@ function PlasmicLists__RenderFunc(props: {
                 sty.text__szCmb
               )}
             >
-              {"List with truncated preview"}
+              {'List with truncated preview'}
             </div>
           </Heading>
           <ListWithTruncatedPreview
-            data-plasmic-name={"listWithTruncatedPreview"}
+            data-plasmic-name={'listWithTruncatedPreview'}
             data-plasmic-override={overrides.listWithTruncatedPreview}
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.listWithTruncatedPreview
             )}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__k1CtM)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__k1CtM)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -204,13 +204,13 @@ function PlasmicLists__RenderFunc(props: {
                 sty.text__bBpe9
               )}
             >
-              {"List with draggable elements"}
+              {'List with draggable elements'}
             </div>
             <ListWithDraggableElements
-              data-plasmic-name={"listWithDraggableElements"}
+              data-plasmic-name={'listWithDraggableElements'}
               data-plasmic-override={overrides.listWithDraggableElements}
               className={classNames(
-                "__wab_instance",
+                '__wab_instance',
                 sty.listWithDraggableElements
               )}
             />
@@ -223,26 +223,26 @@ function PlasmicLists__RenderFunc(props: {
 
 const PlasmicDescendants = {
   root: [
-    "root",
-    "listWithAvatar",
-    "listWithTruncatedPreview",
-    "listWithDraggableElements"
+    'root',
+    'listWithAvatar',
+    'listWithTruncatedPreview',
+    'listWithDraggableElements',
   ],
-  listWithAvatar: ["listWithAvatar"],
-  listWithTruncatedPreview: ["listWithTruncatedPreview"],
-  listWithDraggableElements: ["listWithDraggableElements"]
+  listWithAvatar: ['listWithAvatar'],
+  listWithTruncatedPreview: ['listWithTruncatedPreview'],
+  listWithDraggableElements: ['listWithDraggableElements'],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  root: 'div';
   listWithAvatar: typeof ListWithAvatar;
   listWithTruncatedPreview: typeof ListWithTruncatedPreview;
   listWithDraggableElements: typeof ListWithDraggableElements;
 };
 
-type ReservedPropsType = "variants" | "args" | "overrides";
+type ReservedPropsType = 'variants' | 'args' | 'overrides';
 type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicLists__OverridesType,
   DescendantsType<T>
@@ -278,7 +278,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicLists__ArgProps,
-          internalVariantPropNames: PlasmicLists__VariantProps
+          internalVariantPropNames: PlasmicLists__VariantProps,
         }),
       [props, nodeName]
     );
@@ -286,11 +286,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
-  if (nodeName === "root") {
-    func.displayName = "PlasmicLists";
+  if (nodeName === 'root') {
+    func.displayName = 'PlasmicLists';
   } else {
     func.displayName = `PlasmicLists.${nodeName}`;
   }
@@ -299,12 +299,12 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicLists = Object.assign(
   // Top-level PlasmicLists renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent('root'),
   {
     // Helper components rendering sub-elements
-    listWithAvatar: makeNodeComponent("listWithAvatar"),
-    listWithTruncatedPreview: makeNodeComponent("listWithTruncatedPreview"),
-    listWithDraggableElements: makeNodeComponent("listWithDraggableElements"),
+    listWithAvatar: makeNodeComponent('listWithAvatar'),
+    listWithTruncatedPreview: makeNodeComponent('listWithTruncatedPreview'),
+    listWithDraggableElements: makeNodeComponent('listWithDraggableElements'),
 
     // Metadata about props expected for PlasmicLists
     internalVariantProps: PlasmicLists__VariantProps,
@@ -312,11 +312,11 @@ export const PlasmicLists = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "",
-      description: "",
-      ogImageSrc: "",
-      canonical: ""
-    }
+      title: '',
+      description: '',
+      ogImageSrc: '',
+      canonical: '',
+    },
   }
 );
 

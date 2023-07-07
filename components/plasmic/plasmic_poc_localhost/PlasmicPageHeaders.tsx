@@ -11,14 +11,14 @@
 // Plasmic Project: nV7sRTPBx6ecWzFNNAWeQg
 // Component: jtIpQDrSIJ
 
-import * as React from "react";
+import * as React from 'react';
 
-import Head from "next/head";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/router';
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
+import * as p from '@plasmicapp/react-web';
+import * as ph from '@plasmicapp/react-web/lib/host';
 
 import {
   hasVariant,
@@ -34,18 +34,18 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
-} from "@plasmicapp/react-web";
-import { Heading } from "@chakra-ui/react"; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
-import { PageHeaderWithSearch } from "../../custom/chakraPro/Aplication/Page Headers/Cards/PageHeaderWithSearch"; // plasmic-import: Z8R3dsM6bqU/codeComponent
-import { PageHeaderWithProfile } from "../../custom/chakraPro/Aplication/Page Headers/Cards/PageHeaderWithProfile"; // plasmic-import: r2XnFlfRKxX/codeComponent
-import { PageHeaderWithDescription } from "../../custom/chakraPro/Aplication/Page Headers/Cards/PageHeaderWithDescription"; // plasmic-import: VnJIJ0OmkOZ/codeComponent
-import { PageHeaderWithTwoButtons } from "../../custom/chakraPro/Aplication/Page Headers/Cards/PageHeaderWithTwoButtons"; // plasmic-import: xLZn7BMVlTO/codeComponent
+  ensureGlobalVariants,
+} from '@plasmicapp/react-web';
+import { Heading } from '@chakra-ui/react'; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
+import { PageHeaderWithSearch } from '../../chakra/chakraPro/Aplication/Page Headers/Cards/PageHeaderWithSearch'; // plasmic-import: Z8R3dsM6bqU/codeComponent
+import { PageHeaderWithProfile } from '../../chakra/chakraPro/Aplication/Page Headers/Cards/PageHeaderWithProfile'; // plasmic-import: r2XnFlfRKxX/codeComponent
+import { PageHeaderWithDescription } from '../../chakra/chakraPro/Aplication/Page Headers/Cards/PageHeaderWithDescription'; // plasmic-import: VnJIJ0OmkOZ/codeComponent
+import { PageHeaderWithTwoButtons } from '../../chakra/chakraPro/Aplication/Page Headers/Cards/PageHeaderWithTwoButtons'; // plasmic-import: xLZn7BMVlTO/codeComponent
 
-import "@plasmicapp/react-web/lib/plasmic.css";
+import '@plasmicapp/react-web/lib/plasmic.css';
 
-import projectcss from "./plasmic_plasmic_poc_localhost.module.css"; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
-import sty from "./PlasmicPageHeaders.module.css"; // plasmic-import: jtIpQDrSIJ/css
+import projectcss from './plasmic_plasmic_poc_localhost.module.css'; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
+import sty from './PlasmicPageHeaders.module.css'; // plasmic-import: jtIpQDrSIJ/css
 
 export type PlasmicPageHeaders__VariantMembers = {};
 export type PlasmicPageHeaders__VariantsArgs = {};
@@ -57,7 +57,7 @@ type ArgPropType = keyof PlasmicPageHeaders__ArgsType;
 export const PlasmicPageHeaders__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicPageHeaders__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: p.Flex<'div'>;
   pageHeaderWithSearch?: p.Flex<typeof PageHeaderWithSearch>;
   pageHeaderWithProfile?: p.Flex<typeof PageHeaderWithProfile>;
   pageHeaderWithDescription?: p.Flex<typeof PageHeaderWithDescription>;
@@ -94,7 +94,7 @@ function PlasmicPageHeaders__RenderFunc(props: {
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
@@ -115,7 +115,7 @@ function PlasmicPageHeaders__RenderFunc(props: {
 
       <div className={projectcss.plasmic_page_wrapper}>
         <div
-          data-plasmic-name={"root"}
+          data-plasmic-name={'root'}
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
@@ -129,9 +129,9 @@ function PlasmicPageHeaders__RenderFunc(props: {
           )}
         >
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__ns4Ro)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__ns4Ro)}
             noOfLines={1 as const}
-            size={"4xl" as const}
+            size={'4xl' as const}
           >
             <div
               className={classNames(
@@ -141,14 +141,14 @@ function PlasmicPageHeaders__RenderFunc(props: {
               )}
             >
               {
-                "Basic text writing, including headings, body text, lists, and more."
+                'Basic text writing, including headings, body text, lists, and more.'
               }
             </div>
           </Heading>
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__xCpsR)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__xCpsR)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -157,19 +157,19 @@ function PlasmicPageHeaders__RenderFunc(props: {
                 sty.text__t92N8
               )}
             >
-              {"Page header with search"}
+              {'Page header with search'}
             </div>
           </Heading>
           <PageHeaderWithSearch
-            data-plasmic-name={"pageHeaderWithSearch"}
+            data-plasmic-name={'pageHeaderWithSearch'}
             data-plasmic-override={overrides.pageHeaderWithSearch}
-            className={classNames("__wab_instance", sty.pageHeaderWithSearch)}
+            className={classNames('__wab_instance', sty.pageHeaderWithSearch)}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__xyzE9)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__xyzE9)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -178,19 +178,19 @@ function PlasmicPageHeaders__RenderFunc(props: {
                 sty.text__pQOti
               )}
             >
-              {"Page header with profile"}
+              {'Page header with profile'}
             </div>
           </Heading>
           <PageHeaderWithProfile
-            data-plasmic-name={"pageHeaderWithProfile"}
+            data-plasmic-name={'pageHeaderWithProfile'}
             data-plasmic-override={overrides.pageHeaderWithProfile}
-            className={classNames("__wab_instance", sty.pageHeaderWithProfile)}
+            className={classNames('__wab_instance', sty.pageHeaderWithProfile)}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__eanGu)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__eanGu)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -199,22 +199,22 @@ function PlasmicPageHeaders__RenderFunc(props: {
                 sty.text___3SBse
               )}
             >
-              {"      Page header with description"}
+              {'      Page header with description'}
             </div>
           </Heading>
           <PageHeaderWithDescription
-            data-plasmic-name={"pageHeaderWithDescription"}
+            data-plasmic-name={'pageHeaderWithDescription'}
             data-plasmic-override={overrides.pageHeaderWithDescription}
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.pageHeaderWithDescription
             )}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__yT9Ig)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__yT9Ig)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -223,13 +223,13 @@ function PlasmicPageHeaders__RenderFunc(props: {
                 sty.text__prO55
               )}
             >
-              {"Page header with two buttons"}
+              {'Page header with two buttons'}
             </div>
             <PageHeaderWithTwoButtons
-              data-plasmic-name={"pageHeaderWithTwoButtons"}
+              data-plasmic-name={'pageHeaderWithTwoButtons'}
               data-plasmic-override={overrides.pageHeaderWithTwoButtons}
               className={classNames(
-                "__wab_instance",
+                '__wab_instance',
                 sty.pageHeaderWithTwoButtons
               )}
             />
@@ -242,29 +242,29 @@ function PlasmicPageHeaders__RenderFunc(props: {
 
 const PlasmicDescendants = {
   root: [
-    "root",
-    "pageHeaderWithSearch",
-    "pageHeaderWithProfile",
-    "pageHeaderWithDescription",
-    "pageHeaderWithTwoButtons"
+    'root',
+    'pageHeaderWithSearch',
+    'pageHeaderWithProfile',
+    'pageHeaderWithDescription',
+    'pageHeaderWithTwoButtons',
   ],
-  pageHeaderWithSearch: ["pageHeaderWithSearch"],
-  pageHeaderWithProfile: ["pageHeaderWithProfile"],
-  pageHeaderWithDescription: ["pageHeaderWithDescription"],
-  pageHeaderWithTwoButtons: ["pageHeaderWithTwoButtons"]
+  pageHeaderWithSearch: ['pageHeaderWithSearch'],
+  pageHeaderWithProfile: ['pageHeaderWithProfile'],
+  pageHeaderWithDescription: ['pageHeaderWithDescription'],
+  pageHeaderWithTwoButtons: ['pageHeaderWithTwoButtons'],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  root: 'div';
   pageHeaderWithSearch: typeof PageHeaderWithSearch;
   pageHeaderWithProfile: typeof PageHeaderWithProfile;
   pageHeaderWithDescription: typeof PageHeaderWithDescription;
   pageHeaderWithTwoButtons: typeof PageHeaderWithTwoButtons;
 };
 
-type ReservedPropsType = "variants" | "args" | "overrides";
+type ReservedPropsType = 'variants' | 'args' | 'overrides';
 type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicPageHeaders__OverridesType,
   DescendantsType<T>
@@ -300,7 +300,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicPageHeaders__ArgProps,
-          internalVariantPropNames: PlasmicPageHeaders__VariantProps
+          internalVariantPropNames: PlasmicPageHeaders__VariantProps,
         }),
       [props, nodeName]
     );
@@ -308,11 +308,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
-  if (nodeName === "root") {
-    func.displayName = "PlasmicPageHeaders";
+  if (nodeName === 'root') {
+    func.displayName = 'PlasmicPageHeaders';
   } else {
     func.displayName = `PlasmicPageHeaders.${nodeName}`;
   }
@@ -321,13 +321,13 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicPageHeaders = Object.assign(
   // Top-level PlasmicPageHeaders renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent('root'),
   {
     // Helper components rendering sub-elements
-    pageHeaderWithSearch: makeNodeComponent("pageHeaderWithSearch"),
-    pageHeaderWithProfile: makeNodeComponent("pageHeaderWithProfile"),
-    pageHeaderWithDescription: makeNodeComponent("pageHeaderWithDescription"),
-    pageHeaderWithTwoButtons: makeNodeComponent("pageHeaderWithTwoButtons"),
+    pageHeaderWithSearch: makeNodeComponent('pageHeaderWithSearch'),
+    pageHeaderWithProfile: makeNodeComponent('pageHeaderWithProfile'),
+    pageHeaderWithDescription: makeNodeComponent('pageHeaderWithDescription'),
+    pageHeaderWithTwoButtons: makeNodeComponent('pageHeaderWithTwoButtons'),
 
     // Metadata about props expected for PlasmicPageHeaders
     internalVariantProps: PlasmicPageHeaders__VariantProps,
@@ -335,11 +335,11 @@ export const PlasmicPageHeaders = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "",
-      description: "",
-      ogImageSrc: "",
-      canonical: ""
-    }
+      title: '',
+      description: '',
+      ogImageSrc: '',
+      canonical: '',
+    },
   }
 );
 

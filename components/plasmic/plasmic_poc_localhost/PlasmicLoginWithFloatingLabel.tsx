@@ -11,14 +11,14 @@
 // Plasmic Project: nV7sRTPBx6ecWzFNNAWeQg
 // Component: CWUadU6wPo
 
-import * as React from "react";
+import * as React from 'react';
 
-import Head from "next/head";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/router';
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
+import * as p from '@plasmicapp/react-web';
+import * as ph from '@plasmicapp/react-web/lib/host';
 
 import {
   hasVariant,
@@ -34,14 +34,14 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
-} from "@plasmicapp/react-web";
-import { LoginWithFloatingLabel } from "../../custom/chakraPro/Application/Authentication/LoginWithFloatingLabel"; // plasmic-import: hxuXRIRNvu/codeComponent
+  ensureGlobalVariants,
+} from '@plasmicapp/react-web';
+import { LoginWithFloatingLabel } from '../../chakra/chakraPro/Application/Authentication/LoginWithFloatingLabel'; // plasmic-import: hxuXRIRNvu/codeComponent
 
-import "@plasmicapp/react-web/lib/plasmic.css";
+import '@plasmicapp/react-web/lib/plasmic.css';
 
-import projectcss from "./plasmic_plasmic_poc_localhost.module.css"; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
-import sty from "./PlasmicLoginWithFloatingLabel.module.css"; // plasmic-import: CWUadU6wPo/css
+import projectcss from './plasmic_plasmic_poc_localhost.module.css'; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
+import sty from './PlasmicLoginWithFloatingLabel.module.css'; // plasmic-import: CWUadU6wPo/css
 
 export type PlasmicLoginWithFloatingLabel__VariantMembers = {};
 export type PlasmicLoginWithFloatingLabel__VariantsArgs = {};
@@ -54,7 +54,7 @@ type ArgPropType = keyof PlasmicLoginWithFloatingLabel__ArgsType;
 export const PlasmicLoginWithFloatingLabel__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicLoginWithFloatingLabel__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: p.Flex<'div'>;
   loginWithFloatingLabel?: p.Flex<typeof LoginWithFloatingLabel>;
 };
 
@@ -90,7 +90,7 @@ function PlasmicLoginWithFloatingLabel__RenderFunc(props: {
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
@@ -101,7 +101,7 @@ function PlasmicLoginWithFloatingLabel__RenderFunc(props: {
 
   return (
     <div
-      data-plasmic-name={"root"}
+      data-plasmic-name={'root'}
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
@@ -115,27 +115,27 @@ function PlasmicLoginWithFloatingLabel__RenderFunc(props: {
       )}
     >
       <LoginWithFloatingLabel
-        data-plasmic-name={"loginWithFloatingLabel"}
+        data-plasmic-name={'loginWithFloatingLabel'}
         data-plasmic-override={overrides.loginWithFloatingLabel}
-        className={classNames("__wab_instance", sty.loginWithFloatingLabel)}
+        className={classNames('__wab_instance', sty.loginWithFloatingLabel)}
       />
     </div>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  root: ["root", "loginWithFloatingLabel"],
-  loginWithFloatingLabel: ["loginWithFloatingLabel"]
+  root: ['root', 'loginWithFloatingLabel'],
+  loginWithFloatingLabel: ['loginWithFloatingLabel'],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  root: 'div';
   loginWithFloatingLabel: typeof LoginWithFloatingLabel;
 };
 
-type ReservedPropsType = "variants" | "args" | "overrides";
+type ReservedPropsType = 'variants' | 'args' | 'overrides';
 type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicLoginWithFloatingLabel__OverridesType,
   DescendantsType<T>
@@ -171,7 +171,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicLoginWithFloatingLabel__ArgProps,
-          internalVariantPropNames: PlasmicLoginWithFloatingLabel__VariantProps
+          internalVariantPropNames: PlasmicLoginWithFloatingLabel__VariantProps,
         }),
       [props, nodeName]
     );
@@ -179,11 +179,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
-  if (nodeName === "root") {
-    func.displayName = "PlasmicLoginWithFloatingLabel";
+  if (nodeName === 'root') {
+    func.displayName = 'PlasmicLoginWithFloatingLabel';
   } else {
     func.displayName = `PlasmicLoginWithFloatingLabel.${nodeName}`;
   }
@@ -192,14 +192,14 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicLoginWithFloatingLabel = Object.assign(
   // Top-level PlasmicLoginWithFloatingLabel renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent('root'),
   {
     // Helper components rendering sub-elements
-    loginWithFloatingLabel: makeNodeComponent("loginWithFloatingLabel"),
+    loginWithFloatingLabel: makeNodeComponent('loginWithFloatingLabel'),
 
     // Metadata about props expected for PlasmicLoginWithFloatingLabel
     internalVariantProps: PlasmicLoginWithFloatingLabel__VariantProps,
-    internalArgProps: PlasmicLoginWithFloatingLabel__ArgProps
+    internalArgProps: PlasmicLoginWithFloatingLabel__ArgProps,
   }
 );
 

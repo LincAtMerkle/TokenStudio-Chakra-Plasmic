@@ -11,14 +11,14 @@
 // Plasmic Project: nV7sRTPBx6ecWzFNNAWeQg
 // Component: YtbpO2NJAH
 
-import * as React from "react";
+import * as React from 'react';
 
-import Head from "next/head";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/router';
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
+import * as p from '@plasmicapp/react-web';
+import * as ph from '@plasmicapp/react-web/lib/host';
 
 import {
   hasVariant,
@@ -34,18 +34,18 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
-} from "@plasmicapp/react-web";
-import { Heading } from "@chakra-ui/react"; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
-import { LayoutWithFullContentHeight } from "../../custom/chakraPro/Marketing/Layouts/LayoutWithFullContentHeight"; // plasmic-import: vpVIqgESW6t9/codeComponent
-import { LayoutWithTwoSidebars } from "../../custom/chakraPro/Marketing/Layouts/LayoutWithTwoSidebars"; // plasmic-import: FLKLZYFRpUgH/codeComponent
-import { LayoutWithStickySidebar } from "../../custom/chakraPro/Marketing/Layouts/LayoutWithStickySidebar"; // plasmic-import: JgKhhRUWd0IV/codeComponent
-import { LayoutWithStickyNavbar } from "../../custom/chakraPro/Marketing/Layouts/LayoutWithStickyNavbar"; // plasmic-import: 9fibxyps0UBd/codeComponent
+  ensureGlobalVariants,
+} from '@plasmicapp/react-web';
+import { Heading } from '@chakra-ui/react'; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
+import { LayoutWithFullContentHeight } from '../../chakra/chakraPro/Marketing/Layouts/LayoutWithFullContentHeight'; // plasmic-import: vpVIqgESW6t9/codeComponent
+import { LayoutWithTwoSidebars } from '../../chakra/chakraPro/Marketing/Layouts/LayoutWithTwoSidebars'; // plasmic-import: FLKLZYFRpUgH/codeComponent
+import { LayoutWithStickySidebar } from '../../chakra/chakraPro/Marketing/Layouts/LayoutWithStickySidebar'; // plasmic-import: JgKhhRUWd0IV/codeComponent
+import { LayoutWithStickyNavbar } from '../../chakra/chakraPro/Marketing/Layouts/LayoutWithStickyNavbar'; // plasmic-import: 9fibxyps0UBd/codeComponent
 
-import "@plasmicapp/react-web/lib/plasmic.css";
+import '@plasmicapp/react-web/lib/plasmic.css';
 
-import projectcss from "./plasmic_plasmic_poc_localhost.module.css"; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
-import sty from "./PlasmicLayouts.module.css"; // plasmic-import: YtbpO2NJAH/css
+import projectcss from './plasmic_plasmic_poc_localhost.module.css'; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
+import sty from './PlasmicLayouts.module.css'; // plasmic-import: YtbpO2NJAH/css
 
 export type PlasmicLayouts__VariantMembers = {};
 export type PlasmicLayouts__VariantsArgs = {};
@@ -57,7 +57,7 @@ type ArgPropType = keyof PlasmicLayouts__ArgsType;
 export const PlasmicLayouts__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicLayouts__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: p.Flex<'div'>;
   layoutWithFullContentHeight?: p.Flex<typeof LayoutWithFullContentHeight>;
   layoutWithTwoSidebars?: p.Flex<typeof LayoutWithTwoSidebars>;
   layoutWithStickySidebar?: p.Flex<typeof LayoutWithStickySidebar>;
@@ -94,7 +94,7 @@ function PlasmicLayouts__RenderFunc(props: {
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
@@ -115,7 +115,7 @@ function PlasmicLayouts__RenderFunc(props: {
 
       <div className={projectcss.plasmic_page_wrapper}>
         <div
-          data-plasmic-name={"root"}
+          data-plasmic-name={'root'}
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
@@ -129,9 +129,9 @@ function PlasmicLayouts__RenderFunc(props: {
           )}
         >
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__aBv5L)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__aBv5L)}
             noOfLines={1 as const}
-            size={"4xl" as const}
+            size={'4xl' as const}
           >
             <div
               className={classNames(
@@ -140,13 +140,13 @@ function PlasmicLayouts__RenderFunc(props: {
                 sty.text__y8S5X
               )}
             >
-              {"Layouts"}
+              {'Layouts'}
             </div>
           </Heading>
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__hul36)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__hul36)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -155,22 +155,22 @@ function PlasmicLayouts__RenderFunc(props: {
                 sty.text___2ZrXp
               )}
             >
-              {"Layout with full content height"}
+              {'Layout with full content height'}
             </div>
           </Heading>
           <LayoutWithFullContentHeight
-            data-plasmic-name={"layoutWithFullContentHeight"}
+            data-plasmic-name={'layoutWithFullContentHeight'}
             data-plasmic-override={overrides.layoutWithFullContentHeight}
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.layoutWithFullContentHeight
             )}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__ojiXn)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__ojiXn)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -179,19 +179,19 @@ function PlasmicLayouts__RenderFunc(props: {
                 sty.text__lXjm3
               )}
             >
-              {"Layout with two sidebars"}
+              {'Layout with two sidebars'}
             </div>
           </Heading>
           <LayoutWithTwoSidebars
-            data-plasmic-name={"layoutWithTwoSidebars"}
+            data-plasmic-name={'layoutWithTwoSidebars'}
             data-plasmic-override={overrides.layoutWithTwoSidebars}
-            className={classNames("__wab_instance", sty.layoutWithTwoSidebars)}
+            className={classNames('__wab_instance', sty.layoutWithTwoSidebars)}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__vxqUr)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__vxqUr)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -200,22 +200,22 @@ function PlasmicLayouts__RenderFunc(props: {
                 sty.text___8OR4X
               )}
             >
-              {"Layout with sticky sidebar"}
+              {'Layout with sticky sidebar'}
             </div>
           </Heading>
           <LayoutWithStickySidebar
-            data-plasmic-name={"layoutWithStickySidebar"}
+            data-plasmic-name={'layoutWithStickySidebar'}
             data-plasmic-override={overrides.layoutWithStickySidebar}
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.layoutWithStickySidebar
             )}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__u1Pq9)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__u1Pq9)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -224,13 +224,13 @@ function PlasmicLayouts__RenderFunc(props: {
                 sty.text__kdKj
               )}
             >
-              {"Layout with sticky navbar"}
+              {'Layout with sticky navbar'}
             </div>
           </Heading>
           <LayoutWithStickyNavbar
-            data-plasmic-name={"layoutWithStickyNavbar"}
+            data-plasmic-name={'layoutWithStickyNavbar'}
             data-plasmic-override={overrides.layoutWithStickyNavbar}
-            className={classNames("__wab_instance", sty.layoutWithStickyNavbar)}
+            className={classNames('__wab_instance', sty.layoutWithStickyNavbar)}
           />
         </div>
       </div>
@@ -240,29 +240,29 @@ function PlasmicLayouts__RenderFunc(props: {
 
 const PlasmicDescendants = {
   root: [
-    "root",
-    "layoutWithFullContentHeight",
-    "layoutWithTwoSidebars",
-    "layoutWithStickySidebar",
-    "layoutWithStickyNavbar"
+    'root',
+    'layoutWithFullContentHeight',
+    'layoutWithTwoSidebars',
+    'layoutWithStickySidebar',
+    'layoutWithStickyNavbar',
   ],
-  layoutWithFullContentHeight: ["layoutWithFullContentHeight"],
-  layoutWithTwoSidebars: ["layoutWithTwoSidebars"],
-  layoutWithStickySidebar: ["layoutWithStickySidebar"],
-  layoutWithStickyNavbar: ["layoutWithStickyNavbar"]
+  layoutWithFullContentHeight: ['layoutWithFullContentHeight'],
+  layoutWithTwoSidebars: ['layoutWithTwoSidebars'],
+  layoutWithStickySidebar: ['layoutWithStickySidebar'],
+  layoutWithStickyNavbar: ['layoutWithStickyNavbar'],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  root: 'div';
   layoutWithFullContentHeight: typeof LayoutWithFullContentHeight;
   layoutWithTwoSidebars: typeof LayoutWithTwoSidebars;
   layoutWithStickySidebar: typeof LayoutWithStickySidebar;
   layoutWithStickyNavbar: typeof LayoutWithStickyNavbar;
 };
 
-type ReservedPropsType = "variants" | "args" | "overrides";
+type ReservedPropsType = 'variants' | 'args' | 'overrides';
 type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicLayouts__OverridesType,
   DescendantsType<T>
@@ -298,7 +298,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicLayouts__ArgProps,
-          internalVariantPropNames: PlasmicLayouts__VariantProps
+          internalVariantPropNames: PlasmicLayouts__VariantProps,
         }),
       [props, nodeName]
     );
@@ -306,11 +306,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
-  if (nodeName === "root") {
-    func.displayName = "PlasmicLayouts";
+  if (nodeName === 'root') {
+    func.displayName = 'PlasmicLayouts';
   } else {
     func.displayName = `PlasmicLayouts.${nodeName}`;
   }
@@ -319,15 +319,15 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicLayouts = Object.assign(
   // Top-level PlasmicLayouts renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent('root'),
   {
     // Helper components rendering sub-elements
     layoutWithFullContentHeight: makeNodeComponent(
-      "layoutWithFullContentHeight"
+      'layoutWithFullContentHeight'
     ),
-    layoutWithTwoSidebars: makeNodeComponent("layoutWithTwoSidebars"),
-    layoutWithStickySidebar: makeNodeComponent("layoutWithStickySidebar"),
-    layoutWithStickyNavbar: makeNodeComponent("layoutWithStickyNavbar"),
+    layoutWithTwoSidebars: makeNodeComponent('layoutWithTwoSidebars'),
+    layoutWithStickySidebar: makeNodeComponent('layoutWithStickySidebar'),
+    layoutWithStickyNavbar: makeNodeComponent('layoutWithStickyNavbar'),
 
     // Metadata about props expected for PlasmicLayouts
     internalVariantProps: PlasmicLayouts__VariantProps,
@@ -335,11 +335,11 @@ export const PlasmicLayouts = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "",
-      description: "",
-      ogImageSrc: "",
-      canonical: ""
-    }
+      title: '',
+      description: '',
+      ogImageSrc: '',
+      canonical: '',
+    },
   }
 );
 

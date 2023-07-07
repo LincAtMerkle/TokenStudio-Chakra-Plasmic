@@ -11,14 +11,14 @@
 // Plasmic Project: nV7sRTPBx6ecWzFNNAWeQg
 // Component: teyiBam7oH
 
-import * as React from "react";
+import * as React from 'react';
 
-import Head from "next/head";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/router';
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
+import * as p from '@plasmicapp/react-web';
+import * as ph from '@plasmicapp/react-web/lib/host';
 
 import {
   hasVariant,
@@ -34,20 +34,20 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
-} from "@plasmicapp/react-web";
-import { Heading } from "@chakra-ui/react"; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
-import { NavbarWithRightCta } from "../../custom/chakraPro/Marketing/Navbars/NavbarWithRightCta"; // plasmic-import: 6mxRRiiJfxab/codeComponent
-import { MobileNavbarWithSimpleDropdown } from "../../custom/chakraPro/Marketing/Navbars/MobileNavbarWithSimpleDropdown"; // plasmic-import: 0iv0Wk3n1lcb/codeComponent
-import { NavbarWithFullWidthSubmenu } from "../../custom/chakraPro/Marketing/Navbars/NavbarWithFullWidthSubmenu"; // plasmic-import: O8twjA_h_Uni/codeComponent
-import { NavbarWithTabs } from "../../custom/chakraPro/Marketing/Navbars/NavbarWithTabs"; // plasmic-import: KtCAw8D0Mt_T/codeComponent
-import { NavbarWithSubmenu } from "../../custom/chakraPro/Marketing/Navbars/NavbarWithSubmenu"; // plasmic-import: O2zEHwuJambG/codeComponent
-import { NavbarWithFullButton } from "../../custom/chakraPro/Marketing/Navbars/NavbarWithFullButton"; // plasmic-import: oER7_ExtmlSc/codeComponent
+  ensureGlobalVariants,
+} from '@plasmicapp/react-web';
+import { Heading } from '@chakra-ui/react'; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
+import { NavbarWithRightCta } from '../../chakra/chakraPro/Marketing/Navbars/NavbarWithRightCta'; // plasmic-import: 6mxRRiiJfxab/codeComponent
+import { MobileNavbarWithSimpleDropdown } from '../../chakra/chakraPro/Marketing/Navbars/MobileNavbarWithSimpleDropdown'; // plasmic-import: 0iv0Wk3n1lcb/codeComponent
+import { NavbarWithFullWidthSubmenu } from '../../chakra/chakraPro/Marketing/Navbars/NavbarWithFullWidthSubmenu'; // plasmic-import: O8twjA_h_Uni/codeComponent
+import { NavbarWithTabs } from '../../chakra/chakraPro/Marketing/Navbars/NavbarWithTabs'; // plasmic-import: KtCAw8D0Mt_T/codeComponent
+import { NavbarWithSubmenu } from '../../chakra/chakraPro/Marketing/Navbars/NavbarWithSubmenu'; // plasmic-import: O2zEHwuJambG/codeComponent
+import { NavbarWithFullButton } from '../../chakra/chakraPro/Marketing/Navbars/NavbarWithFullButton'; // plasmic-import: oER7_ExtmlSc/codeComponent
 
-import "@plasmicapp/react-web/lib/plasmic.css";
+import '@plasmicapp/react-web/lib/plasmic.css';
 
-import projectcss from "./plasmic_plasmic_poc_localhost.module.css"; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
-import sty from "./PlasmicNavbars2.module.css"; // plasmic-import: teyiBam7oH/css
+import projectcss from './plasmic_plasmic_poc_localhost.module.css'; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
+import sty from './PlasmicNavbars2.module.css'; // plasmic-import: teyiBam7oH/css
 
 export type PlasmicNavbars2__VariantMembers = {};
 export type PlasmicNavbars2__VariantsArgs = {};
@@ -59,7 +59,7 @@ type ArgPropType = keyof PlasmicNavbars2__ArgsType;
 export const PlasmicNavbars2__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicNavbars2__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: p.Flex<'div'>;
   navbarWithRightCta?: p.Flex<typeof NavbarWithRightCta>;
   mobileNavbarWithSimpleDropdown?: p.Flex<
     typeof MobileNavbarWithSimpleDropdown
@@ -100,7 +100,7 @@ function PlasmicNavbars2__RenderFunc(props: {
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
@@ -121,7 +121,7 @@ function PlasmicNavbars2__RenderFunc(props: {
 
       <div className={projectcss.plasmic_page_wrapper}>
         <div
-          data-plasmic-name={"root"}
+          data-plasmic-name={'root'}
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
@@ -135,9 +135,9 @@ function PlasmicNavbars2__RenderFunc(props: {
           )}
         >
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__zTEfQ)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__zTEfQ)}
             noOfLines={1 as const}
-            size={"4xl" as const}
+            size={'4xl' as const}
           >
             <div
               className={classNames(
@@ -146,13 +146,13 @@ function PlasmicNavbars2__RenderFunc(props: {
                 sty.text__c8Mdv
               )}
             >
-              {"Navbars"}
+              {'Navbars'}
             </div>
           </Heading>
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__zndZi)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__zndZi)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -161,22 +161,22 @@ function PlasmicNavbars2__RenderFunc(props: {
                 sty.text__qJnn0
               )}
             >
-              {"Navbar with right cta"}
+              {'Navbar with right cta'}
             </div>
           </Heading>
           <NavbarWithRightCta
-            data-plasmic-name={"navbarWithRightCta"}
+            data-plasmic-name={'navbarWithRightCta'}
             data-plasmic-override={overrides.navbarWithRightCta}
-            className={classNames("__wab_instance", sty.navbarWithRightCta)}
+            className={classNames('__wab_instance', sty.navbarWithRightCta)}
           />
 
           <Heading
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.chakraUiHeading___66QRd
             )}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -185,13 +185,13 @@ function PlasmicNavbars2__RenderFunc(props: {
                 sty.text__ehhmV
               )}
             >
-              {"Mobile nav with accordion"}
+              {'Mobile nav with accordion'}
             </div>
           </Heading>
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__isSx6)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__isSx6)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -200,22 +200,22 @@ function PlasmicNavbars2__RenderFunc(props: {
                 sty.text__t5M3
               )}
             >
-              {"Mobile navbar with simple dropdown"}
+              {'Mobile navbar with simple dropdown'}
             </div>
           </Heading>
           <MobileNavbarWithSimpleDropdown
-            data-plasmic-name={"mobileNavbarWithSimpleDropdown"}
+            data-plasmic-name={'mobileNavbarWithSimpleDropdown'}
             data-plasmic-override={overrides.mobileNavbarWithSimpleDropdown}
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.mobileNavbarWithSimpleDropdown
             )}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__vdLx)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__vdLx)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -224,25 +224,25 @@ function PlasmicNavbars2__RenderFunc(props: {
                 sty.text__bYYo
               )}
             >
-              {"Navbar with full width submenu"}
+              {'Navbar with full width submenu'}
             </div>
           </Heading>
           <NavbarWithFullWidthSubmenu
-            data-plasmic-name={"navbarWithFullWidthSubmenu"}
+            data-plasmic-name={'navbarWithFullWidthSubmenu'}
             data-plasmic-override={overrides.navbarWithFullWidthSubmenu}
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.navbarWithFullWidthSubmenu
             )}
           />
 
           <Heading
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.chakraUiHeading___5JhLk
             )}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -251,19 +251,19 @@ function PlasmicNavbars2__RenderFunc(props: {
                 sty.text__pEjB
               )}
             >
-              {"Navbar with tabs"}
+              {'Navbar with tabs'}
             </div>
           </Heading>
           <NavbarWithTabs
-            data-plasmic-name={"navbarWithTabs"}
+            data-plasmic-name={'navbarWithTabs'}
             data-plasmic-override={overrides.navbarWithTabs}
-            className={classNames("__wab_instance", sty.navbarWithTabs)}
+            className={classNames('__wab_instance', sty.navbarWithTabs)}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__erOts)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__erOts)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -272,19 +272,19 @@ function PlasmicNavbars2__RenderFunc(props: {
                 sty.text__aIpyY
               )}
             >
-              {"Navbar with submenu"}
+              {'Navbar with submenu'}
             </div>
           </Heading>
           <NavbarWithSubmenu
-            data-plasmic-name={"navbarWithSubmenu"}
+            data-plasmic-name={'navbarWithSubmenu'}
             data-plasmic-override={overrides.navbarWithSubmenu}
-            className={classNames("__wab_instance", sty.navbarWithSubmenu)}
+            className={classNames('__wab_instance', sty.navbarWithSubmenu)}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__ivDxe)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__ivDxe)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -293,13 +293,13 @@ function PlasmicNavbars2__RenderFunc(props: {
                 sty.text___6W30H
               )}
             >
-              {"Navbar with full button"}
+              {'Navbar with full button'}
             </div>
           </Heading>
           <NavbarWithFullButton
-            data-plasmic-name={"navbarWithFullButton"}
+            data-plasmic-name={'navbarWithFullButton'}
             data-plasmic-override={overrides.navbarWithFullButton}
-            className={classNames("__wab_instance", sty.navbarWithFullButton)}
+            className={classNames('__wab_instance', sty.navbarWithFullButton)}
           />
         </div>
       </div>
@@ -309,26 +309,26 @@ function PlasmicNavbars2__RenderFunc(props: {
 
 const PlasmicDescendants = {
   root: [
-    "root",
-    "navbarWithRightCta",
-    "mobileNavbarWithSimpleDropdown",
-    "navbarWithFullWidthSubmenu",
-    "navbarWithTabs",
-    "navbarWithSubmenu",
-    "navbarWithFullButton"
+    'root',
+    'navbarWithRightCta',
+    'mobileNavbarWithSimpleDropdown',
+    'navbarWithFullWidthSubmenu',
+    'navbarWithTabs',
+    'navbarWithSubmenu',
+    'navbarWithFullButton',
   ],
-  navbarWithRightCta: ["navbarWithRightCta"],
-  mobileNavbarWithSimpleDropdown: ["mobileNavbarWithSimpleDropdown"],
-  navbarWithFullWidthSubmenu: ["navbarWithFullWidthSubmenu"],
-  navbarWithTabs: ["navbarWithTabs"],
-  navbarWithSubmenu: ["navbarWithSubmenu"],
-  navbarWithFullButton: ["navbarWithFullButton"]
+  navbarWithRightCta: ['navbarWithRightCta'],
+  mobileNavbarWithSimpleDropdown: ['mobileNavbarWithSimpleDropdown'],
+  navbarWithFullWidthSubmenu: ['navbarWithFullWidthSubmenu'],
+  navbarWithTabs: ['navbarWithTabs'],
+  navbarWithSubmenu: ['navbarWithSubmenu'],
+  navbarWithFullButton: ['navbarWithFullButton'],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  root: 'div';
   navbarWithRightCta: typeof NavbarWithRightCta;
   mobileNavbarWithSimpleDropdown: typeof MobileNavbarWithSimpleDropdown;
   navbarWithFullWidthSubmenu: typeof NavbarWithFullWidthSubmenu;
@@ -337,7 +337,7 @@ type NodeDefaultElementType = {
   navbarWithFullButton: typeof NavbarWithFullButton;
 };
 
-type ReservedPropsType = "variants" | "args" | "overrides";
+type ReservedPropsType = 'variants' | 'args' | 'overrides';
 type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicNavbars2__OverridesType,
   DescendantsType<T>
@@ -373,7 +373,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicNavbars2__ArgProps,
-          internalVariantPropNames: PlasmicNavbars2__VariantProps
+          internalVariantPropNames: PlasmicNavbars2__VariantProps,
         }),
       [props, nodeName]
     );
@@ -381,11 +381,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
-  if (nodeName === "root") {
-    func.displayName = "PlasmicNavbars2";
+  if (nodeName === 'root') {
+    func.displayName = 'PlasmicNavbars2';
   } else {
     func.displayName = `PlasmicNavbars2.${nodeName}`;
   }
@@ -394,17 +394,17 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicNavbars2 = Object.assign(
   // Top-level PlasmicNavbars2 renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent('root'),
   {
     // Helper components rendering sub-elements
-    navbarWithRightCta: makeNodeComponent("navbarWithRightCta"),
+    navbarWithRightCta: makeNodeComponent('navbarWithRightCta'),
     mobileNavbarWithSimpleDropdown: makeNodeComponent(
-      "mobileNavbarWithSimpleDropdown"
+      'mobileNavbarWithSimpleDropdown'
     ),
-    navbarWithFullWidthSubmenu: makeNodeComponent("navbarWithFullWidthSubmenu"),
-    navbarWithTabs: makeNodeComponent("navbarWithTabs"),
-    navbarWithSubmenu: makeNodeComponent("navbarWithSubmenu"),
-    navbarWithFullButton: makeNodeComponent("navbarWithFullButton"),
+    navbarWithFullWidthSubmenu: makeNodeComponent('navbarWithFullWidthSubmenu'),
+    navbarWithTabs: makeNodeComponent('navbarWithTabs'),
+    navbarWithSubmenu: makeNodeComponent('navbarWithSubmenu'),
+    navbarWithFullButton: makeNodeComponent('navbarWithFullButton'),
 
     // Metadata about props expected for PlasmicNavbars2
     internalVariantProps: PlasmicNavbars2__VariantProps,
@@ -412,11 +412,11 @@ export const PlasmicNavbars2 = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "",
-      description: "",
-      ogImageSrc: "",
-      canonical: ""
-    }
+      title: '',
+      description: '',
+      ogImageSrc: '',
+      canonical: '',
+    },
   }
 );
 

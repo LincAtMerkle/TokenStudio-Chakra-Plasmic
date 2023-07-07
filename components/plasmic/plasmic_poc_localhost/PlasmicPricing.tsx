@@ -11,14 +11,14 @@
 // Plasmic Project: nV7sRTPBx6ecWzFNNAWeQg
 // Component: omEku59t7P
 
-import * as React from "react";
+import * as React from 'react';
 
-import Head from "next/head";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/router';
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
+import * as p from '@plasmicapp/react-web';
+import * as ph from '@plasmicapp/react-web/lib/host';
 
 import {
   hasVariant,
@@ -34,22 +34,21 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
-} from "@plasmicapp/react-web";
-import { PricingWithCornerBadge } from "../../custom/chakraPro/Marketing/Pricing/PricingWithCornerBadge"; // plasmic-import: 2WDaZrTMVftj/codeComponent
-import { PricingWithTable } from "../../custom/chakraPro/Marketing/Pricing/PricingWithTable"; // plasmic-import: pmY_lwk_gSs3/codeComponent
-import { PricingWithOneTier } from "../../custom/chakraPro/Marketing/Pricing/PricingWithOneTier"; // plasmic-import: 8bgbNssWm3qk/codeComponent
-import { PricingWithTwoTiers } from "../../custom/chakraPro/Marketing/Pricing/PricingWithTwoTiers"; // plasmic-import: CU5InQRmYKx8/codeComponent
-import { PricingWithThreeTiers } from "../../custom/chakraPro/Marketing/Pricing/PricingWithThreeTiers"; // plasmic-import: uKdWDZ7PXmil/codeComponent
-import { WithFlushedCards } from "../../custom/chakraPro/Marketing/Pricing/WithFlushedCards"; // plasmic-import: Z3mR0qONoa72/codeComponent
-import { ThreeTiersWithToggle } from "../../custom/chakraPro/Marketing/Pricing/ThreeTiersWithToggle"; // plasmic-import: 9--KfKNuZUEp/codeComponent
-import { TwoTiersWithBottomBlock } from "../../custom/chakraPro/Marketing/Pricing/TwoTiersWithBottomBlock"; // plasmic-import: GYF0gf41uLgk/codeComponent
-import { MultiColored } from "../../custom/chakraPro/Marketing/Pricing/MultiColored"; // plasmic-import: nrz3USlVoErV/codeComponent
+  ensureGlobalVariants,
+} from '@plasmicapp/react-web';
+import { PricingWithCornerBadge } from '../../chakra/chakraPro/Marketing/Pricing/PricingWithCornerBadge'; // plasmic-import: 2WDaZrTMVftj/codeComponent
+import { PricingWithOneTier } from '../../chakra/chakraPro/Marketing/Pricing/PricingWithOneTier'; // plasmic-import: 8bgbNssWm3qk/codeComponent
+import { PricingWithTwoTiers } from '../../chakra/chakraPro/Marketing/Pricing/PricingWithTwoTiers'; // plasmic-import: CU5InQRmYKx8/codeComponent
+import { PricingWithThreeTiers } from '../../chakra/chakraPro/Marketing/Pricing/PricingWithThreeTiers'; // plasmic-import: uKdWDZ7PXmil/codeComponent
+import { WithFlushedCards } from '../../chakra/chakraPro/Marketing/Pricing/WithFlushedCards'; // plasmic-import: Z3mR0qONoa72/codeComponent
+import { ThreeTiersWithToggle } from '../../chakra/chakraPro/Marketing/Pricing/ThreeTiersWithToggle'; // plasmic-import: 9--KfKNuZUEp/codeComponent
+import { TwoTiersWithBottomBlock } from '../../chakra/chakraPro/Marketing/Pricing/TwoTiersWithBottomBlock'; // plasmic-import: GYF0gf41uLgk/codeComponent
+import { MultiColored } from '../../chakra/chakraPro/Marketing/Pricing/MultiColored'; // plasmic-import: nrz3USlVoErV/codeComponent
 
-import "@plasmicapp/react-web/lib/plasmic.css";
+import '@plasmicapp/react-web/lib/plasmic.css';
 
-import projectcss from "./plasmic_plasmic_poc_localhost.module.css"; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
-import sty from "./PlasmicPricing.module.css"; // plasmic-import: omEku59t7P/css
+import projectcss from './plasmic_plasmic_poc_localhost.module.css'; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
+import sty from './PlasmicPricing.module.css'; // plasmic-import: omEku59t7P/css
 
 export type PlasmicPricing__VariantMembers = {};
 export type PlasmicPricing__VariantsArgs = {};
@@ -61,9 +60,8 @@ type ArgPropType = keyof PlasmicPricing__ArgsType;
 export const PlasmicPricing__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicPricing__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: p.Flex<'div'>;
   pricingWithCornerBadge?: p.Flex<typeof PricingWithCornerBadge>;
-  pricingWithTable?: p.Flex<typeof PricingWithTable>;
   pricingWithOneTier?: p.Flex<typeof PricingWithOneTier>;
   pricingWithTwoTiers?: p.Flex<typeof PricingWithTwoTiers>;
   pricingWithThreeTiers?: p.Flex<typeof PricingWithThreeTiers>;
@@ -103,7 +101,7 @@ function PlasmicPricing__RenderFunc(props: {
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
@@ -124,7 +122,7 @@ function PlasmicPricing__RenderFunc(props: {
 
       <div className={projectcss.plasmic_page_wrapper}>
         <div
-          data-plasmic-name={"root"}
+          data-plasmic-name={'root'}
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
@@ -138,60 +136,54 @@ function PlasmicPricing__RenderFunc(props: {
           )}
         >
           <PricingWithCornerBadge
-            data-plasmic-name={"pricingWithCornerBadge"}
+            data-plasmic-name={'pricingWithCornerBadge'}
             data-plasmic-override={overrides.pricingWithCornerBadge}
-            className={classNames("__wab_instance", sty.pricingWithCornerBadge)}
-          />
-
-          <PricingWithTable
-            data-plasmic-name={"pricingWithTable"}
-            data-plasmic-override={overrides.pricingWithTable}
-            className={classNames("__wab_instance", sty.pricingWithTable)}
+            className={classNames('__wab_instance', sty.pricingWithCornerBadge)}
           />
 
           <PricingWithOneTier
-            data-plasmic-name={"pricingWithOneTier"}
+            data-plasmic-name={'pricingWithOneTier'}
             data-plasmic-override={overrides.pricingWithOneTier}
-            className={classNames("__wab_instance", sty.pricingWithOneTier)}
+            className={classNames('__wab_instance', sty.pricingWithOneTier)}
           />
 
           <PricingWithTwoTiers
-            data-plasmic-name={"pricingWithTwoTiers"}
+            data-plasmic-name={'pricingWithTwoTiers'}
             data-plasmic-override={overrides.pricingWithTwoTiers}
-            className={classNames("__wab_instance", sty.pricingWithTwoTiers)}
+            className={classNames('__wab_instance', sty.pricingWithTwoTiers)}
           />
 
           <PricingWithThreeTiers
-            data-plasmic-name={"pricingWithThreeTiers"}
+            data-plasmic-name={'pricingWithThreeTiers'}
             data-plasmic-override={overrides.pricingWithThreeTiers}
-            className={classNames("__wab_instance", sty.pricingWithThreeTiers)}
+            className={classNames('__wab_instance', sty.pricingWithThreeTiers)}
           />
 
           <WithFlushedCards
-            data-plasmic-name={"withFlushedCards"}
+            data-plasmic-name={'withFlushedCards'}
             data-plasmic-override={overrides.withFlushedCards}
-            className={classNames("__wab_instance", sty.withFlushedCards)}
+            className={classNames('__wab_instance', sty.withFlushedCards)}
           />
 
           <ThreeTiersWithToggle
-            data-plasmic-name={"threeTiersWithToggle"}
+            data-plasmic-name={'threeTiersWithToggle'}
             data-plasmic-override={overrides.threeTiersWithToggle}
-            className={classNames("__wab_instance", sty.threeTiersWithToggle)}
+            className={classNames('__wab_instance', sty.threeTiersWithToggle)}
           />
 
           <TwoTiersWithBottomBlock
-            data-plasmic-name={"twoTiersWithBottomBlock"}
+            data-plasmic-name={'twoTiersWithBottomBlock'}
             data-plasmic-override={overrides.twoTiersWithBottomBlock}
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.twoTiersWithBottomBlock
             )}
           />
 
           <MultiColored
-            data-plasmic-name={"multiColored"}
+            data-plasmic-name={'multiColored'}
             data-plasmic-override={overrides.multiColored}
-            className={classNames("__wab_instance", sty.multiColored)}
+            className={classNames('__wab_instance', sty.multiColored)}
           />
         </div>
       </div>
@@ -201,34 +193,31 @@ function PlasmicPricing__RenderFunc(props: {
 
 const PlasmicDescendants = {
   root: [
-    "root",
-    "pricingWithCornerBadge",
-    "pricingWithTable",
-    "pricingWithOneTier",
-    "pricingWithTwoTiers",
-    "pricingWithThreeTiers",
-    "withFlushedCards",
-    "threeTiersWithToggle",
-    "twoTiersWithBottomBlock",
-    "multiColored"
+    'root',
+    'pricingWithCornerBadge',
+    'pricingWithOneTier',
+    'pricingWithTwoTiers',
+    'pricingWithThreeTiers',
+    'withFlushedCards',
+    'threeTiersWithToggle',
+    'twoTiersWithBottomBlock',
+    'multiColored',
   ],
-  pricingWithCornerBadge: ["pricingWithCornerBadge"],
-  pricingWithTable: ["pricingWithTable"],
-  pricingWithOneTier: ["pricingWithOneTier"],
-  pricingWithTwoTiers: ["pricingWithTwoTiers"],
-  pricingWithThreeTiers: ["pricingWithThreeTiers"],
-  withFlushedCards: ["withFlushedCards"],
-  threeTiersWithToggle: ["threeTiersWithToggle"],
-  twoTiersWithBottomBlock: ["twoTiersWithBottomBlock"],
-  multiColored: ["multiColored"]
+  pricingWithCornerBadge: ['pricingWithCornerBadge'],
+  pricingWithOneTier: ['pricingWithOneTier'],
+  pricingWithTwoTiers: ['pricingWithTwoTiers'],
+  pricingWithThreeTiers: ['pricingWithThreeTiers'],
+  withFlushedCards: ['withFlushedCards'],
+  threeTiersWithToggle: ['threeTiersWithToggle'],
+  twoTiersWithBottomBlock: ['twoTiersWithBottomBlock'],
+  multiColored: ['multiColored'],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  root: 'div';
   pricingWithCornerBadge: typeof PricingWithCornerBadge;
-  pricingWithTable: typeof PricingWithTable;
   pricingWithOneTier: typeof PricingWithOneTier;
   pricingWithTwoTiers: typeof PricingWithTwoTiers;
   pricingWithThreeTiers: typeof PricingWithThreeTiers;
@@ -238,7 +227,7 @@ type NodeDefaultElementType = {
   multiColored: typeof MultiColored;
 };
 
-type ReservedPropsType = "variants" | "args" | "overrides";
+type ReservedPropsType = 'variants' | 'args' | 'overrides';
 type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicPricing__OverridesType,
   DescendantsType<T>
@@ -274,7 +263,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicPricing__ArgProps,
-          internalVariantPropNames: PlasmicPricing__VariantProps
+          internalVariantPropNames: PlasmicPricing__VariantProps,
         }),
       [props, nodeName]
     );
@@ -282,11 +271,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
-  if (nodeName === "root") {
-    func.displayName = "PlasmicPricing";
+  if (nodeName === 'root') {
+    func.displayName = 'PlasmicPricing';
   } else {
     func.displayName = `PlasmicPricing.${nodeName}`;
   }
@@ -295,18 +284,17 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicPricing = Object.assign(
   // Top-level PlasmicPricing renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent('root'),
   {
     // Helper components rendering sub-elements
-    pricingWithCornerBadge: makeNodeComponent("pricingWithCornerBadge"),
-    pricingWithTable: makeNodeComponent("pricingWithTable"),
-    pricingWithOneTier: makeNodeComponent("pricingWithOneTier"),
-    pricingWithTwoTiers: makeNodeComponent("pricingWithTwoTiers"),
-    pricingWithThreeTiers: makeNodeComponent("pricingWithThreeTiers"),
-    withFlushedCards: makeNodeComponent("withFlushedCards"),
-    threeTiersWithToggle: makeNodeComponent("threeTiersWithToggle"),
-    twoTiersWithBottomBlock: makeNodeComponent("twoTiersWithBottomBlock"),
-    multiColored: makeNodeComponent("multiColored"),
+    pricingWithCornerBadge: makeNodeComponent('pricingWithCornerBadge'),
+    pricingWithOneTier: makeNodeComponent('pricingWithOneTier'),
+    pricingWithTwoTiers: makeNodeComponent('pricingWithTwoTiers'),
+    pricingWithThreeTiers: makeNodeComponent('pricingWithThreeTiers'),
+    withFlushedCards: makeNodeComponent('withFlushedCards'),
+    threeTiersWithToggle: makeNodeComponent('threeTiersWithToggle'),
+    twoTiersWithBottomBlock: makeNodeComponent('twoTiersWithBottomBlock'),
+    multiColored: makeNodeComponent('multiColored'),
 
     // Metadata about props expected for PlasmicPricing
     internalVariantProps: PlasmicPricing__VariantProps,
@@ -314,11 +302,11 @@ export const PlasmicPricing = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "",
-      description: "",
-      ogImageSrc: "",
-      canonical: ""
-    }
+      title: '',
+      description: '',
+      ogImageSrc: '',
+      canonical: '',
+    },
   }
 );
 

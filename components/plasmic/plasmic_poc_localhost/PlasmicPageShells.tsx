@@ -11,14 +11,14 @@
 // Plasmic Project: nV7sRTPBx6ecWzFNNAWeQg
 // Component: Xy9qYNa8bg
 
-import * as React from "react";
+import * as React from 'react';
 
-import Head from "next/head";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/router';
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
+import * as p from '@plasmicapp/react-web';
+import * as ph from '@plasmicapp/react-web/lib/host';
 
 import {
   hasVariant,
@@ -34,14 +34,14 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
-} from "@plasmicapp/react-web";
-import { Heading } from "@chakra-ui/react"; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
+  ensureGlobalVariants,
+} from '@plasmicapp/react-web';
+import { Heading } from '@chakra-ui/react'; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
 
-import "@plasmicapp/react-web/lib/plasmic.css";
+import '@plasmicapp/react-web/lib/plasmic.css';
 
-import projectcss from "./plasmic_plasmic_poc_localhost.module.css"; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
-import sty from "./PlasmicPageShells.module.css"; // plasmic-import: Xy9qYNa8bg/css
+import projectcss from './plasmic_plasmic_poc_localhost.module.css'; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
+import sty from './PlasmicPageShells.module.css'; // plasmic-import: Xy9qYNa8bg/css
 
 export type PlasmicPageShells__VariantMembers = {};
 export type PlasmicPageShells__VariantsArgs = {};
@@ -53,7 +53,7 @@ type ArgPropType = keyof PlasmicPageShells__ArgsType;
 export const PlasmicPageShells__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicPageShells__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: p.Flex<'div'>;
 };
 
 export interface DefaultPageShellsProps {}
@@ -86,7 +86,7 @@ function PlasmicPageShells__RenderFunc(props: {
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
@@ -107,7 +107,7 @@ function PlasmicPageShells__RenderFunc(props: {
 
       <div className={projectcss.plasmic_page_wrapper}>
         <div
-          data-plasmic-name={"root"}
+          data-plasmic-name={'root'}
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
@@ -121,9 +121,9 @@ function PlasmicPageShells__RenderFunc(props: {
           )}
         >
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__aSjrw)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__aSjrw)}
             noOfLines={1 as const}
-            size={"4xl" as const}
+            size={'4xl' as const}
           >
             <div
               className={classNames(
@@ -132,13 +132,13 @@ function PlasmicPageShells__RenderFunc(props: {
                 sty.text___8DYzE
               )}
             >
-              {"Page Shells"}
+              {'Page Shells'}
             </div>
           </Heading>
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__al7)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__al7)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -147,13 +147,13 @@ function PlasmicPageShells__RenderFunc(props: {
                 sty.text__f2J6E
               )}
             >
-              {"Shell with navbar on accent"}
+              {'Shell with navbar on accent'}
             </div>
           </Heading>
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__n9AjR)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__n9AjR)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -162,13 +162,13 @@ function PlasmicPageShells__RenderFunc(props: {
                 sty.text__rsb1
               )}
             >
-              {"Shell with navbar"}
+              {'Shell with navbar'}
             </div>
           </Heading>
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__gPaEg)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__gPaEg)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -178,14 +178,14 @@ function PlasmicPageShells__RenderFunc(props: {
               )}
             >
               {
-                "Basic text writing, including headings, body text, lists, and more."
+                'Basic text writing, including headings, body text, lists, and more.'
               }
             </div>
           </Heading>
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__amYsq)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__amYsq)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -195,7 +195,7 @@ function PlasmicPageShells__RenderFunc(props: {
               )}
             >
               {
-                "Basic text writing, including headings, body text, lists, and more."
+                'Basic text writing, including headings, body text, lists, and more.'
               }
             </div>
           </Heading>
@@ -206,16 +206,16 @@ function PlasmicPageShells__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root"]
+  root: ['root'],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  root: 'div';
 };
 
-type ReservedPropsType = "variants" | "args" | "overrides";
+type ReservedPropsType = 'variants' | 'args' | 'overrides';
 type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicPageShells__OverridesType,
   DescendantsType<T>
@@ -251,7 +251,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicPageShells__ArgProps,
-          internalVariantPropNames: PlasmicPageShells__VariantProps
+          internalVariantPropNames: PlasmicPageShells__VariantProps,
         }),
       [props, nodeName]
     );
@@ -259,11 +259,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
-  if (nodeName === "root") {
-    func.displayName = "PlasmicPageShells";
+  if (nodeName === 'root') {
+    func.displayName = 'PlasmicPageShells';
   } else {
     func.displayName = `PlasmicPageShells.${nodeName}`;
   }
@@ -272,7 +272,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicPageShells = Object.assign(
   // Top-level PlasmicPageShells renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent('root'),
   {
     // Helper components rendering sub-elements
 
@@ -282,11 +282,11 @@ export const PlasmicPageShells = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "",
-      description: "",
-      ogImageSrc: "",
-      canonical: ""
-    }
+      title: '',
+      description: '',
+      ogImageSrc: '',
+      canonical: '',
+    },
   }
 );
 

@@ -11,14 +11,14 @@
 // Plasmic Project: nV7sRTPBx6ecWzFNNAWeQg
 // Component: 9Vg4018Kd3
 
-import * as React from "react";
+import * as React from 'react';
 
-import Head from "next/head";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/router';
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
+import * as p from '@plasmicapp/react-web';
+import * as ph from '@plasmicapp/react-web/lib/host';
 
 import {
   hasVariant,
@@ -34,14 +34,14 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
-} from "@plasmicapp/react-web";
-import { LoginWithGradient } from "../../custom/chakraPro/Application/Authentication/LoginWithGradient"; // plasmic-import: wFP8hImPN7r/codeComponent
+  ensureGlobalVariants,
+} from '@plasmicapp/react-web';
+import { LoginWithGradient } from '../../chakra/chakraPro/Application/Authentication/LoginWithGradient'; // plasmic-import: wFP8hImPN7r/codeComponent
 
-import "@plasmicapp/react-web/lib/plasmic.css";
+import '@plasmicapp/react-web/lib/plasmic.css';
 
-import projectcss from "./plasmic_plasmic_poc_localhost.module.css"; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
-import sty from "./PlasmicX.module.css"; // plasmic-import: 9Vg4018Kd3/css
+import projectcss from './plasmic_plasmic_poc_localhost.module.css'; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
+import sty from './PlasmicX.module.css'; // plasmic-import: 9Vg4018Kd3/css
 
 export type PlasmicX__VariantMembers = {};
 export type PlasmicX__VariantsArgs = {};
@@ -53,7 +53,7 @@ type ArgPropType = keyof PlasmicX__ArgsType;
 export const PlasmicX__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicX__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: p.Flex<'div'>;
   loginWithGradient?: p.Flex<typeof LoginWithGradient>;
 };
 
@@ -89,7 +89,7 @@ function PlasmicX__RenderFunc(props: {
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
@@ -100,7 +100,7 @@ function PlasmicX__RenderFunc(props: {
 
   return (
     <div
-      data-plasmic-name={"root"}
+      data-plasmic-name={'root'}
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
@@ -114,27 +114,27 @@ function PlasmicX__RenderFunc(props: {
       )}
     >
       <LoginWithGradient
-        data-plasmic-name={"loginWithGradient"}
+        data-plasmic-name={'loginWithGradient'}
         data-plasmic-override={overrides.loginWithGradient}
-        className={classNames("__wab_instance", sty.loginWithGradient)}
+        className={classNames('__wab_instance', sty.loginWithGradient)}
       />
     </div>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  root: ["root", "loginWithGradient"],
-  loginWithGradient: ["loginWithGradient"]
+  root: ['root', 'loginWithGradient'],
+  loginWithGradient: ['loginWithGradient'],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  root: 'div';
   loginWithGradient: typeof LoginWithGradient;
 };
 
-type ReservedPropsType = "variants" | "args" | "overrides";
+type ReservedPropsType = 'variants' | 'args' | 'overrides';
 type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicX__OverridesType,
   DescendantsType<T>
@@ -170,7 +170,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicX__ArgProps,
-          internalVariantPropNames: PlasmicX__VariantProps
+          internalVariantPropNames: PlasmicX__VariantProps,
         }),
       [props, nodeName]
     );
@@ -178,11 +178,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
-  if (nodeName === "root") {
-    func.displayName = "PlasmicX";
+  if (nodeName === 'root') {
+    func.displayName = 'PlasmicX';
   } else {
     func.displayName = `PlasmicX.${nodeName}`;
   }
@@ -191,14 +191,14 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicX = Object.assign(
   // Top-level PlasmicX renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent('root'),
   {
     // Helper components rendering sub-elements
-    loginWithGradient: makeNodeComponent("loginWithGradient"),
+    loginWithGradient: makeNodeComponent('loginWithGradient'),
 
     // Metadata about props expected for PlasmicX
     internalVariantProps: PlasmicX__VariantProps,
-    internalArgProps: PlasmicX__ArgProps
+    internalArgProps: PlasmicX__ArgProps,
   }
 );
 

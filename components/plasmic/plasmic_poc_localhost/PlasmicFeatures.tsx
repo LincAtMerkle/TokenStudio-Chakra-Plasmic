@@ -11,14 +11,14 @@
 // Plasmic Project: nV7sRTPBx6ecWzFNNAWeQg
 // Component: tLEbDT6B0Y
 
-import * as React from "react";
+import * as React from 'react';
 
-import Head from "next/head";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/router';
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
+import * as p from '@plasmicapp/react-web';
+import * as ph from '@plasmicapp/react-web/lib/host';
 
 import {
   hasVariant,
@@ -34,17 +34,17 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
-} from "@plasmicapp/react-web";
-import { Heading } from "@chakra-ui/react"; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
-import { FeatureWithSideBySideImage } from "../../custom/chakraPro/Marketing/Features/FeatureWithSideBySideImage"; // plasmic-import: l6JvlJUfDYM1/codeComponent
-import { FeatureWithThreeColumnsCentred } from "../../custom/chakraPro/Marketing/Features/FeatureWithThreeColumnsCentred"; // plasmic-import: XvSoXt86Q3bN/codeComponent
-import { FeatureWithThreeColumns } from "../../custom/chakraPro/Marketing/Features/FeatureWithThreeColumns"; // plasmic-import: iCUd50LInAEG/codeComponent
+  ensureGlobalVariants,
+} from '@plasmicapp/react-web';
+import { Heading } from '@chakra-ui/react'; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
+import { FeatureWithSideBySideImage } from '../../chakra/chakraPro/Marketing/Features/FeatureWithSideBySideImage'; // plasmic-import: l6JvlJUfDYM1/codeComponent
+import { FeatureWithThreeColumnsCentred } from '../../chakra/chakraPro/Marketing/Features/FeatureWithThreeColumnsCentred'; // plasmic-import: XvSoXt86Q3bN/codeComponent
+import { FeatureWithThreeColumns } from '../../chakra/chakraPro/Marketing/Features/FeatureWithThreeColumns'; // plasmic-import: iCUd50LInAEG/codeComponent
 
-import "@plasmicapp/react-web/lib/plasmic.css";
+import '@plasmicapp/react-web/lib/plasmic.css';
 
-import projectcss from "./plasmic_plasmic_poc_localhost.module.css"; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
-import sty from "./PlasmicFeatures.module.css"; // plasmic-import: tLEbDT6B0Y/css
+import projectcss from './plasmic_plasmic_poc_localhost.module.css'; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
+import sty from './PlasmicFeatures.module.css'; // plasmic-import: tLEbDT6B0Y/css
 
 export type PlasmicFeatures__VariantMembers = {};
 export type PlasmicFeatures__VariantsArgs = {};
@@ -56,7 +56,7 @@ type ArgPropType = keyof PlasmicFeatures__ArgsType;
 export const PlasmicFeatures__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicFeatures__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: p.Flex<'div'>;
   featureWithSideBySideImage?: p.Flex<typeof FeatureWithSideBySideImage>;
   featureWithThreeColumnsCentred?: p.Flex<
     typeof FeatureWithThreeColumnsCentred
@@ -94,7 +94,7 @@ function PlasmicFeatures__RenderFunc(props: {
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
@@ -115,7 +115,7 @@ function PlasmicFeatures__RenderFunc(props: {
 
       <div className={projectcss.plasmic_page_wrapper}>
         <div
-          data-plasmic-name={"root"}
+          data-plasmic-name={'root'}
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
@@ -129,9 +129,9 @@ function PlasmicFeatures__RenderFunc(props: {
           )}
         >
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading___7BN0)}
+            className={classNames('__wab_instance', sty.chakraUiHeading___7BN0)}
             noOfLines={1 as const}
-            size={"4xl" as const}
+            size={'4xl' as const}
           >
             <div
               className={classNames(
@@ -140,13 +140,13 @@ function PlasmicFeatures__RenderFunc(props: {
                 sty.text__ywQgd
               )}
             >
-              {"Features"}
+              {'Features'}
             </div>
           </Heading>
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__cv6Vz)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__cv6Vz)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -155,13 +155,13 @@ function PlasmicFeatures__RenderFunc(props: {
                 sty.text___7WYI
               )}
             >
-              {"Feature with hero image on accent"}
+              {'Feature with hero image on accent'}
             </div>
           </Heading>
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__bwp3X)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__bwp3X)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -170,13 +170,13 @@ function PlasmicFeatures__RenderFunc(props: {
                 sty.text__zL7Q7
               )}
             >
-              {"Feature with hero image"}
+              {'Feature with hero image'}
             </div>
           </Heading>
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__crOvn)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__crOvn)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -185,22 +185,22 @@ function PlasmicFeatures__RenderFunc(props: {
                 sty.text__iIhbL
               )}
             >
-              {"Feature with side by side image"}
+              {'Feature with side by side image'}
             </div>
           </Heading>
           <FeatureWithSideBySideImage
-            data-plasmic-name={"featureWithSideBySideImage"}
+            data-plasmic-name={'featureWithSideBySideImage'}
             data-plasmic-override={overrides.featureWithSideBySideImage}
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.featureWithSideBySideImage
             )}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__ksvbm)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__ksvbm)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -209,25 +209,25 @@ function PlasmicFeatures__RenderFunc(props: {
                 sty.text__mlipK
               )}
             >
-              {"Feature with three columns centred"}
+              {'Feature with three columns centred'}
             </div>
           </Heading>
           <FeatureWithThreeColumnsCentred
-            data-plasmic-name={"featureWithThreeColumnsCentred"}
+            data-plasmic-name={'featureWithThreeColumnsCentred'}
             data-plasmic-override={overrides.featureWithThreeColumnsCentred}
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.featureWithThreeColumnsCentred
             )}
           />
 
           <Heading
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.chakraUiHeading___7Aix7
             )}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -236,14 +236,14 @@ function PlasmicFeatures__RenderFunc(props: {
                 sty.text___2Fw3E
               )}
             >
-              {"Feature with three columns"}
+              {'Feature with three columns'}
             </div>
           </Heading>
           <FeatureWithThreeColumns
-            data-plasmic-name={"featureWithThreeColumns"}
+            data-plasmic-name={'featureWithThreeColumns'}
             data-plasmic-override={overrides.featureWithThreeColumns}
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.featureWithThreeColumns
             )}
           />
@@ -255,26 +255,26 @@ function PlasmicFeatures__RenderFunc(props: {
 
 const PlasmicDescendants = {
   root: [
-    "root",
-    "featureWithSideBySideImage",
-    "featureWithThreeColumnsCentred",
-    "featureWithThreeColumns"
+    'root',
+    'featureWithSideBySideImage',
+    'featureWithThreeColumnsCentred',
+    'featureWithThreeColumns',
   ],
-  featureWithSideBySideImage: ["featureWithSideBySideImage"],
-  featureWithThreeColumnsCentred: ["featureWithThreeColumnsCentred"],
-  featureWithThreeColumns: ["featureWithThreeColumns"]
+  featureWithSideBySideImage: ['featureWithSideBySideImage'],
+  featureWithThreeColumnsCentred: ['featureWithThreeColumnsCentred'],
+  featureWithThreeColumns: ['featureWithThreeColumns'],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  root: 'div';
   featureWithSideBySideImage: typeof FeatureWithSideBySideImage;
   featureWithThreeColumnsCentred: typeof FeatureWithThreeColumnsCentred;
   featureWithThreeColumns: typeof FeatureWithThreeColumns;
 };
 
-type ReservedPropsType = "variants" | "args" | "overrides";
+type ReservedPropsType = 'variants' | 'args' | 'overrides';
 type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicFeatures__OverridesType,
   DescendantsType<T>
@@ -310,7 +310,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicFeatures__ArgProps,
-          internalVariantPropNames: PlasmicFeatures__VariantProps
+          internalVariantPropNames: PlasmicFeatures__VariantProps,
         }),
       [props, nodeName]
     );
@@ -318,11 +318,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
-  if (nodeName === "root") {
-    func.displayName = "PlasmicFeatures";
+  if (nodeName === 'root') {
+    func.displayName = 'PlasmicFeatures';
   } else {
     func.displayName = `PlasmicFeatures.${nodeName}`;
   }
@@ -331,14 +331,14 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicFeatures = Object.assign(
   // Top-level PlasmicFeatures renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent('root'),
   {
     // Helper components rendering sub-elements
-    featureWithSideBySideImage: makeNodeComponent("featureWithSideBySideImage"),
+    featureWithSideBySideImage: makeNodeComponent('featureWithSideBySideImage'),
     featureWithThreeColumnsCentred: makeNodeComponent(
-      "featureWithThreeColumnsCentred"
+      'featureWithThreeColumnsCentred'
     ),
-    featureWithThreeColumns: makeNodeComponent("featureWithThreeColumns"),
+    featureWithThreeColumns: makeNodeComponent('featureWithThreeColumns'),
 
     // Metadata about props expected for PlasmicFeatures
     internalVariantProps: PlasmicFeatures__VariantProps,
@@ -346,11 +346,11 @@ export const PlasmicFeatures = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "",
-      description: "",
-      ogImageSrc: "",
-      canonical: ""
-    }
+      title: '',
+      description: '',
+      ogImageSrc: '',
+      canonical: '',
+    },
   }
 );
 

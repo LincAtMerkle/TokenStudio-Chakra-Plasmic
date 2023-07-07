@@ -11,14 +11,14 @@
 // Plasmic Project: nV7sRTPBx6ecWzFNNAWeQg
 // Component: WDwYKHyHBn
 
-import * as React from "react";
+import * as React from 'react';
 
-import Head from "next/head";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/router';
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
+import * as p from '@plasmicapp/react-web';
+import * as ph from '@plasmicapp/react-web/lib/host';
 
 import {
   hasVariant,
@@ -34,15 +34,15 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
-} from "@plasmicapp/react-web";
-import { Heading } from "@chakra-ui/react"; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
-import { NavWithCenteredLogo } from "../../custom/chakraPro/NavWithCenteredLogo"; // plasmic-import: fPBeZELHSBG5/codeComponent
+  ensureGlobalVariants,
+} from '@plasmicapp/react-web';
+import { Heading } from '@chakra-ui/react'; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
+import { NavWithCenteredLogo } from '../../chakra/chakraPro/NavWithCenteredLogo'; // plasmic-import: fPBeZELHSBG5/codeComponent
 
-import "@plasmicapp/react-web/lib/plasmic.css";
+import '@plasmicapp/react-web/lib/plasmic.css';
 
-import projectcss from "./plasmic_plasmic_poc_localhost.module.css"; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
-import sty from "./PlasmicStoreNavigation.module.css"; // plasmic-import: WDwYKHyHBn/css
+import projectcss from './plasmic_plasmic_poc_localhost.module.css'; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
+import sty from './PlasmicStoreNavigation.module.css'; // plasmic-import: WDwYKHyHBn/css
 
 export type PlasmicStoreNavigation__VariantMembers = {};
 export type PlasmicStoreNavigation__VariantsArgs = {};
@@ -55,7 +55,7 @@ type ArgPropType = keyof PlasmicStoreNavigation__ArgsType;
 export const PlasmicStoreNavigation__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicStoreNavigation__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: p.Flex<'div'>;
   navWithCenteredLogo?: p.Flex<typeof NavWithCenteredLogo>;
 };
 
@@ -89,7 +89,7 @@ function PlasmicStoreNavigation__RenderFunc(props: {
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
@@ -110,7 +110,7 @@ function PlasmicStoreNavigation__RenderFunc(props: {
 
       <div className={projectcss.plasmic_page_wrapper}>
         <div
-          data-plasmic-name={"root"}
+          data-plasmic-name={'root'}
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
@@ -125,11 +125,11 @@ function PlasmicStoreNavigation__RenderFunc(props: {
         >
           <Heading
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.chakraUiHeading___1FYvF
             )}
             noOfLines={1 as const}
-            size={"4xl" as const}
+            size={'4xl' as const}
           >
             <div
               className={classNames(
@@ -138,13 +138,13 @@ function PlasmicStoreNavigation__RenderFunc(props: {
                 sty.text__wZmRx
               )}
             >
-              {"Store Navigation"}
+              {'Store Navigation'}
             </div>
           </Heading>
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__cjbOh)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__cjbOh)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -153,16 +153,16 @@ function PlasmicStoreNavigation__RenderFunc(props: {
                 sty.text__jaZ8J
               )}
             >
-              {"Nav with centered search"}
+              {'Nav with centered search'}
             </div>
           </Heading>
           <Heading
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.chakraUiHeading___9SugC
             )}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -171,13 +171,13 @@ function PlasmicStoreNavigation__RenderFunc(props: {
                 sty.text__mM6Sp
               )}
             >
-              {"Nav with centered logo"}
+              {'Nav with centered logo'}
             </div>
           </Heading>
           <NavWithCenteredLogo
-            data-plasmic-name={"navWithCenteredLogo"}
+            data-plasmic-name={'navWithCenteredLogo'}
             data-plasmic-override={overrides.navWithCenteredLogo}
-            className={classNames("__wab_instance", sty.navWithCenteredLogo)}
+            className={classNames('__wab_instance', sty.navWithCenteredLogo)}
           />
         </div>
       </div>
@@ -186,18 +186,18 @@ function PlasmicStoreNavigation__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "navWithCenteredLogo"],
-  navWithCenteredLogo: ["navWithCenteredLogo"]
+  root: ['root', 'navWithCenteredLogo'],
+  navWithCenteredLogo: ['navWithCenteredLogo'],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  root: 'div';
   navWithCenteredLogo: typeof NavWithCenteredLogo;
 };
 
-type ReservedPropsType = "variants" | "args" | "overrides";
+type ReservedPropsType = 'variants' | 'args' | 'overrides';
 type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicStoreNavigation__OverridesType,
   DescendantsType<T>
@@ -233,7 +233,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicStoreNavigation__ArgProps,
-          internalVariantPropNames: PlasmicStoreNavigation__VariantProps
+          internalVariantPropNames: PlasmicStoreNavigation__VariantProps,
         }),
       [props, nodeName]
     );
@@ -241,11 +241,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
-  if (nodeName === "root") {
-    func.displayName = "PlasmicStoreNavigation";
+  if (nodeName === 'root') {
+    func.displayName = 'PlasmicStoreNavigation';
   } else {
     func.displayName = `PlasmicStoreNavigation.${nodeName}`;
   }
@@ -254,10 +254,10 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicStoreNavigation = Object.assign(
   // Top-level PlasmicStoreNavigation renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent('root'),
   {
     // Helper components rendering sub-elements
-    navWithCenteredLogo: makeNodeComponent("navWithCenteredLogo"),
+    navWithCenteredLogo: makeNodeComponent('navWithCenteredLogo'),
 
     // Metadata about props expected for PlasmicStoreNavigation
     internalVariantProps: PlasmicStoreNavigation__VariantProps,
@@ -265,11 +265,11 @@ export const PlasmicStoreNavigation = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "",
-      description: "",
-      ogImageSrc: "",
-      canonical: ""
-    }
+      title: '',
+      description: '',
+      ogImageSrc: '',
+      canonical: '',
+    },
   }
 );
 

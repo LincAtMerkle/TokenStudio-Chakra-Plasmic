@@ -11,14 +11,14 @@
 // Plasmic Project: nV7sRTPBx6ecWzFNNAWeQg
 // Component: tLruM-Zl2t
 
-import * as React from "react";
+import * as React from 'react';
 
-import Head from "next/head";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/router';
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
+import * as p from '@plasmicapp/react-web';
+import * as ph from '@plasmicapp/react-web/lib/host';
 
 import {
   hasVariant,
@@ -34,14 +34,14 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
-} from "@plasmicapp/react-web";
-import { SignUpWithQuote } from "../../custom/chakraPro/Application/Authentication/SignUpWithQuote"; // plasmic-import: Wq3c7muJU-q/codeComponent
+  ensureGlobalVariants,
+} from '@plasmicapp/react-web';
+import { SignUpWithQuote } from '../../chakra/chakraPro/Application/Authentication/SignUpWithQuote'; // plasmic-import: Wq3c7muJU-q/codeComponent
 
-import "@plasmicapp/react-web/lib/plasmic.css";
+import '@plasmicapp/react-web/lib/plasmic.css';
 
-import projectcss from "./plasmic_plasmic_poc_localhost.module.css"; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
-import sty from "./PlasmicSignUpWithQuote.module.css"; // plasmic-import: tLruM-Zl2t/css
+import projectcss from './plasmic_plasmic_poc_localhost.module.css'; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
+import sty from './PlasmicSignUpWithQuote.module.css'; // plasmic-import: tLruM-Zl2t/css
 
 export type PlasmicSignUpWithQuote__VariantMembers = {};
 export type PlasmicSignUpWithQuote__VariantsArgs = {};
@@ -54,7 +54,7 @@ type ArgPropType = keyof PlasmicSignUpWithQuote__ArgsType;
 export const PlasmicSignUpWithQuote__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicSignUpWithQuote__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: p.Flex<'div'>;
   signUpWithQuote?: p.Flex<typeof SignUpWithQuote>;
 };
 
@@ -90,7 +90,7 @@ function PlasmicSignUpWithQuote__RenderFunc(props: {
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
@@ -101,7 +101,7 @@ function PlasmicSignUpWithQuote__RenderFunc(props: {
 
   return (
     <div
-      data-plasmic-name={"root"}
+      data-plasmic-name={'root'}
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
@@ -115,27 +115,27 @@ function PlasmicSignUpWithQuote__RenderFunc(props: {
       )}
     >
       <SignUpWithQuote
-        data-plasmic-name={"signUpWithQuote"}
+        data-plasmic-name={'signUpWithQuote'}
         data-plasmic-override={overrides.signUpWithQuote}
-        className={classNames("__wab_instance", sty.signUpWithQuote)}
+        className={classNames('__wab_instance', sty.signUpWithQuote)}
       />
     </div>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  root: ["root", "signUpWithQuote"],
-  signUpWithQuote: ["signUpWithQuote"]
+  root: ['root', 'signUpWithQuote'],
+  signUpWithQuote: ['signUpWithQuote'],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  root: 'div';
   signUpWithQuote: typeof SignUpWithQuote;
 };
 
-type ReservedPropsType = "variants" | "args" | "overrides";
+type ReservedPropsType = 'variants' | 'args' | 'overrides';
 type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicSignUpWithQuote__OverridesType,
   DescendantsType<T>
@@ -171,7 +171,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicSignUpWithQuote__ArgProps,
-          internalVariantPropNames: PlasmicSignUpWithQuote__VariantProps
+          internalVariantPropNames: PlasmicSignUpWithQuote__VariantProps,
         }),
       [props, nodeName]
     );
@@ -179,11 +179,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
-  if (nodeName === "root") {
-    func.displayName = "PlasmicSignUpWithQuote";
+  if (nodeName === 'root') {
+    func.displayName = 'PlasmicSignUpWithQuote';
   } else {
     func.displayName = `PlasmicSignUpWithQuote.${nodeName}`;
   }
@@ -192,14 +192,14 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicSignUpWithQuote = Object.assign(
   // Top-level PlasmicSignUpWithQuote renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent('root'),
   {
     // Helper components rendering sub-elements
-    signUpWithQuote: makeNodeComponent("signUpWithQuote"),
+    signUpWithQuote: makeNodeComponent('signUpWithQuote'),
 
     // Metadata about props expected for PlasmicSignUpWithQuote
     internalVariantProps: PlasmicSignUpWithQuote__VariantProps,
-    internalArgProps: PlasmicSignUpWithQuote__ArgProps
+    internalArgProps: PlasmicSignUpWithQuote__ArgProps,
   }
 );
 

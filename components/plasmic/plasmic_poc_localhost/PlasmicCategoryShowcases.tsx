@@ -11,14 +11,14 @@
 // Plasmic Project: nV7sRTPBx6ecWzFNNAWeQg
 // Component: Lvo1NoyitI
 
-import * as React from "react";
+import * as React from 'react';
 
-import Head from "next/head";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/router';
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
+import * as p from '@plasmicapp/react-web';
+import * as ph from '@plasmicapp/react-web/lib/host';
 
 import {
   hasVariant,
@@ -34,20 +34,20 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
-} from "@plasmicapp/react-web";
-import { Heading } from "@chakra-ui/react"; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
-import { ShowcaseOnWhiteBackground } from "../../custom/chakraPro/E-Commerce/Category Showcases/registerShowcaseOnWhiteBackground"; // plasmic-import: wEztTssyLcBE/codeComponent
-import { ShowcaseOnSpanningColumns } from "../../custom/chakraPro/ShowcaseOnSpanningColumns"; // plasmic-import: t11NHRuZSYyy/codeComponent
-import { ShowcaseThreeColumnGrid } from "../../custom/chakraPro/ShowcaseThreeColumnGrid"; // plasmic-import: HtbdbrjV8sSP/codeComponent
-import { ShowcaseGrid } from "../../custom/chakraPro/ShowcaseGrid"; // plasmic-import: 6LCal5Tufm7Z/codeComponent
-import { ShowcaseOnBackgroundImage } from "../../custom/chakraPro/E-Commerce/Category Showcases/registerShowcaseOnBackgroundImage"; // plasmic-import: M1ud6iQ3blbL/codeComponent
-import { ShowcaseOnColoredBackground } from "../../custom/chakraPro/E-Commerce/Category Showcases/registerShowcaseOnColoredBackground"; // plasmic-import: D3aVY6T6ZVuL/codeComponent
+  ensureGlobalVariants,
+} from '@plasmicapp/react-web';
+import { Heading } from '@chakra-ui/react'; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
+import { ShowcaseOnWhiteBackground } from '../../chakra/chakraPro/E-Commerce/Category Showcases/registerShowcaseOnWhiteBackground'; // plasmic-import: wEztTssyLcBE/codeComponent
+import { ShowcaseOnSpanningColumns } from '../../chakra/chakraPro/ShowcaseOnSpanningColumns'; // plasmic-import: t11NHRuZSYyy/codeComponent
+import { ShowcaseThreeColumnGrid } from '../../chakra/chakraPro/ShowcaseThreeColumnGrid'; // plasmic-import: HtbdbrjV8sSP/codeComponent
+import { ShowcaseGrid } from '../../chakra/chakraPro/ShowcaseGrid'; // plasmic-import: 6LCal5Tufm7Z/codeComponent
+import { ShowcaseOnBackgroundImage } from '../../chakra/chakraPro/E-Commerce/Category Showcases/registerShowcaseOnBackgroundImage'; // plasmic-import: M1ud6iQ3blbL/codeComponent
+import { ShowcaseOnColoredBackground } from '../../chakra/chakraPro/E-Commerce/Category Showcases/registerShowcaseOnColoredBackground'; // plasmic-import: D3aVY6T6ZVuL/codeComponent
 
-import "@plasmicapp/react-web/lib/plasmic.css";
+import '@plasmicapp/react-web/lib/plasmic.css';
 
-import projectcss from "./plasmic_plasmic_poc_localhost.module.css"; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
-import sty from "./PlasmicCategoryShowcases.module.css"; // plasmic-import: Lvo1NoyitI/css
+import projectcss from './plasmic_plasmic_poc_localhost.module.css'; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
+import sty from './PlasmicCategoryShowcases.module.css'; // plasmic-import: Lvo1NoyitI/css
 
 export type PlasmicCategoryShowcases__VariantMembers = {};
 export type PlasmicCategoryShowcases__VariantsArgs = {};
@@ -60,7 +60,7 @@ type ArgPropType = keyof PlasmicCategoryShowcases__ArgsType;
 export const PlasmicCategoryShowcases__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicCategoryShowcases__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: p.Flex<'div'>;
   showcaseOnWhiteBackground?: p.Flex<typeof ShowcaseOnWhiteBackground>;
   showcaseOnSpanningColumns?: p.Flex<typeof ShowcaseOnSpanningColumns>;
   showcaseThreeColumnGrid?: p.Flex<typeof ShowcaseThreeColumnGrid>;
@@ -99,7 +99,7 @@ function PlasmicCategoryShowcases__RenderFunc(props: {
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
@@ -120,7 +120,7 @@ function PlasmicCategoryShowcases__RenderFunc(props: {
 
       <div className={projectcss.plasmic_page_wrapper}>
         <div
-          data-plasmic-name={"root"}
+          data-plasmic-name={'root'}
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
@@ -135,11 +135,11 @@ function PlasmicCategoryShowcases__RenderFunc(props: {
         >
           <Heading
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.chakraUiHeading___0NxcT
             )}
             noOfLines={1 as const}
-            size={"4xl" as const}
+            size={'4xl' as const}
           >
             <div
               className={classNames(
@@ -148,13 +148,13 @@ function PlasmicCategoryShowcases__RenderFunc(props: {
                 sty.text__f6NuC
               )}
             >
-              {"Category Showcases"}
+              {'Category Showcases'}
             </div>
           </Heading>
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__i9Eei)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__i9Eei)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -163,22 +163,22 @@ function PlasmicCategoryShowcases__RenderFunc(props: {
                 sty.text__pgaSx
               )}
             >
-              {"Showcase on white background"}
+              {'Showcase on white background'}
             </div>
           </Heading>
           <ShowcaseOnWhiteBackground
-            data-plasmic-name={"showcaseOnWhiteBackground"}
+            data-plasmic-name={'showcaseOnWhiteBackground'}
             data-plasmic-override={overrides.showcaseOnWhiteBackground}
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.showcaseOnWhiteBackground
             )}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__qsuIb)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__qsuIb)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -187,22 +187,22 @@ function PlasmicCategoryShowcases__RenderFunc(props: {
                 sty.text__kxwUz
               )}
             >
-              {"Showcase on spanning columns"}
+              {'Showcase on spanning columns'}
             </div>
           </Heading>
           <ShowcaseOnSpanningColumns
-            data-plasmic-name={"showcaseOnSpanningColumns"}
+            data-plasmic-name={'showcaseOnSpanningColumns'}
             data-plasmic-override={overrides.showcaseOnSpanningColumns}
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.showcaseOnSpanningColumns
             )}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__yNm9H)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__yNm9H)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -211,22 +211,22 @@ function PlasmicCategoryShowcases__RenderFunc(props: {
                 sty.text__mTiWy
               )}
             >
-              {"Showcase three column grid"}
+              {'Showcase three column grid'}
             </div>
           </Heading>
           <ShowcaseThreeColumnGrid
-            data-plasmic-name={"showcaseThreeColumnGrid"}
+            data-plasmic-name={'showcaseThreeColumnGrid'}
             data-plasmic-override={overrides.showcaseThreeColumnGrid}
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.showcaseThreeColumnGrid
             )}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__pGmX)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__pGmX)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -235,19 +235,19 @@ function PlasmicCategoryShowcases__RenderFunc(props: {
                 sty.text___3Fc8V
               )}
             >
-              {"Showcase grid"}
+              {'Showcase grid'}
             </div>
           </Heading>
           <ShowcaseGrid
-            data-plasmic-name={"showcaseGrid"}
+            data-plasmic-name={'showcaseGrid'}
             data-plasmic-override={overrides.showcaseGrid}
-            className={classNames("__wab_instance", sty.showcaseGrid)}
+            className={classNames('__wab_instance', sty.showcaseGrid)}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__caAZi)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__caAZi)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -256,22 +256,22 @@ function PlasmicCategoryShowcases__RenderFunc(props: {
                 sty.text__oX6L
               )}
             >
-              {"Showcase on background image"}
+              {'Showcase on background image'}
             </div>
           </Heading>
           <ShowcaseOnBackgroundImage
-            data-plasmic-name={"showcaseOnBackgroundImage"}
+            data-plasmic-name={'showcaseOnBackgroundImage'}
             data-plasmic-override={overrides.showcaseOnBackgroundImage}
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.showcaseOnBackgroundImage
             )}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__hovT3)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__hovT3)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -280,14 +280,14 @@ function PlasmicCategoryShowcases__RenderFunc(props: {
                 sty.text__ba2Pq
               )}
             >
-              {"Showcase on colored background"}
+              {'Showcase on colored background'}
             </div>
           </Heading>
           <ShowcaseOnColoredBackground
-            data-plasmic-name={"showcaseOnColoredBackground"}
+            data-plasmic-name={'showcaseOnColoredBackground'}
             data-plasmic-override={overrides.showcaseOnColoredBackground}
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.showcaseOnColoredBackground
             )}
           />
@@ -299,26 +299,26 @@ function PlasmicCategoryShowcases__RenderFunc(props: {
 
 const PlasmicDescendants = {
   root: [
-    "root",
-    "showcaseOnWhiteBackground",
-    "showcaseOnSpanningColumns",
-    "showcaseThreeColumnGrid",
-    "showcaseGrid",
-    "showcaseOnBackgroundImage",
-    "showcaseOnColoredBackground"
+    'root',
+    'showcaseOnWhiteBackground',
+    'showcaseOnSpanningColumns',
+    'showcaseThreeColumnGrid',
+    'showcaseGrid',
+    'showcaseOnBackgroundImage',
+    'showcaseOnColoredBackground',
   ],
-  showcaseOnWhiteBackground: ["showcaseOnWhiteBackground"],
-  showcaseOnSpanningColumns: ["showcaseOnSpanningColumns"],
-  showcaseThreeColumnGrid: ["showcaseThreeColumnGrid"],
-  showcaseGrid: ["showcaseGrid"],
-  showcaseOnBackgroundImage: ["showcaseOnBackgroundImage"],
-  showcaseOnColoredBackground: ["showcaseOnColoredBackground"]
+  showcaseOnWhiteBackground: ['showcaseOnWhiteBackground'],
+  showcaseOnSpanningColumns: ['showcaseOnSpanningColumns'],
+  showcaseThreeColumnGrid: ['showcaseThreeColumnGrid'],
+  showcaseGrid: ['showcaseGrid'],
+  showcaseOnBackgroundImage: ['showcaseOnBackgroundImage'],
+  showcaseOnColoredBackground: ['showcaseOnColoredBackground'],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  root: 'div';
   showcaseOnWhiteBackground: typeof ShowcaseOnWhiteBackground;
   showcaseOnSpanningColumns: typeof ShowcaseOnSpanningColumns;
   showcaseThreeColumnGrid: typeof ShowcaseThreeColumnGrid;
@@ -327,7 +327,7 @@ type NodeDefaultElementType = {
   showcaseOnColoredBackground: typeof ShowcaseOnColoredBackground;
 };
 
-type ReservedPropsType = "variants" | "args" | "overrides";
+type ReservedPropsType = 'variants' | 'args' | 'overrides';
 type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicCategoryShowcases__OverridesType,
   DescendantsType<T>
@@ -363,7 +363,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicCategoryShowcases__ArgProps,
-          internalVariantPropNames: PlasmicCategoryShowcases__VariantProps
+          internalVariantPropNames: PlasmicCategoryShowcases__VariantProps,
         }),
       [props, nodeName]
     );
@@ -371,11 +371,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
-  if (nodeName === "root") {
-    func.displayName = "PlasmicCategoryShowcases";
+  if (nodeName === 'root') {
+    func.displayName = 'PlasmicCategoryShowcases';
   } else {
     func.displayName = `PlasmicCategoryShowcases.${nodeName}`;
   }
@@ -384,16 +384,16 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicCategoryShowcases = Object.assign(
   // Top-level PlasmicCategoryShowcases renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent('root'),
   {
     // Helper components rendering sub-elements
-    showcaseOnWhiteBackground: makeNodeComponent("showcaseOnWhiteBackground"),
-    showcaseOnSpanningColumns: makeNodeComponent("showcaseOnSpanningColumns"),
-    showcaseThreeColumnGrid: makeNodeComponent("showcaseThreeColumnGrid"),
-    showcaseGrid: makeNodeComponent("showcaseGrid"),
-    showcaseOnBackgroundImage: makeNodeComponent("showcaseOnBackgroundImage"),
+    showcaseOnWhiteBackground: makeNodeComponent('showcaseOnWhiteBackground'),
+    showcaseOnSpanningColumns: makeNodeComponent('showcaseOnSpanningColumns'),
+    showcaseThreeColumnGrid: makeNodeComponent('showcaseThreeColumnGrid'),
+    showcaseGrid: makeNodeComponent('showcaseGrid'),
+    showcaseOnBackgroundImage: makeNodeComponent('showcaseOnBackgroundImage'),
     showcaseOnColoredBackground: makeNodeComponent(
-      "showcaseOnColoredBackground"
+      'showcaseOnColoredBackground'
     ),
 
     // Metadata about props expected for PlasmicCategoryShowcases
@@ -402,11 +402,11 @@ export const PlasmicCategoryShowcases = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "",
-      description: "",
-      ogImageSrc: "",
-      canonical: ""
-    }
+      title: '',
+      description: '',
+      ogImageSrc: '',
+      canonical: '',
+    },
   }
 );
 

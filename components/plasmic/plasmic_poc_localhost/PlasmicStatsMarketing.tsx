@@ -11,14 +11,14 @@
 // Plasmic Project: nV7sRTPBx6ecWzFNNAWeQg
 // Component: rBRoguPd71
 
-import * as React from "react";
+import * as React from 'react';
 
-import Head from "next/head";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/router';
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
+import * as p from '@plasmicapp/react-web';
+import * as ph from '@plasmicapp/react-web/lib/host';
 
 import {
   hasVariant,
@@ -34,18 +34,18 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
-} from "@plasmicapp/react-web";
-import { Heading } from "@chakra-ui/react"; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
-import { StatWithCallToActionOnAccent } from "../../custom/chakraPro/Marketing/Stats/StatWithCallToActionOnAccent"; // plasmic-import: xHh1h8SL7L5Q/codeComponent
-import { StatWithCallToAction } from "../../custom/chakraPro/Marketing/Stats/StatWithCallToAction"; // plasmic-import: rfeKVAhqravI/codeComponent
-import { StatsOnBrand } from "../../custom/chakraPro/Marketing/Stats/StatsOnBrand"; // plasmic-import: lbIabod64y9i/codeComponent
-import { StatsWithDivider } from "../../custom/chakraPro/Marketing/Stats/StatsWithDivider"; // plasmic-import: GKUluPwNCR0I/codeComponent
+  ensureGlobalVariants,
+} from '@plasmicapp/react-web';
+import { Heading } from '@chakra-ui/react'; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
+import { StatWithCallToActionOnAccent } from '../../chakra/chakraPro/Marketing/Stats/StatWithCallToActionOnAccent'; // plasmic-import: xHh1h8SL7L5Q/codeComponent
+import { StatWithCallToAction } from '../../chakra/chakraPro/Marketing/Stats/StatWithCallToAction'; // plasmic-import: rfeKVAhqravI/codeComponent
+import { StatsOnBrand } from '../../chakra/chakraPro/Marketing/Stats/StatsOnBrand'; // plasmic-import: lbIabod64y9i/codeComponent
+import { StatsWithDivider } from '../../chakra/chakraPro/Marketing/Stats/StatsWithDivider'; // plasmic-import: GKUluPwNCR0I/codeComponent
 
-import "@plasmicapp/react-web/lib/plasmic.css";
+import '@plasmicapp/react-web/lib/plasmic.css';
 
-import projectcss from "./plasmic_plasmic_poc_localhost.module.css"; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
-import sty from "./PlasmicStatsMarketing.module.css"; // plasmic-import: rBRoguPd71/css
+import projectcss from './plasmic_plasmic_poc_localhost.module.css'; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
+import sty from './PlasmicStatsMarketing.module.css'; // plasmic-import: rBRoguPd71/css
 
 export type PlasmicStatsMarketing__VariantMembers = {};
 export type PlasmicStatsMarketing__VariantsArgs = {};
@@ -57,7 +57,7 @@ type ArgPropType = keyof PlasmicStatsMarketing__ArgsType;
 export const PlasmicStatsMarketing__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicStatsMarketing__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: p.Flex<'div'>;
   statWithCallToActionOnAccent?: p.Flex<typeof StatWithCallToActionOnAccent>;
   statWithCallToAction?: p.Flex<typeof StatWithCallToAction>;
   statsOnBrand?: p.Flex<typeof StatsOnBrand>;
@@ -94,7 +94,7 @@ function PlasmicStatsMarketing__RenderFunc(props: {
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
@@ -115,7 +115,7 @@ function PlasmicStatsMarketing__RenderFunc(props: {
 
       <div className={projectcss.plasmic_page_wrapper}>
         <div
-          data-plasmic-name={"root"}
+          data-plasmic-name={'root'}
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
@@ -129,9 +129,9 @@ function PlasmicStatsMarketing__RenderFunc(props: {
           )}
         >
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__seZaj)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__seZaj)}
             noOfLines={1 as const}
-            size={"4xl" as const}
+            size={'4xl' as const}
           >
             <div
               className={classNames(
@@ -140,13 +140,13 @@ function PlasmicStatsMarketing__RenderFunc(props: {
                 sty.text___7Z4ML
               )}
             >
-              {"Stats"}
+              {'Stats'}
             </div>
           </Heading>
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__knxsv)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__knxsv)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -155,22 +155,22 @@ function PlasmicStatsMarketing__RenderFunc(props: {
                 sty.text__jzTv8
               )}
             >
-              {"Stat with call to action on accent"}
+              {'Stat with call to action on accent'}
             </div>
           </Heading>
           <StatWithCallToActionOnAccent
-            data-plasmic-name={"statWithCallToActionOnAccent"}
+            data-plasmic-name={'statWithCallToActionOnAccent'}
             data-plasmic-override={overrides.statWithCallToActionOnAccent}
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.statWithCallToActionOnAccent
             )}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__bjoUa)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__bjoUa)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -179,19 +179,19 @@ function PlasmicStatsMarketing__RenderFunc(props: {
                 sty.text___2ZmTd
               )}
             >
-              {"Stat with call to action"}
+              {'Stat with call to action'}
             </div>
           </Heading>
           <StatWithCallToAction
-            data-plasmic-name={"statWithCallToAction"}
+            data-plasmic-name={'statWithCallToAction'}
             data-plasmic-override={overrides.statWithCallToAction}
-            className={classNames("__wab_instance", sty.statWithCallToAction)}
+            className={classNames('__wab_instance', sty.statWithCallToAction)}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__iDwkC)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__iDwkC)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -200,19 +200,19 @@ function PlasmicStatsMarketing__RenderFunc(props: {
                 sty.text__xmC7Q
               )}
             >
-              {"Stats on brand"}
+              {'Stats on brand'}
             </div>
           </Heading>
           <StatsOnBrand
-            data-plasmic-name={"statsOnBrand"}
+            data-plasmic-name={'statsOnBrand'}
             data-plasmic-override={overrides.statsOnBrand}
-            className={classNames("__wab_instance", sty.statsOnBrand)}
+            className={classNames('__wab_instance', sty.statsOnBrand)}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__muF9)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__muF9)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -221,13 +221,13 @@ function PlasmicStatsMarketing__RenderFunc(props: {
                 sty.text__ib7Pr
               )}
             >
-              {"Stats with divider"}
+              {'Stats with divider'}
             </div>
           </Heading>
           <StatsWithDivider
-            data-plasmic-name={"statsWithDivider"}
+            data-plasmic-name={'statsWithDivider'}
             data-plasmic-override={overrides.statsWithDivider}
-            className={classNames("__wab_instance", sty.statsWithDivider)}
+            className={classNames('__wab_instance', sty.statsWithDivider)}
           />
         </div>
       </div>
@@ -237,29 +237,29 @@ function PlasmicStatsMarketing__RenderFunc(props: {
 
 const PlasmicDescendants = {
   root: [
-    "root",
-    "statWithCallToActionOnAccent",
-    "statWithCallToAction",
-    "statsOnBrand",
-    "statsWithDivider"
+    'root',
+    'statWithCallToActionOnAccent',
+    'statWithCallToAction',
+    'statsOnBrand',
+    'statsWithDivider',
   ],
-  statWithCallToActionOnAccent: ["statWithCallToActionOnAccent"],
-  statWithCallToAction: ["statWithCallToAction"],
-  statsOnBrand: ["statsOnBrand"],
-  statsWithDivider: ["statsWithDivider"]
+  statWithCallToActionOnAccent: ['statWithCallToActionOnAccent'],
+  statWithCallToAction: ['statWithCallToAction'],
+  statsOnBrand: ['statsOnBrand'],
+  statsWithDivider: ['statsWithDivider'],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  root: 'div';
   statWithCallToActionOnAccent: typeof StatWithCallToActionOnAccent;
   statWithCallToAction: typeof StatWithCallToAction;
   statsOnBrand: typeof StatsOnBrand;
   statsWithDivider: typeof StatsWithDivider;
 };
 
-type ReservedPropsType = "variants" | "args" | "overrides";
+type ReservedPropsType = 'variants' | 'args' | 'overrides';
 type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicStatsMarketing__OverridesType,
   DescendantsType<T>
@@ -295,7 +295,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicStatsMarketing__ArgProps,
-          internalVariantPropNames: PlasmicStatsMarketing__VariantProps
+          internalVariantPropNames: PlasmicStatsMarketing__VariantProps,
         }),
       [props, nodeName]
     );
@@ -303,11 +303,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
-  if (nodeName === "root") {
-    func.displayName = "PlasmicStatsMarketing";
+  if (nodeName === 'root') {
+    func.displayName = 'PlasmicStatsMarketing';
   } else {
     func.displayName = `PlasmicStatsMarketing.${nodeName}`;
   }
@@ -316,15 +316,15 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicStatsMarketing = Object.assign(
   // Top-level PlasmicStatsMarketing renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent('root'),
   {
     // Helper components rendering sub-elements
     statWithCallToActionOnAccent: makeNodeComponent(
-      "statWithCallToActionOnAccent"
+      'statWithCallToActionOnAccent'
     ),
-    statWithCallToAction: makeNodeComponent("statWithCallToAction"),
-    statsOnBrand: makeNodeComponent("statsOnBrand"),
-    statsWithDivider: makeNodeComponent("statsWithDivider"),
+    statWithCallToAction: makeNodeComponent('statWithCallToAction'),
+    statsOnBrand: makeNodeComponent('statsOnBrand'),
+    statsWithDivider: makeNodeComponent('statsWithDivider'),
 
     // Metadata about props expected for PlasmicStatsMarketing
     internalVariantProps: PlasmicStatsMarketing__VariantProps,
@@ -332,11 +332,11 @@ export const PlasmicStatsMarketing = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "",
-      description: "",
-      ogImageSrc: "",
-      canonical: ""
-    }
+      title: '',
+      description: '',
+      ogImageSrc: '',
+      canonical: '',
+    },
   }
 );
 

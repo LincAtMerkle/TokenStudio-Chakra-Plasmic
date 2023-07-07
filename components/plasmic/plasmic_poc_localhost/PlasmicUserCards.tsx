@@ -11,14 +11,14 @@
 // Plasmic Project: nV7sRTPBx6ecWzFNNAWeQg
 // Component: dMOeaCXbpM
 
-import * as React from "react";
+import * as React from 'react';
 
-import Head from "next/head";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/router';
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
+import * as p from '@plasmicapp/react-web';
+import * as ph from '@plasmicapp/react-web/lib/host';
 
 import {
   hasVariant,
@@ -34,17 +34,17 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
-} from "@plasmicapp/react-web";
-import { Heading } from "@chakra-ui/react"; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
-import { UserCardWithTags } from "../../custom/chakraPro/Aplication/User Cards/UserCardWithTags"; // plasmic-import: hx-JbUSxCMo1/codeComponent
-import { UserCardWithBackground } from "../../custom/chakraPro/Aplication/User Cards/UserCardWithBackground"; // plasmic-import: k8nx2p7O6Ocv/codeComponent
-import { UserCardGrid } from "../../custom/chakraPro/Aplication/User Cards/UserCardGrid"; // plasmic-import: TlS4qetrVL1e/codeComponent
+  ensureGlobalVariants,
+} from '@plasmicapp/react-web';
+import { Heading } from '@chakra-ui/react'; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
+import { UserCardWithTags } from '../../chakra/chakraPro/Aplication/User Cards/UserCardWithTags'; // plasmic-import: hx-JbUSxCMo1/codeComponent
+import { UserCardWithBackground } from '../../chakra/chakraPro/Aplication/User Cards/UserCardWithBackground'; // plasmic-import: k8nx2p7O6Ocv/codeComponent
+import { UserCardGrid } from '../../chakra/chakraPro/Aplication/User Cards/UserCardGrid'; // plasmic-import: TlS4qetrVL1e/codeComponent
 
-import "@plasmicapp/react-web/lib/plasmic.css";
+import '@plasmicapp/react-web/lib/plasmic.css';
 
-import projectcss from "./plasmic_plasmic_poc_localhost.module.css"; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
-import sty from "./PlasmicUserCards.module.css"; // plasmic-import: dMOeaCXbpM/css
+import projectcss from './plasmic_plasmic_poc_localhost.module.css'; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
+import sty from './PlasmicUserCards.module.css'; // plasmic-import: dMOeaCXbpM/css
 
 export type PlasmicUserCards__VariantMembers = {};
 export type PlasmicUserCards__VariantsArgs = {};
@@ -56,7 +56,7 @@ type ArgPropType = keyof PlasmicUserCards__ArgsType;
 export const PlasmicUserCards__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicUserCards__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: p.Flex<'div'>;
   userCardWithBackground?: p.Flex<typeof UserCardWithBackground>;
   userCardGrid?: p.Flex<typeof UserCardGrid>;
 };
@@ -91,7 +91,7 @@ function PlasmicUserCards__RenderFunc(props: {
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
@@ -112,7 +112,7 @@ function PlasmicUserCards__RenderFunc(props: {
 
       <div className={projectcss.plasmic_page_wrapper}>
         <div
-          data-plasmic-name={"root"}
+          data-plasmic-name={'root'}
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
@@ -126,9 +126,9 @@ function PlasmicUserCards__RenderFunc(props: {
           )}
         >
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__jhkJ)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__jhkJ)}
             noOfLines={1 as const}
-            size={"4xl" as const}
+            size={'4xl' as const}
           >
             <div
               className={classNames(
@@ -137,16 +137,16 @@ function PlasmicUserCards__RenderFunc(props: {
                 sty.text__wMIlH
               )}
             >
-              {"User Cards"}
+              {'User Cards'}
             </div>
           </Heading>
           <Heading
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.chakraUiHeading___49Cp7
             )}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -155,20 +155,20 @@ function PlasmicUserCards__RenderFunc(props: {
                 sty.text__gFAb9
               )}
             >
-              {"User card with tags"}
+              {'User card with tags'}
             </div>
           </Heading>
           <UserCardWithTags
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.userCardWithTags__eYrk7
             )}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__eSr6R)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__eSr6R)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -177,17 +177,17 @@ function PlasmicUserCards__RenderFunc(props: {
                 sty.text__poKb0
               )}
             >
-              {"User card with rating"}
+              {'User card with rating'}
             </div>
           </Heading>
           <UserCardWithTags
-            className={classNames("__wab_instance", sty.userCardWithTags__raBo)}
+            className={classNames('__wab_instance', sty.userCardWithTags__raBo)}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__eynm2)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__eynm2)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -196,19 +196,19 @@ function PlasmicUserCards__RenderFunc(props: {
                 sty.text__uwxhn
               )}
             >
-              {"User card with background"}
+              {'User card with background'}
             </div>
           </Heading>
           <UserCardWithBackground
-            data-plasmic-name={"userCardWithBackground"}
+            data-plasmic-name={'userCardWithBackground'}
             data-plasmic-override={overrides.userCardWithBackground}
-            className={classNames("__wab_instance", sty.userCardWithBackground)}
+            className={classNames('__wab_instance', sty.userCardWithBackground)}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__mBo6)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__mBo6)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -217,13 +217,13 @@ function PlasmicUserCards__RenderFunc(props: {
                 sty.text__f6Sah
               )}
             >
-              {"User card grid"}
+              {'User card grid'}
             </div>
           </Heading>
           <UserCardGrid
-            data-plasmic-name={"userCardGrid"}
+            data-plasmic-name={'userCardGrid'}
             data-plasmic-override={overrides.userCardGrid}
-            className={classNames("__wab_instance", sty.userCardGrid)}
+            className={classNames('__wab_instance', sty.userCardGrid)}
           />
         </div>
       </div>
@@ -232,20 +232,20 @@ function PlasmicUserCards__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "userCardWithBackground", "userCardGrid"],
-  userCardWithBackground: ["userCardWithBackground"],
-  userCardGrid: ["userCardGrid"]
+  root: ['root', 'userCardWithBackground', 'userCardGrid'],
+  userCardWithBackground: ['userCardWithBackground'],
+  userCardGrid: ['userCardGrid'],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  root: 'div';
   userCardWithBackground: typeof UserCardWithBackground;
   userCardGrid: typeof UserCardGrid;
 };
 
-type ReservedPropsType = "variants" | "args" | "overrides";
+type ReservedPropsType = 'variants' | 'args' | 'overrides';
 type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicUserCards__OverridesType,
   DescendantsType<T>
@@ -281,7 +281,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicUserCards__ArgProps,
-          internalVariantPropNames: PlasmicUserCards__VariantProps
+          internalVariantPropNames: PlasmicUserCards__VariantProps,
         }),
       [props, nodeName]
     );
@@ -289,11 +289,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
-  if (nodeName === "root") {
-    func.displayName = "PlasmicUserCards";
+  if (nodeName === 'root') {
+    func.displayName = 'PlasmicUserCards';
   } else {
     func.displayName = `PlasmicUserCards.${nodeName}`;
   }
@@ -302,11 +302,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicUserCards = Object.assign(
   // Top-level PlasmicUserCards renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent('root'),
   {
     // Helper components rendering sub-elements
-    userCardWithBackground: makeNodeComponent("userCardWithBackground"),
-    userCardGrid: makeNodeComponent("userCardGrid"),
+    userCardWithBackground: makeNodeComponent('userCardWithBackground'),
+    userCardGrid: makeNodeComponent('userCardGrid'),
 
     // Metadata about props expected for PlasmicUserCards
     internalVariantProps: PlasmicUserCards__VariantProps,
@@ -314,11 +314,11 @@ export const PlasmicUserCards = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "",
-      description: "",
-      ogImageSrc: "",
-      canonical: ""
-    }
+      title: '',
+      description: '',
+      ogImageSrc: '',
+      canonical: '',
+    },
   }
 );
 

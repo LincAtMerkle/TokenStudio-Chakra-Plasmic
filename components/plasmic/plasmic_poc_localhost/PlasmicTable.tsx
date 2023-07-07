@@ -11,14 +11,14 @@
 // Plasmic Project: nV7sRTPBx6ecWzFNNAWeQg
 // Component: S0E6yeW35J539P
 
-import * as React from "react";
+import * as React from 'react';
 
-import Head from "next/head";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/router';
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
+import * as p from '@plasmicapp/react-web';
+import * as ph from '@plasmicapp/react-web/lib/host';
 
 import {
   hasVariant,
@@ -34,21 +34,21 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
-} from "@plasmicapp/react-web";
-import { TableContainer } from "@chakra-ui/react"; // plasmic-import: FgTrG2sfqMOBLL/codeComponent
-import { Table } from "@chakra-ui/react"; // plasmic-import: 7LAWEjV2Iyyowv/codeComponent
-import { Thead } from "@chakra-ui/react"; // plasmic-import: ochSN38DrmETRc/codeComponent
-import { Tr } from "@chakra-ui/react"; // plasmic-import: J70buxAAo8QM9G/codeComponent
-import { Th } from "@chakra-ui/react"; // plasmic-import: uJiUZk2_Z6yH9F/codeComponent
-import { Tbody } from "@chakra-ui/react"; // plasmic-import: ZLaveuQV2FzR8l/codeComponent
-import { Td } from "@chakra-ui/react"; // plasmic-import: 64_T6_Zjd5hSZj/codeComponent
-import { TableCaption } from "@chakra-ui/react"; // plasmic-import: Q6F2H8mrSVUoXv/codeComponent
+  ensureGlobalVariants,
+} from '@plasmicapp/react-web';
+import { TableContainer } from '@chakra-ui/react'; // plasmic-import: FgTrG2sfqMOBLL/codeComponent
+import { Table } from '@chakra-ui/react'; // plasmic-import: 7LAWEjV2Iyyowv/codeComponent
+import { Thead } from '@chakra-ui/react'; // plasmic-import: ochSN38DrmETRc/codeComponent
+import { Tr } from '@chakra-ui/react'; // plasmic-import: J70buxAAo8QM9G/codeComponent
+import { Th } from '@chakra-ui/react'; // plasmic-import: uJiUZk2_Z6yH9F/codeComponent
+import { Tbody } from '@chakra-ui/react'; // plasmic-import: ZLaveuQV2FzR8l/codeComponent
+import { Td } from '@chakra-ui/react'; // plasmic-import: 64_T6_Zjd5hSZj/codeComponent
+import { TableCaption } from '@chakra-ui/react'; // plasmic-import: Q6F2H8mrSVUoXv/codeComponent
 
-import "@plasmicapp/react-web/lib/plasmic.css";
+import '@plasmicapp/react-web/lib/plasmic.css';
 
-import projectcss from "./plasmic_plasmic_poc_localhost.module.css"; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
-import sty from "./PlasmicTable.module.css"; // plasmic-import: S0E6yeW35J539P/css
+import projectcss from './plasmic_plasmic_poc_localhost.module.css'; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
+import sty from './PlasmicTable.module.css'; // plasmic-import: S0E6yeW35J539P/css
 
 export type PlasmicTable__VariantMembers = {};
 export type PlasmicTable__VariantsArgs = {};
@@ -60,7 +60,7 @@ type ArgPropType = keyof PlasmicTable__ArgsType;
 export const PlasmicTable__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicTable__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: p.Flex<'div'>;
   chakraUiTableContainer?: p.Flex<typeof TableContainer>;
   chakraUiThead?: p.Flex<typeof Thead>;
   chakraUiTbody?: p.Flex<typeof Tbody>;
@@ -97,7 +97,7 @@ function PlasmicTable__RenderFunc(props: {
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
@@ -118,8 +118,8 @@ function PlasmicTable__RenderFunc(props: {
 
       <div className={projectcss.plasmic_page_wrapper}>
         <p.Stack
-          as={"div"}
-          data-plasmic-name={"root"}
+          as={'div'}
+          data-plasmic-name={'root'}
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
@@ -134,30 +134,30 @@ function PlasmicTable__RenderFunc(props: {
           )}
         >
           <TableContainer
-            data-plasmic-name={"chakraUiTableContainer"}
+            data-plasmic-name={'chakraUiTableContainer'}
             data-plasmic-override={overrides.chakraUiTableContainer}
-            className={classNames("__wab_instance", sty.chakraUiTableContainer)}
+            className={classNames('__wab_instance', sty.chakraUiTableContainer)}
           >
             <Table
-              className={classNames("__wab_instance", sty.chakraUiTable__iQkKh)}
-              colorScheme={"gray" as const}
-              size={"md" as const}
-              variant={"simple" as const}
+              className={classNames('__wab_instance', sty.chakraUiTable__iQkKh)}
+              colorScheme={'gray' as const}
+              size={'md' as const}
+              variant={'simple' as const}
             >
               <Thead
-                data-plasmic-name={"chakraUiThead"}
+                data-plasmic-name={'chakraUiThead'}
                 data-plasmic-override={overrides.chakraUiThead}
-                className={classNames("__wab_instance", sty.chakraUiThead)}
+                className={classNames('__wab_instance', sty.chakraUiThead)}
               >
                 <Tr
                   className={classNames(
-                    "__wab_instance",
+                    '__wab_instance',
                     sty.chakraUiTr__wUQqV
                   )}
                 >
                   <Th
                     className={classNames(
-                      "__wab_instance",
+                      '__wab_instance',
                       sty.chakraUiTh__iz5CV
                     )}
                   >
@@ -168,12 +168,12 @@ function PlasmicTable__RenderFunc(props: {
                         sty.text__mA9Ms
                       )}
                     >
-                      {"TO CONVERT"}
+                      {'TO CONVERT'}
                     </div>
                   </Th>
                   <Th
                     className={classNames(
-                      "__wab_instance",
+                      '__wab_instance',
                       sty.chakraUiTh__fAn1Z
                     )}
                   >
@@ -184,12 +184,12 @@ function PlasmicTable__RenderFunc(props: {
                         sty.text__sdOcO
                       )}
                     >
-                      {"INTO"}
+                      {'INTO'}
                     </div>
                   </Th>
                   <Th
                     className={classNames(
-                      "__wab_instance",
+                      '__wab_instance',
                       sty.chakraUiTh__o4W5K
                     )}
                   >
@@ -200,25 +200,25 @@ function PlasmicTable__RenderFunc(props: {
                         sty.text__bs1Zo
                       )}
                     >
-                      {"MULTIPLY BY"}
+                      {'MULTIPLY BY'}
                     </div>
                   </Th>
                 </Tr>
               </Thead>
               <Tbody
-                data-plasmic-name={"chakraUiTbody"}
+                data-plasmic-name={'chakraUiTbody'}
                 data-plasmic-override={overrides.chakraUiTbody}
-                className={classNames("__wab_instance", sty.chakraUiTbody)}
+                className={classNames('__wab_instance', sty.chakraUiTbody)}
               >
                 <Tr
                   className={classNames(
-                    "__wab_instance",
+                    '__wab_instance',
                     sty.chakraUiTr__fbnRy
                   )}
                 >
                   <Td
                     className={classNames(
-                      "__wab_instance",
+                      '__wab_instance',
                       sty.chakraUiTd__ex0E1
                     )}
                   >
@@ -229,12 +229,12 @@ function PlasmicTable__RenderFunc(props: {
                         sty.text__hY8Ia
                       )}
                     >
-                      {"inches"}
+                      {'inches'}
                     </div>
                   </Td>
                   <Td
                     className={classNames(
-                      "__wab_instance",
+                      '__wab_instance',
                       sty.chakraUiTd__po8IR
                     )}
                   >
@@ -245,12 +245,12 @@ function PlasmicTable__RenderFunc(props: {
                         sty.text___5NYr5
                       )}
                     >
-                      {"millimetres (mm)"}
+                      {'millimetres (mm)'}
                     </div>
                   </Td>
                   <Td
                     className={classNames(
-                      "__wab_instance",
+                      '__wab_instance',
                       sty.chakraUiTd__td6H1
                     )}
                   >
@@ -261,7 +261,7 @@ function PlasmicTable__RenderFunc(props: {
                         sty.text__tvIZa
                       )}
                     >
-                      {"25.4"}
+                      {'25.4'}
                     </div>
                   </Td>
                 </Tr>
@@ -269,16 +269,16 @@ function PlasmicTable__RenderFunc(props: {
             </Table>
           </TableContainer>
           <Table
-            className={classNames("__wab_instance", sty.chakraUiTable___3SJie)}
-            colorScheme={"gray" as const}
-            size={"md" as const}
-            variant={"simple" as const}
+            className={classNames('__wab_instance', sty.chakraUiTable___3SJie)}
+            colorScheme={'gray' as const}
+            size={'md' as const}
+            variant={'simple' as const}
           >
             <TableCaption
-              data-plasmic-name={"chakraUiTableCaption"}
+              data-plasmic-name={'chakraUiTableCaption'}
               data-plasmic-override={overrides.chakraUiTableCaption}
-              className={classNames("__wab_instance", sty.chakraUiTableCaption)}
-              placement={"bottom" as const}
+              className={classNames('__wab_instance', sty.chakraUiTableCaption)}
+              placement={'bottom' as const}
             >
               <div
                 className={classNames(
@@ -287,7 +287,7 @@ function PlasmicTable__RenderFunc(props: {
                   sty.text__gK5Ec
                 )}
               >
-                {"Imperial to metric conversion factors"}
+                {'Imperial to metric conversion factors'}
               </div>
             </TableCaption>
           </Table>
@@ -299,33 +299,33 @@ function PlasmicTable__RenderFunc(props: {
 
 const PlasmicDescendants = {
   root: [
-    "root",
-    "chakraUiTableContainer",
-    "chakraUiThead",
-    "chakraUiTbody",
-    "chakraUiTableCaption"
+    'root',
+    'chakraUiTableContainer',
+    'chakraUiThead',
+    'chakraUiTbody',
+    'chakraUiTableCaption',
   ],
   chakraUiTableContainer: [
-    "chakraUiTableContainer",
-    "chakraUiThead",
-    "chakraUiTbody"
+    'chakraUiTableContainer',
+    'chakraUiThead',
+    'chakraUiTbody',
   ],
-  chakraUiThead: ["chakraUiThead"],
-  chakraUiTbody: ["chakraUiTbody"],
-  chakraUiTableCaption: ["chakraUiTableCaption"]
+  chakraUiThead: ['chakraUiThead'],
+  chakraUiTbody: ['chakraUiTbody'],
+  chakraUiTableCaption: ['chakraUiTableCaption'],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  root: 'div';
   chakraUiTableContainer: typeof TableContainer;
   chakraUiThead: typeof Thead;
   chakraUiTbody: typeof Tbody;
   chakraUiTableCaption: typeof TableCaption;
 };
 
-type ReservedPropsType = "variants" | "args" | "overrides";
+type ReservedPropsType = 'variants' | 'args' | 'overrides';
 type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicTable__OverridesType,
   DescendantsType<T>
@@ -361,7 +361,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicTable__ArgProps,
-          internalVariantPropNames: PlasmicTable__VariantProps
+          internalVariantPropNames: PlasmicTable__VariantProps,
         }),
       [props, nodeName]
     );
@@ -369,11 +369,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
-  if (nodeName === "root") {
-    func.displayName = "PlasmicTable";
+  if (nodeName === 'root') {
+    func.displayName = 'PlasmicTable';
   } else {
     func.displayName = `PlasmicTable.${nodeName}`;
   }
@@ -382,13 +382,13 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicTable = Object.assign(
   // Top-level PlasmicTable renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent('root'),
   {
     // Helper components rendering sub-elements
-    chakraUiTableContainer: makeNodeComponent("chakraUiTableContainer"),
-    chakraUiThead: makeNodeComponent("chakraUiThead"),
-    chakraUiTbody: makeNodeComponent("chakraUiTbody"),
-    chakraUiTableCaption: makeNodeComponent("chakraUiTableCaption"),
+    chakraUiTableContainer: makeNodeComponent('chakraUiTableContainer'),
+    chakraUiThead: makeNodeComponent('chakraUiThead'),
+    chakraUiTbody: makeNodeComponent('chakraUiTbody'),
+    chakraUiTableCaption: makeNodeComponent('chakraUiTableCaption'),
 
     // Metadata about props expected for PlasmicTable
     internalVariantProps: PlasmicTable__VariantProps,
@@ -396,11 +396,11 @@ export const PlasmicTable = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "",
-      description: "",
-      ogImageSrc: "",
-      canonical: ""
-    }
+      title: '',
+      description: '',
+      ogImageSrc: '',
+      canonical: '',
+    },
   }
 );
 

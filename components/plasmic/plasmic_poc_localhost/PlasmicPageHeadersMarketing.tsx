@@ -11,14 +11,14 @@
 // Plasmic Project: nV7sRTPBx6ecWzFNNAWeQg
 // Component: rM_04RxMuJ
 
-import * as React from "react";
+import * as React from 'react';
 
-import Head from "next/head";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/router';
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
+import * as p from '@plasmicapp/react-web';
+import * as ph from '@plasmicapp/react-web/lib/host';
 
 import {
   hasVariant,
@@ -34,19 +34,19 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
-} from "@plasmicapp/react-web";
-import { Heading } from "@chakra-ui/react"; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
-import { PageHeaderCentredOnAccent } from "../../custom/chakraPro/Marketing/Page Headers/PageHeaderCentredOnAccent"; // plasmic-import: ipb5vL6-nrpb/codeComponent
-import { PageHeaderWithCallToActions } from "../../custom/chakraPro/Marketing/Page Headers/PageHeaderWithCallToActions"; // plasmic-import: vRLhHlbcIiI_/codeComponent
-import { PageHeaderWithForm } from "../../custom/chakraPro/Marketing/Page Headers/PageHeaderWithForm"; // plasmic-import: 0VKZk_JUSdWV/codeComponent
-import { PageHeaderWithInput } from "../../custom/chakraPro/Marketing/Page Headers/PageHeaderWithInput"; // plasmic-import: u1TRe0p0B73B/codeComponent
-import { PageHeaderCentred } from "../../custom/chakraPro/Marketing/Page Headers/PageHeaderCentred"; // plasmic-import: WOoayZH7UBKj/codeComponent
+  ensureGlobalVariants,
+} from '@plasmicapp/react-web';
+import { Heading } from '@chakra-ui/react'; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
+import { PageHeaderCentredOnAccent } from '../../chakra/chakraPro/Marketing/Page Headers/PageHeaderCentredOnAccent'; // plasmic-import: ipb5vL6-nrpb/codeComponent
+import { PageHeaderWithCallToActions } from '../../chakra/chakraPro/Marketing/Page Headers/PageHeaderWithCallToActions'; // plasmic-import: vRLhHlbcIiI_/codeComponent
+import { PageHeaderWithForm } from '../../chakra/chakraPro/Marketing/Page Headers/PageHeaderWithForm'; // plasmic-import: 0VKZk_JUSdWV/codeComponent
+import { PageHeaderWithInput } from '../../chakra/chakraPro/Marketing/Page Headers/PageHeaderWithInput'; // plasmic-import: u1TRe0p0B73B/codeComponent
+import { PageHeaderCentred } from '../../chakra/chakraPro/Marketing/Page Headers/PageHeaderCentred'; // plasmic-import: WOoayZH7UBKj/codeComponent
 
-import "@plasmicapp/react-web/lib/plasmic.css";
+import '@plasmicapp/react-web/lib/plasmic.css';
 
-import projectcss from "./plasmic_plasmic_poc_localhost.module.css"; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
-import sty from "./PlasmicPageHeadersMarketing.module.css"; // plasmic-import: rM_04RxMuJ/css
+import projectcss from './plasmic_plasmic_poc_localhost.module.css'; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
+import sty from './PlasmicPageHeadersMarketing.module.css'; // plasmic-import: rM_04RxMuJ/css
 
 export type PlasmicPageHeadersMarketing__VariantMembers = {};
 export type PlasmicPageHeadersMarketing__VariantsArgs = {};
@@ -59,7 +59,7 @@ type ArgPropType = keyof PlasmicPageHeadersMarketing__ArgsType;
 export const PlasmicPageHeadersMarketing__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicPageHeadersMarketing__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: p.Flex<'div'>;
   pageHeaderWithCallToActions?: p.Flex<typeof PageHeaderWithCallToActions>;
   pageHeaderWithForm?: p.Flex<typeof PageHeaderWithForm>;
   pageHeaderWithInput?: p.Flex<typeof PageHeaderWithInput>;
@@ -96,7 +96,7 @@ function PlasmicPageHeadersMarketing__RenderFunc(props: {
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
@@ -117,7 +117,7 @@ function PlasmicPageHeadersMarketing__RenderFunc(props: {
 
       <div className={projectcss.plasmic_page_wrapper}>
         <div
-          data-plasmic-name={"root"}
+          data-plasmic-name={'root'}
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
@@ -131,9 +131,9 @@ function PlasmicPageHeadersMarketing__RenderFunc(props: {
           )}
         >
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__kOUt)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__kOUt)}
             noOfLines={1 as const}
-            size={"4xl" as const}
+            size={'4xl' as const}
           >
             <div
               className={classNames(
@@ -142,13 +142,13 @@ function PlasmicPageHeadersMarketing__RenderFunc(props: {
                 sty.text__pbdVr
               )}
             >
-              {"Page Headers"}
+              {'Page Headers'}
             </div>
           </Heading>
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__rBaAy)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__rBaAy)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -157,23 +157,23 @@ function PlasmicPageHeadersMarketing__RenderFunc(props: {
                 sty.text__hoiVo
               )}
             >
-              {"Page header with input on accent"}
+              {'Page header with input on accent'}
             </div>
           </Heading>
           <PageHeaderCentredOnAccent
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.pageHeaderCentredOnAccent__t4B
             )}
           />
 
           <Heading
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.chakraUiHeading___6SKex
             )}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -182,22 +182,22 @@ function PlasmicPageHeadersMarketing__RenderFunc(props: {
                 sty.text__t6E5Q
               )}
             >
-              {"Page header with call to actions"}
+              {'Page header with call to actions'}
             </div>
           </Heading>
           <PageHeaderWithCallToActions
-            data-plasmic-name={"pageHeaderWithCallToActions"}
+            data-plasmic-name={'pageHeaderWithCallToActions'}
             data-plasmic-override={overrides.pageHeaderWithCallToActions}
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.pageHeaderWithCallToActions
             )}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__o4YZj)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__o4YZj)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -206,19 +206,19 @@ function PlasmicPageHeadersMarketing__RenderFunc(props: {
                 sty.text__gia0C
               )}
             >
-              {"Page header with form"}
+              {'Page header with form'}
             </div>
           </Heading>
           <PageHeaderWithForm
-            data-plasmic-name={"pageHeaderWithForm"}
+            data-plasmic-name={'pageHeaderWithForm'}
             data-plasmic-override={overrides.pageHeaderWithForm}
-            className={classNames("__wab_instance", sty.pageHeaderWithForm)}
+            className={classNames('__wab_instance', sty.pageHeaderWithForm)}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__gDeW)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__gDeW)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -227,19 +227,19 @@ function PlasmicPageHeadersMarketing__RenderFunc(props: {
                 sty.text__cn0Ht
               )}
             >
-              {"Page header with input"}
+              {'Page header with input'}
             </div>
           </Heading>
           <PageHeaderWithInput
-            data-plasmic-name={"pageHeaderWithInput"}
+            data-plasmic-name={'pageHeaderWithInput'}
             data-plasmic-override={overrides.pageHeaderWithInput}
-            className={classNames("__wab_instance", sty.pageHeaderWithInput)}
+            className={classNames('__wab_instance', sty.pageHeaderWithInput)}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__mk13I)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__mk13I)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -248,20 +248,20 @@ function PlasmicPageHeadersMarketing__RenderFunc(props: {
                 sty.text__uhfQc
               )}
             >
-              {"Page header centred on accent"}
+              {'Page header centred on accent'}
             </div>
           </Heading>
           <PageHeaderCentredOnAccent
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.pageHeaderCentredOnAccent___6G36C
             )}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__iJcYn)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__iJcYn)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -270,13 +270,13 @@ function PlasmicPageHeadersMarketing__RenderFunc(props: {
                 sty.text__gZf1K
               )}
             >
-              {"Page header centred"}
+              {'Page header centred'}
             </div>
           </Heading>
           <PageHeaderCentred
-            data-plasmic-name={"pageHeaderCentred"}
+            data-plasmic-name={'pageHeaderCentred'}
             data-plasmic-override={overrides.pageHeaderCentred}
-            className={classNames("__wab_instance", sty.pageHeaderCentred)}
+            className={classNames('__wab_instance', sty.pageHeaderCentred)}
           />
         </div>
       </div>
@@ -286,29 +286,29 @@ function PlasmicPageHeadersMarketing__RenderFunc(props: {
 
 const PlasmicDescendants = {
   root: [
-    "root",
-    "pageHeaderWithCallToActions",
-    "pageHeaderWithForm",
-    "pageHeaderWithInput",
-    "pageHeaderCentred"
+    'root',
+    'pageHeaderWithCallToActions',
+    'pageHeaderWithForm',
+    'pageHeaderWithInput',
+    'pageHeaderCentred',
   ],
-  pageHeaderWithCallToActions: ["pageHeaderWithCallToActions"],
-  pageHeaderWithForm: ["pageHeaderWithForm"],
-  pageHeaderWithInput: ["pageHeaderWithInput"],
-  pageHeaderCentred: ["pageHeaderCentred"]
+  pageHeaderWithCallToActions: ['pageHeaderWithCallToActions'],
+  pageHeaderWithForm: ['pageHeaderWithForm'],
+  pageHeaderWithInput: ['pageHeaderWithInput'],
+  pageHeaderCentred: ['pageHeaderCentred'],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  root: 'div';
   pageHeaderWithCallToActions: typeof PageHeaderWithCallToActions;
   pageHeaderWithForm: typeof PageHeaderWithForm;
   pageHeaderWithInput: typeof PageHeaderWithInput;
   pageHeaderCentred: typeof PageHeaderCentred;
 };
 
-type ReservedPropsType = "variants" | "args" | "overrides";
+type ReservedPropsType = 'variants' | 'args' | 'overrides';
 type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicPageHeadersMarketing__OverridesType,
   DescendantsType<T>
@@ -344,7 +344,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicPageHeadersMarketing__ArgProps,
-          internalVariantPropNames: PlasmicPageHeadersMarketing__VariantProps
+          internalVariantPropNames: PlasmicPageHeadersMarketing__VariantProps,
         }),
       [props, nodeName]
     );
@@ -352,11 +352,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
-  if (nodeName === "root") {
-    func.displayName = "PlasmicPageHeadersMarketing";
+  if (nodeName === 'root') {
+    func.displayName = 'PlasmicPageHeadersMarketing';
   } else {
     func.displayName = `PlasmicPageHeadersMarketing.${nodeName}`;
   }
@@ -365,15 +365,15 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicPageHeadersMarketing = Object.assign(
   // Top-level PlasmicPageHeadersMarketing renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent('root'),
   {
     // Helper components rendering sub-elements
     pageHeaderWithCallToActions: makeNodeComponent(
-      "pageHeaderWithCallToActions"
+      'pageHeaderWithCallToActions'
     ),
-    pageHeaderWithForm: makeNodeComponent("pageHeaderWithForm"),
-    pageHeaderWithInput: makeNodeComponent("pageHeaderWithInput"),
-    pageHeaderCentred: makeNodeComponent("pageHeaderCentred"),
+    pageHeaderWithForm: makeNodeComponent('pageHeaderWithForm'),
+    pageHeaderWithInput: makeNodeComponent('pageHeaderWithInput'),
+    pageHeaderCentred: makeNodeComponent('pageHeaderCentred'),
 
     // Metadata about props expected for PlasmicPageHeadersMarketing
     internalVariantProps: PlasmicPageHeadersMarketing__VariantProps,
@@ -381,11 +381,11 @@ export const PlasmicPageHeadersMarketing = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "",
-      description: "",
-      ogImageSrc: "",
-      canonical: ""
-    }
+      title: '',
+      description: '',
+      ogImageSrc: '',
+      canonical: '',
+    },
   }
 );
 

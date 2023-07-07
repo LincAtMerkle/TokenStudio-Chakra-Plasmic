@@ -11,14 +11,14 @@
 // Plasmic Project: nV7sRTPBx6ecWzFNNAWeQg
 // Component: q98K70Wwcx
 
-import * as React from "react";
+import * as React from 'react';
 
-import Head from "next/head";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/router';
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
+import * as p from '@plasmicapp/react-web';
+import * as ph from '@plasmicapp/react-web/lib/host';
 
 import {
   hasVariant,
@@ -34,19 +34,19 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
-} from "@plasmicapp/react-web";
-import { Heading } from "@chakra-ui/react"; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
-import { TeamWithLargeImage } from "../../custom/chakraPro/Marketing/Team/TeamWithLargeImage"; // plasmic-import: S2oEOUSLCQ8O/codeComponent
-import { TeamWithInlineHeadline } from "../../custom/chakraPro/Marketing/Team/TeamWithInlineHeadline"; // plasmic-import: sLtSPEYBtciC/codeComponent
-import { TeamWithAvatar } from "../../custom/chakraPro/Marketing/Team/TeamWithAvatar"; // plasmic-import: 6GDcnp0agtUb/codeComponent
-import { TeamWithSquarePhoto } from "../../custom/chakraPro/Marketing/Team/TeamWithSquarePhoto"; // plasmic-import: 9P-SqUxP5HXZ/codeComponent
-import { TeamWithCard } from "../../custom/chakraPro/Marketing/Team/TeamWithCard"; // plasmic-import: VUlbO097xlk8/codeComponent
+  ensureGlobalVariants,
+} from '@plasmicapp/react-web';
+import { Heading } from '@chakra-ui/react'; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
+import { TeamWithLargeImage } from '../../chakra/chakraPro/Marketing/Team/TeamWithLargeImage'; // plasmic-import: S2oEOUSLCQ8O/codeComponent
+import { TeamWithInlineHeadline } from '../../chakra/chakraPro/Marketing/Team/TeamWithInlineHeadline'; // plasmic-import: sLtSPEYBtciC/codeComponent
+import { TeamWithAvatar } from '../../chakra/chakraPro/Marketing/Team/TeamWithAvatar'; // plasmic-import: 6GDcnp0agtUb/codeComponent
+import { TeamWithSquarePhoto } from '../../chakra/chakraPro/Marketing/Team/TeamWithSquarePhoto'; // plasmic-import: 9P-SqUxP5HXZ/codeComponent
+import { TeamWithCard } from '../../chakra/chakraPro/Marketing/Team/TeamWithCard'; // plasmic-import: VUlbO097xlk8/codeComponent
 
-import "@plasmicapp/react-web/lib/plasmic.css";
+import '@plasmicapp/react-web/lib/plasmic.css';
 
-import projectcss from "./plasmic_plasmic_poc_localhost.module.css"; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
-import sty from "./PlasmicTeam.module.css"; // plasmic-import: q98K70Wwcx/css
+import projectcss from './plasmic_plasmic_poc_localhost.module.css'; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
+import sty from './PlasmicTeam.module.css'; // plasmic-import: q98K70Wwcx/css
 
 export type PlasmicTeam__VariantMembers = {};
 export type PlasmicTeam__VariantsArgs = {};
@@ -58,7 +58,7 @@ type ArgPropType = keyof PlasmicTeam__ArgsType;
 export const PlasmicTeam__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicTeam__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: p.Flex<'div'>;
   teamWithLargeImage?: p.Flex<typeof TeamWithLargeImage>;
   teamWithInlineHeadline?: p.Flex<typeof TeamWithInlineHeadline>;
   teamWithAvatar?: p.Flex<typeof TeamWithAvatar>;
@@ -96,7 +96,7 @@ function PlasmicTeam__RenderFunc(props: {
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
@@ -117,7 +117,7 @@ function PlasmicTeam__RenderFunc(props: {
 
       <div className={projectcss.plasmic_page_wrapper}>
         <div
-          data-plasmic-name={"root"}
+          data-plasmic-name={'root'}
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
@@ -131,9 +131,9 @@ function PlasmicTeam__RenderFunc(props: {
           )}
         >
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__omhNd)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__omhNd)}
             noOfLines={1 as const}
-            size={"4xl" as const}
+            size={'4xl' as const}
           >
             <div
               className={classNames(
@@ -142,13 +142,13 @@ function PlasmicTeam__RenderFunc(props: {
                 sty.text__rjRoH
               )}
             >
-              {"Team"}
+              {'Team'}
             </div>
           </Heading>
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__c92Ko)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__c92Ko)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -157,18 +157,18 @@ function PlasmicTeam__RenderFunc(props: {
                 sty.text__gDjjT
               )}
             >
-              {"Team with large image"}
+              {'Team with large image'}
             </div>
           </Heading>
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__ahIpA)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__ahIpA)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <TeamWithLargeImage
-              data-plasmic-name={"teamWithLargeImage"}
+              data-plasmic-name={'teamWithLargeImage'}
               data-plasmic-override={overrides.teamWithLargeImage}
-              className={classNames("__wab_instance", sty.teamWithLargeImage)}
+              className={classNames('__wab_instance', sty.teamWithLargeImage)}
             />
 
             <div
@@ -178,19 +178,19 @@ function PlasmicTeam__RenderFunc(props: {
                 sty.text___2Rm9J
               )}
             >
-              {"Team with inline headline"}
+              {'Team with inline headline'}
             </div>
           </Heading>
           <TeamWithInlineHeadline
-            data-plasmic-name={"teamWithInlineHeadline"}
+            data-plasmic-name={'teamWithInlineHeadline'}
             data-plasmic-override={overrides.teamWithInlineHeadline}
-            className={classNames("__wab_instance", sty.teamWithInlineHeadline)}
+            className={classNames('__wab_instance', sty.teamWithInlineHeadline)}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__hxx6F)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__hxx6F)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -199,19 +199,19 @@ function PlasmicTeam__RenderFunc(props: {
                 sty.text__x6Tbu
               )}
             >
-              {"Team with avatar"}
+              {'Team with avatar'}
             </div>
           </Heading>
           <TeamWithAvatar
-            data-plasmic-name={"teamWithAvatar"}
+            data-plasmic-name={'teamWithAvatar'}
             data-plasmic-override={overrides.teamWithAvatar}
-            className={classNames("__wab_instance", sty.teamWithAvatar)}
+            className={classNames('__wab_instance', sty.teamWithAvatar)}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__q76Rs)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__q76Rs)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -220,19 +220,19 @@ function PlasmicTeam__RenderFunc(props: {
                 sty.text__rw4Yp
               )}
             >
-              {"Team with square photo"}
+              {'Team with square photo'}
             </div>
           </Heading>
           <TeamWithSquarePhoto
-            data-plasmic-name={"teamWithSquarePhoto"}
+            data-plasmic-name={'teamWithSquarePhoto'}
             data-plasmic-override={overrides.teamWithSquarePhoto}
-            className={classNames("__wab_instance", sty.teamWithSquarePhoto)}
+            className={classNames('__wab_instance', sty.teamWithSquarePhoto)}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__sf3Y)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__sf3Y)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -241,13 +241,13 @@ function PlasmicTeam__RenderFunc(props: {
                 sty.text__ibmUt
               )}
             >
-              {"Team with card"}
+              {'Team with card'}
             </div>
           </Heading>
           <TeamWithCard
-            data-plasmic-name={"teamWithCard"}
+            data-plasmic-name={'teamWithCard'}
             data-plasmic-override={overrides.teamWithCard}
-            className={classNames("__wab_instance", sty.teamWithCard)}
+            className={classNames('__wab_instance', sty.teamWithCard)}
           />
         </div>
       </div>
@@ -257,24 +257,24 @@ function PlasmicTeam__RenderFunc(props: {
 
 const PlasmicDescendants = {
   root: [
-    "root",
-    "teamWithLargeImage",
-    "teamWithInlineHeadline",
-    "teamWithAvatar",
-    "teamWithSquarePhoto",
-    "teamWithCard"
+    'root',
+    'teamWithLargeImage',
+    'teamWithInlineHeadline',
+    'teamWithAvatar',
+    'teamWithSquarePhoto',
+    'teamWithCard',
   ],
-  teamWithLargeImage: ["teamWithLargeImage"],
-  teamWithInlineHeadline: ["teamWithInlineHeadline"],
-  teamWithAvatar: ["teamWithAvatar"],
-  teamWithSquarePhoto: ["teamWithSquarePhoto"],
-  teamWithCard: ["teamWithCard"]
+  teamWithLargeImage: ['teamWithLargeImage'],
+  teamWithInlineHeadline: ['teamWithInlineHeadline'],
+  teamWithAvatar: ['teamWithAvatar'],
+  teamWithSquarePhoto: ['teamWithSquarePhoto'],
+  teamWithCard: ['teamWithCard'],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  root: 'div';
   teamWithLargeImage: typeof TeamWithLargeImage;
   teamWithInlineHeadline: typeof TeamWithInlineHeadline;
   teamWithAvatar: typeof TeamWithAvatar;
@@ -282,7 +282,7 @@ type NodeDefaultElementType = {
   teamWithCard: typeof TeamWithCard;
 };
 
-type ReservedPropsType = "variants" | "args" | "overrides";
+type ReservedPropsType = 'variants' | 'args' | 'overrides';
 type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicTeam__OverridesType,
   DescendantsType<T>
@@ -318,7 +318,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicTeam__ArgProps,
-          internalVariantPropNames: PlasmicTeam__VariantProps
+          internalVariantPropNames: PlasmicTeam__VariantProps,
         }),
       [props, nodeName]
     );
@@ -326,11 +326,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
-  if (nodeName === "root") {
-    func.displayName = "PlasmicTeam";
+  if (nodeName === 'root') {
+    func.displayName = 'PlasmicTeam';
   } else {
     func.displayName = `PlasmicTeam.${nodeName}`;
   }
@@ -339,14 +339,14 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicTeam = Object.assign(
   // Top-level PlasmicTeam renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent('root'),
   {
     // Helper components rendering sub-elements
-    teamWithLargeImage: makeNodeComponent("teamWithLargeImage"),
-    teamWithInlineHeadline: makeNodeComponent("teamWithInlineHeadline"),
-    teamWithAvatar: makeNodeComponent("teamWithAvatar"),
-    teamWithSquarePhoto: makeNodeComponent("teamWithSquarePhoto"),
-    teamWithCard: makeNodeComponent("teamWithCard"),
+    teamWithLargeImage: makeNodeComponent('teamWithLargeImage'),
+    teamWithInlineHeadline: makeNodeComponent('teamWithInlineHeadline'),
+    teamWithAvatar: makeNodeComponent('teamWithAvatar'),
+    teamWithSquarePhoto: makeNodeComponent('teamWithSquarePhoto'),
+    teamWithCard: makeNodeComponent('teamWithCard'),
 
     // Metadata about props expected for PlasmicTeam
     internalVariantProps: PlasmicTeam__VariantProps,
@@ -354,11 +354,11 @@ export const PlasmicTeam = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "",
-      description: "",
-      ogImageSrc: "",
-      canonical: ""
-    }
+      title: '',
+      description: '',
+      ogImageSrc: '',
+      canonical: '',
+    },
   }
 );
 

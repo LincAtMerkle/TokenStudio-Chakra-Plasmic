@@ -11,14 +11,14 @@
 // Plasmic Project: nV7sRTPBx6ecWzFNNAWeQg
 // Component: rRfDWmeCyt
 
-import * as React from "react";
+import * as React from 'react';
 
-import Head from "next/head";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/router';
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
+import * as p from '@plasmicapp/react-web';
+import * as ph from '@plasmicapp/react-web/lib/host';
 
 import {
   hasVariant,
@@ -34,14 +34,14 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
-} from "@plasmicapp/react-web";
-import { Heading } from "@chakra-ui/react"; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
+  ensureGlobalVariants,
+} from '@plasmicapp/react-web';
+import { Heading } from '@chakra-ui/react'; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
 
-import "@plasmicapp/react-web/lib/plasmic.css";
+import '@plasmicapp/react-web/lib/plasmic.css';
 
-import projectcss from "./plasmic_plasmic_poc_localhost.module.css"; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
-import sty from "./PlasmicReviews.module.css"; // plasmic-import: rRfDWmeCyt/css
+import projectcss from './plasmic_plasmic_poc_localhost.module.css'; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
+import sty from './PlasmicReviews.module.css'; // plasmic-import: rRfDWmeCyt/css
 
 export type PlasmicReviews__VariantMembers = {};
 export type PlasmicReviews__VariantsArgs = {};
@@ -53,7 +53,7 @@ type ArgPropType = keyof PlasmicReviews__ArgsType;
 export const PlasmicReviews__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicReviews__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: p.Flex<'div'>;
 };
 
 export interface DefaultReviewsProps {}
@@ -86,7 +86,7 @@ function PlasmicReviews__RenderFunc(props: {
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
@@ -107,7 +107,7 @@ function PlasmicReviews__RenderFunc(props: {
 
       <div className={projectcss.plasmic_page_wrapper}>
         <div
-          data-plasmic-name={"root"}
+          data-plasmic-name={'root'}
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
@@ -121,9 +121,9 @@ function PlasmicReviews__RenderFunc(props: {
           )}
         >
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__wtHgf)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__wtHgf)}
             noOfLines={1 as const}
-            size={"4xl" as const}
+            size={'4xl' as const}
           >
             <div
               className={classNames(
@@ -132,13 +132,13 @@ function PlasmicReviews__RenderFunc(props: {
                 sty.text__c3GjE
               )}
             >
-              {"Reviews"}
+              {'Reviews'}
             </div>
           </Heading>
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading___3WBi)}
+            className={classNames('__wab_instance', sty.chakraUiHeading___3WBi)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -147,13 +147,13 @@ function PlasmicReviews__RenderFunc(props: {
                 sty.text__tBguP
               )}
             >
-              {"Review quick overview"}
+              {'Review quick overview'}
             </div>
           </Heading>
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__m09E)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__m09E)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -162,13 +162,13 @@ function PlasmicReviews__RenderFunc(props: {
                 sty.text__dEaC
               )}
             >
-              {"Rating"}
+              {'Rating'}
             </div>
           </Heading>
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__om2HU)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__om2HU)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -177,13 +177,13 @@ function PlasmicReviews__RenderFunc(props: {
                 sty.text___29LsQ
               )}
             >
-              {"Review dialog"}
+              {'Review dialog'}
             </div>
           </Heading>
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__hwGjl)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__hwGjl)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -192,7 +192,7 @@ function PlasmicReviews__RenderFunc(props: {
                 sty.text__icOgM
               )}
             >
-              {"Review overview"}
+              {'Review overview'}
             </div>
           </Heading>
         </div>
@@ -202,16 +202,16 @@ function PlasmicReviews__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root"]
+  root: ['root'],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  root: 'div';
 };
 
-type ReservedPropsType = "variants" | "args" | "overrides";
+type ReservedPropsType = 'variants' | 'args' | 'overrides';
 type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicReviews__OverridesType,
   DescendantsType<T>
@@ -247,7 +247,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicReviews__ArgProps,
-          internalVariantPropNames: PlasmicReviews__VariantProps
+          internalVariantPropNames: PlasmicReviews__VariantProps,
         }),
       [props, nodeName]
     );
@@ -255,11 +255,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
-  if (nodeName === "root") {
-    func.displayName = "PlasmicReviews";
+  if (nodeName === 'root') {
+    func.displayName = 'PlasmicReviews';
   } else {
     func.displayName = `PlasmicReviews.${nodeName}`;
   }
@@ -268,7 +268,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicReviews = Object.assign(
   // Top-level PlasmicReviews renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent('root'),
   {
     // Helper components rendering sub-elements
 
@@ -278,11 +278,11 @@ export const PlasmicReviews = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "",
-      description: "",
-      ogImageSrc: "",
-      canonical: ""
-    }
+      title: '',
+      description: '',
+      ogImageSrc: '',
+      canonical: '',
+    },
   }
 );
 

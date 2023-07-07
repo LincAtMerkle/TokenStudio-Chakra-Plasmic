@@ -11,14 +11,14 @@
 // Plasmic Project: nV7sRTPBx6ecWzFNNAWeQg
 // Component: PHIh-93q-f
 
-import * as React from "react";
+import * as React from 'react';
 
-import Head from "next/head";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/router';
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
+import * as p from '@plasmicapp/react-web';
+import * as ph from '@plasmicapp/react-web/lib/host';
 
 import {
   hasVariant,
@@ -34,22 +34,43 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
-} from "@plasmicapp/react-web";
-import { LoginWithCentredForm } from "../../custom/chakraPro/Application/Authentication/LoginWithCentredForm"; // plasmic-import: PZuCg-eLQu/codeComponent
-import { LoginWithEmailOrProvider } from "../../custom/chakraPro/Application/Authentication/LoginWithEmailOrProvider"; // plasmic-import: PtPeV_aiJw/codeComponent
-import { SignUpWithQuote } from "../../custom/chakraPro/Application/Authentication/SignUpWithQuote"; // plasmic-import: Wq3c7muJU-q/codeComponent
-import { SignUpForm } from "../../custom/chakraPro/Application/Authentication/SignUpForm"; // plasmic-import: Ut7HbuGN0AN/codeComponent
-import { LoginWithFloatingLabel } from "../../custom/chakraPro/Application/Authentication/LoginWithFloatingLabel"; // plasmic-import: hxuXRIRNvu/codeComponent
-import { LoginWithGoogleOrEmail } from "../../custom/chakraPro/Application/Authentication/LoginWithGoogleOrEmail"; // plasmic-import: o9rnxGtWcA/codeComponent
-import { LoginWithEmailPasswordOrGoogle } from "../../custom/chakraPro/Application/Authentication/LoginWithEmailPasswordOrGoogle"; // plasmic-import: 9KUsxtSBku/codeComponent
-import { LoginWithGradient } from "../../custom/chakraPro/Application/Authentication/LoginWithGradient"; // plasmic-import: wFP8hImPN7r/codeComponent
-import { LoginWithFlushedInputs } from "../../custom/chakraPro/Application/Authentication/LoginWithFlushedInputs"; // plasmic-import: 6KdYDcBDm6/codeComponent
+  ensureGlobalVariants,
+} from '@plasmicapp/react-web';
+import { LoginWithCentredForm } from '../../chakra/chakraPro/Application/Authentication/LoginWithCentredForm'; // plasmic-import: PZuCg-eLQu/codeComponent
+import { Container } from '@chakra-ui/react'; // plasmic-import: N75QIOSVwX/codeComponent
+import { Stack } from '@chakra-ui/react'; // plasmic-import: COXAdXyGiCzfNm/codeComponent
+import { Logo } from '../../chakra/chakraPro/Application/Authentication/LoginWithCentredForm'; // plasmic-import: 1Ex1wCgkK3/codeComponent
+import { Heading } from '@chakra-ui/react'; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
+import { HStack } from '@chakra-ui/react'; // plasmic-import: s_UAyIpoEi/codeComponent
+import { Text } from '@chakra-ui/react'; // plasmic-import: SdN14ngBJybRru/codeComponent
+import { Button } from '@chakra-ui/react'; // plasmic-import: TdxMoalAZRL/codeComponent
+import { Box } from '@chakra-ui/react'; // plasmic-import: -E4B7lTUoD/codeComponent
+import { FormControl } from '@chakra-ui/react'; // plasmic-import: 7qBVfEit46s/codeComponent
+import { FormLabel } from '@chakra-ui/react'; // plasmic-import: qrPwpFjI80f/codeComponent
+import { Input } from '@chakra-ui/react'; // plasmic-import: af17Ycvvo_OQfS/codeComponent
+import { PasswordField } from '../../chakra/chakraPro/Application/Authentication/LoginWithCentredForm'; // plasmic-import: 3w3N64VhcL/codeComponent
+import { Checkbox } from '@chakra-ui/react'; // plasmic-import: FOG2BpAjXwH/codeComponent
+import { Divider } from '@chakra-ui/react'; // plasmic-import: 5hSSW3LzA3B/codeComponent
+import { OAuthButtonGroup } from '../../chakra/chakraPro/Application/Authentication/LoginWithCentredForm'; // plasmic-import: LW0AKH5m61/codeComponent
+import { LoginWithEmailOrProvider } from '../../chakra/chakraPro/Application/Authentication/LoginWithEmailOrProvider'; // plasmic-import: PtPeV_aiJw/codeComponent
+import { SignUpWithQuote } from '../../chakra/chakraPro/Application/Authentication/SignUpWithQuote'; // plasmic-import: Wq3c7muJU-q/codeComponent
+import { SignUpForm } from '../../chakra/chakraPro/Application/Authentication/SignUpForm'; // plasmic-import: Ut7HbuGN0AN/codeComponent
+import { LoginWithFloatingLabel } from '../../chakra/chakraPro/Application/Authentication/LoginWithFloatingLabel'; // plasmic-import: hxuXRIRNvu/codeComponent
+import { LoginWithGoogleOrEmail } from '../../chakra/chakraPro/Application/Authentication/LoginWithGoogleOrEmail'; // plasmic-import: o9rnxGtWcA/codeComponent
+import { LoginWithEmailPasswordOrGoogle } from '../../chakra/chakraPro/Application/Authentication/LoginWithEmailPasswordOrGoogle'; // plasmic-import: 9KUsxtSBku/codeComponent
+import { LoginWithGradient } from '../../chakra/chakraPro/Application/Authentication/LoginWithGradient'; // plasmic-import: wFP8hImPN7r/codeComponent
+import { LoginWithFlushedInputs } from '../../chakra/chakraPro/Application/Authentication/LoginWithFlushedInputs'; // plasmic-import: 6KdYDcBDm6/codeComponent
 
-import "@plasmicapp/react-web/lib/plasmic.css";
+import '@plasmicapp/react-web/lib/plasmic.css';
 
-import projectcss from "./plasmic_plasmic_poc_localhost.module.css"; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
-import sty from "./PlasmicAuthentication.module.css"; // plasmic-import: PHIh-93q-f/css
+import projectcss from './plasmic_plasmic_poc_localhost.module.css'; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
+import sty from './PlasmicAuthentication.module.css'; // plasmic-import: PHIh-93q-f/css
+
+import FrameIcon from './icons/PlasmicIcon__Frame'; // plasmic-import: x3uAd421x/icon
+import Frame2Icon from './icons/PlasmicIcon__Frame2'; // plasmic-import: zTjMPavo7I/icon
+import Frame3Icon from './icons/PlasmicIcon__Frame3'; // plasmic-import: lve4hDeenJ/icon
+import Frame4Icon from './icons/PlasmicIcon__Frame4'; // plasmic-import: 0z6mVDyob3/icon
+import Frame5Icon from './icons/PlasmicIcon__Frame5'; // plasmic-import: WSp0d90qg4/icon
 
 export type PlasmicAuthentication__VariantMembers = {};
 export type PlasmicAuthentication__VariantsArgs = {};
@@ -61,8 +82,38 @@ type ArgPropType = keyof PlasmicAuthentication__ArgsType;
 export const PlasmicAuthentication__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicAuthentication__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: p.Flex<'div'>;
+  chakraUiStack2?: p.Flex<'div'>;
+  chakraUiStack3?: p.Flex<'div'>;
+  chakraUiStack4?: p.Flex<'div'>;
+  chakraUiStack5?: p.Flex<'div'>;
+  chakraUiPasswordField?: p.Flex<'div'>;
+  labelPassword?: p.Flex<'div'>;
+  divchakraInputGroup?: p.Flex<'div'>;
+  input?: p.Flex<'div'>;
+  buttonRevealPasswordSvg?: p.Flex<'div'>;
+  chakraUiHStack2?: p.Flex<'div'>;
+  spanchakraCheckboxControl?: p.Flex<'div'>;
+  svg2?: p.Flex<'div'>;
+  chakraUiButton2?: p.Flex<'div'>;
+  chakraUiStack6?: p.Flex<'div'>;
+  separator?: p.Flex<'div'>;
+  orContinueWith?: p.Flex<'div'>;
+  separator2?: p.Flex<'div'>;
+  chakraUiButton3?: p.Flex<'div'>;
+  buttonGroup?: p.Flex<'div'>;
+  chakraUiButton4?: p.Flex<'div'>;
+  svg3?: p.Flex<'div'>;
+  frame?: p.Flex<'div'>;
+  img?: p.Flex<typeof p.PlasmicImg>;
+  button?: p.Flex<'div'>;
+  svg4?: p.Flex<'div'>;
+  button2?: p.Flex<'div'>;
+  svg5?: p.Flex<'div'>;
   loginWithCentredForm?: p.Flex<typeof LoginWithCentredForm>;
+  logo?: p.Flex<typeof Logo>;
+  passwordField?: p.Flex<typeof PasswordField>;
+  oAuthButtonGroup?: p.Flex<typeof OAuthButtonGroup>;
   loginWithEmailOrProvider?: p.Flex<typeof LoginWithEmailOrProvider>;
   signUpWithQuote?: p.Flex<typeof SignUpWithQuote>;
   signUpForm?: p.Flex<typeof SignUpForm>;
@@ -73,8 +124,7 @@ export type PlasmicAuthentication__OverridesType = {
   >;
   loginWithGradient?: p.Flex<typeof LoginWithGradient>;
   loginWithFlushedInputs?: p.Flex<typeof LoginWithFlushedInputs>;
-  section?: p.Flex<"section">;
-  text?: p.Flex<"div">;
+  section?: p.Flex<'section'>;
 };
 
 export interface DefaultAuthenticationProps {}
@@ -107,7 +157,7 @@ function PlasmicAuthentication__RenderFunc(props: {
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
@@ -128,7 +178,7 @@ function PlasmicAuthentication__RenderFunc(props: {
 
       <div className={projectcss.plasmic_page_wrapper}>
         <div
-          data-plasmic-name={"root"}
+          data-plasmic-name={'root'}
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
@@ -141,81 +191,772 @@ function PlasmicAuthentication__RenderFunc(props: {
             sty.root
           )}
         >
-          <LoginWithCentredForm
-            data-plasmic-name={"loginWithCentredForm"}
-            data-plasmic-override={overrides.loginWithCentredForm}
-            className={classNames("__wab_instance", sty.loginWithCentredForm)}
-          />
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__wXpdP
+            )}
+          >
+            {'A complex components register using AI:'}
+          </div>
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text___5YCw6
+            )}
+          >
+            {'Original Figma Design (copy/paste):'}
+          </div>
+          <p.Stack
+            as={'div'}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.freeBox__qpb3J)}
+          >
+            <div className={classNames(projectcss.all, sty.freeBox__qoXo)}>
+              <p.Stack
+                as={'div'}
+                data-plasmic-name={'chakraUiStack2'}
+                data-plasmic-override={overrides.chakraUiStack2}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.chakraUiStack2)}
+              >
+                <div className={classNames(projectcss.all, sty.freeBox__mm2Wt)}>
+                  <FrameIcon
+                    className={classNames(projectcss.all, sty.svg__k37Ob)}
+                    role={'img'}
+                  />
+                </div>
+                <p.Stack
+                  as={'div'}
+                  data-plasmic-name={'chakraUiStack3'}
+                  data-plasmic-override={overrides.chakraUiStack3}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.chakraUiStack3)}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__guSxo
+                    )}
+                  >
+                    {'Log in to your account'}
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox___6FjFv)}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__ewqsP
+                      )}
+                    >
+                      {"Don't have an account?"}
+                    </div>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__dzZKq
+                      )}
+                    >
+                      {'Sign up'}
+                    </div>
+                  </div>
+                </p.Stack>
+              </p.Stack>
+              <div className={classNames(projectcss.all, sty.freeBox__cv4My)}>
+                <p.Stack
+                  as={'div'}
+                  data-plasmic-name={'chakraUiStack4'}
+                  data-plasmic-override={overrides.chakraUiStack4}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.chakraUiStack4)}
+                >
+                  <p.Stack
+                    as={'div'}
+                    data-plasmic-name={'chakraUiStack5'}
+                    data-plasmic-override={overrides.chakraUiStack5}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.chakraUiStack5)}
+                  >
+                    <p.Stack
+                      as={'div'}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.freeBox__tQdEm)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text___6Qstn
+                        )}
+                      >
+                        {'Email'}
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__muIif
+                        )}
+                      />
+                    </p.Stack>
+                    <p.Stack
+                      as={'div'}
+                      data-plasmic-name={'chakraUiPasswordField'}
+                      data-plasmic-override={overrides.chakraUiPasswordField}
+                      hasGap={true}
+                      className={classNames(
+                        projectcss.all,
+                        sty.chakraUiPasswordField
+                      )}
+                    >
+                      <div
+                        data-plasmic-name={'labelPassword'}
+                        data-plasmic-override={overrides.labelPassword}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.labelPassword
+                        )}
+                      >
+                        {'Password'}
+                      </div>
+                      <div
+                        data-plasmic-name={'divchakraInputGroup'}
+                        data-plasmic-override={overrides.divchakraInputGroup}
+                        className={classNames(
+                          projectcss.all,
+                          sty.divchakraInputGroup
+                        )}
+                      >
+                        <div
+                          data-plasmic-name={'input'}
+                          data-plasmic-override={overrides.input}
+                          className={classNames(projectcss.all, sty.input)}
+                        />
 
+                        <div
+                          data-plasmic-name={'buttonRevealPasswordSvg'}
+                          data-plasmic-override={
+                            overrides.buttonRevealPasswordSvg
+                          }
+                          className={classNames(
+                            projectcss.all,
+                            sty.buttonRevealPasswordSvg
+                          )}
+                        >
+                          <Frame2Icon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__xJTtA
+                            )}
+                            role={'img'}
+                          />
+                        </div>
+                      </div>
+                    </p.Stack>
+                  </p.Stack>
+                  <p.Stack
+                    as={'div'}
+                    data-plasmic-name={'chakraUiHStack2'}
+                    data-plasmic-override={overrides.chakraUiHStack2}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.chakraUiHStack2)}
+                  >
+                    <p.Stack
+                      as={'div'}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.freeBox__rav8G)}
+                    >
+                      <div
+                        data-plasmic-name={'spanchakraCheckboxControl'}
+                        data-plasmic-override={
+                          overrides.spanchakraCheckboxControl
+                        }
+                        className={classNames(
+                          projectcss.all,
+                          sty.spanchakraCheckboxControl
+                        )}
+                      >
+                        <div
+                          data-plasmic-name={'svg2'}
+                          data-plasmic-override={overrides.svg2}
+                          className={classNames(projectcss.all, sty.svg2)}
+                        >
+                          <Frame3Icon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg___98V0B
+                            )}
+                            role={'img'}
+                          />
+                        </div>
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__udvfU
+                        )}
+                      >
+                        {'Remember me'}
+                      </div>
+                    </p.Stack>
+                    <div
+                      data-plasmic-name={'chakraUiButton2'}
+                      data-plasmic-override={overrides.chakraUiButton2}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.chakraUiButton2
+                      )}
+                    >
+                      {'Forgot password?'}
+                    </div>
+                  </p.Stack>
+                  <div
+                    data-plasmic-name={'chakraUiStack6'}
+                    data-plasmic-override={overrides.chakraUiStack6}
+                    className={classNames(projectcss.all, sty.chakraUiStack6)}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        sty.freeBox___2SMyf
+                      )}
+                    >
+                      <div
+                        data-plasmic-name={'separator'}
+                        data-plasmic-override={overrides.separator}
+                        className={classNames(projectcss.all, sty.separator)}
+                      />
+
+                      <div
+                        data-plasmic-name={'orContinueWith'}
+                        data-plasmic-override={overrides.orContinueWith}
+                        className={classNames(
+                          projectcss.all,
+                          sty.orContinueWith
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__gUxTl
+                          )}
+                        >
+                          {'or continue with'}
+                        </div>
+                      </div>
+                      <div
+                        data-plasmic-name={'separator2'}
+                        data-plasmic-override={overrides.separator2}
+                        className={classNames(projectcss.all, sty.separator2)}
+                      />
+                    </div>
+                    <div
+                      data-plasmic-name={'chakraUiButton3'}
+                      data-plasmic-override={overrides.chakraUiButton3}
+                      className={classNames(
+                        projectcss.all,
+                        sty.chakraUiButton3
+                      )}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__rdFCn
+                        )}
+                      >
+                        {'Sign in'}
+                      </div>
+                    </div>
+                    <p.Stack
+                      as={'div'}
+                      data-plasmic-name={'buttonGroup'}
+                      data-plasmic-override={overrides.buttonGroup}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.buttonGroup)}
+                    >
+                      <div
+                        data-plasmic-name={'chakraUiButton4'}
+                        data-plasmic-override={overrides.chakraUiButton4}
+                        className={classNames(
+                          projectcss.all,
+                          sty.chakraUiButton4
+                        )}
+                      >
+                        <div
+                          data-plasmic-name={'svg3'}
+                          data-plasmic-override={overrides.svg3}
+                          className={classNames(projectcss.all, sty.svg3)}
+                        >
+                          <div
+                            data-plasmic-name={'frame'}
+                            data-plasmic-override={overrides.frame}
+                            className={classNames(projectcss.all, sty.frame)}
+                          >
+                            <p.PlasmicImg
+                              data-plasmic-name={'img'}
+                              data-plasmic-override={overrides.img}
+                              alt={''}
+                              className={classNames(sty.img)}
+                              displayHeight={'19.999px' as const}
+                              displayMaxHeight={'none' as const}
+                              displayMaxWidth={'100%' as const}
+                              displayMinHeight={'0' as const}
+                              displayMinWidth={'0' as const}
+                              displayWidth={'19.574px' as const}
+                              loading={'lazy' as const}
+                              src={{
+                                src: '/plasmic/plasmic_poc_localhost/images/group.svg',
+                                fullWidth: 19.574,
+                                fullHeight: 19.999,
+                                aspectRatio: 1,
+                              }}
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        data-plasmic-name={'button'}
+                        data-plasmic-override={overrides.button}
+                        className={classNames(projectcss.all, sty.button)}
+                      >
+                        <div
+                          data-plasmic-name={'svg4'}
+                          data-plasmic-override={overrides.svg4}
+                          className={classNames(projectcss.all, sty.svg4)}
+                        >
+                          <Frame4Icon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg___3KgYg
+                            )}
+                            role={'img'}
+                          />
+                        </div>
+                      </div>
+                      <div
+                        data-plasmic-name={'button2'}
+                        data-plasmic-override={overrides.button2}
+                        className={classNames(projectcss.all, sty.button2)}
+                      >
+                        <div
+                          data-plasmic-name={'svg5'}
+                          data-plasmic-override={overrides.svg5}
+                          className={classNames(projectcss.all, sty.svg5)}
+                        >
+                          <Frame5Icon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__hka7F
+                            )}
+                            role={'img'}
+                          />
+                        </div>
+                      </div>
+                    </p.Stack>
+                  </div>
+                </p.Stack>
+              </div>
+            </div>
+          </p.Stack>
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__yUgqp
+            )}
+          >
+            {'Chakra Code (registrations). Some tokens applied:'}
+          </div>
+          <LoginWithCentredForm
+            data-plasmic-name={'loginWithCentredForm'}
+            data-plasmic-override={overrides.loginWithCentredForm}
+            className={classNames('__wab_instance', sty.loginWithCentredForm)}
+          >
+            <Container
+              centerContent={false}
+              className={classNames(
+                '__wab_instance',
+                sty.chakraUiContainer___1X4BC
+              )}
+              px={0 as const}
+              py={'5' as const}
+              variant={'colorfulVariant' as const}
+            >
+              <Stack
+                className={classNames(
+                  '__wab_instance',
+                  sty.chakraUiStack__oWju5
+                )}
+                direction={'column' as const}
+                spacing={8 as const}
+              >
+                <Logo
+                  data-plasmic-name={'logo'}
+                  data-plasmic-override={overrides.logo}
+                  className={classNames('__wab_instance', sty.logo)}
+                />
+
+                <Stack
+                  className={classNames(
+                    '__wab_instance',
+                    sty.chakraUiStack__dcBKz
+                  )}
+                  direction={'column' as const}
+                  spacing={'8' as const}
+                >
+                  <Stack
+                    className={classNames(
+                      '__wab_instance',
+                      sty.chakraUiStack__iIQx3
+                    )}
+                    direction={'column' as const}
+                    spacing={'20' as const}
+                  >
+                    <Heading
+                      className={classNames(
+                        '__wab_instance',
+                        sty.chakraUiHeading__jAduY
+                      )}
+                      noOfLines={1 as const}
+                      size={'20' as const}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__uI3LQ
+                        )}
+                      >
+                        {'Log in to your account'}
+                      </div>
+                    </Heading>
+                    <HStack
+                      className={classNames(
+                        '__wab_instance',
+                        sty.chakraUiHStack__ftZkj
+                      )}
+                      direction={'row' as const}
+                      justify={'center' as const}
+                      spacing={'1' as const}
+                    >
+                      <Text
+                        className={classNames(
+                          '__wab_instance',
+                          sty.chakraUiText__o1Udf
+                        )}
+                        fontStyle={'normal' as const}
+                        size={'md' as const}
+                        variant={'regular' as const}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__aHtA
+                          )}
+                        >
+                          {"Don't have an account?"}
+                        </div>
+                      </Text>
+                      <Button
+                        className={classNames(
+                          '__wab_instance',
+                          sty.chakraUiButton__rIa1B
+                        )}
+                        colorScheme={'pink' as const}
+                        variant={'link' as const}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__hvO92
+                          )}
+                        >
+                          {'Sign up'}
+                        </div>
+                      </Button>
+                    </HStack>
+                  </Stack>
+                </Stack>
+                <Box
+                  className={classNames(
+                    '__wab_instance',
+                    sty.chakraUiBox__ck0Ri
+                  )}
+                  px={'4' as const}
+                  py={'0' as const}
+                >
+                  <Stack
+                    className={classNames(
+                      '__wab_instance',
+                      sty.chakraUiStack__fq0WL
+                    )}
+                    direction={'column' as const}
+                    spacing={'6' as const}
+                  >
+                    <Stack
+                      className={classNames(
+                        '__wab_instance',
+                        sty.chakraUiStack__e8Jg
+                      )}
+                      direction={'column' as const}
+                      spacing={'5' as const}
+                    >
+                      <FormControl
+                        className={classNames(
+                          '__wab_instance',
+                          sty.chakraUiFormControl___7A0EB
+                        )}
+                      >
+                        <FormLabel
+                          className={classNames(
+                            '__wab_instance',
+                            sty.chakraUiFormLabel__h9IOy
+                          )}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__iy5VE
+                            )}
+                          >
+                            {'Email'}
+                          </div>
+                        </FormLabel>
+                        <Input
+                          className={classNames(
+                            '__wab_instance',
+                            sty.chakraUiInput__lFqb4
+                          )}
+                          errorBorderColor={'red.500' as const}
+                          focusBorderColor={'blue.500' as const}
+                        />
+
+                        <PasswordField
+                          data-plasmic-name={'passwordField'}
+                          data-plasmic-override={overrides.passwordField}
+                          className={classNames(
+                            '__wab_instance',
+                            sty.passwordField
+                          )}
+                        />
+                      </FormControl>
+                      <HStack
+                        className={classNames(
+                          '__wab_instance',
+                          sty.chakraUiHStack___69HNb
+                        )}
+                        direction={'row' as const}
+                        justify={'space-between' as const}
+                        spacing={8 as const}
+                      >
+                        <Checkbox
+                          className={classNames(
+                            '__wab_instance',
+                            sty.chakraUiCheckbox___5O3Fi
+                          )}
+                          colorScheme={'blue' as const}
+                          spacing={'0.5rem' as const}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__z8Sa
+                            )}
+                          >
+                            {'Checkbox'}
+                          </div>
+                        </Checkbox>
+                        <Button
+                          className={classNames(
+                            '__wab_instance',
+                            sty.chakraUiButton__uEn5Q
+                          )}
+                          colorScheme={'pink' as const}
+                          size={'sm' as const}
+                          variant={'link' as const}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__nObZs
+                            )}
+                          >
+                            {'Forgot password?'}
+                          </div>
+                        </Button>
+                      </HStack>
+                    </Stack>
+                    <Stack
+                      className={classNames(
+                        '__wab_instance',
+                        sty.chakraUiStack__q7Jlv
+                      )}
+                      direction={'column' as const}
+                      spacing={'6' as const}
+                    >
+                      <Button
+                        className={classNames(
+                          '__wab_instance',
+                          sty.chakraUiButton__nNrCm
+                        )}
+                        variant={'primary' as const}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text___2FxaP
+                          )}
+                        >
+                          {'Sign in'}
+                        </div>
+                      </Button>
+                      <HStack
+                        className={classNames(
+                          '__wab_instance',
+                          sty.chakraUiHStack__yRn7
+                        )}
+                        direction={'row' as const}
+                        spacing={8 as const}
+                      >
+                        <Divider
+                          className={classNames(
+                            '__wab_instance',
+                            sty.chakraUiDivider__sM2Kz
+                          )}
+                        />
+
+                        <Text
+                          className={classNames(
+                            '__wab_instance',
+                            sty.chakraUiText__qvKBz
+                          )}
+                          fontStyle={'normal' as const}
+                          size={'md' as const}
+                          variant={'regular' as const}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__vEppB
+                            )}
+                          >
+                            {'or continue with'}
+                          </div>
+                        </Text>
+                        <Divider
+                          className={classNames(
+                            '__wab_instance',
+                            sty.chakraUiDivider__cwFvb
+                          )}
+                        />
+                      </HStack>
+                      <OAuthButtonGroup
+                        data-plasmic-name={'oAuthButtonGroup'}
+                        data-plasmic-override={overrides.oAuthButtonGroup}
+                        className={classNames(
+                          '__wab_instance',
+                          sty.oAuthButtonGroup
+                        )}
+                      />
+                    </Stack>
+                  </Stack>
+                </Box>
+              </Stack>
+            </Container>
+          </LoginWithCentredForm>
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__dWni
+            )}
+          >
+            {'Other complex components to register using AI:'}
+          </div>
           <LoginWithEmailOrProvider
-            data-plasmic-name={"loginWithEmailOrProvider"}
+            data-plasmic-name={'loginWithEmailOrProvider'}
             data-plasmic-override={overrides.loginWithEmailOrProvider}
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.loginWithEmailOrProvider
             )}
           />
 
           <SignUpWithQuote
-            data-plasmic-name={"signUpWithQuote"}
+            data-plasmic-name={'signUpWithQuote'}
             data-plasmic-override={overrides.signUpWithQuote}
-            className={classNames("__wab_instance", sty.signUpWithQuote)}
+            className={classNames('__wab_instance', sty.signUpWithQuote)}
           />
 
           <SignUpForm
-            data-plasmic-name={"signUpForm"}
+            data-plasmic-name={'signUpForm'}
             data-plasmic-override={overrides.signUpForm}
-            className={classNames("__wab_instance", sty.signUpForm)}
+            className={classNames('__wab_instance', sty.signUpForm)}
           />
 
           <LoginWithFloatingLabel
-            data-plasmic-name={"loginWithFloatingLabel"}
+            data-plasmic-name={'loginWithFloatingLabel'}
             data-plasmic-override={overrides.loginWithFloatingLabel}
-            className={classNames("__wab_instance", sty.loginWithFloatingLabel)}
+            className={classNames('__wab_instance', sty.loginWithFloatingLabel)}
           />
 
           <LoginWithGoogleOrEmail
-            data-plasmic-name={"loginWithGoogleOrEmail"}
+            data-plasmic-name={'loginWithGoogleOrEmail'}
             data-plasmic-override={overrides.loginWithGoogleOrEmail}
-            className={classNames("__wab_instance", sty.loginWithGoogleOrEmail)}
+            className={classNames('__wab_instance', sty.loginWithGoogleOrEmail)}
           />
 
           <LoginWithEmailPasswordOrGoogle
-            data-plasmic-name={"loginWithEmailPasswordOrGoogle"}
+            data-plasmic-name={'loginWithEmailPasswordOrGoogle'}
             data-plasmic-override={overrides.loginWithEmailPasswordOrGoogle}
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.loginWithEmailPasswordOrGoogle
             )}
           />
 
           <LoginWithGradient
-            data-plasmic-name={"loginWithGradient"}
+            data-plasmic-name={'loginWithGradient'}
             data-plasmic-override={overrides.loginWithGradient}
-            className={classNames("__wab_instance", sty.loginWithGradient)}
+            className={classNames('__wab_instance', sty.loginWithGradient)}
           />
 
           <LoginWithFlushedInputs
-            data-plasmic-name={"loginWithFlushedInputs"}
+            data-plasmic-name={'loginWithFlushedInputs'}
             data-plasmic-override={overrides.loginWithFlushedInputs}
-            className={classNames("__wab_instance", sty.loginWithFlushedInputs)}
+            className={classNames('__wab_instance', sty.loginWithFlushedInputs)}
           />
 
           <section
-            data-plasmic-name={"section"}
+            data-plasmic-name={'section'}
             data-plasmic-override={overrides.section}
             className={classNames(projectcss.all, sty.section)}
           >
             <div
-              data-plasmic-name={"text"}
-              data-plasmic-override={overrides.text}
               className={classNames(
                 projectcss.all,
                 projectcss.__wab_text,
-                sty.text
+                sty.text__ymbTr
               )}
             >
-              {"Login with left background"}
+              {'Login with left background'}
             </div>
           </section>
         </div>
@@ -226,37 +967,203 @@ function PlasmicAuthentication__RenderFunc(props: {
 
 const PlasmicDescendants = {
   root: [
-    "root",
-    "loginWithCentredForm",
-    "loginWithEmailOrProvider",
-    "signUpWithQuote",
-    "signUpForm",
-    "loginWithFloatingLabel",
-    "loginWithGoogleOrEmail",
-    "loginWithEmailPasswordOrGoogle",
-    "loginWithGradient",
-    "loginWithFlushedInputs",
-    "section",
-    "text"
+    'root',
+    'chakraUiStack2',
+    'chakraUiStack3',
+    'chakraUiStack4',
+    'chakraUiStack5',
+    'chakraUiPasswordField',
+    'labelPassword',
+    'divchakraInputGroup',
+    'input',
+    'buttonRevealPasswordSvg',
+    'chakraUiHStack2',
+    'spanchakraCheckboxControl',
+    'svg2',
+    'chakraUiButton2',
+    'chakraUiStack6',
+    'separator',
+    'orContinueWith',
+    'separator2',
+    'chakraUiButton3',
+    'buttonGroup',
+    'chakraUiButton4',
+    'svg3',
+    'frame',
+    'img',
+    'button',
+    'svg4',
+    'button2',
+    'svg5',
+    'loginWithCentredForm',
+    'logo',
+    'passwordField',
+    'oAuthButtonGroup',
+    'loginWithEmailOrProvider',
+    'signUpWithQuote',
+    'signUpForm',
+    'loginWithFloatingLabel',
+    'loginWithGoogleOrEmail',
+    'loginWithEmailPasswordOrGoogle',
+    'loginWithGradient',
+    'loginWithFlushedInputs',
+    'section',
   ],
-  loginWithCentredForm: ["loginWithCentredForm"],
-  loginWithEmailOrProvider: ["loginWithEmailOrProvider"],
-  signUpWithQuote: ["signUpWithQuote"],
-  signUpForm: ["signUpForm"],
-  loginWithFloatingLabel: ["loginWithFloatingLabel"],
-  loginWithGoogleOrEmail: ["loginWithGoogleOrEmail"],
-  loginWithEmailPasswordOrGoogle: ["loginWithEmailPasswordOrGoogle"],
-  loginWithGradient: ["loginWithGradient"],
-  loginWithFlushedInputs: ["loginWithFlushedInputs"],
-  section: ["section", "text"],
-  text: ["text"]
+  chakraUiStack2: ['chakraUiStack2', 'chakraUiStack3'],
+  chakraUiStack3: ['chakraUiStack3'],
+  chakraUiStack4: [
+    'chakraUiStack4',
+    'chakraUiStack5',
+    'chakraUiPasswordField',
+    'labelPassword',
+    'divchakraInputGroup',
+    'input',
+    'buttonRevealPasswordSvg',
+    'chakraUiHStack2',
+    'spanchakraCheckboxControl',
+    'svg2',
+    'chakraUiButton2',
+    'chakraUiStack6',
+    'separator',
+    'orContinueWith',
+    'separator2',
+    'chakraUiButton3',
+    'buttonGroup',
+    'chakraUiButton4',
+    'svg3',
+    'frame',
+    'img',
+    'button',
+    'svg4',
+    'button2',
+    'svg5',
+  ],
+  chakraUiStack5: [
+    'chakraUiStack5',
+    'chakraUiPasswordField',
+    'labelPassword',
+    'divchakraInputGroup',
+    'input',
+    'buttonRevealPasswordSvg',
+  ],
+  chakraUiPasswordField: [
+    'chakraUiPasswordField',
+    'labelPassword',
+    'divchakraInputGroup',
+    'input',
+    'buttonRevealPasswordSvg',
+  ],
+  labelPassword: ['labelPassword'],
+  divchakraInputGroup: [
+    'divchakraInputGroup',
+    'input',
+    'buttonRevealPasswordSvg',
+  ],
+  input: ['input'],
+  buttonRevealPasswordSvg: ['buttonRevealPasswordSvg'],
+  chakraUiHStack2: [
+    'chakraUiHStack2',
+    'spanchakraCheckboxControl',
+    'svg2',
+    'chakraUiButton2',
+  ],
+  spanchakraCheckboxControl: ['spanchakraCheckboxControl', 'svg2'],
+  svg2: ['svg2'],
+  chakraUiButton2: ['chakraUiButton2'],
+  chakraUiStack6: [
+    'chakraUiStack6',
+    'separator',
+    'orContinueWith',
+    'separator2',
+    'chakraUiButton3',
+    'buttonGroup',
+    'chakraUiButton4',
+    'svg3',
+    'frame',
+    'img',
+    'button',
+    'svg4',
+    'button2',
+    'svg5',
+  ],
+  separator: ['separator'],
+  orContinueWith: ['orContinueWith'],
+  separator2: ['separator2'],
+  chakraUiButton3: ['chakraUiButton3'],
+  buttonGroup: [
+    'buttonGroup',
+    'chakraUiButton4',
+    'svg3',
+    'frame',
+    'img',
+    'button',
+    'svg4',
+    'button2',
+    'svg5',
+  ],
+  chakraUiButton4: ['chakraUiButton4', 'svg3', 'frame', 'img'],
+  svg3: ['svg3', 'frame', 'img'],
+  frame: ['frame', 'img'],
+  img: ['img'],
+  button: ['button', 'svg4'],
+  svg4: ['svg4'],
+  button2: ['button2', 'svg5'],
+  svg5: ['svg5'],
+  loginWithCentredForm: [
+    'loginWithCentredForm',
+    'logo',
+    'passwordField',
+    'oAuthButtonGroup',
+  ],
+  logo: ['logo'],
+  passwordField: ['passwordField'],
+  oAuthButtonGroup: ['oAuthButtonGroup'],
+  loginWithEmailOrProvider: ['loginWithEmailOrProvider'],
+  signUpWithQuote: ['signUpWithQuote'],
+  signUpForm: ['signUpForm'],
+  loginWithFloatingLabel: ['loginWithFloatingLabel'],
+  loginWithGoogleOrEmail: ['loginWithGoogleOrEmail'],
+  loginWithEmailPasswordOrGoogle: ['loginWithEmailPasswordOrGoogle'],
+  loginWithGradient: ['loginWithGradient'],
+  loginWithFlushedInputs: ['loginWithFlushedInputs'],
+  section: ['section'],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  root: 'div';
+  chakraUiStack2: 'div';
+  chakraUiStack3: 'div';
+  chakraUiStack4: 'div';
+  chakraUiStack5: 'div';
+  chakraUiPasswordField: 'div';
+  labelPassword: 'div';
+  divchakraInputGroup: 'div';
+  input: 'div';
+  buttonRevealPasswordSvg: 'div';
+  chakraUiHStack2: 'div';
+  spanchakraCheckboxControl: 'div';
+  svg2: 'div';
+  chakraUiButton2: 'div';
+  chakraUiStack6: 'div';
+  separator: 'div';
+  orContinueWith: 'div';
+  separator2: 'div';
+  chakraUiButton3: 'div';
+  buttonGroup: 'div';
+  chakraUiButton4: 'div';
+  svg3: 'div';
+  frame: 'div';
+  img: typeof p.PlasmicImg;
+  button: 'div';
+  svg4: 'div';
+  button2: 'div';
+  svg5: 'div';
   loginWithCentredForm: typeof LoginWithCentredForm;
+  logo: typeof Logo;
+  passwordField: typeof PasswordField;
+  oAuthButtonGroup: typeof OAuthButtonGroup;
   loginWithEmailOrProvider: typeof LoginWithEmailOrProvider;
   signUpWithQuote: typeof SignUpWithQuote;
   signUpForm: typeof SignUpForm;
@@ -265,11 +1172,10 @@ type NodeDefaultElementType = {
   loginWithEmailPasswordOrGoogle: typeof LoginWithEmailPasswordOrGoogle;
   loginWithGradient: typeof LoginWithGradient;
   loginWithFlushedInputs: typeof LoginWithFlushedInputs;
-  section: "section";
-  text: "div";
+  section: 'section';
 };
 
-type ReservedPropsType = "variants" | "args" | "overrides";
+type ReservedPropsType = 'variants' | 'args' | 'overrides';
 type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicAuthentication__OverridesType,
   DescendantsType<T>
@@ -305,7 +1211,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicAuthentication__ArgProps,
-          internalVariantPropNames: PlasmicAuthentication__VariantProps
+          internalVariantPropNames: PlasmicAuthentication__VariantProps,
         }),
       [props, nodeName]
     );
@@ -313,11 +1219,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
-  if (nodeName === "root") {
-    func.displayName = "PlasmicAuthentication";
+  if (nodeName === 'root') {
+    func.displayName = 'PlasmicAuthentication';
   } else {
     func.displayName = `PlasmicAuthentication.${nodeName}`;
   }
@@ -326,22 +1232,51 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicAuthentication = Object.assign(
   // Top-level PlasmicAuthentication renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent('root'),
   {
     // Helper components rendering sub-elements
-    loginWithCentredForm: makeNodeComponent("loginWithCentredForm"),
-    loginWithEmailOrProvider: makeNodeComponent("loginWithEmailOrProvider"),
-    signUpWithQuote: makeNodeComponent("signUpWithQuote"),
-    signUpForm: makeNodeComponent("signUpForm"),
-    loginWithFloatingLabel: makeNodeComponent("loginWithFloatingLabel"),
-    loginWithGoogleOrEmail: makeNodeComponent("loginWithGoogleOrEmail"),
+    chakraUiStack2: makeNodeComponent('chakraUiStack2'),
+    chakraUiStack3: makeNodeComponent('chakraUiStack3'),
+    chakraUiStack4: makeNodeComponent('chakraUiStack4'),
+    chakraUiStack5: makeNodeComponent('chakraUiStack5'),
+    chakraUiPasswordField: makeNodeComponent('chakraUiPasswordField'),
+    labelPassword: makeNodeComponent('labelPassword'),
+    divchakraInputGroup: makeNodeComponent('divchakraInputGroup'),
+    input: makeNodeComponent('input'),
+    buttonRevealPasswordSvg: makeNodeComponent('buttonRevealPasswordSvg'),
+    chakraUiHStack2: makeNodeComponent('chakraUiHStack2'),
+    spanchakraCheckboxControl: makeNodeComponent('spanchakraCheckboxControl'),
+    svg2: makeNodeComponent('svg2'),
+    chakraUiButton2: makeNodeComponent('chakraUiButton2'),
+    chakraUiStack6: makeNodeComponent('chakraUiStack6'),
+    separator: makeNodeComponent('separator'),
+    orContinueWith: makeNodeComponent('orContinueWith'),
+    separator2: makeNodeComponent('separator2'),
+    chakraUiButton3: makeNodeComponent('chakraUiButton3'),
+    buttonGroup: makeNodeComponent('buttonGroup'),
+    chakraUiButton4: makeNodeComponent('chakraUiButton4'),
+    svg3: makeNodeComponent('svg3'),
+    frame: makeNodeComponent('frame'),
+    img: makeNodeComponent('img'),
+    button: makeNodeComponent('button'),
+    svg4: makeNodeComponent('svg4'),
+    button2: makeNodeComponent('button2'),
+    svg5: makeNodeComponent('svg5'),
+    loginWithCentredForm: makeNodeComponent('loginWithCentredForm'),
+    logo: makeNodeComponent('logo'),
+    passwordField: makeNodeComponent('passwordField'),
+    oAuthButtonGroup: makeNodeComponent('oAuthButtonGroup'),
+    loginWithEmailOrProvider: makeNodeComponent('loginWithEmailOrProvider'),
+    signUpWithQuote: makeNodeComponent('signUpWithQuote'),
+    signUpForm: makeNodeComponent('signUpForm'),
+    loginWithFloatingLabel: makeNodeComponent('loginWithFloatingLabel'),
+    loginWithGoogleOrEmail: makeNodeComponent('loginWithGoogleOrEmail'),
     loginWithEmailPasswordOrGoogle: makeNodeComponent(
-      "loginWithEmailPasswordOrGoogle"
+      'loginWithEmailPasswordOrGoogle'
     ),
-    loginWithGradient: makeNodeComponent("loginWithGradient"),
-    loginWithFlushedInputs: makeNodeComponent("loginWithFlushedInputs"),
-    section: makeNodeComponent("section"),
-    text: makeNodeComponent("text"),
+    loginWithGradient: makeNodeComponent('loginWithGradient'),
+    loginWithFlushedInputs: makeNodeComponent('loginWithFlushedInputs'),
+    section: makeNodeComponent('section'),
 
     // Metadata about props expected for PlasmicAuthentication
     internalVariantProps: PlasmicAuthentication__VariantProps,
@@ -349,11 +1284,11 @@ export const PlasmicAuthentication = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "",
-      description: "",
-      ogImageSrc: "",
-      canonical: ""
-    }
+      title: '',
+      description: '',
+      ogImageSrc: '',
+      canonical: '',
+    },
   }
 );
 

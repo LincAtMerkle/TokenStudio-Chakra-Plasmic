@@ -11,14 +11,14 @@
 // Plasmic Project: nV7sRTPBx6ecWzFNNAWeQg
 // Component: cAtTstJSenOpIj
 
-import * as React from "react";
+import * as React from 'react';
 
-import Head from "next/head";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/router';
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
+import * as p from '@plasmicapp/react-web';
+import * as ph from '@plasmicapp/react-web/lib/host';
 
 import {
   hasVariant,
@@ -34,15 +34,15 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
-} from "@plasmicapp/react-web";
-import { Heading } from "@chakra-ui/react"; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
-import { Text } from "@chakra-ui/react"; // plasmic-import: SdN14ngBJybRru/codeComponent
+  ensureGlobalVariants,
+} from '@plasmicapp/react-web';
+import { Heading } from '@chakra-ui/react'; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
+import { Text } from '@chakra-ui/react'; // plasmic-import: SdN14ngBJybRru/codeComponent
 
-import "@plasmicapp/react-web/lib/plasmic.css";
+import '@plasmicapp/react-web/lib/plasmic.css';
 
-import projectcss from "./plasmic_plasmic_poc_localhost.module.css"; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
-import sty from "./PlasmicText.module.css"; // plasmic-import: cAtTstJSenOpIj/css
+import projectcss from './plasmic_plasmic_poc_localhost.module.css'; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
+import sty from './PlasmicText.module.css'; // plasmic-import: cAtTstJSenOpIj/css
 
 export type PlasmicText__VariantMembers = {};
 export type PlasmicText__VariantsArgs = {};
@@ -54,8 +54,8 @@ type ArgPropType = keyof PlasmicText__ArgsType;
 export const PlasmicText__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicText__OverridesType = {
-  root?: p.Flex<"div">;
-  freeBox?: p.Flex<"div">;
+  root?: p.Flex<'div'>;
+  freeBox?: p.Flex<'div'>;
 };
 
 export interface DefaultTextProps {}
@@ -88,7 +88,7 @@ function PlasmicText__RenderFunc(props: {
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
@@ -122,8 +122,8 @@ function PlasmicText__RenderFunc(props: {
 
       <div className={projectcss.plasmic_page_wrapper}>
         <p.Stack
-          as={"div"}
-          data-plasmic-name={"root"}
+          as={'div'}
+          data-plasmic-name={'root'}
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
@@ -138,9 +138,9 @@ function PlasmicText__RenderFunc(props: {
           )}
         >
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__lu88A)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__lu88A)}
             noOfLines={1 as const}
-            size={"4xl" as const}
+            size={'4xl' as const}
           >
             <div
               className={classNames(
@@ -149,13 +149,13 @@ function PlasmicText__RenderFunc(props: {
                 sty.text__k1H1K
               )}
             >
-              {"Text"}
+              {'Text'}
             </div>
           </Heading>
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__e3Iq)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__e3Iq)}
             noOfLines={1 as const}
-            size={"3xl" as const}
+            size={'3xl' as const}
           >
             <div
               className={classNames(
@@ -164,24 +164,25 @@ function PlasmicText__RenderFunc(props: {
                 sty.text__eSobH
               )}
             >
-              {"Variants"}
+              {'Variants'}
             </div>
           </Heading>
           {true ? (
             <p.Stack
-              as={"div"}
-              data-plasmic-name={"freeBox"}
+              as={'div'}
+              data-plasmic-name={'freeBox'}
               data-plasmic-override={overrides.freeBox}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox)}
             >
               <Text
                 className={classNames(
-                  "__wab_instance",
+                  '__wab_instance',
                   sty.chakraUiText___3L65L
                 )}
-                size={"md" as const}
-                variant={"light" as const}
+                fontStyle={'normal' as const}
+                size={'md' as const}
+                variant={'light' as const}
               >
                 <div
                   className={classNames(
@@ -190,16 +191,17 @@ function PlasmicText__RenderFunc(props: {
                     sty.text__xlNPm
                   )}
                 >
-                  {"light"}
+                  {'light'}
                 </div>
               </Text>
               <Text
                 className={classNames(
-                  "__wab_instance",
+                  '__wab_instance',
                   sty.chakraUiText__bAf7T
                 )}
-                size={"md" as const}
-                variant={"regular" as const}
+                fontStyle={'normal' as const}
+                size={'md' as const}
+                variant={'regular' as const}
               >
                 <div
                   className={classNames(
@@ -208,13 +210,14 @@ function PlasmicText__RenderFunc(props: {
                     sty.text__cy9Sg
                   )}
                 >
-                  {"regular"}
+                  {'regular'}
                 </div>
               </Text>
               <Text
-                className={classNames("__wab_instance", sty.chakraUiText__ugOu)}
-                size={"md" as const}
-                variant={"semiBold" as const}
+                className={classNames('__wab_instance', sty.chakraUiText__ugOu)}
+                fontStyle={'normal' as const}
+                size={'md' as const}
+                variant={'semiBold' as const}
               >
                 <div
                   className={classNames(
@@ -223,16 +226,17 @@ function PlasmicText__RenderFunc(props: {
                     sty.text__aDltr
                   )}
                 >
-                  {"semiBold"}
+                  {'semiBold'}
                 </div>
               </Text>
               <Text
                 className={classNames(
-                  "__wab_instance",
+                  '__wab_instance',
                   sty.chakraUiText__mcJer
                 )}
-                size={"md" as const}
-                variant={"bold" as const}
+                fontStyle={'normal' as const}
+                size={'md' as const}
+                variant={'bold' as const}
               >
                 <div
                   className={classNames(
@@ -241,15 +245,15 @@ function PlasmicText__RenderFunc(props: {
                     sty.text__mq4D
                   )}
                 >
-                  {"bold"}
+                  {'bold'}
                 </div>
               </Text>
             </p.Stack>
           ) : null}
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__uSaRr)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__uSaRr)}
             noOfLines={1 as const}
-            size={"3xl" as const}
+            size={'3xl' as const}
           >
             <div
               className={classNames(
@@ -258,13 +262,14 @@ function PlasmicText__RenderFunc(props: {
                 sty.text__zcZvy
               )}
             >
-              {"Sizes"}
+              {'Sizes'}
             </div>
           </Heading>
           <Text
-            className={classNames("__wab_instance", sty.chakraUiText__zKXu)}
-            size={"xs" as const}
-            variant={"regular" as const}
+            className={classNames('__wab_instance', sty.chakraUiText__zKXu)}
+            fontStyle={'normal' as const}
+            size={'xs' as const}
+            variant={'regular' as const}
           >
             <div
               className={classNames(
@@ -273,13 +278,14 @@ function PlasmicText__RenderFunc(props: {
                 sty.text___3NDO
               )}
             >
-              {"Text xs"}
+              {'Text xs'}
             </div>
           </Text>
           <Text
-            className={classNames("__wab_instance", sty.chakraUiText__t0Zwu)}
-            size={"sm" as const}
-            variant={"regular" as const}
+            className={classNames('__wab_instance', sty.chakraUiText__t0Zwu)}
+            fontStyle={'normal' as const}
+            size={'sm' as const}
+            variant={'regular' as const}
           >
             <div
               className={classNames(
@@ -288,13 +294,14 @@ function PlasmicText__RenderFunc(props: {
                 sty.text__qugQn
               )}
             >
-              {"Some sm"}
+              {'Some sm'}
             </div>
           </Text>
           <Text
-            className={classNames("__wab_instance", sty.chakraUiText__lTbko)}
-            size={"md" as const}
-            variant={"regular" as const}
+            className={classNames('__wab_instance', sty.chakraUiText__lTbko)}
+            fontStyle={'normal' as const}
+            size={'md' as const}
+            variant={'regular' as const}
           >
             <div
               className={classNames(
@@ -303,13 +310,14 @@ function PlasmicText__RenderFunc(props: {
                 sty.text__oVmXq
               )}
             >
-              {"Some md"}
+              {'Some md'}
             </div>
           </Text>
           <Text
-            className={classNames("__wab_instance", sty.chakraUiText___9TeYr)}
-            size={"lg" as const}
-            variant={"regular" as const}
+            className={classNames('__wab_instance', sty.chakraUiText___9TeYr)}
+            fontStyle={'normal' as const}
+            size={'lg' as const}
+            variant={'regular' as const}
           >
             <div
               className={classNames(
@@ -318,13 +326,14 @@ function PlasmicText__RenderFunc(props: {
                 sty.text__k0L2N
               )}
             >
-              {"Some lg"}
+              {'Some lg'}
             </div>
           </Text>
           <Text
-            className={classNames("__wab_instance", sty.chakraUiText___5TuLa)}
-            size={"xl" as const}
-            variant={"regular" as const}
+            className={classNames('__wab_instance', sty.chakraUiText___5TuLa)}
+            fontStyle={'normal' as const}
+            size={'xl' as const}
+            variant={'regular' as const}
           >
             <div
               className={classNames(
@@ -333,13 +342,14 @@ function PlasmicText__RenderFunc(props: {
                 sty.text__hqLy0
               )}
             >
-              {"Some xl"}
+              {'Some xl'}
             </div>
           </Text>
           <Text
-            className={classNames("__wab_instance", sty.chakraUiText__ySh1X)}
-            size={"2xl" as const}
-            variant={"regular" as const}
+            className={classNames('__wab_instance', sty.chakraUiText__ySh1X)}
+            fontStyle={'normal' as const}
+            size={'2xl' as const}
+            variant={'regular' as const}
           >
             <div
               className={classNames(
@@ -348,13 +358,14 @@ function PlasmicText__RenderFunc(props: {
                 sty.text___9YhEc
               )}
             >
-              {"Some 2xl"}
+              {'Some 2xl'}
             </div>
           </Text>
           <Text
-            className={classNames("__wab_instance", sty.chakraUiText__nIuSz)}
-            size={"2xl" as const}
-            variant={"regular" as const}
+            className={classNames('__wab_instance', sty.chakraUiText__nIuSz)}
+            fontStyle={'normal' as const}
+            size={'2xl' as const}
+            variant={'regular' as const}
           >
             <div
               className={classNames(
@@ -363,13 +374,14 @@ function PlasmicText__RenderFunc(props: {
                 sty.text__uwSGb
               )}
             >
-              {"Some 3xl"}
+              {'Some 3xl'}
             </div>
           </Text>
           <Text
-            className={classNames("__wab_instance", sty.chakraUiText__kw0Mr)}
-            size={"3xl" as const}
-            variant={"regular" as const}
+            className={classNames('__wab_instance', sty.chakraUiText__kw0Mr)}
+            fontStyle={'normal' as const}
+            size={'3xl' as const}
+            variant={'regular' as const}
           >
             <div
               className={classNames(
@@ -378,13 +390,14 @@ function PlasmicText__RenderFunc(props: {
                 sty.text___1Oxs1
               )}
             >
-              {"Some 4xl"}
+              {'Some 4xl'}
             </div>
           </Text>
           <Text
-            className={classNames("__wab_instance", sty.chakraUiText__sVvxr)}
-            size={"3xl" as const}
-            variant={"regular" as const}
+            className={classNames('__wab_instance', sty.chakraUiText__sVvxr)}
+            fontStyle={'normal' as const}
+            size={'3xl' as const}
+            variant={'regular' as const}
           >
             <div
               className={classNames(
@@ -393,13 +406,14 @@ function PlasmicText__RenderFunc(props: {
                 sty.text__vyQvX
               )}
             >
-              {"Some 5xl"}
+              {'Some 5xl'}
             </div>
           </Text>
           <Text
-            className={classNames("__wab_instance", sty.chakraUiText__w8Y0)}
-            size={"4xl" as const}
-            variant={"regular" as const}
+            className={classNames('__wab_instance', sty.chakraUiText__w8Y0)}
+            fontStyle={'normal' as const}
+            size={'4xl' as const}
+            variant={'regular' as const}
           >
             <div
               className={classNames(
@@ -408,13 +422,14 @@ function PlasmicText__RenderFunc(props: {
                 sty.text___6MYGl
               )}
             >
-              {"Some 6xl"}
+              {'Some 6xl'}
             </div>
           </Text>
           <Text
-            className={classNames("__wab_instance", sty.chakraUiText__msMk2)}
-            size={"5xl" as const}
-            variant={"regular" as const}
+            className={classNames('__wab_instance', sty.chakraUiText__msMk2)}
+            fontStyle={'normal' as const}
+            size={'5xl' as const}
+            variant={'regular' as const}
           >
             <div
               className={classNames(
@@ -423,13 +438,14 @@ function PlasmicText__RenderFunc(props: {
                 sty.text___5DlTr
               )}
             >
-              {"Some 7xl"}
+              {'Some 7xl'}
             </div>
           </Text>
           <Text
-            className={classNames("__wab_instance", sty.chakraUiText__zS64V)}
-            size={"6xl" as const}
-            variant={"regular" as const}
+            className={classNames('__wab_instance', sty.chakraUiText__zS64V)}
+            fontStyle={'normal' as const}
+            size={'6xl' as const}
+            variant={'regular' as const}
           >
             <div
               className={classNames(
@@ -438,7 +454,7 @@ function PlasmicText__RenderFunc(props: {
                 sty.text__iDiDa
               )}
             >
-              {"Some 8xl"}
+              {'Some 8xl'}
             </div>
           </Text>
         </p.Stack>
@@ -448,18 +464,18 @@ function PlasmicText__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "freeBox"],
-  freeBox: ["freeBox"]
+  root: ['root', 'freeBox'],
+  freeBox: ['freeBox'],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
-  freeBox: "div";
+  root: 'div';
+  freeBox: 'div';
 };
 
-type ReservedPropsType = "variants" | "args" | "overrides";
+type ReservedPropsType = 'variants' | 'args' | 'overrides';
 type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicText__OverridesType,
   DescendantsType<T>
@@ -495,7 +511,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicText__ArgProps,
-          internalVariantPropNames: PlasmicText__VariantProps
+          internalVariantPropNames: PlasmicText__VariantProps,
         }),
       [props, nodeName]
     );
@@ -503,11 +519,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
-  if (nodeName === "root") {
-    func.displayName = "PlasmicText";
+  if (nodeName === 'root') {
+    func.displayName = 'PlasmicText';
   } else {
     func.displayName = `PlasmicText.${nodeName}`;
   }
@@ -516,10 +532,10 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicText = Object.assign(
   // Top-level PlasmicText renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent('root'),
   {
     // Helper components rendering sub-elements
-    freeBox: makeNodeComponent("freeBox"),
+    freeBox: makeNodeComponent('freeBox'),
 
     // Metadata about props expected for PlasmicText
     internalVariantProps: PlasmicText__VariantProps,
@@ -527,11 +543,11 @@ export const PlasmicText = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "Text",
-      description: "",
-      ogImageSrc: "",
-      canonical: ""
-    }
+      title: 'Text',
+      description: '',
+      ogImageSrc: '',
+      canonical: '',
+    },
   }
 );
 

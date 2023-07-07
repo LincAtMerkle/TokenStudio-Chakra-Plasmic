@@ -11,14 +11,14 @@
 // Plasmic Project: nV7sRTPBx6ecWzFNNAWeQg
 // Component: alqXFEDWuA
 
-import * as React from "react";
+import * as React from 'react';
 
-import Head from "next/head";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/router';
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
+import * as p from '@plasmicapp/react-web';
+import * as ph from '@plasmicapp/react-web/lib/host';
 
 import {
   hasVariant,
@@ -34,18 +34,18 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
-} from "@plasmicapp/react-web";
-import { Heading } from "@chakra-ui/react"; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
-import { GridWithAddToCartButton } from "../../custom/chakraPro/GridWithAddToCartButton"; // plasmic-import: g65HQ02LYrQF/codeComponent
-import { GridWithFavouriteButton } from "../../custom/chakraPro/GridWithFavouriteButton"; // plasmic-import: U8m5PHO69gH3/codeComponent
-import { GridWithButtonGroup } from "../../custom/chakraPro/GridWithButtonGroup"; // plasmic-import: Leb3_BKFZjyi/codeComponent
-import { GridQuiteMinimalistic } from "../../custom/chakraPro/GridQuiteMinimalistic"; // plasmic-import: EWU1gGYvgIXl/codeComponent
+  ensureGlobalVariants,
+} from '@plasmicapp/react-web';
+import { Heading } from '@chakra-ui/react'; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
+import { GridWithAddToCartButton } from '../../chakra/chakraPro/GridWithAddToCartButton'; // plasmic-import: g65HQ02LYrQF/codeComponent
+import { GridWithFavouriteButton } from '../../chakra/chakraPro/GridWithFavouriteButton'; // plasmic-import: U8m5PHO69gH3/codeComponent
+import { GridWithButtonGroup } from '../../chakra/chakraPro/GridWithButtonGroup'; // plasmic-import: Leb3_BKFZjyi/codeComponent
+import { GridQuiteMinimalistic } from '../../chakra/chakraPro/GridQuiteMinimalistic'; // plasmic-import: EWU1gGYvgIXl/codeComponent
 
-import "@plasmicapp/react-web/lib/plasmic.css";
+import '@plasmicapp/react-web/lib/plasmic.css';
 
-import projectcss from "./plasmic_plasmic_poc_localhost.module.css"; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
-import sty from "./PlasmicProductGrids.module.css"; // plasmic-import: alqXFEDWuA/css
+import projectcss from './plasmic_plasmic_poc_localhost.module.css'; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
+import sty from './PlasmicProductGrids.module.css'; // plasmic-import: alqXFEDWuA/css
 
 export type PlasmicProductGrids__VariantMembers = {};
 export type PlasmicProductGrids__VariantsArgs = {};
@@ -57,7 +57,7 @@ type ArgPropType = keyof PlasmicProductGrids__ArgsType;
 export const PlasmicProductGrids__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicProductGrids__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: p.Flex<'div'>;
   gridWithAddToCartButton?: p.Flex<typeof GridWithAddToCartButton>;
   gridWithFavouriteButton?: p.Flex<typeof GridWithFavouriteButton>;
   gridWithButtonGroup?: p.Flex<typeof GridWithButtonGroup>;
@@ -94,7 +94,7 @@ function PlasmicProductGrids__RenderFunc(props: {
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
@@ -115,7 +115,7 @@ function PlasmicProductGrids__RenderFunc(props: {
 
       <div className={projectcss.plasmic_page_wrapper}>
         <div
-          data-plasmic-name={"root"}
+          data-plasmic-name={'root'}
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
@@ -129,9 +129,9 @@ function PlasmicProductGrids__RenderFunc(props: {
           )}
         >
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__jyDIg)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__jyDIg)}
             noOfLines={1 as const}
-            size={"4xl" as const}
+            size={'4xl' as const}
           >
             <div
               className={classNames(
@@ -140,13 +140,13 @@ function PlasmicProductGrids__RenderFunc(props: {
                 sty.text__nf7CM
               )}
             >
-              {"Product Grids"}
+              {'Product Grids'}
             </div>
           </Heading>
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__dPb06)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__dPb06)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -155,22 +155,22 @@ function PlasmicProductGrids__RenderFunc(props: {
                 sty.text__vN2
               )}
             >
-              {"Grid with add to cart button"}
+              {'Grid with add to cart button'}
             </div>
           </Heading>
           <GridWithAddToCartButton
-            data-plasmic-name={"gridWithAddToCartButton"}
+            data-plasmic-name={'gridWithAddToCartButton'}
             data-plasmic-override={overrides.gridWithAddToCartButton}
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.gridWithAddToCartButton
             )}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__tXwI7)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__tXwI7)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -179,22 +179,22 @@ function PlasmicProductGrids__RenderFunc(props: {
                 sty.text__wplfz
               )}
             >
-              {"Grid with favourite button"}
+              {'Grid with favourite button'}
             </div>
           </Heading>
           <GridWithFavouriteButton
-            data-plasmic-name={"gridWithFavouriteButton"}
+            data-plasmic-name={'gridWithFavouriteButton'}
             data-plasmic-override={overrides.gridWithFavouriteButton}
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.gridWithFavouriteButton
             )}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__h5MUp)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__h5MUp)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -203,19 +203,19 @@ function PlasmicProductGrids__RenderFunc(props: {
                 sty.text__giBfk
               )}
             >
-              {"Grid with button group"}
+              {'Grid with button group'}
             </div>
           </Heading>
           <GridWithButtonGroup
-            data-plasmic-name={"gridWithButtonGroup"}
+            data-plasmic-name={'gridWithButtonGroup'}
             data-plasmic-override={overrides.gridWithButtonGroup}
-            className={classNames("__wab_instance", sty.gridWithButtonGroup)}
+            className={classNames('__wab_instance', sty.gridWithButtonGroup)}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading___18Oa)}
+            className={classNames('__wab_instance', sty.chakraUiHeading___18Oa)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -224,13 +224,13 @@ function PlasmicProductGrids__RenderFunc(props: {
                 sty.text__paqlE
               )}
             >
-              {"Grid quite minimalistic"}
+              {'Grid quite minimalistic'}
             </div>
           </Heading>
           <GridQuiteMinimalistic
-            data-plasmic-name={"gridQuiteMinimalistic"}
+            data-plasmic-name={'gridQuiteMinimalistic'}
             data-plasmic-override={overrides.gridQuiteMinimalistic}
-            className={classNames("__wab_instance", sty.gridQuiteMinimalistic)}
+            className={classNames('__wab_instance', sty.gridQuiteMinimalistic)}
           />
         </div>
       </div>
@@ -240,29 +240,29 @@ function PlasmicProductGrids__RenderFunc(props: {
 
 const PlasmicDescendants = {
   root: [
-    "root",
-    "gridWithAddToCartButton",
-    "gridWithFavouriteButton",
-    "gridWithButtonGroup",
-    "gridQuiteMinimalistic"
+    'root',
+    'gridWithAddToCartButton',
+    'gridWithFavouriteButton',
+    'gridWithButtonGroup',
+    'gridQuiteMinimalistic',
   ],
-  gridWithAddToCartButton: ["gridWithAddToCartButton"],
-  gridWithFavouriteButton: ["gridWithFavouriteButton"],
-  gridWithButtonGroup: ["gridWithButtonGroup"],
-  gridQuiteMinimalistic: ["gridQuiteMinimalistic"]
+  gridWithAddToCartButton: ['gridWithAddToCartButton'],
+  gridWithFavouriteButton: ['gridWithFavouriteButton'],
+  gridWithButtonGroup: ['gridWithButtonGroup'],
+  gridQuiteMinimalistic: ['gridQuiteMinimalistic'],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  root: 'div';
   gridWithAddToCartButton: typeof GridWithAddToCartButton;
   gridWithFavouriteButton: typeof GridWithFavouriteButton;
   gridWithButtonGroup: typeof GridWithButtonGroup;
   gridQuiteMinimalistic: typeof GridQuiteMinimalistic;
 };
 
-type ReservedPropsType = "variants" | "args" | "overrides";
+type ReservedPropsType = 'variants' | 'args' | 'overrides';
 type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicProductGrids__OverridesType,
   DescendantsType<T>
@@ -298,7 +298,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicProductGrids__ArgProps,
-          internalVariantPropNames: PlasmicProductGrids__VariantProps
+          internalVariantPropNames: PlasmicProductGrids__VariantProps,
         }),
       [props, nodeName]
     );
@@ -306,11 +306,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
-  if (nodeName === "root") {
-    func.displayName = "PlasmicProductGrids";
+  if (nodeName === 'root') {
+    func.displayName = 'PlasmicProductGrids';
   } else {
     func.displayName = `PlasmicProductGrids.${nodeName}`;
   }
@@ -319,13 +319,13 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicProductGrids = Object.assign(
   // Top-level PlasmicProductGrids renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent('root'),
   {
     // Helper components rendering sub-elements
-    gridWithAddToCartButton: makeNodeComponent("gridWithAddToCartButton"),
-    gridWithFavouriteButton: makeNodeComponent("gridWithFavouriteButton"),
-    gridWithButtonGroup: makeNodeComponent("gridWithButtonGroup"),
-    gridQuiteMinimalistic: makeNodeComponent("gridQuiteMinimalistic"),
+    gridWithAddToCartButton: makeNodeComponent('gridWithAddToCartButton'),
+    gridWithFavouriteButton: makeNodeComponent('gridWithFavouriteButton'),
+    gridWithButtonGroup: makeNodeComponent('gridWithButtonGroup'),
+    gridQuiteMinimalistic: makeNodeComponent('gridQuiteMinimalistic'),
 
     // Metadata about props expected for PlasmicProductGrids
     internalVariantProps: PlasmicProductGrids__VariantProps,
@@ -333,11 +333,11 @@ export const PlasmicProductGrids = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "",
-      description: "",
-      ogImageSrc: "",
-      canonical: ""
-    }
+      title: '',
+      description: '',
+      ogImageSrc: '',
+      canonical: '',
+    },
   }
 );
 

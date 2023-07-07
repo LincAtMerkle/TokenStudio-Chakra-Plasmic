@@ -11,14 +11,14 @@
 // Plasmic Project: nV7sRTPBx6ecWzFNNAWeQg
 // Component: 4b4ebod5rn
 
-import * as React from "react";
+import * as React from 'react';
 
-import Head from "next/head";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/router';
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
+import * as p from '@plasmicapp/react-web';
+import * as ph from '@plasmicapp/react-web/lib/host';
 
 import {
   hasVariant,
@@ -34,17 +34,17 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
-} from "@plasmicapp/react-web";
-import { Heading } from "@chakra-ui/react"; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
-import { SizePicker } from "../../custom/chakraPro/SizePicker"; // plasmic-import: DSxhkoU6X4AG/codeComponent
-import { ColorPicker } from "../../custom/chakraPro/ColorPicker"; // plasmic-import: APC4Okib0Opk/codeComponent
-import { QuantityPicker } from "../../custom/chakraPro/QuantityPicker"; // plasmic-import: q86GdRSFB7cI/codeComponent
+  ensureGlobalVariants,
+} from '@plasmicapp/react-web';
+import { Heading } from '@chakra-ui/react'; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
+import { SizePicker } from '../../chakra/chakraPro/SizePicker'; // plasmic-import: DSxhkoU6X4AG/codeComponent
+import { ColorPicker } from '../../chakra/chakraPro/ColorPicker'; // plasmic-import: APC4Okib0Opk/codeComponent
+import { QuantityPicker } from '../../chakra/chakraPro/QuantityPicker'; // plasmic-import: q86GdRSFB7cI/codeComponent
 
-import "@plasmicapp/react-web/lib/plasmic.css";
+import '@plasmicapp/react-web/lib/plasmic.css';
 
-import projectcss from "./plasmic_plasmic_poc_localhost.module.css"; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
-import sty from "./PlasmicProductPickers.module.css"; // plasmic-import: 4b4ebod5rn/css
+import projectcss from './plasmic_plasmic_poc_localhost.module.css'; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
+import sty from './PlasmicProductPickers.module.css'; // plasmic-import: 4b4ebod5rn/css
 
 export type PlasmicProductPickers__VariantMembers = {};
 export type PlasmicProductPickers__VariantsArgs = {};
@@ -56,7 +56,7 @@ type ArgPropType = keyof PlasmicProductPickers__ArgsType;
 export const PlasmicProductPickers__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicProductPickers__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: p.Flex<'div'>;
   sizePicker?: p.Flex<typeof SizePicker>;
   colorPicker?: p.Flex<typeof ColorPicker>;
   quantityPicker?: p.Flex<typeof QuantityPicker>;
@@ -92,7 +92,7 @@ function PlasmicProductPickers__RenderFunc(props: {
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
@@ -113,7 +113,7 @@ function PlasmicProductPickers__RenderFunc(props: {
 
       <div className={projectcss.plasmic_page_wrapper}>
         <div
-          data-plasmic-name={"root"}
+          data-plasmic-name={'root'}
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
@@ -127,9 +127,9 @@ function PlasmicProductPickers__RenderFunc(props: {
           )}
         >
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__eUemr)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__eUemr)}
             noOfLines={1 as const}
-            size={"4xl" as const}
+            size={'4xl' as const}
           >
             <div
               className={classNames(
@@ -138,13 +138,13 @@ function PlasmicProductPickers__RenderFunc(props: {
                 sty.text__f9RKu
               )}
             >
-              {"Product Pickers"}
+              {'Product Pickers'}
             </div>
           </Heading>
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__ogvgE)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__ogvgE)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -153,19 +153,19 @@ function PlasmicProductPickers__RenderFunc(props: {
                 sty.text___9GODe
               )}
             >
-              {"Size picker"}
+              {'Size picker'}
             </div>
           </Heading>
           <SizePicker
-            data-plasmic-name={"sizePicker"}
+            data-plasmic-name={'sizePicker'}
             data-plasmic-override={overrides.sizePicker}
-            className={classNames("__wab_instance", sty.sizePicker)}
+            className={classNames('__wab_instance', sty.sizePicker)}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__fsm4F)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__fsm4F)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -174,19 +174,19 @@ function PlasmicProductPickers__RenderFunc(props: {
                 sty.text__dYZe
               )}
             >
-              {"Color picker"}
+              {'Color picker'}
             </div>
           </Heading>
           <ColorPicker
-            data-plasmic-name={"colorPicker"}
+            data-plasmic-name={'colorPicker'}
             data-plasmic-override={overrides.colorPicker}
-            className={classNames("__wab_instance", sty.colorPicker)}
+            className={classNames('__wab_instance', sty.colorPicker)}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__bVVcQ)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__bVVcQ)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -195,13 +195,13 @@ function PlasmicProductPickers__RenderFunc(props: {
                 sty.text__ryVts
               )}
             >
-              {"Quantity picker"}
+              {'Quantity picker'}
             </div>
           </Heading>
           <QuantityPicker
-            data-plasmic-name={"quantityPicker"}
+            data-plasmic-name={'quantityPicker'}
             data-plasmic-override={overrides.quantityPicker}
-            className={classNames("__wab_instance", sty.quantityPicker)}
+            className={classNames('__wab_instance', sty.quantityPicker)}
           />
         </div>
       </div>
@@ -210,22 +210,22 @@ function PlasmicProductPickers__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "sizePicker", "colorPicker", "quantityPicker"],
-  sizePicker: ["sizePicker"],
-  colorPicker: ["colorPicker"],
-  quantityPicker: ["quantityPicker"]
+  root: ['root', 'sizePicker', 'colorPicker', 'quantityPicker'],
+  sizePicker: ['sizePicker'],
+  colorPicker: ['colorPicker'],
+  quantityPicker: ['quantityPicker'],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  root: 'div';
   sizePicker: typeof SizePicker;
   colorPicker: typeof ColorPicker;
   quantityPicker: typeof QuantityPicker;
 };
 
-type ReservedPropsType = "variants" | "args" | "overrides";
+type ReservedPropsType = 'variants' | 'args' | 'overrides';
 type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicProductPickers__OverridesType,
   DescendantsType<T>
@@ -261,7 +261,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicProductPickers__ArgProps,
-          internalVariantPropNames: PlasmicProductPickers__VariantProps
+          internalVariantPropNames: PlasmicProductPickers__VariantProps,
         }),
       [props, nodeName]
     );
@@ -269,11 +269,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
-  if (nodeName === "root") {
-    func.displayName = "PlasmicProductPickers";
+  if (nodeName === 'root') {
+    func.displayName = 'PlasmicProductPickers';
   } else {
     func.displayName = `PlasmicProductPickers.${nodeName}`;
   }
@@ -282,12 +282,12 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicProductPickers = Object.assign(
   // Top-level PlasmicProductPickers renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent('root'),
   {
     // Helper components rendering sub-elements
-    sizePicker: makeNodeComponent("sizePicker"),
-    colorPicker: makeNodeComponent("colorPicker"),
-    quantityPicker: makeNodeComponent("quantityPicker"),
+    sizePicker: makeNodeComponent('sizePicker'),
+    colorPicker: makeNodeComponent('colorPicker'),
+    quantityPicker: makeNodeComponent('quantityPicker'),
 
     // Metadata about props expected for PlasmicProductPickers
     internalVariantProps: PlasmicProductPickers__VariantProps,
@@ -295,11 +295,11 @@ export const PlasmicProductPickers = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "",
-      description: "",
-      ogImageSrc: "",
-      canonical: ""
-    }
+      title: '',
+      description: '',
+      ogImageSrc: '',
+      canonical: '',
+    },
   }
 );
 

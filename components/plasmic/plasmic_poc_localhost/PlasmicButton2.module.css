@@ -8,64 +8,9 @@
 .rootshowStartIcon {
   display: flex;
 }
-.rootcolor_navLink {
-  padding: 10px 16px;
-  border-width: 0px;
-}
-.rootcolor_footerButton {
-  padding: 0px;
-  border-style: none;
-}
-.rootcolor_navLinkBlue {
-  background: #185adb;
-  padding: 10px 16px;
-  border-style: none;
-}
-.rootcolor_smaillWhite {
-  background: #ffffff;
-  padding: 15px 20px;
-  border-style: none;
-}
-.rootcolor_blueBorder {
-  border-style: solid;
-  border-color: #185adb;
-}
-.rootcolor_clear {
-  border-style: solid;
-  border-color: #ffffff;
-}
-.rooticonOnly {
-  padding-top: 11px;
-  padding-bottom: 11px;
-}
-.rootoutline {
-  border: 1px solid #e5e5ea;
-}
-.rootbgDifference {
-  mix-blend-mode: difference;
-}
-.rootround {
-  padding-left: 20px;
-  padding-right: 20px;
-  border-radius: 24px;
-}
 .rootshowEndIcon {
   padding-right: 0px;
   padding-left: 24px;
-}
-.rootflat {
-  padding: 0px;
-}
-.rootextraSmallShadow {
-  box-shadow: 0px 1px 1px 1px #0000001a;
-}
-.rootisDisabled {
-  cursor: not-allowed;
-  opacity: 0.5;
-}
-.rootsmall {
-  padding-top: 12px;
-  padding-bottom: 12px;
 }
 .rootcolor_green {
   background: #34c759;
@@ -112,6 +57,61 @@
 .rootcolor_darkGray {
   background: #92959bd9;
 }
+.rootcolor_navLink {
+  padding: 10px 16px;
+  border-width: 0px;
+}
+.rootcolor_footerButton {
+  padding: 0px;
+  border-style: none;
+}
+.rootcolor_navLinkBlue {
+  background: #185adb;
+  padding: 10px 16px;
+  border-style: none;
+}
+.rootcolor_smaillWhite {
+  background: #ffffff;
+  padding: 15px 20px;
+  border-style: none;
+}
+.rootcolor_blueBorder {
+  border-style: solid;
+  border-color: #185adb;
+}
+.rootcolor_clear {
+  border-style: solid;
+  border-color: #ffffff;
+}
+.rooticonOnly {
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+.rootoutline {
+  border: 1px solid #e5e5ea;
+}
+.rootbgDifference {
+  mix-blend-mode: difference;
+}
+.rootround {
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 24px;
+}
+.rootflat {
+  padding: 0px;
+}
+.rootextraSmallShadow {
+  box-shadow: 0px 1px 1px 1px #0000001a;
+}
+.rootisDisabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.rootsmall {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
 .slotTargetStartIcon {
   color: #92959bd9;
 }
@@ -148,21 +148,7 @@
   line-height: 26px;
   white-space: pre;
   color: #ffffff;
-  font-family: "Montserrat", sans-serif;
-}
-.slotTargetChildrencolor_navLink {
-  font-weight: 500;
-  color: #eeeeee;
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-}
-.slotTargetChildrencolor_blueBorder {
-  color: #185adb;
-  font-weight: 500;
-}
-.slotTargetChildrenlarge {
-  font-size: 24px;
-  line-height: 1.5em;
+  font-family: 'Montserrat', sans-serif;
 }
 .slotTargetChildrencolor_green {
   color: #ffffff;
@@ -172,7 +158,7 @@
 }
 .slotTargetChildrencolor_blue {
   color: #ffffff;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 16px;
 }
@@ -187,6 +173,20 @@
 }
 .slotTargetChildrencolor_link {
   color: #007aff;
+}
+.slotTargetChildrencolor_navLink {
+  font-weight: 500;
+  color: #eeeeee;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+.slotTargetChildrencolor_blueBorder {
+  color: #185adb;
+  font-weight: 500;
+}
+.slotTargetChildrenlarge {
+  font-size: 24px;
+  line-height: 1.5em;
 }
 .slotTargetEndIcon {
   color: #92959bd9;

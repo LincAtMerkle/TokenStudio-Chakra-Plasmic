@@ -11,14 +11,14 @@
 // Plasmic Project: nV7sRTPBx6ecWzFNNAWeQg
 // Component: xAsgWs0dYw
 
-import * as React from "react";
+import * as React from 'react';
 
-import Head from "next/head";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/router';
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
+import * as p from '@plasmicapp/react-web';
+import * as ph from '@plasmicapp/react-web/lib/host';
 
 import {
   hasVariant,
@@ -34,14 +34,14 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
-} from "@plasmicapp/react-web";
-import { LoginWithLeftBackground } from "../../custom/chakraPro/Application/Authentication/LoginWithLeftBackground"; // plasmic-import: M0jfWiLAo4K/codeComponent
+  ensureGlobalVariants,
+} from '@plasmicapp/react-web';
+import { LoginWithLeftBackground } from '../../chakra/chakraPro/Application/Authentication/LoginWithLeftBackground'; // plasmic-import: M0jfWiLAo4K/codeComponent
 
-import "@plasmicapp/react-web/lib/plasmic.css";
+import '@plasmicapp/react-web/lib/plasmic.css';
 
-import projectcss from "./plasmic_plasmic_poc_localhost.module.css"; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
-import sty from "./PlasmicLoginWithLeftBackground.module.css"; // plasmic-import: xAsgWs0dYw/css
+import projectcss from './plasmic_plasmic_poc_localhost.module.css'; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
+import sty from './PlasmicLoginWithLeftBackground.module.css'; // plasmic-import: xAsgWs0dYw/css
 
 export type PlasmicLoginWithLeftBackground__VariantMembers = {};
 export type PlasmicLoginWithLeftBackground__VariantsArgs = {};
@@ -55,7 +55,7 @@ export const PlasmicLoginWithLeftBackground__ArgProps =
   new Array<ArgPropType>();
 
 export type PlasmicLoginWithLeftBackground__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: p.Flex<'div'>;
   loginWithLeftBackground?: p.Flex<typeof LoginWithLeftBackground>;
 };
 
@@ -91,7 +91,7 @@ function PlasmicLoginWithLeftBackground__RenderFunc(props: {
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
@@ -102,7 +102,7 @@ function PlasmicLoginWithLeftBackground__RenderFunc(props: {
 
   return (
     <div
-      data-plasmic-name={"root"}
+      data-plasmic-name={'root'}
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
@@ -116,27 +116,27 @@ function PlasmicLoginWithLeftBackground__RenderFunc(props: {
       )}
     >
       <LoginWithLeftBackground
-        data-plasmic-name={"loginWithLeftBackground"}
+        data-plasmic-name={'loginWithLeftBackground'}
         data-plasmic-override={overrides.loginWithLeftBackground}
-        className={classNames("__wab_instance", sty.loginWithLeftBackground)}
+        className={classNames('__wab_instance', sty.loginWithLeftBackground)}
       />
     </div>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  root: ["root", "loginWithLeftBackground"],
-  loginWithLeftBackground: ["loginWithLeftBackground"]
+  root: ['root', 'loginWithLeftBackground'],
+  loginWithLeftBackground: ['loginWithLeftBackground'],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  root: 'div';
   loginWithLeftBackground: typeof LoginWithLeftBackground;
 };
 
-type ReservedPropsType = "variants" | "args" | "overrides";
+type ReservedPropsType = 'variants' | 'args' | 'overrides';
 type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicLoginWithLeftBackground__OverridesType,
   DescendantsType<T>
@@ -172,7 +172,8 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicLoginWithLeftBackground__ArgProps,
-          internalVariantPropNames: PlasmicLoginWithLeftBackground__VariantProps
+          internalVariantPropNames:
+            PlasmicLoginWithLeftBackground__VariantProps,
         }),
       [props, nodeName]
     );
@@ -180,11 +181,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
-  if (nodeName === "root") {
-    func.displayName = "PlasmicLoginWithLeftBackground";
+  if (nodeName === 'root') {
+    func.displayName = 'PlasmicLoginWithLeftBackground';
   } else {
     func.displayName = `PlasmicLoginWithLeftBackground.${nodeName}`;
   }
@@ -193,14 +194,14 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicLoginWithLeftBackground = Object.assign(
   // Top-level PlasmicLoginWithLeftBackground renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent('root'),
   {
     // Helper components rendering sub-elements
-    loginWithLeftBackground: makeNodeComponent("loginWithLeftBackground"),
+    loginWithLeftBackground: makeNodeComponent('loginWithLeftBackground'),
 
     // Metadata about props expected for PlasmicLoginWithLeftBackground
     internalVariantProps: PlasmicLoginWithLeftBackground__VariantProps,
-    internalArgProps: PlasmicLoginWithLeftBackground__ArgProps
+    internalArgProps: PlasmicLoginWithLeftBackground__ArgProps,
   }
 );
 

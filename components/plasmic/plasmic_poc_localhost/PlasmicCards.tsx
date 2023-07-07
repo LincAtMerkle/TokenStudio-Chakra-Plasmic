@@ -11,14 +11,14 @@
 // Plasmic Project: nV7sRTPBx6ecWzFNNAWeQg
 // Component: 7UfyBL6cNH
 
-import * as React from "react";
+import * as React from 'react';
 
-import Head from "next/head";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/router';
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
+import * as p from '@plasmicapp/react-web';
+import * as ph from '@plasmicapp/react-web/lib/host';
 
 import {
   hasVariant,
@@ -34,19 +34,19 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
-} from "@plasmicapp/react-web";
-import { CardWithDownloadItem } from "../../custom/chakraPro/Application/Cards/CardWithDownloadItem"; // plasmic-import: KJAshRRWuN6/codeComponent
-import { CardWithTwoButtons } from "../../custom/chakraPro/Application/Cards/CardWithTwoButtons"; // plasmic-import: R9LvSI_bT7P/codeComponent
-import { CardWithRightButton } from "../../custom/chakraPro/Application/Cards/CardWithRightButton"; // plasmic-import: iV9A7Bq3j-U/codeComponent
-import { CardWithSwitch } from "../../custom/chakraPro/Application/Cards/CardWithSwitch"; // plasmic-import: IOFuW6UGfQw/codeComponent
-import { CardWithAddButton } from "../../custom/chakraPro/Application/Cards/CardWithAddButton"; // plasmic-import: w2-Sa29nPH5/codeComponent
-import { CardWithForm } from "../../custom/chakraPro/Application/Cards/CardWithForm"; // plasmic-import: thckyj6OMHX/codeComponent
+  ensureGlobalVariants,
+} from '@plasmicapp/react-web';
+import { CardWithDownloadItem } from '../../chakra/chakraPro/Application/Cards/CardWithDownloadItem'; // plasmic-import: KJAshRRWuN6/codeComponent
+import { CardWithTwoButtons } from '../../chakra/chakraPro/Application/Cards/CardWithTwoButtons'; // plasmic-import: R9LvSI_bT7P/codeComponent
+import { CardWithRightButton } from '../../chakra/chakraPro/Application/Cards/CardWithRightButton'; // plasmic-import: iV9A7Bq3j-U/codeComponent
+import { CardWithSwitch } from '../../chakra/chakraPro/Application/Cards/CardWithSwitch'; // plasmic-import: IOFuW6UGfQw/codeComponent
+import { CardWithAddButton } from '../../chakra/chakraPro/Application/Cards/CardWithAddButton'; // plasmic-import: w2-Sa29nPH5/codeComponent
+import { CardWithForm } from '../../chakra/chakraPro/Application/Cards/CardWithForm'; // plasmic-import: thckyj6OMHX/codeComponent
 
-import "@plasmicapp/react-web/lib/plasmic.css";
+import '@plasmicapp/react-web/lib/plasmic.css';
 
-import projectcss from "./plasmic_plasmic_poc_localhost.module.css"; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
-import sty from "./PlasmicCards.module.css"; // plasmic-import: 7UfyBL6cNH/css
+import projectcss from './plasmic_plasmic_poc_localhost.module.css'; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
+import sty from './PlasmicCards.module.css'; // plasmic-import: 7UfyBL6cNH/css
 
 export type PlasmicCards__VariantMembers = {};
 export type PlasmicCards__VariantsArgs = {};
@@ -58,7 +58,7 @@ type ArgPropType = keyof PlasmicCards__ArgsType;
 export const PlasmicCards__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicCards__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: p.Flex<'div'>;
   cardWithDownloadItem?: p.Flex<typeof CardWithDownloadItem>;
   cardWithTwoButtons?: p.Flex<typeof CardWithTwoButtons>;
   cardWithRightButton?: p.Flex<typeof CardWithRightButton>;
@@ -97,7 +97,7 @@ function PlasmicCards__RenderFunc(props: {
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
@@ -118,7 +118,7 @@ function PlasmicCards__RenderFunc(props: {
 
       <div className={projectcss.plasmic_page_wrapper}>
         <div
-          data-plasmic-name={"root"}
+          data-plasmic-name={'root'}
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
@@ -132,39 +132,39 @@ function PlasmicCards__RenderFunc(props: {
           )}
         >
           <CardWithDownloadItem
-            data-plasmic-name={"cardWithDownloadItem"}
+            data-plasmic-name={'cardWithDownloadItem'}
             data-plasmic-override={overrides.cardWithDownloadItem}
-            className={classNames("__wab_instance", sty.cardWithDownloadItem)}
+            className={classNames('__wab_instance', sty.cardWithDownloadItem)}
           />
 
           <CardWithTwoButtons
-            data-plasmic-name={"cardWithTwoButtons"}
+            data-plasmic-name={'cardWithTwoButtons'}
             data-plasmic-override={overrides.cardWithTwoButtons}
-            className={classNames("__wab_instance", sty.cardWithTwoButtons)}
+            className={classNames('__wab_instance', sty.cardWithTwoButtons)}
           />
 
           <CardWithRightButton
-            data-plasmic-name={"cardWithRightButton"}
+            data-plasmic-name={'cardWithRightButton'}
             data-plasmic-override={overrides.cardWithRightButton}
-            className={classNames("__wab_instance", sty.cardWithRightButton)}
+            className={classNames('__wab_instance', sty.cardWithRightButton)}
           />
 
           <CardWithSwitch
-            data-plasmic-name={"cardWithSwitch"}
+            data-plasmic-name={'cardWithSwitch'}
             data-plasmic-override={overrides.cardWithSwitch}
-            className={classNames("__wab_instance", sty.cardWithSwitch)}
+            className={classNames('__wab_instance', sty.cardWithSwitch)}
           />
 
           <CardWithAddButton
-            data-plasmic-name={"cardWithAddButton"}
+            data-plasmic-name={'cardWithAddButton'}
             data-plasmic-override={overrides.cardWithAddButton}
-            className={classNames("__wab_instance", sty.cardWithAddButton)}
+            className={classNames('__wab_instance', sty.cardWithAddButton)}
           />
 
           <CardWithForm
-            data-plasmic-name={"cardWithForm"}
+            data-plasmic-name={'cardWithForm'}
             data-plasmic-override={overrides.cardWithForm}
-            className={classNames("__wab_instance", sty.cardWithForm)}
+            className={classNames('__wab_instance', sty.cardWithForm)}
           />
         </div>
       </div>
@@ -174,26 +174,26 @@ function PlasmicCards__RenderFunc(props: {
 
 const PlasmicDescendants = {
   root: [
-    "root",
-    "cardWithDownloadItem",
-    "cardWithTwoButtons",
-    "cardWithRightButton",
-    "cardWithSwitch",
-    "cardWithAddButton",
-    "cardWithForm"
+    'root',
+    'cardWithDownloadItem',
+    'cardWithTwoButtons',
+    'cardWithRightButton',
+    'cardWithSwitch',
+    'cardWithAddButton',
+    'cardWithForm',
   ],
-  cardWithDownloadItem: ["cardWithDownloadItem"],
-  cardWithTwoButtons: ["cardWithTwoButtons"],
-  cardWithRightButton: ["cardWithRightButton"],
-  cardWithSwitch: ["cardWithSwitch"],
-  cardWithAddButton: ["cardWithAddButton"],
-  cardWithForm: ["cardWithForm"]
+  cardWithDownloadItem: ['cardWithDownloadItem'],
+  cardWithTwoButtons: ['cardWithTwoButtons'],
+  cardWithRightButton: ['cardWithRightButton'],
+  cardWithSwitch: ['cardWithSwitch'],
+  cardWithAddButton: ['cardWithAddButton'],
+  cardWithForm: ['cardWithForm'],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  root: 'div';
   cardWithDownloadItem: typeof CardWithDownloadItem;
   cardWithTwoButtons: typeof CardWithTwoButtons;
   cardWithRightButton: typeof CardWithRightButton;
@@ -202,7 +202,7 @@ type NodeDefaultElementType = {
   cardWithForm: typeof CardWithForm;
 };
 
-type ReservedPropsType = "variants" | "args" | "overrides";
+type ReservedPropsType = 'variants' | 'args' | 'overrides';
 type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicCards__OverridesType,
   DescendantsType<T>
@@ -238,7 +238,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicCards__ArgProps,
-          internalVariantPropNames: PlasmicCards__VariantProps
+          internalVariantPropNames: PlasmicCards__VariantProps,
         }),
       [props, nodeName]
     );
@@ -246,11 +246,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
-  if (nodeName === "root") {
-    func.displayName = "PlasmicCards";
+  if (nodeName === 'root') {
+    func.displayName = 'PlasmicCards';
   } else {
     func.displayName = `PlasmicCards.${nodeName}`;
   }
@@ -259,15 +259,15 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicCards = Object.assign(
   // Top-level PlasmicCards renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent('root'),
   {
     // Helper components rendering sub-elements
-    cardWithDownloadItem: makeNodeComponent("cardWithDownloadItem"),
-    cardWithTwoButtons: makeNodeComponent("cardWithTwoButtons"),
-    cardWithRightButton: makeNodeComponent("cardWithRightButton"),
-    cardWithSwitch: makeNodeComponent("cardWithSwitch"),
-    cardWithAddButton: makeNodeComponent("cardWithAddButton"),
-    cardWithForm: makeNodeComponent("cardWithForm"),
+    cardWithDownloadItem: makeNodeComponent('cardWithDownloadItem'),
+    cardWithTwoButtons: makeNodeComponent('cardWithTwoButtons'),
+    cardWithRightButton: makeNodeComponent('cardWithRightButton'),
+    cardWithSwitch: makeNodeComponent('cardWithSwitch'),
+    cardWithAddButton: makeNodeComponent('cardWithAddButton'),
+    cardWithForm: makeNodeComponent('cardWithForm'),
 
     // Metadata about props expected for PlasmicCards
     internalVariantProps: PlasmicCards__VariantProps,
@@ -275,11 +275,11 @@ export const PlasmicCards = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "",
-      description: "",
-      ogImageSrc: "",
-      canonical: ""
-    }
+      title: '',
+      description: '',
+      ogImageSrc: '',
+      canonical: '',
+    },
   }
 );
 

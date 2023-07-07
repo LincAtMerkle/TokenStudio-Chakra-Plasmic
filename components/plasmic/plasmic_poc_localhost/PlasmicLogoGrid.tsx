@@ -11,14 +11,14 @@
 // Plasmic Project: nV7sRTPBx6ecWzFNNAWeQg
 // Component: e4H4Q-200G
 
-import * as React from "react";
+import * as React from 'react';
 
-import Head from "next/head";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/router';
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
+import * as p from '@plasmicapp/react-web';
+import * as ph from '@plasmicapp/react-web/lib/host';
 
 import {
   hasVariant,
@@ -34,19 +34,19 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
-} from "@plasmicapp/react-web";
-import { Heading } from "@chakra-ui/react"; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
-import { LogoGridBoxed } from "../../custom/chakraPro/Marketing/Logo Grid/LogoGridBoxed"; // plasmic-import: R9SHV1pGyW6y/codeComponent
-import { LogoGridBoxedOnAccent } from "../../custom/chakraPro/Marketing/Logo Grid/LogoGridBoxedOnAccent"; // plasmic-import: RzT6WvHslnC2/codeComponent
-import { LogoGridWithTitle } from "../../custom/chakraPro/Marketing/Logo Grid/LogoGridWithTitle"; // plasmic-import: 2kPBF8Dgbk1g/codeComponent
-import { LogoGridWithTiles } from "../../custom/chakraPro/Marketing/Logo Grid/LogoGridWithTiles"; // plasmic-import: 08_Oy1Xq-zvL/codeComponent
-import { LogoGridWithTitleOnAccent } from "../../custom/chakraPro/Marketing/Logo Grid/LogoGridWithTitleOnAccent"; // plasmic-import: tB1nOAt_47Xk/codeComponent
+  ensureGlobalVariants,
+} from '@plasmicapp/react-web';
+import { Heading } from '@chakra-ui/react'; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
+import { LogoGridBoxed } from '../../chakra/chakraPro/Marketing/Logo Grid/LogoGridBoxed'; // plasmic-import: R9SHV1pGyW6y/codeComponent
+import { LogoGridBoxedOnAccent } from '../../chakra/chakraPro/Marketing/Logo Grid/LogoGridBoxedOnAccent'; // plasmic-import: RzT6WvHslnC2/codeComponent
+import { LogoGridWithTitle } from '../../chakra/chakraPro/Marketing/Logo Grid/LogoGridWithTitle'; // plasmic-import: 2kPBF8Dgbk1g/codeComponent
+import { LogoGridWithTiles } from '../../chakra/chakraPro/Marketing/Logo Grid/LogoGridWithTiles'; // plasmic-import: 08_Oy1Xq-zvL/codeComponent
+import { LogoGridWithTitleOnAccent } from '../../chakra/chakraPro/Marketing/Logo Grid/LogoGridWithTitleOnAccent'; // plasmic-import: tB1nOAt_47Xk/codeComponent
 
-import "@plasmicapp/react-web/lib/plasmic.css";
+import '@plasmicapp/react-web/lib/plasmic.css';
 
-import projectcss from "./plasmic_plasmic_poc_localhost.module.css"; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
-import sty from "./PlasmicLogoGrid.module.css"; // plasmic-import: e4H4Q-200G/css
+import projectcss from './plasmic_plasmic_poc_localhost.module.css'; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
+import sty from './PlasmicLogoGrid.module.css'; // plasmic-import: e4H4Q-200G/css
 
 export type PlasmicLogoGrid__VariantMembers = {};
 export type PlasmicLogoGrid__VariantsArgs = {};
@@ -58,7 +58,7 @@ type ArgPropType = keyof PlasmicLogoGrid__ArgsType;
 export const PlasmicLogoGrid__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicLogoGrid__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: p.Flex<'div'>;
   logoGridBoxed?: p.Flex<typeof LogoGridBoxed>;
   logoGridBoxedOnAccent?: p.Flex<typeof LogoGridBoxedOnAccent>;
   logoGridWithTitle?: p.Flex<typeof LogoGridWithTitle>;
@@ -96,7 +96,7 @@ function PlasmicLogoGrid__RenderFunc(props: {
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
@@ -117,7 +117,7 @@ function PlasmicLogoGrid__RenderFunc(props: {
 
       <div className={projectcss.plasmic_page_wrapper}>
         <div
-          data-plasmic-name={"root"}
+          data-plasmic-name={'root'}
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
@@ -131,9 +131,9 @@ function PlasmicLogoGrid__RenderFunc(props: {
           )}
         >
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__pOSdU)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__pOSdU)}
             noOfLines={1 as const}
-            size={"4xl" as const}
+            size={'4xl' as const}
           >
             <div
               className={classNames(
@@ -142,13 +142,13 @@ function PlasmicLogoGrid__RenderFunc(props: {
                 sty.text__oimH8
               )}
             >
-              {"Logo Grid"}
+              {'Logo Grid'}
             </div>
           </Heading>
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__nz7At)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__nz7At)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -157,19 +157,19 @@ function PlasmicLogoGrid__RenderFunc(props: {
                 sty.text___4A1P6
               )}
             >
-              {"Logo grid boxed"}
+              {'Logo grid boxed'}
             </div>
           </Heading>
           <LogoGridBoxed
-            data-plasmic-name={"logoGridBoxed"}
+            data-plasmic-name={'logoGridBoxed'}
             data-plasmic-override={overrides.logoGridBoxed}
-            className={classNames("__wab_instance", sty.logoGridBoxed)}
+            className={classNames('__wab_instance', sty.logoGridBoxed)}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__sFdR)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__sFdR)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -178,22 +178,22 @@ function PlasmicLogoGrid__RenderFunc(props: {
                 sty.text__m33Yn
               )}
             >
-              {"Logo grid boxed on accent"}
+              {'Logo grid boxed on accent'}
             </div>
           </Heading>
           <LogoGridBoxedOnAccent
-            data-plasmic-name={"logoGridBoxedOnAccent"}
+            data-plasmic-name={'logoGridBoxedOnAccent'}
             data-plasmic-override={overrides.logoGridBoxedOnAccent}
-            className={classNames("__wab_instance", sty.logoGridBoxedOnAccent)}
+            className={classNames('__wab_instance', sty.logoGridBoxedOnAccent)}
           />
 
           <Heading
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.chakraUiHeading___63On0
             )}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -202,19 +202,19 @@ function PlasmicLogoGrid__RenderFunc(props: {
                 sty.text__imXsj
               )}
             >
-              {"Logo grid with title"}
+              {'Logo grid with title'}
             </div>
           </Heading>
           <LogoGridWithTitle
-            data-plasmic-name={"logoGridWithTitle"}
+            data-plasmic-name={'logoGridWithTitle'}
             data-plasmic-override={overrides.logoGridWithTitle}
-            className={classNames("__wab_instance", sty.logoGridWithTitle)}
+            className={classNames('__wab_instance', sty.logoGridWithTitle)}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__n9Khm)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__n9Khm)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -223,19 +223,19 @@ function PlasmicLogoGrid__RenderFunc(props: {
                 sty.text__vYfI5
               )}
             >
-              {"Logo grid with tiles"}
+              {'Logo grid with tiles'}
             </div>
           </Heading>
           <LogoGridWithTiles
-            data-plasmic-name={"logoGridWithTiles"}
+            data-plasmic-name={'logoGridWithTiles'}
             data-plasmic-override={overrides.logoGridWithTiles}
-            className={classNames("__wab_instance", sty.logoGridWithTiles)}
+            className={classNames('__wab_instance', sty.logoGridWithTiles)}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__sFk9R)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__sFk9R)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -244,14 +244,14 @@ function PlasmicLogoGrid__RenderFunc(props: {
                 sty.text___3N1Mn
               )}
             >
-              {"Logo grid with title on accent"}
+              {'Logo grid with title on accent'}
             </div>
           </Heading>
           <LogoGridWithTitleOnAccent
-            data-plasmic-name={"logoGridWithTitleOnAccent"}
+            data-plasmic-name={'logoGridWithTitleOnAccent'}
             data-plasmic-override={overrides.logoGridWithTitleOnAccent}
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.logoGridWithTitleOnAccent
             )}
           />
@@ -263,24 +263,24 @@ function PlasmicLogoGrid__RenderFunc(props: {
 
 const PlasmicDescendants = {
   root: [
-    "root",
-    "logoGridBoxed",
-    "logoGridBoxedOnAccent",
-    "logoGridWithTitle",
-    "logoGridWithTiles",
-    "logoGridWithTitleOnAccent"
+    'root',
+    'logoGridBoxed',
+    'logoGridBoxedOnAccent',
+    'logoGridWithTitle',
+    'logoGridWithTiles',
+    'logoGridWithTitleOnAccent',
   ],
-  logoGridBoxed: ["logoGridBoxed"],
-  logoGridBoxedOnAccent: ["logoGridBoxedOnAccent"],
-  logoGridWithTitle: ["logoGridWithTitle"],
-  logoGridWithTiles: ["logoGridWithTiles"],
-  logoGridWithTitleOnAccent: ["logoGridWithTitleOnAccent"]
+  logoGridBoxed: ['logoGridBoxed'],
+  logoGridBoxedOnAccent: ['logoGridBoxedOnAccent'],
+  logoGridWithTitle: ['logoGridWithTitle'],
+  logoGridWithTiles: ['logoGridWithTiles'],
+  logoGridWithTitleOnAccent: ['logoGridWithTitleOnAccent'],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  root: 'div';
   logoGridBoxed: typeof LogoGridBoxed;
   logoGridBoxedOnAccent: typeof LogoGridBoxedOnAccent;
   logoGridWithTitle: typeof LogoGridWithTitle;
@@ -288,7 +288,7 @@ type NodeDefaultElementType = {
   logoGridWithTitleOnAccent: typeof LogoGridWithTitleOnAccent;
 };
 
-type ReservedPropsType = "variants" | "args" | "overrides";
+type ReservedPropsType = 'variants' | 'args' | 'overrides';
 type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicLogoGrid__OverridesType,
   DescendantsType<T>
@@ -324,7 +324,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicLogoGrid__ArgProps,
-          internalVariantPropNames: PlasmicLogoGrid__VariantProps
+          internalVariantPropNames: PlasmicLogoGrid__VariantProps,
         }),
       [props, nodeName]
     );
@@ -332,11 +332,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
-  if (nodeName === "root") {
-    func.displayName = "PlasmicLogoGrid";
+  if (nodeName === 'root') {
+    func.displayName = 'PlasmicLogoGrid';
   } else {
     func.displayName = `PlasmicLogoGrid.${nodeName}`;
   }
@@ -345,14 +345,14 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicLogoGrid = Object.assign(
   // Top-level PlasmicLogoGrid renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent('root'),
   {
     // Helper components rendering sub-elements
-    logoGridBoxed: makeNodeComponent("logoGridBoxed"),
-    logoGridBoxedOnAccent: makeNodeComponent("logoGridBoxedOnAccent"),
-    logoGridWithTitle: makeNodeComponent("logoGridWithTitle"),
-    logoGridWithTiles: makeNodeComponent("logoGridWithTiles"),
-    logoGridWithTitleOnAccent: makeNodeComponent("logoGridWithTitleOnAccent"),
+    logoGridBoxed: makeNodeComponent('logoGridBoxed'),
+    logoGridBoxedOnAccent: makeNodeComponent('logoGridBoxedOnAccent'),
+    logoGridWithTitle: makeNodeComponent('logoGridWithTitle'),
+    logoGridWithTiles: makeNodeComponent('logoGridWithTiles'),
+    logoGridWithTitleOnAccent: makeNodeComponent('logoGridWithTitleOnAccent'),
 
     // Metadata about props expected for PlasmicLogoGrid
     internalVariantProps: PlasmicLogoGrid__VariantProps,
@@ -360,11 +360,11 @@ export const PlasmicLogoGrid = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "",
-      description: "",
-      ogImageSrc: "",
-      canonical: ""
-    }
+      title: '',
+      description: '',
+      ogImageSrc: '',
+      canonical: '',
+    },
   }
 );
 

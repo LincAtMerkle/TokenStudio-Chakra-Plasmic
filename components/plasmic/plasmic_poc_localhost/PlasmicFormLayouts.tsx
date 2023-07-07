@@ -11,14 +11,14 @@
 // Plasmic Project: nV7sRTPBx6ecWzFNNAWeQg
 // Component: bBYHCE6CYA
 
-import * as React from "react";
+import * as React from 'react';
 
-import Head from "next/head";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/router';
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
+import * as p from '@plasmicapp/react-web';
+import * as ph from '@plasmicapp/react-web/lib/host';
 
 import {
   hasVariant,
@@ -34,16 +34,16 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
-} from "@plasmicapp/react-web";
-import { Heading } from "@chakra-ui/react"; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
-import { FormLayoutWithCards } from "../../custom/chakraPro/Application/Form Layouts/FormLayoutWithCards"; // plasmic-import: eB7yeGta6hq/codeComponent
-import { FormWithInlineLabels } from "../../custom/chakraPro/FormWithInlineLabels"; // plasmic-import: L0P4cib58-Z/codeComponent
+  ensureGlobalVariants,
+} from '@plasmicapp/react-web';
+import { Heading } from '@chakra-ui/react'; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
+import { FormLayoutWithCards } from '../../chakra/chakraPro/Application/Form Layouts/FormLayoutWithCards'; // plasmic-import: eB7yeGta6hq/codeComponent
+import { FormWithInlineLabels } from '../../chakra/chakraPro/FormWithInlineLabels'; // plasmic-import: L0P4cib58-Z/codeComponent
 
-import "@plasmicapp/react-web/lib/plasmic.css";
+import '@plasmicapp/react-web/lib/plasmic.css';
 
-import projectcss from "./plasmic_plasmic_poc_localhost.module.css"; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
-import sty from "./PlasmicFormLayouts.module.css"; // plasmic-import: bBYHCE6CYA/css
+import projectcss from './plasmic_plasmic_poc_localhost.module.css'; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
+import sty from './PlasmicFormLayouts.module.css'; // plasmic-import: bBYHCE6CYA/css
 
 export type PlasmicFormLayouts__VariantMembers = {};
 export type PlasmicFormLayouts__VariantsArgs = {};
@@ -55,7 +55,7 @@ type ArgPropType = keyof PlasmicFormLayouts__ArgsType;
 export const PlasmicFormLayouts__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicFormLayouts__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: p.Flex<'div'>;
   formLayoutWithCards?: p.Flex<typeof FormLayoutWithCards>;
   formWithInlineLabels?: p.Flex<typeof FormWithInlineLabels>;
 };
@@ -90,7 +90,7 @@ function PlasmicFormLayouts__RenderFunc(props: {
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
@@ -111,7 +111,7 @@ function PlasmicFormLayouts__RenderFunc(props: {
 
       <div className={projectcss.plasmic_page_wrapper}>
         <div
-          data-plasmic-name={"root"}
+          data-plasmic-name={'root'}
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
@@ -125,9 +125,9 @@ function PlasmicFormLayouts__RenderFunc(props: {
           )}
         >
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__qAwM)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__qAwM)}
             noOfLines={1 as const}
-            size={"4xl" as const}
+            size={'4xl' as const}
           >
             <div
               className={classNames(
@@ -136,13 +136,13 @@ function PlasmicFormLayouts__RenderFunc(props: {
                 sty.text__oviSx
               )}
             >
-              {"Form Layouts"}
+              {'Form Layouts'}
             </div>
           </Heading>
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__ur7Pu)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__ur7Pu)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -151,19 +151,19 @@ function PlasmicFormLayouts__RenderFunc(props: {
                 sty.text__o2NXw
               )}
             >
-              {"Form layout with cards"}
+              {'Form layout with cards'}
             </div>
           </Heading>
           <FormLayoutWithCards
-            data-plasmic-name={"formLayoutWithCards"}
+            data-plasmic-name={'formLayoutWithCards'}
             data-plasmic-override={overrides.formLayoutWithCards}
-            className={classNames("__wab_instance", sty.formLayoutWithCards)}
+            className={classNames('__wab_instance', sty.formLayoutWithCards)}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__zolJ)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__zolJ)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -172,13 +172,13 @@ function PlasmicFormLayouts__RenderFunc(props: {
                 sty.text__e2Dyb
               )}
             >
-              {"Form with inline labels"}
+              {'Form with inline labels'}
             </div>
           </Heading>
           <FormWithInlineLabels
-            data-plasmic-name={"formWithInlineLabels"}
+            data-plasmic-name={'formWithInlineLabels'}
             data-plasmic-override={overrides.formWithInlineLabels}
-            className={classNames("__wab_instance", sty.formWithInlineLabels)}
+            className={classNames('__wab_instance', sty.formWithInlineLabels)}
           />
         </div>
       </div>
@@ -187,20 +187,20 @@ function PlasmicFormLayouts__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "formLayoutWithCards", "formWithInlineLabels"],
-  formLayoutWithCards: ["formLayoutWithCards"],
-  formWithInlineLabels: ["formWithInlineLabels"]
+  root: ['root', 'formLayoutWithCards', 'formWithInlineLabels'],
+  formLayoutWithCards: ['formLayoutWithCards'],
+  formWithInlineLabels: ['formWithInlineLabels'],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  root: 'div';
   formLayoutWithCards: typeof FormLayoutWithCards;
   formWithInlineLabels: typeof FormWithInlineLabels;
 };
 
-type ReservedPropsType = "variants" | "args" | "overrides";
+type ReservedPropsType = 'variants' | 'args' | 'overrides';
 type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicFormLayouts__OverridesType,
   DescendantsType<T>
@@ -236,7 +236,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicFormLayouts__ArgProps,
-          internalVariantPropNames: PlasmicFormLayouts__VariantProps
+          internalVariantPropNames: PlasmicFormLayouts__VariantProps,
         }),
       [props, nodeName]
     );
@@ -244,11 +244,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
-  if (nodeName === "root") {
-    func.displayName = "PlasmicFormLayouts";
+  if (nodeName === 'root') {
+    func.displayName = 'PlasmicFormLayouts';
   } else {
     func.displayName = `PlasmicFormLayouts.${nodeName}`;
   }
@@ -257,11 +257,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicFormLayouts = Object.assign(
   // Top-level PlasmicFormLayouts renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent('root'),
   {
     // Helper components rendering sub-elements
-    formLayoutWithCards: makeNodeComponent("formLayoutWithCards"),
-    formWithInlineLabels: makeNodeComponent("formWithInlineLabels"),
+    formLayoutWithCards: makeNodeComponent('formLayoutWithCards'),
+    formWithInlineLabels: makeNodeComponent('formWithInlineLabels'),
 
     // Metadata about props expected for PlasmicFormLayouts
     internalVariantProps: PlasmicFormLayouts__VariantProps,
@@ -269,11 +269,11 @@ export const PlasmicFormLayouts = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "",
-      description: "",
-      ogImageSrc: "",
-      canonical: ""
-    }
+      title: '',
+      description: '',
+      ogImageSrc: '',
+      canonical: '',
+    },
   }
 );
 

@@ -11,14 +11,14 @@
 // Plasmic Project: nV7sRTPBx6ecWzFNNAWeQg
 // Component: rvitCPzm3y
 
-import * as React from "react";
+import * as React from 'react';
 
-import Head from "next/head";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/router';
 
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
+import * as p from '@plasmicapp/react-web';
+import * as ph from '@plasmicapp/react-web/lib/host';
 
 import {
   hasVariant,
@@ -34,18 +34,18 @@ import {
   useTrigger,
   StrictProps,
   deriveRenderOpts,
-  ensureGlobalVariants
-} from "@plasmicapp/react-web";
-import { Heading } from "@chakra-ui/react"; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
-import { CtaCentred } from "../../custom/chakraPro/Marketing/Call To Actions/registerCtaCentred"; // plasmic-import: mQyjfLZqxaMl/codeComponent
-import { CtaWithImage } from "../../custom/chakraPro/Marketing/Call To Actions/registerCtaWithImage"; // plasmic-import: ltNywUmOdf83/codeComponent
-import { CtaBoxed } from "../../custom/chakraPro/Marketing/Call To Actions/registerCtaBoxed"; // plasmic-import: oRTvhb0BfUJG/codeComponent
-import { CtaBoxedOnAccent } from "../../custom/chakraPro/Marketing/Call To Actions/registerCtaBoxedOnAccent"; // plasmic-import: xceITVg6ZyzE/codeComponent
+  ensureGlobalVariants,
+} from '@plasmicapp/react-web';
+import { Heading } from '@chakra-ui/react'; // plasmic-import: 0G7l8BbhtHSG-/codeComponent
+import { CtaCentred } from '../../chakra/chakraPro/Marketing/Call To Actions/registerCtaCentred'; // plasmic-import: mQyjfLZqxaMl/codeComponent
+import { CtaWithImage } from '../../chakra/chakraPro/Marketing/Call To Actions/registerCtaWithImage'; // plasmic-import: ltNywUmOdf83/codeComponent
+import { CtaBoxed } from '../../chakra/chakraPro/Marketing/Call To Actions/registerCtaBoxed'; // plasmic-import: oRTvhb0BfUJG/codeComponent
+import { CtaBoxedOnAccent } from '../../chakra/chakraPro/Marketing/Call To Actions/registerCtaBoxedOnAccent'; // plasmic-import: xceITVg6ZyzE/codeComponent
 
-import "@plasmicapp/react-web/lib/plasmic.css";
+import '@plasmicapp/react-web/lib/plasmic.css';
 
-import projectcss from "./plasmic_plasmic_poc_localhost.module.css"; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
-import sty from "./PlasmicCallToActions.module.css"; // plasmic-import: rvitCPzm3y/css
+import projectcss from './plasmic_plasmic_poc_localhost.module.css'; // plasmic-import: nV7sRTPBx6ecWzFNNAWeQg/projectcss
+import sty from './PlasmicCallToActions.module.css'; // plasmic-import: rvitCPzm3y/css
 
 export type PlasmicCallToActions__VariantMembers = {};
 export type PlasmicCallToActions__VariantsArgs = {};
@@ -57,7 +57,7 @@ type ArgPropType = keyof PlasmicCallToActions__ArgsType;
 export const PlasmicCallToActions__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicCallToActions__OverridesType = {
-  root?: p.Flex<"div">;
+  root?: p.Flex<'div'>;
   ctaCentred?: p.Flex<typeof CtaCentred>;
   ctaWithImage?: p.Flex<typeof CtaWithImage>;
   ctaBoxed?: p.Flex<typeof CtaBoxed>;
@@ -93,7 +93,7 @@ function PlasmicCallToActions__RenderFunc(props: {
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
@@ -114,7 +114,7 @@ function PlasmicCallToActions__RenderFunc(props: {
 
       <div className={projectcss.plasmic_page_wrapper}>
         <div
-          data-plasmic-name={"root"}
+          data-plasmic-name={'root'}
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
@@ -128,9 +128,9 @@ function PlasmicCallToActions__RenderFunc(props: {
           )}
         >
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__cuXi9)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__cuXi9)}
             noOfLines={1 as const}
-            size={"4xl" as const}
+            size={'4xl' as const}
           >
             <div
               className={classNames(
@@ -139,16 +139,16 @@ function PlasmicCallToActions__RenderFunc(props: {
                 sty.text__gw3Dg
               )}
             >
-              {"Call To Actions"}
+              {'Call To Actions'}
             </div>
           </Heading>
           <Heading
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.chakraUiHeading___0PeW8
             )}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -157,19 +157,19 @@ function PlasmicCallToActions__RenderFunc(props: {
                 sty.text__qeHqh
               )}
             >
-              {"Cta centred"}
+              {'Cta centred'}
             </div>
           </Heading>
           <CtaCentred
-            data-plasmic-name={"ctaCentred"}
+            data-plasmic-name={'ctaCentred'}
             data-plasmic-override={overrides.ctaCentred}
-            className={classNames("__wab_instance", sty.ctaCentred)}
+            className={classNames('__wab_instance', sty.ctaCentred)}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__bd164)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__bd164)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -178,22 +178,22 @@ function PlasmicCallToActions__RenderFunc(props: {
                 sty.text__yGm8E
               )}
             >
-              {"Cta with image"}
+              {'Cta with image'}
             </div>
           </Heading>
           <CtaWithImage
-            data-plasmic-name={"ctaWithImage"}
+            data-plasmic-name={'ctaWithImage'}
             data-plasmic-override={overrides.ctaWithImage}
-            className={classNames("__wab_instance", sty.ctaWithImage)}
+            className={classNames('__wab_instance', sty.ctaWithImage)}
           />
 
           <Heading
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.chakraUiHeading___7LAbs
             )}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -202,19 +202,19 @@ function PlasmicCallToActions__RenderFunc(props: {
                 sty.text__tdDrv
               )}
             >
-              {"Cta boxed"}
+              {'Cta boxed'}
             </div>
           </Heading>
           <CtaBoxed
-            data-plasmic-name={"ctaBoxed"}
+            data-plasmic-name={'ctaBoxed'}
             data-plasmic-override={overrides.ctaBoxed}
-            className={classNames("__wab_instance", sty.ctaBoxed)}
+            className={classNames('__wab_instance', sty.ctaBoxed)}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__aKhvL)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__aKhvL)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -223,20 +223,20 @@ function PlasmicCallToActions__RenderFunc(props: {
                 sty.text__bCFuf
               )}
             >
-              {"Cta boxed on accent"}
+              {'Cta boxed on accent'}
             </div>
           </Heading>
           <CtaBoxedOnAccent
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.ctaBoxedOnAccent__xmh24
             )}
           />
 
           <Heading
-            className={classNames("__wab_instance", sty.chakraUiHeading__svJx8)}
+            className={classNames('__wab_instance', sty.chakraUiHeading__svJx8)}
             noOfLines={1 as const}
-            size={"xl" as const}
+            size={'xl' as const}
           >
             <div
               className={classNames(
@@ -245,12 +245,12 @@ function PlasmicCallToActions__RenderFunc(props: {
                 sty.text__ueyRe
               )}
             >
-              {"Cta centred on accent"}
+              {'Cta centred on accent'}
             </div>
           </Heading>
           <CtaBoxedOnAccent
             className={classNames(
-              "__wab_instance",
+              '__wab_instance',
               sty.ctaBoxedOnAccent__zvcX8
             )}
           />
@@ -261,22 +261,22 @@ function PlasmicCallToActions__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "ctaCentred", "ctaWithImage", "ctaBoxed"],
-  ctaCentred: ["ctaCentred"],
-  ctaWithImage: ["ctaWithImage"],
-  ctaBoxed: ["ctaBoxed"]
+  root: ['root', 'ctaCentred', 'ctaWithImage', 'ctaBoxed'],
+  ctaCentred: ['ctaCentred'],
+  ctaWithImage: ['ctaWithImage'],
+  ctaBoxed: ['ctaBoxed'],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  root: 'div';
   ctaCentred: typeof CtaCentred;
   ctaWithImage: typeof CtaWithImage;
   ctaBoxed: typeof CtaBoxed;
 };
 
-type ReservedPropsType = "variants" | "args" | "overrides";
+type ReservedPropsType = 'variants' | 'args' | 'overrides';
 type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicCallToActions__OverridesType,
   DescendantsType<T>
@@ -312,7 +312,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: [...PlasmicDescendants[nodeName]],
           internalArgPropNames: PlasmicCallToActions__ArgProps,
-          internalVariantPropNames: PlasmicCallToActions__VariantProps
+          internalVariantPropNames: PlasmicCallToActions__VariantProps,
         }),
       [props, nodeName]
     );
@@ -320,11 +320,11 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
-  if (nodeName === "root") {
-    func.displayName = "PlasmicCallToActions";
+  if (nodeName === 'root') {
+    func.displayName = 'PlasmicCallToActions';
   } else {
     func.displayName = `PlasmicCallToActions.${nodeName}`;
   }
@@ -333,12 +333,12 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicCallToActions = Object.assign(
   // Top-level PlasmicCallToActions renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent('root'),
   {
     // Helper components rendering sub-elements
-    ctaCentred: makeNodeComponent("ctaCentred"),
-    ctaWithImage: makeNodeComponent("ctaWithImage"),
-    ctaBoxed: makeNodeComponent("ctaBoxed"),
+    ctaCentred: makeNodeComponent('ctaCentred'),
+    ctaWithImage: makeNodeComponent('ctaWithImage'),
+    ctaBoxed: makeNodeComponent('ctaBoxed'),
 
     // Metadata about props expected for PlasmicCallToActions
     internalVariantProps: PlasmicCallToActions__VariantProps,
@@ -346,11 +346,11 @@ export const PlasmicCallToActions = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "",
-      description: "",
-      ogImageSrc: "",
-      canonical: ""
-    }
+      title: '',
+      description: '',
+      ogImageSrc: '',
+      canonical: '',
+    },
   }
 );
 
