@@ -1,0 +1,7 @@
+/**
+ * Do not edit directly, this file was auto-generated
+ */
+
+:host {
+  --tag-right-icon-xs-icon-size: sm;
+}

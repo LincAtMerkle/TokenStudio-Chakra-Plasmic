@@ -1,0 +1,7 @@
+/**
+ * Do not edit directly, this file was auto-generated
+ */
+
+:host {
+  --popover-close-button-xs-icon-size: sm;
+}
