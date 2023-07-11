@@ -1,19 +1,2 @@
 .accordion__container {
-    borderTopWidth: "10px";
-    background: #00ffff;
-    color: #ff0000;
-    &_last: {
-        borderBottomWidth: "1px",
-    },
-    &__button-more {
-        text-decoration: underline;
-    }
-
-    &__panel-input {
-        border: 1px solid #ccc;
-    }
-
-    &--icon-inactive {
-        color: gray;
-    }
 }

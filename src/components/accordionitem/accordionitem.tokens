@@ -1,4 +1,4 @@
-.accordionItem__container {
+.accordionitem__container {
     background: #ffff00;
     color: #ff0000;
 }
