@@ -4,33 +4,33 @@ import { runIfFn } from "../utils/run-if-fn"
 
 const baseStyle = defineStyle({
   ...inputTheme.baseStyle?.field,
-  textAlign: "center",
+  text-align: "center",
 })
 
 const sizes = {
   lg: defineStyle({
-    fontSize: "lg",
+    font-size: "lg",
     w: 12,
     h: 12,
-    borderRadius: "md",
+    border-radius: "md",
   }),
   md: defineStyle({
-    fontSize: "md",
+    font-size: "md",
     w: 10,
     h: 10,
-    borderRadius: "md",
+    border-radius: "md",
   }),
   sm: defineStyle({
-    fontSize: "sm",
+    font-size: "sm",
     w: 8,
     h: 8,
-    borderRadius: "sm",
+    border-radius: "sm",
   }),
   xs: defineStyle({
-    fontSize: "xs",
+    font-size: "xs",
     w: 6,
     h: 6,
-    borderRadius: "sm",
+    border-radius: "sm",
   }),
 }
 

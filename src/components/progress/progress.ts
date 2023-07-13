@@ -16,12 +16,12 @@ const filledStyle = defineStyle((props) => {
     generateStripe("1rem", "rgba(0,0,0,0.1)"),
   )(props)
 
-  const bgColor = mode(`${c}.500`, `${c}.200`)(props)
+  const background-color = mode(`${c}.500`, `${c}.200`)(props)
 
   const gradient = `linear-gradient(
     to right,
     transparent 0%,
-    ${getColorVar(t, bgColor)} 50%,
+    ${getColorVar(t, background-color)} 50%,
     transparent 100%
   )`
 
@@ -29,14 +29,14 @@ const filledStyle = defineStyle((props) => {
 
   return {
     ...(addStripe && stripeStyle),
-    ...(isIndeterminate ? { bgImage: gradient } : { bgColor }),
+    ...(isIndeterminate ? { bgImage: gradient } : { background-color }),
   }
 })
 
 const baseStyleLabel = defineStyle({
-  lineHeight: "1",
-  fontSize: "0.25em",
-  fontWeight: "bold",
+  line-height: "1",
+  font-size: "0.25em",
+  font-weight: "bold",
   color: "white",
 })
 

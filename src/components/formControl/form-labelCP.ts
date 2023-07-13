@@ -1,27 +1,27 @@
 const baseStyle = {
   color: 'fg.emphasized',
   mb: '1.5',
-  fontSize: 'sm',
+  font-size: 'sm',
 }
 
 const sizes = {
   sm: {
-    _peerPlaceholderShown: {
-      fontSize: 'sm',
+    [data-peer]:placeholder-shown ~ &: {
+      font-size: 'sm',
       top: '1.5',
       left: '4',
     },
   },
   md: {
-    _peerPlaceholderShown: {
-      fontSize: 'md',
+    [data-peer]:placeholder-shown ~ &: {
+      font-size: 'md',
       top: '2',
       left: '4',
     },
   },
   lg: {
-    _peerPlaceholderShown: {
-      fontSize: 'lg',
+    [data-peer]:placeholder-shown ~ &: {
+      font-size: 'lg',
       top: '2.5',
       left: '4',
     },
@@ -31,21 +31,21 @@ const sizes = {
 const variants = {
   inline: () => ({
     margin: 0,
-    minW: '2xs',
+    min-width: '2xs',
   }),
   floating: () => ({
     position: 'absolute',
     transition: 'all 0.12s ease-in',
-    pointerEvents: 'none',
+    pointer-events: 'none',
     top: '-27px',
     left: '0',
-    _peerPlaceholderShown: {
-      fontWeight: 'normal',
+    [data-peer]:placeholder-shown ~ &: {
+      font-weight: 'normal',
       color: 'fg.subtle',
     },
-    _peerFocus: {
-      fontSize: 'sm',
-      fontWeight: 'medium',
+    [data-peer]:focus ~ &: {
+      font-size: 'sm',
+      font-weight: 'medium',
       top: '-27px',
       left: '0',
       color: 'fg.muted',

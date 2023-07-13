@@ -1,39 +1,39 @@
 import { darken, mode, StyleFunctionProps, transparentize } from '@chakra-ui/theme-tools'
 
 const baseStyle = {
-  fontWeight: 'btn-font-weight',
-  textTransform: 'uppercase',
+  font-weight: 'btn-font-weight',
+  text-transform: 'uppercase',
   width: 'auto',
-  borderRadius: 'btn-border-radius',
-  fontFamily: 'btn-font-family',
+  border-radius: 'btn-border-radius',
+  font-family: 'btn-font-family',
   border: 'btn-border-width',
-  borderStyle: 'solid'
+ border-style: 'solid'
 }
 
 const sizes = {
   xs: {
-    paddingLeft: 'btn-xs-padding-left',
-    paddingRight: 'btn-xs-padding-right',
+    padding-left: 'btn-xs-padding-left',
+    padding-right: 'btn-xs-padding-right',
     h: 'btn-xs-height',
-    fontSize: 'btn-xs-text-size'
+    font-size: 'btn-xs-text-size'
   },
   sm: {
-    paddingLeft: 'btn-sm-padding-left',
-    paddingRight: 'btn-sm-padding-right',
+    padding-left: 'btn-sm-padding-left',
+    padding-right: 'btn-sm-padding-right',
     height: 'btn-sm-height',
-    fontSize: 'btn-sm-text-size'
+    font-size: 'btn-sm-text-size'
   },
   md: {
-    paddingLeft: 'btn-md-padding-left',
-    paddingRight: 'btn-md-padding-right',
+    padding-left: 'btn-md-padding-left',
+    padding-right: 'btn-md-padding-right',
     height: 'btn-md-height',
-    fontSize: 'btn-md-text-size'
+    font-size: 'btn-md-text-size'
   },
   lg: {
-    paddingLeft: 'btn-lg-padding-left',
-    paddingRight: 'btn-lg-padding-right',
+    padding-left: 'btn-lg-padding-left',
+    padding-right: 'btn-lg-padding-right',
     height: 'btn-lg-height',
-    fontSize: 'btn-lg-text-size'
+    font-size: 'btn-lg-text-size'
   }
 }
 
@@ -47,8 +47,8 @@ const variants = {
   'primary-on-accent': () => ({
     bg: 'bg-accent',
     color: 'brand.600',
-    _hover: { bg: 'brand.100' },
-    _active: { bg: 'brand.100' },
+   &:hover: { bg: 'brand.100' },
+   &:active: { bg: 'brand.100' },
   }),
   secondary: (props: StyleFunctionProps) =>
     props.theme.components['Button']['variants']['outline']({
@@ -58,47 +58,47 @@ const variants = {
     }),
   'secondary-on-accent': {
     color: 'white',
-    borderColor: 'brand.50',
-    borderWidth: '1px',
-    _hover: { bg: 'whiteAlpha.200' },
-    _active: { bg: 'whiteAlpha.200' },
+    border-color: 'brand.50',
+    border-width: '1px',
+   &:hover: { bg: 'whiteAlpha.200' },
+   &:active: { bg: 'whiteAlpha.200' },
   },
   outline: (props: StyleFunctionProps) => ({
     color: 'emphasized',
     // bg: mode('white', 'gray.800')(props),
     bg: mode('btn-bg', 'gray.800')(props),
     fg: mode('btn-fg', 'gray.800')(props),
-    _hover: {
+   &:hover: {
       bg: mode(
         darken('gray.50', 1)(props.theme),
         transparentize('gray.700', 0.4)(props.theme),
       )(props),
     },
-    _checked: {
+    &[data-checked]: {
       bg: mode('gray.100', 'gray.700')(props),
     },
-    _active: {
+   &:active: {
       bg: mode('gray.100', 'gray.700')(props),
     },
   }),
   ghost: (props: StyleFunctionProps) => ({
     color: 'emphasized',
-    _hover: {
+   &:hover: {
       bg: mode(darken('gray.50', 1)(props.theme), darken('gray.700', 4)(props.theme))(props),
     },
-    _active: {
+   &:active: {
       bg: mode(darken('gray.50', 1)(props.theme), darken('gray.700', 4)(props.theme))(props),
     },
-    _activeLink: {
+    &[aria-current=page]: {
       bg: mode('gray.100', 'gray.700')(props),
     },
   }),
   'ghost-on-accent': (props: StyleFunctionProps) => ({
     color: 'brand.50',
-    _hover: {
+   &:hover: {
       bg: transparentize('brand.500', 0.67)(props.theme),
     },
-    _activeLink: {
+    &[aria-current=page]: {
       color: 'white',
       bg: 'bg-accent-subtle',
     },
@@ -107,22 +107,22 @@ const variants = {
     if (props.colorScheme === 'gray') {
       return {
         color: 'muted',
-        _hover: {
-          textDecoration: 'none',
+       &:hover: {
+          text-decoration: 'none',
           color: 'default',
         },
-        _active: {
+       &:active: {
           color: 'default',
         },
       }
     }
     return {
       color: mode(`${props.colorScheme}.600`, `${props.colorScheme}.200`)(props),
-      _hover: {
+     &:hover: {
         color: mode(`${props.colorScheme}.700`, `${props.colorScheme}.300`)(props),
-        textDecoration: 'none',
+        text-decoration: 'none',
       },
-      _active: {
+     &:active: {
         color: mode(`${props.colorScheme}.700`, `${props.colorScheme}.300`)(props),
       },
     }
@@ -131,13 +131,13 @@ const variants = {
     return {
       padding: 0,
       height: 'auto',
-      lineHeight: 'normal',
-      verticalAlign: 'baseline',
+      line-height: 'normal',
+      vertical-align: 'baseline',
       color: 'brand.50',
-      _hover: {
+     &:hover: {
         color: 'white',
       },
-      _active: {
+     &:active: {
         color: 'white',
       },
     }

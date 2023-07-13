@@ -13,36 +13,36 @@ const $height = cssVar("switch-track-height")
 const $diff = cssVar("switch-track-diff")
 const diffValue = calc.subtract($width, $height)
 const $translateX = cssVar("switch-thumb-x")
-const $bg = cssVar("switch-bg")
+const $background= cssVar("switch-bg")
 
 const baseStyleTrack = defineStyle((props) => {
   const { colorScheme: c } = props
 
   return {
-    borderRadius: "full",
-    p: "0.5",
+    border-radius: "full",
+   padding: "0.5",
     width: [$width.reference],
     height: [$height.reference],
     transitionProperty: "common",
     transitionDuration: "fast",
     [$bg.variable]: "colors.gray.300",
-    _dark: {
+    .chakra-ui-dark &: {
       [$bg.variable]: "colors.whiteAlpha.400",
     },
-    _focusVisible: {
-      boxShadow: "outline",
+   &:focus-visible {
+      box-shadow: "outline",
     },
-    _disabled: {
+   &:disabled {
       opacity: 0.4,
       cursor: "not-allowed",
     },
-    _checked: {
+    &[data-checked]: {
       [$bg.variable]: `colors.${c}.500`,
-      _dark: {
+      .chakra-ui-dark &: {
         [$bg.variable]: `colors.${c}.200`,
       },
     },
-    bg: $bg.reference,
+    background: $bg.reference,
   }
 })
 
@@ -50,10 +50,10 @@ const baseStyleThumb = defineStyle({
   bg: "white",
   transitionProperty: "transform",
   transitionDuration: "normal",
-  borderRadius: "inherit",
+  border-radius: "inherit",
   width: [$height.reference],
   height: [$height.reference],
-  _checked: {
+  &[data-checked]: {
     transform: `translateX(${$translateX.reference})`,
   },
 })
@@ -62,7 +62,7 @@ const baseStyle = definePartsStyle((props) => ({
   container: {
     [$diff.variable]: diffValue,
     [$translateX.variable]: $diff.reference,
-    _rtl: {
+    &[dir=rtl]: {
       [$translateX.variable]: calc($diff).negate().toString(),
     },
   },

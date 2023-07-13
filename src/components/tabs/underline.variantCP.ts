@@ -8,14 +8,14 @@ type StyleFunctionPropsWithSize = StyleFunctionProps & { size: 'md' | 'lg' }
 const sizes = {
   md: definePartsStyle({
     tab: {
-      fontSize: 'sm',
-      lineHeight: '1.25rem',
+      font-size: 'sm',
+      line-height: '1.25rem',
       py: '2',
     },
   }),
   lg: definePartsStyle({
     tab: {
-      fontSize: 'md',
+      font-size: 'md',
       py: '2.5',
     },
   }),
@@ -24,8 +24,8 @@ const sizes = {
 export const underline = definePartsStyle((props) => {
   const { orientation, size } = props as StyleFunctionPropsWithSize
   const isVertical = orientation === 'vertical'
-  const borderProp = isVertical ? 'borderStart' : 'borderBottom'
-  const marginProp = isVertical ? 'marginStart' : 'marginBottom'
+  const borderProp = isVertical ? '	border-inline-start' : 'border-bottom'
+  const marginProp = isVertical ? 'margin-inline-start' : 'margin-bottom'
 
   const sizeProps = sizes[size]
 
@@ -34,24 +34,24 @@ export const underline = definePartsStyle((props) => {
       pt: '0',
       pb: '2.5',
       px: '1',
-      justifyContent: 'start',
+      justify-content: 'start',
     },
     tabList: {
-      gap: '4',
+     gap: '4',
     },
     indicator: {
       height: '0.5',
-      marginTop: -0.5,
+      margin-top: -0.5,
     },
   })
 
   const verticalStyles = definePartsStyle({
     tab: {
-      justifyContent: 'start',
+      justify-content: 'start',
       px: size === 'lg' ? '3.5' : '3',
     },
     tabList: {
-      gap: '1',
+     gap: '1',
     },
     indicator: {
       width: '0.5',
@@ -61,15 +61,15 @@ export const underline = definePartsStyle((props) => {
   return {
     tablist: {
       [borderProp]: '1px solid',
-      borderColor: 'inherit',
+      border-color: 'inherit',
       ...(isVertical ? verticalStyles.tabList : horizontalStyles.tabList),
     },
     tab: {
       [marginProp]: '-1px',
-      fontWeight: 'semibold',
+      font-weight: 'semibold',
       color: 'fg.subtle',
       ...sizeProps.tab,
-      _selected: {
+      &[data-selected]: {
         color: 'accent',
       },
       ...(isVertical ? verticalStyles.tab : horizontalStyles.tab),

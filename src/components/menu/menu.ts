@@ -8,62 +8,64 @@ import {
 const { defineMultiStyleConfig, definePartsStyle } =
   createMultiStyleConfigHelpers(parts.keys)
 
-const $bg = cssVar("menu-bg")
+const $background= cssVar("menu-bg")
 const $shadow = cssVar("menu-shadow")
 
 const baseStyleList = defineStyle({
   [$bg.variable]: "#fff",
   [$shadow.variable]: "shadows.sm",
-  _dark: {
+  .chakra-ui-dark &: {
     [$bg.variable]: "colors.gray.700",
     [$shadow.variable]: "shadows.dark-lg",
   },
   color: "inherit",
-  minW: "3xs",
-  py: "2",
-  zIndex: 1,
-  borderRadius: "md",
-  borderWidth: "1px",
-  bg: $bg.reference,
-  boxShadow: $shadow.reference,
+  min-width: "3xs",
+ padding-top: "2",
+padding-bottom: "2",
+  z-index: 1,
+  border-radius: "md",
+  border-width: "1px",
+  background: $bg.reference,
+  box-shadow: $shadow.reference,
 })
 
 const baseStyleItem = defineStyle({
-  py: "1.5",
+  padding-top: "1.5",
+padding-bottom: "1.5",
   px: "3",
   transitionProperty: "background",
   transitionDuration: "ultra-fast",
   transitionTimingFunction: "ease-in",
-  _focus: {
+ &:focus: {
     [$bg.variable]: "colors.gray.100",
-    _dark: {
+    .chakra-ui-dark &: {
       [$bg.variable]: "colors.whiteAlpha.100",
     },
   },
-  _active: {
+ &:active: {
     [$bg.variable]: "colors.gray.200",
-    _dark: {
+    .chakra-ui-dark &: {
       [$bg.variable]: "colors.whiteAlpha.200",
     },
   },
-  _expanded: {
+  &[data-expanded]: {
     [$bg.variable]: "colors.gray.100",
-    _dark: {
+    .chakra-ui-dark &: {
       [$bg.variable]: "colors.whiteAlpha.100",
     },
   },
-  _disabled: {
+ &:disabled {
     opacity: 0.4,
     cursor: "not-allowed",
   },
-  bg: $bg.reference,
+  background: $bg.reference,
 })
 
 const baseStyleGroupTitle = defineStyle({
   mx: 4,
   my: 2,
-  fontWeight: "semibold",
-  fontSize: "sm",
+  font-weight: "semibold",
+  font-size: "sm",
 })
 
 const baseStyleCommand = defineStyle({
@@ -72,9 +74,10 @@ const baseStyleCommand = defineStyle({
 
 const baseStyleDivider = defineStyle({
   border: 0,
-  borderBottom: "1px solid",
-  borderColor: "inherit",
-  my: "2",
+  border-bottom: "1px solid",
+  border-color: "inherit",
+  margin-top: "2",
+  margin-bottom: "2",
   opacity: 0.6,
 })
 

@@ -3,23 +3,23 @@ import { mode, StyleFunctionProps } from '@chakra-ui/theme-tools'
 const baseStyle = (props: StyleFunctionProps) => ({
   label: {
     color: 'muted',
-    fontWeight: 'medium',
+    font-weight: 'medium',
   },
   control: {
     bg: mode('white', 'gray.800')(props),
-    borderRadius: 'base',
+    border-radius: 'base',
   },
 })
 
 const sizes = {
   md: {
     label: {
-      fontSize: 'sm',
+      font-size: 'sm',
     },
   },
   xxl:{
     label: {
-      fontSize: 'xl',
+      font-size: 'xl',
     },
   }
 }
@@ -34,8 +34,8 @@ const variants = {
   'primary-on-accent': () => ({
     bg: 'brand.50',
     color: 'brand.600',
-    _hover: { bg: 'brand.100' },
-    _active: { bg: 'brand.100' },
+   &:hover: { bg: 'brand.100' },
+   &:active: { bg: 'brand.100' },
   }),
 }
 

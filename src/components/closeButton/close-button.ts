@@ -2,49 +2,49 @@ import { defineStyle, defineStyleConfig } from "@chakra-ui/styled-system"
 import { cssVar } from "@chakra-ui/theme-tools"
 
 const $size = cssVar("close-button-size")
-const $bg = cssVar("close-button-bg")
+const $background= cssVar("close-button-bg")
 
 const baseStyle = defineStyle({
   w: [$size.reference],
   h: [$size.reference],
-  borderRadius: "md",
+  border-radius: "md",
   transitionProperty: "common",
   transitionDuration: "normal",
-  _disabled: {
+ &:disabled {
     opacity: 0.4,
     cursor: "not-allowed",
-    boxShadow: "none",
+    box-shadow: "none",
   },
-  _hover: {
+ &:hover: {
     [$bg.variable]: "colors.blackAlpha.100",
-    _dark: {
+    .chakra-ui-dark &: {
       [$bg.variable]: "colors.whiteAlpha.100",
     },
   },
-  _active: {
+ &:active: {
     [$bg.variable]: "colors.blackAlpha.200",
-    _dark: {
+    .chakra-ui-dark &: {
       [$bg.variable]: "colors.whiteAlpha.200",
     },
   },
-  _focusVisible: {
-    boxShadow: "outline",
+ &:focus-visible {
+    box-shadow: "outline",
   },
-  bg: $bg.reference,
+  background: $bg.reference,
 })
 
 const sizes = {
   lg: defineStyle({
     [$size.variable]: "sizes.10",
-    fontSize: "md",
+    font-size: "md",
   }),
   md: defineStyle({
     [$size.variable]: "sizes.8",
-    fontSize: "xs",
+    font-size: "xs",
   }),
   sm: defineStyle({
     [$size.variable]: "sizes.6",
-    fontSize: "2xs",
+    font-size: "2xs",
   }),
 }
 

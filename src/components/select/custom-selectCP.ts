@@ -6,21 +6,21 @@ const baseStyle = {
   field: {
     width: '100%',
     display: 'inline-flex',
-    alignItems: 'center',
-    justifyContent: 'space-between',
+    align-items: 'center',
+    justify-content: 'space-between',
     transition: 'all 50ms ease',
   },
   option: {
     display: 'flex',
-    alignItems: 'center',
+    align-items: 'center',
     cursor: 'pointer',
-    _disabled: {
+   &:disabled {
       opacity: 0.4,
       cursor: 'not-allowed',
     },
   },
   menu: {
-    minW: '3xs',
+    min-width: '3xs',
   },
 }
 
@@ -28,48 +28,48 @@ const variants = {
   outline: (props: StyleFunctionProps) => ({
     menu: {
       bg: mode('white', 'gray.800')(props),
-      boxShadow: 'sm',
+      box-shadow: 'sm',
       color: 'inherit',
-      minW: '3xs',
+      min-width: '3xs',
       py: '2',
-      borderRadius: 'md',
-      borderWidth: '1px',
+      border-radius: 'md',
+      border-width: '1px',
     },
     option: {
-      _selected: {
+      &[data-selected]: {
         bg: mode('gray.100', 'gray.700')(props),
       },
     },
     field: {
-      borderWidth: '1px',
+      border-width: '1px',
       bg: mode('white', 'gray.800')(props),
 
-      _hover: {
-        borderColor: mode('gray.300', 'whiteAlpha.400')(props),
+     &:hover: {
+        border-color: mode('gray.300', 'whiteAlpha.400')(props),
       },
-      _disabled: {
+     &:disabled {
         opacity: 0.4,
         cursor: 'not-allowed',
-        borderColor: 'inherit',
+        border-color: 'inherit',
       },
       _readOnly: {
-        boxShadow: 'none !important',
-        userSelect: 'all',
+        box-shadow: 'none !important',
+        user-select: 'all',
       },
-      _invalid: {
-        borderColor: getColor(props.theme, mode('red.500', 'red.300')(props)),
-        boxShadow: `0 0 0 1px ${getColor(props.theme, mode('red.500', 'red.300')(props))}`,
+      &[data-invalid]: {
+        border-color: getColor(props.theme, mode('red.500', 'red.300')(props)),
+        box-shadow: `0 0 0 1px ${getColor(props.theme, mode('red.500', 'red.300')(props))}`,
       },
-      _focus: {
-        borderColor: mode('brand.500', 'brand.200')(props),
-        boxShadow: mode(
+     &:focus: {
+        border-color: mode('brand.500', 'brand.200')(props),
+        box-shadow: mode(
           `0px 0px 0px 1px ${transparentize(`brand.500`, 1.0)(props.theme)}`,
           `0px 0px 0px 1px ${transparentize(`brand.200`, 1.0)(props.theme)}`,
         )(props),
       },
-      _expanded: {
-        borderColor: mode('brand.500', 'brand.200')(props),
-        boxShadow: mode(
+      &[data-expanded]: {
+        border-color: mode('brand.500', 'brand.200')(props),
+        box-shadow: mode(
           `0px 0px 0px 1px ${transparentize(`brand.500`, 1.0)(props.theme)}`,
           `0px 0px 0px 1px ${transparentize(`brand.200`, 1.0)(props.theme)}`,
         )(props),
@@ -83,51 +83,51 @@ const sizes = {
     field: {
       px: 3,
       h: 8,
-      fontSize: 'sm',
-      borderRadius: 'sm',
+      font-size: 'sm',
+      border-radius: 'sm',
     },
     menu: {
-      fontSize: 'sm',
-      borderRadius: 'sm',
+      font-size: 'sm',
+      border-radius: 'sm',
     },
     option: {
       px: 3,
       h: 8,
-      fontSize: 'sm',
+      font-size: 'sm',
     },
   },
   md: {
     field: {
       px: 4,
       h: 10,
-      fontSize: 'md',
-      borderRadius: 'md',
+      font-size: 'md',
+      border-radius: 'md',
     },
     menu: {
-      fontSize: 'md',
-      borderRadius: 'md',
+      font-size: 'md',
+      border-radius: 'md',
     },
     option: {
       px: 4,
       h: 10,
-      fontSize: 'md',
+      font-size: 'md',
     },
   },
   lg: {
     field: {
       px: 4,
       h: 12,
-      fontSize: 'lg',
-      borderRadius: 'md',
+      font-size: 'lg',
+      border-radius: 'md',
     },
     menu: {
-      fontSize: 'lg',
-      borderRadius: 'md',
+      font-size: 'lg',
+      border-radius: 'md',
     },
     option: {
       px: 4,
       h: 12,
-      fontSize: 'lg',
+      font-size: 'lg',
     },
   },
 }

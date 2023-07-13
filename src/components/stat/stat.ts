@@ -8,24 +8,24 @@ const { defineMultiStyleConfig, definePartsStyle } =
   createMultiStyleConfigHelpers(parts.keys)
 
 const baseStyleLabel = defineStyle({
-  fontWeight: "medium",
+  font-weight: "medium",
 })
 
 const baseStyleHelpText = defineStyle({
   opacity: 0.8,
-  marginBottom: "2",
+  margin-bottom: "2",
 })
 
 const baseStyleNumber = defineStyle({
-  verticalAlign: "baseline",
-  fontWeight: "semibold",
+  vertical-align: "baseline",
+  font-weight: "semibold",
 })
 
 const baseStyleIcon = defineStyle({
-  marginEnd: 1,
+  margin-inline-end: 1,
   w: "3.5",
   h: "3.5",
-  verticalAlign: "middle",
+  vertical-align: "middle",
 })
 
 const baseStyle = definePartsStyle({
@@ -38,9 +38,9 @@ const baseStyle = definePartsStyle({
 
 const sizes = {
   md: definePartsStyle({
-    label: { fontSize: "sm" },
-    helpText: { fontSize: "sm" },
-    number: { fontSize: "2xl" },
+    label: { font-size: "sm" },
+    helpText: { font-size: "sm" },
+    number: { font-size: "2xl" },
   }),
 }
 

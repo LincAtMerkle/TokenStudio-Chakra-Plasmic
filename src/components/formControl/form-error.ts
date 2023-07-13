@@ -12,19 +12,19 @@ const $fg = cssVar("form-error-color")
 
 const baseStyleText = defineStyle({
   [$fg.variable]: `colors.red.500`,
-  _dark: {
+  .chakra-ui-dark &: {
     [$fg.variable]: `colors.red.300`,
   },
   color: $fg.reference,
-  mt: "2",
-  fontSize: "sm",
-  lineHeight: "normal",
+ margin-top: "2",
+  font-size: "sm",
+  line-height: "normal",
 })
 
 const baseStyleIcon = defineStyle({
-  marginEnd: "0.5em",
+  margin-inline-end: "0.5em",
   [$fg.variable]: `colors.red.500`,
-  _dark: {
+  .chakra-ui-dark &: {
     [$fg.variable]: `colors.red.300`,
   },
   color: $fg.reference,

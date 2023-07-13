@@ -9,60 +9,60 @@ import { badgeTheme, badgeVars } from "./badge"
 const { defineMultiStyleConfig, definePartsStyle } =
   createMultiStyleConfigHelpers(parts.keys)
 
-const $bg = cssVar("tag-bg")
+const $background= cssVar("tag-bg")
 const $color = cssVar("tag-color")
 const $shadow = cssVar("tag-shadow")
-const $minH = cssVar("tag-min-height")
-const $minW = cssVar("tag-min-width")
-const $fontSize = cssVar("tag-font-size")
+const $min-height = cssVar("tag-min-height")
+const $min-width = cssVar("tag-min-width")
+const $font-size = cssVar("tag-font-size")
 const $paddingX = cssVar("tag-padding-inline")
 
 const baseStyleContainer = defineStyle({
-  fontWeight: "medium",
-  lineHeight: 1.2,
+  font-weight: "medium",
+  line-height: 1.2,
   outline: 0,
   [$color.variable]: badgeVars.color.reference,
   [$bg.variable]: badgeVars.bg.reference,
   [$shadow.variable]: badgeVars.shadow.reference,
   color: $color.reference,
-  bg: $bg.reference,
-  boxShadow: $shadow.reference,
-  borderRadius: "md",
-  minH: $minH.reference,
-  minW: $minW.reference,
-  fontSize: $fontSize.reference,
+  background: $bg.reference,
+  box-shadow: $shadow.reference,
+  border-radius: "md",
+  min-height: $min-height.reference,
+  min-width: $min-width.reference,
+  font-size: $font-size.reference,
   px: $paddingX.reference,
-  _focusVisible: {
+ &:focus-visible {
     [$shadow.variable]: "shadows.outline",
   },
 })
 
 const baseStyleLabel = defineStyle({
-  lineHeight: 1.2,
+  line-height: 1.2,
   overflow: "visible",
 })
 
 const baseStyleCloseButton = defineStyle({
-  fontSize: "lg",
+  font-size: "lg",
   w: "5",
   h: "5",
   transitionProperty: "common",
   transitionDuration: "normal",
-  borderRadius: "full",
-  marginStart: "1.5",
-  marginEnd: "-1",
+  border-radius: "full",
+  margin-inline-start: "1.5",
+  margin-inline-end: "-1",
   opacity: 0.5,
-  _disabled: {
+ &:disabled {
     opacity: 0.4,
   },
-  _focusVisible: {
-    boxShadow: "outline",
+ &:focus-visible {
+    box-shadow: "outline",
     bg: "rgba(0, 0, 0, 0.14)",
   },
-  _hover: {
+ &:hover: {
     opacity: 0.8,
   },
-  _active: {
+ &:active: {
     opacity: 1,
   },
 })
@@ -76,29 +76,29 @@ const baseStyle = definePartsStyle({
 const sizes = {
   sm: definePartsStyle({
     container: {
-      [$minH.variable]: "sizes.5",
-      [$minW.variable]: "sizes.5",
-      [$fontSize.variable]: "fontSizes.xs",
+      [$min-height.variable]: "sizes.5",
+      [$min-width.variable]: "sizes.5",
+      [$font-size.variable]: "font-sizes.xs",
       [$paddingX.variable]: "space.2",
     },
     closeButton: {
-      marginEnd: "-2px",
-      marginStart: "0.35rem",
+      margin-inline-end: "-2px",
+      margin-inline-start: "0.35rem",
     },
   }),
   md: definePartsStyle({
     container: {
-      [$minH.variable]: "sizes.6",
-      [$minW.variable]: "sizes.6",
-      [$fontSize.variable]: "fontSizes.sm",
+      [$min-height.variable]: "sizes.6",
+      [$min-width.variable]: "sizes.6",
+      [$font-size.variable]: "font-sizes.sm",
       [$paddingX.variable]: "space.2",
     },
   }),
   lg: definePartsStyle({
     container: {
-      [$minH.variable]: "sizes.8",
-      [$minW.variable]: "sizes.8",
-      [$fontSize.variable]: "fontSizes.md",
+      [$min-height.variable]: "sizes.8",
+      [$min-width.variable]: "sizes.8",
+      [$font-size.variable]: "font-sizes.md",
       [$paddingX.variable]: "space.3",
     },
   }),

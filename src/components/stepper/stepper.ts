@@ -14,46 +14,46 @@ const { defineMultiStyleConfig, definePartsStyle } =
 
 const $size = cssVar("stepper-indicator-size")
 const $iconSize = cssVar("stepper-icon-size")
-const $titleFontSize = cssVar("stepper-title-font-size")
-const $descFontSize = cssVar("stepper-description-font-size")
+const $titlefont-size = cssVar("stepper-title-font-size")
+const $descfont-size = cssVar("stepper-description-font-size")
 const $accentColor = cssVar("stepper-accent-color")
 
 const baseStyle = definePartsStyle(({ colorScheme: c }) => ({
   stepper: {
     display: "flex",
-    justifyContent: "space-between",
-    gap: "4",
+    justify-content: "space-between",
+   gap: "4",
     "&[data-orientation=vertical]": {
-      flexDirection: "column",
-      alignItems: "flex-start",
+      flex-direction: "grid-column",
+      align-items: "flex-start",
     },
     "&[data-orientation=horizontal]": {
-      flexDirection: "row",
-      alignItems: "center",
+      flex-direction: "row",
+      align-items: "center",
     },
     [$accentColor.variable]: `colors.${c}.500`,
-    _dark: {
+    .chakra-ui-dark &: {
       [$accentColor.variable]: `colors.${c}.200`,
     },
   },
   title: {
-    fontSize: $titleFontSize.reference,
-    fontWeight: "medium",
+    font-size: $titlefont-size.reference,
+    font-weight: "medium",
   },
   description: {
-    fontSize: $descFontSize.reference,
+    font-size: $descfont-size.reference,
     color: "chakra-subtle-text",
   },
   number: {
-    fontSize: $titleFontSize.reference,
+    font-size: $titlefont-size.reference,
   },
   step: {
-    flexShrink: 0,
+    flex-shrink: 0,
     position: "relative",
     display: "flex",
-    gap: "2",
+   gap: "2",
     "&[data-orientation=horizontal]": {
-      alignItems: "center",
+      align-items: "center",
     },
     flex: "1",
     "&:last-of-type:not([data-stretch])": {
@@ -61,28 +61,28 @@ const baseStyle = definePartsStyle(({ colorScheme: c }) => ({
     },
   },
   icon: {
-    flexShrink: 0,
+    flex-shrink: 0,
     width: $iconSize.reference,
     height: $iconSize.reference,
   },
   indicator: {
-    flexShrink: 0,
-    borderRadius: "full",
+    flex-shrink: 0,
+    border-radius: "full",
     width: $size.reference,
     height: $size.reference,
     display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
+    justify-content: "center",
+    align-items: "center",
     "&[data-status=active]": {
-      borderWidth: "2px",
-      borderColor: $accentColor.reference,
+      border-width: "2px",
+      border-color: $accentColor.reference,
     },
     "&[data-status=complete]": {
       bg: $accentColor.reference,
       color: "chakra-inverse-text",
     },
     "&[data-status=incomplete]": {
-      borderWidth: "2px",
+      border-width: "2px",
     },
   },
   separator: {
@@ -94,13 +94,13 @@ const baseStyle = definePartsStyle(({ colorScheme: c }) => ({
     "&[data-orientation=horizontal]": {
       width: "100%",
       height: "2px",
-      marginStart: "2",
+      margin-inline-start: "2",
     },
     "&[data-orientation=vertical]": {
       width: "2px",
       position: "absolute",
       height: "100%",
-      maxHeight: `calc(100% - ${$size.reference} - 8px)`,
+      max-heighteight: `calc(100% - ${$size.reference} - 8px)`,
       top: `calc(${$size.reference} + 4px)`,
       insetStart: `calc(${$size.reference} / 2 - 1px)`,
     },
@@ -114,32 +114,32 @@ export const stepperTheme = defineMultiStyleConfig({
       stepper: {
         [$size.variable]: "sizes.4",
         [$iconSize.variable]: "sizes.3",
-        [$titleFontSize.variable]: "fontSizes.xs",
-        [$descFontSize.variable]: "fontSizes.xs",
+        [$titlefont-size.variable]: "font-sizes.xs",
+        [$descfont-size.variable]: "font-sizes.xs",
       },
     }),
     sm: definePartsStyle({
       stepper: {
         [$size.variable]: "sizes.6",
         [$iconSize.variable]: "sizes.4",
-        [$titleFontSize.variable]: "fontSizes.sm",
-        [$descFontSize.variable]: "fontSizes.xs",
+        [$titlefont-size.variable]: "font-sizes.sm",
+        [$descfont-size.variable]: "font-sizes.xs",
       },
     }),
     md: definePartsStyle({
       stepper: {
         [$size.variable]: "sizes.8",
         [$iconSize.variable]: "sizes.5",
-        [$titleFontSize.variable]: "fontSizes.md",
-        [$descFontSize.variable]: "fontSizes.sm",
+        [$titlefont-size.variable]: "font-sizes.md",
+        [$descfont-size.variable]: "font-sizes.sm",
       },
     }),
     lg: definePartsStyle({
       stepper: {
         [$size.variable]: "sizes.10",
         [$iconSize.variable]: "sizes.6",
-        [$titleFontSize.variable]: "fontSizes.lg",
-        [$descFontSize.variable]: "fontSizes.md",
+        [$titlefont-size.variable]: "font-sizes.lg",
+        [$descfont-size.variable]: "font-sizes.md",
       },
     }),
   },

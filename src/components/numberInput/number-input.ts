@@ -16,7 +16,7 @@ const $stepperWidth = cssVar("number-input-stepper-width")
 const $inputPadding = cssVar("number-input-input-padding")
 const inputPaddingValue = calc($stepperWidth).add("0.5rem").toString()
 
-const $bg = cssVar("number-input-bg")
+const $background= cssVar("number-input-bg")
 const $fg = cssVar("number-input-color")
 const $border = cssVar("number-input-border-color")
 
@@ -34,23 +34,23 @@ const baseStyleStepperGroup = defineStyle({
 })
 
 const baseStyleStepper = defineStyle({
-  borderStart: "1px solid",
-  borderStartColor: $border.reference,
+  	border-inline-start: "1px solid",
+  	border-inline-startColor: $border.reference,
   color: $fg.reference,
-  bg: $bg.reference,
+  background: $bg.reference,
   [$fg.variable]: "colors.chakra-body-text",
   [$border.variable]: "colors.chakra-border-color",
-  _dark: {
+  .chakra-ui-dark &: {
     [$fg.variable]: "colors.whiteAlpha.800",
     [$border.variable]: "colors.whiteAlpha.300",
   },
-  _active: {
+ &:active: {
     [$bg.variable]: "colors.gray.200",
-    _dark: {
+    .chakra-ui-dark &: {
       [$bg.variable]: "colors.whiteAlpha.300",
     },
   },
-  _disabled: {
+ &:disabled {
     opacity: 0.4,
     cursor: "not-allowed",
   },
@@ -63,37 +63,38 @@ const baseStyle = definePartsStyle((props) => ({
   stepper: baseStyleStepper,
 }))
 
-type FontSize = keyof typeof typography.fontSizes
+type font-size = keyof typeof typography.font-sizes
 
-function getSize(size: FontSize) {
+function getSize(size: font-size) {
   //@ts-expect-error
   const sizeStyle = inputTheme.sizes?.[size]
 
-  const radius: Partial<Record<FontSize, string>> = {
+  const radius: Partial<Record<font-size, string>> = {
     lg: "md",
     md: "md",
     sm: "sm",
     xs: "sm",
   }
 
-  const _fontSize = (sizeStyle.field?.fontSize ?? "md") as FontSize
-  const fontSize = typography.fontSizes[_fontSize]
+  const _font-size = (sizeStyle.field?.font-size ?? "md") as font-size
+  const font-size = typography.font-sizes[_font-size]
 
   return definePartsStyle({
     field: {
       ...sizeStyle.field,
       paddingInlineEnd: $inputPadding.reference,
-      verticalAlign: "top",
+      vertical-align: "top",
     },
     stepper: {
-      fontSize: calc(fontSize).multiply(0.75).toString(),
-      _first: {
-        borderTopEndRadius: radius[size],
+      font-size: calc(font-size).multiply(0.75).toString(),
+      &:first-of-type: {
+        border-top-right-radius: radius[size],
+        border-top-left-radius: radius[size],
       },
-      _last: {
-        borderBottomEndRadius: radius[size],
-        mt: "-1px",
-        borderTopWidth: 1,
+      &:last-of-type: {
+        border-bottomEndRadius: radius[size],
+       margin-top: "-1px",
+        border-topWidth: 1,
       },
     },
   })

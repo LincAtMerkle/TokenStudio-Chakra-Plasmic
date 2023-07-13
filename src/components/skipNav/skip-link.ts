@@ -4,22 +4,22 @@ import {
   defineStyleConfig,
 } from "@chakra-ui/styled-system"
 
-const $bg = cssVar("skip-link-bg")
+const $background= cssVar("skip-link-bg")
 
 const baseStyle = defineStyle({
-  borderRadius: "md",
-  fontWeight: "semibold",
-  _focusVisible: {
-    boxShadow: "outline",
+  border-radius: "md",
+  font-weight: "semibold",
+ &:focus-visible {
+    box-shadow: "outline",
     padding: "4",
     position: "fixed",
     top: "6",
     insetStart: "6",
     [$bg.variable]: "colors.white",
-    _dark: {
+    .chakra-ui-dark &: {
       [$bg.variable]: "colors.gray.700",
     },
-    bg: $bg.reference,
+    background: $bg.reference,
   },
 })
 

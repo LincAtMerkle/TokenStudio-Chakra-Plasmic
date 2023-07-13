@@ -1,14 +1,14 @@
 import { defineStyle, defineStyleConfig } from "@chakra-ui/styled-system"
 
 const baseStyle = defineStyle({
-  fontSize: "md",
-  marginEnd: "3",
-  mb: "2",
-  fontWeight: "medium",
+  font-size: "md",
+  margin-inline-end: "3",
+  margin-bottom: "2",
+  font-weight: "medium",
   transitionProperty: "common",
   transitionDuration: "normal",
   opacity: 1,
-  _disabled: {
+ &:disabled {
     opacity: 0.4,
   },
 })

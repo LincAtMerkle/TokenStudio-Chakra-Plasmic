@@ -8,9 +8,9 @@ const { defineMultiStyleConfig, definePartsStyle } =
   createMultiStyleConfigHelpers(parts.keys)
 
 const baseStyleIcon = defineStyle({
-  marginEnd: "2",
+  margin-inline-end: "2",
   display: "inline",
-  verticalAlign: "text-bottom",
+  vertical-align: "text-bottom",
 })
 
 const baseStyle = definePartsStyle({

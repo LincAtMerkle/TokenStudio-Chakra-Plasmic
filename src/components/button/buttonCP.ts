@@ -4,71 +4,71 @@ import { transparentize } from '@chakra-ui/theme-tools'
 const sizes = {
   '2xs': defineStyle({
     h: '6',
-    minW: '6',
-    fontSize: '2xs',
+    min-width: '6',
+    font-size: '2xs',
     px: '2',
     '& svg': {
-      fontSize: 'sm',
+      font-size: 'sm',
     },
   }),
   xs: defineStyle({
     h: '8',
-    minW: '8',
-    fontSize: 'xs',
-    lineHeight: '1.125rem',
+    min-width: '8',
+    font-size: 'xs',
+    line-height: '1.125rem',
     px: '2',
     '& svg': {
-      fontSize: 'md',
+      font-size: 'md',
     },
   }),
   sm: defineStyle({
     h: '9',
-    minW: '9',
-    fontSize: 'sm',
-    lineHeight: '1.25rem',
+    min-width: '9',
+    font-size: 'sm',
+    line-height: '1.25rem',
     px: '3.5',
     '& svg': {
-      fontSize: 'xl',
+      font-size: 'xl',
     },
   }),
   md: defineStyle({
     h: '10',
-    minW: '10',
-    fontSize: 'sm',
-    lineHeight: '1.25rem',
+    min-width: '10',
+    font-size: 'sm',
+    line-height: '1.25rem',
     px: '4',
     '& svg': {
-      fontSize: 'xl',
+      font-size: 'xl',
     },
   }),
   lg: defineStyle({
     h: '11',
-    minW: '11',
-    fontSize: 'md',
-    lineHeight: '1.5rem',
+    min-width: '11',
+    font-size: 'md',
+    line-height: '1.5rem',
     px: '4.5',
     '& svg': {
-      fontSize: 'xl',
+      font-size: 'xl',
     },
   }),
   xl: defineStyle({
     h: '12',
-    minW: '12',
-    fontSize: 'md',
-    lineHeight: '1.5rem',
+    min-width: '12',
+    font-size: 'md',
+    line-height: '1.5rem',
     px: '5',
     '& svg': {
-      fontSize: 'xl',
+      font-size: 'xl',
     },
   }),
   '2xl': defineStyle({
     h: '15',
-    minW: '15',
-    fontSize: 'lg',
-    lineHeight: '1.75rem',
+    min-width: '15',
+    font-size: 'lg',
+    line-height: '1.75rem',
     px: '7',
     '& svg': {
-      fontSize: '2xl',
+      font-size: '2xl',
     },
   }),
 }
@@ -79,209 +79,209 @@ const variants = {
   primary: defineStyle((props) => {
     const { colorScheme } = props
     return {
-      borderRadius: 'lg',
-      flexShrink: 0,
+      border-radius: 'lg',
+      flex-shrink: 0,
       bg: vars.bg.reference,
       color: vars.color.reference,
 
       [vars.bg.variable]: `colors.${colorScheme}.500`,
       [vars.color.variable]: `colors.white`,
-      _dark: {
+      .chakra-ui-dark &: {
         [vars.bg.variable]: `colors.${colorScheme}.200`,
         [vars.color.variable]: `colors.gray.800`,
       },
-      _hover: {
+     &:hover: {
         [vars.bg.variable]: `colors.${colorScheme}.600`,
-        _disabled: {
+       &:disabled {
           background: 'inerit',
         },
-        _dark: {
+        .chakra-ui-dark &: {
           [vars.bg.variable]: `colors.${colorScheme}.300`,
         },
       },
-      _active: {
+     &:active: {
         [vars.bg.variable]: `colors.${colorScheme}.700`,
-        _dark: {
+        .chakra-ui-dark &: {
           [vars.bg.variable]: `colors.${colorScheme}.400`,
         },
       },
-      _disabled: {
-        _hover: {
+     &:disabled {
+       &:hover: {
           [vars.bg.variable]: `colors.${colorScheme}.500`,
-          _dark: {
+          .chakra-ui-dark &: {
             [vars.bg.variable]: `colors.${colorScheme}.200`,
           },
         },
       },
-      _focusVisible: {
-        boxShadow: 'focus',
+     &:focus-visible {
+        box-shadow: 'focus',
       },
     }
   }),
 
   secondary: defineStyle({
-    borderWidth: '1px',
-    borderColor: 'border.emphasized',
-    borderRadius: 'lg',
-    flexShrink: 0,
+    border-width: '1px',
+    border-color: 'border.emphasized',
+    border-radius: 'lg',
+    flex-shrink: 0,
     bg: vars.bg.reference,
     color: vars.color.reference,
     [vars.color.variable]: `colors.gray.700`,
     '> svg': {
       color: 'fg.muted',
     },
-    _dark: {
+    .chakra-ui-dark &: {
       [vars.color.variable]: `colors.gray.200`,
     },
-    _hover: {
+   &:hover: {
       [vars.bg.variable]: `colors.gray.50`,
       [vars.color.variable]: `colors.gray.800`,
-      _dark: {
+      .chakra-ui-dark &: {
         [vars.bg.variable]: `colors.gray.800`,
         [vars.color.variable]: `colors.white`,
       },
     },
-    _checked: {
+    &[data-checked]: {
       [vars.bg.variable]: `colors.gray.50`,
-      _dark: {
+      .chakra-ui-dark &: {
         [vars.bg.variable]: `colors.gray.800`,
       },
     },
-    _active: {
-      [vars.bg.variable]: `colors.gray.50`,
-      [vars.color.variable]: `colors.gray.900`,
-      _dark: {
-        [vars.bg.variable]: `colors.gray.800`,
-        [vars.color.variable]: `colors.white`,
-      },
-    },
-    _selected: {
+   &:active: {
       [vars.bg.variable]: `colors.gray.50`,
       [vars.color.variable]: `colors.gray.900`,
-      _dark: {
+      .chakra-ui-dark &: {
         [vars.bg.variable]: `colors.gray.800`,
         [vars.color.variable]: `colors.white`,
       },
     },
-    _disabled: {
+    &[data-selected]: {
+      [vars.bg.variable]: `colors.gray.50`,
+      [vars.color.variable]: `colors.gray.900`,
+      .chakra-ui-dark &: {
+        [vars.bg.variable]: `colors.gray.800`,
+        [vars.color.variable]: `colors.white`,
+      },
+    },
+   &:disabled {
       opacity: 1,
-      borderColor: 'border.default',
+      border-color: 'border.default',
       [vars.color.variable]: `colors.gray.400`,
       '> svg': {
         color: 'unset',
       },
-      _dark: {
+      .chakra-ui-dark &: {
         [vars.color.variable]: `colors.gray.600`,
       },
-      _hover: {
+     &:hover: {
         [vars.color.variable]: `colors.gray.400`,
-        _dark: {
+        .chakra-ui-dark &: {
           [vars.color.variable]: `colors.gray.600`,
         },
       },
     },
-    _focusVisible: {
-      boxShadow: 'focus',
+   &:focus-visible {
+      box-shadow: 'focus',
     },
   }),
 
   tertiary: defineStyle({
-    borderRadius: 'lg',
-    flexShrink: 0,
+    border-radius: 'lg',
+    flex-shrink: 0,
     bg: vars.bg.reference,
     color: vars.color.reference,
     [vars.color.variable]: `colors.gray.600`,
-    _dark: {
+    .chakra-ui-dark &: {
       [vars.color.variable]: `colors.gray.300`,
     },
-    _hover: {
+   &:hover: {
       [vars.bg.variable]: `colors.gray.50`,
       [vars.color.variable]: `colors.gray.800`,
-      _dark: {
+      .chakra-ui-dark &: {
         [vars.bg.variable]: `colors.gray.800`,
         [vars.color.variable]: `colors.white`,
       },
     },
-    _checked: {
+    &[data-checked]: {
       [vars.bg.variable]: `colors.gray.50`,
-      _dark: {
+      .chakra-ui-dark &: {
         [vars.bg.variable]: `colors.gray.800`,
       },
     },
-    _active: {
+   &:active: {
       [vars.bg.variable]: `colors.gray.50`,
       [vars.color.variable]: `colors.gray.900`,
-      _dark: {
+      .chakra-ui-dark &: {
         [vars.bg.variable]: `colors.gray.800`,
         [vars.color.variable]: `colors.white`,
       },
     },
-    _activeLink: {
+    &[aria-current=page]: {
       [vars.bg.variable]: `colors.gray.100`,
-      _dark: {
+      .chakra-ui-dark &: {
         [vars.bg.variable]: `colors.gray.700`,
       },
     },
-    _disabled: {
+   &:disabled {
       opacity: 1,
       [vars.color.variable]: `colors.gray.400`,
-      _dark: {
+      .chakra-ui-dark &: {
         [vars.color.variable]: `colors.gray.600`,
       },
-      _hover: {
+     &:hover: {
         [vars.color.variable]: `colors.gray.400`,
-        _dark: {
+        .chakra-ui-dark &: {
           [vars.color.variable]: `colors.gray.600`,
         },
       },
     },
-    _focusVisible: {
-      boxShadow: 'focus',
+   &:focus-visible {
+      box-shadow: 'focus',
     },
   }),
 
   text: defineStyle((props) => {
     const { colorScheme } = props
     const baseStyle = defineStyle({
-      borderRadius: '0',
+      border-radius: '0',
       padding: 0,
       height: 'auto',
-      verticalAlign: 'baseline',
+      vertical-align: 'baseline',
       color: vars.color.reference,
-      justifyContent: 'flex-start',
+      justify-content: 'flex-start',
     })
 
     if (colorScheme === 'gray') {
       return {
         ...baseStyle,
         [vars.color.variable]: `colors.gray.600`,
-        _dark: {
+        .chakra-ui-dark &: {
           [vars.color.variable]: `colors.gray.200`,
         },
-        _hover: {
+       &:hover: {
           [vars.color.variable]: `colors.gray.700`,
-          _dark: {
+          .chakra-ui-dark &: {
             [vars.color.variable]: `colors.gray.300`,
           },
         },
-        _active: {
+       &:active: {
           [vars.color.variable]: `colors.gray.800`,
-          _dark: {
+          .chakra-ui-dark &: {
             [vars.color.variable]: `colors.gray.300`,
           },
         },
-        _focusVisible: {
-          boxShadow: 'focus',
+       &:focus-visible {
+          box-shadow: 'focus',
         },
-        _disabled: {
+       &:disabled {
           opacity: 1,
           [vars.color.variable]: `colors.gray.400`,
-          _dark: {
+          .chakra-ui-dark &: {
             [vars.color.variable]: `colors.gray.600`,
           },
-          _hover: {
+         &:hover: {
             [vars.color.variable]: `colors.gray.400`,
-            _dark: {
+            .chakra-ui-dark &: {
               [vars.color.variable]: `colors.gray.600`,
             },
           },
@@ -292,18 +292,18 @@ const variants = {
     return {
       ...baseStyle,
       [vars.color.variable]: `colors.${colorScheme}.600`,
-      _dark: {
+      .chakra-ui-dark &: {
         [vars.color.variable]: `colors.${colorScheme}.200`,
       },
-      _hover: {
+     &:hover: {
         [vars.color.variable]: `colors.${colorScheme}.700`,
-        _dark: {
+        .chakra-ui-dark &: {
           [vars.color.variable]: `colors.${colorScheme}.300`,
         },
       },
-      _active: {
+     &:active: {
         [vars.color.variable]: `colors.${colorScheme}.700`,
-        _dark: {
+        .chakra-ui-dark &: {
           [vars.color.variable]: `colors.${colorScheme}.300`,
         },
       },
@@ -314,25 +314,25 @@ const variants = {
     return {
       bg: 'brand.50',
       color: 'brand.600',
-      _hover: { bg: 'brand.100' },
-      _active: { bg: 'brand.100' },
+     &:hover: { bg: 'brand.100' },
+     &:active: { bg: 'brand.100' },
     }
   }),
 
   'secondary.accent': {
     color: 'white',
-    borderColor: 'brand.50',
-    borderWidth: '1px',
-    _hover: { bg: 'whiteAlpha.200' },
-    _active: { bg: 'whiteAlpha.200' },
+    border-color: 'brand.50',
+    border-width: '1px',
+   &:hover: { bg: 'whiteAlpha.200' },
+   &:active: { bg: 'whiteAlpha.200' },
   },
 
   'tertiary.accent': defineStyle((props) => ({
     color: 'brand.50',
-    _hover: {
+   &:hover: {
       bg: transparentize('brand.500', 0.67)(props.theme),
     },
-    _activeLink: {
+    &[aria-current=page]: {
       color: 'white',
       bg: 'bg.accent.subtle',
     },
@@ -341,13 +341,13 @@ const variants = {
   'text.accent': defineStyle({
     padding: 0,
     height: 'auto',
-    lineHeight: 'normal',
-    verticalAlign: 'baseline',
+    line-height: 'normal',
+    vertical-align: 'baseline',
     color: 'brand.50',
-    _hover: {
+   &:hover: {
       color: 'white',
     },
-    _active: {
+   &:active: {
       color: 'white',
     },
   }),

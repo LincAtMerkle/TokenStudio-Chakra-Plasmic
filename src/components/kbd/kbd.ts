@@ -4,22 +4,23 @@ import {
   defineStyleConfig,
 } from "@chakra-ui/styled-system"
 
-const $bg = cssVar("kbd-bg")
+const $background= cssVar("kbd-bg")
 
 const baseStyle = defineStyle({
   [$bg.variable]: "colors.gray.100",
-  _dark: {
+  .chakra-ui-dark &: {
     [$bg.variable]: "colors.whiteAlpha.100",
   },
-  bg: $bg.reference,
-  borderRadius: "md",
-  borderWidth: "1px",
-  borderBottomWidth: "3px",
-  fontSize: "0.8em",
-  fontWeight: "bold",
-  lineHeight: "normal",
-  px: "0.4em",
-  whiteSpace: "nowrap",
+  background: $bg.reference,
+  border-radius: "md",
+  border-width: "1px",
+  border-bottomWidth: "3px",
+  font-size: "0.8em",
+  font-weight: "bold",
+  line-height: "normal",
+ padding-inline-start: "0.4em",
+padding-inline-end: "0.4em",
+  white-space: "nowrap",
 })
 
 export const kbdTheme = defineStyleConfig({

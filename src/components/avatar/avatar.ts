@@ -12,61 +12,61 @@ const { definePartsStyle, defineMultiStyleConfig } =
   createMultiStyleConfigHelpers(parts.keys)
 
 const $border = cssVar("avatar-border-color")
-const $bg = cssVar("avatar-bg")
+const $background= cssVar("avatar-bg")
 const $fs = cssVar("avatar-font-size")
 const $size = cssVar("avatar-size")
 
 const baseStyleBadge = defineStyle({
-  borderRadius: "full",
+  border-radius: "full",
   border: "0.2em solid",
-  borderColor: $border.reference,
+  border-color: $border.reference,
   [$border.variable]: "white",
-  _dark: {
+  .chakra-ui-dark &: {
     [$border.variable]: "colors.gray.800",
   },
 })
 
 const baseStyleExcessLabel = defineStyle({
-  bg: $bg.reference,
-  fontSize: $fs.reference,
+  background: $bg.reference,
+  font-size: $fs.reference,
   width: $size.reference,
   height: $size.reference,
-  lineHeight: "1",
+  line-height: "1",
   [$bg.variable]: "colors.gray.200",
-  _dark: {
+  .chakra-ui-dark &: {
     [$bg.variable]: "colors.whiteAlpha.400",
   },
 })
 
 const baseStyleContainer = defineStyle((props) => {
   const { name, theme } = props
-  const bg = name ? randomColor({ string: name }) : "colors.gray.400"
+  const background= name ? randomColor({ string: name }) : "colors.gray.400"
   const isBgDark = isDark(bg)(theme)
 
   let color = "white"
   if (!isBgDark) color = "gray.800"
 
   return {
-    bg: $bg.reference,
-    fontSize: $fs.reference,
+    background: $bg.reference,
+    font-size: $fs.reference,
     color,
-    borderColor: $border.reference,
-    verticalAlign: "top",
+    border-color: $border.reference,
+    vertical-align: "top",
     width: $size.reference,
     height: $size.reference,
     "&:not([data-loaded])": {
       [$bg.variable]: bg,
     },
     [$border.variable]: "colors.white",
-    _dark: {
+    .chakra-ui-dark &: {
       [$border.variable]: "colors.gray.800",
     },
   }
 })
 
 const baseStyleLabel = defineStyle({
-  fontSize: $fs.reference,
-  lineHeight: "1",
+  font-size: $fs.reference,
+  line-height: "1",
 })
 
 const baseStyle = definePartsStyle((props) => ({

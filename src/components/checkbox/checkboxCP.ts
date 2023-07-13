@@ -12,29 +12,29 @@ const baseStyle = definePartsStyle((props) => {
   return {
     label: {
       color: 'fg.emphasized',
-      fontWeight: 'medium',
+      font-weight: 'medium',
     },
     control: {
-      borderWidth: '1px',
-      borderColor: 'border.emphasized',
+      border-width: '1px',
+      border-color: 'border.emphasized',
       bg: vars.bg.reference,
-      _checked: {
+      &[data-checked]: {
         [vars.bg.variable]: `colors.${colorScheme}.500`,
         color: 'white',
-        _hover: {
+       &:hover: {
           [vars.bg.variable]: `colors.${colorScheme}.600`,
         },
-        _dark: {
+        .chakra-ui-dark &: {
           [vars.bg.variable]: `colors.${colorScheme}.200`,
           color: 'gray.800',
-          _hover: {
+         &:hover: {
             [vars.bg.variable]: `colors.${colorScheme}.300`,
           },
         },
       },
-      _indeterminate: {
+      &:indeterminate: {
         [vars.bg.variable]: `colors.${colorScheme}.500`,
-        _dark: {
+        .chakra-ui-dark &: {
           [vars.bg.variable]: `colors.${colorScheme}.200`,
         },
       },
@@ -44,19 +44,19 @@ const baseStyle = definePartsStyle((props) => {
 
 const sizes = {
   sm: definePartsStyle({
-    label: { fontSize: 'xs', lineHeight: '1.125rem' },
-    control: { borderRadius: 'sm' },
-    icon: { fontSize: '3xs' },
+    label: { font-size: 'xs', line-height: '1.125rem' },
+    control: { border-radius: 'sm' },
+    icon: { font-size: '3xs' },
   }),
   md: definePartsStyle({
-    label: { fontSize: 'sm', lineHeight: '1.25rem' },
-    control: { borderRadius: 'base' },
-    icon: { fontSize: '2xs' },
+    label: { font-size: 'sm', line-height: '1.25rem' },
+    control: { border-radius: 'base' },
+    icon: { font-size: '2xs' },
   }),
   lg: definePartsStyle({
-    label: { fontSize: 'md' },
-    control: { borderRadius: 'md', lineHeight: '1.5rem' },
-    icon: { fontSize: 'xs' },
+    label: { font-size: 'md' },
+    control: { border-radius: 'md', line-height: '1.5rem' },
+    icon: { font-size: 'xs' },
   }),
 }
 

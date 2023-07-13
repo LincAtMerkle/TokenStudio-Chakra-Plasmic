@@ -8,31 +8,31 @@ type StyleFunctionPropsWithSize = StyleFunctionProps & { size: 'md' | 'lg' }
 const sizes = {
   md: definePartsStyle({
     tab: {
-      fontSize: 'sm',
-      lineHeight: '1.25rem',
+      font-size: 'sm',
+      line-height: '1.25rem',
     },
     tablist: {
       px: '1',
-      gap: '2',
+     gap: '2',
       h: '11',
     },
     indicator: {
       h: '9',
-      marginTop: '-10',
+      margin-top: '-10',
     },
   }),
   lg: definePartsStyle({
     tab: {
-      fontSize: 'md',
+      font-size: 'md',
     },
     tablist: {
       px: '1.5',
-      gap: '2',
+     gap: '2',
       h: '14',
     },
     indicator: {
       h: '11',
-      marginTop: '-50px',
+      margin-top: '-50px',
     },
   }),
 }
@@ -44,25 +44,25 @@ export const indicator = definePartsStyle((props) => {
   return {
     tablist: {
       ...sizeProps.tablist,
-      borderRadius: 'lg',
-      borderWidth: '1px',
+      border-radius: 'lg',
+      border-width: '1px',
       bg: 'bg.subtle',
     },
     tab: {
       ...sizeProps.tab,
       color: 'fg.subtle',
-      fontWeight: 'semibold',
-      zIndex: 1,
-      _selected: {
+      font-weight: 'semibold',
+      z-index: 1,
+      &[data-selected]: {
         color: 'fg.emphasized',
       },
     },
     indicator: {
       ...sizeProps.indicator,
-      borderRadius: 'md',
-      boxShadow: 'xs',
+      border-radius: 'md',
+      box-shadow: 'xs',
       bg: 'white',
-      _dark: {
+      .chakra-ui-dark &: {
         bg: 'gray.700',
       },
     },

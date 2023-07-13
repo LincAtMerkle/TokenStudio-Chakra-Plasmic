@@ -10,14 +10,14 @@ const $endColor = cssVar("skeleton-end-color")
 const baseStyle = defineStyle({
   [$startColor.variable]: "colors.gray.100",
   [$endColor.variable]: "colors.gray.400",
-  _dark: {
+  .chakra-ui-dark &: {
     [$startColor.variable]: "colors.gray.800",
     [$endColor.variable]: "colors.gray.600",
   },
   background: $startColor.reference,
-  borderColor: $endColor.reference,
+  border-color: $endColor.reference,
   opacity: 0.7,
-  borderRadius: "sm",
+  border-radius: "sm",
 })
 
 export const skeletonTheme = defineStyleConfig({

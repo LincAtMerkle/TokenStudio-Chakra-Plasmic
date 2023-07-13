@@ -9,12 +9,12 @@ import { runIfFn } from "../utils/run-if-fn"
 const { defineMultiStyleConfig, definePartsStyle } =
   createMultiStyleConfigHelpers(parts.keys)
 
-const $bg = cssVar("modal-bg")
+const $background= cssVar("modal-bg")
 const $shadow = cssVar("modal-shadow")
 
 const baseStyleOverlay = defineStyle({
   bg: "blackAlpha.600",
-  zIndex: "modal",
+  z-index: "modal",
 })
 
 const baseStyleDialogContainer = defineStyle((props) => {
@@ -22,9 +22,9 @@ const baseStyleDialogContainer = defineStyle((props) => {
 
   return {
     display: "flex",
-    zIndex: "modal",
-    justifyContent: "center",
-    alignItems: isCentered ? "center" : "flex-start",
+    z-index: "modal",
+    justify-content: "center",
+    align-items: isCentered ? "center" : "flex-start",
     overflow: scrollBehavior === "inside" ? "hidden" : "auto",
     overscrollBehaviorY: "none",
   }
@@ -34,28 +34,30 @@ const baseStyleDialog = defineStyle((props) => {
   const { isCentered, scrollBehavior } = props
 
   return {
-    borderRadius: "md",
+    border-radius: "md",
     color: "inherit",
     my: isCentered ? "auto" : "16",
     mx: isCentered ? "auto" : undefined,
-    zIndex: "modal",
-    maxH: scrollBehavior === "inside" ? "calc(100% - 7.5rem)" : undefined,
+    z-index: "modal",
+    max-height: scrollBehavior === "inside" ? "calc(100% - 7.5rem)" : undefined,
     [$bg.variable]: "colors.white",
     [$shadow.variable]: "shadows.lg",
-    _dark: {
+    .chakra-ui-dark &: {
       [$bg.variable]: "colors.gray.700",
       [$shadow.variable]: "shadows.dark-lg",
     },
-    bg: $bg.reference,
-    boxShadow: $shadow.reference,
+    background: $bg.reference,
+    box-shadow: $shadow.reference,
   }
 })
 
 const baseStyleHeader = defineStyle({
-  px: "6",
-  py: "4",
-  fontSize: "xl",
-  fontWeight: "semibold",
+ padding-inline-start: "6",
+padding-inline-end: "6",
+ padding-top: "4",
+padding-bottom: "4",
+  font-size: "xl",
+  font-weight: "semibold",
 })
 
 const baseStyleCloseButton = defineStyle({
@@ -67,16 +69,20 @@ const baseStyleCloseButton = defineStyle({
 const baseStyleBody = defineStyle((props) => {
   const { scrollBehavior } = props
   return {
-    px: "6",
-    py: "2",
+   padding-inline-start: "6",
+padding-inline-end: "6",
+   padding-top: "2",
+padding-bottom: "2",
     flex: "1",
     overflow: scrollBehavior === "inside" ? "auto" : undefined,
   }
 })
 
 const baseStyleFooter = defineStyle({
-  px: "6",
-  py: "4",
+ padding-inline-start: "6",
+padding-inline-end: "6",
+ padding-top: "4",
+padding-bottom: "4",
 })
 
 const baseStyle = definePartsStyle((props) => ({
@@ -90,22 +96,23 @@ const baseStyle = definePartsStyle((props) => ({
 }))
 
 /**
- * Since the `maxWidth` prop references theme.sizes internally,
+ * Since the `max-width` prop references theme.sizes internally,
  * we can leverage that to size our modals.
  */
 function getSize(value: string) {
   if (value === "full") {
     return definePartsStyle({
       dialog: {
-        maxW: "100vw",
-        minH: "$100vh",
-        my: "0",
-        borderRadius: "0",
+        max-width: "100vw",
+
+        margin-top: "0",
+        margin-bottom: "0",
+        border-radius: "0",
       },
     })
   }
   return definePartsStyle({
-    dialog: { maxW: value },
+    dialog: { max-width: value },
   })
 }
 

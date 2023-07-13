@@ -9,20 +9,20 @@ import { inputTheme } from "./input"
 const { defineMultiStyleConfig, definePartsStyle } =
   createMultiStyleConfigHelpers(parts.keys)
 
-const $bg = cssVar("select-bg")
+const $background= cssVar("select-bg")
 
 const baseStyleField = defineStyle({
   ...inputTheme.baseStyle?.field,
   appearance: "none",
-  paddingBottom: "1px",
-  lineHeight: "normal",
-  bg: $bg.reference,
+  padding-bottom: "1px",
+  line-height: "normal",
+  background: $bg.reference,
   [$bg.variable]: "colors.white",
-  _dark: {
+  .chakra-ui-dark &: {
     [$bg.variable]: "colors.gray.700",
   },
   "> option, > optgroup": {
-    bg: $bg.reference,
+    background: $bg.reference,
   },
 })
 
@@ -32,8 +32,8 @@ const baseStyleIcon = defineStyle({
   insetEnd: "2",
   position: "relative",
   color: "currentColor",
-  fontSize: "xl",
-  _disabled: {
+  font-size: "xl",
+ &:disabled {
     opacity: 0.5,
   },
 })

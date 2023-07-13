@@ -8,39 +8,42 @@ const { definePartsStyle, defineMultiStyleConfig } =
   createMultiStyleConfigHelpers(parts.keys)
 
 const baseStyleContainer = defineStyle({
-  borderTopWidth: "1px",
-  borderColor: "inherit",
-  _last: {
-    borderBottomWidth: "1px",
+  border-topWidth: "1px",
+  border-color: "inherit",
+  &:last-of-type: {
+    border-bottomWidth: "1px",
   },
 })
 
 const baseStyleButton = defineStyle({
   transitionProperty: "common",
   transitionDuration: "normal",
-  fontSize: "md",
-  _focusVisible: {
-    boxShadow: "outline",
+  font-size: "md",
+ &:focus-visible {
+    box-shadow: "outline",
   },
-  _hover: {
+ &:hover: {
     bg: "blackAlpha.50",
   },
-  _disabled: {
+ &:disabled {
     opacity: 0.4,
     cursor: "not-allowed",
   },
-  px: "4",
-  py: "2",
+ padding-inline-start: "4",
+padding-inline-end: "4",
+ padding-top: "2",
+padding-bottom: "2",
 })
 
 const baseStylePanel = defineStyle({
-  pt: "2",
-  px: "4",
-  pb: "5",
+ padding-top: "2",
+ padding-inline-start: "4",
+padding-inline-end: "4",
+ padding-bottom: "5",
 })
 
 const baseStyleIcon = defineStyle({
-  fontSize: "1.25em",
+  font-size: "1.25em",
 })
 
 const baseStyle = definePartsStyle({

@@ -3,64 +3,64 @@ import { defineCssVars, defineStyle, defineStyleConfig } from '@chakra-ui/styled
 const vars = defineCssVars('close-button', ['bg', 'color', 'size'])
 
 const baseStyle = defineStyle({
-  borderRadius: 'lg',
+  border-radius: 'lg',
   w: [vars.size.reference],
   h: [vars.size.reference],
   bg: vars.bg.reference,
   color: vars.color.reference,
   [vars.color.variable]: `colors.gray.600`,
-  _dark: {
+  .chakra-ui-dark &: {
     [vars.color.variable]: `colors.gray.300`,
   },
-  _hover: {
+ &:hover: {
     [vars.bg.variable]: `colors.gray.50`,
     [vars.color.variable]: `colors.gray.800`,
-    _dark: {
+    .chakra-ui-dark &: {
       [vars.bg.variable]: `colors.gray.800`,
       [vars.color.variable]: `colors.white`,
     },
   },
-  _active: {
+ &:active: {
     [vars.bg.variable]: `colors.gray.50`,
     [vars.color.variable]: `colors.gray.900`,
-    _dark: {
+    .chakra-ui-dark &: {
       [vars.bg.variable]: `colors.gray.800`,
       [vars.color.variable]: `colors.white`,
     },
   },
-  _focusVisible: {
-    boxShadow: 'focus',
+ &:focus-visible {
+    box-shadow: 'focus',
   },
 })
 
 const sizes = {
   '2xs': defineStyle({
     [vars.size.variable]: 'sizes.6',
-    fontSize: 'xs',
+    font-size: 'xs',
   }),
   xs: defineStyle({
     [vars.size.variable]: 'sizes.8',
-    fontSize: 'sm',
+    font-size: 'sm',
   }),
   sm: defineStyle({
     [vars.size.variable]: 'sizes.9',
-    fontSize: 'md',
+    font-size: 'md',
   }),
   md: defineStyle({
     [vars.size.variable]: 'sizes.10',
-    fontSize: 'md',
+    font-size: 'md',
   }),
   lg: defineStyle({
     [vars.size.variable]: 'sizes.11',
-    fontSize: 'md',
+    font-size: 'md',
   }),
   xl: defineStyle({
     [vars.size.variable]: 'sizes.12',
-    fontSize: 'lg',
+    font-size: 'lg',
   }),
   '2xl': defineStyle({
     [vars.size.variable]: 'sizes.15',
-    fontSize: 'xl',
+    font-size: 'xl',
   }),
 }
 

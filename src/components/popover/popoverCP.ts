@@ -1,8 +1,8 @@
 const baseStyle = {
   content: {
-    borderWidth: '1px',
-    boxShadow: 'lg',
-    borderRadius: 'lg',
+    border-width: '1px',
+    box-shadow: 'lg',
+    border-radius: 'lg',
     background: 'bg.surface',
     overflow: 'hidden',
   },

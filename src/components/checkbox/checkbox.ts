@@ -21,55 +21,55 @@ const baseStyleControl = defineStyle((props) => {
     transitionProperty: "box-shadow",
     transitionDuration: "normal",
     border: "2px solid",
-    borderRadius: "sm",
-    borderColor: "inherit",
+    border-radius: "sm",
+    border-color: "inherit",
     color: "white",
 
-    _checked: {
+    &[data-checked]: {
       bg: mode(`${c}.500`, `${c}.200`)(props),
-      borderColor: mode(`${c}.500`, `${c}.200`)(props),
+      border-color: mode(`${c}.500`, `${c}.200`)(props),
       color: mode("white", "gray.900")(props),
 
-      _hover: {
+     &:hover: {
         bg: mode(`${c}.600`, `${c}.300`)(props),
-        borderColor: mode(`${c}.600`, `${c}.300`)(props),
+        border-color: mode(`${c}.600`, `${c}.300`)(props),
       },
 
-      _disabled: {
-        borderColor: mode("gray.200", "transparent")(props),
+     &:disabled {
+        border-color: mode("gray.200", "transparent")(props),
         bg: mode("gray.200", "whiteAlpha.300")(props),
         color: mode("gray.500", "whiteAlpha.500")(props),
       },
     },
 
-    _indeterminate: {
+    &:indeterminate: {
       bg: mode(`${c}.500`, `${c}.200`)(props),
-      borderColor: mode(`${c}.500`, `${c}.200`)(props),
+      border-color: mode(`${c}.500`, `${c}.200`)(props),
       color: mode("white", "gray.900")(props),
     },
 
-    _disabled: {
+   &:disabled {
       bg: mode("gray.100", "whiteAlpha.100")(props),
-      borderColor: mode("gray.100", "transparent")(props),
+      border-color: mode("gray.100", "transparent")(props),
     },
 
-    _focusVisible: {
-      boxShadow: "outline",
+   &:focus-visible {
+      box-shadow: "outline",
     },
 
-    _invalid: {
-      borderColor: mode("red.500", "red.300")(props),
+    &[data-invalid]: {
+      border-color: mode("red.500", "red.300")(props),
     },
   }
 })
 
 const baseStyleContainer = defineStyle({
-  _disabled: { cursor: "not-allowed" },
+ &:disabled { cursor: "not-allowed" },
 })
 
 const baseStyleLabel = defineStyle({
-  userSelect: "none",
-  _disabled: { opacity: 0.4 },
+  user-select: "none",
+ &:disabled { opacity: 0.4 },
 })
 
 const baseStyleIcon = defineStyle({
@@ -87,18 +87,18 @@ const baseStyle = definePartsStyle((props) => ({
 const sizes = {
   sm: definePartsStyle({
     control: { [$size.variable]: "sizes.3" },
-    label: { fontSize: "sm" },
-    icon: { fontSize: "3xs" },
+    label: { font-size: "sm" },
+    icon: { font-size: "3xs" },
   }),
   md: definePartsStyle({
     control: { [$size.variable]: "sizes.4" },
-    label: { fontSize: "md" },
-    icon: { fontSize: "2xs" },
+    label: { font-size: "md" },
+    icon: { font-size: "2xs" },
   }),
   lg: definePartsStyle({
     control: { [$size.variable]: "sizes.5" },
-    label: { fontSize: "lg" },
-    icon: { fontSize: "2xs" },
+    label: { font-size: "lg" },
+    icon: { font-size: "2xs" },
   }),
 }
 

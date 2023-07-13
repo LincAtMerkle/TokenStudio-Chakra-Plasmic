@@ -8,30 +8,33 @@ const { definePartsStyle, defineMultiStyleConfig } =
   createMultiStyleConfigHelpers(parts.keys)
 
 const baseStylePreview = defineStyle({
-  borderRadius: "md",
-  py: "1",
+  border-radius: "md",
+ padding-top: "1",
+padding-bottom: "1",
   transitionProperty: "common",
   transitionDuration: "normal",
 })
 
 const baseStyleInput = defineStyle({
-  borderRadius: "md",
-  py: "1",
+  border-radius: "md",
+ padding-top: "1",
+padding-bottom: "1",
   transitionProperty: "common",
   transitionDuration: "normal",
   width: "full",
-  _focusVisible: { boxShadow: "outline" },
-  _placeholder: { opacity: 0.6 },
+ &:focus-visible { box-shadow: "outline" },
+  &::placeholder: { opacity: 0.6 },
 })
 
 const baseStyleTextarea = defineStyle({
-  borderRadius: "md",
-  py: "1",
+  border-radius: "md",
+ padding-top: "1",
+padding-bottom: "1",
   transitionProperty: "common",
   transitionDuration: "normal",
   width: "full",
-  _focusVisible: { boxShadow: "outline" },
-  _placeholder: { opacity: 0.6 },
+ &:focus-visible { box-shadow: "outline" },
+  &::placeholder: { opacity: 0.6 },
 })
 
 const baseStyle = definePartsStyle({

@@ -11,7 +11,7 @@ const { defineMultiStyleConfig, definePartsStyle } =
 
 const $thumbSize = cssVar("slider-thumb-size")
 const $trackSize = cssVar("slider-track-size")
-const $bg = cssVar("slider-bg")
+const $background= cssVar("slider-bg")
 
 const baseStyleContainer = defineStyle((props) => {
   const { orientation } = props
@@ -20,10 +20,10 @@ const baseStyleContainer = defineStyle((props) => {
     display: "inline-block",
     position: "relative",
     cursor: "pointer",
-    _disabled: {
+   &:disabled {
       opacity: 0.6,
       cursor: "default",
-      pointerEvents: "none",
+      pointer-events: "none",
     },
     ...orient({
       orientation,
@@ -43,18 +43,18 @@ const baseStyleTrack = defineStyle((props) => {
   return {
     ...orientationStyles,
     overflow: "hidden",
-    borderRadius: "sm",
+    border-radius: "sm",
     [$bg.variable]: "colors.gray.200",
-    _dark: {
+    .chakra-ui-dark &: {
       [$bg.variable]: "colors.whiteAlpha.200",
     },
-    _disabled: {
+   &:disabled {
       [$bg.variable]: "colors.gray.300",
-      _dark: {
+      .chakra-ui-dark &: {
         [$bg.variable]: "colors.whiteAlpha.300",
       },
     },
-    bg: $bg.reference,
+    background: $bg.reference,
   }
 })
 
@@ -65,14 +65,14 @@ const baseStyleThumb = defineStyle((props) => {
     vertical: {
       left: "50%",
       transform: `translateX(-50%)`,
-      _active: {
+     &:active: {
         transform: `translateX(-50%) scale(1.15)`,
       },
     },
     horizontal: {
       top: "50%",
       transform: `translateY(-50%)`,
-      _active: {
+     &:active: {
         transform: `translateY(-50%) scale(1.15)`,
       },
     },
@@ -83,22 +83,22 @@ const baseStyleThumb = defineStyle((props) => {
     w: $thumbSize.reference,
     h: $thumbSize.reference,
     display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
+    align-items: "center",
+    justify-content: "center",
     position: "absolute",
     outline: 0,
-    zIndex: 1,
-    borderRadius: "full",
+    z-index: 1,
+    border-radius: "full",
     bg: "white",
-    boxShadow: "base",
+    box-shadow: "base",
     border: "1px solid",
-    borderColor: "transparent",
+    border-color: "transparent",
     transitionProperty: "transform",
     transitionDuration: "normal",
-    _focusVisible: {
-      boxShadow: "outline",
+   &:focus-visible {
+      box-shadow: "outline",
     },
-    _disabled: {
+   &:disabled {
       bg: "gray.300",
     },
   }
@@ -111,10 +111,10 @@ const baseStyleFilledTrack = defineStyle((props) => {
     width: "inherit",
     height: "inherit",
     [$bg.variable]: `colors.${c}.500`,
-    _dark: {
+    .chakra-ui-dark &: {
       [$bg.variable]: `colors.${c}.200`,
     },
-    bg: $bg.reference,
+    background: $bg.reference,
   }
 })
 

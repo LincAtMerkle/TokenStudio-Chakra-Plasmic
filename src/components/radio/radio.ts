@@ -14,16 +14,16 @@ const baseStyleControl = defineStyle((props) => {
 
   return {
     ...controlStyle,
-    borderRadius: "full",
-    _checked: {
-      ...controlStyle?.["_checked"],
-      _before: {
+    border-radius: "full",
+    &[data-checked]: {
+      ...controlStyle?.["&[data-checked]"],
+      &::before: {
         content: `""`,
         display: "inline-block",
         pos: "relative",
         w: "50%",
         h: "50%",
-        borderRadius: "50%",
+        border-radius: "50%",
         bg: "currentColor",
       },
     },
@@ -39,15 +39,15 @@ const baseStyle = definePartsStyle((props) => ({
 const sizes = {
   md: definePartsStyle({
     control: { w: "4", h: "4" },
-    label: { fontSize: "md" },
+    label: { font-size: "md" },
   }),
   lg: definePartsStyle({
     control: { w: "5", h: "5" },
-    label: { fontSize: "lg" },
+    label: { font-size: "lg" },
   }),
   sm: definePartsStyle({
     control: { width: "3", height: "3" },
-    label: { fontSize: "sm" },
+    label: { font-size: "sm" },
   }),
 }
 

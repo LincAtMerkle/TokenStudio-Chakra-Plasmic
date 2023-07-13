@@ -8,8 +8,8 @@ const baseStyle = definePartsStyle({
     px: { base: 4, md: 6 },
     pt: 6,
     pb: 0,
-    fontSize: 'md',
-    fontWeight: 'normal',
+    font-size: 'md',
+    font-weight: 'normal',
   },
   body: {
     px: { base: 4, md: 6 },
@@ -22,7 +22,7 @@ const baseStyle = definePartsStyle({
   },
   dialog: {
     bg: 'bg.surface',
-    boxShadow: 'lg',
+    box-shadow: 'lg',
   },
 })
 

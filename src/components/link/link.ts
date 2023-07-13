@@ -5,14 +5,14 @@ const baseStyle = defineStyle({
   transitionDuration: "fast",
   transitionTimingFunction: "ease-out",
   cursor: "pointer",
-  textDecoration: "none",
+  text-decoration: "none",
   outline: "none",
   color: "inherit",
-  _hover: {
-    textDecoration: "underline",
+ &:hover: {
+    text-decoration: "underline",
   },
-  _focusVisible: {
-    boxShadow: "outline",
+ &:focus-visible {
+    box-shadow: "outline",
   },
 })
 

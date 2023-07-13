@@ -9,33 +9,33 @@ import { runIfFn } from "../utils/run-if-fn"
 const { definePartsStyle, defineMultiStyleConfig } =
   createMultiStyleConfigHelpers(parts.keys)
 
-const $bg = cssVar("drawer-bg")
+const $background= cssVar("drawer-bg")
 const $bs = cssVar("drawer-box-shadow")
 
 /**
- * Since the `maxWidth` prop references theme.sizes internally,
+ * Since the `max-width` prop references theme.sizes internally,
  * we can leverage that to size our modals.
  */
 function getSize(value: string) {
   if (value === "full") {
     return definePartsStyle({
-      dialog: { maxW: "100vw", h: "100vh" },
+      dialog: { max-width: "100vw", h: "100vh" },
     })
   }
   return definePartsStyle({
-    dialog: { maxW: value },
+    dialog: { max-width: value },
   })
 }
 
 const baseStyleOverlay = defineStyle({
   bg: "blackAlpha.600",
-  zIndex: "overlay",
+  z-index: "overlay",
 })
 
 const baseStyleDialogContainer = defineStyle({
   display: "flex",
-  zIndex: "modal",
-  justifyContent: "center",
+  z-index: "modal",
+  justify-content: "center",
 })
 
 const baseStyleDialog = defineStyle((props) => {
@@ -43,25 +43,27 @@ const baseStyleDialog = defineStyle((props) => {
 
   return {
     ...(isFullHeight && { height: "100vh" }),
-    zIndex: "modal",
-    maxH: "100vh",
+    z-index: "modal",
+    max-height: "100vh",
     color: "inherit",
     [$bg.variable]: "colors.white",
     [$bs.variable]: "shadows.lg",
-    _dark: {
+    .chakra-ui-dark &: {
       [$bg.variable]: "colors.gray.700",
       [$bs.variable]: "shadows.dark-lg",
     },
-    bg: $bg.reference,
-    boxShadow: $bs.reference,
+    background: $bg.reference,
+    box-shadow: $bs.reference,
   }
 })
 
 const baseStyleHeader = defineStyle({
-  px: "6",
-  py: "4",
-  fontSize: "xl",
-  fontWeight: "semibold",
+ padding-inline-start: "6",
+padding-inline-end: "6",
+ padding-top: "4",
+padding-bottom: "4",
+  font-size: "xl",
+  font-weight: "semibold",
 })
 
 const baseStyleCloseButton = defineStyle({
@@ -71,15 +73,19 @@ const baseStyleCloseButton = defineStyle({
 })
 
 const baseStyleBody = defineStyle({
-  px: "6",
-  py: "2",
+ padding-inline-start: "6",
+padding-inline-end: "6",
+ padding-top: "2",
+padding-bottom: "2",
   flex: "1",
   overflow: "auto",
 })
 
 const baseStyleFooter = defineStyle({
-  px: "6",
-  py: "4",
+ padding-inline-start: "6",
+padding-inline-end: "6",
+ padding-top: "4",
+padding-bottom: "4",
 })
 
 const baseStyle = definePartsStyle((props) => ({

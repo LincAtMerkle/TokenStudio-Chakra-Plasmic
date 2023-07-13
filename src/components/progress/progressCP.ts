@@ -1,6 +1,6 @@
 const baseStyle = {
   track: {
-    borderRadius: 'base',
+    border-radius: 'base',
   },
 }
 

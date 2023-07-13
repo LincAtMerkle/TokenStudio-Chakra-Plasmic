@@ -16,15 +16,15 @@ const baseStyleLink = defineStyle({
   transitionTimingFunction: "ease-out",
   outline: "none",
   color: "inherit",
-  textDecoration: $decor.reference,
+  text-decoration: $decor.reference,
   [$decor.variable]: "none",
   "&:not([aria-current=page])": {
     cursor: "pointer",
-    _hover: {
+   &:hover: {
       [$decor.variable]: "underline",
     },
-    _focusVisible: {
-      boxShadow: "outline",
+   &:focus-visible {
+      box-shadow: "outline",
     },
   },
 })

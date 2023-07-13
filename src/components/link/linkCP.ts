@@ -8,34 +8,34 @@ export default defineStyleConfig({
       position: 'relative',
       color: vars.color.reference,
       [vars.color.variable]: `colors.brand.600`,
-      _dark: {
+      .chakra-ui-dark &: {
         [vars.color.variable]: `colors.brand.200`,
       },
-      _before: {
+      &::before: {
         content: '""',
         position: 'absolute',
         width: 'full',
         height: '1.5px',
-        borderRadius: 'sm',
+        border-radius: 'sm',
         backgroundColor: 'accent',
         bottom: '0',
         left: '0',
-        transformOrigin: 'right',
+        transform-origin: 'right',
         transform: 'scaleX(0)',
         transition: ' transform .20s ease-in-out',
       },
-      _hover: {
-        textDecoration: 'none',
-        _before: {
-          transformOrigin: 'left',
+     &:hover: {
+        text-decoration: 'none',
+        &::before: {
+          transform-origin: 'left',
           transform: 'scaleX(1)',
         },
       },
     }),
     menu: defineStyle({
-      borderRadius: 'lg',
-      _hover: {
-        textDecoration: 'none',
+      border-radius: 'lg',
+     &:hover: {
+        text-decoration: 'none',
         bg: 'bg.subtle',
       },
     }),

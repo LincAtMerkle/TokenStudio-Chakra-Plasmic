@@ -8,37 +8,37 @@ import { cssVar } from "@chakra-ui/theme-tools"
 const { defineMultiStyleConfig, definePartsStyle } =
   createMultiStyleConfigHelpers(parts.keys)
 
-const $popperBg = cssVar("popper-bg")
-const $arrowBg = cssVar("popper-arrow-bg")
+const $popperbackground= cssVar("popper-bg")
+const $arrowbackground= cssVar("popper-arrow-bg")
 const $arrowShadowColor = cssVar("popper-arrow-shadow-color")
 
-const baseStylePopper = defineStyle({ zIndex: 10 })
+const baseStylePopper = defineStyle({ z-index: 10 })
 
 const baseStyleContent = defineStyle({
   [$popperBg.variable]: `colors.white`,
   bg: $popperBg.reference,
   [$arrowBg.variable]: $popperBg.reference,
   [$arrowShadowColor.variable]: `colors.gray.200`,
-  _dark: {
+  .chakra-ui-dark &: {
     [$popperBg.variable]: `colors.gray.700`,
     [$arrowShadowColor.variable]: `colors.whiteAlpha.300`,
   },
   width: "xs",
   border: "1px solid",
-  borderColor: "inherit",
-  borderRadius: "md",
-  boxShadow: "sm",
-  zIndex: "inherit",
-  _focusVisible: {
+  border-color: "inherit",
+  border-radius: "md",
+  box-shadow: "sm",
+  z-index: "inherit",
+ &:focus-visible {
     outline: 0,
-    boxShadow: "outline",
+    box-shadow: "outline",
   },
 })
 
 const baseStyleHeader = defineStyle({
   px: 3,
   py: 2,
-  borderBottomWidth: "1px",
+  border-bottomWidth: "1px",
 })
 
 const baseStyleBody = defineStyle({
@@ -49,12 +49,12 @@ const baseStyleBody = defineStyle({
 const baseStyleFooter = defineStyle({
   px: 3,
   py: 2,
-  borderTopWidth: "1px",
+  border-topWidth: "1px",
 })
 
 const baseStyleCloseButton = defineStyle({
   position: "absolute",
-  borderRadius: "md",
+  border-radius: "md",
   top: 1,
   insetEnd: 2,
   padding: 2,

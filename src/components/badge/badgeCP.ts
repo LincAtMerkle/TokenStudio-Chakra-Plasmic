@@ -24,15 +24,15 @@ const vars = defineCssVars('badge', ['bg', 'color', 'shadow'])
 const variants = {
   pill: defineStyle((props) => {
     const { colorScheme, theme } = props
-    const darkBg = transparentize(`${colorScheme}.200`, 0.16)(theme)
+    const darkbackground= transparentize(`${colorScheme}.200`, 0.16)(theme)
     return {
-      textTransform: 'normal',
-      fontWeight: 'medium',
-      borderRadius: '2xl',
+      text-transform: 'normal',
+      font-weight: 'medium',
+      border-radius: '2xl',
       [vars.shadow.variable]: `inset 0 0 0px 1px ${props.theme.colors[colorScheme][200]}`,
       [vars.bg.variable]: `colors.${colorScheme}.50`,
       [vars.color.variable]: `colors.${colorScheme}.700`,
-      _dark: {
+      .chakra-ui-dark &: {
         [vars.bg.variable]: darkBg,
         [vars.color.variable]: `colors.${colorScheme}.200`,
         [vars.shadow.variable]: `inset 0 0 0px 1px ${vars.color.reference}`,

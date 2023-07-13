@@ -11,23 +11,23 @@ const { definePartsStyle, defineMultiStyleConfig } =
 const $fg = cssVar("form-control-color")
 
 const baseStyleRequiredIndicator = defineStyle({
-  marginStart: "1",
+  margin-inline-start: "1",
   [$fg.variable]: "colors.red.500",
-  _dark: {
+  .chakra-ui-dark &: {
     [$fg.variable]: "colors.red.300",
   },
   color: $fg.reference,
 })
 
 const baseStyleHelperText = defineStyle({
-  mt: "2",
+ margin-top: "2",
   [$fg.variable]: "colors.gray.600",
-  _dark: {
+  .chakra-ui-dark &: {
     [$fg.variable]: "colors.whiteAlpha.600",
   },
   color: $fg.reference,
-  lineHeight: "normal",
-  fontSize: "sm",
+  line-height: "normal",
+  font-size: "sm",
 })
 
 const baseStyle = definePartsStyle({

@@ -7,7 +7,7 @@ import {
 import { getColor } from "@chakra-ui/theme-tools"
 
 const $fg = cssVar("tabs-color")
-const $bg = cssVar("tabs-bg")
+const $background= cssVar("tabs-bg")
 const $border = cssVar("tabs-border-color")
 
 const { defineMultiStyleConfig, definePartsStyle } =
@@ -27,11 +27,11 @@ const baseStyleTab = defineStyle((props) => {
     flex: isFitted ? 1 : undefined,
     transitionProperty: "common",
     transitionDuration: "normal",
-    _focusVisible: {
-      zIndex: 1,
-      boxShadow: "outline",
+   &:focus-visible {
+      z-index: 1,
+      box-shadow: "outline",
     },
-    _disabled: {
+   &:disabled {
       cursor: "not-allowed",
       opacity: 0.4,
     },
@@ -48,8 +48,8 @@ const baseStyleTablist = defineStyle((props) => {
   }
 
   return {
-    justifyContent: alignments[align],
-    flexDirection: orientation === "vertical" ? "column" : "row",
+    justify-content: alignments[align],
+    flex-direction: orientation === "vertical" ? "grid-column" : "row",
   }
 })
 
@@ -69,19 +69,19 @@ const sizes = {
     tab: {
       py: 1,
       px: 4,
-      fontSize: "sm",
+      font-size: "sm",
     },
   }),
   md: definePartsStyle({
     tab: {
-      fontSize: "md",
+      font-size: "md",
       py: 2,
       px: 4,
     },
   }),
   lg: definePartsStyle({
     tab: {
-      fontSize: "lg",
+      font-size: "lg",
       py: 3,
       px: 4,
     },
@@ -91,36 +91,36 @@ const sizes = {
 const variantLine = definePartsStyle((props) => {
   const { colorScheme: c, orientation } = props
   const isVertical = orientation === "vertical"
-  const borderProp = isVertical ? "borderStart" : "borderBottom"
-  const marginProp = isVertical ? "marginStart" : "marginBottom"
+  const borderProp = isVertical ? "	border-inline-start" : "border-bottom"
+  const marginProp = isVertical ? "margin-inline-start" : "margin-bottom"
 
   return {
     tablist: {
       [borderProp]: "2px solid",
-      borderColor: "inherit",
+      border-color: "inherit",
     },
     tab: {
       [borderProp]: "2px solid",
-      borderColor: "transparent",
+      border-color: "transparent",
       [marginProp]: "-2px",
-      _selected: {
+      &[data-selected]: {
         [$fg.variable]: `colors.${c}.600`,
-        _dark: {
+        .chakra-ui-dark &: {
           [$fg.variable]: `colors.${c}.300`,
         },
-        borderColor: "currentColor",
+        border-color: "currentColor",
       },
-      _active: {
+     &:active: {
         [$bg.variable]: "colors.gray.200",
-        _dark: {
+        .chakra-ui-dark &: {
           [$bg.variable]: "colors.whiteAlpha.300",
         },
       },
-      _disabled: {
-        _active: { bg: "none" },
+     &:disabled {
+       &:active: { bg: "none" },
       },
       color: $fg.reference,
-      bg: $bg.reference,
+      background: $bg.reference,
     },
   }
 })
@@ -129,27 +129,28 @@ const variantEnclosed = definePartsStyle((props) => {
   const { colorScheme: c } = props
   return {
     tab: {
-      borderTopRadius: "md",
+      border-top-left-radius : "md",
+      border-top-right-radius: "md",
       border: "1px solid",
-      borderColor: "transparent",
-      mb: "-1px",
+      border-color: "transparent",
+      margin-bottom: "-1px",
       [$border.variable]: "transparent",
-      _selected: {
+      &[data-selected]: {
         [$fg.variable]: `colors.${c}.600`,
         [$border.variable]: `colors.white`,
-        _dark: {
+        .chakra-ui-dark &: {
           [$fg.variable]: `colors.${c}.300`,
           [$border.variable]: `colors.gray.800`,
         },
-        borderColor: "inherit",
-        borderBottomColor: $border.reference,
+        border-color: "inherit",
+        border-bottomColor: $border.reference,
       },
       color: $fg.reference,
     },
     tablist: {
-      mb: "-1px",
-      borderBottom: "1px solid",
-      borderColor: "inherit",
+      margin-bottom: "-1px",
+      border-bottom: "1px solid",
+      border-color: "inherit",
     },
   }
 })
@@ -159,33 +160,33 @@ const variantEnclosedColored = definePartsStyle((props) => {
   return {
     tab: {
       border: "1px solid",
-      borderColor: "inherit",
+      border-color: "inherit",
       [$bg.variable]: "colors.gray.50",
-      _dark: {
+      .chakra-ui-dark &: {
         [$bg.variable]: "colors.whiteAlpha.50",
       },
-      mb: "-1px",
-      _notLast: {
-        marginEnd: "-1px",
+      margin-bottom: "-1px",
+      &:not(:last-of-type): {
+        margin-inline-end: "-1px",
       },
-      _selected: {
+      &[data-selected]: {
         [$bg.variable]: "colors.white",
         [$fg.variable]: `colors.${c}.600`,
-        _dark: {
+        .chakra-ui-dark &: {
           [$bg.variable]: "colors.gray.800",
           [$fg.variable]: `colors.${c}.300`,
         },
-        borderColor: "inherit",
-        borderTopColor: "currentColor",
-        borderBottomColor: "transparent",
+        border-color: "inherit",
+        border-topColor: "currentColor",
+        border-bottomColor: "transparent",
       },
       color: $fg.reference,
-      bg: $bg.reference,
+      background: $bg.reference,
     },
     tablist: {
-      mb: "-1px",
-      borderBottom: "1px solid",
-      borderColor: "inherit",
+      margin-bottom: "-1px",
+      border-bottom: "1px solid",
+      border-color: "inherit",
     },
   }
 })
@@ -194,10 +195,10 @@ const variantSoftRounded = definePartsStyle((props) => {
   const { colorScheme: c, theme } = props
   return {
     tab: {
-      borderRadius: "full",
-      fontWeight: "semibold",
+      border-radius: "full",
+      font-weight: "semibold",
       color: "gray.600",
-      _selected: {
+      &[data-selected]: {
         color: getColor(theme, `${c}.700`),
         bg: getColor(theme, `${c}.100`),
       },
@@ -209,22 +210,22 @@ const variantSolidRounded = definePartsStyle((props) => {
   const { colorScheme: c } = props
   return {
     tab: {
-      borderRadius: "full",
-      fontWeight: "semibold",
+      border-radius: "full",
+      font-weight: "semibold",
       [$fg.variable]: "colors.gray.600",
-      _dark: {
+      .chakra-ui-dark &: {
         [$fg.variable]: "inherit",
       },
-      _selected: {
+      &[data-selected]: {
         [$fg.variable]: "colors.white",
         [$bg.variable]: `colors.${c}.600`,
-        _dark: {
+        .chakra-ui-dark &: {
           [$fg.variable]: "colors.gray.800",
           [$bg.variable]: `colors.${c}.300`,
         },
       },
       color: $fg.reference,
-      bg: $bg.reference,
+      background: $bg.reference,
     },
   }
 })

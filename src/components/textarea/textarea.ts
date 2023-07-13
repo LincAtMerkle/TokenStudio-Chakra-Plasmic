@@ -3,10 +3,11 @@ import { inputTheme } from "./input"
 
 const baseStyle = defineStyle({
   ...inputTheme.baseStyle?.field,
-  paddingY: "2",
-  minHeight: "20",
-  lineHeight: "short",
-  verticalAlign: "top",
+  padding-bottom: "2",
+  padding-top: "2",
+  min-height: "20",
+  line-height: "short",
+  vertical-align: "top",
 })
 
 const variants = {

@@ -73,7 +73,7 @@ import {
         iconColor: "btn-primary1-active-icon-color";
       }
 
-      ._disabled {
+      &[disabled] {
         background: "btn-primary1-disabled-background-color";
         color: "btn-primary1-disabled-text-color";
         border-color: "btn-primary1-disabled-border-color";
@@ -102,7 +102,7 @@ import {
         iconColor: "btn-primary2-active-icon-color";
       }
 
-      ._disabled {
+      &[disabled] {
         background: "btn-primary2-disabled-background-color";
         color: "btn-primary2-disabled-text-color";
         border-color: "btn-primary2-disabled-border-color";
@@ -130,7 +130,7 @@ import {
         iconColor: "btn-secondary1-active-icon-color";
       }
 
-      ._disabled {
+      &[disabled] {
         background: "btn-secondary1-disabled-background-color";
         color: "btn-secondary1-disabled-text-color";
         border-color: "btn-secondary1-disabled-border-color";
@@ -158,7 +158,7 @@ import {
         iconColor: "btn-secondary2-active-icon-color";
       }
 
-      ._disabled {
+      &[disabled] {
         background: "btn-secondary2-disabled-background-color";
         color: "btn-secondary2-disabled-text-color";
         border-color: "btn-secondary2-disabled-border-color";
@@ -186,7 +186,7 @@ import {
         iconColor: "btn-negative-active-icon-color";
       }
 
-      ._disabled {
+      &[disabled] {
         background: "btn-negative-disabled-background-color";
         color: "btn-negative-disabled-text-color";
         border-color: "btn-negative-disabled-border-color";
@@ -214,7 +214,7 @@ import {
         iconColor: "btn-ghost-active-icon-color";
       }
 
-      ._disabled {
+      &[disabled] {
         background: "btn-ghost-disabled-background-color";
         color: "btn-ghost-disabled-text-color";
         border-color: "btn-ghost-disabled-border-color";
@@ -242,7 +242,7 @@ import {
         iconColor: "btn-outline-active-icon-color";
       }
 
-      ._disabled {
+      &[disabled] {
         background: "btn-outline-disabled-background-color";
         color: "btn-outline-disabled-text-color";
         border-color: "btn-outline-disabled-border-color";
@@ -270,7 +270,7 @@ import {
         iconColor: "btn-solid-active-icon-color";
       }
 
-      ._disabled {
+      &[disabled] {
         background: "btn-solid-disabled-background-color";
         color: "btn-solid-disabled-text-color";
         border-color: "btn-solid-disabled-border-color";
@@ -290,7 +290,7 @@ import {
         color: "btn-link-active-text-color";
       }
 
-      ._disabled {
+      &[disabled] {
         color: "btn-link-disabled-text-color";
       }
 
@@ -307,7 +307,7 @@ import {
         color: var(--);
       }
 
-      ._disabled {
+      &[disabled] {
         color: var(--);
       }
     }

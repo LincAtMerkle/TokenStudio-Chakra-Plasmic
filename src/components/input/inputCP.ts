@@ -5,44 +5,44 @@ const { definePartsStyle, defineMultiStyleConfig } = createMultiStyleConfigHelpe
 
 const baseStyle = definePartsStyle({
   field: {
-    _disabled: {
+   &:disabled {
       opacity: 1.0,
     },
-    _placeholder: {
+    &::placeholder: {
       opacity: 1,
       color: 'fg.subtle',
     },
   },
 })
 
-const vars = defineCssVars('input', ['bg', 'borderColor'])
+const vars = defineCssVars('input', ['bg', 'border-color'])
 
 const variants = {
   outline: definePartsStyle((props) => ({
     field: {
-      borderRadius: 'lg',
-      borderColor: 'border.emphasized',
+      border-radius: 'lg',
+      border-color: 'border.emphasized',
       bg: vars.bg.reference,
       [vars.bg.variable]: `white`,
-      _dark: {
+      .chakra-ui-dark &: {
         [vars.bg.variable]: `gray.800`,
       },
-      _hover: {
-        borderColor: 'border.active',
+     &:hover: {
+        border-color: 'border.active',
       },
-      _focusVisible: {
-        zIndex: 1,
-        borderColor: 'brand.500',
-        boxShadow: `0 0 0 1px ${props.theme.colors[props.colorScheme]['500']}`,
-        _dark: {
-          borderColor: 'brand.200',
-          boxShadow: `0 0 0 1px ${props.theme.colors[props.colorScheme]['200']}`,
+     &:focus-visible {
+        z-index: 1,
+        border-color: 'brand.500',
+        box-shadow: `0 0 0 1px ${props.theme.colors[props.colorScheme]['500']}`,
+        .chakra-ui-dark &: {
+          border-color: 'brand.200',
+          box-shadow: `0 0 0 1px ${props.theme.colors[props.colorScheme]['200']}`,
         },
       },
     },
     addon: {
-      borderRadius: 'lg',
-      borderColor: 'border.emphasized',
+      border-radius: 'lg',
+      border-color: 'border.emphasized',
       bg: 'bg.subtle',
     },
   })),
@@ -50,18 +50,18 @@ const variants = {
   'filled.accent': definePartsStyle({
     field: {
       bg: 'bg.accent.subtle',
-      borderWidth: '2px',
-      borderColor: 'transparent',
-      borderRadius: 'lg',
+      border-width: '2px',
+      border-color: 'transparent',
+      border-radius: 'lg',
       color: 'fg.accent.default',
-      _placeholder: {
+      &::placeholder: {
         color: 'fg.accent.muted',
       },
-      _hover: {
-        borderColor: 'bg.accent.muted',
+     &:hover: {
+        border-color: 'bg.accent.muted',
       },
-      _focusVisible: {
-        borderColor: 'brand.300',
+     &:focus-visible {
+        border-color: 'brand.300',
       },
     },
   }),
@@ -69,16 +69,16 @@ const variants = {
 
 const sizes = {
   sm: definePartsStyle({
-    field: { px: 2.5, h: 9, fontSize: 'sm' },
+    field: { px: 2.5, h: 9, font-size: 'sm' },
   }),
   md: definePartsStyle({
-    field: { px: 3, h: 10, fontSize: 'md' },
+    field: { px: 3, h: 10, font-size: 'md' },
   }),
   lg: definePartsStyle({
-    field: { px: 3.5, h: 11, fontSize: 'md' },
+    field: { px: 3.5, h: 11, font-size: 'md' },
   }),
   xl: definePartsStyle({
-    field: { px: 4, h: 12, fontSize: 'md' },
+    field: { px: 4, h: 12, font-size: 'md' },
   }),
 }
 

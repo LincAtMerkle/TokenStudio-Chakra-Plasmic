@@ -4,22 +4,22 @@ import { createMultiStyleConfigHelpers, cssVar } from "@chakra-ui/styled-system"
 const { definePartsStyle, defineMultiStyleConfig } =
   createMultiStyleConfigHelpers(parts.keys)
 
-const $bg = cssVar("card-bg")
+const $background= cssVar("card-bg")
 const $padding = cssVar("card-padding")
 const $shadow = cssVar("card-shadow")
 const $radius = cssVar("card-radius")
 const $border = cssVar("card-border-width", "0")
-const $borderColor = cssVar("card-border-color")
+const $border-color = cssVar("card-border-color")
 
 const baseStyle = definePartsStyle({
   container: {
     [$bg.variable]: "colors.chakra-body-bg",
     backgroundColor: $bg.reference,
-    boxShadow: $shadow.reference,
-    borderRadius: $radius.reference,
+    box-shadow: $shadow.reference,
+    border-radius: $radius.reference,
     color: "chakra-body-text",
-    borderWidth: $border.reference,
-    borderColor: $borderColor.reference,
+    border-width: $border.reference,
+    border-color: $border-color.reference,
   },
   body: {
     padding: $padding.reference,
@@ -58,7 +58,7 @@ const variants = {
   elevated: definePartsStyle({
     container: {
       [$shadow.variable]: "shadows.base",
-      _dark: {
+      .chakra-ui-dark &: {
         [$bg.variable]: "colors.gray.700",
       },
     },
@@ -66,7 +66,7 @@ const variants = {
   outline: definePartsStyle({
     container: {
       [$border.variable]: "1px",
-      [$borderColor.variable]: "colors.chakra-border-color",
+      [$border-color.variable]: "colors.chakra-border-color",
     },
   }),
   filled: definePartsStyle({
