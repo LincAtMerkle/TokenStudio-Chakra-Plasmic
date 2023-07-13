@@ -4,13 +4,14 @@ import { badgeTheme, badgeVars as vars } from "./badge"
 const { variants, defaultProps } = badgeTheme
 
 const baseStyle = defineStyle({
-  fontFamily: "mono",
-  fontSize: "sm",
-  px: "0.2em",
-  borderRadius: "sm",
+  font-family: "mono",
+  font-size: "sm",
+ padding-inline-start: "0.2em",
+padding-inline-end: "0.2em",
+  border-radius: "sm",
   bg: vars.bg.reference,
   color: vars.color.reference,
-  boxShadow: vars.shadow.reference,
+  box-shadow: vars.shadow.reference,
 })
 
 export const codeTheme = defineStyleConfig({

@@ -15,26 +15,26 @@ const baseStyle = definePartsStyle({
     width: "full",
   },
   th: {
-    fontFamily: "heading",
-    fontWeight: "bold",
-    textTransform: "uppercase",
-    letterSpacing: "wider",
-    textAlign: "start",
+    font-family: "heading",
+    font-weight: "bold",
+    text-transform: "uppercase",
+    letter-spacing: "wider",
+    text-align: "start",
   },
   td: {
-    textAlign: "start",
+    text-align: "start",
   },
   caption: {
     mt: 4,
-    fontFamily: "heading",
-    textAlign: "center",
-    fontWeight: "medium",
+    font-family: "heading",
+    text-align: "center",
+    font-weight: "medium",
   },
 })
 
 const numericStyles = defineStyle({
   "&[data-is-numeric=true]": {
-    textAlign: "end",
+    text-align: "end",
   },
 })
 
@@ -44,13 +44,13 @@ const variantSimple = definePartsStyle((props) => {
   return {
     th: {
       color: mode("gray.600", "gray.400")(props),
-      borderBottom: "1px",
-      borderColor: mode(`${c}.100`, `${c}.700`)(props),
+      border-bottom: "1px",
+      border-color: mode(`${c}.100`, `${c}.700`)(props),
       ...numericStyles,
     },
     td: {
-      borderBottom: "1px",
-      borderColor: mode(`${c}.100`, `${c}.700`)(props),
+      border-bottom: "1px",
+      border-color: mode(`${c}.100`, `${c}.700`)(props),
       ...numericStyles,
     },
     caption: {
@@ -59,7 +59,7 @@ const variantSimple = definePartsStyle((props) => {
     tfoot: {
       tr: {
         "&:last-of-type": {
-          th: { borderBottomWidth: 0 },
+          th: { border-bottomWidth: 0 },
         },
       },
     },
@@ -72,13 +72,13 @@ const variantStripe = definePartsStyle((props) => {
   return {
     th: {
       color: mode("gray.600", "gray.400")(props),
-      borderBottom: "1px",
-      borderColor: mode(`${c}.100`, `${c}.700`)(props),
+      border-bottom: "1px",
+      border-color: mode(`${c}.100`, `${c}.700`)(props),
       ...numericStyles,
     },
     td: {
-      borderBottom: "1px",
-      borderColor: mode(`${c}.100`, `${c}.700`)(props),
+      border-bottom: "1px",
+      border-color: mode(`${c}.100`, `${c}.700`)(props),
       ...numericStyles,
     },
     caption: {
@@ -88,8 +88,8 @@ const variantStripe = definePartsStyle((props) => {
       tr: {
         "&:nth-of-type(odd)": {
           "th, td": {
-            borderBottomWidth: "1px",
-            borderColor: mode(`${c}.100`, `${c}.700`)(props),
+            border-bottomWidth: "1px",
+            border-color: mode(`${c}.100`, `${c}.700`)(props),
           },
           td: {
             background: mode(`${c}.100`, `${c}.700`)(props),
@@ -100,7 +100,7 @@ const variantStripe = definePartsStyle((props) => {
     tfoot: {
       tr: {
         "&:last-of-type": {
-          th: { borderBottomWidth: 0 },
+          th: { border-bottomWidth: 0 },
         },
       },
     },
@@ -116,57 +116,73 @@ const variants = {
 const sizes = {
   sm: definePartsStyle({
     th: {
-      px: "4",
-      py: "1",
-      lineHeight: "4",
-      fontSize: "xs",
+     padding-inline-start: "4",
+padding-inline-end: "4",
+     padding-top: "1",
+padding-bottom: "1",
+      line-height: "4",
+      font-size: "xs",
     },
     td: {
-      px: "4",
-      py: "2",
-      fontSize: "sm",
-      lineHeight: "4",
+     padding-inline-start: "4",
+padding-inline-end: "4",
+     padding-top: "2",
+padding-bottom: "2",
+      font-size: "sm",
+      line-height: "4",
     },
     caption: {
-      px: "4",
-      py: "2",
-      fontSize: "xs",
+     padding-inline-start: "4",
+padding-inline-end: "4",
+     padding-top: "2",
+padding-bottom: "2",
+      font-size: "xs",
     },
   }),
   md: definePartsStyle({
     th: {
-      px: "6",
-      py: "3",
-      lineHeight: "4",
-      fontSize: "xs",
+     padding-inline-start: "6",
+padding-inline-end: "6",
+     padding-top: "3",
+padding-bottom: "3",
+      line-height: "4",
+      font-size: "xs",
     },
     td: {
-      px: "6",
-      py: "4",
-      lineHeight: "5",
+     padding-inline-start: "6",
+padding-inline-end: "6",
+     padding-top: "4",
+padding-bottom: "4",
+      line-height: "5",
     },
     caption: {
-      px: "6",
-      py: "2",
-      fontSize: "sm",
+     padding-inline-start: "6",
+padding-inline-end: "6",
+     padding-top: "2",
+padding-bottom: "2",
+      font-size: "sm",
     },
   }),
   lg: definePartsStyle({
     th: {
       px: "8",
-      py: "4",
-      lineHeight: "5",
-      fontSize: "sm",
+     padding-top: "4",
+padding-bottom: "4",
+      line-height: "5",
+      font-size: "sm",
     },
     td: {
       px: "8",
       py: "5",
-      lineHeight: "6",
+      
+      line-height: "6",
     },
     caption: {
-      px: "6",
-      py: "2",
-      fontSize: "md",
+     padding-inline-start: "6",
+padding-inline-end: "6",
+     padding-top: "2",
+padding-bottom: "2",
+      font-size: "md",
     },
   }),
 }
