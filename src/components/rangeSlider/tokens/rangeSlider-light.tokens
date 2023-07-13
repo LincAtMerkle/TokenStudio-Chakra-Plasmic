@@ -3,5 +3,5 @@
  */
 
 :host {
-  --range-slider-xs-icon-size: sm;
+  --rangeslider-xs-icon-size: sm;
 }

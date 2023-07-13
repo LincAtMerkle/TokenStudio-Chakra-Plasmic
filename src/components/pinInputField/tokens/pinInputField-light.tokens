@@ -3,5 +3,5 @@
  */
 
 :host {
-  --pin-input-field-xs-icon-size: sm;
+  --pininputfield-xs-icon-size: sm;
 }

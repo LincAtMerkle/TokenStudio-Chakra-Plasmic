@@ -3,5 +3,5 @@
  */
 
 :host {
-  --link-overlay-xs-icon-size: sm;
+  --linkoverlay-xs-icon-size: sm;
 }

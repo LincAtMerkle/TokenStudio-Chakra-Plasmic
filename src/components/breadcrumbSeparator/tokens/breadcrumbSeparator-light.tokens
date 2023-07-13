@@ -3,5 +3,5 @@
  */
 
 :host {
-  --breadcrumb-separator-xs-icon-size: sm;
+  --breadcrumbseparator-xs-icon-size: sm;
 }

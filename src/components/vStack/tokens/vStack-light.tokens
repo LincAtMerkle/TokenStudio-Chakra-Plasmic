@@ -3,5 +3,5 @@
  */
 
 :host {
-  --v-stack-xs-icon-size: sm;
+  --vstack-xs-icon-size: sm;
 }

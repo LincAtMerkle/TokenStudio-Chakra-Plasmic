@@ -1,0 +1,12 @@
+{
+  "tokenSetOrder": [
+    "core/border",
+    "core/color",
+    "core/opacity",
+    "core/size",
+    "core/space",
+    "core/typography",
+    "comp/button",
+    "semantic/light"
+  ]
+}

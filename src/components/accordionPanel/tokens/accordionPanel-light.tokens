@@ -3,5 +3,5 @@
  */
 
 :host {
-  --accordion-panel-xs-icon-size: sm;
+  --accordionpanel-xs-icon-size: sm;
 }

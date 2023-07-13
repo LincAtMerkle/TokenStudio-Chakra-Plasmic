@@ -150,13 +150,5 @@
       "value": "{semantic.border-width.inputs}",
       "type": "borderWidth"
     }
-  },
-  "semantic": {
-    "border-radius": {
-      "inputs": {
-        "value": "{semantic.border.radius.medium}",
-        "type": "borderRadius"
-      }
-    }
   }
 }

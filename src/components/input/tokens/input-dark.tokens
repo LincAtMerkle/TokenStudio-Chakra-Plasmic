@@ -19,7 +19,7 @@
   --input-lg-padding-right: 16px;
   --input-lg-text-size: 18px;
   --input-space-between: 8px;
-  --input-border-radius: 4px;
+  --input-border-radius: 0px;
   --input-border-width: 1px;
   --input-default-outlined-border-color: #F94F35;
   --input-default-outlined-background-color: #861217;

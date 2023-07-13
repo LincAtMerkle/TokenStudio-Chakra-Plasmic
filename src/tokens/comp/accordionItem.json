@@ -1,9 +1,11 @@
 {
-    "accordionItem": {
-      "xs": {
-        "icon-size": {
-          "value": "sm",
-          "type": "sizing"
+    "accordionitem": {
+      "primary": {
+        "default": {
+          "color": {
+            "value": "#ffff00",
+            "type": "color"
+          }
         }
       }
     }

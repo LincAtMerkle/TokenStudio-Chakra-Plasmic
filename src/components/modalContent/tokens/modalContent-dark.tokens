@@ -3,5 +3,5 @@
  */
 
 :host {
-  --modal-content-xs-icon-size: sm;
+  --modalcontent-xs-icon-size: sm;
 }

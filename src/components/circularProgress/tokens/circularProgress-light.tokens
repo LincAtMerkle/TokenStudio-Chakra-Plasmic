@@ -3,5 +3,5 @@
  */
 
 :host {
-  --circular-progress-xs-icon-size: sm;
+  --circularprogress-xs-icon-size: sm;
 }

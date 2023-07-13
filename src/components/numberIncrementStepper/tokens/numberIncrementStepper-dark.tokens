@@ -3,5 +3,5 @@
  */
 
 :host {
-  --number-increment-stepper-xs-icon-size: sm;
+  --numberincrementstepper-xs-icon-size: sm;
 }

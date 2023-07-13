@@ -1,0 +1,17 @@
+[
+  {
+    "id": "b9d577a0fc351944cee77506bfb7d66d1fc419f7",
+    "name": "light",
+    "selectedTokenSets": {
+      "core/border": "source",
+      "core/color": "source",
+      "core/opacity": "source",
+      "core/size": "source",
+      "core/space": "source",
+      "core/typography": "source",
+      "semantic/light": "enabled",
+      "comp/button": "enabled"
+    },
+    "$figmaStyleReferences": {}
+  }
+]

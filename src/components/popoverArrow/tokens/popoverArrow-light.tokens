@@ -3,5 +3,5 @@
  */
 
 :host {
-  --popover-arrow-xs-icon-size: sm;
+  --popoverarrow-xs-icon-size: sm;
 }

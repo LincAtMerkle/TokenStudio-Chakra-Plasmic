@@ -3,5 +3,5 @@
  */
 
 :host {
-  --aspect-ratio-xs-icon-size: sm;
+  --aspectratio-xs-icon-size: sm;
 }

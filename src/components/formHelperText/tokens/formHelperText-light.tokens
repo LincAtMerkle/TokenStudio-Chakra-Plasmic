@@ -3,5 +3,5 @@
  */
 
 :host {
-  --form-helper-text-xs-icon-size: sm;
+  --formhelpertext-xs-icon-size: sm;
 }

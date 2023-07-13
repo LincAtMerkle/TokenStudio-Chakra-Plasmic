@@ -3,5 +3,5 @@
  */
 
 :host {
-  --radio-group-xs-icon-size: sm;
+  --radiogroup-xs-icon-size: sm;
 }

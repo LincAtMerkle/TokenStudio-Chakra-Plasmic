@@ -3,5 +3,5 @@
  */
 
 :host {
-  --number-input-field-xs-icon-size: sm;
+  --numberinputfield-xs-icon-size: sm;
 }

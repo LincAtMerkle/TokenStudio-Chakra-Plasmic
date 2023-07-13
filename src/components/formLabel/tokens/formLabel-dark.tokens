@@ -3,5 +3,5 @@
  */
 
 :host {
-  --form-label-xs-icon-size: sm;
+  --formlabel-xs-icon-size: sm;
 }

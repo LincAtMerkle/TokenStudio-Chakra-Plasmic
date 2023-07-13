@@ -3,5 +3,5 @@
  */
 
 :host {
-  --tab-panel-xs-icon-size: sm;
+  --tabpanel-xs-icon-size: sm;
 }

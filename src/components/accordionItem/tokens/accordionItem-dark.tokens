@@ -3,5 +3,5 @@
  */
 
 :host {
-  --accordion-item-xs-icon-size: sm;
+  --accordionitem-primary-default-color: #ffff00;
 }

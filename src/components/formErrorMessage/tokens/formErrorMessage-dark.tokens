@@ -3,5 +3,5 @@
  */
 
 :host {
-  --form-error-message-xs-icon-size: sm;
+  --formerrormessage-xs-icon-size: sm;
 }

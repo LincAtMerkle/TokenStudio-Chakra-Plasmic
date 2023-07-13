@@ -3,5 +3,5 @@
  */
 
 :host {
-  --avatar-group-xs-icon-size: sm;
+  --avatargroup-xs-icon-size: sm;
 }

@@ -3,5 +3,5 @@
  */
 
 :host {
-  --simple-grid-xs-icon-size: sm;
+  --simplegrid-xs-icon-size: sm;
 }

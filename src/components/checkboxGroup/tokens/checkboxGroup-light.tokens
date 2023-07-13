@@ -3,5 +3,5 @@
  */
 
 :host {
-  --checkbox-group-xs-icon-size: sm;
+  --checkboxgroup-xs-icon-size: sm;
 }

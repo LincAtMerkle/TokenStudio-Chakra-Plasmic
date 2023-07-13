@@ -3,5 +3,5 @@
  */
 
 :host {
-  --button-group-xs-icon-size: sm;
+  --buttongroup-xs-icon-size: sm;
 }

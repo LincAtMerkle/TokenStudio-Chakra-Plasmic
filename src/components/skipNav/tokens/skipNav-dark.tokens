@@ -3,5 +3,5 @@
  */
 
 :host {
-  --skip-nav-xs-icon-size: sm;
+  --skipnav-xs-icon-size: sm;
 }

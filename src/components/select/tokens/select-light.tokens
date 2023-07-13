@@ -13,7 +13,7 @@
   --select-lg-icon-size: 20px;
   --select-lg-text-size: 18px;
   --select-space-between: 12px;
-  --select-border-radius: 4px;
+  --select-border-radius: 0px;
   --select-border-width: 1px;
   --select-default-border-color: #FF9788;
   --select-default-background-color: #ffffff;

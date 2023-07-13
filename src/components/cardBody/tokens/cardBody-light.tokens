@@ -3,5 +3,5 @@
  */
 
 :host {
-  --card-body-xs-icon-size: sm;
+  --cardbody-xs-icon-size: sm;
 }

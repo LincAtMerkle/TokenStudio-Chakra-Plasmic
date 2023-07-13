@@ -13,7 +13,7 @@
   --heading-4xl-text-size: 60px;
   --heading-light-font-weight: 300;
   --heading-regular-font-weight: 400;
-  --heading-semi-bold-font-weight: Semi Bold;
+  --heading-semibold-font-weight: 600;
   --heading-bold-font-weight: 700;
   --heading-font-family: Inter;
   --heading-text-color: #F23A1D;

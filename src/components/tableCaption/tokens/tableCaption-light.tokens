@@ -3,5 +3,5 @@
  */
 
 :host {
-  --table-caption-xs-icon-size: sm;
+  --tablecaption-xs-icon-size: sm;
 }

@@ -1,4 +1,7 @@
 .accordionitem__container {
-    background: #ffff00;
-    color: #ff0000;
+
+}
+
+.accordionitem__primary {
+    background-color: var(--accordionitem-primary-default-color);
 }

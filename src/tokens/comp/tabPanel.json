@@ -1,5 +1,5 @@
 {
-    "tabPanel": {
+    "tabpanel": {
       "xs": {
         "icon-size": {
           "value": "sm",

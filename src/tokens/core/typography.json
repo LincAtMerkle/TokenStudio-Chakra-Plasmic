@@ -142,8 +142,8 @@
     }
   },
   "font-weight": {
-    "semiBold": {
-      "value": "Semi Bold",
+    "semibold": {
+      "value": "semibold",
       "type": "fontWeights",
       "default": "600"
     },

@@ -3,5 +3,5 @@
  */
 
 :host {
-  --tab-list-xs-icon-size: sm;
+  --tablist-xs-icon-size: sm;
 }

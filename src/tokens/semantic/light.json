@@ -2080,7 +2080,7 @@
     },
     "font-weight": {
       "actions": {
-        "value": "{font-weight.semiBold}",
+        "value": "{font-weight.semibold}",
         "type": "fontWeights"
       },
       "inputs": {
@@ -2093,7 +2093,7 @@
           "type": "fontWeights"
         },
         "bold": {
-          "value": "{font-weight.semiBold}",
+          "value": "{font-weight.bold}",
           "type": "fontWeights"
         }
       },
@@ -2107,11 +2107,11 @@
           "type": "fontWeights"
         },
         "semibold": {
-          "value": "{font-weight.semiBold}",
+          "value": "{font-weight.semibold}",
           "type": "fontWeights"
         },
         "bold": {
-          "value": "{font-weight.semiBold}",
+          "value": "{font-weight.semibold}",
           "type": "fontWeights"
         }
       },
@@ -2122,7 +2122,7 @@
     },
     "border-radius": {
       "actions": {
-        "value": "{border-radius.4}",
+        "value": "{border-radius.0}",
         "type": "borderRadius"
       },
       "inputs": {
@@ -2385,6 +2385,10 @@
       }
     },
     "line-height": {
+      "actions": {
+        "value": "{line-height.1}",
+        "type": "lineHeights"
+      },
       "typography": {
         "heading": {
           "value": "{line-height.120}",

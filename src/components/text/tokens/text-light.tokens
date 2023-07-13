@@ -16,7 +16,7 @@
   --text-font-family: Inter;
   --text-light-font-weight: 300;
   --text-regular-font-weight: 400;
-  --text-semi-bold-font-weight: Semi Bold;
+  --text-semibold-font-weight: 600;
   --text-bold-font-weight: 700;
   --text-text-color: #F23A1D;
   --text-line-height: 1.5;

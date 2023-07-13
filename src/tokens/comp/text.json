@@ -76,7 +76,7 @@
         "type": "fontWeights"
       }
     },
-    "semi-bold": {
+    "semibold": {
       "font-weight": {
         "value": "{semantic.font-weight.typography.semibold}",
         "type": "fontWeights"

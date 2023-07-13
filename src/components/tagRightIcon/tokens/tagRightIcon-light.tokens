@@ -3,5 +3,5 @@
  */
 
 :host {
-  --tag-right-icon-xs-icon-size: sm;
+  --tagrighticon-xs-icon-size: sm;
 }
