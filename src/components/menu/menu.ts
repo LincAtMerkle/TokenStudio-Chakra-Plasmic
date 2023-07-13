@@ -1,9 +1,7 @@
-import { menuAnatomy as parts } from "@chakra-ui/anatomy"
-import {
-  createMultiStyleConfigHelpers,
-  cssVar,
+
+
   defineStyle,
-} from "@chakra-ui/styled-system"
+
 
 const { defineMultiStyleConfig, definePartsStyle } =
   createMultiStyleConfigHelpers(parts.keys)
@@ -86,8 +84,8 @@ const baseStyleButton = defineStyle({
   transitionDuration: "normal",
 })
 
-const baseStyle = definePartsStyle({
-  button: baseStyleButton,
+
+  
   list: baseStyleList,
   item: baseStyleItem,
   groupTitle: baseStyleGroupTitle,
@@ -95,6 +93,4 @@ const baseStyle = definePartsStyle({
   divider: baseStyleDivider,
 })
 
-export const menuTheme = defineMultiStyleConfig({
-  baseStyle,
-})
+  })

@@ -1,14 +1,11 @@
-import { checkboxAnatomy as parts } from "@chakra-ui/anatomy"
-import {
-  createMultiStyleConfigHelpers,
-  cssVar,
+
+
   defineStyle,
-} from "@chakra-ui/styled-system"
-import { mode } from "@chakra-ui/theme-tools"
+
+
 import { runIfFn } from "../utils/run-if-fn"
 
-const { definePartsStyle, defineMultiStyleConfig } =
-  createMultiStyleConfigHelpers(parts.keys)
+
 
 const $size = cssVar("checkbox-size")
 
@@ -78,8 +75,8 @@ const baseStyleIcon = defineStyle({
 })
 
 const baseStyle = definePartsStyle((props) => ({
-  icon: baseStyleIcon,
-  container: baseStyleContainer,
+  
+  
   control: runIfFn(baseStyleControl, props),
   label: baseStyleLabel,
 }))
@@ -102,10 +99,8 @@ const sizes = {
   }),
 }
 
-export const checkboxTheme = defineMultiStyleConfig({
-  baseStyle,
-  sizes,
-  defaultProps: {
+    sizes,
+  
     size: "md",
     colorScheme: "blue",
   },

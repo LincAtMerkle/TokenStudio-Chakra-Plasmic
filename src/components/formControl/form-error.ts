@@ -1,12 +1,9 @@
-import { formErrorAnatomy as parts } from "@chakra-ui/anatomy"
-import {
-  createMultiStyleConfigHelpers,
-  cssVar,
-  defineStyle,
-} from "@chakra-ui/styled-system"
 
-const { definePartsStyle, defineMultiStyleConfig } =
-  createMultiStyleConfigHelpers(parts.keys)
+
+  defineStyle,
+
+
+
 
 const $fg = cssVar("form-error-color")
 
@@ -30,11 +27,9 @@ const baseStyleIcon = defineStyle({
   color: $fg.reference,
 })
 
-const baseStyle = definePartsStyle({
+
   text: baseStyleText,
-  icon: baseStyleIcon,
+  
 })
 
-export const formErrorTheme = defineMultiStyleConfig({
-  baseStyle,
-})
+  })

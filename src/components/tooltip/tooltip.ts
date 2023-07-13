@@ -1,5 +1,5 @@
-import { defineStyle, defineStyleConfig } from "@chakra-ui/styled-system"
-import { cssVar } from "@chakra-ui/theme-tools"
+import { defineStyle, defineStyleConfig 
+
 
 const $background= cssVar("tooltip-bg")
 const $fg = cssVar("tooltip-fg")
@@ -28,5 +28,4 @@ const baseStyle = defineStyle({
 })
 
 export const tooltipTheme = defineStyleConfig({
-  baseStyle,
-})
+  })

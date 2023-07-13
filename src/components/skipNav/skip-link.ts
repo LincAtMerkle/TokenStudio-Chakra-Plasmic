@@ -2,7 +2,7 @@ import {
   cssVar,
   defineStyle,
   defineStyleConfig,
-} from "@chakra-ui/styled-system"
+
 
 const $background= cssVar("skip-link-bg")
 
@@ -24,5 +24,4 @@ const baseStyle = defineStyle({
 })
 
 export const skipLinkTheme = defineStyleConfig({
-  baseStyle,
-})
+  })

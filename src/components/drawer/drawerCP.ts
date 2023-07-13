@@ -3,7 +3,7 @@ import { createMultiStyleConfigHelpers } from '@chakra-ui/styled-system'
 
 const { defineMultiStyleConfig, definePartsStyle } = createMultiStyleConfigHelpers(parts.keys)
 
-const baseStyle = definePartsStyle({
+
   header: {
     px: { base: 4, md: 6 },
     pt: 6,

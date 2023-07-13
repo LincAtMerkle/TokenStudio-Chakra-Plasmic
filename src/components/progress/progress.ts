@@ -1,9 +1,6 @@
-import { progressAnatomy as parts } from "@chakra-ui/anatomy"
-import {
-  createMultiStyleConfigHelpers,
-  defineStyle,
-} from "@chakra-ui/styled-system"
-import { generateStripe, getColorVar, mode } from "@chakra-ui/theme-tools"
+
+
+
 
 const { defineMultiStyleConfig, definePartsStyle } =
   createMultiStyleConfigHelpers(parts.keys)
@@ -75,10 +72,8 @@ const sizes = {
   }),
 }
 
-export const progressTheme = defineMultiStyleConfig({
   sizes,
-  baseStyle,
-  defaultProps: {
+    
     size: "md",
     colorScheme: "blue",
   },

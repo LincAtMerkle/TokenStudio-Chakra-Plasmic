@@ -1,5 +1,5 @@
-import { defineStyle, defineStyleConfig } from "@chakra-ui/styled-system"
-import { cssVar } from "@chakra-ui/theme-tools"
+import { defineStyle, defineStyleConfig 
+
 
 const $size = cssVar("spinner-size")
 
@@ -27,9 +27,8 @@ const sizes = {
 }
 
 export const spinnerTheme = defineStyleConfig({
-  baseStyle,
-  sizes,
-  defaultProps: {
+    sizes,
+  
     size: "md",
   },
 })

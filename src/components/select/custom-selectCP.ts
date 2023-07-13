@@ -24,7 +24,7 @@ const baseStyle = {
   },
 }
 
-const variants = {
+
   outline: (props: StyleFunctionProps) => ({
     menu: {
       bg: mode('white', 'gray.800')(props),
@@ -134,10 +134,8 @@ const sizes = {
 
 export default {
   parts,
-  baseStyle,
-  variants,
-  sizes,
-  defaultProps: {
+      sizes,
+  
     size: 'md',
     variant: 'outline',
     colorScheme: 'brand',

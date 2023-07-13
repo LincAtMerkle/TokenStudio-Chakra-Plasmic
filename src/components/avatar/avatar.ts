@@ -1,15 +1,12 @@
-import { avatarAnatomy as parts } from "@chakra-ui/anatomy"
-import {
-  createMultiStyleConfigHelpers,
-  cssVar,
+
+
   defineStyle,
-} from "@chakra-ui/styled-system"
-import { isDark, randomColor } from "@chakra-ui/theme-tools"
+
+
 import themeSizes from "../foundations/sizes"
 import { runIfFn } from "../utils/run-if-fn"
 
-const { definePartsStyle, defineMultiStyleConfig } =
-  createMultiStyleConfigHelpers(parts.keys)
+
 
 const $border = cssVar("avatar-border-color")
 const $background= cssVar("avatar-bg")
@@ -101,10 +98,8 @@ const sizes = {
   full: getSize("100%"),
 }
 
-export const avatarTheme = defineMultiStyleConfig({
-  baseStyle,
-  sizes,
-  defaultProps: {
+    sizes,
+  
     size: "md",
   },
 })

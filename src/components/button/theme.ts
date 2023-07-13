@@ -1,5 +1,5 @@
-import { defineStyle, defineStyleConfig } from "@chakra-ui/styled-system"
-import { mode, transparentize } from "@chakra-ui/theme-tools"
+import { defineStyle, defineStyleConfig 
+
 import { runIfFn } from "../utils/run-if-fn"
 
 const baseStyle = defineStyle({
@@ -158,7 +158,7 @@ const variantUnstyled = defineStyle({
  padding: "0",
 })
 
-const variants = {
+
   ghost: variantGhost,
   outline: variantOutline,
   solid: variantSolid,
@@ -196,10 +196,8 @@ padding-inline-end: "4",
 }
 
 export const buttonTheme = defineStyleConfig({
-  baseStyle,
-  variants,
-  sizes,
-  defaultProps: {
+      sizes,
+  
     variant: "solid",
     size: "md",
     colorScheme: "gray",

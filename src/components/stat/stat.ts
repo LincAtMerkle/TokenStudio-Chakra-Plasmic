@@ -1,8 +1,5 @@
-import { statAnatomy as parts } from "@chakra-ui/anatomy"
-import {
-  createMultiStyleConfigHelpers,
-  defineStyle,
-} from "@chakra-ui/styled-system"
+
+
 
 const { defineMultiStyleConfig, definePartsStyle } =
   createMultiStyleConfigHelpers(parts.keys)
@@ -28,12 +25,12 @@ const baseStyleIcon = defineStyle({
   vertical-align: "middle",
 })
 
-const baseStyle = definePartsStyle({
+
   container: {},
   label: baseStyleLabel,
   helpText: baseStyleHelpText,
   number: baseStyleNumber,
-  icon: baseStyleIcon,
+  
 })
 
 const sizes = {
@@ -44,10 +41,8 @@ const sizes = {
   }),
 }
 
-export const statTheme = defineMultiStyleConfig({
-  baseStyle,
-  sizes,
-  defaultProps: {
+    sizes,
+  
     size: "md",
   },
 })

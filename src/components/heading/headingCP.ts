@@ -34,6 +34,5 @@ const sizes = {
 }
 
 export default {
-  baseStyle,
-  sizes,
+    sizes,
 }

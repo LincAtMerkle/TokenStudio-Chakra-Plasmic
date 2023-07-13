@@ -1,4 +1,4 @@
-import { defineStyle, defineStyleConfig } from "@chakra-ui/styled-system"
+import { defineStyle, defineStyleConfig 
 
 const baseStyle = defineStyle({
   transitionProperty: "common",
@@ -17,5 +17,4 @@ const baseStyle = defineStyle({
 })
 
 export const linkTheme = defineStyleConfig({
-  baseStyle,
-})
+  })

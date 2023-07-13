@@ -61,9 +61,8 @@ const sizes = {
 }
 
 export default defineMultiStyleConfig({
-  baseStyle,
-  sizes,
-  defaultProps: {
+    sizes,
+  
     colorScheme: 'brand',
   },
 })

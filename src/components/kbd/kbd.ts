@@ -2,7 +2,7 @@ import {
   cssVar,
   defineStyle,
   defineStyleConfig,
-} from "@chakra-ui/styled-system"
+
 
 const $background= cssVar("kbd-bg")
 
@@ -24,5 +24,4 @@ padding-inline-end: "0.4em",
 })
 
 export const kbdTheme = defineStyleConfig({
-  baseStyle,
-})
+  })

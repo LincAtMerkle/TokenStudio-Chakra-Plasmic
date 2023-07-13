@@ -75,7 +75,7 @@ const sizes = {
 
 const vars = defineCssVars('button', ['bg', 'color'])
 
-const variants = {
+
   primary: defineStyle((props) => {
     const { colorScheme } = props
     return {
@@ -253,8 +253,7 @@ const variants = {
 
     if (colorScheme === 'gray') {
       return {
-        ...baseStyle,
-        [vars.color.variable]: `colors.gray.600`,
+        ...        [vars.color.variable]: `colors.gray.600`,
         .chakra-ui-dark &: {
           [vars.color.variable]: `colors.gray.200`,
         },
@@ -290,8 +289,7 @@ const variants = {
     }
 
     return {
-      ...baseStyle,
-      [vars.color.variable]: `colors.${colorScheme}.600`,
+      ...      [vars.color.variable]: `colors.${colorScheme}.600`,
       .chakra-ui-dark &: {
         [vars.color.variable]: `colors.${colorScheme}.200`,
       },
@@ -354,9 +352,8 @@ const variants = {
 }
 
 export default defineStyleConfig({
-  variants,
-  sizes,
-  defaultProps: {
+    sizes,
+  
     colorScheme: 'brand',
   },
 })

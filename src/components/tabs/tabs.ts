@@ -1,10 +1,8 @@
-import { tabsAnatomy as parts } from "@chakra-ui/anatomy"
-import {
-  createMultiStyleConfigHelpers,
-  cssVar,
+
+
   defineStyle,
-} from "@chakra-ui/styled-system"
-import { getColor } from "@chakra-ui/theme-tools"
+
+
 
 const $fg = cssVar("tabs-color")
 const $background= cssVar("tabs-bg")
@@ -232,7 +230,7 @@ const variantSolidRounded = definePartsStyle((props) => {
 
 const variantUnstyled = definePartsStyle({})
 
-const variants = {
+
   line: variantLine,
   enclosed: variantEnclosed,
   "enclosed-colored": variantEnclosedColored,
@@ -241,11 +239,8 @@ const variants = {
   unstyled: variantUnstyled,
 }
 
-export const tabsTheme = defineMultiStyleConfig({
-  baseStyle,
-  sizes,
-  variants,
-  defaultProps: {
+    sizes,
+    
     size: "md",
     variant: "line",
     colorScheme: "blue",

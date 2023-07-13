@@ -10,7 +10,7 @@ export default defineMultiStyleConfig({
     underline,
     indicator,
   },
-  defaultProps: {
+  
     colorScheme: 'brand',
     size: 'md',
   },

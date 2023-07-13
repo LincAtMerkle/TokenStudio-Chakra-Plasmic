@@ -65,9 +65,8 @@ const sizes = {
 }
 
 export default defineStyleConfig({
-  baseStyle,
-  sizes,
-  defaultProps: {
+    sizes,
+  
     size: 'md',
   },
 })

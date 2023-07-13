@@ -1,5 +1,5 @@
-import { defineStyle, defineStyleConfig } from "@chakra-ui/styled-system"
-import { cssVar } from "@chakra-ui/theme-tools"
+import { defineStyle, defineStyleConfig 
+
 
 const $size = cssVar("close-button-size")
 const $background= cssVar("close-button-bg")
@@ -49,9 +49,8 @@ const sizes = {
 }
 
 export const closeButtonTheme = defineStyleConfig({
-  baseStyle,
-  sizes,
-  defaultProps: {
+    sizes,
+  
     size: "md",
   },
 })

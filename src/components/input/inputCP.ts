@@ -3,7 +3,7 @@ import { createMultiStyleConfigHelpers, defineCssVars } from '@chakra-ui/react'
 
 const { definePartsStyle, defineMultiStyleConfig } = createMultiStyleConfigHelpers(parts.keys)
 
-const baseStyle = definePartsStyle({
+
   field: {
    &:disabled {
       opacity: 1.0,
@@ -17,7 +17,7 @@ const baseStyle = definePartsStyle({
 
 const vars = defineCssVars('input', ['bg', 'border-color'])
 
-const variants = {
+
   outline: definePartsStyle((props) => ({
     field: {
       border-radius: 'lg',
@@ -83,10 +83,8 @@ const sizes = {
 }
 
 export default defineMultiStyleConfig({
-  baseStyle,
-  sizes,
-  variants,
-  defaultProps: {
+    sizes,
+    
     colorScheme: 'brand',
   },
 })

@@ -28,7 +28,7 @@ const sizes = {
   },
 }
 
-const variants = {
+
   inline: () => ({
     margin: 0,
     min-width: '2xs',
@@ -58,8 +58,6 @@ const defaultProps = {
 }
 
 export default {
-  baseStyle,
-  sizes,
-  variants,
-  defaultProps,
+    sizes,
+    defaultProps,
 }

@@ -1,4 +1,4 @@
-import { defineStyle, defineStyleConfig } from "@chakra-ui/styled-system"
+import { defineStyle, defineStyleConfig 
 
 const baseStyle = defineStyle({
   font-size: "md",
@@ -14,5 +14,4 @@ const baseStyle = defineStyle({
 })
 
 export const formLabelTheme = defineStyleConfig({
-  baseStyle,
-})
+  })

@@ -1,4 +1,4 @@
-import { defineStyle, defineStyleConfig } from "@chakra-ui/styled-system"
+import { defineStyle, defineStyleConfig 
 import { inputTheme } from "./input"
 
 const baseStyle = defineStyle({
@@ -10,7 +10,7 @@ const baseStyle = defineStyle({
   vertical-align: "top",
 })
 
-const variants = {
+
   outline: defineStyle(
     (props) => inputTheme.variants?.outline(props).field ?? {},
   ),
@@ -31,10 +31,8 @@ const sizes = {
 }
 
 export const textareaTheme = defineStyleConfig({
-  baseStyle,
-  sizes,
-  variants,
-  defaultProps: {
+    sizes,
+    
     size: "md",
     variant: "outline",
   },

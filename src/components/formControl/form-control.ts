@@ -1,12 +1,9 @@
-import { formAnatomy as parts } from "@chakra-ui/anatomy"
-import {
-  createMultiStyleConfigHelpers,
-  cssVar,
-  defineStyle,
-} from "@chakra-ui/styled-system"
 
-const { definePartsStyle, defineMultiStyleConfig } =
-  createMultiStyleConfigHelpers(parts.keys)
+
+  defineStyle,
+
+
+
 
 const $fg = cssVar("form-control-color")
 
@@ -30,7 +27,7 @@ const baseStyleHelperText = defineStyle({
   font-size: "sm",
 })
 
-const baseStyle = definePartsStyle({
+
   container: {
     width: "100%",
     position: "relative",
@@ -39,6 +36,4 @@ const baseStyle = definePartsStyle({
   helperText: baseStyleHelperText,
 })
 
-export const formTheme = defineMultiStyleConfig({
-  baseStyle,
-})
+  })

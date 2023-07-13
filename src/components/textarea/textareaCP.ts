@@ -1,6 +1,6 @@
 import { mode, type StyleFunctionProps, transparentize } from '@chakra-ui/theme-tools'
 
-const variants = {
+
   outline: (props: StyleFunctionProps) => ({
     border-radius: 'lg',
     bg: mode('white', 'gray.800')(props),
@@ -16,5 +16,4 @@ const variants = {
 }
 
 export default {
-  variants,
-}
+  }

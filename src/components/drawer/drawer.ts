@@ -1,13 +1,10 @@
-import { drawerAnatomy as parts } from "@chakra-ui/anatomy"
-import {
-  createMultiStyleConfigHelpers,
-  cssVar,
+
+
   defineStyle,
-} from "@chakra-ui/styled-system"
+
 import { runIfFn } from "../utils/run-if-fn"
 
-const { definePartsStyle, defineMultiStyleConfig } =
-  createMultiStyleConfigHelpers(parts.keys)
+
 
 const $background= cssVar("drawer-bg")
 const $bs = cssVar("drawer-box-shadow")
@@ -107,10 +104,8 @@ const sizes = {
   full: getSize("full"),
 }
 
-export const drawerTheme = defineMultiStyleConfig({
-  baseStyle,
-  sizes,
-  defaultProps: {
+    sizes,
+  
     size: "xs",
   },
 })

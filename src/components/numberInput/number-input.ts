@@ -1,9 +1,6 @@
-import { numberInputAnatomy as parts } from "@chakra-ui/anatomy"
-import {
-  createMultiStyleConfigHelpers,
-  defineStyle,
-} from "@chakra-ui/styled-system"
-import { calc, cssVar } from "@chakra-ui/theme-tools"
+
+
+
 import typography from "../foundations/typography"
 import { inputTheme } from "./input"
 import { runIfFn } from "../utils/run-if-fn"
@@ -107,9 +104,6 @@ const sizes = {
   lg: getSize("lg"),
 }
 
-export const numberInputTheme = defineMultiStyleConfig({
-  baseStyle,
-  sizes,
-  variants: inputTheme.variants,
-  defaultProps: inputTheme.defaultProps,
+    sizes,
+  variants: inputTheme.  defaultProps: inputTheme.defaultProps,
 })

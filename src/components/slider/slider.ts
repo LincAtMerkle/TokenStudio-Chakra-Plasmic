@@ -1,10 +1,8 @@
-import { sliderAnatomy as parts } from "@chakra-ui/anatomy"
-import {
-  createMultiStyleConfigHelpers,
-  cssVar,
+
+
   defineStyle,
-} from "@chakra-ui/styled-system"
-import { orient } from "@chakra-ui/theme-tools"
+
+
 
 const { defineMultiStyleConfig, definePartsStyle } =
   createMultiStyleConfigHelpers(parts.keys)
@@ -152,10 +150,8 @@ const sizes = {
   sm: sizeSm,
 }
 
-export const sliderTheme = defineMultiStyleConfig({
-  baseStyle,
-  sizes,
-  defaultProps: {
+    sizes,
+  
     size: "md",
     colorScheme: "blue",
   },

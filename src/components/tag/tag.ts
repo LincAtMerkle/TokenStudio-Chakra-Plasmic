@@ -1,9 +1,7 @@
-import { tagAnatomy as parts } from "@chakra-ui/anatomy"
-import {
-  createMultiStyleConfigHelpers,
-  cssVar,
+
+
   defineStyle,
-} from "@chakra-ui/styled-system"
+
 import { badgeTheme, badgeVars } from "./badge"
 
 const { defineMultiStyleConfig, definePartsStyle } =
@@ -67,8 +65,8 @@ const baseStyleCloseButton = defineStyle({
   },
 })
 
-const baseStyle = definePartsStyle({
-  container: baseStyleContainer,
+
+  
   label: baseStyleLabel,
   closeButton: baseStyleCloseButton,
 })
@@ -104,7 +102,7 @@ const sizes = {
   }),
 }
 
-const variants = {
+
   subtle: definePartsStyle((props) => ({
     container: badgeTheme.variants?.subtle(props),
   })),
@@ -116,11 +114,8 @@ const variants = {
   })),
 }
 
-export const tagTheme = defineMultiStyleConfig({
-  variants,
-  baseStyle,
-  sizes,
-  defaultProps: {
+      sizes,
+  
     size: "md",
     variant: "subtle",
     colorScheme: "gray",

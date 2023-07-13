@@ -4,7 +4,7 @@ const baseStyle = {
   },
 }
 
-const variants = {
+
   solid: {
     track: {
       bg: 'bg.muted',
@@ -26,7 +26,5 @@ const defaultProps = {
 }
 
 export default {
-  variants,
-  baseStyle,
-  defaultProps,
+      defaultProps,
 }

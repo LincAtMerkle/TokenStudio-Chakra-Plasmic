@@ -24,7 +24,7 @@ const sizes = {
   }
 }
 
-const variants = {
+
   primary: (props: StyleFunctionProps) =>
     props.theme.components['Checkbox']['variants']['solid']({
       ...props,
@@ -44,8 +44,6 @@ const defaultProps = {
 }
 
 export default {
-  baseStyle,
-  sizes,
-  variants,
-  defaultProps,
+    sizes,
+    defaultProps,
 }

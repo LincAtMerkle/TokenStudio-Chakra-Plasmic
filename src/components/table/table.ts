@@ -1,14 +1,11 @@
-import { tableAnatomy as parts } from "@chakra-ui/anatomy"
-import {
-  createMultiStyleConfigHelpers,
-  defineStyle,
-} from "@chakra-ui/styled-system"
-import { mode } from "@chakra-ui/theme-tools"
+
+
+
 
 const { defineMultiStyleConfig, definePartsStyle } =
   createMultiStyleConfigHelpers(parts.keys)
 
-const baseStyle = definePartsStyle({
+
   table: {
     fontVariantNumeric: "lining-nums tabular-nums",
     borderCollapse: "collapse",
@@ -107,7 +104,7 @@ const variantStripe = definePartsStyle((props) => {
   }
 })
 
-const variants = {
+
   simple: variantSimple,
   striped: variantStripe,
   unstyled: defineStyle({}),
@@ -187,11 +184,8 @@ padding-bottom: "2",
   }),
 }
 
-export const tableTheme = defineMultiStyleConfig({
-  baseStyle,
-  variants,
-  sizes,
-  defaultProps: {
+      sizes,
+  
     variant: "simple",
     size: "md",
     colorScheme: "gray",

@@ -1,11 +1,7 @@
-import { accordionAnatomy as parts } from "@chakra-ui/anatomy"
-import {
-  createMultiStyleConfigHelpers,
-  defineStyle,
-} from "@chakra-ui/styled-system"
 
-const { definePartsStyle, defineMultiStyleConfig } =
-  createMultiStyleConfigHelpers(parts.keys)
+
+
+
 
 const baseStyleContainer = defineStyle({
   border-topWidth: "1px",
@@ -46,11 +42,11 @@ const baseStyleIcon = defineStyle({
   font-size: "1.25em",
 })
 
-const baseStyle = definePartsStyle({
-  container: baseStyleContainer,
-  button: baseStyleButton,
-  panel: baseStylePanel,
-  icon: baseStyleIcon,
+
+  
+  
+  
+  
 })
 
-export const accordionTheme = defineMultiStyleConfig({ baseStyle })
+

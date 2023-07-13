@@ -14,7 +14,7 @@ const baseStyle = {
   },
 }
 
-const variants = {
+
   simple: (props: StyleFunctionProps) => ({
     th: {
       color: 'fg.muted',
@@ -67,6 +67,4 @@ const sizes = {
 
 export default {
   sizes,
-  baseStyle,
-  variants,
-}
+    }

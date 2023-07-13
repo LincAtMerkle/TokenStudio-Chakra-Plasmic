@@ -37,7 +37,7 @@ const sizes = {
   }
 }
 
-const variants = {
+
   primary: (props: StyleFunctionProps) =>
     props.theme.components['Button']['variants']['solid']({
       ...props,
@@ -145,7 +145,5 @@ const variants = {
 }
 
 export default {
-  baseStyle,
-  variants,
-  sizes,
+      sizes,
 }

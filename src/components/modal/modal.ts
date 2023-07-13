@@ -1,9 +1,7 @@
-import { modalAnatomy as parts } from "@chakra-ui/anatomy"
-import {
-  createMultiStyleConfigHelpers,
-  cssVar,
+
+
   defineStyle,
-} from "@chakra-ui/styled-system"
+
 import { runIfFn } from "../utils/run-if-fn"
 
 const { defineMultiStyleConfig, definePartsStyle } =
@@ -130,8 +128,6 @@ const sizes = {
   full: getSize("full"),
 }
 
-export const modalTheme = defineMultiStyleConfig({
-  baseStyle,
-  sizes,
-  defaultProps: { size: "md" },
+    sizes,
+   size: "md" },
 })

@@ -18,5 +18,4 @@ const baseStyle = (props: StyleFunctionProps) => ({
 })
 
 export default {
-  baseStyle,
-}
+  }

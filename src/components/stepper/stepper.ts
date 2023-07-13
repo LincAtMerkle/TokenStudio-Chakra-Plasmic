@@ -1,4 +1,4 @@
-import { createMultiStyleConfigHelpers, cssVar } from "@chakra-ui/styled-system"
+import { createMultiStyleConfigHelpers, cssVar 
 
 const { defineMultiStyleConfig, definePartsStyle } =
   createMultiStyleConfigHelpers([
@@ -107,9 +107,7 @@ const baseStyle = definePartsStyle(({ colorScheme: c }) => ({
   },
 }))
 
-export const stepperTheme = defineMultiStyleConfig({
-  baseStyle,
-  sizes: {
+    sizes: {
     xs: definePartsStyle({
       stepper: {
         [$size.variable]: "sizes.4",
@@ -143,7 +141,7 @@ export const stepperTheme = defineMultiStyleConfig({
       },
     }),
   },
-  defaultProps: {
+  
     size: "md",
     colorScheme: "blue",
   },

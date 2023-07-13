@@ -1,9 +1,6 @@
-import { popoverAnatomy as parts } from "@chakra-ui/anatomy"
-import {
-  createMultiStyleConfigHelpers,
-  defineStyle,
-} from "@chakra-ui/styled-system"
-import { cssVar } from "@chakra-ui/theme-tools"
+
+
+
 
 const { defineMultiStyleConfig, definePartsStyle } =
   createMultiStyleConfigHelpers(parts.keys)
@@ -60,7 +57,7 @@ const baseStyleCloseButton = defineStyle({
   padding: 2,
 })
 
-const baseStyle = definePartsStyle({
+
   popper: baseStylePopper,
   content: baseStyleContent,
   header: baseStyleHeader,
@@ -69,6 +66,4 @@ const baseStyle = definePartsStyle({
   closeButton: baseStyleCloseButton,
 })
 
-export const popoverTheme = defineMultiStyleConfig({
-  baseStyle,
-})
+  })

@@ -1,11 +1,7 @@
-import { editableAnatomy as parts } from "@chakra-ui/anatomy"
-import {
-  createMultiStyleConfigHelpers,
-  defineStyle,
-} from "@chakra-ui/styled-system"
 
-const { definePartsStyle, defineMultiStyleConfig } =
-  createMultiStyleConfigHelpers(parts.keys)
+
+
+
 
 const baseStylePreview = defineStyle({
   border-radius: "md",
@@ -37,12 +33,10 @@ padding-bottom: "1",
   &::placeholder: { opacity: 0.6 },
 })
 
-const baseStyle = definePartsStyle({
+
   preview: baseStylePreview,
   input: baseStyleInput,
   textarea: baseStyleTextarea,
 })
 
-export const editableTheme = defineMultiStyleConfig({
-  baseStyle,
-})
+  })

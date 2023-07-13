@@ -1,18 +1,14 @@
-import { alertAnatomy as parts } from "@chakra-ui/anatomy"
-import {
-  createMultiStyleConfigHelpers,
-  cssVar,
-  StyleFunctionProps,
-} from "@chakra-ui/styled-system"
-import { transparentize } from "@chakra-ui/theme-tools"
 
-const { definePartsStyle, defineMultiStyleConfig } =
-  createMultiStyleConfigHelpers(parts.keys)
+
+
+
+
+
 
 const $fg = cssVar("alert-fg")
 const $background= cssVar("alert-bg")
 
-const baseStyle = definePartsStyle({
+
   container: {
     background: $bg.reference,
    padding-inline-start: "4",
@@ -119,17 +115,14 @@ const variantSolid = definePartsStyle((props) => {
   }
 })
 
-const variants = {
+
   subtle: variantSubtle,
   "left-accent": variantLeftAccent,
   "top-accent": variantTopAccent,
   solid: variantSolid,
 }
 
-export const alertTheme = defineMultiStyleConfig({
-  baseStyle,
-  variants,
-  defaultProps: {
+      
     variant: "subtle",
     colorScheme: "blue",
   },

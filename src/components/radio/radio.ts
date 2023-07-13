@@ -1,8 +1,5 @@
-import { radioAnatomy as parts } from "@chakra-ui/anatomy"
-import {
-  createMultiStyleConfigHelpers,
-  defineStyle,
-} from "@chakra-ui/styled-system"
+
+
 import { runIfFn } from "../utils/run-if-fn"
 import { checkboxTheme } from "./checkbox"
 
@@ -51,10 +48,8 @@ const sizes = {
   }),
 }
 
-export const radioTheme = defineMultiStyleConfig({
-  baseStyle,
-  sizes,
-  defaultProps: {
+    sizes,
+  
     size: "md",
     colorScheme: "blue",
   },

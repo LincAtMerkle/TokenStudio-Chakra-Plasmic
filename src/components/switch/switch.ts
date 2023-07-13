@@ -1,9 +1,6 @@
-import { switchAnatomy as parts } from "@chakra-ui/anatomy"
-import {
-  createMultiStyleConfigHelpers,
-  defineStyle,
-} from "@chakra-ui/styled-system"
-import { calc, cssVar } from "@chakra-ui/theme-tools"
+
+
+
 
 const { defineMultiStyleConfig, definePartsStyle } =
   createMultiStyleConfigHelpers(parts.keys)
@@ -91,10 +88,8 @@ const sizes = {
   }),
 }
 
-export const switchTheme = defineMultiStyleConfig({
-  baseStyle,
-  sizes,
-  defaultProps: {
+    sizes,
+  
     size: "md",
     colorScheme: "blue",
   },

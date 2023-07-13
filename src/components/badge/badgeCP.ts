@@ -21,7 +21,7 @@ const sizes = {
 
 const vars = defineCssVars('badge', ['bg', 'color', 'shadow'])
 
-const variants = {
+
   pill: defineStyle((props) => {
     const { colorScheme, theme } = props
     const darkbackground= transparentize(`${colorScheme}.200`, 0.16)(theme)
@@ -42,10 +42,9 @@ const variants = {
 }
 
 export default defineStyleConfig({
-  defaultProps: {
+  
     size: 'md',
     colorScheme: 'brand',
   },
-  variants,
-  sizes,
+    sizes,
 })

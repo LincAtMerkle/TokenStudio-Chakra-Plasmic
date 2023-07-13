@@ -1,4 +1,4 @@
-import { defineStyle, defineStyleConfig } from "@chakra-ui/styled-system"
+import { defineStyle, defineStyleConfig 
 import { badgeTheme, badgeVars as vars } from "./badge"
 
 const { variants, defaultProps } = badgeTheme
@@ -15,7 +15,5 @@ padding-inline-end: "0.2em",
 })
 
 export const codeTheme = defineStyleConfig({
-  baseStyle,
-  variants,
-  defaultProps,
+      defaultProps,
 })

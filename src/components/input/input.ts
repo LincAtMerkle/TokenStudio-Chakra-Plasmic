@@ -1,14 +1,10 @@
-import { inputAnatomy as parts } from "@chakra-ui/anatomy"
-import {
-  createMultiStyleConfigHelpers,
-  defineStyle,
-} from "@chakra-ui/styled-system"
-import { getColorVar, mode } from "@chakra-ui/theme-tools"
 
-const { definePartsStyle, defineMultiStyleConfig } =
-  createMultiStyleConfigHelpers(parts.keys)
 
-const baseStyle = definePartsStyle({
+
+
+
+
+
   field: {
     width: "100%",
     min-width: 0,
@@ -197,18 +193,15 @@ padding-inline-end: "0",
   },
 })
 
-const variants = {
+
   outline: variantOutline,
   filled: variantFilled,
   flushed: variantFlushed,
   unstyled: variantUnstyled,
 }
 
-export const inputTheme = defineMultiStyleConfig({
-  baseStyle,
-  sizes,
-  variants,
-  defaultProps: {
+    sizes,
+    
     size: "md",
     variant: "outline",
   },

@@ -40,7 +40,7 @@ export default defineStyleConfig({
       },
     }),
   },
-  defaultProps: {
+  
     variant: 'underline',
   },
 })

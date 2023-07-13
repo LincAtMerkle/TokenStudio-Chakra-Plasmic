@@ -1,4 +1,4 @@
-import { defineStyle, defineStyleConfig } from "@chakra-ui/styled-system"
+import { defineStyle, defineStyleConfig 
 import { inputTheme } from "./input"
 import { runIfFn } from "../utils/run-if-fn"
 
@@ -34,7 +34,7 @@ const sizes = {
   }),
 }
 
-const variants = {
+
   outline: defineStyle(
     (props) => runIfFn(inputTheme.variants?.outline, props)?.field ?? {},
   ),
@@ -48,8 +48,6 @@ const variants = {
 }
 
 export const pinInputTheme = defineStyleConfig({
-  baseStyle,
-  sizes,
-  variants,
-  defaultProps: inputTheme.defaultProps,
+    sizes,
+    defaultProps: inputTheme.defaultProps,
 })

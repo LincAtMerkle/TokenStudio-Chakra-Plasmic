@@ -1,9 +1,7 @@
-import { selectAnatomy as parts } from "@chakra-ui/anatomy"
-import {
-  createMultiStyleConfigHelpers,
-  cssVar,
+
+
   defineStyle,
-} from "@chakra-ui/styled-system"
+
 import { inputTheme } from "./input"
 
 const { defineMultiStyleConfig, definePartsStyle } =
@@ -38,9 +36,9 @@ const baseStyleIcon = defineStyle({
   },
 })
 
-const baseStyle = definePartsStyle({
+
   field: baseStyleField,
-  icon: baseStyleIcon,
+  
 })
 
 const iconSpacing = defineStyle({
@@ -81,9 +79,6 @@ const sizes = {
   },
 }
 
-export const selectTheme = defineMultiStyleConfig({
-  baseStyle,
-  sizes,
-  variants: inputTheme.variants,
-  defaultProps: inputTheme.defaultProps,
+    sizes,
+  variants: inputTheme.  defaultProps: inputTheme.defaultProps,
 })

@@ -1,8 +1,7 @@
-import { cardAnatomy as parts } from "@chakra-ui/anatomy"
-import { createMultiStyleConfigHelpers, cssVar } from "@chakra-ui/styled-system"
 
-const { definePartsStyle, defineMultiStyleConfig } =
-  createMultiStyleConfigHelpers(parts.keys)
+import { createMultiStyleConfigHelpers, cssVar 
+
+
 
 const $background= cssVar("card-bg")
 const $padding = cssVar("card-padding")
@@ -11,7 +10,7 @@ const $radius = cssVar("card-radius")
 const $border = cssVar("card-border-width", "0")
 const $border-color = cssVar("card-border-color")
 
-const baseStyle = definePartsStyle({
+
   container: {
     [$bg.variable]: "colors.chakra-body-bg",
     backgroundColor: $bg.reference,
@@ -54,7 +53,7 @@ const sizes = {
   }),
 }
 
-const variants = {
+
   elevated: definePartsStyle({
     container: {
       [$shadow.variable]: "shadows.base",
@@ -87,11 +86,8 @@ const variants = {
   },
 }
 
-export const cardTheme = defineMultiStyleConfig({
-  baseStyle,
-  variants,
-  sizes,
-  defaultProps: {
+      sizes,
+  
     variant: "elevated",
     size: "md",
   },
